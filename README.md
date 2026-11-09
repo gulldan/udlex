@@ -1,7 +1,11 @@
 # udlex
 
+**English** · [Русский](https://github.com/gulldan/udlex/blob/main/README.ru.md) · [简体中文](https://github.com/gulldan/udlex/blob/main/README.zh-CN.md)
+
 Fast local lemmatization for Python. It looks up word forms in a dictionary and
 can apply suffix rules to unknown words. Input is a list of tokens.
+
+The Go bindings live in [udlex-go](https://github.com/gulldan/udlex-go).
 
 ## Install
 
