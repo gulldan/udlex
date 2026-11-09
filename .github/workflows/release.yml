@@ -1,0 +1,150 @@
+name: Release wheels
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-24.04
+    outputs:
+      commit: ${{ steps.metadata.outputs.commit }}
+      version: ${{ steps.metadata.outputs.version }}
+      maturin: ${{ steps.metadata.outputs.maturin }}
+      rust: ${{ steps.metadata.outputs.rust }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Check release tag and read build pins
+        id: metadata
+        run: python .github/release.py prepare
+
+  wheels:
+    needs: prepare
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, macos-15]
+        python: ['3.11', '3.14t', '3.15t']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ needs.prepare.outputs.commit }}
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Remap release build paths
+        run: |
+          cargo_home=${CARGO_HOME:-"$HOME/.cargo"}
+          if [[ "$RUNNER_OS" == Linux ]]; then
+            cargo_home=/root/.cargo
+          fi
+          printf 'CARGO_ENCODED_RUSTFLAGS=%s\037%s\n' \
+            "--remap-path-prefix=$GITHUB_WORKSPACE=/udlex" \
+            "--remap-path-prefix=$cargo_home=/cargo" >> "$GITHUB_ENV"
+      - name: Build wheel
+        uses: PyO3/maturin-action@e83996d129638aa358a18fbd1dfb82f0b0fb5d3b # v1
+        with:
+          maturin-version: ${{ needs.prepare.outputs.maturin }}
+          rust-toolchain: ${{ needs.prepare.outputs.rust }}
+          manylinux: '2_34'
+          args: --release --locked --out dist --interpreter python${{ matrix.python }}
+      - name: Check wheel ABI and platform tags
+        env:
+          BUILD_PYTHON: ${{ matrix.python }}
+          EXPECTED_VERSION: ${{ needs.prepare.outputs.version }}
+        run: python .github/release.py wheel
+      - name: Test installed wheel outside the checkout
+        env:
+          EXPECTED_VERSION: ${{ needs.prepare.outputs.version }}
+        run: |
+          python -m pip install --no-index --no-deps dist/*.whl
+          cd "$(mktemp -d)"
+          python -I -W error::RuntimeWarning - <<'PY'
+          import os
+          import sys
+          import sysconfig
+          from concurrent.futures import ThreadPoolExecutor
+          from pathlib import Path
+
+          import udlex
+
+          assert udlex.__version__ == os.environ["EXPECTED_VERSION"]
+          if sysconfig.get_config_var("Py_GIL_DISABLED"):
+              assert not sys._is_gil_enabled()
+          Path("forms.tsv").write_text("cats\tcat\nmice\tmouse\n", encoding="utf-8")
+          Path("bundle").mkdir()
+          udlex.build_lexicon(
+              "bundle/eng", train=None, dev=None, test=None,
+              paradigms=[("example", "forms.tsv", False, False)],
+              name="eng", language="English", iso639_3="eng",
+          )
+          lexicon = udlex.load("bundle", "eng")
+          tokens = ["cats", "mice", "unknown"]
+          with ThreadPoolExecutor(max_workers=4) as executor:
+              results = executor.map(lexicon.lemmatize, [tokens] * 8)
+              assert all(result == ["cat", "mouse", "unknown"] for result in results)
+          PY
+          test "$(python -I -m udlex lemma -q eng cats mice)" = $'cat\nmouse'
+      - name: Build source distribution once
+        if: matrix.os == 'ubuntu-24.04' && matrix.python == '3.11'
+        uses: PyO3/maturin-action@e83996d129638aa358a18fbd1dfb82f0b0fb5d3b # v1
+        with:
+          maturin-version: ${{ needs.prepare.outputs.maturin }}
+          rust-toolchain: ${{ needs.prepare.outputs.rust }}
+          command: sdist
+          args: --manifest-path rust/Cargo.toml --out dist
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: wheels-${{ matrix.os }}-${{ matrix.python }}
+          path: dist/*
+          if-no-files-found: error
+          retention-days: 7
+
+  release:
+    needs: [prepare, wheels]
+    if: github.event_name == 'push'
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          pattern: wheels-*
+          path: dist
+          merge-multiple: true
+      - name: Create release draft with compiled wheels
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_COMMIT: ${{ needs.prepare.outputs.commit }}
+          RELEASE_VERSION: ${{ needs.prepare.outputs.version }}
+        run: |
+          current=$(gh api "repos/$GITHUB_REPOSITORY/commits/refs/tags/$GITHUB_REF_NAME" --jq .sha)
+          test "$current" = "$RELEASE_COMMIT"
+          cd dist
+          shopt -s nullglob
+          wheels=(udlex-"$RELEASE_VERSION"-*.whl)
+          sdist="udlex-$RELEASE_VERSION.tar.gz"
+          if [[ ${#wheels[@]} -ne 6 || ! -f "$sdist" ]]; then
+            echo 'Expected six wheels and one source distribution.' >&2
+            exit 1
+          fi
+          sha256sum -- "${wheels[@]}" "$sdist" > SHA256SUMS
+          gh release create "$GITHUB_REF_NAME" "${wheels[@]}" "$sdist" SHA256SUMS \
+            --repo "$GITHUB_REPOSITORY" --verify-tag --draft \
+            --title "udlex $RELEASE_VERSION" --notes "Python packages for $GITHUB_REF_NAME."
