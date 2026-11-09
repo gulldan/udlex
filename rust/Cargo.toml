@@ -1,0 +1,105 @@
+[package]
+name = "udlex-rs"
+version = "1.0.0"
+edition = "2024"
+rust-version = "1.89"
+description = "High-throughput multilingual lookup-and-suffix-rule lemmatizer"
+license = "MIT"
+repository = "https://github.com/gulldan/udlex"
+readme = "../README.md"
+keywords = ["lemmatizer", "nlp", "morphology", "linguistics"]
+categories = ["text-processing", "science"]
+
+[lints.rust]
+unsafe_op_in_unsafe_fn = "forbid"
+missing_docs = "warn"
+missing_debug_implementations = "warn"
+
+[lints.clippy]
+# Lower priority lets individual lints override these groups.
+pedantic = { level = "warn", priority = -1 }
+nursery = { level = "warn", priority = -1 }
+cargo = { level = "warn", priority = -1 }
+
+# Refuse unchecked panics, arithmetic, and conversions on caller-controlled data.
+indexing_slicing = "deny"      # байтовый индекс мимо границы UTF-8
+unwrap_used = "deny"           # паника на данных вызывающего
+expect_used = "deny"
+unwrap_in_result = "deny"      # функция вернула Result и всё равно паникует
+panic = "deny"
+arithmetic_side_effects = "deny" # переполнение счётчика/смещения на длинном входе
+cast_possible_truncation = "deny" # usize -> u32 в заголовке формата
+cast_sign_loss = "deny"
+missing_errors_doc = "deny"    # у каждого Result описан отказ
+missing_panics_doc = "deny"    # если паника всё же осталась — она в документации
+todo = "warn"
+unimplemented = "warn"
+lossy_float_literal = "warn"
+rest_pat_in_fully_bound_structs = "warn"   # новое поле, молча пропущенное
+
+# Scoring converts token counts to ratios; integer precision extends to 2^53.
+cast_precision_loss = "allow"
+
+[lib]
+name = "udlex_rs"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+fst = "0.4"
+indexmap = { version = "2", optional = true }
+icu_casemap = "=2.3.0"
+icu_locale_core = "=2.3.0"
+icu_properties = "=2.3.0"
+memchr = { version = "2", optional = true }
+memmap2 = "0.9"
+serde = { version = "1", features = ["derive"] }
+sha2 = "0.11"
+# Preserve metadata key order and exact scoring floats across recompilation.
+serde_json = { version = "1", features = ["preserve_order", "float_roundtrip"] }
+simdutf8 = { version = "0.1", optional = true }
+thiserror = "2"
+tempfile = { version = "3", optional = true }
+unicode-normalization = "0.1"
+yada = "0.7"
+
+[target.'cfg(unix)'.dependencies]
+libc = "=0.2.189"
+
+[dependencies.pyo3]
+version = "=0.29.3"
+# Maturin sets extension-only linking; a Cargo feature would break macOS tests.
+features = ["abi3-py311", "abi3t-py315"]
+optional = true
+
+[features]
+default = ["infer"]
+
+# Runtime reads bundles without pulling in their builders.
+infer = ["dep:memchr"]
+
+# Training scores through the runtime probe and validates compiled generations.
+train = [
+    "infer",
+    "dep:indexmap",
+    "dep:simdutf8",
+    "dep:tempfile",
+]
+
+# User dictionary publication needs atomic files, not corpus training.
+user-dictionary-write = [
+    "infer",
+    "dep:tempfile",
+]
+
+# The Python extension exports runtime, training, and user dictionary APIs.
+python = ["dep:pyo3", "train", "user-dictionary-write"]
+
+[profile.release]
+lto = true
+codegen-units = 1
+
+# Faster local rebuilds; shipped wheels and benchmarks use release with LTO.
+[profile.dev-fast]
+inherits = "release"
+lto = false
+codegen-units = 16

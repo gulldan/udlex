@@ -1,0 +1,2 @@
+# Development uses 3.12 for the pinned HFST and CLTK wheels; the package supports 3.11+.
+3.12
