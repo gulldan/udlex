@@ -3,6 +3,7 @@
 # ruff: noqa: INP001
 
 import argparse
+import json
 import os
 import re
 import subprocess
@@ -12,6 +13,7 @@ import zipfile
 from pathlib import Path
 
 VERSION = r"[0-9]+\.[0-9]+\.[0-9]+"
+DICTIONARY_PROJECT = re.compile(r"udlex-dict-[a-z]{3}(?:-nc)?")
 
 
 def git(*args: str) -> str:
@@ -54,6 +56,25 @@ def prepare() -> None:
         output.write(
             f"commit={commit}\nversion={version}\nrust={rust}\nmaturin=v{pin[1]}\n"
         )
+
+
+def dictionary_wheel(tag: str, project: str) -> str:
+    """Select one dictionary wheel from the verified release manifest."""
+    if not DICTIONARY_PROJECT.fullmatch(project):
+        sys.exit("use an exact udlex-dict project name")
+    manifest = json.loads(Path("DICTIONARIES.json").read_text(encoding="utf-8"))
+    if manifest["release"] != tag:
+        sys.exit("dictionary manifest does not match the release tag")
+    version = tag.removeprefix("v")
+    wheel = f"{project.replace('-', '_')}-{version}-py3-none-any.whl"
+    approved = [
+        entry["wheel"]["name"]
+        for entry in manifest["dictionaries"]
+        if entry["distribution"] == project
+    ]
+    if approved != [wheel]:
+        sys.exit(f"expected one matching dictionary wheel in the release for {project}")
+    return wheel
 
 
 def check_wheel() -> None:
@@ -103,7 +124,7 @@ def check_wheel() -> None:
 def main() -> None:
     """Run one release check."""
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("step", choices=("prepare", "tag", "wheel"))
+    parser.add_argument("step", choices=("prepare", "tag", "dictionary-wheel", "wheel"))
     parser.add_argument("tag", nargs="?")
     args = parser.parse_args()
     if args.step == "prepare":
@@ -112,6 +133,10 @@ def main() -> None:
         if args.tag is None:
             parser.error("tag step requires a release tag")
         print(release_commit(args.tag))
+    elif args.step == "dictionary-wheel":
+        if args.tag is None:
+            parser.error("dictionary-wheel step requires a release tag")
+        print(dictionary_wheel(args.tag, os.environ["RELEASE_PROJECT"]))
     else:
         check_wheel()
 
