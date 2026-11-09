@@ -63,7 +63,7 @@ unicode-normalization = "0.1"
 yada = "0.7"
 
 [target.'cfg(unix)'.dependencies]
-libc = "=0.2.189"
+libc = "=0.2.191"
 
 [dependencies.pyo3]
 version = "=0.29.3"
