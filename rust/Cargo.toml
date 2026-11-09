@@ -48,7 +48,7 @@ crate-type = ["cdylib", "rlib"]
 fst = "0.4"
 indexmap = { version = "2", optional = true }
 icu_casemap = "=2.3.0"
-icu_locale_core = "=2.3.0"
+icu_locale_core = "=2.4.0"
 icu_properties = "=2.3.0"
 memchr = { version = "2", optional = true }
 memmap2 = "0.9"
