@@ -75,3 +75,8 @@ cargo build --locked --release --manifest-path rust/Cargo.toml -p udlex-capi
 [udlex.h](rust/capi/include/udlex.h).
 
 Код распространяется по лицензии [MIT](LICENSE).
+
+[Пакеты словарей](https://github.com/gulldan/udlex/releases/tag/v1.0.0) содержат
+свои лицензии и сведения об авторах. Если поставляете словарь вместе с
+приложением, сохраните эти сведения и соблюдайте условия лицензии словаря.
+Пакеты с суффиксом `-nc` предназначены только для некоммерческого использования.

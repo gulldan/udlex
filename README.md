@@ -72,3 +72,8 @@ Link `libudlex_capi` from `rust/target/release` and include
 [udlex.h](rust/capi/include/udlex.h) in your application.
 
 Code is licensed under [MIT](LICENSE).
+
+[Dictionary packages](https://github.com/gulldan/udlex/releases/tag/v1.0.0) include
+their own licenses and attribution. If you ship a dictionary with your
+application, preserve that attribution and follow the dictionary's license.
+Packages ending in `-nc` are for noncommercial use only.
