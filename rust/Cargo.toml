@@ -56,10 +56,10 @@ serde = { version = "1", features = ["derive"] }
 sha2 = "0.11"
 # Preserve metadata key order and exact scoring floats across recompilation.
 serde_json = { version = "1", features = ["preserve_order", "float_roundtrip"] }
-simdutf8 = { version = "0.1", optional = true }
 thiserror = "2"
 tempfile = { version = "3", optional = true }
-unicode-normalization = "0.1"
+# Unicode 18, in step with ICU, std and the byte tables in normalization.rs.
+unicode-normalization = "=0.1.26"
 yada = "0.7"
 
 [target.'cfg(unix)'.dependencies]
@@ -81,7 +81,6 @@ infer = ["dep:memchr"]
 train = [
     "infer",
     "dep:indexmap",
-    "dep:simdutf8",
     "dep:tempfile",
 ]
 
