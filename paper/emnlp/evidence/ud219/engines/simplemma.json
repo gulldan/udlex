@@ -1,0 +1,344 @@
+{
+  "cells": {
+    "afr": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'af'",
+      "status": "unsupported"
+    },
+    "arb": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'ar'",
+      "status": "unsupported"
+    },
+    "bel": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'be'",
+      "status": "unsupported"
+    },
+    "bxr": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'bxr'",
+      "status": "unsupported"
+    },
+    "cat": {
+      "correct": 56816,
+      "model": "simplemma 2.0.0 словарь ca",
+      "status": "scored",
+      "tokens": 59571
+    },
+    "ces": {
+      "correct": 282237,
+      "model": "simplemma 2.0.0 словарь cs",
+      "status": "scored",
+      "tokens": 298180
+    },
+    "chu": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'cu'",
+      "status": "unsupported"
+    },
+    "cym": {
+      "correct": 15911,
+      "model": "simplemma 2.0.0 словарь cy",
+      "status": "scored",
+      "tokens": 17026
+    },
+    "dan": {
+      "correct": 9512,
+      "model": "simplemma 2.0.0 словарь da",
+      "status": "scored",
+      "tokens": 10022
+    },
+    "deu": {
+      "correct": 320158,
+      "model": "simplemma 2.0.0 словарь de",
+      "status": "scored",
+      "tokens": 329795
+    },
+    "ell": {
+      "correct": 9890,
+      "model": "simplemma 2.0.0 словарь el",
+      "status": "scored",
+      "tokens": 10656
+    },
+    "eng": {
+      "correct": 26668,
+      "model": "simplemma 2.0.0 словарь en",
+      "status": "scored",
+      "tokens": 28156
+    },
+    "est": {
+      "correct": 40188,
+      "model": "simplemma 2.0.0 словарь et",
+      "status": "scored",
+      "tokens": 48309
+    },
+    "eus": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'eu'",
+      "status": "unsupported"
+    },
+    "fao": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'fo'",
+      "status": "unsupported"
+    },
+    "fin": {
+      "correct": 17630,
+      "model": "simplemma 2.0.0 словарь fi",
+      "status": "scored",
+      "tokens": 20989
+    },
+    "fra": {
+      "correct": 9504,
+      "model": "simplemma 2.0.0 словарь fr",
+      "status": "scored",
+      "tokens": 9935
+    },
+    "frm": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'frm'",
+      "status": "unsupported"
+    },
+    "gla": {
+      "correct": 9374,
+      "model": "simplemma 2.0.0 словарь gd",
+      "status": "scored",
+      "tokens": 10551
+    },
+    "gle": {
+      "correct": 9320,
+      "model": "simplemma 2.0.0 словарь ga",
+      "status": "scored",
+      "tokens": 10100
+    },
+    "glg": {
+      "correct": 27153,
+      "model": "simplemma 2.0.0 словарь gl",
+      "status": "scored",
+      "tokens": 29740
+    },
+    "glv": {
+      "correct": 9422,
+      "model": "simplemma 2.0.0 словарь gv",
+      "status": "scored",
+      "tokens": 10252
+    },
+    "got": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'got'",
+      "status": "unsupported"
+    },
+    "grc": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'grc'",
+      "status": "unsupported"
+    },
+    "heb": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'he'",
+      "status": "unsupported"
+    },
+    "hin": {
+      "correct": 33729,
+      "model": "simplemma 2.0.0 словарь hi",
+      "status": "scored",
+      "tokens": 35413
+    },
+    "hrv": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'hr'",
+      "status": "unsupported"
+    },
+    "hun": {
+      "correct": 9094,
+      "model": "simplemma 2.0.0 словарь hu",
+      "status": "scored",
+      "tokens": 10432
+    },
+    "hye": {
+      "correct": 9286,
+      "model": "simplemma 2.0.0 словарь hy",
+      "status": "scored",
+      "tokens": 10610
+    },
+    "ind": {
+      "correct": 9573,
+      "model": "simplemma 2.0.0 словарь id",
+      "status": "scored",
+      "tokens": 11712
+    },
+    "isl": {
+      "correct": 117697,
+      "model": "simplemma 2.0.0 словарь is",
+      "status": "scored",
+      "tokens": 139575
+    },
+    "ita": {
+      "correct": 9916,
+      "model": "simplemma 2.0.0 словарь it",
+      "status": "scored",
+      "tokens": 10416
+    },
+    "jpn": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'ja'",
+      "status": "unsupported"
+    },
+    "kat": {
+      "correct": 7076,
+      "model": "simplemma 2.0.0 словарь ka",
+      "status": "scored",
+      "tokens": 10426
+    },
+    "kaz": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'kk'",
+      "status": "unsupported"
+    },
+    "kir": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'ky'",
+      "status": "unsupported"
+    },
+    "kmr": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'kmr'",
+      "status": "unsupported"
+    },
+    "kor": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'ko'",
+      "status": "unsupported"
+    },
+    "lat": {
+      "correct": 26740,
+      "model": "simplemma 2.0.0 словарь la",
+      "status": "scored",
+      "tokens": 29220
+    },
+    "lav": {
+      "correct": 30574,
+      "model": "simplemma 2.0.0 словарь lv",
+      "status": "scored",
+      "tokens": 37080
+    },
+    "lit": {
+      "correct": 10466,
+      "model": "simplemma 2.0.0 словарь lt",
+      "status": "scored",
+      "tokens": 11953
+    },
+    "mdf": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'mdf'",
+      "status": "unsupported"
+    },
+    "myv": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'myv'",
+      "status": "unsupported"
+    },
+    "nld": {
+      "correct": 26243,
+      "model": "simplemma 2.0.0 словарь nl",
+      "status": "scored",
+      "tokens": 28804
+    },
+    "nor": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'no'",
+      "status": "unsupported"
+    },
+    "oci": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'oc'",
+      "status": "unsupported"
+    },
+    "olo": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'olo'",
+      "status": "unsupported"
+    },
+    "pes": {
+      "correct": 22643,
+      "model": "simplemma 2.0.0 словарь fa",
+      "status": "scored",
+      "tokens": 24118
+    },
+    "pol": {
+      "correct": 31814,
+      "model": "simplemma 2.0.0 словарь pl",
+      "status": "scored",
+      "tokens": 33572
+    },
+    "por": {
+      "correct": 27263,
+      "model": "simplemma 2.0.0 словарь pt",
+      "status": "scored",
+      "tokens": 29539
+    },
+    "ron": {
+      "correct": 18206,
+      "model": "simplemma 2.0.0 словарь ro",
+      "status": "scored",
+      "tokens": 20943
+    },
+    "rus": {
+      "correct": 14299,
+      "model": "simplemma 2.0.0 словарь ru",
+      "status": "scored",
+      "tokens": 15334
+    },
+    "san": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'sa'",
+      "status": "unsupported"
+    },
+    "slk": {
+      "correct": 11601,
+      "model": "simplemma 2.0.0 словарь sk",
+      "status": "scored",
+      "tokens": 12702
+    },
+    "slv": {
+      "correct": 24216,
+      "model": "simplemma 2.0.0 словарь sl",
+      "status": "scored",
+      "tokens": 25407
+    },
+    "sme": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'sme'",
+      "status": "unsupported"
+    },
+    "spa": {
+      "correct": 49747,
+      "model": "simplemma 2.0.0 словарь es",
+      "status": "scored",
+      "tokens": 53584
+    },
+    "sqi": {
+      "correct": 270,
+      "model": "simplemma 2.0.0 словарь sq",
+      "status": "scored",
+      "tokens": 371
+    },
+    "srp": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'sr'",
+      "status": "unsupported"
+    },
+    "swe": {
+      "correct": 19192,
+      "model": "simplemma 2.0.0 словарь sv",
+      "status": "scored",
+      "tokens": 20371
+    },
+    "tur": {
+      "correct": 9028,
+      "model": "simplemma 2.0.0 словарь tr",
+      "status": "scored",
+      "tokens": 9904
+    },
+    "uig": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'ug'",
+      "status": "unsupported"
+    },
+    "ukr": {
+      "correct": 14763,
+      "model": "simplemma 2.0.0 словарь uk",
+      "status": "scored",
+      "tokens": 16075
+    },
+    "urd": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'ur'",
+      "status": "unsupported"
+    },
+    "uzb": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'uz'",
+      "status": "unsupported"
+    },
+    "yid": {
+      "reason": "Unsupported: simplemma declares no lemmatizer for 'yi'",
+      "status": "unsupported"
+    }
+  },
+  "engine": "simplemma",
+  "version": "2.0.0"
+}

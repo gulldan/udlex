@@ -1,0 +1,310 @@
+{
+  "cells": {
+    "afr": {
+      "reason": "OSError: [E050] Can't find model 'af_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "arb": {
+      "reason": "OSError: [E050] Can't find model 'ar_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "bel": {
+      "reason": "OSError: [E050] Can't find model 'be_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "bxr": {
+      "reason": "OSError: [E050] Can't find model 'bxr_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "cat": {
+      "correct": 57505,
+      "model": "ca_core_news_sm-3.8.0",
+      "status": "scored",
+      "tokens": 59571
+    },
+    "ces": {
+      "reason": "OSError: [E050] Can't find model 'cs_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "chu": {
+      "reason": "OSError: [E050] Can't find model 'cu_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "cym": {
+      "reason": "OSError: [E050] Can't find model 'cy_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "dan": {
+      "correct": 9403,
+      "model": "da_core_news_sm-3.8.0",
+      "status": "scored",
+      "tokens": 10022
+    },
+    "deu": {
+      "correct": 272077,
+      "model": "de_core_news_sm-3.8.0",
+      "status": "scored",
+      "tokens": 329795
+    },
+    "ell": {
+      "correct": 9349,
+      "model": "el_core_news_sm-3.8.0",
+      "status": "scored",
+      "tokens": 10656
+    },
+    "eng": {
+      "correct": 27151,
+      "model": "en_core_web_sm-3.8.0",
+      "status": "scored",
+      "tokens": 28156
+    },
+    "est": {
+      "reason": "OSError: [E050] Can't find model 'et_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "eus": {
+      "reason": "OSError: [E050] Can't find model 'eu_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "fao": {
+      "reason": "OSError: [E050] Can't find model 'fo_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "fin": {
+      "correct": 16651,
+      "model": "fi_core_news_sm-3.8.0",
+      "status": "scored",
+      "tokens": 20989
+    },
+    "fra": {
+      "correct": 9334,
+      "model": "fr_core_news_sm-3.8.0",
+      "status": "scored",
+      "tokens": 9935
+    },
+    "frm": {
+      "reason": "OSError: [E050] Can't find model 'frm_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "gla": {
+      "reason": "OSError: [E050] Can't find model 'gd_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "gle": {
+      "reason": "OSError: [E050] Can't find model 'ga_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "glg": {
+      "reason": "OSError: [E050] Can't find model 'gl_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "glv": {
+      "reason": "OSError: [E050] Can't find model 'gv_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "got": {
+      "reason": "OSError: [E050] Can't find model 'got_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "grc": {
+      "reason": "OSError: [E050] Can't find model 'grc_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "heb": {
+      "reason": "OSError: [E050] Can't find model 'he_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "hin": {
+      "reason": "OSError: [E050] Can't find model 'hi_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "hrv": {
+      "correct": 23519,
+      "model": "hr_core_news_sm-3.8.0",
+      "status": "scored",
+      "tokens": 24203
+    },
+    "hun": {
+      "reason": "OSError: [E050] Can't find model 'hu_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "hye": {
+      "reason": "OSError: [E050] Can't find model 'hy_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "ind": {
+      "reason": "OSError: [E050] Can't find model 'id_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "isl": {
+      "reason": "OSError: [E050] Can't find model 'is_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "ita": {
+      "correct": 10105,
+      "model": "it_core_news_sm-3.8.0",
+      "status": "scored",
+      "tokens": 10416
+    },
+    "jpn": {
+      "reason": "LookupError: ja_core_news_sm runs no lemmatizer",
+      "status": "unsupported"
+    },
+    "kat": {
+      "reason": "OSError: [E050] Can't find model 'ka_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "kaz": {
+      "reason": "OSError: [E050] Can't find model 'kk_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "kir": {
+      "reason": "OSError: [E050] Can't find model 'ky_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "kmr": {
+      "reason": "OSError: [E050] Can't find model 'kmr_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "kor": {
+      "correct": 22794,
+      "model": "ko_core_news_sm-3.8.0",
+      "status": "scored",
+      "tokens": 28352
+    },
+    "lat": {
+      "reason": "OSError: [E050] Can't find model 'la_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "lav": {
+      "reason": "OSError: [E050] Can't find model 'lv_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "lit": {
+      "correct": 10838,
+      "model": "lt_core_news_sm-3.8.0",
+      "status": "scored",
+      "tokens": 11953
+    },
+    "mdf": {
+      "reason": "OSError: [E050] Can't find model 'mdf_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "myv": {
+      "reason": "OSError: [E050] Can't find model 'myv_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "nld": {
+      "correct": 26236,
+      "model": "nl_core_news_sm-3.8.0",
+      "status": "scored",
+      "tokens": 28804
+    },
+    "nor": {
+      "reason": "OSError: [E050] Can't find model 'no_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "oci": {
+      "reason": "OSError: [E050] Can't find model 'oc_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "olo": {
+      "reason": "OSError: [E050] Can't find model 'olo_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "pes": {
+      "reason": "OSError: [E050] Can't find model 'fa_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "pol": {
+      "correct": 31129,
+      "model": "pl_core_news_sm-3.8.0",
+      "status": "scored",
+      "tokens": 33572
+    },
+    "por": {
+      "correct": 28454,
+      "model": "pt_core_news_sm-3.8.0",
+      "status": "scored",
+      "tokens": 29539
+    },
+    "ron": {
+      "correct": 14523,
+      "model": "ro_core_news_sm-3.8.0",
+      "status": "scored",
+      "tokens": 20943
+    },
+    "rus": {
+      "correct": 13036,
+      "model": "ru_core_news_sm-3.8.0",
+      "status": "scored",
+      "tokens": 15334
+    },
+    "san": {
+      "reason": "OSError: [E050] Can't find model 'sa_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "slk": {
+      "reason": "OSError: [E050] Can't find model 'sk_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "slv": {
+      "correct": 24038,
+      "model": "sl_core_news_sm-3.8.0",
+      "status": "scored",
+      "tokens": 25407
+    },
+    "sme": {
+      "reason": "OSError: [E050] Can't find model 'sme_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "spa": {
+      "correct": 52668,
+      "model": "es_core_news_sm-3.8.0",
+      "status": "scored",
+      "tokens": 53584
+    },
+    "sqi": {
+      "reason": "OSError: [E050] Can't find model 'sq_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "srp": {
+      "reason": "OSError: [E050] Can't find model 'sr_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "swe": {
+      "correct": 18560,
+      "model": "sv_core_news_sm-3.8.0",
+      "status": "scored",
+      "tokens": 20371
+    },
+    "tur": {
+      "reason": "OSError: [E050] Can't find model 'tr_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "uig": {
+      "reason": "OSError: [E050] Can't find model 'ug_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "ukr": {
+      "correct": 14354,
+      "model": "uk_core_news_sm-3.8.0",
+      "status": "scored",
+      "tokens": 16075
+    },
+    "urd": {
+      "reason": "OSError: [E050] Can't find model 'ur_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "uzb": {
+      "reason": "OSError: [E050] Can't find model 'uz_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "yid": {
+      "reason": "OSError: [E050] Can't find model 'yi_core_news_sm'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    }
+  },
+  "engine": "spacy-sm",
+  "version": "3.8.18"
+}

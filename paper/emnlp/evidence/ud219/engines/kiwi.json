@@ -1,0 +1,272 @@
+{
+  "cells": {
+    "afr": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'af'",
+      "status": "unsupported"
+    },
+    "arb": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'ar'",
+      "status": "unsupported"
+    },
+    "bel": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'be'",
+      "status": "unsupported"
+    },
+    "bxr": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'bxr'",
+      "status": "unsupported"
+    },
+    "cat": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'ca'",
+      "status": "unsupported"
+    },
+    "ces": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'cs'",
+      "status": "unsupported"
+    },
+    "chu": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'cu'",
+      "status": "unsupported"
+    },
+    "cym": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'cy'",
+      "status": "unsupported"
+    },
+    "dan": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'da'",
+      "status": "unsupported"
+    },
+    "deu": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'de'",
+      "status": "unsupported"
+    },
+    "ell": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'el'",
+      "status": "unsupported"
+    },
+    "eng": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'en'",
+      "status": "unsupported"
+    },
+    "est": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'et'",
+      "status": "unsupported"
+    },
+    "eus": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'eu'",
+      "status": "unsupported"
+    },
+    "fao": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'fo'",
+      "status": "unsupported"
+    },
+    "fin": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'fi'",
+      "status": "unsupported"
+    },
+    "fra": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'fr'",
+      "status": "unsupported"
+    },
+    "frm": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'frm'",
+      "status": "unsupported"
+    },
+    "gla": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'gd'",
+      "status": "unsupported"
+    },
+    "gle": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'ga'",
+      "status": "unsupported"
+    },
+    "glg": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'gl'",
+      "status": "unsupported"
+    },
+    "glv": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'gv'",
+      "status": "unsupported"
+    },
+    "got": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'got'",
+      "status": "unsupported"
+    },
+    "grc": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'grc'",
+      "status": "unsupported"
+    },
+    "heb": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'he'",
+      "status": "unsupported"
+    },
+    "hin": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'hi'",
+      "status": "unsupported"
+    },
+    "hrv": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'hr'",
+      "status": "unsupported"
+    },
+    "hun": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'hu'",
+      "status": "unsupported"
+    },
+    "hye": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'hy'",
+      "status": "unsupported"
+    },
+    "ind": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'id'",
+      "status": "unsupported"
+    },
+    "isl": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'is'",
+      "status": "unsupported"
+    },
+    "ita": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'it'",
+      "status": "unsupported"
+    },
+    "jpn": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'ja'",
+      "status": "unsupported"
+    },
+    "kat": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'ka'",
+      "status": "unsupported"
+    },
+    "kaz": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'kk'",
+      "status": "unsupported"
+    },
+    "kir": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'ky'",
+      "status": "unsupported"
+    },
+    "kmr": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'kmr'",
+      "status": "unsupported"
+    },
+    "kor": {
+      "correct": 22570,
+      "model": "kiwipiepy 0.24.1: встроенный словарь Kiwi",
+      "status": "scored",
+      "tokens": 28352
+    },
+    "lat": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'la'",
+      "status": "unsupported"
+    },
+    "lav": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'lv'",
+      "status": "unsupported"
+    },
+    "lit": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'lt'",
+      "status": "unsupported"
+    },
+    "mdf": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'mdf'",
+      "status": "unsupported"
+    },
+    "myv": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'myv'",
+      "status": "unsupported"
+    },
+    "nld": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'nl'",
+      "status": "unsupported"
+    },
+    "nor": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'no'",
+      "status": "unsupported"
+    },
+    "oci": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'oc'",
+      "status": "unsupported"
+    },
+    "olo": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'olo'",
+      "status": "unsupported"
+    },
+    "pes": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'fa'",
+      "status": "unsupported"
+    },
+    "pol": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'pl'",
+      "status": "unsupported"
+    },
+    "por": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'pt'",
+      "status": "unsupported"
+    },
+    "ron": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'ro'",
+      "status": "unsupported"
+    },
+    "rus": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'ru'",
+      "status": "unsupported"
+    },
+    "san": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'sa'",
+      "status": "unsupported"
+    },
+    "slk": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'sk'",
+      "status": "unsupported"
+    },
+    "slv": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'sl'",
+      "status": "unsupported"
+    },
+    "sme": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'sme'",
+      "status": "unsupported"
+    },
+    "spa": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'es'",
+      "status": "unsupported"
+    },
+    "sqi": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'sq'",
+      "status": "unsupported"
+    },
+    "srp": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'sr'",
+      "status": "unsupported"
+    },
+    "swe": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'sv'",
+      "status": "unsupported"
+    },
+    "tur": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'tr'",
+      "status": "unsupported"
+    },
+    "uig": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'ug'",
+      "status": "unsupported"
+    },
+    "ukr": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'uk'",
+      "status": "unsupported"
+    },
+    "urd": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'ur'",
+      "status": "unsupported"
+    },
+    "uzb": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'uz'",
+      "status": "unsupported"
+    },
+    "yid": {
+      "reason": "Unsupported: kiwi declares no lemmatizer for 'yi'",
+      "status": "unsupported"
+    }
+  },
+  "engine": "kiwi",
+  "version": "0.24.1"
+}

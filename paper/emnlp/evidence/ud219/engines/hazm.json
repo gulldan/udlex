@@ -1,0 +1,272 @@
+{
+  "cells": {
+    "afr": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'af'",
+      "status": "unsupported"
+    },
+    "arb": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'ar'",
+      "status": "unsupported"
+    },
+    "bel": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'be'",
+      "status": "unsupported"
+    },
+    "bxr": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'bxr'",
+      "status": "unsupported"
+    },
+    "cat": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'ca'",
+      "status": "unsupported"
+    },
+    "ces": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'cs'",
+      "status": "unsupported"
+    },
+    "chu": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'cu'",
+      "status": "unsupported"
+    },
+    "cym": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'cy'",
+      "status": "unsupported"
+    },
+    "dan": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'da'",
+      "status": "unsupported"
+    },
+    "deu": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'de'",
+      "status": "unsupported"
+    },
+    "ell": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'el'",
+      "status": "unsupported"
+    },
+    "eng": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'en'",
+      "status": "unsupported"
+    },
+    "est": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'et'",
+      "status": "unsupported"
+    },
+    "eus": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'eu'",
+      "status": "unsupported"
+    },
+    "fao": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'fo'",
+      "status": "unsupported"
+    },
+    "fin": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'fi'",
+      "status": "unsupported"
+    },
+    "fra": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'fr'",
+      "status": "unsupported"
+    },
+    "frm": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'frm'",
+      "status": "unsupported"
+    },
+    "gla": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'gd'",
+      "status": "unsupported"
+    },
+    "gle": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'ga'",
+      "status": "unsupported"
+    },
+    "glg": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'gl'",
+      "status": "unsupported"
+    },
+    "glv": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'gv'",
+      "status": "unsupported"
+    },
+    "got": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'got'",
+      "status": "unsupported"
+    },
+    "grc": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'grc'",
+      "status": "unsupported"
+    },
+    "heb": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'he'",
+      "status": "unsupported"
+    },
+    "hin": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'hi'",
+      "status": "unsupported"
+    },
+    "hrv": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'hr'",
+      "status": "unsupported"
+    },
+    "hun": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'hu'",
+      "status": "unsupported"
+    },
+    "hye": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'hy'",
+      "status": "unsupported"
+    },
+    "ind": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'id'",
+      "status": "unsupported"
+    },
+    "isl": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'is'",
+      "status": "unsupported"
+    },
+    "ita": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'it'",
+      "status": "unsupported"
+    },
+    "jpn": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'ja'",
+      "status": "unsupported"
+    },
+    "kat": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'ka'",
+      "status": "unsupported"
+    },
+    "kaz": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'kk'",
+      "status": "unsupported"
+    },
+    "kir": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'ky'",
+      "status": "unsupported"
+    },
+    "kmr": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'kmr'",
+      "status": "unsupported"
+    },
+    "kor": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'ko'",
+      "status": "unsupported"
+    },
+    "lat": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'la'",
+      "status": "unsupported"
+    },
+    "lav": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'lv'",
+      "status": "unsupported"
+    },
+    "lit": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'lt'",
+      "status": "unsupported"
+    },
+    "mdf": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'mdf'",
+      "status": "unsupported"
+    },
+    "myv": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'myv'",
+      "status": "unsupported"
+    },
+    "nld": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'nl'",
+      "status": "unsupported"
+    },
+    "nor": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'no'",
+      "status": "unsupported"
+    },
+    "oci": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'oc'",
+      "status": "unsupported"
+    },
+    "olo": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'olo'",
+      "status": "unsupported"
+    },
+    "pes": {
+      "correct": 19328,
+      "model": "hazm 0.12.1: words.dat + verbs.dat",
+      "status": "scored",
+      "tokens": 24118
+    },
+    "pol": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'pl'",
+      "status": "unsupported"
+    },
+    "por": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'pt'",
+      "status": "unsupported"
+    },
+    "ron": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'ro'",
+      "status": "unsupported"
+    },
+    "rus": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'ru'",
+      "status": "unsupported"
+    },
+    "san": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'sa'",
+      "status": "unsupported"
+    },
+    "slk": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'sk'",
+      "status": "unsupported"
+    },
+    "slv": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'sl'",
+      "status": "unsupported"
+    },
+    "sme": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'sme'",
+      "status": "unsupported"
+    },
+    "spa": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'es'",
+      "status": "unsupported"
+    },
+    "sqi": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'sq'",
+      "status": "unsupported"
+    },
+    "srp": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'sr'",
+      "status": "unsupported"
+    },
+    "swe": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'sv'",
+      "status": "unsupported"
+    },
+    "tur": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'tr'",
+      "status": "unsupported"
+    },
+    "uig": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'ug'",
+      "status": "unsupported"
+    },
+    "ukr": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'uk'",
+      "status": "unsupported"
+    },
+    "urd": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'ur'",
+      "status": "unsupported"
+    },
+    "uzb": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'uz'",
+      "status": "unsupported"
+    },
+    "yid": {
+      "reason": "Unsupported: hazm declares no lemmatizer for 'yi'",
+      "status": "unsupported"
+    }
+  },
+  "engine": "hazm",
+  "version": "0.12.1"
+}

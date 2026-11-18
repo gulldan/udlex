@@ -1,0 +1,396 @@
+{
+  "cells": {
+    "afr": {
+      "correct": 9865,
+      "model": "af/afribooms",
+      "status": "scored",
+      "tokens": 10063
+    },
+    "arb": {
+      "correct": 26916,
+      "model": "ar/padt",
+      "status": "scored",
+      "tokens": 28183
+    },
+    "bel": {
+      "correct": 15244,
+      "model": "be/hse",
+      "status": "scored",
+      "tokens": 15871
+    },
+    "bxr": {
+      "correct": 9736,
+      "model": "bxr/bdt",
+      "status": "scored",
+      "tokens": 9960
+    },
+    "cat": {
+      "correct": 59022,
+      "model": "ca/ancora",
+      "status": "scored",
+      "tokens": 59571
+    },
+    "ces": {
+      "correct": 295379,
+      "model": "cs/pdtc",
+      "status": "scored",
+      "tokens": 298180
+    },
+    "chu": {
+      "correct": 18636,
+      "model": "cu/proiel",
+      "status": "scored",
+      "tokens": 19816
+    },
+    "cym": {
+      "correct": 16206,
+      "model": "cy/ccg",
+      "status": "scored",
+      "tokens": 17026
+    },
+    "dan": {
+      "correct": 9720,
+      "model": "da/ddt",
+      "status": "scored",
+      "tokens": 10022
+    },
+    "deu": {
+      "correct": 324846,
+      "model": "de/hdt",
+      "status": "scored",
+      "tokens": 329795
+    },
+    "ell": {
+      "correct": 10292,
+      "model": "el/gdt",
+      "status": "scored",
+      "tokens": 10656
+    },
+    "eng": {
+      "correct": 27797,
+      "model": "en/gum",
+      "status": "scored",
+      "tokens": 28156
+    },
+    "est": {
+      "correct": 46228,
+      "model": "et/edt",
+      "status": "scored",
+      "tokens": 48309
+    },
+    "eus": {
+      "correct": 23387,
+      "model": "eu/bdt",
+      "status": "scored",
+      "tokens": 24312
+    },
+    "fao": {
+      "reason": "LookupError: Cannot find the following processor and model name combination: lemma, identity. Please check if you have provided the correct model name.",
+      "status": "unsupported"
+    },
+    "fin": {
+      "correct": 19986,
+      "model": "fi/tdt",
+      "status": "scored",
+      "tokens": 20989
+    },
+    "fra": {
+      "correct": 9825,
+      "model": "fr/sequoia",
+      "status": "scored",
+      "tokens": 9935
+    },
+    "frm": {
+      "correct": 6001,
+      "model": "frm/profiterole",
+      "status": "scored",
+      "tokens": 13586
+    },
+    "gla": {
+      "correct": 10270,
+      "model": "gd/arcosg",
+      "status": "scored",
+      "tokens": 10551
+    },
+    "gle": {
+      "correct": 9640,
+      "model": "ga/idt",
+      "status": "scored",
+      "tokens": 10100
+    },
+    "glg": {
+      "correct": 29264,
+      "model": "gl/ctg",
+      "status": "scored",
+      "tokens": 29740
+    },
+    "glv": {
+      "correct": 9737,
+      "model": "gv/cadhan",
+      "status": "scored",
+      "tokens": 10252
+    },
+    "got": {
+      "correct": 9503,
+      "model": "got/proiel",
+      "status": "scored",
+      "tokens": 9878
+    },
+    "grc": {
+      "correct": 12716,
+      "model": "grc/proiel",
+      "status": "scored",
+      "tokens": 13091
+    },
+    "heb": {
+      "correct": 11632,
+      "model": "he/htb",
+      "status": "scored",
+      "tokens": 11993
+    },
+    "hin": {
+      "correct": 34295,
+      "model": "hi/hdtb",
+      "status": "scored",
+      "tokens": 35413
+    },
+    "hrv": {
+      "correct": 23392,
+      "model": "hr/set",
+      "status": "scored",
+      "tokens": 24203
+    },
+    "hun": {
+      "correct": 9824,
+      "model": "hu/szeged",
+      "status": "scored",
+      "tokens": 10432
+    },
+    "hye": {
+      "correct": 10260,
+      "model": "hy/armtdp",
+      "status": "scored",
+      "tokens": 10610
+    },
+    "ind": {
+      "correct": 11540,
+      "model": "id/gsd",
+      "status": "scored",
+      "tokens": 11712
+    },
+    "isl": {
+      "correct": 133905,
+      "model": "is/icepahc",
+      "status": "scored",
+      "tokens": 139575
+    },
+    "ita": {
+      "correct": 10244,
+      "model": "it/isdt",
+      "status": "scored",
+      "tokens": 10416
+    },
+    "jpn": {
+      "correct": 12815,
+      "model": "ja/gsd",
+      "status": "scored",
+      "tokens": 13034
+    },
+    "kat": {
+      "correct": 9206,
+      "model": "ka/gnc",
+      "status": "scored",
+      "tokens": 10426
+    },
+    "kaz": {
+      "correct": 9869,
+      "model": "kk/ktb",
+      "status": "scored",
+      "tokens": 10007
+    },
+    "kir": {
+      "correct": 9573,
+      "model": "ky/ktmu",
+      "status": "scored",
+      "tokens": 10840
+    },
+    "kmr": {
+      "correct": 9806,
+      "model": "kmr/kurmanji",
+      "status": "scored",
+      "tokens": 9963
+    },
+    "kor": {
+      "correct": 26695,
+      "model": "ko/kaist",
+      "status": "scored",
+      "tokens": 28352
+    },
+    "lat": {
+      "correct": 28951,
+      "model": "la/ittb",
+      "status": "scored",
+      "tokens": 29220
+    },
+    "lav": {
+      "correct": 35835,
+      "model": "lv/lvtb",
+      "status": "scored",
+      "tokens": 37080
+    },
+    "lit": {
+      "correct": 11550,
+      "model": "lt/alksnis",
+      "status": "scored",
+      "tokens": 11953
+    },
+    "mdf": {
+      "reason": "LookupError: Unknown language requested: mdf",
+      "status": "unsupported"
+    },
+    "myv": {
+      "correct": 8949,
+      "model": "myv/jr",
+      "status": "scored",
+      "tokens": 10470
+    },
+    "nld": {
+      "correct": 27509,
+      "model": "nl/lassysmall",
+      "status": "scored",
+      "tokens": 28804
+    },
+    "nor": {
+      "correct": 24198,
+      "model": "nn/nynorsk",
+      "status": "scored",
+      "tokens": 24697
+    },
+    "oci": {
+      "correct": 9363,
+      "model": "oc/ttb",
+      "status": "scored",
+      "tokens": 9956
+    },
+    "olo": {
+      "reason": "LookupError: Unknown language requested: olo",
+      "status": "unsupported"
+    },
+    "pes": {
+      "correct": 23872,
+      "model": "fa/perdt",
+      "status": "scored",
+      "tokens": 24118
+    },
+    "pol": {
+      "correct": 32677,
+      "model": "pl/pdb",
+      "status": "scored",
+      "tokens": 33572
+    },
+    "por": {
+      "correct": 29364,
+      "model": "pt/petrogold",
+      "status": "scored",
+      "tokens": 29539
+    },
+    "ron": {
+      "correct": 20074,
+      "model": "ro/nonstandard",
+      "status": "scored",
+      "tokens": 20943
+    },
+    "rus": {
+      "correct": 14827,
+      "model": "ru/taiga",
+      "status": "scored",
+      "tokens": 15334
+    },
+    "san": {
+      "correct": 18398,
+      "model": "sa/vedic",
+      "status": "scored",
+      "tokens": 19338
+    },
+    "slk": {
+      "correct": 11992,
+      "model": "sk/snk",
+      "status": "scored",
+      "tokens": 12702
+    },
+    "slv": {
+      "correct": 24869,
+      "model": "sl/ssj",
+      "status": "scored",
+      "tokens": 25407
+    },
+    "sme": {
+      "correct": 8809,
+      "model": "sme/giella",
+      "status": "scored",
+      "tokens": 9927
+    },
+    "spa": {
+      "correct": 53213,
+      "model": "es/ancora",
+      "status": "scored",
+      "tokens": 53584
+    },
+    "sqi": {
+      "correct": 310,
+      "model": "sq/staf",
+      "status": "scored",
+      "tokens": 371
+    },
+    "srp": {
+      "correct": 10994,
+      "model": "sr/set",
+      "status": "scored",
+      "tokens": 11410
+    },
+    "swe": {
+      "correct": 19966,
+      "model": "sv/talbanken",
+      "status": "scored",
+      "tokens": 20371
+    },
+    "tur": {
+      "correct": 9274,
+      "model": "tr/penn",
+      "status": "scored",
+      "tokens": 9904
+    },
+    "uig": {
+      "correct": 7237,
+      "model": "ug/udt",
+      "status": "scored",
+      "tokens": 7573
+    },
+    "ukr": {
+      "correct": 15540,
+      "model": "uk/iu",
+      "status": "scored",
+      "tokens": 16075
+    },
+    "urd": {
+      "correct": 13881,
+      "model": "ur/udtb",
+      "status": "scored",
+      "tokens": 14537
+    },
+    "uzb": {
+      "correct": 1855,
+      "model": "uz/uzudt",
+      "status": "scored",
+      "tokens": 2128
+    },
+    "yid": {
+      "correct": 9241,
+      "model": "yi/yitb",
+      "status": "scored",
+      "tokens": 9955
+    }
+  },
+  "engine": "stanza",
+  "version": "1.15.1"
+}

@@ -1,0 +1,315 @@
+{
+  "afr": {
+    "covered": 48,
+    "lemma_model": "afribooms_nocharlm.pt",
+    "unseen_types": 1106
+  },
+  "arb": {
+    "covered": 0,
+    "lemma_model": "padt_nocharlm.pt",
+    "unseen_types": 1439
+  },
+  "bel": {
+    "covered": 112,
+    "lemma_model": "hse_nocharlm.pt",
+    "unseen_types": 2100
+  },
+  "bxr": {
+    "covered": 3600,
+    "lemma_model": "bdt_nocharlm.pt",
+    "unseen_types": 4206
+  },
+  "cat": {
+    "covered": 165,
+    "lemma_model": "ancora_nocharlm.pt",
+    "unseen_types": 2261
+  },
+  "ces": {
+    "covered": 1267,
+    "lemma_model": "pdtc_nocharlm.pt",
+    "unseen_types": 11087
+  },
+  "chu": {
+    "covered": 195,
+    "lemma_model": "proiel_nocharlm.pt",
+    "unseen_types": 3881
+  },
+  "cym": {
+    "covered": 123,
+    "lemma_model": "ccg_nocharlm.pt",
+    "unseen_types": 1773
+  },
+  "dan": {
+    "covered": 80,
+    "lemma_model": "ddt_nocharlm.pt",
+    "unseen_types": 1375
+  },
+  "deu": {
+    "covered": 285,
+    "lemma_model": "hdt_nocharlm.pt",
+    "unseen_types": 13742
+  },
+  "ell": {
+    "covered": 54,
+    "lemma_model": "gdt_nocharlm.pt",
+    "unseen_types": 1445
+  },
+  "eng": {
+    "covered": 196,
+    "lemma_model": "gum_nocharlm.pt",
+    "unseen_types": 1524
+  },
+  "est": {
+    "covered": 324,
+    "lemma_model": "edt_nocharlm.pt",
+    "unseen_types": 6739
+  },
+  "eus": {
+    "covered": 307,
+    "lemma_model": "bdt_nocharlm.pt",
+    "unseen_types": 3901
+  },
+  "fin": {
+    "covered": 180,
+    "lemma_model": "tdt_nocharlm.pt",
+    "unseen_types": 4301
+  },
+  "fra": {
+    "covered": 54,
+    "lemma_model": "sequoia_nocharlm.pt",
+    "unseen_types": 864
+  },
+  "frm": {
+    "lemma_model": null
+  },
+  "gla": {
+    "covered": 53,
+    "lemma_model": "arcosg_nocharlm.pt",
+    "unseen_types": 650
+  },
+  "gle": {
+    "covered": 91,
+    "lemma_model": "idt_nocharlm.pt",
+    "unseen_types": 1190
+  },
+  "glg": {
+    "covered": 204,
+    "lemma_model": "ctg_nocharlm.pt",
+    "unseen_types": 2644
+  },
+  "glv": {
+    "covered": 29,
+    "lemma_model": "cadhan_nocharlm.pt",
+    "unseen_types": 1049
+  },
+  "got": {
+    "covered": 6,
+    "lemma_model": "proiel_nocharlm.pt",
+    "unseen_types": 1090
+  },
+  "grc": {
+    "covered": 11,
+    "lemma_model": "proiel_nocharlm.pt",
+    "unseen_types": 1346
+  },
+  "heb": {
+    "covered": 11,
+    "lemma_model": "htb_nocharlm.pt",
+    "unseen_types": 895
+  },
+  "hin": {
+    "covered": 0,
+    "lemma_model": "hdtb_nocharlm.pt",
+    "unseen_types": 1154
+  },
+  "hrv": {
+    "covered": 207,
+    "lemma_model": "set_nocharlm.pt",
+    "unseen_types": 3086
+  },
+  "hun": {
+    "covered": 70,
+    "lemma_model": "szeged_nocharlm.pt",
+    "unseen_types": 3209
+  },
+  "hye": {
+    "covered": 165,
+    "lemma_model": "armtdp_nocharlm.pt",
+    "unseen_types": 2044
+  },
+  "ind": {
+    "covered": 110,
+    "lemma_model": "gsd_nocharlm.pt",
+    "unseen_types": 1395
+  },
+  "isl": {
+    "covered": 266,
+    "lemma_model": "icepahc_nocharlm.pt",
+    "unseen_types": 7358
+  },
+  "ita": {
+    "covered": 41,
+    "lemma_model": "isdt_nocharlm.pt",
+    "unseen_types": 574
+  },
+  "jpn": {
+    "covered": 0,
+    "lemma_model": "gsd_nocharlm.pt",
+    "unseen_types": 751
+  },
+  "kat": {
+    "covered": 0,
+    "lemma_model": "gnc_nocharlm.pt",
+    "unseen_types": 3143
+  },
+  "kaz": {
+    "covered": 3703,
+    "lemma_model": "ktb_nocharlm.pt",
+    "unseen_types": 4308
+  },
+  "kir": {
+    "covered": 76,
+    "lemma_model": "ktmu_nocharlm.pt",
+    "unseen_types": 2604
+  },
+  "kmr": {
+    "covered": 2398,
+    "lemma_model": "kurmanji_nocharlm.pt",
+    "unseen_types": 2786
+  },
+  "kor": {
+    "covered": 0,
+    "lemma_model": "kaist_nocharlm.pt",
+    "unseen_types": 6450
+  },
+  "lat": {
+    "covered": 0,
+    "lemma_model": "ittb_nocharlm.pt",
+    "unseen_types": 476
+  },
+  "lav": {
+    "covered": 330,
+    "lemma_model": "lvtb_nocharlm.pt",
+    "unseen_types": 4829
+  },
+  "lit": {
+    "covered": 1916,
+    "lemma_model": "alksnis_nocharlm.pt",
+    "unseen_types": 2703
+  },
+  "myv": {
+    "covered": 92,
+    "lemma_model": "jr_nocharlm.pt",
+    "unseen_types": 2977
+  },
+  "nld": {
+    "covered": 104,
+    "lemma_model": "lassysmall_nocharlm.pt",
+    "unseen_types": 2309
+  },
+  "nor": {
+    "covered": 150,
+    "lemma_model": "nynorsk_nocharlm.pt",
+    "unseen_types": 2126
+  },
+  "oci": {
+    "covered": 82,
+    "lemma_model": "ttb_nocharlm.pt",
+    "unseen_types": 1866
+  },
+  "pes": {
+    "covered": 0,
+    "lemma_model": "perdt_nocharlm.pt",
+    "unseen_types": 718
+  },
+  "pol": {
+    "covered": 344,
+    "lemma_model": "pdb_nocharlm.pt",
+    "unseen_types": 4235
+  },
+  "por": {
+    "covered": 71,
+    "lemma_model": "petrogold_nocharlm.pt",
+    "unseen_types": 963
+  },
+  "ron": {
+    "covered": 93,
+    "lemma_model": "nonstandard_nocharlm.pt",
+    "unseen_types": 840
+  },
+  "rus": {
+    "covered": 185,
+    "lemma_model": "taiga_nocharlm.pt",
+    "unseen_types": 1377
+  },
+  "san": {
+    "covered": 0,
+    "lemma_model": "vedic_nocharlm.pt",
+    "unseen_types": 2330
+  },
+  "slk": {
+    "covered": 149,
+    "lemma_model": "snk_nocharlm.pt",
+    "unseen_types": 3791
+  },
+  "slv": {
+    "covered": 204,
+    "lemma_model": "ssj_nocharlm.pt",
+    "unseen_types": 3545
+  },
+  "sme": {
+    "covered": 89,
+    "lemma_model": "giella_nocharlm.pt",
+    "unseen_types": 2631
+  },
+  "spa": {
+    "covered": 184,
+    "lemma_model": "ancora_nocharlm.pt",
+    "unseen_types": 2367
+  },
+  "sqi": {
+    "covered": 4,
+    "lemma_model": "staf_nocharlm.pt",
+    "unseen_types": 96
+  },
+  "srp": {
+    "covered": 103,
+    "lemma_model": "set_nocharlm.pt",
+    "unseen_types": 1487
+  },
+  "swe": {
+    "covered": 107,
+    "lemma_model": "talbanken_nocharlm.pt",
+    "unseen_types": 2400
+  },
+  "tur": {
+    "covered": 78,
+    "lemma_model": "penn_nocharlm.pt",
+    "unseen_types": 1303
+  },
+  "uig": {
+    "covered": 4,
+    "lemma_model": "udt_nocharlm.pt",
+    "unseen_types": 1173
+  },
+  "ukr": {
+    "covered": 147,
+    "lemma_model": "iu_nocharlm.pt",
+    "unseen_types": 3347
+  },
+  "urd": {
+    "covered": 0,
+    "lemma_model": "udtb_nocharlm.pt",
+    "unseen_types": 646
+  },
+  "uzb": {
+    "covered": 2,
+    "lemma_model": "uzudt_nocharlm.pt",
+    "unseen_types": 718
+  },
+  "yid": {
+    "covered": 2,
+    "lemma_model": "yitb_nocharlm.pt",
+    "unseen_types": 1069
+  }
+}
