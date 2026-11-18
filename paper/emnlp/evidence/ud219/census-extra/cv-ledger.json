@@ -1,0 +1,366 @@
+{
+  "ang": {
+    "fold_tokens": [
+      87,
+      84
+    ],
+    "unit": "sentence within one original group"
+  },
+  "ave": {
+    "fold_tokens": [
+      149,
+      148
+    ],
+    "unit": "sentences"
+  },
+  "bar": {
+    "fold_tokens": [
+      0,
+      0
+    ],
+    "unit": "sentences"
+  },
+  "bej": {
+    "fold_tokens": [
+      0,
+      0
+    ],
+    "unit": "sentences"
+  },
+  "bgs": {
+    "fold_tokens": [
+      436,
+      438
+    ],
+    "unit": "sentences"
+  },
+  "che": {
+    "fold_tokens": [
+      1819,
+      1313
+    ],
+    "unit": "documents and ungrouped sentences"
+  },
+  "ckt": {
+    "fold_tokens": [
+      0,
+      0
+    ],
+    "unit": "sentences"
+  },
+  "cux": {
+    "fold_tokens": [
+      1841,
+      1841
+    ],
+    "unit": "sentences"
+  },
+  "dar": {
+    "fold_tokens": [
+      2138,
+      2138
+    ],
+    "unit": "sentences"
+  },
+  "drs": {
+    "fold_tokens": [
+      135,
+      134
+    ],
+    "unit": "sentences"
+  },
+  "dta": {
+    "fold_tokens": [
+      329,
+      330
+    ],
+    "unit": "sentences"
+  },
+  "eve": {
+    "fold_tokens": [
+      142,
+      140
+    ],
+    "unit": "sentences"
+  },
+  "evn": {
+    "fold_tokens": [
+      126,
+      123
+    ],
+    "unit": "sentences"
+  },
+  "fsl": {
+    "fold_tokens": [
+      308,
+      307
+    ],
+    "unit": "sentences"
+  },
+  "gld": {
+    "fold_tokens": [
+      410,
+      411
+    ],
+    "unit": "sentences"
+  },
+  "gor": {
+    "fold_tokens": [
+      102,
+      103
+    ],
+    "unit": "sentences"
+  },
+  "grn": {
+    "fold_tokens": [
+      97,
+      96
+    ],
+    "unit": "sentences"
+  },
+  "gsw": {
+    "fold_tokens": [
+      0,
+      0
+    ],
+    "unit": "sentences"
+  },
+  "hac": {
+    "fold_tokens": [
+      259,
+      259
+    ],
+    "unit": "sentences"
+  },
+  "jaa": {
+    "fold_tokens": [
+      53,
+      52
+    ],
+    "unit": "sentences"
+  },
+  "kas": {
+    "fold_tokens": [
+      1075,
+      1074
+    ],
+    "unit": "sentences"
+  },
+  "kfx": {
+    "fold_tokens": [
+      0,
+      0
+    ],
+    "unit": "sentences"
+  },
+  "ltg": {
+    "fold_tokens": [
+      85,
+      85
+    ],
+    "unit": "sentence within one original group"
+  },
+  "ltz": {
+    "fold_tokens": [
+      103,
+      103
+    ],
+    "unit": "sentences"
+  },
+  "lzz": {
+    "fold_tokens": [
+      1119,
+      1118
+    ],
+    "unit": "sentences"
+  },
+  "mjg": {
+    "fold_tokens": [
+      160,
+      160
+    ],
+    "unit": "sentences"
+  },
+  "mjl": {
+    "fold_tokens": [
+      0,
+      0
+    ],
+    "unit": "sentences"
+  },
+  "mlt": {
+    "fold_tokens": [
+      0,
+      0
+    ],
+    "unit": "sentences"
+  },
+  "mnc": {
+    "fold_tokens": [
+      224,
+      222
+    ],
+    "unit": "sentences"
+  },
+  "mon": {
+    "fold_tokens": [
+      236,
+      236
+    ],
+    "unit": "sentences"
+  },
+  "mpu": {
+    "fold_tokens": [
+      88,
+      89
+    ],
+    "unit": "sentences"
+  },
+  "mvf": {
+    "fold_tokens": [
+      136,
+      136
+    ],
+    "unit": "sentences"
+  },
+  "nap": {
+    "fold_tokens": [
+      102,
+      99
+    ],
+    "unit": "sentences"
+  },
+  "neg": {
+    "fold_tokens": [
+      141,
+      140
+    ],
+    "unit": "sentences"
+  },
+  "oac": {
+    "fold_tokens": [
+      174,
+      173
+    ],
+    "unit": "sentences"
+  },
+  "otk": {
+    "fold_tokens": [
+      0,
+      0
+    ],
+    "unit": "sentences"
+  },
+  "pad": {
+    "fold_tokens": [
+      0,
+      0
+    ],
+    "unit": "sentences"
+  },
+  "peh": {
+    "fold_tokens": [
+      3934,
+      3934
+    ],
+    "unit": "sentences"
+  },
+  "pli": {
+    "fold_tokens": [
+      841,
+      842
+    ],
+    "unit": "sentences"
+  },
+  "pra": {
+    "fold_tokens": [
+      482,
+      482
+    ],
+    "unit": "sentences"
+  },
+  "qfn": {
+    "fold_tokens": [
+      0,
+      0
+    ],
+    "unit": "sentences"
+  },
+  "qte": {
+    "fold_tokens": [
+      0,
+      0
+    ],
+    "unit": "sentences"
+  },
+  "sce": {
+    "fold_tokens": [
+      447,
+      444
+    ],
+    "unit": "sentences"
+  },
+  "srd": {
+    "fold_tokens": [
+      3962,
+      3959
+    ],
+    "unit": "sentences"
+  },
+  "swl": {
+    "fold_tokens": [
+      0,
+      0
+    ],
+    "unit": "sentences"
+  },
+  "tir": {
+    "fold_tokens": [
+      800,
+      798
+    ],
+    "unit": "sentences"
+  },
+  "tsn": {
+    "fold_tokens": [
+      289,
+      289
+    ],
+    "unit": "sentences"
+  },
+  "txg": {
+    "fold_tokens": [
+      6919,
+      6919
+    ],
+    "unit": "sentences"
+  },
+  "ude": {
+    "fold_tokens": [
+      253,
+      253
+    ],
+    "unit": "sentences"
+  },
+  "ulc": {
+    "fold_tokens": [
+      116,
+      116
+    ],
+    "unit": "sentences"
+  },
+  "usp": {
+    "fold_tokens": [
+      6452,
+      6450
+    ],
+    "unit": "sentences"
+  },
+  "xal": {
+    "fold_tokens": [
+      242,
+      242
+    ],
+    "unit": "sentences"
+  }
+}

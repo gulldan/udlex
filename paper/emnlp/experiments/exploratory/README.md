@@ -12,3 +12,4 @@ One-off scripts with the server paths they ran with, and their outputs. They rea
 | `proto.py` | `proto.json`, `proto2.json` | Linear window tagger and suffix decision lists on 14 languages; the second run adds lists built from dictionary paradigms |
 | `census.py` | `census.json` | Cascade on every catalog language with gold lemmas (100 official splits, 68 two-fold) and each comparator, by stratum of test words |
 | `ladder.py` | `ladder.json` | What a (form, tag) table with a linear tagger and suffix decision lists add to the cascade on the 100 languages with official splits, against UDPipe 2 |
+| `census.py` on `census-extra` | `census-extra.json` | The same census for the 43 lemma-bearing UD 2.19 languages outside the catalog (`order_inputs.py --codes`) |

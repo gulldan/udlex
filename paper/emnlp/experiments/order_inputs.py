@@ -170,7 +170,7 @@ def main(a):
     specs.extend(
         dict(v, folder="imported/" + v["directory"]) for v in read(regfile)["sources"]
     )
-    codes = read(EVIDENCE / "language-codes.json")
+    codes = read(a.codes)
     catalog = read(a.research / "data/wide/index.json")["languages"]
     tests = sorted(a.ud.glob("UD_*/*-ud-test.conllu"))
     if len(tests) != treebanks:
@@ -182,7 +182,8 @@ def main(a):
         if len(src) < a.min_sources:
             continue
         matches = [v for v in tests if v.name.split("_")[0] == code]
-        preferred = catalog[iso]["main"]["config"]
+        # A language outside the catalog has no preferred treebank.
+        preferred = catalog.get(iso, {}).get("main", {}).get("config", "\0")
 
         def priority(path):
             train = path.with_name(path.name.replace("-test.conllu", "-train.conllu"))
@@ -220,7 +221,7 @@ def main(a):
         a.output / "inventory.json",
         {
             "registry_sha256": sha(regfile),
-            "codes_sha256": sha(EVIDENCE / "language-codes.json"),
+            "codes_sha256": sha(a.codes),
             "ud" + a.release.replace(".", "") + "_sha256": archive_hash,
             "protocol_sha256": sha(Path(__file__).with_name(protocol)),
             "languages": rows,
@@ -235,5 +236,11 @@ if __name__ == "__main__":
     p.add_argument("--release", choices=RELEASES, default="2.18")
     p.add_argument(
         "--min-sources", type=int, default=2, help="0 covers every catalog language"
+    )
+    p.add_argument(
+        "--codes",
+        type=Path,
+        default=EVIDENCE / "language-codes.json",
+        help="ISO 639-3 to UD code; another file adds languages outside the catalog",
     )
     main(p.parse_args())
