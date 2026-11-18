@@ -56,21 +56,27 @@ def main() -> None:
             " come from a dictionary that learned from the scored sentences."
         ),
         "",
-        "| Group | Languages | New | 1.0.0 | Copy | New better / worse |",
-        "| --- | ---: | ---: | ---: | ---: | ---: |",
+        (
+            "Macro averages; each row compares systems on one language set. The"
+            " right half is the subset that has a 1.0.0 dictionary."
+        ),
+        "",
+        (
+            "| Group | Languages | New | Copy | With 1.0.0 | New | 1.0.0 | Copy |"
+            " New better / worse |"
+        ),
+        "| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |",
     ]
     for name, group in evaluation["summary"].items():
         both = group["with_1.0.0"]
-        old = both["macro"]
+        old = both["macro"] or {"new": None, "old": None, "copy": None}
+        cells = [
+            "—" if old[s] is None else f"{old[s]:.2f}" for s in ("new", "old", "copy")
+        ]
         lines.append(
             f"| {name} | {group['languages']} | {group['macro']['new']:.2f} | "
-            + (
-                f"{old['old']:.2f} (new {old['new']:.2f} on {both['languages']}) | "
-                if old
-                else "— | "
-            )
-            + f"{group['macro']['copy']:.2f} | "
-            f"{both['new_better']} / {both['new_worse']} |"
+            f"{group['macro']['copy']:.2f} | {both['languages']} | "
+            f"{' | '.join(cells)} | {both['new_better']} / {both['new_worse']} |"
         )
     lines += [
         "",

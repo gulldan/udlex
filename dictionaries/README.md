@@ -71,3 +71,9 @@ evidence and the recipe.
 Some upstream files are not versioned (kaikki.org extracts, BÍN, SALDO
 morphology). They are pinned by SHA-256, so a rebuild fails
 loudly once upstream changes; `fetch.py --pin` records new digests.
+
+## Catalog of this build
+
+[`catalog/`](catalog) holds the `DICTIONARIES.json`, `evaluation.json`,
+`EVALUATION.md` and `SHA256SUMS` of the build the packages were made from; the
+wheels and archives themselves are release assets, not part of the repository.

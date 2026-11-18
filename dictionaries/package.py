@@ -258,7 +258,12 @@ def package_one(iso: str, row: dict, work: Path, out: Path, commit: str) -> dict
         "scripts": scripts_digest(),
         "ud_archive_sha256": config["ud"]["sha256"],
         "corpus_files": corpus["files"] if corpus else [],
-        "inputs": source_entries,
+        "inputs": {
+            m["id"]: [f["sha256"] for f in m["inputs"]]
+            for s in source_entries
+            for m in s["members"]
+        },
+        "tables": {s["id"]: s["table_sha256"] for s in source_entries},
         "order": decision["order"],
         "options": decision["options"],
     }
