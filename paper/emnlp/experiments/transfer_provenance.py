@@ -81,9 +81,20 @@ def main(a):
         if len(row["sources"]) < 2:
             continue
         corpora = []
+        for k in ("0", "1") if a.cv else ():
+            # A two-fold language: each fold is screened against its own training fold.
+            fold = a.cv / k / iso
+            if (fold / "test.jsonl").exists():
+                tests = [
+                    ("train", fold / "train.jsonl"),
+                    (f"{iso}:fold-{k}", fold / "test.jsonl"),
+                ]
+                jobs.append((a.research, iso, row["sources"], tests))
         if row.get("status") == "paired":
             fit = a.order / iso
             corpora.append((iso + ":anchor-test", fit / "test.jsonl"))
+            if a.cv and row["splits"]["dev"].get("tokens"):
+                corpora.append((iso + ":anchor-dev", fit / "dev.jsonl"))
         elif by[iso]:
             fit = a.transfer / ".fit" / iso
         else:
@@ -113,5 +124,8 @@ if __name__ == "__main__":
     p = argparse.ArgumentParser(description=__doc__)
     for key in ("research", "order", "transfer", "output"):
         p.add_argument(key, type=Path)
+    p.add_argument(
+        "--cv", type=Path, help="also screen development splits and both folds"
+    )
     p.add_argument("--jobs", type=int, default=8)
     main(p.parse_args())

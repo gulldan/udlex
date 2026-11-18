@@ -1,5 +1,23 @@
 {
   "pairs": {
+    "afr:anchor-dev|unimorph": {
+      "agree": 370,
+      "covered": 392,
+      "flagged": false,
+      "iso": "afr",
+      "marked": 12,
+      "marked_covered": 0,
+      "types": 514
+    },
+    "afr:anchor-dev|wiktionary": {
+      "agree": 82,
+      "covered": 88,
+      "flagged": false,
+      "iso": "afr",
+      "marked": 12,
+      "marked_covered": 1,
+      "types": 514
+    },
     "afr:anchor-test|unimorph": {
       "agree": 769,
       "covered": 815,
@@ -17,6 +35,42 @@
       "marked": 26,
       "marked_covered": 1,
       "types": 1125
+    },
+    "amh:fold-0|unimorph": {
+      "agree": 117,
+      "covered": 191,
+      "flagged": false,
+      "iso": "amh",
+      "marked": 8,
+      "marked_covered": 0,
+      "types": 511
+    },
+    "amh:fold-0|wiktionary": {
+      "agree": 114,
+      "covered": 117,
+      "flagged": false,
+      "iso": "amh",
+      "marked": 8,
+      "marked_covered": 0,
+      "types": 511
+    },
+    "amh:fold-1|unimorph": {
+      "agree": 149,
+      "covered": 211,
+      "flagged": false,
+      "iso": "amh",
+      "marked": 5,
+      "marked_covered": 0,
+      "types": 522
+    },
+    "amh:fold-1|wiktionary": {
+      "agree": 134,
+      "covered": 138,
+      "flagged": false,
+      "iso": "amh",
+      "marked": 5,
+      "marked_covered": 0,
+      "types": 522
     },
     "ar_pud|camel-morph": {
       "agree": 870,
@@ -42,6 +96,30 @@
       "marked_covered": 0,
       "types": 2888
     },
+    "arb:anchor-dev|camel-morph": {
+      "agree": 843,
+      "covered": 1397,
+      "flagged": false,
+      "iso": "arb",
+      "marked": 29,
+      "marked_covered": 0,
+      "types": 1647
+    },
+    "arb:anchor-dev|unimorph": {
+      "flagged": false,
+      "iso": "arb",
+      "marked": 29,
+      "types": 1647
+    },
+    "arb:anchor-dev|wiktionary": {
+      "agree": 52,
+      "covered": 402,
+      "flagged": false,
+      "iso": "arb",
+      "marked": 29,
+      "marked_covered": 0,
+      "types": 1647
+    },
     "arb:anchor-test|camel-morph": {
       "agree": 637,
       "covered": 1121,
@@ -65,6 +143,123 @@
       "marked": 47,
       "marked_covered": 0,
       "types": 1439
+    },
+    "aze:fold-0|dictionary": {
+      "agree": 33,
+      "covered": 42,
+      "flagged": false,
+      "iso": "aze",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 175
+    },
+    "aze:fold-0|unimorph": {
+      "agree": 9,
+      "covered": 12,
+      "flagged": false,
+      "iso": "aze",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 175
+    },
+    "aze:fold-0|wiktionary": {
+      "agree": 55,
+      "covered": 100,
+      "flagged": false,
+      "iso": "aze",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 175
+    },
+    "aze:fold-1|dictionary": {
+      "agree": 36,
+      "covered": 44,
+      "flagged": false,
+      "iso": "aze",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 161
+    },
+    "aze:fold-1|unimorph": {
+      "agree": 14,
+      "covered": 16,
+      "flagged": false,
+      "iso": "aze",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 161
+    },
+    "aze:fold-1|wiktionary": {
+      "agree": 61,
+      "covered": 98,
+      "flagged": false,
+      "iso": "aze",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 161
+    },
+    "bam:fold-0|dictionary": {
+      "agree": 75,
+      "covered": 161,
+      "flagged": false,
+      "iso": "bam",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 232
+    },
+    "bam:fold-0|wiktionary": {
+      "agree": 0,
+      "covered": 17,
+      "flagged": false,
+      "iso": "bam",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 232
+    },
+    "bam:fold-1|dictionary": {
+      "agree": 99,
+      "covered": 206,
+      "flagged": false,
+      "iso": "bam",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 276
+    },
+    "bam:fold-1|wiktionary": {
+      "agree": 1,
+      "covered": 27,
+      "flagged": false,
+      "iso": "bam",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 276
+    },
+    "bel:anchor-dev|dictionary": {
+      "agree": 1219,
+      "covered": 1363,
+      "flagged": false,
+      "iso": "bel",
+      "marked": 155,
+      "marked_covered": 0,
+      "types": 1960
+    },
+    "bel:anchor-dev|unimorph": {
+      "agree": 8,
+      "covered": 9,
+      "flagged": false,
+      "iso": "bel",
+      "marked": 155,
+      "marked_covered": 0,
+      "types": 1960
+    },
+    "bel:anchor-dev|wiktionary": {
+      "agree": 85,
+      "covered": 110,
+      "flagged": false,
+      "iso": "bel",
+      "marked": 155,
+      "marked_covered": 0,
+      "types": 1960
     },
     "bel:anchor-test|dictionary": {
       "agree": 1201,
@@ -92,6 +287,42 @@
       "marked": 142,
       "marked_covered": 0,
       "types": 2150
+    },
+    "ben:fold-0|unimorph": {
+      "agree": 14,
+      "covered": 15,
+      "flagged": false,
+      "iso": "ben",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 62
+    },
+    "ben:fold-0|wiktionary": {
+      "agree": 44,
+      "covered": 50,
+      "flagged": false,
+      "iso": "ben",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 62
+    },
+    "ben:fold-1|unimorph": {
+      "agree": 13,
+      "covered": 17,
+      "flagged": false,
+      "iso": "ben",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 53
+    },
+    "ben:fold-1|wiktionary": {
+      "agree": 39,
+      "covered": 47,
+      "flagged": false,
+      "iso": "ben",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 53
     },
     "bg_elexis|dictionary": {
       "agree": 3181,
@@ -201,6 +432,132 @@
       "marked_covered": 0,
       "types": 4390
     },
+    "bre:fold-0|unimorph": {
+      "agree": 28,
+      "covered": 36,
+      "flagged": false,
+      "iso": "bre",
+      "marked": 25,
+      "marked_covered": 0,
+      "types": 953
+    },
+    "bre:fold-0|wiktionary": {
+      "agree": 202,
+      "covered": 237,
+      "flagged": false,
+      "iso": "bre",
+      "marked": 25,
+      "marked_covered": 0,
+      "types": 953
+    },
+    "bre:fold-1|unimorph": {
+      "agree": 21,
+      "covered": 32,
+      "flagged": false,
+      "iso": "bre",
+      "marked": 27,
+      "marked_covered": 0,
+      "types": 1011
+    },
+    "bre:fold-1|wiktionary": {
+      "agree": 204,
+      "covered": 243,
+      "flagged": false,
+      "iso": "bre",
+      "marked": 27,
+      "marked_covered": 0,
+      "types": 1011
+    },
+    "bul:fold-0|dictionary": {
+      "agree": 6873,
+      "covered": 9189,
+      "flagged": false,
+      "iso": "bul",
+      "marked": 206,
+      "marked_covered": 0,
+      "types": 11031
+    },
+    "bul:fold-0|lemmagen3": {
+      "agree": 4143,
+      "covered": 7045,
+      "flagged": false,
+      "iso": "bul",
+      "marked": 206,
+      "marked_covered": 8,
+      "types": 11031
+    },
+    "bul:fold-0|simplemma": {
+      "agree": 4991,
+      "covered": 7026,
+      "flagged": false,
+      "iso": "bul",
+      "marked": 206,
+      "marked_covered": 35,
+      "types": 11031
+    },
+    "bul:fold-0|unimorph": {
+      "agree": 1290,
+      "covered": 1609,
+      "flagged": false,
+      "iso": "bul",
+      "marked": 206,
+      "marked_covered": 0,
+      "types": 11031
+    },
+    "bul:fold-0|wiktionary": {
+      "agree": 1036,
+      "covered": 2251,
+      "flagged": false,
+      "iso": "bul",
+      "marked": 206,
+      "marked_covered": 0,
+      "types": 11031
+    },
+    "bul:fold-1|dictionary": {
+      "agree": 6539,
+      "covered": 8735,
+      "flagged": false,
+      "iso": "bul",
+      "marked": 151,
+      "marked_covered": 0,
+      "types": 10273
+    },
+    "bul:fold-1|lemmagen3": {
+      "agree": 4000,
+      "covered": 6699,
+      "flagged": false,
+      "iso": "bul",
+      "marked": 151,
+      "marked_covered": 5,
+      "types": 10273
+    },
+    "bul:fold-1|simplemma": {
+      "agree": 4788,
+      "covered": 6710,
+      "flagged": false,
+      "iso": "bul",
+      "marked": 151,
+      "marked_covered": 25,
+      "types": 10273
+    },
+    "bul:fold-1|unimorph": {
+      "agree": 1179,
+      "covered": 1504,
+      "flagged": false,
+      "iso": "bul",
+      "marked": 151,
+      "marked_covered": 0,
+      "types": 10273
+    },
+    "bul:fold-1|wiktionary": {
+      "agree": 994,
+      "covered": 2206,
+      "flagged": false,
+      "iso": "bul",
+      "marked": 151,
+      "marked_covered": 0,
+      "types": 10273
+    },
     "bxr:anchor-test|dictionary": {
       "agree": 2235,
       "covered": 2313,
@@ -227,6 +584,42 @@
       "marked": 38,
       "marked_covered": 0,
       "types": 4210
+    },
+    "cat:anchor-dev|simplemma": {
+      "agree": 995,
+      "covered": 1329,
+      "flagged": false,
+      "iso": "cat",
+      "marked": 165,
+      "marked_covered": 16,
+      "types": 2166
+    },
+    "cat:anchor-dev|spacy-lookups": {
+      "agree": 976,
+      "covered": 1341,
+      "flagged": false,
+      "iso": "cat",
+      "marked": 165,
+      "marked_covered": 16,
+      "types": 2166
+    },
+    "cat:anchor-dev|unimorph": {
+      "agree": 286,
+      "covered": 368,
+      "flagged": false,
+      "iso": "cat",
+      "marked": 165,
+      "marked_covered": 4,
+      "types": 2166
+    },
+    "cat:anchor-dev|wiktionary": {
+      "agree": 1056,
+      "covered": 1197,
+      "flagged": false,
+      "iso": "cat",
+      "marked": 165,
+      "marked_covered": 11,
+      "types": 2166
     },
     "cat:anchor-test|simplemma": {
       "agree": 975,
@@ -263,6 +656,96 @@
       "marked": 139,
       "marked_covered": 14,
       "types": 2301
+    },
+    "ceb:fold-0|unimorph": {
+      "agree": 0,
+      "covered": 12,
+      "flagged": false,
+      "iso": "ceb",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 236
+    },
+    "ceb:fold-0|wiktionary": {
+      "agree": 83,
+      "covered": 109,
+      "flagged": false,
+      "iso": "ceb",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 236
+    },
+    "ceb:fold-1|unimorph": {
+      "agree": 1,
+      "covered": 11,
+      "flagged": false,
+      "iso": "ceb",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 224
+    },
+    "ceb:fold-1|wiktionary": {
+      "agree": 82,
+      "covered": 98,
+      "flagged": false,
+      "iso": "ceb",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 224
+    },
+    "ces:anchor-dev|dictionary": {
+      "agree": 9011,
+      "covered": 10705,
+      "flagged": false,
+      "iso": "ces",
+      "marked": 523,
+      "marked_covered": 0,
+      "types": 14086
+    },
+    "ces:anchor-dev|lemmagen3": {
+      "agree": 5920,
+      "covered": 8057,
+      "flagged": false,
+      "iso": "ces",
+      "marked": 523,
+      "marked_covered": 0,
+      "types": 14086
+    },
+    "ces:anchor-dev|simplemma": {
+      "agree": 3835,
+      "covered": 4932,
+      "flagged": false,
+      "iso": "ces",
+      "marked": 523,
+      "marked_covered": 0,
+      "types": 14086
+    },
+    "ces:anchor-dev|spacy-lookups": {
+      "agree": 903,
+      "covered": 1046,
+      "flagged": false,
+      "iso": "ces",
+      "marked": 523,
+      "marked_covered": 0,
+      "types": 14086
+    },
+    "ces:anchor-dev|unimorph": {
+      "agree": 1049,
+      "covered": 1165,
+      "flagged": false,
+      "iso": "ces",
+      "marked": 523,
+      "marked_covered": 0,
+      "types": 14086
+    },
+    "ces:anchor-dev|wiktionary": {
+      "agree": 4797,
+      "covered": 5611,
+      "flagged": false,
+      "iso": "ces",
+      "marked": 523,
+      "marked_covered": 0,
+      "types": 14086
     },
     "ces:anchor-test|dictionary": {
       "agree": 7732,
@@ -317,6 +800,24 @@
       "marked": 196,
       "marked_covered": 0,
       "types": 11391
+    },
+    "chu:anchor-dev|unimorph": {
+      "agree": 13,
+      "covered": 14,
+      "flagged": false,
+      "iso": "chu",
+      "marked": 1,
+      "marked_covered": 0,
+      "types": 3085
+    },
+    "chu:anchor-dev|wiktionary": {
+      "agree": 234,
+      "covered": 274,
+      "flagged": false,
+      "iso": "chu",
+      "marked": 1,
+      "marked_covered": 0,
+      "types": 3085
     },
     "chu:anchor-test|unimorph": {
       "agree": 22,
@@ -732,6 +1233,33 @@
       "marked_covered": 0,
       "types": 3972
     },
+    "cym:anchor-dev|simplemma": {
+      "agree": 607,
+      "covered": 765,
+      "flagged": false,
+      "iso": "cym",
+      "marked": 29,
+      "marked_covered": 0,
+      "types": 1034
+    },
+    "cym:anchor-dev|unimorph": {
+      "agree": 22,
+      "covered": 29,
+      "flagged": false,
+      "iso": "cym",
+      "marked": 29,
+      "marked_covered": 0,
+      "types": 1034
+    },
+    "cym:anchor-dev|wiktionary": {
+      "agree": 540,
+      "covered": 658,
+      "flagged": false,
+      "iso": "cym",
+      "marked": 29,
+      "marked_covered": 4,
+      "types": 1034
+    },
     "cym:anchor-test|simplemma": {
       "agree": 1159,
       "covered": 1362,
@@ -803,6 +1331,51 @@
       "marked": 232,
       "marked_covered": 1,
       "types": 5499
+    },
+    "dan:anchor-dev|dictionary": {
+      "agree": 984,
+      "covered": 1098,
+      "flagged": false,
+      "iso": "dan",
+      "marked": 31,
+      "marked_covered": 2,
+      "types": 1405
+    },
+    "dan:anchor-dev|simplemma": {
+      "agree": 972,
+      "covered": 1072,
+      "flagged": false,
+      "iso": "dan",
+      "marked": 31,
+      "marked_covered": 1,
+      "types": 1405
+    },
+    "dan:anchor-dev|spacy-lookups": {
+      "agree": 972,
+      "covered": 1070,
+      "flagged": false,
+      "iso": "dan",
+      "marked": 31,
+      "marked_covered": 0,
+      "types": 1405
+    },
+    "dan:anchor-dev|unimorph": {
+      "agree": 189,
+      "covered": 208,
+      "flagged": false,
+      "iso": "dan",
+      "marked": 31,
+      "marked_covered": 0,
+      "types": 1405
+    },
+    "dan:anchor-dev|wiktionary": {
+      "agree": 674,
+      "covered": 711,
+      "flagged": false,
+      "iso": "dan",
+      "marked": 31,
+      "marked_covered": 0,
+      "types": 1405
     },
     "dan:anchor-test|dictionary": {
       "agree": 888,
@@ -983,6 +1556,51 @@
       "marked": 46,
       "marked_covered": 0,
       "types": 1715
+    },
+    "deu:anchor-dev|lemmagen3": {
+      "agree": 906,
+      "covered": 1483,
+      "flagged": false,
+      "iso": "deu",
+      "marked": 1417,
+      "marked_covered": 3,
+      "types": 13886
+    },
+    "deu:anchor-dev|simplemma": {
+      "agree": 2265,
+      "covered": 2913,
+      "flagged": false,
+      "iso": "deu",
+      "marked": 1417,
+      "marked_covered": 7,
+      "types": 13886
+    },
+    "deu:anchor-dev|spacy-lookups": {
+      "agree": 801,
+      "covered": 1213,
+      "flagged": false,
+      "iso": "deu",
+      "marked": 1417,
+      "marked_covered": 0,
+      "types": 13886
+    },
+    "deu:anchor-dev|unimorph": {
+      "agree": 1013,
+      "covered": 1212,
+      "flagged": false,
+      "iso": "deu",
+      "marked": 1417,
+      "marked_covered": 0,
+      "types": 13886
+    },
+    "deu:anchor-dev|wiktionary": {
+      "agree": 2030,
+      "covered": 2339,
+      "flagged": false,
+      "iso": "deu",
+      "marked": 1417,
+      "marked_covered": 3,
+      "types": 13886
     },
     "deu:anchor-test|lemmagen3": {
       "agree": 744,
@@ -1394,6 +2012,60 @@
       "marked": 7,
       "marked_covered": 0,
       "types": 213
+    },
+    "ell:anchor-dev|dictionary": {
+      "agree": 1001,
+      "covered": 1109,
+      "flagged": false,
+      "iso": "ell",
+      "marked": 60,
+      "marked_covered": 0,
+      "types": 1668
+    },
+    "ell:anchor-dev|llm-teacher": {
+      "agree": 1142,
+      "covered": 1349,
+      "flagged": false,
+      "iso": "ell",
+      "marked": 60,
+      "marked_covered": 0,
+      "types": 1668
+    },
+    "ell:anchor-dev|simplemma": {
+      "agree": 912,
+      "covered": 1030,
+      "flagged": false,
+      "iso": "ell",
+      "marked": 60,
+      "marked_covered": 0,
+      "types": 1668
+    },
+    "ell:anchor-dev|spacy-lookups": {
+      "agree": 452,
+      "covered": 559,
+      "flagged": false,
+      "iso": "ell",
+      "marked": 60,
+      "marked_covered": 0,
+      "types": 1668
+    },
+    "ell:anchor-dev|unimorph": {
+      "agree": 481,
+      "covered": 533,
+      "flagged": false,
+      "iso": "ell",
+      "marked": 60,
+      "marked_covered": 0,
+      "types": 1668
+    },
+    "ell:anchor-dev|wiktionary": {
+      "agree": 1096,
+      "covered": 1176,
+      "flagged": false,
+      "iso": "ell",
+      "marked": 60,
+      "marked_covered": 0,
+      "types": 1668
     },
     "ell:anchor-test|dictionary": {
       "agree": 909,
@@ -2205,6 +2877,69 @@
       "marked_covered": 5,
       "types": 1858
     },
+    "eng:anchor-dev|lemmagen3": {
+      "agree": 343,
+      "covered": 394,
+      "flagged": false,
+      "iso": "eng",
+      "marked": 39,
+      "marked_covered": 0,
+      "types": 1335
+    },
+    "eng:anchor-dev|lemminflect": {
+      "agree": 908,
+      "covered": 1080,
+      "flagged": false,
+      "iso": "eng",
+      "marked": 39,
+      "marked_covered": 0,
+      "types": 1335
+    },
+    "eng:anchor-dev|nltk-wordnet": {
+      "agree": 349,
+      "covered": 400,
+      "flagged": false,
+      "iso": "eng",
+      "marked": 39,
+      "marked_covered": 0,
+      "types": 1335
+    },
+    "eng:anchor-dev|simplemma": {
+      "agree": 837,
+      "covered": 973,
+      "flagged": false,
+      "iso": "eng",
+      "marked": 39,
+      "marked_covered": 0,
+      "types": 1335
+    },
+    "eng:anchor-dev|spacy-lookups": {
+      "agree": 401,
+      "covered": 463,
+      "flagged": false,
+      "iso": "eng",
+      "marked": 39,
+      "marked_covered": 0,
+      "types": 1335
+    },
+    "eng:anchor-dev|unimorph": {
+      "agree": 823,
+      "covered": 970,
+      "flagged": false,
+      "iso": "eng",
+      "marked": 39,
+      "marked_covered": 0,
+      "types": 1335
+    },
+    "eng:anchor-dev|wiktionary": {
+      "agree": 1106,
+      "covered": 1206,
+      "flagged": false,
+      "iso": "eng",
+      "marked": 39,
+      "marked_covered": 0,
+      "types": 1335
+    },
     "eng:anchor-test|lemmagen3": {
       "agree": 399,
       "covered": 476,
@@ -2285,6 +3020,42 @@
       "marked": 5,
       "marked_covered": 0,
       "types": 1147
+    },
+    "epo:fold-0|simplemma": {
+      "agree": 39,
+      "covered": 41,
+      "flagged": false,
+      "iso": "epo",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 53
+    },
+    "epo:fold-0|wiktionary": {
+      "agree": 48,
+      "covered": 49,
+      "flagged": false,
+      "iso": "epo",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 53
+    },
+    "epo:fold-1|simplemma": {
+      "agree": 33,
+      "covered": 36,
+      "flagged": false,
+      "iso": "epo",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 50
+    },
+    "epo:fold-1|wiktionary": {
+      "agree": 45,
+      "covered": 46,
+      "flagged": false,
+      "iso": "epo",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 50
     },
     "es_coser|lemmagen3": {
       "agree": 184,
@@ -2466,6 +3237,42 @@
       "marked_covered": 0,
       "types": 1641
     },
+    "est:anchor-dev|lemmagen3": {
+      "agree": 950,
+      "covered": 1311,
+      "flagged": false,
+      "iso": "est",
+      "marked": 162,
+      "marked_covered": 0,
+      "types": 7281
+    },
+    "est:anchor-dev|simplemma": {
+      "agree": 1767,
+      "covered": 2558,
+      "flagged": false,
+      "iso": "est",
+      "marked": 162,
+      "marked_covered": 0,
+      "types": 7281
+    },
+    "est:anchor-dev|unimorph": {
+      "agree": 245,
+      "covered": 281,
+      "flagged": false,
+      "iso": "est",
+      "marked": 162,
+      "marked_covered": 0,
+      "types": 7281
+    },
+    "est:anchor-dev|wiktionary": {
+      "agree": 1255,
+      "covered": 1543,
+      "flagged": false,
+      "iso": "est",
+      "marked": 162,
+      "marked_covered": 0,
+      "types": 7281
+    },
     "est:anchor-test|lemmagen3": {
       "agree": 808,
       "covered": 1130,
@@ -2610,6 +3417,33 @@
       "marked_covered": 0,
       "types": 8621
     },
+    "eus:anchor-dev|dictionary": {
+      "agree": 1974,
+      "covered": 2121,
+      "flagged": false,
+      "iso": "eus",
+      "marked": 95,
+      "marked_covered": 0,
+      "types": 3840
+    },
+    "eus:anchor-dev|unimorph": {
+      "agree": 34,
+      "covered": 40,
+      "flagged": false,
+      "iso": "eus",
+      "marked": 95,
+      "marked_covered": 0,
+      "types": 3840
+    },
+    "eus:anchor-dev|wiktionary": {
+      "agree": 763,
+      "covered": 860,
+      "flagged": false,
+      "iso": "eus",
+      "marked": 95,
+      "marked_covered": 0,
+      "types": 3840
+    },
     "eus:anchor-test|dictionary": {
       "agree": 2194,
       "covered": 2326,
@@ -2745,6 +3579,16 @@
       "marked_covered": 0,
       "types": 5168
     },
+    "fao:anchor-dev|unimorph": {
+      "flagged": false,
+      "iso": "fao",
+      "types": 0
+    },
+    "fao:anchor-dev|wiktionary": {
+      "flagged": false,
+      "iso": "fao",
+      "types": 0
+    },
     "fao:anchor-test|unimorph": {
       "flagged": false,
       "iso": "fao",
@@ -2862,6 +3706,42 @@
       "marked": 106,
       "marked_covered": 3,
       "types": 4077
+    },
+    "fin:anchor-dev|llm-teacher": {
+      "agree": 335,
+      "covered": 456,
+      "flagged": false,
+      "iso": "fin",
+      "marked": 98,
+      "marked_covered": 0,
+      "types": 3959
+    },
+    "fin:anchor-dev|simplemma": {
+      "agree": 1926,
+      "covered": 2788,
+      "flagged": false,
+      "iso": "fin",
+      "marked": 98,
+      "marked_covered": 0,
+      "types": 3959
+    },
+    "fin:anchor-dev|unimorph": {
+      "agree": 1459,
+      "covered": 1782,
+      "flagged": false,
+      "iso": "fin",
+      "marked": 98,
+      "marked_covered": 0,
+      "types": 3959
+    },
+    "fin:anchor-dev|wiktionary": {
+      "agree": 2041,
+      "covered": 2849,
+      "flagged": false,
+      "iso": "fin",
+      "marked": 98,
+      "marked_covered": 2,
+      "types": 3959
     },
     "fin:anchor-test|llm-teacher": {
       "agree": 349,
@@ -3277,6 +4157,51 @@
       "marked_covered": 0,
       "types": 2677
     },
+    "fra:anchor-dev|lemmagen3": {
+      "agree": 349,
+      "covered": 414,
+      "flagged": false,
+      "iso": "fra",
+      "marked": 29,
+      "marked_covered": 1,
+      "types": 825
+    },
+    "fra:anchor-dev|simplemma": {
+      "agree": 550,
+      "covered": 634,
+      "flagged": false,
+      "iso": "fra",
+      "marked": 29,
+      "marked_covered": 0,
+      "types": 825
+    },
+    "fra:anchor-dev|spacy-lookups": {
+      "agree": 557,
+      "covered": 623,
+      "flagged": false,
+      "iso": "fra",
+      "marked": 29,
+      "marked_covered": 1,
+      "types": 825
+    },
+    "fra:anchor-dev|unimorph": {
+      "agree": 180,
+      "covered": 226,
+      "flagged": false,
+      "iso": "fra",
+      "marked": 29,
+      "marked_covered": 0,
+      "types": 825
+    },
+    "fra:anchor-dev|wiktionary": {
+      "agree": 635,
+      "covered": 710,
+      "flagged": false,
+      "iso": "fra",
+      "marked": 29,
+      "marked_covered": 2,
+      "types": 825
+    },
     "fra:anchor-test|lemmagen3": {
       "agree": 329,
       "covered": 397,
@@ -3322,6 +4247,24 @@
       "marked_covered": 0,
       "types": 871
     },
+    "frm:anchor-dev|unimorph": {
+      "agree": 22,
+      "covered": 54,
+      "flagged": false,
+      "iso": "frm",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 446
+    },
+    "frm:anchor-dev|wiktionary": {
+      "agree": 41,
+      "covered": 106,
+      "flagged": false,
+      "iso": "frm",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 446
+    },
     "frm:anchor-test|unimorph": {
       "agree": 37,
       "covered": 79,
@@ -3357,6 +4300,42 @@
       "marked": 0,
       "marked_covered": 0,
       "types": 587
+    },
+    "fro:fold-0|unimorph": {
+      "agree": 850,
+      "covered": 1514,
+      "flagged": false,
+      "iso": "fro",
+      "marked": 7,
+      "marked_covered": 0,
+      "types": 5766
+    },
+    "fro:fold-0|wiktionary": {
+      "agree": 1486,
+      "covered": 2636,
+      "flagged": false,
+      "iso": "fro",
+      "marked": 7,
+      "marked_covered": 0,
+      "types": 5766
+    },
+    "fro:fold-1|unimorph": {
+      "agree": 376,
+      "covered": 1326,
+      "flagged": false,
+      "iso": "fro",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 5537
+    },
+    "fro:fold-1|wiktionary": {
+      "agree": 705,
+      "covered": 2493,
+      "flagged": false,
+      "iso": "fro",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 5537
     },
     "fro_altm|unimorph": {
       "agree": 58,
@@ -3502,6 +4481,33 @@
       "marked_covered": 0,
       "types": 2944
     },
+    "gla:anchor-dev|simplemma": {
+      "agree": 294,
+      "covered": 400,
+      "flagged": false,
+      "iso": "gla",
+      "marked": 12,
+      "marked_covered": 0,
+      "types": 840
+    },
+    "gla:anchor-dev|unimorph": {
+      "agree": 3,
+      "covered": 5,
+      "flagged": false,
+      "iso": "gla",
+      "marked": 12,
+      "marked_covered": 0,
+      "types": 840
+    },
+    "gla:anchor-dev|wiktionary": {
+      "agree": 246,
+      "covered": 299,
+      "flagged": false,
+      "iso": "gla",
+      "marked": 12,
+      "marked_covered": 0,
+      "types": 840
+    },
     "gla:anchor-test|simplemma": {
       "agree": 240,
       "covered": 323,
@@ -3528,6 +4534,42 @@
       "marked": 25,
       "marked_covered": 0,
       "types": 666
+    },
+    "gle:anchor-dev|simplemma": {
+      "agree": 650,
+      "covered": 791,
+      "flagged": false,
+      "iso": "gle",
+      "marked": 38,
+      "marked_covered": 0,
+      "types": 1226
+    },
+    "gle:anchor-dev|spacy-lookups": {
+      "agree": 369,
+      "covered": 446,
+      "flagged": false,
+      "iso": "gle",
+      "marked": 38,
+      "marked_covered": 0,
+      "types": 1226
+    },
+    "gle:anchor-dev|unimorph": {
+      "agree": 173,
+      "covered": 192,
+      "flagged": false,
+      "iso": "gle",
+      "marked": 38,
+      "marked_covered": 0,
+      "types": 1226
+    },
+    "gle:anchor-dev|wiktionary": {
+      "agree": 537,
+      "covered": 660,
+      "flagged": false,
+      "iso": "gle",
+      "marked": 38,
+      "marked_covered": 0,
+      "types": 1226
     },
     "gle:anchor-test|simplemma": {
       "agree": 678,
@@ -3564,6 +4606,33 @@
       "marked": 19,
       "marked_covered": 0,
       "types": 1225
+    },
+    "glg:anchor-dev|dictionary": {
+      "agree": 1820,
+      "covered": 1912,
+      "flagged": false,
+      "iso": "glg",
+      "marked": 145,
+      "marked_covered": 0,
+      "types": 2560
+    },
+    "glg:anchor-dev|simplemma": {
+      "agree": 1719,
+      "covered": 1861,
+      "flagged": false,
+      "iso": "glg",
+      "marked": 145,
+      "marked_covered": 0,
+      "types": 2560
+    },
+    "glg:anchor-dev|wiktionary": {
+      "agree": 950,
+      "covered": 1099,
+      "flagged": false,
+      "iso": "glg",
+      "marked": 145,
+      "marked_covered": 0,
+      "types": 2560
     },
     "glg:anchor-test|dictionary": {
       "agree": 1913,
@@ -3616,6 +4685,24 @@
       "marked_covered": 0,
       "types": 1069
     },
+    "got:anchor-dev|unimorph": {
+      "agree": 282,
+      "covered": 568,
+      "flagged": false,
+      "iso": "got",
+      "marked": 1,
+      "marked_covered": 0,
+      "types": 1001
+    },
+    "got:anchor-dev|wiktionary": {
+      "agree": 113,
+      "covered": 955,
+      "flagged": false,
+      "iso": "got",
+      "marked": 1,
+      "marked_covered": 0,
+      "types": 1001
+    },
     "got:anchor-test|unimorph": {
       "agree": 266,
       "covered": 567,
@@ -3633,6 +4720,33 @@
       "marked": 0,
       "marked_covered": 0,
       "types": 1091
+    },
+    "grc:anchor-dev|spacy-lookups": {
+      "agree": 1317,
+      "covered": 1354,
+      "flagged": true,
+      "iso": "grc",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 1355
+    },
+    "grc:anchor-dev|unimorph": {
+      "agree": 14,
+      "covered": 16,
+      "flagged": false,
+      "iso": "grc",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 1355
+    },
+    "grc:anchor-dev|wiktionary": {
+      "agree": 269,
+      "covered": 409,
+      "flagged": false,
+      "iso": "grc",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 1355
     },
     "grc:anchor-test|spacy-lookups": {
       "agree": 1303,
@@ -3733,6 +4847,42 @@
       "marked_covered": 0,
       "types": 137
     },
+    "guj:fold-0|unimorph": {
+      "agree": 3,
+      "covered": 12,
+      "flagged": false,
+      "iso": "guj",
+      "marked": 3,
+      "marked_covered": 0,
+      "types": 384
+    },
+    "guj:fold-0|wiktionary": {
+      "agree": 101,
+      "covered": 136,
+      "flagged": false,
+      "iso": "guj",
+      "marked": 3,
+      "marked_covered": 0,
+      "types": 384
+    },
+    "guj:fold-1|unimorph": {
+      "agree": 1,
+      "covered": 13,
+      "flagged": false,
+      "iso": "guj",
+      "marked": 3,
+      "marked_covered": 0,
+      "types": 383
+    },
+    "guj:fold-1|wiktionary": {
+      "agree": 91,
+      "covered": 125,
+      "flagged": false,
+      "iso": "guj",
+      "marked": 3,
+      "marked_covered": 0,
+      "types": 383
+    },
     "ha_easternautogramm|dictionary": {
       "agree": 1579,
       "covered": 1598,
@@ -3786,6 +4936,42 @@
       "marked": 16,
       "marked_covered": 0,
       "types": 1085
+    },
+    "hau:fold-0|dictionary": {
+      "agree": 102,
+      "covered": 151,
+      "flagged": false,
+      "iso": "hau",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 543
+    },
+    "hau:fold-0|wiktionary": {
+      "agree": 7,
+      "covered": 22,
+      "flagged": false,
+      "iso": "hau",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 543
+    },
+    "hau:fold-1|dictionary": {
+      "agree": 86,
+      "covered": 133,
+      "flagged": false,
+      "iso": "hau",
+      "marked": 4,
+      "marked_covered": 0,
+      "types": 504
+    },
+    "hau:fold-1|wiktionary": {
+      "agree": 1,
+      "covered": 10,
+      "flagged": false,
+      "iso": "hau",
+      "marked": 4,
+      "marked_covered": 0,
+      "types": 504
     },
     "he_iahltknesset|unimorph": {
       "agree": 670,
@@ -3841,6 +5027,24 @@
       "marked_covered": 1,
       "types": 876
     },
+    "heb:anchor-dev|unimorph": {
+      "agree": 103,
+      "covered": 138,
+      "flagged": false,
+      "iso": "heb",
+      "marked": 46,
+      "marked_covered": 0,
+      "types": 794
+    },
+    "heb:anchor-dev|wiktionary": {
+      "agree": 157,
+      "covered": 194,
+      "flagged": false,
+      "iso": "heb",
+      "marked": 46,
+      "marked_covered": 0,
+      "types": 794
+    },
     "heb:anchor-test|unimorph": {
       "agree": 106,
       "covered": 143,
@@ -3885,6 +5089,33 @@
       "marked": 117,
       "marked_covered": 0,
       "types": 2008
+    },
+    "hin:anchor-dev|simplemma": {
+      "agree": 238,
+      "covered": 260,
+      "flagged": false,
+      "iso": "hin",
+      "marked": 68,
+      "marked_covered": 0,
+      "types": 1114
+    },
+    "hin:anchor-dev|unimorph": {
+      "agree": 12,
+      "covered": 15,
+      "flagged": false,
+      "iso": "hin",
+      "marked": 68,
+      "marked_covered": 0,
+      "types": 1114
+    },
+    "hin:anchor-dev|wiktionary": {
+      "agree": 339,
+      "covered": 364,
+      "flagged": false,
+      "iso": "hin",
+      "marked": 68,
+      "marked_covered": 0,
+      "types": 1114
     },
     "hin:anchor-test|simplemma": {
       "agree": 256,
@@ -3958,6 +5189,51 @@
       "marked_covered": 0,
       "types": 36758
     },
+    "hrv:anchor-dev|dictionary": {
+      "agree": 2226,
+      "covered": 2493,
+      "flagged": false,
+      "iso": "hrv",
+      "marked": 82,
+      "marked_covered": 0,
+      "types": 2981
+    },
+    "hrv:anchor-dev|lemmagen3": {
+      "agree": 1691,
+      "covered": 1881,
+      "flagged": false,
+      "iso": "hrv",
+      "marked": 82,
+      "marked_covered": 0,
+      "types": 2981
+    },
+    "hrv:anchor-dev|simplemma": {
+      "agree": 1392,
+      "covered": 1557,
+      "flagged": false,
+      "iso": "hrv",
+      "marked": 82,
+      "marked_covered": 0,
+      "types": 2981
+    },
+    "hrv:anchor-dev|spacy-lookups": {
+      "agree": 2079,
+      "covered": 2333,
+      "flagged": false,
+      "iso": "hrv",
+      "marked": 82,
+      "marked_covered": 0,
+      "types": 2981
+    },
+    "hrv:anchor-dev|unimorph": {
+      "agree": 1225,
+      "covered": 1335,
+      "flagged": false,
+      "iso": "hrv",
+      "marked": 82,
+      "marked_covered": 0,
+      "types": 2981
+    },
     "hrv:anchor-test|dictionary": {
       "agree": 2469,
       "covered": 2699,
@@ -4002,6 +5278,60 @@
       "marked": 58,
       "marked_covered": 0,
       "types": 3151
+    },
+    "hsb:fold-0|dictionary": {
+      "agree": 1223,
+      "covered": 1579,
+      "flagged": false,
+      "iso": "hsb",
+      "marked": 34,
+      "marked_covered": 0,
+      "types": 1916
+    },
+    "hsb:fold-0|unimorph": {
+      "agree": 28,
+      "covered": 34,
+      "flagged": false,
+      "iso": "hsb",
+      "marked": 34,
+      "marked_covered": 0,
+      "types": 1916
+    },
+    "hsb:fold-0|wiktionary": {
+      "agree": 164,
+      "covered": 183,
+      "flagged": false,
+      "iso": "hsb",
+      "marked": 34,
+      "marked_covered": 0,
+      "types": 1916
+    },
+    "hsb:fold-1|dictionary": {
+      "agree": 1364,
+      "covered": 1740,
+      "flagged": false,
+      "iso": "hsb",
+      "marked": 35,
+      "marked_covered": 1,
+      "types": 2121
+    },
+    "hsb:fold-1|unimorph": {
+      "agree": 36,
+      "covered": 45,
+      "flagged": false,
+      "iso": "hsb",
+      "marked": 35,
+      "marked_covered": 0,
+      "types": 2121
+    },
+    "hsb:fold-1|wiktionary": {
+      "agree": 196,
+      "covered": 229,
+      "flagged": false,
+      "iso": "hsb",
+      "marked": 35,
+      "marked_covered": 0,
+      "types": 2121
     },
     "hu_elexis|lemmagen3": {
       "agree": 3602,
@@ -4138,6 +5468,51 @@
       "marked_covered": 0,
       "types": 18055
     },
+    "hun:anchor-dev|lemmagen3": {
+      "agree": 1450,
+      "covered": 1653,
+      "flagged": false,
+      "iso": "hun",
+      "marked": 56,
+      "marked_covered": 12,
+      "types": 3182
+    },
+    "hun:anchor-dev|simplemma": {
+      "agree": 1687,
+      "covered": 2209,
+      "flagged": false,
+      "iso": "hun",
+      "marked": 56,
+      "marked_covered": 3,
+      "types": 3182
+    },
+    "hun:anchor-dev|spacy-lookups": {
+      "agree": 782,
+      "covered": 944,
+      "flagged": false,
+      "iso": "hun",
+      "marked": 56,
+      "marked_covered": 0,
+      "types": 3182
+    },
+    "hun:anchor-dev|unimorph": {
+      "agree": 1371,
+      "covered": 1622,
+      "flagged": false,
+      "iso": "hun",
+      "marked": 56,
+      "marked_covered": 2,
+      "types": 3182
+    },
+    "hun:anchor-dev|wiktionary": {
+      "agree": 1413,
+      "covered": 1844,
+      "flagged": false,
+      "iso": "hun",
+      "marked": 56,
+      "marked_covered": 5,
+      "types": 3182
+    },
     "hun:anchor-test|lemmagen3": {
       "agree": 1307,
       "covered": 1529,
@@ -4218,6 +5593,42 @@
       "marked": 104,
       "marked_covered": 0,
       "types": 6923
+    },
+    "hye:anchor-dev|dictionary": {
+      "agree": 1389,
+      "covered": 1586,
+      "flagged": false,
+      "iso": "hye",
+      "marked": 29,
+      "marked_covered": 1,
+      "types": 1942
+    },
+    "hye:anchor-dev|simplemma": {
+      "agree": 495,
+      "covered": 657,
+      "flagged": false,
+      "iso": "hye",
+      "marked": 29,
+      "marked_covered": 0,
+      "types": 1942
+    },
+    "hye:anchor-dev|unimorph": {
+      "agree": 424,
+      "covered": 453,
+      "flagged": false,
+      "iso": "hye",
+      "marked": 29,
+      "marked_covered": 0,
+      "types": 1942
+    },
+    "hye:anchor-dev|wiktionary": {
+      "agree": 1083,
+      "covered": 1130,
+      "flagged": false,
+      "iso": "hye",
+      "marked": 29,
+      "marked_covered": 0,
+      "types": 1942
     },
     "hye:anchor-test|dictionary": {
       "agree": 1463,
@@ -4326,6 +5737,42 @@
       "marked": 61,
       "marked_covered": 0,
       "types": 1813
+    },
+    "ind:anchor-dev|simplemma": {
+      "agree": 281,
+      "covered": 304,
+      "flagged": false,
+      "iso": "ind",
+      "marked": 43,
+      "marked_covered": 0,
+      "types": 1510
+    },
+    "ind:anchor-dev|spacy-lookups": {
+      "agree": 123,
+      "covered": 164,
+      "flagged": false,
+      "iso": "ind",
+      "marked": 43,
+      "marked_covered": 0,
+      "types": 1510
+    },
+    "ind:anchor-dev|unimorph": {
+      "agree": 151,
+      "covered": 173,
+      "flagged": false,
+      "iso": "ind",
+      "marked": 43,
+      "marked_covered": 0,
+      "types": 1510
+    },
+    "ind:anchor-dev|wiktionary": {
+      "agree": 313,
+      "covered": 432,
+      "flagged": false,
+      "iso": "ind",
+      "marked": 43,
+      "marked_covered": 0,
+      "types": 1510
     },
     "ind:anchor-test|simplemma": {
       "agree": 269,
@@ -4470,6 +5917,42 @@
       "marked": 125,
       "marked_covered": 0,
       "types": 3753
+    },
+    "isl:anchor-dev|dictionary": {
+      "agree": 4150,
+      "covered": 4919,
+      "flagged": false,
+      "iso": "isl",
+      "marked": 2,
+      "marked_covered": 0,
+      "types": 6084
+    },
+    "isl:anchor-dev|simplemma": {
+      "agree": 1635,
+      "covered": 1888,
+      "flagged": false,
+      "iso": "isl",
+      "marked": 2,
+      "marked_covered": 0,
+      "types": 6084
+    },
+    "isl:anchor-dev|unimorph": {
+      "agree": 709,
+      "covered": 802,
+      "flagged": false,
+      "iso": "isl",
+      "marked": 2,
+      "marked_covered": 0,
+      "types": 6084
+    },
+    "isl:anchor-dev|wiktionary": {
+      "agree": 1880,
+      "covered": 2079,
+      "flagged": false,
+      "iso": "isl",
+      "marked": 2,
+      "marked_covered": 0,
+      "types": 6084
     },
     "isl:anchor-test|dictionary": {
       "agree": 4353,
@@ -5002,6 +6485,51 @@
       "marked_covered": 0,
       "types": 12605
     },
+    "ita:anchor-dev|lemmagen3": {
+      "agree": 227,
+      "covered": 389,
+      "flagged": false,
+      "iso": "ita",
+      "marked": 22,
+      "marked_covered": 0,
+      "types": 747
+    },
+    "ita:anchor-dev|simplemma": {
+      "agree": 405,
+      "covered": 479,
+      "flagged": false,
+      "iso": "ita",
+      "marked": 22,
+      "marked_covered": 0,
+      "types": 747
+    },
+    "ita:anchor-dev|spacy-lookups": {
+      "agree": 458,
+      "covered": 529,
+      "flagged": false,
+      "iso": "ita",
+      "marked": 22,
+      "marked_covered": 0,
+      "types": 747
+    },
+    "ita:anchor-dev|unimorph": {
+      "agree": 139,
+      "covered": 199,
+      "flagged": false,
+      "iso": "ita",
+      "marked": 22,
+      "marked_covered": 0,
+      "types": 747
+    },
+    "ita:anchor-dev|wiktionary": {
+      "agree": 376,
+      "covered": 560,
+      "flagged": false,
+      "iso": "ita",
+      "marked": 22,
+      "marked_covered": 0,
+      "types": 747
+    },
     "ita:anchor-test|lemmagen3": {
       "agree": 169,
       "covered": 304,
@@ -5073,6 +6601,33 @@
       "marked": 42,
       "marked_covered": 0,
       "types": 1635
+    },
+    "jpn:anchor-dev|sudachi-core": {
+      "agree": 20,
+      "covered": 26,
+      "flagged": false,
+      "iso": "jpn",
+      "marked": 15,
+      "marked_covered": 0,
+      "types": 814
+    },
+    "jpn:anchor-dev|unimorph": {
+      "agree": 2,
+      "covered": 2,
+      "flagged": false,
+      "iso": "jpn",
+      "marked": 15,
+      "marked_covered": 0,
+      "types": 814
+    },
+    "jpn:anchor-dev|wiktionary": {
+      "agree": 431,
+      "covered": 483,
+      "flagged": false,
+      "iso": "jpn",
+      "marked": 15,
+      "marked_covered": 0,
+      "types": 814
     },
     "jpn:anchor-test|sudachi-core": {
       "agree": 28,
@@ -5154,6 +6709,33 @@
       "marked": 281,
       "marked_covered": 0,
       "types": 13985
+    },
+    "kat:anchor-dev|simplemma": {
+      "agree": 32,
+      "covered": 39,
+      "flagged": false,
+      "iso": "kat",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 471
+    },
+    "kat:anchor-dev|unimorph": {
+      "agree": 32,
+      "covered": 60,
+      "flagged": false,
+      "iso": "kat",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 471
+    },
+    "kat:anchor-dev|wiktionary": {
+      "agree": 159,
+      "covered": 202,
+      "flagged": false,
+      "iso": "kat",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 471
     },
     "kat:anchor-test|simplemma": {
       "agree": 234,
@@ -5398,6 +6980,33 @@
       "marked_covered": 0,
       "types": 1812
     },
+    "kor:anchor-dev|kiwipiepy": {
+      "agree": 289,
+      "covered": 460,
+      "flagged": false,
+      "iso": "kor",
+      "marked": 96,
+      "marked_covered": 1,
+      "types": 5866
+    },
+    "kor:anchor-dev|unimorph": {
+      "agree": 0,
+      "covered": 336,
+      "flagged": false,
+      "iso": "kor",
+      "marked": 96,
+      "marked_covered": 0,
+      "types": 5866
+    },
+    "kor:anchor-dev|wiktionary": {
+      "agree": 192,
+      "covered": 653,
+      "flagged": false,
+      "iso": "kor",
+      "marked": 96,
+      "marked_covered": 1,
+      "types": 5866
+    },
     "kor:anchor-test|kiwipiepy": {
       "agree": 309,
       "covered": 507,
@@ -5424,6 +7033,60 @@
       "marked": 267,
       "marked_covered": 0,
       "types": 6451
+    },
+    "krl:fold-0|giellalt": {
+      "agree": 205,
+      "covered": 211,
+      "flagged": false,
+      "iso": "krl",
+      "marked": 4,
+      "marked_covered": 0,
+      "types": 604
+    },
+    "krl:fold-0|unimorph": {
+      "agree": 1,
+      "covered": 1,
+      "flagged": false,
+      "iso": "krl",
+      "marked": 4,
+      "marked_covered": 0,
+      "types": 604
+    },
+    "krl:fold-0|wiktionary": {
+      "agree": 69,
+      "covered": 91,
+      "flagged": false,
+      "iso": "krl",
+      "marked": 4,
+      "marked_covered": 0,
+      "types": 604
+    },
+    "krl:fold-1|giellalt": {
+      "agree": 188,
+      "covered": 198,
+      "flagged": false,
+      "iso": "krl",
+      "marked": 8,
+      "marked_covered": 0,
+      "types": 617
+    },
+    "krl:fold-1|unimorph": {
+      "agree": 1,
+      "covered": 1,
+      "flagged": false,
+      "iso": "krl",
+      "marked": 8,
+      "marked_covered": 0,
+      "types": 617
+    },
+    "krl:fold-1|wiktionary": {
+      "agree": 75,
+      "covered": 90,
+      "flagged": false,
+      "iso": "krl",
+      "marked": 8,
+      "marked_covered": 0,
+      "types": 617
     },
     "ky_tuecl|dictionary": {
       "agree": 217,
@@ -5587,6 +7250,33 @@
       "marked_covered": 0,
       "types": 8640
     },
+    "lat:anchor-dev|simplemma": {
+      "agree": 312,
+      "covered": 458,
+      "flagged": false,
+      "iso": "lat",
+      "marked": 12,
+      "marked_covered": 0,
+      "types": 620
+    },
+    "lat:anchor-dev|unimorph": {
+      "agree": 32,
+      "covered": 64,
+      "flagged": false,
+      "iso": "lat",
+      "marked": 12,
+      "marked_covered": 0,
+      "types": 620
+    },
+    "lat:anchor-dev|wiktionary": {
+      "agree": 120,
+      "covered": 470,
+      "flagged": false,
+      "iso": "lat",
+      "marked": 12,
+      "marked_covered": 0,
+      "types": 620
+    },
     "lat:anchor-test|simplemma": {
       "agree": 226,
       "covered": 322,
@@ -5613,6 +7303,42 @@
       "marked": 24,
       "marked_covered": 0,
       "types": 476
+    },
+    "lav:anchor-dev|dictionary": {
+      "agree": 3496,
+      "covered": 3893,
+      "flagged": false,
+      "iso": "lav",
+      "marked": 59,
+      "marked_covered": 0,
+      "types": 4470
+    },
+    "lav:anchor-dev|simplemma": {
+      "agree": 1411,
+      "covered": 2651,
+      "flagged": false,
+      "iso": "lav",
+      "marked": 59,
+      "marked_covered": 0,
+      "types": 4470
+    },
+    "lav:anchor-dev|unimorph": {
+      "agree": 502,
+      "covered": 679,
+      "flagged": false,
+      "iso": "lav",
+      "marked": 59,
+      "marked_covered": 0,
+      "types": 4470
+    },
+    "lav:anchor-dev|wiktionary": {
+      "agree": 1039,
+      "covered": 1223,
+      "flagged": false,
+      "iso": "lav",
+      "marked": 59,
+      "marked_covered": 0,
+      "types": 4470
     },
     "lav:anchor-test|dictionary": {
       "agree": 3857,
@@ -5649,6 +7375,51 @@
       "marked": 50,
       "marked_covered": 0,
       "types": 4911
+    },
+    "lit:anchor-dev|dictionary": {
+      "agree": 1255,
+      "covered": 1324,
+      "flagged": false,
+      "iso": "lit",
+      "marked": 45,
+      "marked_covered": 0,
+      "types": 1466
+    },
+    "lit:anchor-dev|simplemma": {
+      "agree": 885,
+      "covered": 1056,
+      "flagged": false,
+      "iso": "lit",
+      "marked": 45,
+      "marked_covered": 0,
+      "types": 1466
+    },
+    "lit:anchor-dev|spacy-lookups": {
+      "agree": 665,
+      "covered": 838,
+      "flagged": false,
+      "iso": "lit",
+      "marked": 45,
+      "marked_covered": 0,
+      "types": 1466
+    },
+    "lit:anchor-dev|unimorph": {
+      "agree": 71,
+      "covered": 74,
+      "flagged": false,
+      "iso": "lit",
+      "marked": 45,
+      "marked_covered": 0,
+      "types": 1466
+    },
+    "lit:anchor-dev|wiktionary": {
+      "agree": 141,
+      "covered": 223,
+      "flagged": false,
+      "iso": "lit",
+      "marked": 45,
+      "marked_covered": 0,
+      "types": 1466
     },
     "lit:anchor-test|dictionary": {
       "agree": 2432,
@@ -5794,6 +7565,96 @@
       "marked_covered": 0,
       "types": 2187
     },
+    "mkd:fold-0|lemmagen3": {
+      "agree": 199,
+      "covered": 260,
+      "flagged": false,
+      "iso": "mkd",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 482
+    },
+    "mkd:fold-0|simplemma": {
+      "agree": 101,
+      "covered": 161,
+      "flagged": false,
+      "iso": "mkd",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 482
+    },
+    "mkd:fold-0|spacy-lookups": {
+      "agree": 167,
+      "covered": 255,
+      "flagged": false,
+      "iso": "mkd",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 482
+    },
+    "mkd:fold-0|unimorph": {
+      "agree": 249,
+      "covered": 294,
+      "flagged": false,
+      "iso": "mkd",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 482
+    },
+    "mkd:fold-0|wiktionary": {
+      "agree": 426,
+      "covered": 463,
+      "flagged": false,
+      "iso": "mkd",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 482
+    },
+    "mkd:fold-1|lemmagen3": {
+      "agree": 23,
+      "covered": 30,
+      "flagged": false,
+      "iso": "mkd",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 65
+    },
+    "mkd:fold-1|simplemma": {
+      "agree": 17,
+      "covered": 26,
+      "flagged": false,
+      "iso": "mkd",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 65
+    },
+    "mkd:fold-1|spacy-lookups": {
+      "agree": 23,
+      "covered": 30,
+      "flagged": false,
+      "iso": "mkd",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 65
+    },
+    "mkd:fold-1|unimorph": {
+      "agree": 30,
+      "covered": 36,
+      "flagged": false,
+      "iso": "mkd",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 65
+    },
+    "mkd:fold-1|wiktionary": {
+      "agree": 52,
+      "covered": 56,
+      "flagged": false,
+      "iso": "mkd",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 65
+    },
     "myv:anchor-test|giellalt": {
       "agree": 2038,
       "covered": 2319,
@@ -5884,6 +7745,42 @@
       "marked_covered": 2,
       "types": 3172
     },
+    "nld:anchor-dev|simplemma": {
+      "agree": 953,
+      "covered": 1485,
+      "flagged": false,
+      "iso": "nld",
+      "marked": 79,
+      "marked_covered": 0,
+      "types": 2513
+    },
+    "nld:anchor-dev|spacy-lookups": {
+      "agree": 547,
+      "covered": 925,
+      "flagged": false,
+      "iso": "nld",
+      "marked": 79,
+      "marked_covered": 1,
+      "types": 2513
+    },
+    "nld:anchor-dev|unimorph": {
+      "agree": 277,
+      "covered": 329,
+      "flagged": false,
+      "iso": "nld",
+      "marked": 79,
+      "marked_covered": 0,
+      "types": 2513
+    },
+    "nld:anchor-dev|wiktionary": {
+      "agree": 1037,
+      "covered": 1370,
+      "flagged": false,
+      "iso": "nld",
+      "marked": 79,
+      "marked_covered": 1,
+      "types": 2513
+    },
     "nld:anchor-test|simplemma": {
       "agree": 748,
       "covered": 1282,
@@ -5947,6 +7844,33 @@
       "marked_covered": 0,
       "types": 27319
     },
+    "nor:anchor-dev|dictionary": {
+      "agree": 1394,
+      "covered": 1538,
+      "flagged": false,
+      "iso": "nor",
+      "marked": 51,
+      "marked_covered": 1,
+      "types": 2510
+    },
+    "nor:anchor-dev|unimorph": {
+      "agree": 622,
+      "covered": 673,
+      "flagged": false,
+      "iso": "nor",
+      "marked": 51,
+      "marked_covered": 0,
+      "types": 2510
+    },
+    "nor:anchor-dev|wiktionary": {
+      "agree": 16,
+      "covered": 16,
+      "flagged": false,
+      "iso": "nor",
+      "marked": 51,
+      "marked_covered": 0,
+      "types": 2510
+    },
     "nor:anchor-test|dictionary": {
       "agree": 1098,
       "covered": 1230,
@@ -5998,6 +7922,33 @@
       "flagged": false,
       "iso": "oci",
       "marked": 2,
+      "marked_covered": 0,
+      "types": 300
+    },
+    "oci:anchor-dev|dictionary": {
+      "agree": 163,
+      "covered": 219,
+      "flagged": false,
+      "iso": "oci",
+      "marked": 9,
+      "marked_covered": 0,
+      "types": 300
+    },
+    "oci:anchor-dev|unimorph": {
+      "agree": 14,
+      "covered": 15,
+      "flagged": false,
+      "iso": "oci",
+      "marked": 9,
+      "marked_covered": 0,
+      "types": 300
+    },
+    "oci:anchor-dev|wiktionary": {
+      "agree": 82,
+      "covered": 90,
+      "flagged": false,
+      "iso": "oci",
+      "marked": 9,
       "marked_covered": 0,
       "types": 300
     },
@@ -6054,6 +8005,60 @@
       "marked": 6,
       "marked_covered": 0,
       "types": 690
+    },
+    "pes:anchor-dev|hazm": {
+      "agree": 383,
+      "covered": 431,
+      "flagged": false,
+      "iso": "pes",
+      "marked": 10,
+      "marked_covered": 0,
+      "types": 912
+    },
+    "pes:anchor-dev|lemmagen3": {
+      "agree": 13,
+      "covered": 23,
+      "flagged": false,
+      "iso": "pes",
+      "marked": 10,
+      "marked_covered": 0,
+      "types": 912
+    },
+    "pes:anchor-dev|simplemma": {
+      "agree": 13,
+      "covered": 28,
+      "flagged": false,
+      "iso": "pes",
+      "marked": 10,
+      "marked_covered": 0,
+      "types": 912
+    },
+    "pes:anchor-dev|spacy-lookups": {
+      "agree": 225,
+      "covered": 273,
+      "flagged": false,
+      "iso": "pes",
+      "marked": 10,
+      "marked_covered": 0,
+      "types": 912
+    },
+    "pes:anchor-dev|unimorph": {
+      "agree": 0,
+      "covered": 12,
+      "flagged": false,
+      "iso": "pes",
+      "marked": 10,
+      "marked_covered": 0,
+      "types": 912
+    },
+    "pes:anchor-dev|wiktionary": {
+      "agree": 85,
+      "covered": 125,
+      "flagged": false,
+      "iso": "pes",
+      "marked": 10,
+      "marked_covered": 0,
+      "types": 912
     },
     "pes:anchor-test|hazm": {
       "agree": 269,
@@ -6325,6 +8330,60 @@
       "marked_covered": 0,
       "types": 3035
     },
+    "pol:anchor-dev|dictionary": {
+      "agree": 4078,
+      "covered": 4221,
+      "flagged": false,
+      "iso": "pol",
+      "marked": 40,
+      "marked_covered": 0,
+      "types": 4558
+    },
+    "pol:anchor-dev|lemmagen3": {
+      "agree": 2886,
+      "covered": 3405,
+      "flagged": false,
+      "iso": "pol",
+      "marked": 40,
+      "marked_covered": 1,
+      "types": 4558
+    },
+    "pol:anchor-dev|simplemma": {
+      "agree": 3719,
+      "covered": 4162,
+      "flagged": false,
+      "iso": "pol",
+      "marked": 40,
+      "marked_covered": 2,
+      "types": 4558
+    },
+    "pol:anchor-dev|spacy-lookups": {
+      "agree": 3083,
+      "covered": 3470,
+      "flagged": false,
+      "iso": "pol",
+      "marked": 40,
+      "marked_covered": 0,
+      "types": 4558
+    },
+    "pol:anchor-dev|unimorph": {
+      "agree": 1238,
+      "covered": 1337,
+      "flagged": false,
+      "iso": "pol",
+      "marked": 40,
+      "marked_covered": 0,
+      "types": 4558
+    },
+    "pol:anchor-dev|wiktionary": {
+      "agree": 3334,
+      "covered": 3601,
+      "flagged": false,
+      "iso": "pol",
+      "marked": 40,
+      "marked_covered": 2,
+      "types": 4558
+    },
     "pol:anchor-test|dictionary": {
       "agree": 3822,
       "covered": 3970,
@@ -6379,6 +8438,42 @@
       "marked_covered": 0,
       "types": 4370
     },
+    "por:anchor-dev|simplemma": {
+      "agree": 549,
+      "covered": 730,
+      "flagged": false,
+      "iso": "por",
+      "marked": 60,
+      "marked_covered": 0,
+      "types": 1138
+    },
+    "por:anchor-dev|spacy-lookups": {
+      "agree": 366,
+      "covered": 491,
+      "flagged": false,
+      "iso": "por",
+      "marked": 60,
+      "marked_covered": 0,
+      "types": 1138
+    },
+    "por:anchor-dev|unimorph": {
+      "agree": 224,
+      "covered": 304,
+      "flagged": false,
+      "iso": "por",
+      "marked": 60,
+      "marked_covered": 0,
+      "types": 1138
+    },
+    "por:anchor-dev|wiktionary": {
+      "agree": 639,
+      "covered": 743,
+      "flagged": false,
+      "iso": "por",
+      "marked": 60,
+      "marked_covered": 0,
+      "types": 1138
+    },
     "por:anchor-test|simplemma": {
       "agree": 458,
       "covered": 567,
@@ -6432,6 +8527,42 @@
       "marked": 1,
       "marked_covered": 0,
       "types": 302
+    },
+    "pst:fold-0|unimorph": {
+      "agree": 49,
+      "covered": 59,
+      "flagged": false,
+      "iso": "pst",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 553
+    },
+    "pst:fold-0|wiktionary": {
+      "agree": 92,
+      "covered": 108,
+      "flagged": false,
+      "iso": "pst",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 553
+    },
+    "pst:fold-1|unimorph": {
+      "agree": 50,
+      "covered": 55,
+      "flagged": false,
+      "iso": "pst",
+      "marked": 8,
+      "marked_covered": 0,
+      "types": 560
+    },
+    "pst:fold-1|wiktionary": {
+      "agree": 102,
+      "covered": 114,
+      "flagged": false,
+      "iso": "pst",
+      "marked": 8,
+      "marked_covered": 0,
+      "types": 560
     },
     "pt_alienista|simplemma": {
       "agree": 2397,
@@ -7156,6 +9287,60 @@
       "marked_covered": 0,
       "types": 950
     },
+    "ron:anchor-dev|dictionary": {
+      "agree": 298,
+      "covered": 431,
+      "flagged": false,
+      "iso": "ron",
+      "marked": 1,
+      "marked_covered": 0,
+      "types": 677
+    },
+    "ron:anchor-dev|lemmagen3": {
+      "agree": 182,
+      "covered": 334,
+      "flagged": false,
+      "iso": "ron",
+      "marked": 1,
+      "marked_covered": 0,
+      "types": 677
+    },
+    "ron:anchor-dev|simplemma": {
+      "agree": 256,
+      "covered": 295,
+      "flagged": false,
+      "iso": "ron",
+      "marked": 1,
+      "marked_covered": 0,
+      "types": 677
+    },
+    "ron:anchor-dev|spacy-lookups": {
+      "agree": 203,
+      "covered": 238,
+      "flagged": false,
+      "iso": "ron",
+      "marked": 1,
+      "marked_covered": 0,
+      "types": 677
+    },
+    "ron:anchor-dev|unimorph": {
+      "agree": 130,
+      "covered": 141,
+      "flagged": false,
+      "iso": "ron",
+      "marked": 1,
+      "marked_covered": 0,
+      "types": 677
+    },
+    "ron:anchor-dev|wiktionary": {
+      "agree": 311,
+      "covered": 361,
+      "flagged": false,
+      "iso": "ron",
+      "marked": 1,
+      "marked_covered": 0,
+      "types": 677
+    },
     "ron:anchor-test|dictionary": {
       "agree": 384,
       "covered": 542,
@@ -7462,6 +9647,69 @@
       "marked_covered": 5,
       "types": 84140
     },
+    "rus:anchor-dev|dictionary": {
+      "agree": 854,
+      "covered": 1027,
+      "flagged": false,
+      "iso": "rus",
+      "marked": 326,
+      "marked_covered": 1,
+      "types": 1692
+    },
+    "rus:anchor-dev|lemmagen3": {
+      "agree": 647,
+      "covered": 855,
+      "flagged": false,
+      "iso": "rus",
+      "marked": 326,
+      "marked_covered": 1,
+      "types": 1692
+    },
+    "rus:anchor-dev|pymorphy-dictionaries": {
+      "agree": 863,
+      "covered": 1027,
+      "flagged": false,
+      "iso": "rus",
+      "marked": 326,
+      "marked_covered": 1,
+      "types": 1692
+    },
+    "rus:anchor-dev|simplemma": {
+      "agree": 747,
+      "covered": 852,
+      "flagged": false,
+      "iso": "rus",
+      "marked": 326,
+      "marked_covered": 1,
+      "types": 1692
+    },
+    "rus:anchor-dev|spacy-lookups": {
+      "agree": 572,
+      "covered": 636,
+      "flagged": false,
+      "iso": "rus",
+      "marked": 326,
+      "marked_covered": 0,
+      "types": 1692
+    },
+    "rus:anchor-dev|unimorph": {
+      "agree": 498,
+      "covered": 547,
+      "flagged": false,
+      "iso": "rus",
+      "marked": 326,
+      "marked_covered": 0,
+      "types": 1692
+    },
+    "rus:anchor-dev|wiktionary": {
+      "agree": 172,
+      "covered": 663,
+      "flagged": false,
+      "iso": "rus",
+      "marked": 326,
+      "marked_covered": 0,
+      "types": 1692
+    },
     "rus:anchor-test|dictionary": {
       "agree": 878,
       "covered": 1028,
@@ -7543,6 +9791,72 @@
       "marked_covered": 0,
       "types": 1062
     },
+    "sah:fold-0|dictionary": {
+      "agree": 250,
+      "covered": 254,
+      "flagged": false,
+      "iso": "sah",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 270
+    },
+    "sah:fold-0|unimorph": {
+      "agree": 181,
+      "covered": 190,
+      "flagged": false,
+      "iso": "sah",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 270
+    },
+    "sah:fold-0|wiktionary": {
+      "agree": 94,
+      "covered": 101,
+      "flagged": false,
+      "iso": "sah",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 270
+    },
+    "sah:fold-1|dictionary": {
+      "agree": 249,
+      "covered": 261,
+      "flagged": false,
+      "iso": "sah",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 277
+    },
+    "sah:fold-1|unimorph": {
+      "agree": 186,
+      "covered": 193,
+      "flagged": false,
+      "iso": "sah",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 277
+    },
+    "sah:fold-1|wiktionary": {
+      "agree": 95,
+      "covered": 107,
+      "flagged": false,
+      "iso": "sah",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 277
+    },
+    "san:anchor-dev|unimorph": {
+      "flagged": false,
+      "iso": "san",
+      "marked": 0,
+      "types": 2549
+    },
+    "san:anchor-dev|wiktionary": {
+      "flagged": false,
+      "iso": "san",
+      "marked": 0,
+      "types": 2549
+    },
     "san:anchor-test|unimorph": {
       "flagged": false,
       "iso": "san",
@@ -7554,6 +9868,42 @@
       "iso": "san",
       "marked": 0,
       "types": 2330
+    },
+    "sga:fold-0|unimorph": {
+      "agree": 2,
+      "covered": 3,
+      "flagged": false,
+      "iso": "sga",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 125
+    },
+    "sga:fold-0|wiktionary": {
+      "agree": 25,
+      "covered": 46,
+      "flagged": false,
+      "iso": "sga",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 125
+    },
+    "sga:fold-1|unimorph": {
+      "agree": 1,
+      "covered": 1,
+      "flagged": false,
+      "iso": "sga",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 109
+    },
+    "sga:fold-1|wiktionary": {
+      "agree": 32,
+      "covered": 51,
+      "flagged": false,
+      "iso": "sga",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 109
     },
     "sga_dipwbg|unimorph": {
       "agree": 9,
@@ -7690,6 +10040,51 @@
       "marked_covered": 0,
       "types": 5716
     },
+    "slk:anchor-dev|dictionary": {
+      "agree": 2709,
+      "covered": 2977,
+      "flagged": false,
+      "iso": "slk",
+      "marked": 61,
+      "marked_covered": 4,
+      "types": 3773
+    },
+    "slk:anchor-dev|lemmagen3": {
+      "agree": 2223,
+      "covered": 2462,
+      "flagged": false,
+      "iso": "slk",
+      "marked": 61,
+      "marked_covered": 0,
+      "types": 3773
+    },
+    "slk:anchor-dev|simplemma": {
+      "agree": 2679,
+      "covered": 2979,
+      "flagged": false,
+      "iso": "slk",
+      "marked": 61,
+      "marked_covered": 0,
+      "types": 3773
+    },
+    "slk:anchor-dev|unimorph": {
+      "agree": 2933,
+      "covered": 3015,
+      "flagged": false,
+      "iso": "slk",
+      "marked": 61,
+      "marked_covered": 0,
+      "types": 3773
+    },
+    "slk:anchor-dev|wiktionary": {
+      "agree": 843,
+      "covered": 1058,
+      "flagged": false,
+      "iso": "slk",
+      "marked": 61,
+      "marked_covered": 0,
+      "types": 3773
+    },
     "slk:anchor-test|dictionary": {
       "agree": 2543,
       "covered": 2736,
@@ -7734,6 +10129,42 @@
       "marked": 111,
       "marked_covered": 0,
       "types": 3865
+    },
+    "slv:anchor-dev|dictionary": {
+      "agree": 3189,
+      "covered": 3490,
+      "flagged": true,
+      "iso": "slv",
+      "marked": 37,
+      "marked_covered": 25,
+      "types": 3672
+    },
+    "slv:anchor-dev|lemmagen3": {
+      "agree": 2461,
+      "covered": 2634,
+      "flagged": false,
+      "iso": "slv",
+      "marked": 37,
+      "marked_covered": 0,
+      "types": 3672
+    },
+    "slv:anchor-dev|simplemma": {
+      "agree": 2625,
+      "covered": 2723,
+      "flagged": false,
+      "iso": "slv",
+      "marked": 37,
+      "marked_covered": 0,
+      "types": 3672
+    },
+    "slv:anchor-dev|unimorph": {
+      "agree": 3,
+      "covered": 5,
+      "flagged": false,
+      "iso": "slv",
+      "marked": 37,
+      "marked_covered": 0,
+      "types": 3672
     },
     "slv:anchor-test|dictionary": {
       "agree": 3151,
@@ -7788,6 +10219,51 @@
       "marked": 52,
       "marked_covered": 0,
       "types": 2678
+    },
+    "spa:anchor-dev|lemmagen3": {
+      "agree": 810,
+      "covered": 1168,
+      "flagged": false,
+      "iso": "spa",
+      "marked": 124,
+      "marked_covered": 0,
+      "types": 2349
+    },
+    "spa:anchor-dev|simplemma": {
+      "agree": 1258,
+      "covered": 1544,
+      "flagged": false,
+      "iso": "spa",
+      "marked": 124,
+      "marked_covered": 1,
+      "types": 2349
+    },
+    "spa:anchor-dev|spacy-lookups": {
+      "agree": 806,
+      "covered": 1107,
+      "flagged": false,
+      "iso": "spa",
+      "marked": 124,
+      "marked_covered": 0,
+      "types": 2349
+    },
+    "spa:anchor-dev|unimorph": {
+      "agree": 1208,
+      "covered": 1419,
+      "flagged": false,
+      "iso": "spa",
+      "marked": 124,
+      "marked_covered": 0,
+      "types": 2349
+    },
+    "spa:anchor-dev|wiktionary": {
+      "agree": 1552,
+      "covered": 1663,
+      "flagged": false,
+      "iso": "spa",
+      "marked": 124,
+      "marked_covered": 1,
+      "types": 2349
     },
     "spa:anchor-test|lemmagen3": {
       "agree": 800,
@@ -7869,6 +10345,42 @@
       "marked": 1,
       "marked_covered": 0,
       "types": 388
+    },
+    "sqi:anchor-dev|dictionary": {
+      "agree": 28,
+      "covered": 42,
+      "flagged": false,
+      "iso": "sqi",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 106
+    },
+    "sqi:anchor-dev|simplemma": {
+      "agree": 40,
+      "covered": 51,
+      "flagged": false,
+      "iso": "sqi",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 106
+    },
+    "sqi:anchor-dev|unimorph": {
+      "agree": 13,
+      "covered": 17,
+      "flagged": false,
+      "iso": "sqi",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 106
+    },
+    "sqi:anchor-dev|wiktionary": {
+      "agree": 49,
+      "covered": 65,
+      "flagged": false,
+      "iso": "sqi",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 106
     },
     "sqi:anchor-test|dictionary": {
       "agree": 28,
@@ -8034,6 +10546,48 @@
       "marked": 6,
       "marked_covered": 0,
       "types": 9965
+    },
+    "srp:anchor-dev|dictionary": {
+      "agree": 1310,
+      "covered": 1478,
+      "flagged": false,
+      "iso": "srp",
+      "marked": 26,
+      "marked_covered": 0,
+      "types": 1713
+    },
+    "srp:anchor-dev|lemmagen3": {
+      "agree": 992,
+      "covered": 1118,
+      "flagged": false,
+      "iso": "srp",
+      "marked": 26,
+      "marked_covered": 0,
+      "types": 1713
+    },
+    "srp:anchor-dev|simplemma": {
+      "agree": 923,
+      "covered": 1029,
+      "flagged": false,
+      "iso": "srp",
+      "marked": 26,
+      "marked_covered": 0,
+      "types": 1713
+    },
+    "srp:anchor-dev|spacy-lookups": {
+      "flagged": false,
+      "iso": "srp",
+      "marked": 26,
+      "types": 1713
+    },
+    "srp:anchor-dev|unimorph": {
+      "agree": 791,
+      "covered": 861,
+      "flagged": false,
+      "iso": "srp",
+      "marked": 26,
+      "marked_covered": 0,
+      "types": 1713
     },
     "srp:anchor-test|dictionary": {
       "agree": 1212,
@@ -8257,6 +10811,51 @@
       "marked_covered": 0,
       "types": 1063
     },
+    "swe:anchor-dev|dictionary": {
+      "agree": 751,
+      "covered": 864,
+      "flagged": false,
+      "iso": "swe",
+      "marked": 13,
+      "marked_covered": 0,
+      "types": 1066
+    },
+    "swe:anchor-dev|simplemma": {
+      "agree": 709,
+      "covered": 820,
+      "flagged": false,
+      "iso": "swe",
+      "marked": 13,
+      "marked_covered": 0,
+      "types": 1066
+    },
+    "swe:anchor-dev|spacy-lookups": {
+      "agree": 461,
+      "covered": 566,
+      "flagged": false,
+      "iso": "swe",
+      "marked": 13,
+      "marked_covered": 0,
+      "types": 1066
+    },
+    "swe:anchor-dev|unimorph": {
+      "agree": 392,
+      "covered": 435,
+      "flagged": false,
+      "iso": "swe",
+      "marked": 13,
+      "marked_covered": 0,
+      "types": 1066
+    },
+    "swe:anchor-dev|wiktionary": {
+      "agree": 728,
+      "covered": 764,
+      "flagged": false,
+      "iso": "swe",
+      "marked": 13,
+      "marked_covered": 0,
+      "types": 1066
+    },
     "swe:anchor-test|dictionary": {
       "agree": 1709,
       "covered": 1915,
@@ -8301,6 +10900,120 @@
       "marked": 73,
       "marked_covered": 2,
       "types": 2429
+    },
+    "tat:fold-0|dictionary": {
+      "agree": 433,
+      "covered": 473,
+      "flagged": false,
+      "iso": "tat",
+      "marked": 4,
+      "marked_covered": 0,
+      "types": 535
+    },
+    "tat:fold-0|unimorph": {
+      "flagged": false,
+      "iso": "tat",
+      "marked": 4,
+      "types": 535
+    },
+    "tat:fold-0|wiktionary": {
+      "agree": 65,
+      "covered": 82,
+      "flagged": false,
+      "iso": "tat",
+      "marked": 4,
+      "marked_covered": 0,
+      "types": 535
+    },
+    "tat:fold-1|dictionary": {
+      "agree": 432,
+      "covered": 483,
+      "flagged": false,
+      "iso": "tat",
+      "marked": 5,
+      "marked_covered": 0,
+      "types": 528
+    },
+    "tat:fold-1|unimorph": {
+      "flagged": false,
+      "iso": "tat",
+      "marked": 5,
+      "types": 528
+    },
+    "tat:fold-1|wiktionary": {
+      "agree": 74,
+      "covered": 88,
+      "flagged": false,
+      "iso": "tat",
+      "marked": 5,
+      "marked_covered": 0,
+      "types": 528
+    },
+    "tgl:fold-0|simplemma": {
+      "agree": 18,
+      "covered": 50,
+      "flagged": false,
+      "iso": "tgl",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 87
+    },
+    "tgl:fold-0|spacy-lookups": {
+      "flagged": false,
+      "iso": "tgl",
+      "marked": 0,
+      "types": 87
+    },
+    "tgl:fold-0|unimorph": {
+      "agree": 22,
+      "covered": 24,
+      "flagged": false,
+      "iso": "tgl",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 87
+    },
+    "tgl:fold-0|wiktionary": {
+      "agree": 38,
+      "covered": 72,
+      "flagged": false,
+      "iso": "tgl",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 87
+    },
+    "tgl:fold-1|simplemma": {
+      "agree": 22,
+      "covered": 52,
+      "flagged": false,
+      "iso": "tgl",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 90
+    },
+    "tgl:fold-1|spacy-lookups": {
+      "flagged": false,
+      "iso": "tgl",
+      "marked": 0,
+      "types": 90
+    },
+    "tgl:fold-1|unimorph": {
+      "agree": 17,
+      "covered": 18,
+      "flagged": false,
+      "iso": "tgl",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 90
+    },
+    "tgl:fold-1|wiktionary": {
+      "agree": 39,
+      "covered": 69,
+      "flagged": false,
+      "iso": "tgl",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 90
     },
     "tl_ugnayan|simplemma": {
       "agree": 78,
@@ -8821,6 +11534,60 @@
       "marked_covered": 0,
       "types": 150
     },
+    "tur:anchor-dev|dictionary": {
+      "agree": 335,
+      "covered": 407,
+      "flagged": false,
+      "iso": "tur",
+      "marked": 139,
+      "marked_covered": 0,
+      "types": 911
+    },
+    "tur:anchor-dev|simplemma": {
+      "agree": 489,
+      "covered": 603,
+      "flagged": false,
+      "iso": "tur",
+      "marked": 139,
+      "marked_covered": 0,
+      "types": 911
+    },
+    "tur:anchor-dev|spacy-lookups": {
+      "agree": 489,
+      "covered": 601,
+      "flagged": false,
+      "iso": "tur",
+      "marked": 139,
+      "marked_covered": 0,
+      "types": 911
+    },
+    "tur:anchor-dev|unimorph": {
+      "agree": 65,
+      "covered": 95,
+      "flagged": false,
+      "iso": "tur",
+      "marked": 139,
+      "marked_covered": 0,
+      "types": 911
+    },
+    "tur:anchor-dev|wiktionary": {
+      "agree": 222,
+      "covered": 358,
+      "flagged": false,
+      "iso": "tur",
+      "marked": 139,
+      "marked_covered": 0,
+      "types": 911
+    },
+    "tur:anchor-dev|zeyrek": {
+      "agree": 280,
+      "covered": 512,
+      "flagged": false,
+      "iso": "tur",
+      "marked": 139,
+      "marked_covered": 0,
+      "types": 911
+    },
     "tur:anchor-test|dictionary": {
       "agree": 499,
       "covered": 593,
@@ -8874,6 +11641,30 @@
       "marked": 94,
       "marked_covered": 0,
       "types": 1323
+    },
+    "uig:anchor-dev|dictionary": {
+      "agree": 1102,
+      "covered": 1134,
+      "flagged": false,
+      "iso": "uig",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 1229
+    },
+    "uig:anchor-dev|unimorph": {
+      "flagged": false,
+      "iso": "uig",
+      "marked": 0,
+      "types": 1229
+    },
+    "uig:anchor-dev|wiktionary": {
+      "agree": 244,
+      "covered": 252,
+      "flagged": false,
+      "iso": "uig",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 1229
     },
     "uig:anchor-test|dictionary": {
       "agree": 1028,
@@ -8989,6 +11780,51 @@
       "marked_covered": 0,
       "types": 1936
     },
+    "ukr:anchor-dev|lemmagen3": {
+      "agree": 493,
+      "covered": 548,
+      "flagged": false,
+      "iso": "ukr",
+      "marked": 26,
+      "marked_covered": 0,
+      "types": 2575
+    },
+    "ukr:anchor-dev|pymorphy-dictionaries": {
+      "agree": 2056,
+      "covered": 2341,
+      "flagged": false,
+      "iso": "ukr",
+      "marked": 26,
+      "marked_covered": 0,
+      "types": 2575
+    },
+    "ukr:anchor-dev|simplemma": {
+      "agree": 1514,
+      "covered": 1604,
+      "flagged": false,
+      "iso": "ukr",
+      "marked": 26,
+      "marked_covered": 0,
+      "types": 2575
+    },
+    "ukr:anchor-dev|unimorph": {
+      "agree": 213,
+      "covered": 218,
+      "flagged": false,
+      "iso": "ukr",
+      "marked": 26,
+      "marked_covered": 0,
+      "types": 2575
+    },
+    "ukr:anchor-dev|wiktionary": {
+      "agree": 399,
+      "covered": 822,
+      "flagged": false,
+      "iso": "ukr",
+      "marked": 26,
+      "marked_covered": 0,
+      "types": 2575
+    },
     "ukr:anchor-test|lemmagen3": {
       "agree": 642,
       "covered": 693,
@@ -9033,6 +11869,33 @@
       "marked": 43,
       "marked_covered": 0,
       "types": 3405
+    },
+    "urd:anchor-dev|spacy-lookups": {
+      "agree": 100,
+      "covered": 127,
+      "flagged": false,
+      "iso": "urd",
+      "marked": 86,
+      "marked_covered": 0,
+      "types": 675
+    },
+    "urd:anchor-dev|unimorph": {
+      "agree": 3,
+      "covered": 6,
+      "flagged": false,
+      "iso": "urd",
+      "marked": 86,
+      "marked_covered": 0,
+      "types": 675
+    },
+    "urd:anchor-dev|wiktionary": {
+      "agree": 89,
+      "covered": 104,
+      "flagged": false,
+      "iso": "urd",
+      "marked": 86,
+      "marked_covered": 0,
+      "types": 675
     },
     "urd:anchor-test|spacy-lookups": {
       "agree": 67,
@@ -9168,6 +12031,78 @@
       "marked": 0,
       "marked_covered": 0,
       "types": 718
+    },
+    "vep:fold-0|giellalt": {
+      "agree": 81,
+      "covered": 100,
+      "flagged": false,
+      "iso": "vep",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 244
+    },
+    "vep:fold-0|unimorph": {
+      "agree": 153,
+      "covered": 185,
+      "flagged": false,
+      "iso": "vep",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 244
+    },
+    "vep:fold-0|wiktionary": {
+      "agree": 111,
+      "covered": 125,
+      "flagged": false,
+      "iso": "vep",
+      "marked": 0,
+      "marked_covered": 0,
+      "types": 244
+    },
+    "vep:fold-1|giellalt": {
+      "agree": 105,
+      "covered": 124,
+      "flagged": false,
+      "iso": "vep",
+      "marked": 2,
+      "marked_covered": 0,
+      "types": 259
+    },
+    "vep:fold-1|unimorph": {
+      "agree": 171,
+      "covered": 196,
+      "flagged": false,
+      "iso": "vep",
+      "marked": 2,
+      "marked_covered": 0,
+      "types": 259
+    },
+    "vep:fold-1|wiktionary": {
+      "agree": 130,
+      "covered": 150,
+      "flagged": false,
+      "iso": "vep",
+      "marked": 2,
+      "marked_covered": 0,
+      "types": 259
+    },
+    "yid:anchor-dev|unimorph": {
+      "agree": 16,
+      "covered": 17,
+      "flagged": false,
+      "iso": "yid",
+      "marked": 22,
+      "marked_covered": 0,
+      "types": 239
+    },
+    "yid:anchor-dev|wiktionary": {
+      "agree": 72,
+      "covered": 85,
+      "flagged": false,
+      "iso": "yid",
+      "marked": 22,
+      "marked_covered": 2,
+      "types": 239
     },
     "yid:anchor-test|unimorph": {
       "agree": 102,

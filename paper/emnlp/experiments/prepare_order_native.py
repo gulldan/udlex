@@ -5,6 +5,32 @@ import shutil
 from pathlib import Path
 
 
+SOLO = """    let mut solo = Vec::new();
+    for map in &maps {
+        tables.external = eligible
+            .iter()
+            .filter_map(|f| map.get(f).map(|v| (f.clone(), v.clone())))
+            .collect();
+        let view = View::new(&tables, Thresholds::default(), Variant::Full);
+        let answers: Vec<[Prediction; 2]> = forms
+            .keys()
+            .map(|form| {
+                std::array::from_fn(|i| {
+                    let a = probe::lemma_with_info(&view, form, i != 0, Options::default());
+                    Prediction {
+                        text: a.lemma.into_owned(),
+                        stage: a.source,
+                    }
+                })
+            })
+            .collect();
+        solo.push(answers);
+    }
+    let room = json!({"dev": headroom(&dev, &forms, &pred, &solo),
+                      "test": headroom(&test, &forms, &pred, &solo)});
+"""
+
+
 def expose(path, old, new):
     body = path.read_text()
     if new in body:
@@ -40,12 +66,17 @@ def prepare(root, disable_rules=False, examples=None):
             "i != 0, Options { use_rules: false, ..Options::default() }",
         )
     if examples:
-        # Diagnostic build: list every changed prediction instead of five per outcome.
+        # Diagnostic build: list every changed prediction instead of five per
+        # outcome, and count where sources that hold the same key disagree.
+        harness = src / "builder/paper_order.rs"
+        expose(harness, "n_examples[which] < 5", f"n_examples[which] < {examples}")
         expose(
-            src / "builder/paper_order.rs",
-            "n_examples[which] < 5",
-            f"n_examples[which] < {examples}",
+            harness,
+            "    let result = json!({",
+            SOLO + '    let result = json!({"headroom":room,',
         )
+        with harness.open("a") as out:
+            out.write(Path(__file__).with_name("order_diagnostic.rs").read_text())
     (src / "bin").mkdir(exist_ok=True)
     (src / "bin/paper_order.rs").write_text(
         "fn main() -> Result<(), Box<dyn std::error::Error>> { udlex_rs::run() }\n"

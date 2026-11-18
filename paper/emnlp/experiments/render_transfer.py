@@ -18,7 +18,7 @@ def main():
     root = EVIDENCE.parent
     s = read(EVIDENCE / "ud219/transfer/summary.json")
     off = read(EVIDENCE / "ud219/transfer-no-rules/summary.json")
-    changes = read(EVIDENCE / "ud219/transfer/changes.json")
+    changes = read(EVIDENCE / "ud219/changes/transfer.json")["languages"]
     for view, _ in ROWS:
         for arm in ("learned", "dev_gated"):
             a, b = s[view]["arms"][arm], off[view]["arms"][arm]
