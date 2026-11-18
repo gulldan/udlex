@@ -303,6 +303,15 @@ def package_one(iso: str, row: dict, work: Path, out: Path, commit: str) -> dict
         "recipe_sha256": digest_bytes(json_bytes(recipe)),
     }
     docs["NOTICE"] = notice(entry, conditions)
+    for member in (m for s in used for m in s["members"]):
+        # BSD and Apache terms travel with the data: upstream notices, verbatim.
+        block = work / "pairs" / member / "NOTICE.txt"
+        if block.is_file():
+            docs[f"{member}-NOTICE"] = block.read_bytes()
+        for item in sources[member]["files"]:
+            if "notice" in item:
+                path = work.parent / "cache" / item["sha256"]
+                docs[f"{member}-{item['notice']}"] = path.read_bytes()
     entry |= write_wheel(out / "packages", entry, runtime, docs)
     return entry
 

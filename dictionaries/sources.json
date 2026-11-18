@@ -1596,6 +1596,18 @@
      "sha256": "e9ac06222f0ce401a0fef9b129e61e93d59e3ff395a1b037f498962ee5b8ad8b",
      "size": 21934496,
      "url": "https://d2ej7fkh96fzlu.cloudfront.net/sudachidict-raw/v1/20261015/core_lex.zip"
+    },
+    {
+     "notice": "LEGAL",
+     "sha256": "725a8776b38e058b185e905594bc9a2437dbf3787df022fffeefedb9a84e4665",
+     "size": 6037,
+     "url": "https://raw.githubusercontent.com/WorksApplications/SudachiDict/830bf9e1313f6f75235ba87ee041e144dbcad8c1/LEGAL"
+    },
+    {
+     "notice": "LICENSE-2.0.txt",
+     "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+     "size": 11358,
+     "url": "https://raw.githubusercontent.com/WorksApplications/SudachiDict/830bf9e1313f6f75235ba87ee041e144dbcad8c1/LICENSE-2.0.txt"
     }
    ],
    "home": "https://github.com/WorksApplications/SudachiDict",

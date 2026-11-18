@@ -385,7 +385,7 @@ def extract(source: dict, cache: Path, root: Path) -> dict:
     """Extract one source into ``root/<id>/<iso>.tsv.gz``; resumable per source."""
     out = root / source["id"]
     manifest = out / "manifest.json"
-    inputs = [f["sha256"] for f in source["files"]]
+    inputs = [f["sha256"] for f in source["files"] if "notice" not in f]
     if manifest.is_file() and read_json(manifest).get("inputs") == inputs:
         return read_json(manifest)
     if out.exists():
@@ -396,7 +396,7 @@ def extract(source: dict, cache: Path, root: Path) -> dict:
     else:
         notices: list[str] = []
         tables: dict[str, Counter[tuple[str, str]]] = {}
-        for item in source["files"]:
+        for item in (f for f in source["files"] if "notice" not in f):
             path = cache / item["sha256"]
             if source["parser"] == "table":
                 reader = table(path, item.get("format") or source["format"], notices)
