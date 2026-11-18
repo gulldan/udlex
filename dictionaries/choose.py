@@ -29,7 +29,7 @@ import unicodedata
 from collections import Counter, defaultdict
 from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Any
 
 from common import (
     POLICY,
@@ -107,7 +107,7 @@ def candidates(iso: str, row: dict, work: Path) -> tuple[list[dict], list[dict]]
         and s["rank"] == policy["declared_family_order"].index("wiktionary-native")
     ]
     if len(other) > 1:
-        merged = dict(other[0], id="wiktionary-other")
+        merged: dict = {**other[0], "id": "wiktionary-other"}
         for key in ("members", "pairs", "pairs_sha256"):
             merged[key] = [v for s in other for v in s[key]]
         if len({s["license"] for s in other}) != 1:
@@ -299,7 +299,8 @@ def learn(
             current = best[mask | (1 << j)]
             if current is None or (-cand[0], *cand[1:]) < (-current[0], *current[1:]):
                 best[mask | (1 << j)] = cand
-    full = best[end][2] if best[end] else []
+    last = best[end]
+    full = last[2] if last else []
     subset = min(
         (b for b in best if b is not None), key=lambda b: (-b[0], len(b[2]), b[2])
     )[2]
@@ -353,7 +354,7 @@ def build(
     train: Path | None,
     dev: Path | None,
     tables: list[tuple[str, Path]],
-    **options: object,
+    **options: Any,  # noqa: ANN401 - forwarded keyword options of build_lexicon
 ) -> udlex.Outcome:
     """One ``build_lexicon`` call into a fresh directory."""
     if dest.exists():

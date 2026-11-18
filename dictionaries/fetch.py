@@ -13,6 +13,7 @@ import sys
 import time
 import urllib.request
 from pathlib import Path
+from typing import Any
 
 from common import SOURCES, read_json, sha256, write_json
 
@@ -48,7 +49,8 @@ def fetch(cache: Path, *, pin: bool, only: set[str] | None) -> None:
     """Fill the cache; with ``pin`` record digests of unpinned entries."""
     config = read_json(SOURCES)
     changed = False
-    for source in [{"id": "ud", "files": [config["ud"]]}, *config["sources"]]:
+    sources: list[dict[str, Any]] = [{"id": "ud", "files": [config["ud"]]}]
+    for source in sources + config["sources"]:
         if only and source["id"] not in only:
             continue
         for item in source["files"]:

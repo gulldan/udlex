@@ -19,6 +19,7 @@ import subprocess
 import tarfile
 import zipfile
 from pathlib import Path
+from typing import Any
 
 from common import (
     HERE,
@@ -201,7 +202,7 @@ def package_one(iso: str, row: dict, work: Path, out: Path, commit: str) -> dict
         for s in decision["sources"]
         if s["id"] not in decision["order"]
     ]
-    corpus = None
+    corpus: dict[str, Any] | None = None
     docs: dict[str, bytes] = {}
     if row["treebank"]:
         bank = work / "ud" / "ud-treebanks-v2.19" / row["treebank"]
@@ -222,7 +223,8 @@ def package_one(iso: str, row: dict, work: Path, out: Path, commit: str) -> dict
         docs["TREEBANK-README"] = (bank / lic["readme"]).read_bytes()
         if lic["license_file"]:
             docs["TREEBANK-LICENSE"] = (bank / lic["license_file"]).read_bytes()
-    components = ([corpus["license"]] if corpus else []) + [s["license"] for s in used]
+    components: list[str] = [corpus["license"]] if corpus else []
+    components += [s["license"] for s in used]
     spdx, noncommercial = package_license(components)
     conditions = policy["special_conditions"].get(row["config"] or "")
     generation, runtime = runtime_files(folder / "lexicon" / iso, work / "stage", iso)

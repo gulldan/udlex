@@ -359,7 +359,9 @@ def spool_wiktextract(path: Path, out: Path) -> dict:
     try:
         for code, form, lemma in wiktextract(path):
             pair = clean(form, lemma)
-            for iso in codes.get(code, ()) if pair else ():
+            if pair is None:
+                continue
+            for iso in codes.get(code, ()):
                 if iso not in handles:
                     handles[iso] = (spool / iso).open("a", encoding="utf-8")
                 handles[iso].write(f"{pair[0]}\t{pair[1]}\n")
