@@ -43,7 +43,8 @@ const fn fold(a: u64, b: u64) -> u64 {
 }
 
 /// One folded multiply per eight bytes; part of the on-disk format.
-#[inline]
+#[expect(clippy::inline_always, reason = "part of the inlined hybrid read")]
+#[inline(always)]
 fn key_hash(key: &[u8], seed: u64) -> u64 {
     let mut h = fold(seed ^ (key.len() as u64), K1);
     let (chunks, rest) = key.as_chunks::<8>();
@@ -74,7 +75,8 @@ const fn slot_of(h: u64, pilot: u16, n_slots: usize) -> usize {
 }
 
 /// Equality of two same-length keys without a `memcmp` call.
-#[inline]
+#[expect(clippy::inline_always, reason = "part of the inlined hybrid read")]
+#[inline(always)]
 fn same(a: &[u8], b: &[u8]) -> bool {
     let (ca, ra) = a.as_chunks::<8>();
     let (cb, rb) = b.as_chunks::<8>();
@@ -297,8 +299,13 @@ impl HybridTable {
     // Every index below is `reduce` output, below a count whose section
     // `parse_layout` proved to lie inside the file, so the offsets cannot
     // overflow and the unchecked reads stay inside the mapping.
-    #[inline]
-    #[allow(clippy::arithmetic_side_effects, clippy::indexing_slicing)]
+    // Always inline: returned from a call, `Hit` travels through memory.
+    #[inline(always)]
+    #[allow(
+        clippy::arithmetic_side_effects,
+        clippy::indexing_slicing,
+        clippy::inline_always
+    )]
     pub(in crate::lexicon) fn get(&self, key: &[u8]) -> Option<Hit<'_>> {
         let layout = &self.layout;
         if key.len() <= SPLIT_BYTES {
