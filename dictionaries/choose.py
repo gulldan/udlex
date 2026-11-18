@@ -569,7 +569,7 @@ def dev_gate(
     trials: dict[str, dict] = {}
     vectors: dict[str, list[bool]] = {}
     for arm in ("learned", "subset"):
-        order = policies[arm]
+        order = policies.get(arm, chosen)
         if order != chosen and all(order != t["order"] for t in trials.values()):
             vectors[arm] = score(order)
             trials[arm] = {"order": order} | gate(base, vectors[arm])
