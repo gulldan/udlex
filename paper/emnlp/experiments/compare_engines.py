@@ -4,6 +4,9 @@ import argparse
 import gzip
 import json
 import sys
+import time
+import urllib.parse
+import urllib.request
 from concurrent.futures import ProcessPoolExecutor
 from importlib.metadata import PackageNotFoundError, version
 from pathlib import Path
@@ -27,6 +30,24 @@ ADAPTERS = {
     "nltk-wordnet": "nltk",
 }
 STANZA_CODE = {"no_nynorsk": "nn", "no_bokmaal": "nb"}
+SPACY_SIZE = {"spacy-sm": "sm", "spacy-lg": "lg", "spacy-trf": "trf"}
+# Trankit names models after UD 2.5 treebanks; these languages have another anchor treebank now.
+TRANKIT_MAIN = {
+    "cs": "czech",
+    "fa": "persian",
+    "kmr": "kurmanji",
+    "mr": "marathi",
+    "no": "norwegian-nynorsk",
+    "orv": "old-russian",
+    "pt": "portuguese",
+    "tr": "turkish",
+    "zh": "chinese",
+}
+# Engines that run several threads per language.
+SLOW = {"stanza", "trankit", "spacy-trf", "corenlp"}
+# UDPipe is scored through the public LINDAT service; test sentences of UD are sent to it.
+UDPIPE = "https://lindat.mff.cuni.cz/services/udpipe/api/"
+UDPIPE_RELEASE = {"udpipe2": "ud-2.17-251125", "udpipe1": "ud-2.5-191206"}
 CHUNK = 2000
 
 
@@ -69,25 +90,146 @@ def stanza_pipeline(lang, config, models):
     raise LookupError(str(last)[:200])
 
 
-def spacy_pipeline(lang):
-    """Every installed small pipeline with a lemmatizer, rule-based or trained."""
+def udpipe_service(treebank, release):
+    """Tag pretokenized sentences with the model trained on one treebank."""
+    model = f"{treebank[3:].lower()}-{release}"
+    with urllib.request.urlopen(UDPIPE + "models", timeout=60) as reply:
+        if model not in json.load(reply)["models"]:
+            raise LookupError(f"the service has no model {model}")
+
+    def run(batch):
+        answers = []
+        for start in range(0, len(batch), 200):
+            part = batch[start : start + 200]
+            text = "".join(
+                "".join(
+                    f"{i}\t{t or '_'}" + "\t_" * 8 + "\n" for i, t in enumerate(s, 1)
+                )
+                + "\n"
+                for s in part
+            )
+            query = urllib.parse.urlencode(
+                {"model": model, "input": "conllu", "tagger": "", "data": text}
+            ).encode()
+            for attempt in range(5):
+                try:
+                    with urllib.request.urlopen(
+                        UDPIPE + "process", query, timeout=600
+                    ) as reply:
+                        result = json.load(reply)["result"]
+                    break
+                except OSError:
+                    time.sleep(10 * (attempt + 1))
+            else:
+                raise ConnectionError("the UDPipe service did not answer")
+            rows = [[]]
+            for line in result.split("\n"):
+                cells = line.split("\t")
+                if len(cells) == 10 and cells[0].isdecimal():
+                    rows[-1].append(cells[2])
+                elif not line and rows[-1]:
+                    rows.append([])
+            answers.extend(r for r in rows if r)
+        return answers
+
+    return run, model
+
+
+def spacy_pipeline(lang, size):
+    """Every installed pipeline of one size with a lemmatizer, rule-based or trained."""
     import spacy
     from spacy.tokens import Doc
 
-    name = "en_core_web_sm" if lang == "en" else f"{lang}_core_news_sm"
+    # English and Chinese are web pipelines; some transformer pipelines are named dep_news.
+    kind = "web" if lang in ("en", "zh") else "news"
+    names = [f"{lang}_core_{kind}_{size}", f"{lang}_dep_news_{size}"]
+    name = next((n for n in names if spacy.util.is_package(n)), names[0])
+    if size == "trf":
+        import torch
+
+        torch.set_num_threads(6)
     nlp = spacy.load(name, exclude=["parser", "ner", "senter"])
     if not {"lemmatizer", "trainable_lemmatizer"} & set(nlp.pipe_names):
         raise LookupError(f"{name} runs no lemmatizer")
+    step = 32 if size == "trf" else 256
 
     def run(batch):
         docs = (Doc(nlp.vocab, words=[t or "_" for t in s]) for s in batch)
-        return [[t.lemma_ for t in d] for d in nlp.pipe(docs, batch_size=256)]
+        return [[t.lemma_ for t in d] for d in nlp.pipe(docs, batch_size=step)]
 
     return run, f"{name}-{nlp.meta['version']}"
 
 
+def trankit_pipeline(lang, treebank, cache):
+    """The large model of the anchor treebank if Trankit ships one, else of the language."""
+    import torch
+    from trankit import Pipeline
+    from trankit.utils.tbinfo import treebank2lang
+
+    name = treebank2lang.get(treebank) or TRANKIT_MAIN.get(lang)
+    if not name:
+        raise LookupError(f"Trankit has no model for {treebank}")
+    torch.set_num_threads(6)
+    nlp = Pipeline(name, cache_dir=str(cache), gpu=False, embedding="xlm-roberta-large")
+
+    def run(batch):
+        doc = [
+            {
+                "id": i,
+                "tokens": [{"id": j, "text": t or "_"} for j, t in enumerate(s, 1)],
+            }
+            for i, s in enumerate(batch, 1)
+        ]
+        # What nlp(batch) does minus the entity tagger: the lemmatizer reads predicted tags.
+        answer = nlp._lemmatize_doc(nlp._posdep_doc(doc))
+        return [[t.get("lemma") or t["text"] for t in s["tokens"]] for s in answer]
+
+    return run, f"{name}/xlm-roberta-large"
+
+
+def corenlp_jar(home):
+    return next(home.glob("stanford-corenlp-*-models.jar"))
+
+
+def corenlp_pipeline(lang, home):
+    """Stanford CoreNLP on whitespace tokens, one sentence per line; English only."""
+    import subprocess
+    import tempfile
+
+    if lang != "en":
+        raise LookupError("CoreNLP is scored on English only")
+    release = corenlp_jar(home).name.removesuffix("-models.jar")
+
+    def run(batch):
+        with tempfile.TemporaryDirectory() as tmp:
+            text = "".join(" ".join(t or "_" for t in s) + "\n" for s in batch)
+            Path(tmp, "in.txt").write_text(text, encoding="utf-8")
+            subprocess.run(
+                [
+                    "java",
+                    "-Xmx6g",
+                    "-cp",
+                    f"{home}/*",
+                    "edu.stanford.nlp.pipeline.StanfordCoreNLP",
+                    *("-annotators", "tokenize,pos,lemma"),
+                    *("-tokenize.whitespace", "true", "-ssplit.eolonly", "true"),
+                    *("-outputFormat", "conll", "-output.columns", "word,lemma"),
+                    *("-file", f"{tmp}/in.txt", "-outputDirectory", tmp),
+                ],
+                check=True,
+                capture_output=True,
+            )
+            blocks = Path(tmp, "in.txt.conll").read_text(encoding="utf-8")
+        return [
+            [row.split("\t")[1] for row in block.split("\n")]
+            for block in blocks.strip("\n").split("\n\n")
+        ]
+
+    return run, release
+
+
 def cell(job):
-    engine, iso, lang, config, test, repo, models, keep = job
+    engine, iso, lang, config, treebank, test, repo, models, keep = job
     data = list(sentences(test))
     try:
         if engine == "stanza":
@@ -102,8 +244,14 @@ def cell(job):
                     [w.lemma if w.lemma is not None else w.text for w in s.words]
                     for s in doc.sentences
                 ]
-        elif engine == "spacy-sm":
-            run, model = spacy_pipeline(lang)
+        elif engine in UDPIPE_RELEASE:
+            run, model = udpipe_service(treebank, UDPIPE_RELEASE[engine])
+        elif engine in SPACY_SIZE:
+            run, model = spacy_pipeline(lang, SPACY_SIZE[engine])
+        elif engine == "trankit":
+            run, model = trankit_pipeline(lang, treebank, models)
+        elif engine == "corenlp":
+            run, model = corenlp_pipeline(lang, models)
         else:
             sys.path.insert(0, str(repo))
             from bench import adapters
@@ -157,6 +305,7 @@ def run(a):
         targets = {
             cfg: (
                 inv[row["iso"]]["config"],
+                inv[row["iso"]]["treebank"],
                 a.transfer / cfg / row["iso"] / "test.jsonl",
             )
             for cfg, row in ledger.items()
@@ -164,10 +313,12 @@ def run(a):
         }
     else:
         targets = {
-            iso: (row["config"], a.order / iso / "test.jsonl")
+            iso: (row["config"], row["treebank"], a.order / iso / "test.jsonl")
             for iso, row in inv.items()
-            if row.get("status") == "paired" and len(row["sources"]) >= 2
+            if row.get("status") == "paired" and len(row["sources"]) >= a.min_sources
         }
+    if a.only:
+        targets = {name: t for name, t in targets.items() if name in a.only}
     for engine in a.engines:
         out = a.output / f"{engine}.json"
         if out.exists():
@@ -178,23 +329,26 @@ def run(a):
                 name,
                 config.split("_")[0],
                 config,
+                treebank,
                 test,
                 a.repo,
                 a.models,
                 a.predictions / engine if a.predictions else None,
             )
-            for name, (config, test) in sorted(targets.items())
+            for name, (config, treebank, test) in sorted(targets.items())
         ]
         cells = {}
-        with ProcessPoolExecutor(
-            a.stanza_jobs if engine == "stanza" else a.jobs
-        ) as pool:
+        slow = engine in SLOW or engine in UDPIPE_RELEASE
+        with ProcessPoolExecutor(a.stanza_jobs if slow else a.jobs) as pool:
             for _, iso, record in pool.map(cell, jobs):
                 cells[iso] = record
+        package = "spacy" if engine in SPACY_SIZE else ADAPTERS.get(engine, engine)
         try:
-            release = version(ADAPTERS.get(engine, engine))
+            release = UDPIPE_RELEASE.get(engine) or version(package)
         except PackageNotFoundError:
             release = None
+        if engine == "corenlp":
+            release = corenlp_jar(a.models).name.split("-")[2]
         save(out, {"engine": engine, "version": release, "cells": cells})
         print(
             engine,
@@ -250,9 +404,16 @@ def screen(a):
 
 
 def summarize(a):
-    home = json.loads(gzip.decompress((a.released / "pairs.json.gz").read_bytes()))[
-        "official"
-    ]
+    if a.results:
+        # A census run: one result file per language instead of the released pairs.
+        home = {
+            p.stem: [read(p)]
+            for p in sorted(a.results.glob("*.json"))
+            if p.stem != "run"
+        }
+    else:
+        packed = (a.released / "pairs.json.gz").read_bytes()
+        home = json.loads(gzip.decompress(packed))["official"]
     ours = {}
     for iso, runs in home.items():
         c = runs[0]["test"]["counts"]
@@ -325,18 +486,24 @@ if __name__ == "__main__":
     p = argparse.ArgumentParser(description=__doc__)
     sub = p.add_subparsers(dest="mode", required=True)
     r = sub.add_parser("run")
+    # models: Stanza's model directory, Trankit's cache or the unpacked CoreNLP release.
     for key in ("order", "repo", "models", "output"):
         r.add_argument(key, type=Path)
     r.add_argument("--engines", nargs="+", default=["stanza", *ADAPTERS])
     r.add_argument("--jobs", type=int, default=8)
     r.add_argument("--stanza-jobs", type=int, default=4)
+    r.add_argument("--min-sources", type=int, default=2)
     r.add_argument("--predictions", type=Path, help="also store every answer")
     r.add_argument("--transfer", type=Path, help="score transfer corpora instead")
+    r.add_argument("--only", nargs="+", help="score these languages or corpora only")
     c = sub.add_parser("screen")
     for key in ("order", "models", "output"):
         c.add_argument(key, type=Path)
     s = sub.add_parser("summary")
     for key in ("released", "output"):
         s.add_argument(key, type=Path)
+    s.add_argument(
+        "--results", type=Path, help="census results in place of released pairs"
+    )
     args = p.parse_args()
     {"run": run, "screen": screen, "summary": summarize}[args.mode](args)

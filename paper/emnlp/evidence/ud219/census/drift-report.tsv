@@ -1,0 +1,18 @@
+engine	release	iso	test	model	trained on	train+dev exact %	train+dev loose %	test exact %	test loose %
+udpipe2	2.17	lit	669	lithuanian-alksnis-ud-2.17-251125	UD_Lithuanian-ALKSNIS	71.30	89.54	5.53	7.32
+udpipe1	2.5	chu	1983	old_church_slavonic-proiel-ud-2.5-191206	UD_Old_Church_Slavonic-PROIEL	23.20	23.20	8.77	8.77
+udpipe1	2.5	lit	669	lithuanian-alksnis-ud-2.5-191206	UD_Lithuanian-ALKSNIS	71.30	89.54	5.53	7.32
+udpipe1	2.5	slk	1042	slovak-snk-ud-2.5-191206	UD_Slovak-SNK	68.52	68.52	30.81	30.81
+udpipe1	2.5	vie	792	vietnamese-vtb-ud-2.5-191206	UD_Vietnamese-VTB	37.88	66.16	15.78	32.07
+trankit	2.5	lit	669	lithuanian/xlm-roberta-large	UD_Lithuanian-ALKSNIS	71.30	89.54	5.53	7.32
+trankit	2.5	orv	2897	old-russian/xlm-roberta-large	UD_Old_Russian-TOROT	51.81	51.85	12.46	12.46
+trankit	2.5	slk	1042	slovak/xlm-roberta-large	UD_Slovak-SNK	68.52	68.52	30.81	30.81
+trankit	2.5	vie	792	vietnamese-vtb/xlm-roberta-large	UD_Vietnamese-VTB	37.88	66.16	15.78	32.07
+spacy	2.8	lit	669	lt_core_news_lg-3.8.0	UD_Lithuanian-ALKSNIS	71.30	89.54	5.53	7.32
+stanza	2.18	lit	669	lt/alksnis	UD_Lithuanian-ALKSNIS	71.30	89.54	5.53	7.32
+stanza	2.18	ota	1001	ota/dudu	UD_Ottoman_Turkish-DUDU	34.67	34.67	52.05	52.15
+# udpipe2: 83 languages, 1 above 1.0 %, 0 without the treebank in the release
+# udpipe1: 50 languages, 4 above 1.0 %, 0 without the treebank in the release
+# trankit: 53 languages, 4 above 1.0 %, 0 without the treebank in the release
+# spacy: 15 languages, 1 above 1.0 %, 0 without the treebank in the release
+# stanza: 90 languages, 2 above 1.0 %, 0 without the treebank in the release
