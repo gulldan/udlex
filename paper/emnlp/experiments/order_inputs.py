@@ -179,7 +179,7 @@ def main(a):
     for iso, code in sorted(codes.items()):
         src, exc = sources(a.research, iso, specs)
         row = rows[iso] = {"sources": src, "excluded_sources": exc}
-        if len(src) < 2:
+        if len(src) < a.min_sources:
             continue
         matches = [v for v in tests if v.name.split("_")[0] == code]
         preferred = catalog[iso]["main"]["config"]
@@ -233,4 +233,7 @@ if __name__ == "__main__":
     for key in ("research", "ud", "udtar", "output"):
         p.add_argument(key, type=Path)
     p.add_argument("--release", choices=RELEASES, default="2.18")
+    p.add_argument(
+        "--min-sources", type=int, default=2, help="0 covers every catalog language"
+    )
     main(p.parse_args())

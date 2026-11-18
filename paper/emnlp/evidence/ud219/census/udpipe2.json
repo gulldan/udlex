@@ -1,0 +1,572 @@
+{
+  "cells": {
+    "afr": {
+      "correct": 9898,
+      "model": "afrikaans-afribooms-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 10063
+    },
+    "arb": {
+      "correct": 26845,
+      "model": "arabic-padt-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 28183
+    },
+    "bel": {
+      "correct": 14864,
+      "model": "belarusian-hse-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 15871
+    },
+    "bor": {
+      "correct": 12525,
+      "model": "bororo-bdt-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 13884
+    },
+    "bxr": {
+      "reason": "LookupError: the service has no model buryat-bdt-ud-2.17-251125",
+      "status": "unsupported"
+    },
+    "cat": {
+      "correct": 59268,
+      "model": "catalan-ancora-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 59571
+    },
+    "ces": {
+      "correct": 296895,
+      "model": "czech-pdtc-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 298180
+    },
+    "chu": {
+      "correct": 17883,
+      "model": "old_church_slavonic-proiel-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 19816
+    },
+    "cmn": {
+      "correct": 11998,
+      "model": "chinese-gsdsimp-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 12010
+    },
+    "cop": {
+      "correct": 10106,
+      "model": "coptic-scriptorium-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 10348
+    },
+    "cym": {
+      "correct": 16229,
+      "model": "welsh-ccg-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 17026
+    },
+    "dan": {
+      "correct": 9786,
+      "model": "danish-ddt-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 10022
+    },
+    "deu": {
+      "correct": 323491,
+      "model": "german-hdt-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 329795
+    },
+    "egy": {
+      "reason": "LookupError: the service has no model egyptian-pc-ud-2.17-251125",
+      "status": "unsupported"
+    },
+    "ell": {
+      "correct": 10247,
+      "model": "greek-gdt-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 10656
+    },
+    "eng": {
+      "correct": 27891,
+      "model": "english-gum-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 28156
+    },
+    "est": {
+      "correct": 46127,
+      "model": "estonian-edt-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 48309
+    },
+    "eus": {
+      "correct": 23432,
+      "model": "basque-bdt-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 24312
+    },
+    "fao": {
+      "correct": 1105,
+      "model": "faroese-farpahc-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 1105
+    },
+    "fin": {
+      "correct": 19380,
+      "model": "finnish-tdt-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 20989
+    },
+    "fra": {
+      "correct": 9840,
+      "model": "french-sequoia-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 9935
+    },
+    "frm": {
+      "correct": 13028,
+      "model": "middle_french-profiterole-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 13586
+    },
+    "gla": {
+      "correct": 10307,
+      "model": "scottish_gaelic-arcosg-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 10551
+    },
+    "gle": {
+      "correct": 9684,
+      "model": "irish-idt-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 10100
+    },
+    "glg": {
+      "correct": 29338,
+      "model": "galician-ctg-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 29740
+    },
+    "glv": {
+      "correct": 9825,
+      "model": "manx-cadhan-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 10252
+    },
+    "got": {
+      "correct": 9349,
+      "model": "gothic-proiel-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 9878
+    },
+    "grc": {
+      "correct": 12399,
+      "model": "ancient_greek-proiel-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 13091
+    },
+    "hat": {
+      "correct": 9862,
+      "model": "haitian_creole-adolphe-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 9957
+    },
+    "hbo": {
+      "correct": 14430,
+      "model": "ancient_hebrew-ptnk-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 14972
+    },
+    "heb": {
+      "correct": 11670,
+      "model": "hebrew-htb-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 11993
+    },
+    "hin": {
+      "correct": 35014,
+      "model": "hindi-hdtb-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 35413
+    },
+    "hrv": {
+      "correct": 23647,
+      "model": "croatian-set-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 24203
+    },
+    "hun": {
+      "correct": 9933,
+      "model": "hungarian-szeged-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 10432
+    },
+    "hye": {
+      "correct": 10307,
+      "model": "armenian-armtdp-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 10610
+    },
+    "hyw": {
+      "correct": 13088,
+      "model": "western_armenian-armtdp-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 13493
+    },
+    "ind": {
+      "correct": 11546,
+      "model": "indonesian-gsd-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 11712
+    },
+    "isl": {
+      "correct": 134652,
+      "model": "icelandic-icepahc-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 139575
+    },
+    "ita": {
+      "correct": 10303,
+      "model": "italian-isdt-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 10416
+    },
+    "jpn": {
+      "correct": 12842,
+      "model": "japanese-gsd-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 13034
+    },
+    "kat": {
+      "correct": 9053,
+      "model": "georgian-gnc-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 10426
+    },
+    "kaz": {
+      "reason": "LookupError: the service has no model kazakh-ktb-ud-2.17-251125",
+      "status": "unsupported"
+    },
+    "kir": {
+      "correct": 9623,
+      "model": "kyrgyz-ktmu-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 10840
+    },
+    "kmr": {
+      "reason": "LookupError: the service has no model northern_kurdish-kurmanji-ud-2.17-251125",
+      "status": "unsupported"
+    },
+    "koi": {
+      "reason": "LookupError: the service has no model komi_permyak-uh-ud-2.17-251125",
+      "status": "unsupported"
+    },
+    "kor": {
+      "correct": 26761,
+      "model": "korean-kaist-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 28352
+    },
+    "kpv": {
+      "reason": "LookupError: the service has no model komi_zyrian-lattice-ud-2.17-251125",
+      "status": "unsupported"
+    },
+    "lat": {
+      "correct": 28995,
+      "model": "latin-ittb-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 29220
+    },
+    "lav": {
+      "correct": 36160,
+      "model": "latvian-lvtb-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 37080
+    },
+    "lij": {
+      "reason": "LookupError: the service has no model ligurian-glt-ud-2.17-251125",
+      "status": "unsupported"
+    },
+    "lit": {
+      "correct": 11529,
+      "model": "lithuanian-alksnis-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 11953
+    },
+    "lzh": {
+      "correct": 24914,
+      "model": "classical_chinese-kyoto-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 25043
+    },
+    "mar": {
+      "reason": "LookupError: the service has no model marathi-cmupan-ud-2.17-251125",
+      "status": "unsupported"
+    },
+    "mdf": {
+      "reason": "LookupError: the service has no model moksha-jr-ud-2.17-251125",
+      "status": "unsupported"
+    },
+    "myv": {
+      "correct": 8886,
+      "model": "erzya-jr-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 10470
+    },
+    "naq": {
+      "correct": 6374,
+      "model": "khoekhoe-kdt-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 6638
+    },
+    "nds": {
+      "correct": 9246,
+      "model": "low_saxon-lsdc-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 10966
+    },
+    "nld": {
+      "correct": 27789,
+      "model": "dutch-lassysmall-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 28804
+    },
+    "nmf": {
+      "reason": "LookupError: the service has no model naga-suansu-ud-2.17-251125",
+      "status": "unsupported"
+    },
+    "nor": {
+      "correct": 24342,
+      "model": "norwegian-nynorsk-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 24697
+    },
+    "oci": {
+      "correct": 9345,
+      "model": "occitan-ttb-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 9956
+    },
+    "oge": {
+      "reason": "LookupError: the service has no model old_georgian-glc-ud-2.17-251125",
+      "status": "unsupported"
+    },
+    "olo": {
+      "reason": "LookupError: the service has no model livvi-kkpp-ud-2.17-251125",
+      "status": "unsupported"
+    },
+    "orv": {
+      "correct": 24510,
+      "model": "old_east_slavic-torot-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 27721
+    },
+    "ota": {
+      "reason": "LookupError: the service has no model ottoman_turkish-dudu-ud-2.17-251125",
+      "status": "unsupported"
+    },
+    "pan": {
+      "reason": "LookupError: the service has no model punjabi-dyz-ud-2.17-251125",
+      "status": "unsupported"
+    },
+    "pcm": {
+      "correct": 14034,
+      "model": "naija-nsc-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 14130
+    },
+    "pes": {
+      "correct": 23941,
+      "model": "persian-perdt-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 24118
+    },
+    "pol": {
+      "correct": 33037,
+      "model": "polish-pdb-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 33572
+    },
+    "por": {
+      "correct": 29395,
+      "model": "portuguese-petrogold-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 29539
+    },
+    "pro": {
+      "reason": "LookupError: the service has no model old_occitan-cronoc-ud-2.17-251125",
+      "status": "unsupported"
+    },
+    "qaf": {
+      "correct": 1170,
+      "model": "maghrebi_arabic_french-arabizi-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 2161
+    },
+    "qpm": {
+      "correct": 8054,
+      "model": "pomak-philotis-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 8797
+    },
+    "qtd": {
+      "correct": 12886,
+      "model": "turkish_german-sagt-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 14084
+    },
+    "ron": {
+      "correct": 20073,
+      "model": "romanian-nonstandard-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 20943
+    },
+    "rus": {
+      "correct": 14963,
+      "model": "russian-taiga-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 15334
+    },
+    "san": {
+      "correct": 18333,
+      "model": "sanskrit-vedic-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 19338
+    },
+    "say": {
+      "correct": 7056,
+      "model": "zaar-autogramm-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 9964
+    },
+    "slk": {
+      "correct": 12277,
+      "model": "slovak-snk-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 12702
+    },
+    "slv": {
+      "correct": 25085,
+      "model": "slovenian-ssj-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 25407
+    },
+    "sme": {
+      "correct": 8638,
+      "model": "north_sami-giella-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 9927
+    },
+    "sms": {
+      "reason": "LookupError: the service has no model skolt_sami-giellagas-ud-2.17-251125",
+      "status": "unsupported"
+    },
+    "snd": {
+      "correct": 10391,
+      "model": "sindhi-isra-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 10957
+    },
+    "spa": {
+      "correct": 53110,
+      "model": "spanish-ancora-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 53584
+    },
+    "sqi": {
+      "correct": 304,
+      "model": "albanian-staf-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 371
+    },
+    "srp": {
+      "correct": 11176,
+      "model": "serbian-set-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 11410
+    },
+    "swe": {
+      "correct": 19942,
+      "model": "swedish-talbanken-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 20371
+    },
+    "tam": {
+      "correct": 1876,
+      "model": "tamil-ttb-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 1989
+    },
+    "tur": {
+      "correct": 9382,
+      "model": "turkish-penn-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 9904
+    },
+    "uig": {
+      "correct": 7063,
+      "model": "uyghur-udt-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 7573
+    },
+    "ukr": {
+      "correct": 15715,
+      "model": "ukrainian-iu-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 16075
+    },
+    "urd": {
+      "correct": 14149,
+      "model": "urdu-udtb-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 14537
+    },
+    "uzb": {
+      "correct": 1117,
+      "model": "uzbek-uzudt-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 2128
+    },
+    "vie": {
+      "correct": 11577,
+      "model": "vietnamese-vtb-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 11638
+    },
+    "wol": {
+      "correct": 9981,
+      "model": "wolof-wtb-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 10403
+    },
+    "wuu": {
+      "correct": 874,
+      "model": "shanghainese-shud-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 874
+    },
+    "xcl": {
+      "correct": 10994,
+      "model": "classical_armenian-caval-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 11166
+    },
+    "yid": {
+      "correct": 9097,
+      "model": "yiddish-yitb-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 9955
+    },
+    "yrl": {
+      "correct": 9717,
+      "model": "nheengatu-complin-ud-2.17-251125",
+      "status": "scored",
+      "tokens": 9860
+    },
+    "zza": {
+      "reason": "LookupError: the service has no model zazaki-zsd-ud-2.17-251125",
+      "status": "unsupported"
+    }
+  },
+  "engine": "udpipe2",
+  "version": "ud-2.17-251125"
+}

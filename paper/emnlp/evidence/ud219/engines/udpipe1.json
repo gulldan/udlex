@@ -1,0 +1,358 @@
+{
+  "cells": {
+    "afr": {
+      "correct": 9590,
+      "model": "afrikaans-afribooms-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 10063
+    },
+    "arb": {
+      "correct": 26182,
+      "model": "arabic-padt-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 28183
+    },
+    "bel": {
+      "correct": 11379,
+      "model": "belarusian-hse-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 15871
+    },
+    "bxr": {
+      "reason": "LookupError: the service has no model buryat-bdt-ud-2.5-191206",
+      "status": "unsupported"
+    },
+    "cat": {
+      "correct": 58315,
+      "model": "catalan-ancora-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 59571
+    },
+    "ces": {
+      "reason": "LookupError: the service has no model czech-pdtc-ud-2.5-191206",
+      "status": "unsupported"
+    },
+    "chu": {
+      "correct": 12076,
+      "model": "old_church_slavonic-proiel-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 19816
+    },
+    "cym": {
+      "reason": "LookupError: the service has no model welsh-ccg-ud-2.5-191206",
+      "status": "unsupported"
+    },
+    "dan": {
+      "correct": 9512,
+      "model": "danish-ddt-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 10022
+    },
+    "deu": {
+      "correct": 265880,
+      "model": "german-hdt-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 329795
+    },
+    "ell": {
+      "correct": 10096,
+      "model": "greek-gdt-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 10656
+    },
+    "eng": {
+      "correct": 26823,
+      "model": "english-gum-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 28156
+    },
+    "est": {
+      "correct": 43762,
+      "model": "estonian-edt-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 48309
+    },
+    "eus": {
+      "correct": 21545,
+      "model": "basque-bdt-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 24312
+    },
+    "fao": {
+      "reason": "LookupError: the service has no model faroese-farpahc-ud-2.5-191206",
+      "status": "unsupported"
+    },
+    "fin": {
+      "correct": 18297,
+      "model": "finnish-tdt-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 20989
+    },
+    "fra": {
+      "correct": 9461,
+      "model": "french-sequoia-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 9935
+    },
+    "frm": {
+      "reason": "LookupError: the service has no model middle_french-profiterole-ud-2.5-191206",
+      "status": "unsupported"
+    },
+    "gla": {
+      "correct": 9231,
+      "model": "scottish_gaelic-arcosg-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 10551
+    },
+    "gle": {
+      "correct": 8678,
+      "model": "irish-idt-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 10100
+    },
+    "glg": {
+      "correct": 28776,
+      "model": "galician-ctg-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 29740
+    },
+    "glv": {
+      "reason": "LookupError: the service has no model manx-cadhan-ud-2.5-191206",
+      "status": "unsupported"
+    },
+    "got": {
+      "correct": 9138,
+      "model": "gothic-proiel-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 9878
+    },
+    "grc": {
+      "correct": 12189,
+      "model": "ancient_greek-proiel-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 13091
+    },
+    "heb": {
+      "correct": 11425,
+      "model": "hebrew-htb-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 11993
+    },
+    "hin": {
+      "correct": 30188,
+      "model": "hindi-hdtb-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 35413
+    },
+    "hrv": {
+      "correct": 23084,
+      "model": "croatian-set-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 24203
+    },
+    "hun": {
+      "correct": 9275,
+      "model": "hungarian-szeged-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 10432
+    },
+    "hye": {
+      "correct": 9449,
+      "model": "armenian-armtdp-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 10610
+    },
+    "ind": {
+      "correct": 9010,
+      "model": "indonesian-gsd-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 11712
+    },
+    "isl": {
+      "reason": "LookupError: the service has no model icelandic-icepahc-ud-2.5-191206",
+      "status": "unsupported"
+    },
+    "ita": {
+      "correct": 10159,
+      "model": "italian-isdt-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 10416
+    },
+    "jpn": {
+      "correct": 10893,
+      "model": "japanese-gsd-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 13034
+    },
+    "kat": {
+      "reason": "LookupError: the service has no model georgian-gnc-ud-2.5-191206",
+      "status": "unsupported"
+    },
+    "kaz": {
+      "reason": "LookupError: the service has no model kazakh-ktb-ud-2.5-191206",
+      "status": "unsupported"
+    },
+    "kir": {
+      "reason": "LookupError: the service has no model kyrgyz-ktmu-ud-2.5-191206",
+      "status": "unsupported"
+    },
+    "kmr": {
+      "reason": "LookupError: the service has no model northern_kurdish-kurmanji-ud-2.5-191206",
+      "status": "unsupported"
+    },
+    "kor": {
+      "correct": 24342,
+      "model": "korean-kaist-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 28352
+    },
+    "lat": {
+      "correct": 27470,
+      "model": "latin-ittb-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 29220
+    },
+    "lav": {
+      "correct": 34456,
+      "model": "latvian-lvtb-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 37080
+    },
+    "lit": {
+      "correct": 11427,
+      "model": "lithuanian-alksnis-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 11953
+    },
+    "mdf": {
+      "reason": "LookupError: the service has no model moksha-jr-ud-2.5-191206",
+      "status": "unsupported"
+    },
+    "myv": {
+      "reason": "LookupError: the service has no model erzya-jr-ud-2.5-191206",
+      "status": "unsupported"
+    },
+    "nld": {
+      "correct": 26032,
+      "model": "dutch-lassysmall-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 28804
+    },
+    "nor": {
+      "correct": 23804,
+      "model": "norwegian-nynorsk-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 24697
+    },
+    "oci": {
+      "reason": "LookupError: the service has no model occitan-ttb-ud-2.5-191206",
+      "status": "unsupported"
+    },
+    "olo": {
+      "reason": "LookupError: the service has no model livvi-kkpp-ud-2.5-191206",
+      "status": "unsupported"
+    },
+    "pes": {
+      "reason": "LookupError: the service has no model persian-perdt-ud-2.5-191206",
+      "status": "unsupported"
+    },
+    "pol": {
+      "correct": 32233,
+      "model": "polish-pdb-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 33572
+    },
+    "por": {
+      "reason": "LookupError: the service has no model portuguese-petrogold-ud-2.5-191206",
+      "status": "unsupported"
+    },
+    "ron": {
+      "correct": 19696,
+      "model": "romanian-nonstandard-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 20943
+    },
+    "rus": {
+      "correct": 13160,
+      "model": "russian-taiga-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 15334
+    },
+    "san": {
+      "reason": "LookupError: the service has no model sanskrit-vedic-ud-2.5-191206",
+      "status": "unsupported"
+    },
+    "slk": {
+      "correct": 10830,
+      "model": "slovak-snk-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 12702
+    },
+    "slv": {
+      "correct": 24176,
+      "model": "slovenian-ssj-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 25407
+    },
+    "sme": {
+      "correct": 8141,
+      "model": "north_sami-giella-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 9927
+    },
+    "spa": {
+      "correct": 52662,
+      "model": "spanish-ancora-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 53584
+    },
+    "sqi": {
+      "reason": "LookupError: the service has no model albanian-staf-ud-2.5-191206",
+      "status": "unsupported"
+    },
+    "srp": {
+      "correct": 10859,
+      "model": "serbian-set-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 11410
+    },
+    "swe": {
+      "correct": 18666,
+      "model": "swedish-talbanken-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 20371
+    },
+    "tur": {
+      "reason": "LookupError: the service has no model turkish-penn-ud-2.5-191206",
+      "status": "unsupported"
+    },
+    "uig": {
+      "correct": 6741,
+      "model": "uyghur-udt-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 7573
+    },
+    "ukr": {
+      "correct": 15041,
+      "model": "ukrainian-iu-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 16075
+    },
+    "urd": {
+      "correct": 11942,
+      "model": "urdu-udtb-ud-2.5-191206",
+      "status": "scored",
+      "tokens": 14537
+    },
+    "uzb": {
+      "reason": "LookupError: the service has no model uzbek-uzudt-ud-2.5-191206",
+      "status": "unsupported"
+    },
+    "yid": {
+      "reason": "LookupError: the service has no model yiddish-yitb-ud-2.5-191206",
+      "status": "unsupported"
+    }
+  },
+  "engine": "udpipe1",
+  "version": null
+}

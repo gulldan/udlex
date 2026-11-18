@@ -79,6 +79,8 @@ def prepare(root, disable_rules=False, examples=None):
         # outcome, and count where sources that hold the same key disagree.
         harness = src / "builder/paper_order.rs"
         expose(harness, "n_examples[which] < 5", f"n_examples[which] < {examples}")
+        # The census runs languages with one dictionary or none as well.
+        expose(harness, "lang.sources.len() < 2", "lang.sources.len() > usize::MAX - 1")
         expose(
             harness,
             "    let result = json!({",

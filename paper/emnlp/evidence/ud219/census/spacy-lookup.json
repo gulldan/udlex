@@ -1,0 +1,448 @@
+{
+  "cells": {
+    "afr": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'af'",
+      "status": "unsupported"
+    },
+    "arb": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'ar'",
+      "status": "unsupported"
+    },
+    "bel": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'be'",
+      "status": "unsupported"
+    },
+    "bor": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'bor'",
+      "status": "unsupported"
+    },
+    "bxr": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'bxr'",
+      "status": "unsupported"
+    },
+    "cat": {
+      "correct": 47099,
+      "model": "spacy-lookups-data 1.0.5 таблица ca_lemma_lookup",
+      "status": "scored",
+      "tokens": 59571
+    },
+    "ces": {
+      "correct": 226813,
+      "model": "spacy-lookups-data 1.0.5 таблица cs_lemma_lookup",
+      "status": "scored",
+      "tokens": 298180
+    },
+    "chu": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'cu'",
+      "status": "unsupported"
+    },
+    "cmn": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'zh'",
+      "status": "unsupported"
+    },
+    "cop": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'cop'",
+      "status": "unsupported"
+    },
+    "cym": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'cy'",
+      "status": "unsupported"
+    },
+    "dan": {
+      "correct": 8472,
+      "model": "spacy-lookups-data 1.0.5 таблица da_lemma_lookup",
+      "status": "scored",
+      "tokens": 10022
+    },
+    "deu": {
+      "correct": 288115,
+      "model": "spacy-lookups-data 1.0.5 таблица de_lemma_lookup",
+      "status": "scored",
+      "tokens": 329795
+    },
+    "egy": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'egy'",
+      "status": "unsupported"
+    },
+    "ell": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'el'",
+      "status": "unsupported"
+    },
+    "eng": {
+      "correct": 25413,
+      "model": "spacy-lookups-data 1.0.5 таблица en_lemma_lookup",
+      "status": "scored",
+      "tokens": 28156
+    },
+    "est": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'et'",
+      "status": "unsupported"
+    },
+    "eus": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'eu'",
+      "status": "unsupported"
+    },
+    "fao": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'fo'",
+      "status": "unsupported"
+    },
+    "fin": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'fi'",
+      "status": "unsupported"
+    },
+    "fra": {
+      "correct": 8649,
+      "model": "spacy-lookups-data 1.0.5 таблица fr_lemma_lookup",
+      "status": "scored",
+      "tokens": 9935
+    },
+    "frm": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'frm'",
+      "status": "unsupported"
+    },
+    "gla": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'gd'",
+      "status": "unsupported"
+    },
+    "gle": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'ga'",
+      "status": "unsupported"
+    },
+    "glg": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'gl'",
+      "status": "unsupported"
+    },
+    "glv": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'gv'",
+      "status": "unsupported"
+    },
+    "got": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'got'",
+      "status": "unsupported"
+    },
+    "grc": {
+      "correct": 11680,
+      "model": "spacy-lookups-data 1.0.5 таблица grc_lemma_lookup",
+      "status": "scored",
+      "tokens": 13091
+    },
+    "hat": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'ht'",
+      "status": "unsupported"
+    },
+    "hbo": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'hbo'",
+      "status": "unsupported"
+    },
+    "heb": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'he'",
+      "status": "unsupported"
+    },
+    "hin": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'hi'",
+      "status": "unsupported"
+    },
+    "hrv": {
+      "correct": 20609,
+      "model": "spacy-lookups-data 1.0.5 таблица hr_lemma_lookup",
+      "status": "scored",
+      "tokens": 24203
+    },
+    "hun": {
+      "correct": 8115,
+      "model": "spacy-lookups-data 1.0.5 таблица hu_lemma_lookup",
+      "status": "scored",
+      "tokens": 10432
+    },
+    "hye": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'hy'",
+      "status": "unsupported"
+    },
+    "hyw": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'hyw'",
+      "status": "unsupported"
+    },
+    "ind": {
+      "correct": 8053,
+      "model": "spacy-lookups-data 1.0.5 таблица id_lemma_lookup",
+      "status": "scored",
+      "tokens": 11712
+    },
+    "isl": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'is'",
+      "status": "unsupported"
+    },
+    "ita": {
+      "correct": 8135,
+      "model": "spacy-lookups-data 1.0.5 таблица it_lemma_lookup",
+      "status": "scored",
+      "tokens": 10416
+    },
+    "jpn": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'ja'",
+      "status": "unsupported"
+    },
+    "kat": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'ka'",
+      "status": "unsupported"
+    },
+    "kaz": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'kk'",
+      "status": "unsupported"
+    },
+    "kir": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'ky'",
+      "status": "unsupported"
+    },
+    "kmr": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'kmr'",
+      "status": "unsupported"
+    },
+    "koi": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'koi'",
+      "status": "unsupported"
+    },
+    "kor": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'ko'",
+      "status": "unsupported"
+    },
+    "kpv": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'kpv'",
+      "status": "unsupported"
+    },
+    "lat": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'la'",
+      "status": "unsupported"
+    },
+    "lav": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'lv'",
+      "status": "unsupported"
+    },
+    "lij": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'lij'",
+      "status": "unsupported"
+    },
+    "lit": {
+      "correct": 8723,
+      "model": "spacy-lookups-data 1.0.5 таблица lt_lemma_lookup",
+      "status": "scored",
+      "tokens": 11953
+    },
+    "lzh": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'lzh'",
+      "status": "unsupported"
+    },
+    "mar": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'mr'",
+      "status": "unsupported"
+    },
+    "mdf": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'mdf'",
+      "status": "unsupported"
+    },
+    "myv": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'myv'",
+      "status": "unsupported"
+    },
+    "naq": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'naq'",
+      "status": "unsupported"
+    },
+    "nds": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'nds'",
+      "status": "unsupported"
+    },
+    "nld": {
+      "correct": 21723,
+      "model": "spacy-lookups-data 1.0.5 таблица nl_lemma_lookup",
+      "status": "scored",
+      "tokens": 28804
+    },
+    "nmf": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'nmf'",
+      "status": "unsupported"
+    },
+    "nor": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'no'",
+      "status": "unsupported"
+    },
+    "oci": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'oc'",
+      "status": "unsupported"
+    },
+    "oge": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'oge'",
+      "status": "unsupported"
+    },
+    "olo": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'olo'",
+      "status": "unsupported"
+    },
+    "orv": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'orv'",
+      "status": "unsupported"
+    },
+    "ota": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'ota'",
+      "status": "unsupported"
+    },
+    "pan": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'pa'",
+      "status": "unsupported"
+    },
+    "pcm": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'pcm'",
+      "status": "unsupported"
+    },
+    "pes": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'fa'",
+      "status": "unsupported"
+    },
+    "pol": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'pl'",
+      "status": "unsupported"
+    },
+    "por": {
+      "correct": 25154,
+      "model": "spacy-lookups-data 1.0.5 таблица pt_lemma_lookup",
+      "status": "scored",
+      "tokens": 29539
+    },
+    "pro": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'pro'",
+      "status": "unsupported"
+    },
+    "qaf": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'qaf'",
+      "status": "unsupported"
+    },
+    "qpm": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'qpm'",
+      "status": "unsupported"
+    },
+    "qtd": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'qtd'",
+      "status": "unsupported"
+    },
+    "ron": {
+      "correct": 12882,
+      "model": "spacy-lookups-data 1.0.5 таблица ro_lemma_lookup",
+      "status": "scored",
+      "tokens": 20943
+    },
+    "rus": {
+      "correct": 11780,
+      "model": "spacy-lookups-data 1.0.5 таблица ru_lemma_lookup",
+      "status": "scored",
+      "tokens": 15334
+    },
+    "san": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'sa'",
+      "status": "unsupported"
+    },
+    "say": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'say'",
+      "status": "unsupported"
+    },
+    "slk": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'sk'",
+      "status": "unsupported"
+    },
+    "slv": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'sl'",
+      "status": "unsupported"
+    },
+    "sme": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'sme'",
+      "status": "unsupported"
+    },
+    "sms": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'sms'",
+      "status": "unsupported"
+    },
+    "snd": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'sd'",
+      "status": "unsupported"
+    },
+    "spa": {
+      "correct": 43138,
+      "model": "spacy-lookups-data 1.0.5 таблица es_lemma_lookup",
+      "status": "scored",
+      "tokens": 53584
+    },
+    "sqi": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'sq'",
+      "status": "unsupported"
+    },
+    "srp": {
+      "correct": 5424,
+      "model": "spacy-lookups-data 1.0.5 таблица sr_lemma_lookup",
+      "status": "scored",
+      "tokens": 11410
+    },
+    "swe": {
+      "correct": 15154,
+      "model": "spacy-lookups-data 1.0.5 таблица sv_lemma_lookup",
+      "status": "scored",
+      "tokens": 20371
+    },
+    "tam": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'ta'",
+      "status": "unsupported"
+    },
+    "tur": {
+      "correct": 7924,
+      "model": "spacy-lookups-data 1.0.5 таблица tr_lemma_lookup",
+      "status": "scored",
+      "tokens": 9904
+    },
+    "uig": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'ug'",
+      "status": "unsupported"
+    },
+    "ukr": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'uk'",
+      "status": "unsupported"
+    },
+    "urd": {
+      "correct": 10688,
+      "model": "spacy-lookups-data 1.0.5 таблица ur_lemma_lookup",
+      "status": "scored",
+      "tokens": 14537
+    },
+    "uzb": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'uz'",
+      "status": "unsupported"
+    },
+    "vie": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'vi'",
+      "status": "unsupported"
+    },
+    "wol": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'wo'",
+      "status": "unsupported"
+    },
+    "wuu": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'wuu'",
+      "status": "unsupported"
+    },
+    "xcl": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'xcl'",
+      "status": "unsupported"
+    },
+    "yid": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'yi'",
+      "status": "unsupported"
+    },
+    "yrl": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'yrl'",
+      "status": "unsupported"
+    },
+    "zza": {
+      "reason": "Unsupported: spacy-lookups-data has no lemma table for 'zza'",
+      "status": "unsupported"
+    }
+  },
+  "engine": "spacy-lookup",
+  "version": "1.0.5"
+}
