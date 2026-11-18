@@ -1,0 +1,74 @@
+# Where lemmatization accuracy comes from: protocol for the second study
+
+Written on 19 November 2026 after exploratory measurements on the official UD 2.19 test splits of the 66 anchor treebanks. Those splits have now been inspected repeatedly, so every number computed on them is exploratory. Confirmation uses data that no decision below has touched: the screened transfer corpora of `transfer-protocol.md` and, where a model must be selected, out-of-fold predictions inside the training split.
+
+## What the exploration showed
+
+Scripts and outputs are kept in `exploratory/`. On 58 languages whose Stanza model neither saw the test split nor lacks a lemmatizer (1,808,517 words):
+
+| Words | Share | Cascade | Stanza 1.15.1 | Either correct |
+| --- | ---: | ---: | ---: | ---: |
+| Form seen in training with one lemma | 73.83% | 99.59 | 99.47 | 99.59 |
+| Form seen in training with several lemmas | 16.21% | 91.87 | 95.75 | 96.36 |
+| Unseen, answered by lower-cased corpus form | 0.67% | 79.20 | 86.74 | 95.20 |
+| Unseen, answered by a dictionary | 5.63% | 82.92 | 83.59 | 94.68 |
+| Unseen, answered by a suffix rule or copied | 3.66% | 57.57 | 82.38 | 86.48 |
+| All | 100% | 95.72 | 97.27 | 98.28 |
+
+- The best form-to-lemma function fitted to the test itself scores 98.82% macro over 66 languages. Stanza exceeds this bound in 5 of 58 languages.
+- On forms seen with several lemmas, the majority lemma of (form, gold UPOS) scores 97.18% and of the form alone 91.93%. A linear window tagger trained in seconds lifted this stratum from 93.79 to 95.53 on 14 languages where Stanza has 96.18.
+- On rule-or-copy words, suffix decision lists reached 67% on 14 languages where Stanza has 84%. Lists built from dictionary paradigms did not help.
+- The source order fitted on all training tokens gains 2.33 points on its training objective and 205 words on test; the two gains correlate at r = 0.05 across languages. Fitted only on training words whose form is absent from the other four fifths of training, it gains 1,120 words, with 35 languages up and 5 down.
+
+## Questions and hypotheses
+
+**Q1. Anatomy.** How much of accuracy is memory of the training corpus, lexical resources, generalization to unseen forms, and context, and where does a neural pipeline win?
+- H1a. The context-free bound is at least 98% macro, and the neural pipeline exceeds it in at most one language in ten.
+- H1b. At least half of the neural advantage lies on unseen forms outside the lexicons and at least a quarter on forms seen with several lemmas.
+- H1c. On unseen forms that a lexicon covers, lexicon and neural pipeline are within two points, and at least one of them is right eight points more often than the better one.
+
+**Q2. Residual fitting.** A fallback stage acts only on words that earlier stages pass on. Does fitting it on such words, obtained out of fold, beat fitting on all training tokens, and is the cheap proxy of rare forms enough?
+- H2a. For fits on all tokens the training gain does not predict the held-out gain (|r| < 0.2); for out-of-fold fits it does (r > 0.5).
+- H2b. On held-out corpora, out-of-fold fitting is at least as good as the rare-form proxy, which is at least as good as all-token fitting, in at least 70% of languages, for the source order, the choice between a dictionary answer and a guess, the (form, tag) table and the guesser.
+
+**Q3. Cost.** How close does a cascade with a linear tagger and a guesser for residual words come to a neural pipeline, and at what cost?
+- H3a. Its macro accuracy is not lower than Stanza's by more than 0.5 points (one-sided, languages as the unit). Being higher is a stretch goal; being higher in every language is not a goal, since Stanza exceeds the context-free bound in some.
+- H3b. At that accuracy it processes at least 100 times more words per second on one CPU core.
+- H3c. From anchor test to transfer corpora its accuracy falls less than Stanza's.
+
+**Q4. Validity.** How often do lexical resources and released models contain test material, and does coverage of unseen forms detect it?
+- H4. The coverage statistic separates the documented positives (Stanza's five treebanks with swapped splits, the Ancient Greek lookup table) from all other source–corpus pairs.
+
+## Systems
+
+One harness, tables from the training split only, selection on development data or out of fold, one pass over held-out data.
+
+| Rung | Adds | Needs at inference |
+| --- | --- | --- |
+| 0 | Copy | the word |
+| 1 | Corpus tables | the word |
+| 2 | Suffix rules, zero thresholds | the word |
+| 3 | External dictionaries, declared order (the published baseline) | the word |
+| 4 | Source order fitted out of fold | the word |
+| 5 | Rule thresholds, compound marker, lemma adapter, each accepted on development data | the word |
+| 6 | (form, tag) table with a linear tagger; tags for the table are jackknifed | the sentence |
+| 7 | Guesser for words that reach the rule stage, trained out of fold | the word and its tag |
+| 8 | Learned choice between dictionary answer and guess | the word and its tag |
+
+A rung is reported whether or not it helps. The guesser of rung 7 is compared in two forms, a linear edit-script classifier and a small character model, and the cost of each is reported.
+
+Comparators on the same words: Stanza 1.15.1 (package of the anchor treebank), spaCy 3.8.18 pipelines, simplemma 2.0.0, UDPipe 2 if its models can be run locally. Stanza models whose lemma dictionary holds at least half of the test words absent from the official training split are excluded, as are models without a lemmatizer.
+
+## Measurements
+
+- Strata as in the table above, per language and per system; bounds from the test itself, from (form, gold UPOS), and from training alone.
+- For each rung: corrections, regressions and changed predictions against the previous rung, on anchor tests and on transfer corpora.
+- Cost on one session and one machine: words per second on one core and on 16 cores, GPU separately, load time, peak memory, size on disk; systems interleaved in random order, windows of at least one second, medians with ranges; batch sizes of neural systems tuned in their favour.
+
+## Statistics
+
+Paired bootstrap over documents within language (2,000 replicates, seed 20261118). With languages as the unit: exact sign test, Wilcoxon signed-rank test and a percentile interval over 10,000 resamples of languages. Leave-one-language-out and leave-two-out ranges for every headline number. H3a is tested once, on transfer corpora.
+
+## Not claimed
+
+Residual fitting has precedents (rare-word suffix guessers, cascade training on survivors, jackknifed tags); the contribution is its measurement across stages and languages. Numbers from the official tests that were inspected before this protocol are labelled exploratory wherever they appear.

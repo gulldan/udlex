@@ -28,6 +28,15 @@ SOLO = """    let mut solo = Vec::new();
     }
     let room = json!({"dev": headroom(&dev, &forms, &pred, &solo),
                       "test": headroom(&test, &forms, &pred, &solo)});
+    // Declared-order answer and stage per form, mid-sentence and sentence-initial.
+    let answers: Vec<_> = forms
+        .keys()
+        .enumerate()
+        .map(|(id, form)| {
+            let p = &pred[0][id];
+            json!([form, p[0].text, p[0].stage.clone() as u8, p[1].text, p[1].stage.clone() as u8])
+        })
+        .collect();
 """
 
 
@@ -73,7 +82,7 @@ def prepare(root, disable_rules=False, examples=None):
         expose(
             harness,
             "    let result = json!({",
-            SOLO + '    let result = json!({"headroom":room,',
+            SOLO + '    let result = json!({"headroom":room,"answers":answers,',
         )
         with harness.open("a") as out:
             out.write(Path(__file__).with_name("order_diagnostic.rs").read_text())

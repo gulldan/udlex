@@ -87,7 +87,7 @@ def spacy_pipeline(lang):
 
 
 def cell(job):
-    engine, iso, lang, config, test, repo, models = job
+    engine, iso, lang, config, test, repo, models, keep = job
     data = list(sentences(test))
     try:
         if engine == "stanza":
@@ -122,10 +122,12 @@ def cell(job):
             },
         )
     tokens = correct = 0
+    kept = []
     forms = [s for s, _ in data]
     for start in range(0, len(forms), CHUNK):
         batch = forms[start : start + CHUNK]
         answers = run(batch)
+        kept.extend(answers)
         for (_, gold), words, lemmas in zip(
             data[start : start + CHUNK], batch, answers, strict=True
         ):
@@ -135,6 +137,11 @@ def cell(job):
                 if y is not None:
                     tokens += 1
                     correct += lemma == y
+    if keep:
+        # Every answer, in the order of the test file, for error analysis.
+        keep.mkdir(parents=True, exist_ok=True)
+        packed = gzip.compress(json.dumps(kept, ensure_ascii=False).encode(), mtime=0)
+        (keep / f"{iso}.json.gz").write_bytes(packed)
     return (
         engine,
         iso,
@@ -144,11 +151,23 @@ def cell(job):
 
 def run(a):
     inv = read(a.order / "inventory.json")["languages"]
-    official = {
-        iso: row
-        for iso, row in inv.items()
-        if row.get("status") == "paired" and len(row["sources"]) >= 2
-    }
+    if a.transfer:
+        # Corpora of the transfer test; each is scored with the model of its anchor treebank.
+        ledger = read(a.transfer / "ledger.json")["corpora"]
+        targets = {
+            cfg: (
+                inv[row["iso"]]["config"],
+                a.transfer / cfg / row["iso"] / "test.jsonl",
+            )
+            for cfg, row in ledger.items()
+            if (a.transfer / cfg / "inventory.json").exists()
+        }
+    else:
+        targets = {
+            iso: (row["config"], a.order / iso / "test.jsonl")
+            for iso, row in inv.items()
+            if row.get("status") == "paired" and len(row["sources"]) >= 2
+        }
     for engine in a.engines:
         out = a.output / f"{engine}.json"
         if out.exists():
@@ -156,14 +175,15 @@ def run(a):
         jobs = [
             (
                 engine,
-                iso,
-                row["config"].split("_")[0],
-                row["config"],
-                a.order / iso / "test.jsonl",
+                name,
+                config.split("_")[0],
+                config,
+                test,
                 a.repo,
                 a.models,
+                a.predictions / engine if a.predictions else None,
             )
-            for iso, row in sorted(official.items())
+            for name, (config, test) in sorted(targets.items())
         ]
         cells = {}
         with ProcessPoolExecutor(
@@ -310,6 +330,8 @@ if __name__ == "__main__":
     r.add_argument("--engines", nargs="+", default=["stanza", *ADAPTERS])
     r.add_argument("--jobs", type=int, default=8)
     r.add_argument("--stanza-jobs", type=int, default=4)
+    r.add_argument("--predictions", type=Path, help="also store every answer")
+    r.add_argument("--transfer", type=Path, help="score transfer corpora instead")
     c = sub.add_parser("screen")
     for key in ("order", "models", "output"):
         c.add_argument(key, type=Path)
