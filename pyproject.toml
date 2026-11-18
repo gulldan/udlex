@@ -71,6 +71,8 @@ convention = "google"
 
 [tool.ruff.lint.per-file-ignores]
 "tests/*" = ["D", "PLR2004", "INP001", "FBT001"]
+# Build scripts for the dictionary packages, run as files rather than imported.
+"dictionaries/*" = ["INP001"]
 
 # PYI021 bans docstrings in stubs, which is right for typeshed and wrong here:
 # this stub is the only place an editor or a type checker can read what the
@@ -81,7 +83,7 @@ convention = "google"
 python-version = "3.11"
 
 [tool.ty.src]
-include = ["src/udlex", "tests"]
+include = ["src/udlex", "tests", "dictionaries"]
 
 [tool.ty.rules]
 # The shipped library is held to the strict end of the checker.
@@ -92,4 +94,4 @@ invalid-argument-type = "error"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-pythonpath = ["src"]
+pythonpath = ["src", "dictionaries"]

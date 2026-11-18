@@ -1,0 +1,60 @@
+{
+ "declared_family_order": [
+  "national",
+  "cc-cedict",
+  "unimorph",
+  "wiktionary-own",
+  "wiktionary",
+  "wiktionary-native"
+ ],
+ "dictionary_version": "1.0.0",
+ "excluded_license_classes": [
+  "copyleft",
+  "unclear"
+ ],
+ "excluded_sources": {
+  "dict-uk": "*",
+  "simplemma": "*",
+  "slavicner": "*",
+  "spacy-lookups-unlicensed": "*",
+  "unimorph": [
+   "eus",
+   "hsb",
+   "kmr",
+   "kor",
+   "sah",
+   "slk"
+  ]
+ },
+ "gate": {
+  "alpha": 0.05,
+  "min_net_gain": 5,
+  "tokens_per_gain": 10000
+ },
+ "noncommercial_review": [
+  "frm",
+  "hbo",
+  "lzh",
+  "naq",
+  "oci",
+  "qtd"
+ ],
+ "release": "v1.0.0",
+ "special_conditions": {
+  "de_hdt": "The UD_German-HDT README states that Heise gave permission to distribute the text for academic use; the annotations are under a Creative Commons share-alike license.",
+  "it_isdt": "The UD_Italian-ISDT LICENSE.txt states that the data are released for research purposes only and asks publications to cite the treebank.",
+  "lij_glt": "UD_Ligurian-GLT is distributed under the Computational Use of Data Agreement (C-UDA 1.0)."
+ },
+ "wiktionary_codes": {
+  "nb": [
+   "nor"
+  ],
+  "nn": [
+   "nor"
+  ],
+  "sh": [
+   "hrv",
+   "srp"
+  ]
+ }
+}
