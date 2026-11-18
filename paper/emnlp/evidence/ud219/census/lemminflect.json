@@ -1,0 +1,15 @@
+{
+  "cells": {
+    "eng": {
+      "correct": 25799,
+      "model": "lemminflect on UPOS of en_core_web_sm-3.8.0",
+      "sentences": 1401,
+      "status": "scored",
+      "tokens": 28156,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    }
+  },
+  "engine": "lemminflect",
+  "version": "0.2.3"
+}

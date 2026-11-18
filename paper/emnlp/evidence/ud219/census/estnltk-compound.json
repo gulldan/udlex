@@ -1,0 +1,15 @@
+{
+  "cells": {
+    "est": {
+      "correct": 46448,
+      "model": "vabamorf disambiguated, first reading, seams _ and = copied from the root",
+      "sentences": 3167,
+      "status": "scored",
+      "tokens": 48309,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    }
+  },
+  "engine": "estnltk-compound",
+  "version": "1.7.5"
+}

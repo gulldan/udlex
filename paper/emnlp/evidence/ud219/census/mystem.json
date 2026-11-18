@@ -1,0 +1,15 @@
+{
+  "cells": {
+    "rus": {
+      "correct": 13594,
+      "model": "mystem-3.1 -d, first reading, raw text",
+      "sentences": 1187,
+      "status": "scored",
+      "tokens": 15334,
+      "unaligned_sentences": 180,
+      "unaligned_tokens": 312
+    }
+  },
+  "engine": "mystem",
+  "version": "0.2.0"
+}

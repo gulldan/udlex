@@ -1,0 +1,15 @@
+{
+  "cells": {
+    "hun": {
+      "correct": 10083,
+      "model": "hu_core_news_lg-3.8.1",
+      "sentences": 448,
+      "status": "scored",
+      "tokens": 10432,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    }
+  },
+  "engine": "huspacy-lg",
+  "version": "3.8.1"
+}
