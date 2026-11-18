@@ -151,3 +151,16 @@ def test_table_parser_skips_the_copyright_block(tmp_path: Path) -> None:
     notices: list[str] = []
     assert list(extract.table(path, spec, notices)) == [("kota", "kot")]
     assert notices == ["Copyright notice"]
+
+
+def test_carved_dev_is_a_disjoint_tenth() -> None:
+    sentences = [
+        {"tokens": ["a"] * 10, "lemmas": ["a"] * 10, "block": f"d:{n}"}
+        for n in range(300)
+    ]
+    train, dev = choose.carve(sentences)
+    assert len(train) + len(dev) == len(sentences)
+    assert not {s["block"] for s in train} & {s["block"] for s in dev}
+    assert 0.09 <= len(dev) / len(sentences) <= 0.12
+    assert choose.carve(sentences) == (train, dev)
+    assert choose.carve(sentences[:10]) == (sentences[:10], [])

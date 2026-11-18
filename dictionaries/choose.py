@@ -40,6 +40,7 @@ from common import (
     nfc,
     read_json,
     write_json,
+    write_jsonl,
 )
 
 import udlex
@@ -48,6 +49,11 @@ if TYPE_CHECKING:
     from collections.abc import Callable, Iterator
 
 FOLDS = 5
+# Without a dev split, a tenth of the training documents stands in for one:
+# the engine's own train-only fallback holds out unseen forms only, which
+# hides what corpus lookup is worth and often selects copying.
+CARVE_SHARE = 0.1
+MIN_CARVE_TOKENS = 2000
 MIN_STRIP_TOKENS = 5000
 COMPOUND_MARKERS = "#_+"
 
@@ -418,6 +424,40 @@ def prepare_tables(
     return maps
 
 
+def carve(sentences: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Split off about a tenth of the training tokens, by hashed document."""
+    tokens = sum(y is not None for s in sentences for y in s["lemmas"])
+    if tokens < MIN_CARVE_TOKENS:
+        return sentences, []
+    blocks = [s["block"] for s in sentences]
+    if len(set(blocks)) < 1 / CARVE_SHARE:
+        blocks = [f"{b}#{n}" for n, b in enumerate(blocks)]
+    order = sorted(set(blocks), key=lambda b: hashlib.sha256(b.encode()).digest())
+    weight = Counter()
+    for block, sentence in zip(blocks, sentences, strict=True):
+        weight[block] += sum(y is not None for y in sentence["lemmas"])
+    held: set[str] = set()
+    for block in order[:-1]:
+        if sum(weight[b] for b in held) >= CARVE_SHARE * tokens:
+            break
+        held.add(block)
+    train = [s for b, s in zip(blocks, sentences, strict=True) if b not in held]
+    dev = [s for b, s in zip(blocks, sentences, strict=True) if b in held]
+    return train, dev
+
+
+def fit_inputs(
+    sentences: list[dict], folder: Path, name: str
+) -> tuple[Path, Path | None]:
+    """Train and dev files for one build, carving dev when there is none."""
+    train, dev = carve(sentences)
+    write_jsonl(folder / f"{name}-train.jsonl", train)
+    if not dev:
+        return folder / f"{name}-train.jsonl", None
+    write_jsonl(folder / f"{name}-dev.jsonl", dev)
+    return folder / f"{name}-train.jsonl", folder / f"{name}-dev.jsonl"
+
+
 def gate(base: list[bool], other: list[bool]) -> dict:
     """Paired dev evidence for replacing ``base`` by ``other``."""
     policy = read_json(POLICY)["gate"]
@@ -442,7 +482,12 @@ def select_official(
     iso = row["iso639_3"]
     root = work / "build" / iso
     splits = work / "splits" / iso
-    train, dev = jsonl(splits / "train.jsonl"), jsonl(splits / "dev.jsonl")
+    train_path, dev_path = splits / "train.jsonl", splits / "dev.jsonl"
+    train, dev = jsonl(train_path), jsonl(dev_path)
+    carved = not any(y is not None for s in dev for y in s["lemmas"])
+    if carved:
+        train_path, dev_path = fit_inputs(train, root, "fit")
+        train, dev = jsonl(train_path), jsonl(dev_path) if dev_path else []
     votes = residual_votes(train)
     maps = prepare_tables(sources, train, root / "tables", set(votes))
     names = [s["id"] for s in sources]
@@ -455,11 +500,18 @@ def select_official(
             (name, tables.get(name) or root / "excluded" / f"{name}.tsv")
             for name in order
         ]
-        build(trial, row, splits / "train.jsonl", None, tried, **extra)
+        build(trial, row, train_path, None, tried, **extra)
         return predict(trial, dev)
 
     named = {k: [names[j] for j in v] for k, v in policies.items()}
-    decision: dict = {"policies": named, "order": named["declared"], "options": {}}
+    decision: dict = {
+        "policies": named,
+        "order": named["declared"],
+        "options": {},
+        "dev": "carved from train"
+        if carved and dev
+        else ("none" if carved else "official"),
+    }
     if any(y is not None for s in dev for y in s["lemmas"]):
         decision |= dev_gate(score, named, train)
         for source in (s for s in excluded if s["license_class"] == "copyleft"):
@@ -474,8 +526,8 @@ def select_official(
     outcome = build(
         root / "lexicon" / iso,
         row,
-        splits / "train.jsonl",
-        splits / "dev.jsonl" if "dev_chosen" in decision else None,
+        train_path,
+        dev_path if "dev_chosen" in decision else None,
         [(name, tables[name]) for name in decision["order"]],
         **decision["options"],
     )
@@ -533,16 +585,19 @@ def select_twofold(row: dict, sources: list[dict], work: Path) -> dict:
     splits = work / "splits" / iso
     decision: dict = {"order": [s["id"] for s in sources], "options": {}, "folds": []}
     for k in (0, 1):
-        train_path = splits / f"fold{1 - k}.jsonl"
-        prepare_tables(sources, jsonl(train_path), root / f"tables-fold{k}")
+        sentences = jsonl(splits / f"fold{1 - k}.jsonl")
+        prepare_tables(sources, sentences, root / f"tables-fold{k}")
         tables = [
             (s["id"], root / f"tables-fold{k}" / f"{s['id']}.tsv") for s in sources
         ]
-        outcome = build(root / f"fold{k}" / iso, row, train_path, None, tables)
+        train_path, dev_path = fit_inputs(sentences, root, f"fold{k}")
+        outcome = build(root / f"fold{k}" / iso, row, train_path, dev_path, tables)
         decision["folds"].append(outcome_record(outcome))
-    prepare_tables(sources, jsonl(splits / "all.jsonl"), root / "tables")
+    sentences = jsonl(splits / "all.jsonl")
+    prepare_tables(sources, sentences, root / "tables")
     tables = [(s["id"], root / "tables" / f"{s['id']}.tsv") for s in sources]
-    outcome = build(root / "lexicon" / iso, row, splits / "all.jsonl", None, tables)
+    train_path, dev_path = fit_inputs(sentences, root, "all")
+    outcome = build(root / "lexicon" / iso, row, train_path, dev_path, tables)
     return decision | {"outcome": outcome_record(outcome)}
 
 

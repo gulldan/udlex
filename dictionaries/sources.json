@@ -895,6 +895,14 @@
     },
     {
      "languages": [
+      "olo"
+     ],
+     "sha256": null,
+     "size": null,
+     "url": "https://raw.githubusercontent.com/unimorph/olo/848160d0e32eb5f8291fe6cf5fcacb871a542e57/olo-new-written-livvic"
+    },
+    {
+     "languages": [
       "pol"
      ],
      "sha256": "97c7f9394d0acbf2bf1471bd8268703cd4e312e2fbcf35cc76775610ec637360",
@@ -1084,6 +1092,14 @@
      "sha256": "bd31a9361cbf0a7016d1925793a4dfcc6775d36b7a7218d4c60d9e979cdd65dd",
      "size": 41921,
      "url": "https://raw.githubusercontent.com/unimorph/uzb/0d06920a2aaf8dfb58b4a5492355e8f6425d2e51/uzb"
+    },
+    {
+     "languages": [
+      "vep"
+     ],
+     "sha256": null,
+     "size": null,
+     "url": "https://raw.githubusercontent.com/unimorph/vep/c8dec3ba7ae102756346f340daf20ba73c07faba/vep-new-written-veps"
     },
     {
      "languages": [
