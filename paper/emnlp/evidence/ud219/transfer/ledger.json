@@ -1,0 +1,3599 @@
+{
+  "candidate_languages": 86,
+  "corpora": {
+    "ar_nyuad": {
+      "anchor": "UD_Arabic-PADT",
+      "files": {
+        "ar_nyuad-ud-dev.conllu": "ac49fac056085ffbc29248d8cf3e30b8a504b5dedf27b09f33fb0cb4faa1ee3f",
+        "ar_nyuad-ud-test.conllu": "bc4670763e0e3f282ef079b55af0c58d73ac541aafc421161eb4d904bbaca52b",
+        "ar_nyuad-ud-train.conllu": "2172eb1780eb1a0cb0276b84ba97cdb8d63065588d144ecfd7cee7a249e35167"
+      },
+      "fit": "official",
+      "iso": "arb",
+      "lemmas": "converted from manual",
+      "screen": {
+        "no_scorable_word": 19738,
+        "sentences": 0,
+        "sentences_read": 19738,
+        "tokens": 0
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Arabic-NYUAD",
+      "ud": true
+    },
+    "ar_pud": {
+      "anchor": "UD_Arabic-PADT",
+      "files": {
+        "ar_pud-ud-test.conllu": "befc6dd18b5b8803644ae8208e2e5f52c0957a36437627c05110914ec42281a3"
+      },
+      "fit": "official",
+      "iso": "arb",
+      "lemmas": "automatic",
+      "screen": {
+        "sentences": 1000,
+        "sentences_read": 1000,
+        "tokens": 20747
+      },
+      "shared_contributors": true,
+      "tier": "silver",
+      "treebank": "UD_Arabic-PUD",
+      "ud": true
+    },
+    "bg_elexis": {
+      "anchor": "UD_Bulgarian-BTB",
+      "files": {
+        "bg_elexis-ud-test.conllu": "cb78355b27af4ff78f66dc5610e52f560e140712f68fb04988a0100e94647e0b"
+      },
+      "fit": "pooled",
+      "iso": "bul",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "exact_overlap": 1,
+        "sentences": 2023,
+        "sentences_read": 2024,
+        "tokens": 33966
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "X_Bulgarian-ELEXIS",
+      "ud": false
+    },
+    "bg_mte1984": {
+      "anchor": "UD_Bulgarian-BTB",
+      "files": {
+        "bg_mte1984-ud-test.conllu": "aa31cc4f3297627b57c088b77aba0c10c8d4221a161b6edfdfbd6619d082ca23"
+      },
+      "fit": "pooled",
+      "iso": "bul",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "exact_overlap": 31,
+        "repeated_sentence": 96,
+        "sentences": 6555,
+        "sentences_read": 6682,
+        "tokens": 100689
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "X_Bulgarian-MTE1984",
+      "ud": false
+    },
+    "bn_banlemma": {
+      "anchor": "UD_Bengali-BRU",
+      "files": {
+        "bn_banlemma-ud-test.conllu": "330f89ea7655b19118eaaf549665e4f7ea91c1ffbaabe985f93780278fb2ee89"
+      },
+      "fit": "pooled",
+      "iso": "ben",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 23,
+        "sentences": 1257,
+        "sentences_read": 1280,
+        "tokens": 9957
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "X_Bengali-BanLemma",
+      "ud": false
+    },
+    "cs_cac": {
+      "anchor": "UD_Czech-PDTC",
+      "files": {
+        "cs_cac-ud-dev.conllu": "cc901bd9ab673f4b078341ffc61b9e8e9e46800a2ef84828b32fea3af273f179",
+        "cs_cac-ud-test.conllu": "2f4c2c2cf793b2cbe6fb5710ec5072953de0ccb53a4e7fdf599caf4517d479ff",
+        "cs_cac-ud-train.conllu": "1610d3a21dfd7f031812615ffc55e76130865199a601207a85fc67fd329d66fd"
+      },
+      "fit": "official",
+      "iso": "ces",
+      "lemmas": "converted from manual",
+      "screen": {
+        "exact_overlap": 26,
+        "near_overlap": 24,
+        "repeated_sentence": 242,
+        "sentences": 24417,
+        "sentences_read": 24709,
+        "tokens": 492417
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Czech-CAC",
+      "ud": true
+    },
+    "cs_cltt": {
+      "anchor": "UD_Czech-PDTC",
+      "files": {
+        "cs_cltt-ud-dev.conllu": "dcdb24ec55c5a6785d2aa7438e6f5f4ff6e03f9469f3e43acc5d0c50be154c05",
+        "cs_cltt-ud-test.conllu": "a670f73b44e294b01920724db60517d64057ccec12d699db82f3944247f0f040",
+        "cs_cltt-ud-train.conllu": "eb627a3c2d8e9c0ef129472f2438cb5e4db50f9442642a060e08bc8e886f4309"
+      },
+      "fit": "official",
+      "iso": "ces",
+      "lemmas": "converted from manual",
+      "screen": {
+        "exact_overlap": 1,
+        "near_overlap": 5,
+        "repeated_sentence": 54,
+        "sentences": 1061,
+        "sentences_read": 1121,
+        "tokens": 35278
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Czech-CLTT",
+      "ud": true
+    },
+    "cs_czesl": {
+      "anchor": "UD_Czech-PDTC",
+      "files": {
+        "cs_czesl-ud-test.conllu": "7456174b0d82f95de5d7d755921c6ea5c95f4685fb7e3a34cb9b1412263aa744"
+      },
+      "fit": "official",
+      "iso": "ces",
+      "lemmas": "manual native",
+      "screen": {
+        "exact_overlap": 30,
+        "near_overlap": 1,
+        "repeated_sentence": 55,
+        "sentences": 1556,
+        "sentences_read": 1642,
+        "tokens": 9677
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Czech-CzeSL",
+      "ud": true
+    },
+    "cs_fictree": {
+      "anchor": "UD_Czech-PDTC",
+      "files": {
+        "cs_fictree-ud-dev.conllu": "c2c1c9ae5da02ae73cbba3f405c97753d94b8c37aa456e7d240a42542e59a37b",
+        "cs_fictree-ud-test.conllu": "7c5550525f8f2b799d5b005174325829963264b1002e840f02622444d0870343",
+        "cs_fictree-ud-train.conllu": "aff0b95c94af87f4d752e8dc5a3508aa4f606d7966274452e346b9ecfe87b57f"
+      },
+      "fit": "official",
+      "iso": "ces",
+      "lemmas": "converted from manual",
+      "screen": {
+        "exact_overlap": 109,
+        "repeated_sentence": 197,
+        "sentences": 12454,
+        "sentences_read": 12760,
+        "tokens": 165837
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Czech-FicTree",
+      "ud": true
+    },
+    "cs_mte1984": {
+      "anchor": "UD_Czech-PDTC",
+      "files": {
+        "cs_mte1984-ud-test.conllu": "c7fa84214d877613447f4b9addc54f6dc30b356cb992c0b03431caa23a302465"
+      },
+      "fit": "official",
+      "iso": "ces",
+      "lemmas": "automatic",
+      "screen": {
+        "exact_overlap": 4,
+        "repeated_sentence": 127,
+        "sentences": 6583,
+        "sentences_read": 6714,
+        "tokens": 99418
+      },
+      "shared_contributors": false,
+      "tier": "silver",
+      "treebank": "X_Czech-MTE1984",
+      "ud": false
+    },
+    "cs_poetry": {
+      "anchor": "UD_Czech-PDTC",
+      "files": {
+        "cs_poetry-ud-test.conllu": "a3c1f5accb35ae59014a50aec8f19bacb015213686ea8b1bb55ec1d1362cec93"
+      },
+      "fit": "official",
+      "iso": "ces",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 8,
+        "sentences": 289,
+        "sentences_read": 297,
+        "tokens": 6245
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Czech-Poetry",
+      "ud": true
+    },
+    "cs_pud": {
+      "anchor": "UD_Czech-PDTC",
+      "files": {
+        "cs_pud-ud-test.conllu": "7a4c2b96a6265acb0668ab40e19f241206897dda1018596c9cea1210faa5f582"
+      },
+      "fit": "official",
+      "iso": "ces",
+      "lemmas": "converted from manual",
+      "screen": {
+        "document_sentences_removed": 2,
+        "documents_removed": 1,
+        "near_overlap": 1,
+        "sentences": 997,
+        "sentences_read": 1000,
+        "tokens": 18544
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Czech-PUD",
+      "ud": true
+    },
+    "cu_torot": {
+      "anchor": "UD_Old_Church_Slavonic-PROIEL",
+      "files": {
+        "cu_torot-ud-chrabr.conllu": "a256f9314657f40592698223f25f11c7adb702ba91f8f5eebdf32c158cbf1345",
+        "cu_torot-ud-euch.conllu": "dfc854541fc97fe2e398cf85cbdc664f340a5a80310ac785f8ddec4d2620d5ed",
+        "cu_torot-ud-vitconst.conllu": "43e7cdc1a27ce3599699e0c4ea44b091f0375901151f69c01b2ca29c18c673e1",
+        "cu_torot-ud-vitmeth.conllu": "b5f0c723614cf8815b5bf221b846d27638a2fbc01cadd8339e9cd65db1dbe655"
+      },
+      "fit": "official",
+      "iso": "chu",
+      "lemmas": "manual native",
+      "screen": {
+        "exact_overlap": 4,
+        "repeated_sentence": 37,
+        "sentences": 1230,
+        "sentences_read": 1271,
+        "tokens": 13513
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "X_Old_Church_Slavonic-TOROT",
+      "ud": false
+    },
+    "da_elexis": {
+      "anchor": "UD_Danish-DDT",
+      "files": {
+        "da_elexis-ud-test.conllu": "2db57bd4386471afe15c0c99a105b53140c7cbc350f503aa6e35f4659e5f26af"
+      },
+      "fit": "official",
+      "iso": "dan",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "sentences": 2024,
+        "sentences_read": 2024,
+        "tokens": 32528
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "X_Danish-ELEXIS",
+      "ud": false
+    },
+    "de_gsd": {
+      "anchor": "UD_German-HDT",
+      "files": {
+        "de_gsd-ud-dev.conllu": "01e8e674973592747ffe9a8c77fcf9d2f5936a8484e731ad4f76254318a8952c",
+        "de_gsd-ud-test.conllu": "595070aa50b706a91dc66f17c296f7a9a25cbc75269f177c27680fb1c21528ab",
+        "de_gsd-ud-train.conllu": "6cb1b600029292fb7bf60531a1d6d7824544791d732c0f7abae8102a2ac337bf"
+      },
+      "fit": "official",
+      "iso": "deu",
+      "lemmas": "automatic",
+      "screen": {
+        "exact_overlap": 2,
+        "near_overlap": 76,
+        "repeated_sentence": 33,
+        "sentences": 15478,
+        "sentences_read": 15589,
+        "tokens": 290343
+      },
+      "shared_contributors": true,
+      "tier": "silver",
+      "treebank": "UD_German-GSD",
+      "ud": true
+    },
+    "de_lit": {
+      "anchor": "UD_German-HDT",
+      "files": {
+        "de_lit-ud-test.conllu": "2c022e52dfb80a6e596ce473039e336dad5f6fdf59e52004b6afb53fc4451137"
+      },
+      "fit": "official",
+      "iso": "deu",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "near_overlap": 1,
+        "sentences": 1919,
+        "sentences_read": 1920,
+        "tokens": 40434
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_German-LIT",
+      "ud": true
+    },
+    "de_pud": {
+      "anchor": "UD_German-HDT",
+      "files": {
+        "de_pud-ud-test.conllu": "ddb5869a9ea750fffcc1f8f4ce1fbddc4ab51d5c200443b7be066b984db43338"
+      },
+      "fit": "official",
+      "iso": "deu",
+      "lemmas": "manual native",
+      "screen": {
+        "document_sentences_removed": 8,
+        "documents_removed": 5,
+        "near_overlap": 5,
+        "sentences": 987,
+        "sentences_read": 1000,
+        "tokens": 21038
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_German-PUD",
+      "ud": true
+    },
+    "el_cretan": {
+      "anchor": "UD_Greek-GDT",
+      "files": {
+        "el_cretan-ud-dev.conllu": "c6c8109731ba3c85c4813b02f7ee7e39231ccfac508138978d4b6cc2e3b4bbbe",
+        "el_cretan-ud-test.conllu": "b86298c7e0653e1e441043539ec7245c109b6475869619b30e0e6140a790959c",
+        "el_cretan-ud-train.conllu": "1d7a13c82137f4e8917a34f9a6fdf3ff557a55295ce41c82a217bce0fc5b38d8"
+      },
+      "fit": "official",
+      "iso": "ell",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 270,
+        "sentences_read": 270,
+        "tokens": 4351
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Greek-Cretan",
+      "ud": true
+    },
+    "el_cypriot": {
+      "anchor": "UD_Greek-GDT",
+      "files": {
+        "el_cypriot-ud-test.conllu": "3cb1917b3e7d0fe508c384eeb77bf4cce7d3e9490fc0d8a7ad3b88f1129730b1"
+      },
+      "fit": "official",
+      "iso": "ell",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 100,
+        "sentences_read": 100,
+        "tokens": 2042
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Greek-Cypriot",
+      "ud": true
+    },
+    "el_glcii": {
+      "anchor": "UD_Greek-GDT",
+      "files": {
+        "el_glcii-ud-test.conllu": "5f854840dd39e155ab92091ea64c5291e951f09db14bc2db8080863cc7d58fb2"
+      },
+      "fit": "official",
+      "iso": "ell",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 1,
+        "sentences": 670,
+        "sentences_read": 671,
+        "tokens": 9864
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Greek-GLCII",
+      "ud": true
+    },
+    "el_griko": {
+      "anchor": "UD_Greek-GDT",
+      "files": {
+        "el_griko-ud-test.conllu": "b2c639dc3afeffd31cb97deda6c7cf85103bdb552bf62c9865f2ed9aefb43e73"
+      },
+      "fit": "official",
+      "iso": "ell",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 100,
+        "sentences_read": 100,
+        "tokens": 1262
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Greek-Griko",
+      "ud": true
+    },
+    "el_gud": {
+      "anchor": "UD_Greek-GDT",
+      "files": {
+        "el_gud-ud-test.conllu": "1810904eb8fb9711f5c12eb0da63dc440fc42e3d41bbd24be194b59e07d19a69",
+        "el_gud-ud-train.conllu": "5cc9ca2876872d87e8d5f6ee2bcd40151617f6aa92a406a94474fdfc341e243f"
+      },
+      "fit": "official",
+      "iso": "ell",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 1807,
+        "sentences_read": 1807,
+        "tokens": 25493
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Greek-GUD",
+      "ud": true
+    },
+    "el_lesbian": {
+      "anchor": "UD_Greek-GDT",
+      "files": {
+        "el_lesbian-ud-test.conllu": "73f684206f15390e6ed94eaeb8d38d71c57eaf5cd5d967e46c5fc30b2a510974"
+      },
+      "fit": "official",
+      "iso": "ell",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 625,
+        "sentences_read": 625,
+        "tokens": 6838
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Greek-Lesbian",
+      "ud": true
+    },
+    "el_messinian": {
+      "anchor": "UD_Greek-GDT",
+      "files": {
+        "el_messinian-ud-dev.conllu": "249c8148920e4d8360da0715b3b2008893f2ffa198bd63841f8d717cb52bcc43",
+        "el_messinian-ud-test.conllu": "d29a102fedee985581e9eadda1f33b441267d56a7a7f1bc407dd6241a5d3ce36",
+        "el_messinian-ud-train.conllu": "80fce9286d4a2f1d7ab9c74210913864a11686f5161288eeaaac5a71389c19b8"
+      },
+      "fit": "official",
+      "iso": "ell",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 110,
+        "sentences_read": 110,
+        "tokens": 899
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Greek-Messinian",
+      "ud": true
+    },
+    "en_atis": {
+      "anchor": "UD_English-GUM",
+      "files": {
+        "en_atis-ud-dev.conllu": "3d289550aa64dea20830c7c109a1afde09de83fdc00bb6c895205681f35e8d52",
+        "en_atis-ud-test.conllu": "a98df5e2f11e81deb4698a05ffcb361cff5d74cbba61b234b59685ec304d66a7",
+        "en_atis-ud-train.conllu": "de10d45dd7fc2517b39ae8df074f78ebaea3fd42aeccc0d059b5d42cec6ef118"
+      },
+      "fit": "official",
+      "iso": "eng",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 5,
+        "sentences": 5427,
+        "sentences_read": 5432,
+        "tokens": 61851
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_English-Atis",
+      "ud": true
+    },
+    "en_childes": {
+      "anchor": "UD_English-GUM",
+      "files": {
+        "en_childes-ud-dev.conllu": "4cde771a29f5ed28ec3b19199b514b96bbff7568f46bbb2b81f367644ea19553",
+        "en_childes-ud-test.conllu": "7bd1684e74fb5e7410e6a58f072bf7e562dad09e66ea48b7b8469a18fe29a90f",
+        "en_childes-ud-train.conllu": "63ff6083c53ec8d85f77aacb0b983c8a47526485304140b12b4e49c64fd94893"
+      },
+      "fit": "official",
+      "iso": "eng",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "exact_overlap": 475,
+        "repeated_sentence": 2484,
+        "sentences": 45224,
+        "sentences_read": 48183,
+        "tokens": 291364
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_English-CHILDES",
+      "ud": true
+    },
+    "en_ctetex": {
+      "anchor": "UD_English-GUM",
+      "files": {
+        "en_ctetex-ud-test.conllu": "626b1da3281f9f203d9b0c68c8132a2d4211a742a348498a1d8388de89a3aa64"
+      },
+      "fit": "official",
+      "iso": "eng",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 2,
+        "sentences": 274,
+        "sentences_read": 276,
+        "tokens": 9222
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_English-CTeTex",
+      "ud": true
+    },
+    "en_elexis": {
+      "anchor": "UD_English-GUM",
+      "files": {
+        "en_elexis-ud-test.conllu": "dc4332ac37429b7293bf19fa8a32191ee4b4151a9195004a86d62057fccd4f8a"
+      },
+      "fit": "official",
+      "iso": "eng",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "near_overlap": 1,
+        "sentences": 2023,
+        "sentences_read": 2024,
+        "tokens": 34201
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "X_English-ELEXIS",
+      "ud": false
+    },
+    "en_esl": {
+      "anchor": "UD_English-GUM",
+      "files": {
+        "en_esl-ud-dev.conllu": "4046b5f02e9913cf342299f6bea546cb1d5e894ec2b9fcc2e12cc62ee80b59ce",
+        "en_esl-ud-test.conllu": "7276f0c03dd6fc2f1a96398c61aeed02adfeba977b725c40b886c97ad8d2aa47",
+        "en_esl-ud-train.conllu": "cdba8990fce27062fba12d666017efcf00e5cea74f40a566d878400789ed46f1"
+      },
+      "fit": "official",
+      "iso": "eng",
+      "lemmas": "automatic",
+      "screen": {
+        "no_scorable_word": 5124,
+        "sentences": 0,
+        "sentences_read": 5124,
+        "tokens": 0
+      },
+      "shared_contributors": false,
+      "tier": "silver",
+      "treebank": "UD_English-ESL",
+      "ud": true
+    },
+    "en_eslspok": {
+      "anchor": "UD_English-GUM",
+      "files": {
+        "en_eslspok-ud-dev.conllu": "7034c651d3deec369149139a75da31a61e673b9735ae88589695ab1d2d235000",
+        "en_eslspok-ud-test.conllu": "7d3b37af353205dc3b2964937e7c511e7763cdca25ec9c830638a2540ffe04be",
+        "en_eslspok-ud-train.conllu": "2d98d2a9520fbc9e20154ab0b51bb688d704c3c59b0e9ae09d82df0a4b1c6330"
+      },
+      "fit": "official",
+      "iso": "eng",
+      "lemmas": "not available",
+      "shared_contributors": false,
+      "tier": null,
+      "treebank": "UD_English-ESLSpok",
+      "ud": true
+    },
+    "en_ewt": {
+      "anchor": "UD_English-GUM",
+      "files": {
+        "en_ewt-ud-dev.conllu": "ebd876f58675824910a380e1c28145739856a0d595fc44851d577d0e7047f356",
+        "en_ewt-ud-test.conllu": "5b5df91ca23677345b941dc58d81617753e0d2d8bee12094e2a25cead3c18973",
+        "en_ewt-ud-train.conllu": "fa6b2c9fc048273ee52f9609bcdc5880df366b6b72847e01a353259ea78c2a37"
+      },
+      "fit": "official",
+      "iso": "eng",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "document_sentences_removed": 88,
+        "documents_removed": 15,
+        "exact_overlap": 81,
+        "near_overlap": 4,
+        "repeated_sentence": 1129,
+        "sentences": 15320,
+        "sentences_read": 16622,
+        "tokens": 246758
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_English-EWT",
+      "ud": true
+    },
+    "en_gentle": {
+      "anchor": "UD_English-GUM",
+      "files": {
+        "en_gentle-ud-test.conllu": "693064562e52dd4b724301706d0282f619bf0bd7ee9ede2d7ce0cffa9ca91dc8"
+      },
+      "fit": "official",
+      "iso": "eng",
+      "lemmas": "manual native",
+      "screen": {
+        "exact_overlap": 4,
+        "repeated_sentence": 81,
+        "sentences": 1249,
+        "sentences_read": 1334,
+        "tokens": 17465
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_English-GENTLE",
+      "ud": true
+    },
+    "en_gumreddit": {
+      "anchor": "UD_English-GUM",
+      "files": {
+        "en_gumreddit-ud-dev.conllu": "48e5d0757369a4939af6870177ec1a35c9841083765b903406c844d09f83bfb7",
+        "en_gumreddit-ud-test.conllu": "56e4329c56c220789f840cf354cba52c66a4dac69334cabac0af446a40d2bfb8",
+        "en_gumreddit-ud-train.conllu": "5cef0715c5132db0ad4398f165966ae836ea8459a27a9c290b606ee5c88ed050"
+      },
+      "fit": "official",
+      "iso": "eng",
+      "lemmas": "manual native",
+      "screen": {
+        "no_scorable_word": 895,
+        "sentences": 0,
+        "sentences_read": 895,
+        "tokens": 0
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_English-GUMReddit",
+      "ud": true
+    },
+    "en_lines": {
+      "anchor": "UD_English-GUM",
+      "files": {
+        "en_lines-ud-dev.conllu": "13fb16575020dd7fe0225ebe1c20af52cdff9376f0ea25a1ec4060f808a692dd",
+        "en_lines-ud-test.conllu": "a33e96c663bb1e03d119c29e02462a6ba465b82c125daf7163038d7504524cc2",
+        "en_lines-ud-train.conllu": "0ad4c08932193ac5a9c85eed42b6aad55f8c9b52fe73d3d97d823d7d267ffeca"
+      },
+      "fit": "official",
+      "iso": "eng",
+      "lemmas": "converted from manual",
+      "screen": {
+        "exact_overlap": 9,
+        "repeated_sentence": 27,
+        "sentences": 5660,
+        "sentences_read": 5696,
+        "tokens": 106157
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_English-LinES",
+      "ud": true
+    },
+    "en_littleprince": {
+      "anchor": "UD_English-GUM",
+      "files": {
+        "en_littleprince-ud-test.conllu": "b1832f66187dea5b8ff27cf7bd607d4fa33962850b84435066c06c4cc1c35232"
+      },
+      "fit": "official",
+      "iso": "eng",
+      "lemmas": "manual native",
+      "screen": {
+        "exact_overlap": 2,
+        "repeated_sentence": 10,
+        "sentences": 488,
+        "sentences_read": 500,
+        "tokens": 6815
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_English-LittlePrince",
+      "ud": true
+    },
+    "en_mte1984": {
+      "anchor": "UD_English-GUM",
+      "files": {
+        "en_mte1984-ud-test.conllu": "3e5d03ea189cbcc37233826c15eb4214a609590de139394c224b4194a3413fda"
+      },
+      "fit": "official",
+      "iso": "eng",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "exact_overlap": 56,
+        "near_overlap": 3,
+        "repeated_sentence": 128,
+        "sentences": 6550,
+        "sentences_read": 6737,
+        "tokens": 117513
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "X_English-MTE1984",
+      "ud": false
+    },
+    "en_partut": {
+      "anchor": "UD_English-GUM",
+      "files": {
+        "en_partut-ud-dev.conllu": "19eabe0b778c257ad5b6fbf1464f94888a55db542aa95dcddbebff432ba3175a",
+        "en_partut-ud-test.conllu": "c625f76a815f34392d7976435a8334e3fd64fe4f966c9761718fc1c07da5d23f",
+        "en_partut-ud-train.conllu": "c1bdbedbb3c8240d7f95feb4a6bbb87b4483d63cf63647efe69bcecab1bc9983"
+      },
+      "fit": "official",
+      "iso": "eng",
+      "lemmas": "converted with corrections",
+      "screen": {
+        "exact_overlap": 1,
+        "near_overlap": 1,
+        "repeated_sentence": 5,
+        "sentences": 2083,
+        "sentences_read": 2090,
+        "tokens": 49370
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_English-ParTUT",
+      "ud": true
+    },
+    "en_pronouns": {
+      "anchor": "UD_English-GUM",
+      "files": {
+        "en_pronouns-ud-test.conllu": "b4e42921354d71e44e4758892f1a78f53773705e21425a64f454022570caf5b0"
+      },
+      "fit": "official",
+      "iso": "eng",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 1,
+        "sentences": 284,
+        "sentences_read": 285,
+        "tokens": 1701
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_English-Pronouns",
+      "ud": true
+    },
+    "en_pud": {
+      "anchor": "UD_English-GUM",
+      "files": {
+        "en_pud-ud-test.conllu": "befc5e901b58732f2308b1aac5cdd804d938362ab31c9fe400c61c28e8e155d8"
+      },
+      "fit": "official",
+      "iso": "eng",
+      "lemmas": "automatic",
+      "screen": {
+        "repeated_sentence": 1,
+        "sentences": 999,
+        "sentences_read": 1000,
+        "tokens": 21162
+      },
+      "shared_contributors": false,
+      "tier": "silver",
+      "treebank": "UD_English-PUD",
+      "ud": true
+    },
+    "eo_prago": {
+      "anchor": "UD_Esperanto-Cairo",
+      "files": {
+        "eo_prago-ud-test.conllu": "5cd064b57339762c4e5cfba615192cc6afc9d6a3ae615ea380e15d830aaf2d6f"
+      },
+      "fit": "pooled",
+      "iso": "epo",
+      "lemmas": "manual native",
+      "screen": {
+        "no_scorable_word": 1,
+        "repeated_sentence": 3,
+        "sentences": 142,
+        "sentences_read": 146,
+        "tokens": 3797
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Esperanto-Prago",
+      "ud": true
+    },
+    "es_coser": {
+      "anchor": "UD_Spanish-AnCora",
+      "files": {
+        "es_coser-ud-test.conllu": "546565e466048e4c9c2c455d4873fc8a2902594a3ddcf176ab542ae42cab8648"
+      },
+      "fit": "official",
+      "iso": "spa",
+      "lemmas": "manual native",
+      "screen": {
+        "exact_overlap": 4,
+        "repeated_sentence": 5,
+        "sentences": 530,
+        "sentences_read": 539,
+        "tokens": 8042
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Spanish-COSER",
+      "ud": true
+    },
+    "es_elexis": {
+      "anchor": "UD_Spanish-AnCora",
+      "files": {
+        "es_elexis-ud-test.conllu": "df88ecf753b37191af203ad122bff3fa8c2af1587e3d6d28c7c788f52d2ce3ef"
+      },
+      "fit": "official",
+      "iso": "spa",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "near_overlap": 4,
+        "sentences": 2020,
+        "sentences_read": 2024,
+        "tokens": 37568
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "X_Spanish-ELEXIS",
+      "ud": false
+    },
+    "es_gsd": {
+      "anchor": "UD_Spanish-AnCora",
+      "files": {
+        "es_gsd-ud-dev.conllu": "5c701ddde2de7ac10032665dcfb8ea39316584ec032ac46ed44a4a567afec82f",
+        "es_gsd-ud-test.conllu": "f6a7a64c61a089f311bc8299f87e62f3af5c92d444a5d51681d1fa42234dca95",
+        "es_gsd-ud-train.conllu": "f8e0c5ba75d33f78ab7299355924ea9923067a4554a5eff4e04b71064b1835fd"
+      },
+      "fit": "official",
+      "iso": "spa",
+      "lemmas": "automatic",
+      "screen": {
+        "exact_overlap": 2,
+        "near_overlap": 31,
+        "repeated_sentence": 97,
+        "sentences": 15883,
+        "sentences_read": 16013,
+        "tokens": 428140
+      },
+      "shared_contributors": true,
+      "tier": "silver",
+      "treebank": "UD_Spanish-GSD",
+      "ud": true
+    },
+    "es_pud": {
+      "anchor": "UD_Spanish-AnCora",
+      "files": {
+        "es_pud-ud-test.conllu": "542ab95a9240fb66ade9d3d234fc34dfd0d5b041bdd304f005ce3573d93418c7"
+      },
+      "fit": "official",
+      "iso": "spa",
+      "lemmas": "manual native",
+      "screen": {
+        "document_sentences_removed": 3,
+        "documents_removed": 1,
+        "near_overlap": 1,
+        "sentences": 996,
+        "sentences_read": 1000,
+        "tokens": 23186
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Spanish-PUD",
+      "ud": true
+    },
+    "et_elexis": {
+      "anchor": "UD_Estonian-EDT",
+      "files": {
+        "et_elexis-ud-test.conllu": "9ec0ad90741f65b16ab9b1345418acbe664b6436c4d2d94ae395d1111692387e"
+      },
+      "fit": "official",
+      "iso": "est",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "near_overlap": 2,
+        "sentences": 2022,
+        "sentences_read": 2024,
+        "tokens": 26259
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "X_Estonian-ELEXIS",
+      "ud": false
+    },
+    "et_ewt": {
+      "anchor": "UD_Estonian-EDT",
+      "files": {
+        "et_ewt-ud-dev.conllu": "6d0aa47c01b3eefb6bb7228fe8b06fafc4e37b080bc446ec4d82e10a8fb5036e",
+        "et_ewt-ud-test.conllu": "72d88bc68fac449195a52bdd879b0e310c49be329bec9deccd2c41ebf8a94f23",
+        "et_ewt-ud-train.conllu": "cb396775b4147520d77b761ceb57cbdca8bb7a3762fc35f8dda6099402c02efd"
+      },
+      "fit": "official",
+      "iso": "est",
+      "lemmas": "converted from manual",
+      "screen": {
+        "exact_overlap": 26,
+        "near_overlap": 2,
+        "repeated_sentence": 170,
+        "sentences": 6992,
+        "sentences_read": 7190,
+        "tokens": 89860
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Estonian-EWT",
+      "ud": true
+    },
+    "et_mte1984": {
+      "anchor": "UD_Estonian-EDT",
+      "files": {
+        "et_mte1984-ud-test.conllu": "267ba120bf6d2cb0e8ca8599b1756683b7bc57a2ddb03e576e8edc3baee40c91"
+      },
+      "fit": "official",
+      "iso": "est",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "exact_overlap": 26,
+        "near_overlap": 9,
+        "repeated_sentence": 95,
+        "sentences": 6348,
+        "sentences_read": 6478,
+        "tokens": 93854
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "X_Estonian-MTE1984",
+      "ud": false
+    },
+    "fa_mte1984": {
+      "anchor": "UD_Persian-PerDT",
+      "files": {
+        "fa_mte1984-ud-test.conllu": "26344f78384daa18a278193627dc0b3e3fd4df5f2236e1b2a15bad9b1783b0d8"
+      },
+      "fit": "official",
+      "iso": "pes",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "repeated_sentence": 80,
+        "sentences": 6524,
+        "sentences_read": 6604,
+        "tokens": 108017
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "X_Persian-MTE1984",
+      "ud": false
+    },
+    "fa_seraji": {
+      "anchor": "UD_Persian-PerDT",
+      "files": {
+        "fa_seraji-ud-dev.conllu": "6ec75ba085fd8524c62b7b3192b6d5f07b5466ed62817a5215fa60770ca637ee",
+        "fa_seraji-ud-test.conllu": "93379b9665b518ed6a384eb792d24e42ad832ff06eb15f8acdf22830d6b05417",
+        "fa_seraji-ud-train.conllu": "2b16673c1b2ecd87156dacfef336f0988a7f7c74088ccb47ca916553f77d3646"
+      },
+      "fit": "official",
+      "iso": "pes",
+      "lemmas": "manual native",
+      "screen": {
+        "exact_overlap": 6,
+        "repeated_sentence": 30,
+        "sentences": 5961,
+        "sentences_read": 5997,
+        "tokens": 152755
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Persian-Seraji",
+      "ud": true
+    },
+    "fi_ftb": {
+      "anchor": "UD_Finnish-TDT",
+      "files": {
+        "fi_ftb-ud-dev.conllu": "ec4460dd8ee85f90c7ed6e7a8adfcb5ec2fcc2918d434db321325989cb842120",
+        "fi_ftb-ud-test.conllu": "34112ef274345b7ee3408dec80aabd9b76a33bc11fc5a2d32740541d119e0dc9",
+        "fi_ftb-ud-train.conllu": "f0e0c8559a74c083617c6add79c2a1414156f1f7a2303410dd6b94bd16843427"
+      },
+      "fit": "official",
+      "iso": "fin",
+      "lemmas": "converted from manual",
+      "screen": {
+        "exact_overlap": 1968,
+        "near_overlap": 73,
+        "repeated_sentence": 5,
+        "sentences": 16677,
+        "sentences_read": 18723,
+        "tokens": 142018
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Finnish-FTB",
+      "ud": true
+    },
+    "fi_ood": {
+      "anchor": "UD_Finnish-TDT",
+      "files": {
+        "fi_ood-ud-test.conllu": "cd84438725207499fd72f34916550ebef2a99acf7bd6077b62dd33e3c656c714"
+      },
+      "fit": "official",
+      "iso": "fin",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 252,
+        "sentences": 1870,
+        "sentences_read": 2122,
+        "tokens": 18868
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Finnish-OOD",
+      "ud": true
+    },
+    "fi_pud": {
+      "anchor": "UD_Finnish-TDT",
+      "files": {
+        "fi_pud-ud-test.conllu": "303c3d03795ca8ddb3340d4d7c2ac28d2aaececa8f9ba962f0440f5c2c2412a0"
+      },
+      "fit": "official",
+      "iso": "fin",
+      "lemmas": "manual native",
+      "screen": {
+        "document_sentences_removed": 2,
+        "documents_removed": 1,
+        "near_overlap": 1,
+        "sentences": 997,
+        "sentences_read": 1000,
+        "tokens": 15755
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Finnish-PUD",
+      "ud": true
+    },
+    "fo_oft": {
+      "anchor": "UD_Faroese-FarPaHC",
+      "files": {
+        "fo_oft-ud-test.conllu": "1219a1f9d98e307dcc5441294628acf8e82da9e3561997d707afe45b23e3d36e"
+      },
+      "fit": "official",
+      "iso": "fao",
+      "lemmas": "converted from manual",
+      "screen": {
+        "repeated_sentence": 16,
+        "sentences": 1192,
+        "sentences_read": 1208,
+        "tokens": 9934
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Faroese-OFT",
+      "ud": true
+    },
+    "fr_alts": {
+      "anchor": "UD_French-Sequoia",
+      "files": {
+        "fr_alts-ud-dev.conllu": "878b12e620ec52e1913387b24a7d0d5d2db260a96c3fbf63b6108371e0d0acde",
+        "fr_alts-ud-test.conllu": "d2a471d83597c8943bedf4bb3cb5261f5065e008558972e0c002fe94d4ca8b97",
+        "fr_alts-ud-train.conllu": "ee35c6c11d6e2d9dfed10eabefc8c5a176381913c6b663e2158bcc96593392b6"
+      },
+      "fit": "official",
+      "iso": "fra",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 10,
+        "sentences": 2016,
+        "sentences_read": 2026,
+        "tokens": 67931
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_French-ALTS",
+      "ud": true
+    },
+    "fr_fqb": {
+      "anchor": "UD_French-Sequoia",
+      "files": {
+        "fr_fqb-ud-test.conllu": "ae785a31de51aaa8715377e6899b942e866bf34e5ead87817cb1ec6d5ace2e91"
+      },
+      "fit": "official",
+      "iso": "fra",
+      "lemmas": "converted from manual",
+      "screen": {
+        "repeated_sentence": 25,
+        "sentences": 2264,
+        "sentences_read": 2289,
+        "tokens": 23662
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_French-FQB",
+      "ud": true
+    },
+    "fr_gsd": {
+      "anchor": "UD_French-Sequoia",
+      "files": {
+        "fr_gsd-ud-dev.conllu": "09ee12adf242a1555fd9034c1002aefeefdf2fc36772d82f1100ec9130c14861",
+        "fr_gsd-ud-test.conllu": "3c79747e673809587088e2e3f62927aa050b1b7944eb7d6e7ffc2a2f4a0eb6aa",
+        "fr_gsd-ud-train.conllu": "3071c358be75f8c8c05cc3e676555d2307c2ecca710e4d35174a3d3bcb14d8b2"
+      },
+      "fit": "official",
+      "iso": "fra",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "near_overlap": 15,
+        "repeated_sentence": 2,
+        "sentences": 16325,
+        "sentences_read": 16342,
+        "tokens": 399523
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_French-GSD",
+      "ud": true
+    },
+    "fr_parisstories": {
+      "anchor": "UD_French-Sequoia",
+      "files": {
+        "fr_parisstories-ud-dev.conllu": "7ba75041f29f32d7cd2ed6377241ee35ecbad3784daffbca1cdc1c3fb3388940",
+        "fr_parisstories-ud-test.conllu": "ee1c46dd3e028d4f361d122537c27cddd6e2439c9671ac7070cf62223ed20456",
+        "fr_parisstories-ud-train.conllu": "3185529fc29f752c7a114ba95854b9e71564c996342ab06f826ca9f89d5cefb2"
+      },
+      "fit": "official",
+      "iso": "fra",
+      "lemmas": "converted from manual",
+      "screen": {
+        "repeated_sentence": 77,
+        "sentences": 2699,
+        "sentences_read": 2776,
+        "tokens": 42578
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_French-ParisStories",
+      "ud": true
+    },
+    "fr_partut": {
+      "anchor": "UD_French-Sequoia",
+      "files": {
+        "fr_partut-ud-dev.conllu": "f54056949e58557663aec8b1803191c5d77c036b959b0da586a779812d7cc408",
+        "fr_partut-ud-test.conllu": "9ab717b7f211ac75bac9654cbc774efd17b3d4c5d01d3799959e437a1ddb0b3d",
+        "fr_partut-ud-train.conllu": "84879b53fc45b90d72e3dcc9ba28458ceb378639306be952cbf6860175ebc9af"
+      },
+      "fit": "official",
+      "iso": "fra",
+      "lemmas": "converted from manual",
+      "screen": {
+        "near_overlap": 15,
+        "repeated_sentence": 4,
+        "sentences": 1001,
+        "sentences_read": 1020,
+        "tokens": 27874
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_French-ParTUT",
+      "ud": true
+    },
+    "fr_poitevindivital": {
+      "anchor": "UD_French-Sequoia",
+      "files": {
+        "fr_poitevindivital-ud-test.conllu": "7bb607e5adef4016c08c5a0a7c9ce7a2151fcb0412ec5989ef0b0db52bb93229"
+      },
+      "fit": "official",
+      "iso": "fra",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 239,
+        "sentences_read": 239,
+        "tokens": 5423
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_French-PoitevinDIVITAL",
+      "ud": true
+    },
+    "fr_pud": {
+      "anchor": "UD_French-Sequoia",
+      "files": {
+        "fr_pud-ud-test.conllu": "ba05186d6b61fdf13ac08293ced11dcfdd7721cc570150eecc6b681179f14e23"
+      },
+      "fit": "official",
+      "iso": "fra",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 1000,
+        "sentences_read": 1000,
+        "tokens": 24723
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_French-PUD",
+      "ud": true
+    },
+    "fr_rhapsodie": {
+      "anchor": "UD_French-Sequoia",
+      "files": {
+        "fr_rhapsodie-ud-dev.conllu": "a51568e5a80eac1d10f2fc3e2f3458a22fb4b97387ddecd04fbae1ebe6f949ce",
+        "fr_rhapsodie-ud-test.conllu": "da95aa19159c864b183105333a8afadced1659e1f342a5a36854e7994867040a",
+        "fr_rhapsodie-ud-train.conllu": "bb08e7233d63f726287d25782224d700887c5557487c78d66c9b64d6f92ff25c"
+      },
+      "fit": "official",
+      "iso": "fra",
+      "lemmas": "converted from manual",
+      "screen": {
+        "repeated_sentence": 414,
+        "sentences": 2795,
+        "sentences_read": 3209,
+        "tokens": 43025
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_French-Rhapsodie",
+      "ud": true
+    },
+    "frm_altm": {
+      "anchor": "UD_Middle_French-PROFITEROLE",
+      "files": {
+        "frm_altm-ud-test.conllu": "9e0a1b48726dfe8ec15cbf98068bbcb1cd3610fcfe14f07b2eb1fc1aa4397fe1"
+      },
+      "fit": "official",
+      "iso": "frm",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 217,
+        "sentences_read": 217,
+        "tokens": 7084
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Middle_French-ALTM",
+      "ud": true
+    },
+    "fro_altm": {
+      "anchor": "UD_Old_French-PROFITEROLE",
+      "files": {
+        "fro_altm-ud-test.conllu": "d628cf9e584693fd20f00c2d265060bc77ef32c44282d4ba8009841f9cb8dfaf"
+      },
+      "fit": "pooled",
+      "iso": "fro",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 4,
+        "sentences": 549,
+        "sentences_read": 553,
+        "tokens": 15257
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Old_French-ALTM",
+      "ud": true
+    },
+    "ga_cadhan": {
+      "anchor": "UD_Irish-IDT",
+      "files": {
+        "ga_cadhan-ud-test.conllu": "0acb2f14db45c47149aaaed41a719813871ca62f54b6dea66b839671b515c48c"
+      },
+      "fit": "official",
+      "iso": "gle",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 193,
+        "sentences_read": 193,
+        "tokens": 4783
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Irish-Cadhan",
+      "ud": true
+    },
+    "ga_twittirish": {
+      "anchor": "UD_Irish-IDT",
+      "files": {
+        "ga_twittirish-ud-dev.conllu": "c9db5cb8175670618e532cea0e884b684713e8d914d264e53b97acd8d3bf1be9",
+        "ga_twittirish-ud-test.conllu": "cde47f3ee17432ad6180169dbad2aad88d07b1e6231bd98000f15c4384a3c3c9",
+        "ga_twittirish-ud-train.conllu": "4d608b66dc5edca5bf6bf39ff70c73b6ce427cb13420c6007fcb0aef44b46682"
+      },
+      "fit": "official",
+      "iso": "gle",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 2,
+        "sentences": 2594,
+        "sentences_read": 2596,
+        "tokens": 47712
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Irish-TwittIrish",
+      "ud": true
+    },
+    "gl_pud": {
+      "anchor": "UD_Galician-CTG",
+      "files": {
+        "gl_pud-ud-test.conllu": "6625208a096b7c77c2d2abf5c06f8dfba53d07345f07ec0ae901d89f713ad7de"
+      },
+      "fit": "official",
+      "iso": "glg",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 1000,
+        "sentences_read": 1000,
+        "tokens": 23509
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Galician-PUD",
+      "ud": true
+    },
+    "gl_treegal": {
+      "anchor": "UD_Galician-CTG",
+      "files": {
+        "gl_treegal-ud-test.conllu": "685d6f2e8d4fc819247c9c1fafdcca310f9796522c22672733690fd751673817",
+        "gl_treegal-ud-train.conllu": "2e469c3bd17a710bc1913ba325691a3a5ba9417f1003f9e3a42c91e15e603f5b"
+      },
+      "fit": "official",
+      "iso": "glg",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 1000,
+        "sentences_read": 1000,
+        "tokens": 25509
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Galician-TreeGal",
+      "ud": true
+    },
+    "grc_perseus": {
+      "anchor": "UD_Ancient_Greek-PROIEL",
+      "files": {
+        "grc_perseus-ud-dev.conllu": "cc55827d3c693c3cfd1dc57e17a43fa642eb2a084e2e4762d4087acee9061dfd",
+        "grc_perseus-ud-test.conllu": "c87a5b138555d429d702d8358f7d5832562b1009d10b8c2f1e63035247914ee1",
+        "grc_perseus-ud-train.conllu": "1358c5b76007063d83b25ebf871ee41bfd07feb32ad62985f892ba368ad71221"
+      },
+      "fit": "official",
+      "iso": "grc",
+      "lemmas": "converted from manual",
+      "screen": {
+        "document_sentences_removed": 196,
+        "documents_removed": 1,
+        "near_overlap": 896,
+        "repeated_sentence": 387,
+        "sentences": 12440,
+        "sentences_read": 13919,
+        "tokens": 180181
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Ancient_Greek-Perseus",
+      "ud": true
+    },
+    "grc_ptnk": {
+      "anchor": "UD_Ancient_Greek-PROIEL",
+      "files": {
+        "grc_ptnk-ud-dev.conllu": "0333f37960923b688bc5ee7d06c760b762ecd6727379bf3ce477f905f23cd70b",
+        "grc_ptnk-ud-test.conllu": "cb53849fcd5f25ab5baa88f24c7a227d3f6b8fd2feebad23ab0d7de842dbab52",
+        "grc_ptnk-ud-train.conllu": "d0c722c2ad4b581d50242d537a2e592bde7574d6568897fd1391eabcf5e15db0"
+      },
+      "fit": "official",
+      "iso": "grc",
+      "lemmas": "manual native",
+      "screen": {
+        "near_overlap": 4,
+        "sentences": 1572,
+        "sentences_read": 1576,
+        "tokens": 39409
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Ancient_Greek-PTNK",
+      "ud": true
+    },
+    "gu_shabdasetu": {
+      "anchor": "UD_Gujarati-GujTB",
+      "files": {
+        "gu_shabdasetu-ud-test.conllu": "029b16557e9498e8729985b62ea90f08fcc7c1b561596b5685a2aa7c589fc098"
+      },
+      "fit": "pooled",
+      "iso": "guj",
+      "lemmas": "manual native",
+      "screen": {
+        "exact_overlap": 1,
+        "sentences": 37,
+        "sentences_read": 38,
+        "tokens": 381
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Gujarati-ShabdaSetu",
+      "ud": true
+    },
+    "ha_easternautogramm": {
+      "anchor": "UD_Hausa-NorthernAutogramm",
+      "files": {
+        "ha_easternautogramm-ud-test.conllu": "9b8bd429c8c274735739b0be1afb655edfb5328330c645810ad4dc3194219280"
+      },
+      "fit": "pooled",
+      "iso": "hau",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 1,
+        "sentences": 334,
+        "sentences_read": 335,
+        "tokens": 9469
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Hausa-EasternAutogramm",
+      "ud": true
+    },
+    "ha_southernautogramm": {
+      "anchor": "UD_Hausa-NorthernAutogramm",
+      "files": {
+        "ha_southernautogramm-ud-test.conllu": "9a700e3f7ed889025543177f7080d18963dff7c6f41641d66e7d28a8771772f0"
+      },
+      "fit": "pooled",
+      "iso": "hau",
+      "lemmas": "manual native",
+      "screen": {
+        "exact_overlap": 33,
+        "repeated_sentence": 356,
+        "sentences": 1538,
+        "sentences_read": 1927,
+        "tokens": 13487
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Hausa-SouthernAutogramm",
+      "ud": true
+    },
+    "ha_westernautogramm": {
+      "anchor": "UD_Hausa-NorthernAutogramm",
+      "files": {
+        "ha_westernautogramm-ud-test.conllu": "46577042a34f8757b4898ce9a8a3b6d5fcbc3d53910eaf6ea2289b2427f0f877"
+      },
+      "fit": "pooled",
+      "iso": "hau",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 10,
+        "sentences": 765,
+        "sentences_read": 775,
+        "tokens": 13854
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Hausa-WesternAutogramm",
+      "ud": true
+    },
+    "he_iahltknesset": {
+      "anchor": "UD_Hebrew-HTB",
+      "files": {
+        "he_iahltknesset-ud-dev.conllu": "ffee3b58c597de17ae934be4521a7e7d1955392d72a1eb6542c35a0ac8089d0c",
+        "he_iahltknesset-ud-test.conllu": "9f646c1af22f58ca404be2be92481b3395683dfcb6d8cc31dbb4a530a6d3bd55",
+        "he_iahltknesset-ud-train.conllu": "0f79ee553b5314e4c603ebbcef08e2f8a41280ab805860a48aa56d56ceda986c"
+      },
+      "fit": "official",
+      "iso": "heb",
+      "lemmas": "manual native",
+      "screen": {
+        "document_sentences_removed": 13,
+        "documents_removed": 2,
+        "exact_overlap": 6,
+        "repeated_sentence": 26,
+        "sentences": 2838,
+        "sentences_read": 2883,
+        "tokens": 66762
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Hebrew-IAHLTknesset",
+      "ud": true
+    },
+    "he_iahltwiki": {
+      "anchor": "UD_Hebrew-HTB",
+      "files": {
+        "he_iahltwiki-ud-dev.conllu": "88b1182a41a51bb34912782b1568c6f28d5290e41cab2dcf0cb001449c929ed8",
+        "he_iahltwiki-ud-test.conllu": "57af21391a7e031d1581256fa5dc3fd7b97de81356ff782e613705ae5ac52e07",
+        "he_iahltwiki-ud-train.conllu": "29b143ddbbad01d119c721868de534fbad0a56da3fa0dbbc40d55eac64c71b9e"
+      },
+      "fit": "official",
+      "iso": "heb",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 1,
+        "sentences": 5038,
+        "sentences_read": 5039,
+        "tokens": 140948
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Hebrew-IAHLTwiki",
+      "ud": true
+    },
+    "he_postrab": {
+      "anchor": "UD_Hebrew-HTB",
+      "files": {
+        "he_postrab-ud-test.conllu": "d95be2095689d7f3e300fb2ae40fcba51bc83c02007a14697280bbb8d94f315e"
+      },
+      "fit": "official",
+      "iso": "heb",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 1,
+        "sentences": 295,
+        "sentences_read": 296,
+        "tokens": 8018
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Hebrew-PostRab",
+      "ud": true
+    },
+    "hi_pud": {
+      "anchor": "UD_Hindi-HDTB",
+      "files": {
+        "hi_pud-ud-test.conllu": "1ae4728ad039a6a22d5651d8fff63a81a7dfcd8f165ca83781bc7e914bfc0d3e"
+      },
+      "fit": "official",
+      "iso": "hin",
+      "lemmas": "automatic",
+      "screen": {
+        "sentences": 1000,
+        "sentences_read": 1000,
+        "tokens": 23829
+      },
+      "shared_contributors": true,
+      "tier": "silver",
+      "treebank": "UD_Hindi-PUD",
+      "ud": true
+    },
+    "hr_hr500k": {
+      "anchor": "UD_Croatian-SET",
+      "files": {
+        "hr_hr500k-ud-test.conllu": "f7b9f210bd3b117271e73745dca6f7e4ace25b9c24be1acfc2e39ed19c1515c2"
+      },
+      "fit": "official",
+      "iso": "hrv",
+      "lemmas": "manual native",
+      "screen": {
+        "document_sentences_removed": 28,
+        "documents_removed": 4,
+        "exact_overlap": 3,
+        "near_overlap": 11,
+        "repeated_sentence": 116,
+        "sentences": 15595,
+        "sentences_read": 15753,
+        "tokens": 298516
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "X_Croatian-hr500k",
+      "ud": false
+    },
+    "hu_elexis": {
+      "anchor": "UD_Hungarian-Szeged",
+      "files": {
+        "hu_elexis-ud-test.conllu": "259315f0d445caccc3e6625bb64b92e6397de39567820afc78a6f04c2f306cee"
+      },
+      "fit": "official",
+      "iso": "hun",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "repeated_sentence": 1,
+        "sentences": 2023,
+        "sentences_read": 2024,
+        "tokens": 29633
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "X_Hungarian-ELEXIS",
+      "ud": false
+    },
+    "hu_eltedh": {
+      "anchor": "UD_Hungarian-Szeged",
+      "files": {
+        "hu_eltedh-ud-blog.conllu": "caa34739c02c415bd15ea633e25dce841060a5ece73286076699af72fca828ef",
+        "hu_eltedh-ud-cult.conllu": "7a9c90ca88388f201745f394ad7a6813da0eaaf207292e692e29a893d883c4aa",
+        "hu_eltedh-ud-leg.conllu": "8836cbe2dba36394dde30475e1207ae3157fc35d84d4ba4d7813afc2a4fc1c3f",
+        "hu_eltedh-ud-lit.conllu": "1a624c89794178deadcda244173e0337d5f11dd2178ac29035dd01b44e2cab5f"
+      },
+      "fit": "official",
+      "iso": "hun",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "near_overlap": 1,
+        "repeated_sentence": 174,
+        "sentences": 24290,
+        "sentences_read": 24465,
+        "tokens": 496398
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "X_Hungarian-ELTEDH",
+      "ud": false
+    },
+    "hu_mte1984": {
+      "anchor": "UD_Hungarian-Szeged",
+      "files": {
+        "hu_mte1984-ud-test.conllu": "b98d6cadefc4c08a8948b3a67e45977c684661a43f6a0f92d5e72f2999b3172a"
+      },
+      "fit": "official",
+      "iso": "hun",
+      "lemmas": "automatic",
+      "screen": {
+        "repeated_sentence": 136,
+        "sentences": 6632,
+        "sentences_read": 6768,
+        "tokens": 97898
+      },
+      "shared_contributors": false,
+      "tier": "silver",
+      "treebank": "X_Hungarian-MTE1984",
+      "ud": false
+    },
+    "hy_bsut": {
+      "anchor": "UD_Armenian-ArmTDP",
+      "files": {
+        "hy_bsut-ud-dev.conllu": "bcacd482998ddb8568967b6966495103dea91c09a3502313db7ac271cbf5e2e0",
+        "hy_bsut-ud-test.conllu": "21f33b8e31c84001eb1c8e16dc963650db5f11c121f6370ccd25438f69714269",
+        "hy_bsut-ud-train.conllu": "56a9ca8f8d86c586f1c5e8b266fc09c276a51fbae051ec9d141cb5b931ca40e2"
+      },
+      "fit": "official",
+      "iso": "hye",
+      "lemmas": "manual native",
+      "screen": {
+        "document_sentences_removed": 112,
+        "documents_removed": 4,
+        "exact_overlap": 2,
+        "near_overlap": 48,
+        "repeated_sentence": 4,
+        "sentences": 2357,
+        "sentences_read": 2523,
+        "tokens": 42527
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Armenian-BSUT",
+      "ud": true
+    },
+    "id_csui": {
+      "anchor": "UD_Indonesian-GSD",
+      "files": {
+        "id_csui-ud-test.conllu": "93800d74e254437e0219240770cdc18f99003f2993b7dae717358b524c8f474d",
+        "id_csui-ud-train.conllu": "0b91a404b4d96ba7f8b21c087a225798d1671b00b3d6126eec9e0b1895a7ca24"
+      },
+      "fit": "official",
+      "iso": "ind",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "repeated_sentence": 1,
+        "sentences": 1029,
+        "sentences_read": 1030,
+        "tokens": 28229
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Indonesian-CSUI",
+      "ud": true
+    },
+    "id_pud": {
+      "anchor": "UD_Indonesian-GSD",
+      "files": {
+        "id_pud-ud-test.conllu": "07efad4d64863ab442aef820afdb34c269f80366c6efb583225f943e5baf88b2"
+      },
+      "fit": "official",
+      "iso": "ind",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 1000,
+        "sentences_read": 1000,
+        "tokens": 19443
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Indonesian-PUD",
+      "ud": true
+    },
+    "is_gc": {
+      "anchor": "UD_Icelandic-IcePaHC",
+      "files": {
+        "is_gc-ud-dev.conllu": "82bc5d1acabd7bea13503675ae4b4c2b76aa2167573b3509889db00fd1ce984b",
+        "is_gc-ud-test.conllu": "d7593fba5a12600417e392aafdb81cbe1ff588f86f5ed1ad0cf0f17b4bd0e0da",
+        "is_gc-ud-train.conllu": "622205dfee16f16b3cc7cdd2e62f5c6d52c68ffcbe2733ec627c85cc56258fd9"
+      },
+      "fit": "official",
+      "iso": "isl",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 7,
+        "sentences": 4993,
+        "sentences_read": 5000,
+        "tokens": 94768
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Icelandic-GC",
+      "ud": true
+    },
+    "is_modern": {
+      "anchor": "UD_Icelandic-IcePaHC",
+      "files": {
+        "is_modern-ud-dev.conllu": "69f65bfeec6467af1875ef2520d9b2b2749815dcc11e6ddadaa3eb3c31c4f51b",
+        "is_modern-ud-test.conllu": "d746fdc1c4ea1aea83e9136293aca2b57028e8fbb43229d3d57ba5cb4fcbc412",
+        "is_modern-ud-train.conllu": "dd8f3f9aeaef70a46b392392739375a25ea1638550087c34081bfcca43a8484e"
+      },
+      "fit": "official",
+      "iso": "isl",
+      "lemmas": "converted from manual",
+      "screen": {
+        "exact_overlap": 10,
+        "repeated_sentence": 57,
+        "sentences": 3468,
+        "sentences_read": 3535,
+        "tokens": 80022
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Icelandic-Modern",
+      "ud": true
+    },
+    "is_pud": {
+      "anchor": "UD_Icelandic-IcePaHC",
+      "files": {
+        "is_pud-ud-test.conllu": "a024997a765ba1c5350f999a421b7faef43f7ebc0412b1378305ab7b91a8df52"
+      },
+      "fit": "official",
+      "iso": "isl",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "sentences": 1000,
+        "sentences_read": 1000,
+        "tokens": 18833
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Icelandic-PUD",
+      "ud": true
+    },
+    "it_elexis": {
+      "anchor": "UD_Italian-ISDT",
+      "files": {
+        "it_elexis-ud-test.conllu": "2f95683136218d93fef806fec3bd9d90ab567e935af6e1b1a0aaed87d2e9605b"
+      },
+      "fit": "official",
+      "iso": "ita",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "exact_overlap": 1,
+        "near_overlap": 3,
+        "sentences": 2020,
+        "sentences_read": 2024,
+        "tokens": 38968
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "X_Italian-ELEXIS",
+      "ud": false
+    },
+    "it_kiparlaforest": {
+      "anchor": "UD_Italian-ISDT",
+      "files": {
+        "it_kiparlaforest-ud-dev.conllu": "a39a3c50ea98b52b513ca786bd5d7c1b78cdaebd5784b6c009572200410f5c36",
+        "it_kiparlaforest-ud-test.conllu": "304eca5c2e1b731ef2039ee6354534132cd658b93c1a71f774a8e3e518e60bfc",
+        "it_kiparlaforest-ud-train.conllu": "518d6411d4038fe03f5bd85b2b4f010fc6d1cf21002c8816825e4e76095b8f38"
+      },
+      "fit": "official",
+      "iso": "ita",
+      "lemmas": "manual native",
+      "screen": {
+        "exact_overlap": 4,
+        "repeated_sentence": 385,
+        "sentences": 2092,
+        "sentences_read": 2481,
+        "tokens": 24224
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Italian-KIParlaForest",
+      "ud": true
+    },
+    "it_markit": {
+      "anchor": "UD_Italian-ISDT",
+      "files": {
+        "it_markit-ud-dev.conllu": "633b6186f47ecfebfcff4ff9c7e19a0cbffd1f655f14fc1e9265b12bda597f97",
+        "it_markit-ud-test.conllu": "9048ed0064e3989e2c37377755a28c25c7e462b1ad916e5808dc0a7ce95fc3fc",
+        "it_markit-ud-train.conllu": "4f6fc3423acb00d49e1e167bd21b11ebbc23e22275fd6f5eeb4d75cfbbccc5c6"
+      },
+      "fit": "official",
+      "iso": "ita",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "near_overlap": 2,
+        "sentences": 1290,
+        "sentences_read": 1292,
+        "tokens": 40416
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Italian-MarkIT",
+      "ud": true
+    },
+    "it_old": {
+      "anchor": "UD_Italian-ISDT",
+      "files": {
+        "it_old-ud-dev.conllu": "3a0f6615bdc9c1b1cf0bcb9ce12763fc7d67267a825c88311a2909b738034993",
+        "it_old-ud-test.conllu": "70cbe418418afefab8c1d08862328f410595908a4ac2d27855dbc99309e5164f",
+        "it_old-ud-train.conllu": "fd18caaab2c8d77f41d52bf86c04bad5787bdd0b298ab754bdd56e5c8782c7ba"
+      },
+      "fit": "official",
+      "iso": "ita",
+      "lemmas": "converted with corrections",
+      "screen": {
+        "sentences": 3419,
+        "sentences_read": 3419,
+        "tokens": 122024
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Italian-Old",
+      "ud": true
+    },
+    "it_parlamint": {
+      "anchor": "UD_Italian-ISDT",
+      "files": {
+        "it_parlamint-ud-test.conllu": "aa0e0fc94683fef4d4ee73a387e747c31b1639c1123570b4a536174af2327229",
+        "it_parlamint-ud-train.conllu": "2b83d41e5eacfab1511245e9032a12a412d273cbb153bcdef2cc5ac793d91aea"
+      },
+      "fit": "official",
+      "iso": "ita",
+      "lemmas": "manual native",
+      "screen": {
+        "near_overlap": 3,
+        "repeated_sentence": 24,
+        "sentences": 674,
+        "sentences_read": 701,
+        "tokens": 20239
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Italian-ParlaMint",
+      "ud": true
+    },
+    "it_partut": {
+      "anchor": "UD_Italian-ISDT",
+      "files": {
+        "it_partut-ud-dev.conllu": "c6542e547447df403e54f314a61ec9f4a5e1e0d770dbcbdedb5ea8edcb6758fc",
+        "it_partut-ud-test.conllu": "6a3f3437fd3ab383ba37122ec84cc1bd53662512f5ff1e80ed306c6b668eb6a2",
+        "it_partut-ud-train.conllu": "576ecef59bedbd740c6c8744af25726d5d279afac3555fa6a37c50ec7db1324d"
+      },
+      "fit": "official",
+      "iso": "ita",
+      "lemmas": "converted with corrections",
+      "screen": {
+        "exact_overlap": 1989,
+        "near_overlap": 20,
+        "sentences": 81,
+        "sentences_read": 2090,
+        "tokens": 1657
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Italian-ParTUT",
+      "ud": true
+    },
+    "it_postwita": {
+      "anchor": "UD_Italian-ISDT",
+      "files": {
+        "it_postwita-ud-dev.conllu": "d7aa66a1e30cec7b211991a5346205dc9b2a7bd98675d3b95a4be00bafff6490",
+        "it_postwita-ud-test.conllu": "5db5e37ed8dc904595ac7d5bc3f746e6232a9fec0689948ffd17219c082a77c4",
+        "it_postwita-ud-train.conllu": "8d2f976ead49c303ff522772792d418ea3887704a2f67143c88ec081c6ea05c8"
+      },
+      "fit": "official",
+      "iso": "ita",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "near_overlap": 7,
+        "repeated_sentence": 19,
+        "sentences": 6686,
+        "sentences_read": 6712,
+        "tokens": 123985
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Italian-PoSTWITA",
+      "ud": true
+    },
+    "it_pud": {
+      "anchor": "UD_Italian-ISDT",
+      "files": {
+        "it_pud-ud-test.conllu": "769d9774908d9e19f4bd296a0a7e93b4153ad2b60b25112555b96246d2b38f07"
+      },
+      "fit": "official",
+      "iso": "ita",
+      "lemmas": "automatic",
+      "screen": {
+        "document_sentences_removed": 4,
+        "documents_removed": 2,
+        "near_overlap": 2,
+        "sentences": 994,
+        "sentences_read": 1000,
+        "tokens": 23654
+      },
+      "shared_contributors": true,
+      "tier": "silver",
+      "treebank": "UD_Italian-PUD",
+      "ud": true
+    },
+    "it_twittiro": {
+      "anchor": "UD_Italian-ISDT",
+      "files": {
+        "it_twittiro-ud-dev.conllu": "1f16040ae17395d2910784742e6b3344620a67937524d47ed96fd56f811a8c99",
+        "it_twittiro-ud-test.conllu": "ae8560ce8471d20fda2e242dc45b3be7d2e0e8f0ccec323a7750fe7511f8b9d4",
+        "it_twittiro-ud-train.conllu": "a470b66a73d2d489113de4f0591b1c61cf3848c6a94cedf33a8379d7e39a24f2"
+      },
+      "fit": "official",
+      "iso": "ita",
+      "lemmas": "converted from manual",
+      "screen": {
+        "repeated_sentence": 525,
+        "sentences": 899,
+        "sentences_read": 1424,
+        "tokens": 18923
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Italian-TWITTIRO",
+      "ud": true
+    },
+    "it_valico": {
+      "anchor": "UD_Italian-ISDT",
+      "files": {
+        "it_valico-ud-test.conllu": "a9f026703c1f3321eeba060460a1dac9d49677a641a7f03e78bcf8103667815a"
+      },
+      "fit": "official",
+      "iso": "ita",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 4,
+        "sentences": 394,
+        "sentences_read": 398,
+        "tokens": 6762
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Italian-Valico",
+      "ud": true
+    },
+    "it_vit": {
+      "anchor": "UD_Italian-ISDT",
+      "files": {
+        "it_vit-ud-dev.conllu": "d6e076afb639b4bee82f8caaaaed467cbd2c4f6ec2762aa0108ca865f97e0f3c",
+        "it_vit-ud-test.conllu": "1569c1c28727e1f99d8246c57b0ffa61ae0442747599051bfbd0e63d7081503f",
+        "it_vit-ud-train.conllu": "678e41cc9771c8dec6a2b2a21489d549dd4d715bda582d3890b162b1c80ea33a"
+      },
+      "fit": "official",
+      "iso": "ita",
+      "lemmas": "converted from manual",
+      "screen": {
+        "exact_overlap": 5,
+        "near_overlap": 52,
+        "repeated_sentence": 27,
+        "sentences": 10003,
+        "sentences_read": 10087,
+        "tokens": 277238
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Italian-VIT",
+      "ud": true
+    },
+    "ja_bccwj": {
+      "anchor": "UD_Japanese-GSD",
+      "files": {
+        "ja_bccwj-ud-dev.conllu": "e461f859a72d3bd3cd559df3564b43a545a11db6eb7e9cd17f42f5e7b561f449",
+        "ja_bccwj-ud-test.conllu": "42bc7313281bf8f66d280242b340342115d336a1a686cae0cf04a38f8efb698e",
+        "ja_bccwj-ud-train.conllu": "b1f65257ebeac63521a7370c14d2aa70ad6b8c24cab363408f5951370a2fa1b9"
+      },
+      "fit": "official",
+      "iso": "jpn",
+      "lemmas": "not available",
+      "shared_contributors": true,
+      "tier": null,
+      "treebank": "UD_Japanese-BCCWJ",
+      "ud": true
+    },
+    "ja_bccwjluw": {
+      "anchor": "UD_Japanese-GSD",
+      "files": {
+        "ja_bccwjluw-ud-dev.conllu": "d7e803599c569deef4c08178af88a7fa4ea467e022816eb4164de02932f3fa27",
+        "ja_bccwjluw-ud-test.conllu": "4f422e1ae7d9de0fb45a8a08dd9beef4e139880a37f3a0ce38f5a2b2693490b1",
+        "ja_bccwjluw-ud-train.conllu": "5ce900369202dfb025fc190a6079f12f1bce4d6fa65e7279be0ad529f86f9af3"
+      },
+      "fit": "official",
+      "iso": "jpn",
+      "lemmas": "not available",
+      "shared_contributors": true,
+      "tier": null,
+      "treebank": "UD_Japanese-BCCWJLUW",
+      "ud": true
+    },
+    "ja_gsdluw": {
+      "anchor": "UD_Japanese-GSD",
+      "files": {
+        "ja_gsdluw-ud-dev.conllu": "6bd2417cf8b716f0705bf9bd69e6e456d4dd507e3f6fb3e2388fcf64f6fabb0c",
+        "ja_gsdluw-ud-test.conllu": "ece9979804365bac228003e859d976e48634f2f9b71dc771a2f07079e8e65659",
+        "ja_gsdluw-ud-train.conllu": "1f62d53dfc31610c0f4d2b49a2990f9086eb9758d81f6d3e606dab086c901baa"
+      },
+      "fit": "official",
+      "iso": "jpn",
+      "lemmas": "converted from manual",
+      "screen": {
+        "document_sentences_removed": 0,
+        "documents_removed": 8100,
+        "exact_overlap": 8100,
+        "sentences": 0,
+        "sentences_read": 8100,
+        "tokens": 0
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Japanese-GSDLUW",
+      "ud": true
+    },
+    "ja_pud": {
+      "anchor": "UD_Japanese-GSD",
+      "files": {
+        "ja_pud-ud-test.conllu": "7ac51383189bdf5513102f9f8ac7ee1b967d5449f8c2dc1a9108fa21a8f1a688"
+      },
+      "fit": "official",
+      "iso": "jpn",
+      "lemmas": "converted from manual",
+      "screen": {
+        "sentences": 1000,
+        "sentences_read": 1000,
+        "tokens": 28786
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Japanese-PUD",
+      "ud": true
+    },
+    "ja_pudluw": {
+      "anchor": "UD_Japanese-GSD",
+      "files": {
+        "ja_pudluw-ud-test.conllu": "f4cc4fa04184dba6e8c06263db2aa9db654abede243053adb63eb9faa8e4180c"
+      },
+      "fit": "official",
+      "iso": "jpn",
+      "lemmas": "converted from manual",
+      "screen": {
+        "repeated_sentence": 1000,
+        "sentences": 0,
+        "sentences_read": 1000,
+        "tokens": 0
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Japanese-PUDLUW",
+      "ud": true
+    },
+    "ka_elexis": {
+      "anchor": "UD_Georgian-GNC",
+      "files": {
+        "ka_elexis-ud-test.conllu": "6d49cd9f87575e898ebeb466c3e9e79a330c1c081dec32407115a748f9ad71e0"
+      },
+      "fit": "official",
+      "iso": "kat",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "sentences": 2024,
+        "sentences_read": 2024,
+        "tokens": 28409
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "X_Georgian-ELEXIS",
+      "ud": false
+    },
+    "ka_glc": {
+      "anchor": "UD_Georgian-GNC",
+      "files": {
+        "ka_glc-ud-dev.conllu": "09071606f369c8481b4cf2b50249b656026e7aa368c6b5365011ce5cc0780809",
+        "ka_glc-ud-test.conllu": "387a0c8bba7b1d37aaac9d6461b5833840ddb8783ba344d54dfb7616d54f5bb1",
+        "ka_glc-ud-train.conllu": "3db2b2ec574b01bc5880b6603cece9aaad52d7f625db6d3275768645dea00b5a"
+      },
+      "fit": "official",
+      "iso": "kat",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "repeated_sentence": 51,
+        "sentences": 3113,
+        "sentences_read": 3164,
+        "tokens": 59213
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Georgian-GLC",
+      "ud": true
+    },
+    "kk_kazdet": {
+      "anchor": "UD_Kazakh-KTB",
+      "files": {
+        "kk_kazdet-ud-test.conllu": "1f5bdc55f29c145a649bc2eca3c5a05b36a7b14e96d59b29a251de7a7362d03a"
+      },
+      "fit": "official",
+      "iso": "kaz",
+      "lemmas": "automatic",
+      "screen": {
+        "exact_overlap": 430,
+        "near_overlap": 205,
+        "repeated_sentence": 34727,
+        "sentences": 25749,
+        "sentences_read": 61111,
+        "tokens": 393337
+      },
+      "shared_contributors": true,
+      "tier": "silver",
+      "treebank": "X_Kazakh-KazDet",
+      "ud": false
+    },
+    "ko_gsd": {
+      "anchor": "UD_Korean-Kaist",
+      "files": {
+        "ko_gsd-ud-dev.conllu": "9dfc748392836f5928e8afc028378909b71109a5cd29227d7c4f4b6531facf3f",
+        "ko_gsd-ud-test.conllu": "02c79cddb809a35fc29cc5205e73d07775ade76dda05904f1b580e9cba2f26f4",
+        "ko_gsd-ud-train.conllu": "3609905b5bd76d1a9373a5ce6f3619e8668fc2833c7a84ce91de3b106e1241a9"
+      },
+      "fit": "official",
+      "iso": "kor",
+      "lemmas": "automatic",
+      "screen": {
+        "exact_overlap": 2,
+        "repeated_sentence": 207,
+        "sentences": 6130,
+        "sentences_read": 6339,
+        "tokens": 78294
+      },
+      "shared_contributors": true,
+      "tier": "silver",
+      "treebank": "UD_Korean-GSD",
+      "ud": true
+    },
+    "ko_ksl": {
+      "anchor": "UD_Korean-Kaist",
+      "files": {
+        "ko_ksl-ud-dev.conllu": "b986979df5137ab1554e7c38a0d7257ce7182a7e76eb82b586610733a289e15b",
+        "ko_ksl-ud-test.conllu": "62574d11b83f62217494a53fd2a7cbf75b7fc3fe5df74021a91e66df65149033",
+        "ko_ksl-ud-train.conllu": "80659ebe423e6b39fdcd4a5eed3251de5f78b3ddede837f69cf98934e1f5c8bd"
+      },
+      "fit": "official",
+      "iso": "kor",
+      "lemmas": "manual native",
+      "screen": {
+        "exact_overlap": 5,
+        "repeated_sentence": 999,
+        "sentences": 16365,
+        "sentences_read": 17369,
+        "tokens": 148102
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Korean-KSL",
+      "ud": true
+    },
+    "ko_littleprince": {
+      "anchor": "UD_Korean-Kaist",
+      "files": {
+        "ko_littleprince-ud-test.conllu": "3539a9002a74fd66759009bd9b5135fcc7b07ea821cea194fb25e31b5c73a81d"
+      },
+      "fit": "official",
+      "iso": "kor",
+      "lemmas": "automatic",
+      "screen": {
+        "exact_overlap": 4,
+        "repeated_sentence": 81,
+        "sentences": 1466,
+        "sentences_read": 1551,
+        "tokens": 10685
+      },
+      "shared_contributors": true,
+      "tier": "silver",
+      "treebank": "UD_Korean-LittlePrince",
+      "ud": true
+    },
+    "ko_pud": {
+      "anchor": "UD_Korean-Kaist",
+      "files": {
+        "ko_pud-ud-test.conllu": "d7d8a74456d20be87d596c20241ca3b1c030ced20c081a5095a40673a4fa57ab"
+      },
+      "fit": "official",
+      "iso": "kor",
+      "lemmas": "automatic",
+      "screen": {
+        "sentences": 1000,
+        "sentences_read": 1000,
+        "tokens": 7918
+      },
+      "shared_contributors": false,
+      "tier": "silver",
+      "treebank": "UD_Korean-PUD",
+      "ud": true
+    },
+    "ky_tuecl": {
+      "anchor": "UD_Kyrgyz-KTMU",
+      "files": {
+        "ky_tuecl-ud-test.conllu": "08224be6b74346f582234f54527412dd6265c8d8b42e7d6ef463aade85bdcd9b"
+      },
+      "fit": "official",
+      "iso": "kir",
+      "lemmas": "manual native",
+      "screen": {
+        "exact_overlap": 2,
+        "near_overlap": 2,
+        "repeated_sentence": 10,
+        "sentences": 159,
+        "sentences_read": 173,
+        "tokens": 1137
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Kyrgyz-TueCL",
+      "ud": true
+    },
+    "la_circse": {
+      "anchor": "UD_Latin-ITTB",
+      "files": {
+        "la_circse-ud-dev.conllu": "b9d9b609841e630c86a582b1679a220b92edc7e4ed1b7d88d6e2fb132196e414",
+        "la_circse-ud-test.conllu": "f492948f750925f597fd0cb8054e20bd6e628d75737cf0065259ca81f0f6a1cb",
+        "la_circse-ud-train.conllu": "56d92508d9d1a7d29f32ad4cdde79377b04f78a0392cfdee2235d99eee44ee6e"
+      },
+      "fit": "official",
+      "iso": "lat",
+      "lemmas": "converted with corrections",
+      "screen": {
+        "repeated_sentence": 4,
+        "sentences": 1968,
+        "sentences_read": 1972,
+        "tokens": 29047
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Latin-CIRCSE",
+      "ud": true
+    },
+    "la_llct": {
+      "anchor": "UD_Latin-ITTB",
+      "files": {
+        "la_llct-ud-dev.conllu": "040457f2e47265a5676c83ce236e1d625af41eda8f779812841e8ba84e28480c",
+        "la_llct-ud-test.conllu": "81d9f57de66d83303ad4df54a60cd445ac089b50070d369831a632b4cf948e64",
+        "la_llct-ud-train.conllu": "c2a5d35cbec2c93e9772a8bbddbf963c7f438570a430e316bc47071214012d51"
+      },
+      "fit": "official",
+      "iso": "lat",
+      "lemmas": "converted from manual",
+      "screen": {
+        "repeated_sentence": 1367,
+        "sentences": 7656,
+        "sentences_read": 9023,
+        "tokens": 231496
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Latin-LLCT",
+      "ud": true
+    },
+    "la_perseus": {
+      "anchor": "UD_Latin-ITTB",
+      "files": {
+        "la_perseus-ud-test.conllu": "e0e53fdcc8040a2a6d3b6e7b5dfa69fa35d355ce11cae0682b61e6848745d386",
+        "la_perseus-ud-train.conllu": "49d2e3813fc34595fe8cf569f263df4396e4b21aba9429fcdb0eea3ae09e64fa"
+      },
+      "fit": "official",
+      "iso": "lat",
+      "lemmas": "converted from manual",
+      "screen": {
+        "exact_overlap": 1,
+        "near_overlap": 2,
+        "repeated_sentence": 13,
+        "sentences": 2257,
+        "sentences_read": 2273,
+        "tokens": 29132
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Latin-Perseus",
+      "ud": true
+    },
+    "la_proiel": {
+      "anchor": "UD_Latin-ITTB",
+      "files": {
+        "la_proiel-ud-dev.conllu": "7a7531066438e3ce56ba7c92dfe95b92c1785dade58e55c9939b94db12fa7344",
+        "la_proiel-ud-test.conllu": "bd3d538cf242e8940f09247fd55dc8f9417706f88c6685edd3c0873ebcea05bc",
+        "la_proiel-ud-train.conllu": "4bcb47050363f32e6fad8f425d6d12bf4a1a44f1a24892aefd750f454c48f5cc"
+      },
+      "fit": "official",
+      "iso": "lat",
+      "lemmas": "converted from manual",
+      "screen": {
+        "near_overlap": 173,
+        "repeated_sentence": 797,
+        "sentences": 17719,
+        "sentences_read": 18689,
+        "tokens": 200048
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Latin-PROIEL",
+      "ud": true
+    },
+    "la_udante": {
+      "anchor": "UD_Latin-ITTB",
+      "files": {
+        "la_udante-ud-dev.conllu": "11d96611add7862a886ca77bebc4bb32c8d314a2f6eec6f1a6a2d116abaae7e4",
+        "la_udante-ud-test.conllu": "04776291b43c9dfafe88310977e4019b1659ea4d08a89fe3965dc53444145d02",
+        "la_udante-ud-train.conllu": "7308e1b9145bc5c4e6febc1149722a8fed89b2cf5a59a9a83ec53744de57744f"
+      },
+      "fit": "official",
+      "iso": "lat",
+      "lemmas": "converted with corrections",
+      "screen": {
+        "near_overlap": 12,
+        "repeated_sentence": 2,
+        "sentences": 1709,
+        "sentences_read": 1723,
+        "tokens": 55101
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Latin-UDante",
+      "ud": true
+    },
+    "lt_hse": {
+      "anchor": "UD_Lithuanian-ALKSNIS",
+      "files": {
+        "lt_hse-ud-dev.conllu": "dd8f171036146a582e666ea2da9cfdc9f99d62593889b2044bef665d35a0bd69",
+        "lt_hse-ud-test.conllu": "8d07e08164817c3eebc38864c5a482839c3e71e8fad5ed65faa7f730f42de82c",
+        "lt_hse-ud-train.conllu": "454fa0aff84aa88070cf53587634278ec4d6d02610c57e8111648bdc51f720de"
+      },
+      "fit": "official",
+      "iso": "lit",
+      "lemmas": "converted from manual",
+      "screen": {
+        "sentences": 263,
+        "sentences_read": 263,
+        "tokens": 5356
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Lithuanian-HSE",
+      "ud": true
+    },
+    "lv_cairo": {
+      "anchor": "UD_Latvian-LVTB",
+      "files": {
+        "lv_cairo-ud-test.conllu": "3ea46f1ea2ee587913458fe8d90ef390367d48f2cc05adf5d861a8826b5b29fd"
+      },
+      "fit": "official",
+      "iso": "lav",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 20,
+        "sentences_read": 20,
+        "tokens": 168
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Latvian-Cairo",
+      "ud": true
+    },
+    "nl_alpino": {
+      "anchor": "UD_Dutch-LassySmall",
+      "files": {
+        "nl_alpino-ud-dev.conllu": "58252957e848bcf5da5e632b35ef988a9b18cfea0f337ea91757458ae8ae262b",
+        "nl_alpino-ud-test.conllu": "3634dc8f5ea58f7a4921477051cc3427d53737143906501c5d59348f18579cc9",
+        "nl_alpino-ud-train.conllu": "73920030b143f2320974403e798f45b9b7170aa9268fdf1f2a954be4733288ca"
+      },
+      "fit": "official",
+      "iso": "nld",
+      "lemmas": "converted from manual",
+      "screen": {
+        "exact_overlap": 3,
+        "near_overlap": 9,
+        "repeated_sentence": 3,
+        "sentences": 13588,
+        "sentences_read": 13603,
+        "tokens": 208430
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Dutch-Alpino",
+      "ud": true
+    },
+    "nl_elexis": {
+      "anchor": "UD_Dutch-LassySmall",
+      "files": {
+        "nl_elexis-ud-test.conllu": "57aa9c713503a1e9e0de14e556261621841817eabecb33a8069cfd7e50763580"
+      },
+      "fit": "official",
+      "iso": "nld",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "near_overlap": 2,
+        "sentences": 2022,
+        "sentences_read": 2024,
+        "tokens": 34881
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "X_Dutch-ELEXIS",
+      "ud": false
+    },
+    "no_bokmaal": {
+      "anchor": "UD_Norwegian-Nynorsk",
+      "files": {
+        "no_bokmaal-ud-dev.conllu": "282a0ed68207f010a24c6ebc1a5771e50aee28253bd18212650a90bd8e8ba698",
+        "no_bokmaal-ud-test.conllu": "e30a21e4bce9c2466b5bb24daa9974933f1e35b3b5c6459415ebb12498cc10b5",
+        "no_bokmaal-ud-train.conllu": "d33da7503a18226fe00c160a9eb3636b8c35e7df9d2c5eaeb9bd5ab55bde0bf3"
+      },
+      "fit": "official",
+      "iso": "nor",
+      "lemmas": "converted from manual",
+      "screen": {
+        "exact_overlap": 89,
+        "near_overlap": 5,
+        "repeated_sentence": 247,
+        "sentences": 19703,
+        "sentences_read": 20044,
+        "tokens": 308414
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Norwegian-Bokmaal",
+      "ud": true
+    },
+    "oc_restaure": {
+      "anchor": "UD_Occitan-TTB",
+      "files": {
+        "oc_restaure-ud-test.conllu": "1e1f632fa465e74dff09c34b2bb702f0acb434d8299ad8594ef87ec25a58dc3a"
+      },
+      "fit": "official",
+      "iso": "oci",
+      "lemmas": "manual native",
+      "screen": {
+        "document_sentences_removed": 223,
+        "documents_removed": 26,
+        "exact_overlap": 360,
+        "near_overlap": 237,
+        "sentences": 61,
+        "sentences_read": 881,
+        "tokens": 1012
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "X_Occitan-RESTAURE",
+      "ud": false
+    },
+    "pl_lfg": {
+      "anchor": "UD_Polish-PDB",
+      "files": {
+        "pl_lfg-ud-dev.conllu": "70cd9b0b6360caa806e4c9380cdb5201f7419038832bf9d080051d4a143b1443",
+        "pl_lfg-ud-test.conllu": "e5ccf27d5b607bf71135f33126051c3b1514d15b0f7e1d1119e71ad9cee8c950",
+        "pl_lfg-ud-train.conllu": "ac2ca65589af5789d2f18255fd80bb5cd07a7b278179e62165f1cf65bfc9acc2"
+      },
+      "fit": "official",
+      "iso": "pol",
+      "lemmas": "converted from manual",
+      "screen": {
+        "exact_overlap": 3720,
+        "near_overlap": 7,
+        "repeated_sentence": 42,
+        "sentences": 13477,
+        "sentences_read": 17246,
+        "tokens": 102147
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Polish-LFG",
+      "ud": true
+    },
+    "pl_mpdt": {
+      "anchor": "UD_Polish-PDB",
+      "files": {
+        "pl_mpdt-ud-dev.conllu": "c8fd8bb87191c89d5aeaecfef3aa82a620dc6a5ec365d8640a7323555fb177e2",
+        "pl_mpdt-ud-test.conllu": "5680e52a18911e6bfc5239727af24fd0f55e8e62f754425f8c6c10259bc5fda9",
+        "pl_mpdt-ud-train.conllu": "77481af5d93a184013f4f4431f31e1b77c3333367fe32bce02559d986915e012"
+      },
+      "fit": "official",
+      "iso": "pol",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 1,
+        "sentences": 2514,
+        "sentences_read": 2515,
+        "tokens": 59290
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Polish-MPDT",
+      "ud": true
+    },
+    "pl_mte1984": {
+      "anchor": "UD_Polish-PDB",
+      "files": {
+        "pl_mte1984-ud-test.conllu": "b169cf9455a8aeec29ccf66c1e2c48939370681030bb97c12f9849501e2895b5"
+      },
+      "fit": "official",
+      "iso": "pol",
+      "lemmas": "automatic",
+      "screen": {
+        "exact_overlap": 11,
+        "near_overlap": 1,
+        "repeated_sentence": 145,
+        "sentences": 6509,
+        "sentences_read": 6666,
+        "tokens": 96734
+      },
+      "shared_contributors": false,
+      "tier": "silver",
+      "treebank": "X_Polish-MTE1984",
+      "ud": false
+    },
+    "pl_pud": {
+      "anchor": "UD_Polish-PDB",
+      "files": {
+        "pl_pud-ud-test.conllu": "bbd1738a916f00acb32486d4830d0bed5c848a98f452fd2241eed1c4e56930e7"
+      },
+      "fit": "official",
+      "iso": "pol",
+      "lemmas": "converted from manual",
+      "screen": {
+        "sentences": 1000,
+        "sentences_read": 1000,
+        "tokens": 18384
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Polish-PUD",
+      "ud": true
+    },
+    "ps_prince": {
+      "anchor": "UD_Pashto-Sikaram",
+      "files": {
+        "ps_prince-ud-test.conllu": "c0e96933fe3fdda0dee9a1bdf827bf0e92420e2308fcf0f1680601bfd166c570"
+      },
+      "fit": "pooled",
+      "iso": "pst",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 64,
+        "sentences_read": 64,
+        "tokens": 1118
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Pashto-Prince",
+      "ud": true
+    },
+    "pt_alienista": {
+      "anchor": "UD_Portuguese-PetroGold",
+      "files": {
+        "pt_alienista-ud-test.conllu": "ed1761f508742d7d05e38d10dd0c4a99c5802d2d919e17960b4c053cedac59a0",
+        "pt_alienista-ud-train.conllu": "622f5deef3861390486bdd6633a1bea750647e4fda65055d71ae26541a553b3a"
+      },
+      "fit": "official",
+      "iso": "por",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 3,
+        "sentences": 798,
+        "sentences_read": 801,
+        "tokens": 20720
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Portuguese-Alienista",
+      "ud": true
+    },
+    "pt_bosque": {
+      "anchor": "UD_Portuguese-PetroGold",
+      "files": {
+        "pt_bosque-ud-dev.conllu": "f8a67abae12fbab85a3995204a6459d1958c11065062d4ea5349d6b914e78f81",
+        "pt_bosque-ud-test.conllu": "9a824650b7a02cf411f6e09b39e8fb423c85e1a5fb3a55b87e7f4c0c2ea5b3bb",
+        "pt_bosque-ud-train.conllu": "b56d7124af821e2968302c38298904ec67af342304a33ae8a9dc4fa57df89648"
+      },
+      "fit": "official",
+      "iso": "por",
+      "lemmas": "converted with corrections",
+      "screen": {
+        "exact_overlap": 1,
+        "repeated_sentence": 18,
+        "sentences": 9338,
+        "sentences_read": 9357,
+        "tokens": 227724
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Portuguese-Bosque",
+      "ud": true
+    },
+    "pt_cintil": {
+      "anchor": "UD_Portuguese-PetroGold",
+      "files": {
+        "pt_cintil-ud-dev.conllu": "37ae33a41667c87f55aec25b8b7ff3bddc5d80a7c75983000fe59a4b3656b141",
+        "pt_cintil-ud-test.conllu": "4d0377c39985c57c834e5a0912927815a375e6edbfb18362752870e8c6f466fe",
+        "pt_cintil-ud-train.conllu": "e618865e512d3b1a306c0cbfad5726c9838657b5f29571543f6648cec74342c5"
+      },
+      "fit": "official",
+      "iso": "por",
+      "lemmas": "converted from manual",
+      "screen": {
+        "repeated_sentence": 926,
+        "sentences": 37474,
+        "sentences_read": 38400,
+        "tokens": 467644
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Portuguese-CINTIL",
+      "ud": true
+    },
+    "pt_dantestocks": {
+      "anchor": "UD_Portuguese-PetroGold",
+      "files": {
+        "pt_dantestocks-ud-dev.conllu": "729bafef6f73d21b3c6115fee354d2a978e553cd2253ba4b6cb93bfee3aebfbc",
+        "pt_dantestocks-ud-test.conllu": "a65801c762707d9fefcd83f5a431c8a974bcc178612ba00d965946a9713432aa",
+        "pt_dantestocks-ud-train.conllu": "43a4791e6502d3b1bcdefc36c6ad5a133c0d4569dd20d34c0a9bf4913d38f07d"
+      },
+      "fit": "official",
+      "iso": "por",
+      "lemmas": "manual native",
+      "screen": {
+        "near_overlap": 1,
+        "sentences": 4041,
+        "sentences_read": 4042,
+        "tokens": 80926
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Portuguese-DANTEStocks",
+      "ud": true
+    },
+    "pt_elexis": {
+      "anchor": "UD_Portuguese-PetroGold",
+      "files": {
+        "pt_elexis-ud-test.conllu": "0fbc1f41fda24b75615095bfd3d69f8afab18270f0ec3912765d9771c4f28695"
+      },
+      "fit": "official",
+      "iso": "por",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "near_overlap": 1,
+        "sentences": 2023,
+        "sentences_read": 2024,
+        "tokens": 38700
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "X_Portuguese-ELEXIS",
+      "ud": false
+    },
+    "pt_gsd": {
+      "anchor": "UD_Portuguese-PetroGold",
+      "files": {
+        "pt_gsd-ud-dev.conllu": "0d3b6c8518ad727a26476eb682f58d5dc2bbda0307270d2a7691eb6463a074e6",
+        "pt_gsd-ud-test.conllu": "0572d50de07593d662f7a1ff49490c7c3722612acac1d5c50916deb3d7b02a31",
+        "pt_gsd-ud-train.conllu": "c28bdc7ff8ddf03cba586062be0b041308da36bd82c321b437564d2b6c8664bb"
+      },
+      "fit": "official",
+      "iso": "por",
+      "lemmas": "automatic",
+      "screen": {
+        "near_overlap": 1,
+        "no_scorable_word": 1,
+        "repeated_sentence": 3,
+        "sentences": 12015,
+        "sentences_read": 12020,
+        "tokens": 260223
+      },
+      "shared_contributors": false,
+      "tier": "silver",
+      "treebank": "UD_Portuguese-GSD",
+      "ud": true
+    },
+    "pt_portjur": {
+      "anchor": "UD_Portuguese-PetroGold",
+      "files": {
+        "pt_portjur-ud-dev.conllu": "d6c04fe256e2e7a6db58d38330348ccc6272a0c925836aa3f7876f2cf630f366",
+        "pt_portjur-ud-test.conllu": "137a1dbc27764d695cb56905860da9aafaeedb6869b9fd1dceae29dc41153ea0",
+        "pt_portjur-ud-train.conllu": "ec28417c93024dab3d56ccf90caea48a8bb51b649ff68f4e769ee03a8b503e1d"
+      },
+      "fit": "official",
+      "iso": "por",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 20,
+        "sentences": 1985,
+        "sentences_read": 2005,
+        "tokens": 100577
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Portuguese-PortJur",
+      "ud": true
+    },
+    "pt_porttinari": {
+      "anchor": "UD_Portuguese-PetroGold",
+      "files": {
+        "pt_porttinari-ud-dev.conllu": "208483e5f5a29a0f6b6e0fc1f6e6499a10a5f5cbde53fdad20b30bf146a9e316",
+        "pt_porttinari-ud-test.conllu": "6c8b36352bbee481448d5d354b38de1f80ddcde2ce2ffe9d1f0064c136d3d07d",
+        "pt_porttinari-ud-train.conllu": "b685d552f23dd0155072b11b1282d6e52dc7f4b57f335cc3486be23ef68c4ead"
+      },
+      "fit": "official",
+      "iso": "por",
+      "lemmas": "manual native",
+      "screen": {
+        "near_overlap": 1,
+        "repeated_sentence": 42,
+        "sentences": 8375,
+        "sentences_read": 8418,
+        "tokens": 167302
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Portuguese-Porttinari",
+      "ud": true
+    },
+    "pt_pprincipe": {
+      "anchor": "UD_Portuguese-PetroGold",
+      "files": {
+        "pt_pprincipe-ud-test.conllu": "d82f75ad80e9fac3e1b9097b2e27a7073c02b8ab70ad6e59b0edcb2febf68385"
+      },
+      "fit": "official",
+      "iso": "por",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 41,
+        "sentences": 1486,
+        "sentences_read": 1527,
+        "tokens": 16616
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Portuguese-PPrincipe",
+      "ud": true
+    },
+    "pt_pud": {
+      "anchor": "UD_Portuguese-PetroGold",
+      "files": {
+        "pt_pud-ud-test.conllu": "876a701d49fcee4f329361a216ab0517de6dd9fd967dce497ab58c58c8c77420"
+      },
+      "fit": "official",
+      "iso": "por",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "repeated_sentence": 1,
+        "sentences": 999,
+        "sentences_read": 1000,
+        "tokens": 18908
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Portuguese-PUD",
+      "ud": true
+    },
+    "ro_art": {
+      "anchor": "UD_Romanian-Nonstandard",
+      "files": {
+        "ro_art-ud-test.conllu": "71cefb0314745ebda17f59a198c1aaaef90a8d369f8becfb45b0d7e282995c86"
+      },
+      "fit": "official",
+      "iso": "ron",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 50,
+        "sentences_read": 50,
+        "tokens": 573
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Romanian-ArT",
+      "ud": true
+    },
+    "ro_elexis": {
+      "anchor": "UD_Romanian-Nonstandard",
+      "files": {
+        "ro_elexis-ud-test.conllu": "3c7caf8041cc123d696195a60f9dfd3e0371d20d74e15f0e34722a4068bd2033"
+      },
+      "fit": "official",
+      "iso": "ron",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "sentences": 2024,
+        "sentences_read": 2024,
+        "tokens": 35316
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "X_Romanian-ELEXIS",
+      "ud": false
+    },
+    "ro_moldoro": {
+      "anchor": "UD_Romanian-Nonstandard",
+      "files": {
+        "ro_moldoro-ud-test.conllu": "ab69621780bf2681d4121ff591f241cfa7bd55264a297ae54baa754f7607787a"
+      },
+      "fit": "official",
+      "iso": "ron",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 30,
+        "sentences_read": 30,
+        "tokens": 241
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Romanian-MolDoRo",
+      "ud": true
+    },
+    "ro_mte1984": {
+      "anchor": "UD_Romanian-Nonstandard",
+      "files": {
+        "ro_mte1984-ud-test.conllu": "272256d69ea89128b6652e0f4deb56d472399e835bff2402903ce36492a1c64a"
+      },
+      "fit": "official",
+      "iso": "ron",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 112,
+        "sentences": 6408,
+        "sentences_read": 6520,
+        "tokens": 117810
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "X_Romanian-MTE1984",
+      "ud": false
+    },
+    "ro_rrt": {
+      "anchor": "UD_Romanian-Nonstandard",
+      "files": {
+        "ro_rrt-ud-dev.conllu": "b81e3848e9e9fb06afd32867a8795208edc3305df981aedc361c8273dc84a3bf",
+        "ro_rrt-ud-test.conllu": "32a2f7b9fc82c1e82d9959ce8c5ec7b7840f725177aa06b497b51f6834801989",
+        "ro_rrt-ud-train.conllu": "15c7a90a45f8a7ae809c09f6ec9cf2250bf4cf323cf0cbfcda7cfc4dbac4ea19"
+      },
+      "fit": "official",
+      "iso": "ron",
+      "lemmas": "automatic",
+      "screen": {
+        "document_sentences_removed": 9,
+        "documents_removed": 1,
+        "exact_overlap": 8,
+        "repeated_sentence": 227,
+        "sentences": 9280,
+        "sentences_read": 9524,
+        "tokens": 215756
+      },
+      "shared_contributors": true,
+      "tier": "silver",
+      "treebank": "UD_Romanian-RRT",
+      "ud": true
+    },
+    "ro_simonero": {
+      "anchor": "UD_Romanian-Nonstandard",
+      "files": {
+        "ro_simonero-ud-dev.conllu": "5f1e22f302597408d5f2aae355571e0cef9897f639983c7f140aa7afc8ce4276",
+        "ro_simonero-ud-test.conllu": "dfe5c3f752ef3aa6eecfc8013555c6776e6f360d3d341777c7f6e1abd87984f4",
+        "ro_simonero-ud-train.conllu": "63f20bb5b27e35414e1ee9d45aa144a69911d1b9b6246b1d6f65989134216a37"
+      },
+      "fit": "official",
+      "iso": "ron",
+      "lemmas": "converted from manual",
+      "screen": {
+        "sentences": 4681,
+        "sentences_read": 4681,
+        "tokens": 146015
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Romanian-SiMoNERo",
+      "ud": true
+    },
+    "ro_tuecl": {
+      "anchor": "UD_Romanian-Nonstandard",
+      "files": {
+        "ro_tuecl-ud-test.conllu": "739f4074fdb7b54a10aab3349c23296b8363330b87a494c4b7dd4502c5f55931"
+      },
+      "fit": "official",
+      "iso": "ron",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 210,
+        "sentences_read": 210,
+        "tokens": 4415
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Romanian-TueCL",
+      "ud": true
+    },
+    "ru_gsd": {
+      "anchor": "UD_Russian-Taiga",
+      "files": {
+        "ru_gsd-ud-dev.conllu": "c83c6910d30e285adc3981693b03b360059367f18377fe0b95734a12b0a4f904",
+        "ru_gsd-ud-test.conllu": "f0154fdc5a057de719bee82ae753bce2aba9ec99873d2aff4ae6c55310374c13",
+        "ru_gsd-ud-train.conllu": "f434e52cdc24a154df0de850b86ea0fc829d51f11d33211fa09753d3e3a35584"
+      },
+      "fit": "official",
+      "iso": "rus",
+      "lemmas": "manual native",
+      "screen": {
+        "exact_overlap": 1,
+        "near_overlap": 11,
+        "repeated_sentence": 8,
+        "sentences": 5010,
+        "sentences_read": 5030,
+        "tokens": 97596
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Russian-GSD",
+      "ud": true
+    },
+    "ru_poetry": {
+      "anchor": "UD_Russian-Taiga",
+      "files": {
+        "ru_poetry-ud-dev.conllu": "b05492c99596380c025617376167d05ef3661bf48f9156d3880e564eb2a24e66",
+        "ru_poetry-ud-test.conllu": "3d212abec2bc508fa56c0febbb62d50c094fc92136ebc17c0dcd5b1dcf99967a",
+        "ru_poetry-ud-train.conllu": "219afa378b2f0fe34cd999673fc05b4ba1d9015b039cbc1a10f748f1ef05da03"
+      },
+      "fit": "official",
+      "iso": "rus",
+      "lemmas": "manual native",
+      "screen": {
+        "exact_overlap": 92,
+        "near_overlap": 3,
+        "repeated_sentence": 63,
+        "sentences": 4927,
+        "sentences_read": 5085,
+        "tokens": 63588
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Russian-Poetry",
+      "ud": true
+    },
+    "ru_pud": {
+      "anchor": "UD_Russian-Taiga",
+      "files": {
+        "ru_pud-ud-test.conllu": "777eb1776510d78550cb8a1ce2263ccc5c394c71bfad0cedd76a3be8d5a17350"
+      },
+      "fit": "official",
+      "iso": "rus",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 1000,
+        "sentences_read": 1000,
+        "tokens": 19355
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Russian-PUD",
+      "ud": true
+    },
+    "ru_syntagrus": {
+      "anchor": "UD_Russian-Taiga",
+      "files": {
+        "ru_syntagrus-ud-dev.conllu": "caba2640fe189d689bb301c28e4564b4faa4db0838134cdef024b1daabc8771d",
+        "ru_syntagrus-ud-test.conllu": "ba12a7acbeeeb849bd58187268ba652a429ab076b89af0d2d05c3cb2265708e3",
+        "ru_syntagrus-ud-train.conllu": "8b5059612f7196fff820693c79e63257fa8e9119e185b7c1dd9b720c0b799db9"
+      },
+      "fit": "official",
+      "iso": "rus",
+      "lemmas": "converted from manual",
+      "screen": {
+        "exact_overlap": 327,
+        "near_overlap": 67,
+        "repeated_sentence": 375,
+        "sentences": 86568,
+        "sentences_read": 87337,
+        "tokens": 1510946
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Russian-SynTagRus",
+      "ud": true
+    },
+    "sa_ufal": {
+      "anchor": "UD_Sanskrit-Vedic",
+      "files": {
+        "sa_ufal-ud-test.conllu": "8e956d19e67e96d8fce8807a37f6d5b995db35df12a8b7ba233dbbaf74a4aa6f"
+      },
+      "fit": "official",
+      "iso": "san",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 7,
+        "sentences": 223,
+        "sentences_read": 230,
+        "tokens": 1828
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Sanskrit-UFAL",
+      "ud": true
+    },
+    "sga_dipwbg": {
+      "anchor": "UD_Old_Irish-DipSGG",
+      "files": {
+        "sga_dipwbg-ud-test.conllu": "9dae21c53c89f7a00563526c854d000578332be3869bcc784808eb2716ac01a6"
+      },
+      "fit": "pooled",
+      "iso": "sga",
+      "lemmas": "converted with corrections",
+      "screen": {
+        "sentences": 34,
+        "sentences_read": 34,
+        "tokens": 431
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Old_Irish-DipWBG",
+      "ud": true
+    },
+    "sk_mte1984": {
+      "anchor": "UD_Slovak-SNK",
+      "files": {
+        "sk_mte1984-ud-test.conllu": "4f59fa2385289d39e99849e872fa918b57384a70209c6645eb45d5add60ddea2"
+      },
+      "fit": "official",
+      "iso": "slk",
+      "lemmas": "converted from manual",
+      "screen": {
+        "document_sentences_removed": 4302,
+        "documents_removed": 20,
+        "exact_overlap": 990,
+        "near_overlap": 58,
+        "repeated_sentence": 74,
+        "sentences": 930,
+        "sentences_read": 6354,
+        "tokens": 17267
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "X_Slovak-MTE1984",
+      "ud": false
+    },
+    "sl_elexis": {
+      "anchor": "UD_Slovenian-SSJ",
+      "files": {
+        "sl_elexis-ud-test.conllu": "850657fd1d99d6cdb000c06121dde3272f08b481b0117b09508e6ffcc8d9a1e3"
+      },
+      "fit": "official",
+      "iso": "slv",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "document_sentences_removed": 0,
+        "documents_removed": 1,
+        "exact_overlap": 2024,
+        "sentences": 0,
+        "sentences_read": 2024,
+        "tokens": 0
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "X_Slovenian-ELEXIS",
+      "ud": false
+    },
+    "sl_mte1984": {
+      "anchor": "UD_Slovenian-SSJ",
+      "files": {
+        "sl_mte1984-ud-test.conllu": "027872738fbb5b8c8c0ca9d4dda014c2f97186cd6b35b9a02e79c9e64bc5205b"
+      },
+      "fit": "official",
+      "iso": "slv",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "exact_overlap": 2,
+        "repeated_sentence": 117,
+        "sentences": 6570,
+        "sentences_read": 6689,
+        "tokens": 111658
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "X_Slovenian-MTE1984",
+      "ud": false
+    },
+    "sl_sst": {
+      "anchor": "UD_Slovenian-SSJ",
+      "files": {
+        "sl_sst-ud-dev.conllu": "328fd2a03df6d8fdd5d1301745f49ea44d24304ff3d14fe9055e46a147cbd8ac",
+        "sl_sst-ud-test.conllu": "923a07778b813f18ba82419cfbf7163540babd857e921506f53391ce9dd79848",
+        "sl_sst-ud-train.conllu": "2626b90dd73b7a72d1c752ed19ae7cd6afa92caa29e8338cbab0b360bdbddd5d"
+      },
+      "fit": "official",
+      "iso": "slv",
+      "lemmas": "converted from manual",
+      "screen": {
+        "document_sentences_removed": 510,
+        "documents_removed": 29,
+        "exact_overlap": 212,
+        "repeated_sentence": 389,
+        "sentences": 5010,
+        "sentences_read": 6121,
+        "tokens": 91006
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Slovenian-SST",
+      "ud": true
+    },
+    "sq_tsa": {
+      "anchor": "UD_Albanian-STAF",
+      "files": {
+        "sq_tsa-ud-test.conllu": "a9d47aba680258d85f4d4ee5ea298d2d3d63d1db4b6ec52dfa5c4c2982e6decf"
+      },
+      "fit": "official",
+      "iso": "sqi",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 60,
+        "sentences_read": 60,
+        "tokens": 922
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Albanian-TSA",
+      "ud": true
+    },
+    "sr_elexis": {
+      "anchor": "UD_Serbian-SET",
+      "files": {
+        "sr_elexis-ud-test.conllu": "d02f1b207994d432d5656791cab0e6c9bf489498bee6c03bfccb07d3b9b865c1"
+      },
+      "fit": "official",
+      "iso": "srp",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "near_overlap": 1,
+        "sentences": 2023,
+        "sentences_read": 2024,
+        "tokens": 31037
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "X_Serbian-ELEXIS",
+      "ud": false
+    },
+    "sr_mte1984": {
+      "anchor": "UD_Serbian-SET",
+      "files": {
+        "sr_mte1984-ud-test.conllu": "7c205b615258fb3182bf118c5113ca11a3854a01c5c74a8fec408d7555a5aaf2"
+      },
+      "fit": "official",
+      "iso": "srp",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "repeated_sentence": 124,
+        "sentences": 6553,
+        "sentences_read": 6677,
+        "tokens": 108133
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "X_Serbian-MTE1984",
+      "ud": false
+    },
+    "sr_parcolab": {
+      "anchor": "UD_Serbian-SET",
+      "files": {
+        "sr_parcolab-ud-dev.conllu": "27ab8228b2908a2dea9660496a007956e035be2e6b5e000a96948fc7c10dd688",
+        "sr_parcolab-ud-test.conllu": "f4c7f89efa7ccc4bcc7358309e1e90a82bc348210e70b0478e6765daa17c541d",
+        "sr_parcolab-ud-train.conllu": "fdc5a525ff0e9381369d4dbcbc12e8b1cfdfb2487e140a8b2f77dfa47b52c695"
+      },
+      "fit": "official",
+      "iso": "srp",
+      "lemmas": "converted from manual",
+      "screen": {
+        "repeated_sentence": 3,
+        "sentences": 1744,
+        "sentences_read": 1747,
+        "tokens": 45677
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Serbian-ParCoLab",
+      "ud": true
+    },
+    "sv_lines": {
+      "anchor": "UD_Swedish-Talbanken",
+      "files": {
+        "sv_lines-ud-dev.conllu": "e2a657734e6873ed3193e9e4474994cb9a2b56646e015d5346a815b5d101ba81",
+        "sv_lines-ud-test.conllu": "411bf3d84f8d439480692172356557d806a500619f75986a2c58c07fd384177c",
+        "sv_lines-ud-train.conllu": "12164cf28bbecda9c7f4d88629f064b444eb0da4683c54f12fbe757f14284f00"
+      },
+      "fit": "official",
+      "iso": "swe",
+      "lemmas": "converted from manual",
+      "screen": {
+        "exact_overlap": 1,
+        "repeated_sentence": 13,
+        "sentences": 5682,
+        "sentences_read": 5696,
+        "tokens": 102454
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Swedish-LinES",
+      "ud": true
+    },
+    "sv_modern": {
+      "anchor": "UD_Swedish-Talbanken",
+      "files": {
+        "sv_modern-ud-test.conllu": "d728a6b24b4aaa951e01072a6887de875d6ee054f2b03fe286e3b3c32da7a385"
+      },
+      "fit": "official",
+      "iso": "swe",
+      "lemmas": "not available",
+      "shared_contributors": true,
+      "tier": null,
+      "treebank": "UD_Swedish-Modern",
+      "ud": true
+    },
+    "sv_old": {
+      "anchor": "UD_Swedish-Talbanken",
+      "files": {
+        "sv_old-ud-test.conllu": "827ff5409b769c649b95cfa7687fee40af06182c17b9e81a6d2d214378a812e3"
+      },
+      "fit": "official",
+      "iso": "swe",
+      "lemmas": "converted with corrections",
+      "screen": {
+        "sentences": 40,
+        "sentences_read": 40,
+        "tokens": 506
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Swedish-Old",
+      "ud": true
+    },
+    "sv_pud": {
+      "anchor": "UD_Swedish-Talbanken",
+      "files": {
+        "sv_pud-ud-test.conllu": "2d27b39e0f21bdae953620bccb756e20e0a1df5a19e06185e36bd3e41c26c122"
+      },
+      "fit": "official",
+      "iso": "swe",
+      "lemmas": "automatic with corrections",
+      "screen": {
+        "sentences": 1000,
+        "sentences_read": 1000,
+        "tokens": 19076
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Swedish-PUD",
+      "ud": true
+    },
+    "sv_swell": {
+      "anchor": "UD_Swedish-Talbanken",
+      "files": {
+        "sv_swell-ud-test.conllu": "4c2bbed5b55fff087a4d5778ce0db5fd840bcb95e8b971376cebaa88680a8d88"
+      },
+      "fit": "official",
+      "iso": "swe",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 6,
+        "sentences": 637,
+        "sentences_read": 643,
+        "tokens": 10822
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Swedish-SweLL",
+      "ud": true
+    },
+    "tl_ugnayan": {
+      "anchor": "UD_Tagalog-TRG",
+      "files": {
+        "tl_ugnayan-ud-test.conllu": "f3b553de1eff4c0d0bbcd2e92aead10f242e2fe6173593c7f497d94ac9df3639"
+      },
+      "fit": "pooled",
+      "iso": "tgl",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 94,
+        "sentences_read": 94,
+        "tokens": 1097
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Tagalog-Ugnayan",
+      "ud": true
+    },
+    "tr_atis": {
+      "anchor": "UD_Turkish-Penn",
+      "files": {
+        "tr_atis-ud-dev.conllu": "20a7de11cf1c5685f905e6d3a1eebf7a26bb4d6ff5c96b3e7a93a4a2ea92bcc2",
+        "tr_atis-ud-test.conllu": "011de5ad556c78368712eb5aeaa67449a319e708b682a69001ca4bba17452ac5",
+        "tr_atis-ud-train.conllu": "0339a34dd4032fc06fda9d13cde5185a1906a0fa45a21c491059595de3fb9df1"
+      },
+      "fit": "official",
+      "iso": "tur",
+      "lemmas": "manual native",
+      "screen": {
+        "near_overlap": 1,
+        "repeated_sentence": 92,
+        "sentences": 5191,
+        "sentences_read": 5284,
+        "tokens": 43706
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Turkish-Atis",
+      "ud": true
+    },
+    "tr_boun": {
+      "anchor": "UD_Turkish-Penn",
+      "files": {
+        "tr_boun-ud-dev.conllu": "b3531bb26337b3ef258796e6948d2c3469e71704613b9373cd87f341409e2d8d",
+        "tr_boun-ud-test.conllu": "c7f234f6a7c1b7025f8cab9025239286836e971b653fb1dd3f266a84ac74dbeb",
+        "tr_boun-ud-train.conllu": "ae54aef82e69cb7ccc54703a07e2ebcde66c2e4453a5debfac1eb78dfed60e9f"
+      },
+      "fit": "official",
+      "iso": "tur",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 70,
+        "sentences": 9691,
+        "sentences_read": 9761,
+        "tokens": 124977
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Turkish-BOUN",
+      "ud": true
+    },
+    "tr_framenet": {
+      "anchor": "UD_Turkish-Penn",
+      "files": {
+        "tr_framenet-ud-dev.conllu": "f74c9206d0feec31c7e0f160c25133ac83cf5b79763595c188dcfd4a34999b82",
+        "tr_framenet-ud-test.conllu": "0a6efc7910e3e931099e30a7a14be94dba21866b4403e9cb80e329ea20e50ec1",
+        "tr_framenet-ud-train.conllu": "0f2de87422653aac01a3bc98dd43dd44ddbedb59f1c3e1a90b451352e0f06b09"
+      },
+      "fit": "official",
+      "iso": "tur",
+      "lemmas": "converted from manual",
+      "screen": {
+        "repeated_sentence": 36,
+        "sentences": 2662,
+        "sentences_read": 2698,
+        "tokens": 18908
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Turkish-FrameNet",
+      "ud": true
+    },
+    "tr_gb": {
+      "anchor": "UD_Turkish-Penn",
+      "files": {
+        "tr_gb-ud-test.conllu": "d7c9fc7c4a80efa9c9f720107ef557c8ce3824468613551712acbcd4c8afc0f0"
+      },
+      "fit": "official",
+      "iso": "tur",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 31,
+        "sentences": 2849,
+        "sentences_read": 2880,
+        "tokens": 17038
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Turkish-GB",
+      "ud": true
+    },
+    "tr_imst": {
+      "anchor": "UD_Turkish-Penn",
+      "files": {
+        "tr_imst-ud-dev.conllu": "f58d60666d3a9a7fea843b36444da5d6a7849b1172a851b2223479682c53d0d4",
+        "tr_imst-ud-test.conllu": "299d3af2adb8722b5dd09cd17a20302af3670d36f2e57ed26170bf21526fd3d4",
+        "tr_imst-ud-train.conllu": "d7d65fb10bd0f6ed6ecb0258938d6d126a2b93b409582759d2b52195dd5b7313"
+      },
+      "fit": "official",
+      "iso": "tur",
+      "lemmas": "converted from manual",
+      "screen": {
+        "document_sentences_removed": 2,
+        "documents_removed": 2,
+        "exact_overlap": 4,
+        "repeated_sentence": 53,
+        "sentences": 5576,
+        "sentences_read": 5635,
+        "tokens": 57725
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Turkish-IMST",
+      "ud": true
+    },
+    "tr_kenet": {
+      "anchor": "UD_Turkish-Penn",
+      "files": {
+        "tr_kenet-ud-dev.conllu": "4c62af7127578f6801f5d01b01038efeeaf7a98400949886df150a603626036f",
+        "tr_kenet-ud-test.conllu": "74eeefb83d2914b749aa85096ad038db1bd371dc75586d58afc2f78e441b6e74",
+        "tr_kenet-ud-train.conllu": "81fc5495903b30c46de19a92158ce7cc4b3aa305d06e26b0055503b9b280e834"
+      },
+      "fit": "official",
+      "iso": "tur",
+      "lemmas": "converted from manual",
+      "screen": {
+        "exact_overlap": 1,
+        "repeated_sentence": 1232,
+        "sentences": 17454,
+        "sentences_read": 18687,
+        "tokens": 165414
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Turkish-Kenet",
+      "ud": true
+    },
+    "tr_pud": {
+      "anchor": "UD_Turkish-Penn",
+      "files": {
+        "tr_pud-ud-test.conllu": "5d749f37ebb74ad623fcf7aefca9592f2ce54182e819ff59072fd4d9c5bc1e8b"
+      },
+      "fit": "official",
+      "iso": "tur",
+      "lemmas": "automatic",
+      "screen": {
+        "sentences": 1000,
+        "sentences_read": 1000,
+        "tokens": 16423
+      },
+      "shared_contributors": false,
+      "tier": "silver",
+      "treebank": "UD_Turkish-PUD",
+      "ud": true
+    },
+    "tr_tourism": {
+      "anchor": "UD_Turkish-Penn",
+      "files": {
+        "tr_tourism-ud-dev.conllu": "09439a32d0e06ec70da126bc877872644754824f4d0f6616334d189f53e14af5",
+        "tr_tourism-ud-test.conllu": "7735c10f1a9b0f58b6f2aa9fcc8880277594ec5ce5c2aef1605687e58ae16ba4",
+        "tr_tourism-ud-train.conllu": "e06e68d3734a6bf33e08e0def3aef8c7a524bbf6f5d87dcaa35a2e545ef573d6"
+      },
+      "fit": "official",
+      "iso": "tur",
+      "lemmas": "converted from manual",
+      "screen": {
+        "exact_overlap": 12,
+        "repeated_sentence": 5262,
+        "sentences": 14556,
+        "sentences_read": 19830,
+        "tokens": 68197
+      },
+      "shared_contributors": true,
+      "tier": "gold",
+      "treebank": "UD_Turkish-Tourism",
+      "ud": true
+    },
+    "tr_tuecl": {
+      "anchor": "UD_Turkish-Penn",
+      "files": {
+        "tr_tuecl-ud-test.conllu": "0a3916cecae0ecd5e2a18295e36b5ebe2c6dec90ce637ed9838fef4257466d92"
+      },
+      "fit": "official",
+      "iso": "tur",
+      "lemmas": "manual native",
+      "screen": {
+        "exact_overlap": 2,
+        "repeated_sentence": 2,
+        "sentences": 144,
+        "sentences_read": 148,
+        "tokens": 891
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Turkish-TueCL",
+      "ud": true
+    },
+    "uk_parlamint": {
+      "anchor": "UD_Ukrainian-IU",
+      "files": {
+        "uk_parlamint-ud-dev.conllu": "780ff09133f69654cfe2578bf2468bdf38d98415db19476857256f78b4268fdd",
+        "uk_parlamint-ud-test.conllu": "fca031d34175de322c45684b1a329b541ef9b153d6fedbc1edef25fe05db1628",
+        "uk_parlamint-ud-train.conllu": "682fb0bb81eef5e0ab4265e0f964b1b180bda7da8061afc8ced8b66a9b19e38f"
+      },
+      "fit": "official",
+      "iso": "ukr",
+      "lemmas": "manual native",
+      "screen": {
+        "document_sentences_removed": 450,
+        "documents_removed": 83,
+        "exact_overlap": 352,
+        "near_overlap": 34,
+        "repeated_sentence": 542,
+        "sentences": 5764,
+        "sentences_read": 7142,
+        "tokens": 97567
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Ukrainian-ParlaMint",
+      "ud": true
+    },
+    "uk_zhelekhivka": {
+      "anchor": "UD_Ukrainian-IU",
+      "files": {
+        "uk_zhelekhivka-ud-test.conllu": "ad95c623f7d792b1229657a9de0053e827dce353896ee12e60d8d7dcf9c01a84"
+      },
+      "fit": "official",
+      "iso": "ukr",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 348,
+        "sentences_read": 348,
+        "tokens": 9348
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Ukrainian-Zhelekhivka",
+      "ud": true
+    },
+    "uz_tuecl": {
+      "anchor": "UD_Uzbek-UzUDT",
+      "files": {
+        "uz_tuecl-ud-test.conllu": "d23edf693165ba08fef733ef76fe07a052aaaa7c8f692c40351d79198346ee2d"
+      },
+      "fit": "official",
+      "iso": "uzb",
+      "lemmas": "manual native",
+      "screen": {
+        "repeated_sentence": 2,
+        "sentences": 146,
+        "sentences_read": 148,
+        "tokens": 929
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Uzbek-TueCL",
+      "ud": true
+    },
+    "uz_ut": {
+      "anchor": "UD_Uzbek-UzUDT",
+      "files": {
+        "uz_ut-ud-test.conllu": "0a11276eed9f2d9332e211a7f2b7cde1b6532be44acf547679f914814d758808"
+      },
+      "fit": "official",
+      "iso": "uzb",
+      "lemmas": "manual native",
+      "screen": {
+        "sentences": 500,
+        "sentences_read": 500,
+        "tokens": 5930
+      },
+      "shared_contributors": false,
+      "tier": "gold",
+      "treebank": "UD_Uzbek-UT",
+      "ud": true
+    }
+  },
+  "order_inventory_sha256": "f2512611cf71a7b8a788b6948358d647f53a37c55c860a4676fb8589a38d1d9e",
+  "protocol_sha256": "3bacd2551aab2c9b07cf52169f9a8a4b9966fc8b2e4108d730fbcfb4482447a0"
+}

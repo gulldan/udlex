@@ -1,0 +1,11 @@
+# Amendments to the transfer protocol
+
+`transfer-protocol.md` is kept byte-identical to the version whose digest the ledger records. Everything decided later is listed here with its timing.
+
+**Before any outcome, after the screen counts.** A corpus in which at least 10% of scorable sentences are flagged by the overlap screen shares a collection with the anchor. It is scored but reported separately and never pooled with gold. The symbol test of the provenance screen was corrected to use Unicode categories (digits, symbols and punctuation other than hyphen, apostrophe and full stop), because combining marks had been counted as symbols.
+
+**After the outcomes on other UD treebanks, before any outcome on a corpus outside UD.** Corpora outside UD were located, pinned by URL and SHA-256 in `transfer-sources.json` and converted. Their lemma status follows what each corpus documents about itself. MULTEXT-East files count as gold only when their header credits manual tagging, correction or disambiguation of the whole text; the Czech, Hungarian and Polish files do not and are scored as automatic. ELEXIS-WSD languages count as gold when its README marks lemmatization as manually validated. KazDet documents no manual check of lemmas and is scored as automatic. From hr500k only documents whose `contained_in_datasets` never names a split of the Croatian UD treebank are converted. No threshold, floor or rule was changed after these corpora were added, and every UD corpus whose screened test set did not change keeps a byte-identical result file.
+
+**After all outcomes, exploratory.** The view restricted to corpora outside UD, the leave-one-language-out ranges, the split by a contributor shared with the anchor (names in the `Contributors:` field of the READMEs; maintainers who converted many treebanks make this split noisy) and the list of changed predictions. That list comes from a diagnostic build of the same source which lifts the cap of five examples per outcome; `transfer_changes.py` rejects it unless its counts and block histograms equal those of the frozen executable.
+
+**Executables.** Evidence uses the two executables of the released fits. Rebuilding the pinned source in another directory gives a different file digest and the same result files.

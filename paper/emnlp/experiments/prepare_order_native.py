@@ -14,7 +14,7 @@ def expose(path, old, new):
     path.write_text(body.replace(old, new))
 
 
-def prepare(root, disable_rules=False):
+def prepare(root, disable_rules=False, examples=None):
     src = root / "rust/src"
     if (root / ".git").exists() or not src.is_dir():
         raise ValueError("Use a separate git archive export of the pinned 1.0.0 source")
@@ -39,6 +39,13 @@ def prepare(root, disable_rules=False):
             "i != 0, Options::default()",
             "i != 0, Options { use_rules: false, ..Options::default() }",
         )
+    if examples:
+        # Diagnostic build: list every changed prediction instead of five per outcome.
+        expose(
+            src / "builder/paper_order.rs",
+            "n_examples[which] < 5",
+            f"n_examples[which] < {examples}",
+        )
     (src / "bin").mkdir(exist_ok=True)
     (src / "bin/paper_order.rs").write_text(
         "fn main() -> Result<(), Box<dyn std::error::Error>> { udlex_rs::run() }\n"
@@ -49,5 +56,6 @@ if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("export", type=Path)
     p.add_argument("--disable-rules", action="store_true")
+    p.add_argument("--examples", type=int)
     args = p.parse_args()
-    prepare(args.export, args.disable_rules)
+    prepare(args.export, args.disable_rules, args.examples)

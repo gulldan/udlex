@@ -15,6 +15,7 @@ Source Priority and Rule Fallback in Multilingual Lemmatization}
 \author{Anonymous submission}
 
 \input{catalog-metrics}
+\input{transfer-metrics}
 
 \begin{document}
 \maketitle
@@ -32,8 +33,12 @@ on development data before adopting it yields 560 additional correct answers
 over the declared order. A two-fold evaluation covers 20 more languages, where
 the mean language gain and the pooled-token effect have opposite signs. In a
 second paired test of freshly built single-resource dictionaries, suffix rules
-change mean language accuracy by $\catRule$ points. Whether learned priorities
-transfer to independently collected text remains open.
+change mean language accuracy by $\catRule$ points. Finally we freeze every
+fit and replace the test set with \trOffN{} words from other corpora of
+\trOffLang{} languages, some outside UD. The learned order changes mean
+language accuracy there by $\trOffMacro$ points and the confirmed order by
+$\trOffGate$. The sign of a language's effect usually persists, but a spoken
+corpus reverses one confirmed gain.
 
 \end{abstract}
 
@@ -81,6 +86,9 @@ In Welsh it produces 86 corrections and 126 regressions. For 29 of the 66
 languages the number correct is unchanged. These outcomes motivate a further
 question. Does a priority learned under one treebank's lemma conventions
 improve predictions on independently collected documents of the same language?
+We test this with every fit frozen, on \trGoldCorpora{} further corpora
+screened against the anchor treebanks. The sign of the effect persists in
+\trSameSign{} of the \trBothSign{} languages where it is nonzero in both settings.
 
 \section{Related work}
 
@@ -120,8 +128,8 @@ quantify the cost or benefit of the whole modeling choice, including training
 materials and context. \citet{toporkov-etal-2025-lemma} study how encoders and
 in-context generation perform when supervised data is unavailable for the
 target domain or language. Our transfer question concerns one learned quantity
-within a fixed system, the priority assigned to sources. A fresh target corpus
-and a fixed-order control would let us distinguish transferable lexical
+within a fixed system, the priority assigned to sources. Fresh target corpora
+and a fixed-order control let us distinguish transferable lexical
 evidence from adaptation to one treebank's editorial practice.
 
 \section{Choosing an order of dictionaries}
@@ -442,14 +450,114 @@ cannot include such repairs.
 
 \emph{With the dictionaries, corpus tables and rules frozen, does a priority
 learned on one treebank improve lemmatization on independently collected
-documents of the same language?} A new UD release can contain existing
-documents with revised annotations. It offers no automatic guarantee of
-independent text. A target test would require a provenance check against all
-source splits and earlier error-analysis material, then a paired comparison of
-the declared and learned orders on the same target words. We would report the
-frequency of disputed forms alongside corrections and regressions. This would
-distinguish a loss of exposure to conflicts from a reversal in which source
-supplies the corpus-preferred lemma.
+documents of the same language?} We fixed the protocol before computing any
+outcome on another UD treebank. Corpora outside UD were added afterwards
+under the same rules.
+
+\begin{table*}[t]
+\centering\small\setlength{\tabcolsep}{3pt}
+\input{transfer-table}
+\caption{Frozen declared and learned orders on corpora outside the anchor
+treebank. The first row repeats the anchor test splits for the languages
+with official fits. Declared is mean language accuracy. $\Delta$ is the
+paired change in percentage points. Confirmed applies the learned order only
+where anchor development data had accepted it. The last two rows are
+excluded from all rows above them.}
+\label{tab:transfer}
+\end{table*}
+
+\paragraph{Frozen systems and new corpora.}
+For a language with an official pair we rerun the UD 2.19 fit on its
+unchanged train and development inputs. A run is rejected unless it
+reproduces the released order, training score and development counts. For a
+two-fold language we fit once on its whole deduplicated anchor. Only the
+test set is replaced. Candidates are all other UD 2.19 treebanks with the same
+language code and \trOutsideCandidates{} corpora outside UD. These include the MULTEXT-East
+translations of \emph{1984} \citep{mte1984}, the ELEXIS-WSD sentences
+\citep{elexis-wsd}, hr500k documents absent from the Croatian anchor
+\citep{hr500k}, and five smaller resources (Appendix~\ref{app:transfer}).
+All splits of a candidate are pooled, since none entered a fit. A corpus
+counts as gold when its documentation states that lemmas were assigned or
+corrected by hand. Corpora with automatic lemmas are scored separately.
+
+\paragraph{Screens.}
+We compare each candidate with every sentence of all anchor splits. A
+sentence is removed if its case-folded word sequence occurs in the anchor,
+or if a 32-character window of its alphanumeric text does. A document is
+removed when a tenth of its sentences are flagged. A corpus with a tenth of
+its sentences flagged shares a collection with the anchor and is reported
+separately. Of \trSentRead{} candidate sentences, \trExact{} match an anchor
+sentence and \trNear{} share a window. For example, \trParTUTExact{} of the
+\trParTUTRead{} Italian ParTUT sentences are in the Italian anchor, and
+every Slovenian ELEXIS-WSD sentence is in the Slovenian anchor.
+
+A second screen asks whether a lexical source was derived from an evaluation
+corpus. It counts the word types absent from training that a source covers.
+One Hausa dictionary covers every such type in three Hausa treebanks. A
+lookup table for Ancient Greek covers all \trGrcTypes{} unseen types of the
+anchor test split, and \trPerseusCover\% of those in the Perseus treebank
+with \trPerseusAgree\% agreement. Learning leaves the order of both languages
+unchanged, so no paired difference depends on these tables. The accuracy
+of both arms is overstated for these two languages.
+
+\paragraph{The effect on new corpora.}
+Table~\ref{tab:transfer} scores \trGoldCorpora{} gold corpora in \trLang{}
+languages with at least 1,000 scorable words. For the \trOffLang{} languages
+with official fits the learned order changes mean language accuracy by
+\(\trOffMacro\) points (95\% interval \(\trOffLo\) to \(\trOffHi\)) on
+\trOffN{} words. On the anchor tests of the same languages the change is
+\(\trHomeMacro\) (\(\trHomeLo\) to \(\trHomeHi\)). The pooled changes are
+\(\trOffPooled\) and \(\trHomePooled\). Away from the anchor the corpus
+tables miss more often. External lookup answers \trOffExtShare\% of words,
+against \trHomeExtShare\% on the anchor tests, and reordering changes
+\trOffChangedShare\% of predictions against \trHomeChangedShare\%. It
+corrects \trOffCorr{} words and spoils \trOffReg. Corrections make up
+\trOffWinShare\% of these decisive changes and \trHomeWinShare\% on the
+anchor tests.
+
+The direction of a language's effect is stable. Of the \trBothSign{} languages
+with a nonzero net change in both settings, \trSameSign{} keep its sign.
+Hungarian gains 1.54 points on its anchor test and \(\trHunDelta\) on
+\trHunN{} words from two corpora outside UD (\trHunCorr{} corrections,
+\trHunReg{} regressions). Czech, Greek, Finnish, Dutch and Polish lose in
+both settings. On
+the \trOutsideCorpora{} corpora outside UD alone, which cover \trOutLang{}
+languages, the macro change is \(\trOutMacro\) (\(\trOutLo\) to \(\trOutHi\)).
+Disabling suffix rules leaves every count of corrections and regressions in
+Table~\ref{tab:transfer} unchanged.
+
+\paragraph{Confirmed orders.}
+The confirmation rule saw anchor development data only. It accepts the new
+order for \trAccepted{} of the \trOffLang{} languages. On the new corpora this
+policy corrects \trOffGateCorr{} words and spoils \trOffGateReg{}, a macro
+change of \(\trOffGate\) points (\(\trOffGateLo\) to \(\trOffGateHi\)).
+Of these, \trOffGateUp{} gain and one loses. The loss is Slovenian. On the
+spoken treebank SST the confirmed order corrects \trSstCorr{} answers and
+spoils \trSstReg. Of these regressions, \trSlvEee{} are the hesitation marker
+\emph{eee}, which the promoted table maps to \emph{ee}. On the Slovenian
+\emph{1984} the same order corrects \trSlMteCorr{} and spoils \trSlMteReg.
+Development data from the anchor cannot anticipate a class of tokens that
+the anchor lacks.
+
+\paragraph{Concentration and conventions.}
+Two languages supply most of the pooled gain. Without Hungarian the pooled
+change for the official fits is \(\trLooOffPooled\) points, and without
+Turkish their macro change is \(\trLooOffMacroLo\). The \trPoolLang{}
+pooled-fit languages show a macro change of \(\trPoolMacro\). Most of it is
+Tagalog, with \trTglCorr{} corrections and \trTglReg{} regressions on
+\trTglN{} words. Without Tagalog the \trLang-language mean of \(\trMacro\)
+falls to \(\trLooMacro\). We therefore read the official-fit row as the
+main estimate.
+
+Part of what travels is a lemma convention. For the Turkish word
+\emph{benimsedi\u{g}im} in the BOUN treebank the declared order returns the
+infinitive \emph{benimsemek}. The learned order returns the stem
+\emph{benimse}, which both the anchor and BOUN annotate. Turkish yields
+\trTurCorr{} corrections and \trTurReg{} regressions on \trTurN{} words.
+The gain is not limited to corpora that list a contributor of the anchor.
+The macro change is \(\trTeamMacro\) for corpora with a shared contributor
+(\trTeamLang{} languages) and \(\trOtherMacro\) for the others (\trOtherLang).
+This split was defined after the outcomes were known.
 
 \section{Conclusion}
 
@@ -460,8 +568,11 @@ official test splits. Requiring independent development support increases
 that count to 560. The two-fold supplement shows why language and token
 weighting can reverse the direction of a result. The separate catalog
 experiment locates the effect of newly trained fallback rules on identical
-test words. Whether dictionary priorities travel across independently
-collected corpora remains open.
+test words. Frozen and applied to other corpora of \trOffLang{} languages,
+the learned order keeps its sign in most languages and gains more per word
+than on the anchor tests, because external lookup is reached more often.
+A confirmed order failed on one spoken corpus, so confirmation on the
+anchor is no guarantee for a new register.
 
 \section*{Limitations}
 
@@ -472,6 +583,14 @@ partition, and the Telugu anchor has no scorable gold lemmas. Some lexical
 sources may share upstream material despite differences in their names.
 Undocumented sharing and paraphrased passages can escape the overlap screen.
 No conclusion about new domains or all languages follows from these intervals.
+
+Most transfer corpora follow UD lemma guidelines, and some were annotated by
+contributors of the anchor or pre-annotated by models trained on it. The
+overlap screen compares surface text and cannot detect translations or
+paraphrases. The provenance screen uses coverage thresholds, so a derived
+table that covers fewer unseen types passes it. Two languages supply most
+of the pooled transfer gain. Lemma conventions differ between corpora and
+lower both arms on the same words.
 
 We evaluate pretokenized, ordinary words without contextual tag features.
 Treebanks differ in segmentation, case, compound markers and how they
@@ -495,6 +614,26 @@ for fitting a policy.
 \bibliography{references}
 
 \appendix
+\section{Transfer corpora outside UD}
+\label{app:transfer}
+\begin{table}[h]
+\centering\small
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}p{0.34\columnwidth}p{0.58\columnwidth}@{}}
+\toprule Corpus & Languages and status \\\midrule
+MULTEXT-East \emph{1984} 4.0 & gold: bg, en, et, fa, ro, sl, sr; automatic: cs, hu, pl; shared collection: sk \\
+ELEXIS-WSD 2.0 & gold: bg, da, en, es, et, hu, it, ka, nl, pt, ro, sr; inside the anchor: sl \\
+hr500k 2.0 & gold: hr, documents outside the UD treebank \\
+ELTE-DH gold standard & gold: hu \\
+BanLemma test set & gold: bn \\
+TOROT, four texts & gold: cu \\
+RESTAURE Occitan & shared collection: oc \\
+KazDet 0.01 & automatic: kk \\
+\bottomrule\end{tabular*}
+\caption{Corpora outside UD used in the transfer test. File locations and
+SHA-256 digests are listed in \texttt{transfer-sources.json}.}
+\label{tab:outside}
+\end{table}
+
 \section{Language-level results}
 \label{app:catalog}
 The appendix enumerates all 172 single-resource dictionaries rebuilt for engine 1.0.0 on the UD 2.19 snapshot. Sets gives
