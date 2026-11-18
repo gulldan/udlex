@@ -1,0 +1,642 @@
+\documentclass[11pt]{article}
+\usepackage[review]{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{inconsolata}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{supertabular}
+
+\title{Which Dictionary Should a Multilingual Lemmatizer Trust?\\
+Source Priority and Rule Fallback in Multilingual Lemmatization}
+\author{Anonymous submission}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Morphological dictionaries sometimes assign different lemmas to the same word.
+We study which dictionary should take precedence and what happens when lookup
+fails. For overlapping dictionaries we give an exact algorithm for choosing
+an ordered subset on labeled training tokens. In a multilingual research
+configuration, 15 of 98 languages with training evidence passed a separate
+development check for a change to the declared source policy. We also audit
+a 172-language catalog in which each packaged dictionary has one declared
+resource. After screening Universal Dependencies test files against those
+inputs, 121 languages retain 4,214,133 scorable tokens. Case-sensitive
+accuracy averages 57.65\% across languages for copying, 64.42\% with the
+packaged defaults, and 68.58\% with suffix rules disabled. The rule effect
+varies with the training resource and language. Whether changing dictionary
+priority improves the full system on independently collected documents of
+the same language remains an open question.
+
+\end{abstract}
+
+\section{Introduction}
+
+The Finnish word \emph{kirjakauppa} means \emph{bookshop}. A dictionary can
+give \emph{kirjakauppa} as its headword, while the Finnish Turku Dependency
+Treebank writes the lemma as \emph{kirja\#kauppa}, marking the compound
+boundary. For exact-match evaluation, the boundary is part of the answer.
+Finding an entry for a word therefore solves only half the problem. A
+lemmatizer that draws on several resources must also decide whose analysis to
+use. This decision recurs for capitalization, spelling variants and forms
+shared by different lexemes. Two resources can both be internally consistent
+and still disagree on the string a particular corpus expects.
+
+External dictionaries are already useful for lemmatization.
+\citet{bergmanis-goldwater-2019-data} use inflection tables to construct
+training examples, and \citet{milintsevich-sirts-2021-enhancing} supply
+analyses to a neural decoder at inference. We study a common implementation
+choice with a different consequence for inference. Several sources are
+compiled into a single table and the first source containing a form owns the
+entry. Moving a source earlier changes every disputed form on which it takes
+precedence over a different answer. Giving it lower priority preserves its
+unique entries, which may still help on previously unseen words. Excluding it
+also changes what happens on those unique entries. Accuracy measured
+separately for each dictionary cannot tell us which action to take.
+
+We study two decisions that occur at different stages of inference.
+The first arises when two dictionaries cover a word. We formulate a
+token-weighted objective for choosing an ordered subset and derive a subset
+dynamic program that finds the best training policy. A separate development
+comparison asks whether to change the declared priority. We report the outcome
+for all 98 languages with training evidence, including candidates that failed
+the check. In Turkish, ordering by each dictionary's standalone accuracy
+would put the two leading sources in the opposite order from the optimum.
+
+The second decision arises when lookup leaves a word unresolved. We isolate
+the contribution of suffix rules in the project's 1.0.0 snapshot, whose 172
+packaged dictionaries each name one input resource. This provides a control
+in which source order is fixed by construction. It also exposes a problem
+with catalog-wide evaluation. A resource labeled as a dictionary can itself
+come from a UD test file. We trace its input before choosing which
+test sentences count. Across the retained sample, turning on suffix rules
+produces 148,380 corrections and 504,366 regressions relative to lookup
+with the same dictionary. The language-level breakdown helps explain why
+a single average would give a poor default for some resources.
+
+These studies address different empirical quantities. The development
+experiment measures decisions among multiple lexical sources. The packaged
+comparison measures the effect of suffix fallback with the lexical content
+held fixed. A further paired test is needed to estimate a full-system gain
+from source reordering and its stability across corpora.
+
+\section{Related work}
+
+\paragraph{How lemmatizers use lexical evidence.}
+LemmaGen induces ripple-down rules from form--lemma examples and uses them
+to analyze new forms \citep{jursic-etal-2010-lemmagen}. Lemming jointly
+infers morphological tags and lemmas \citep{muller-etal-2015-joint}.
+Lematus evaluates the value of character-level sentence context on unseen and
+ambiguous forms \citep{bergmanis-goldwater-2018-context}. An external resource
+can enter such a model in at least two places. Paradigm entries can augment
+training data when labeled sentences are scarce
+\citep{bergmanis-goldwater-2019-data}. Alternatively, a decoder can learn
+to copy characters from available candidate lemmas.
+\citet{milintsevich-sirts-2021-enhancing} evaluate that strategy with
+Apertium on 23 UD languages. Our predictor can decide at build time which
+candidate will survive a conflict. It thus permits a direct comparison of
+resource priorities with the lexical inputs held fixed.
+
+\paragraph{Ordered decisions.}
+First-match prediction has a long history. \citet{yarowsky-1994-decision}
+ranks contextual evidence for lexical ambiguity resolution, and
+\citet{angelino-etal-2018-rulelists} optimize regularized lists of rules for
+categorical prediction. Our unit of selection is an entire dictionary. Its
+condition is membership of the input form, and its answer varies with that
+form. Once a prefix of dictionaries has claimed a set of forms, later
+decisions can affect only the complement. We use this property to score all
+orders and stopping points implicitly. Corpus frequencies, disagreement
+between sources and the copy fallback determine which orders tie and whether
+dropping a source can improve the objective.
+
+\paragraph{Evaluation across languages and corpora.}
+UD makes it possible to compare lemmatizers across treebanks with a common
+representation \citep{nivre-etal-2020-universal}. Systems such as UDPipe and
+Stanza also use sentence-level analyses
+\citep{straka-strakova-2017-tokenizing,qi-etal-2020-stanza}. Their scores
+quantify the cost or benefit of the whole modeling choice, including training
+materials and context. \citet{toporkov-etal-2025-lemma} study how encoders and
+in-context generation perform when supervised data is unavailable for the
+target domain or language. Our transfer question concerns one learned quantity
+within a fixed system, the priority assigned to sources. A fresh target corpus
+and a fixed-order control would let us distinguish transferable lexical
+evidence from adaptation to one treebank's editorial practice.
+
+\section{Choosing an order of dictionaries}
+\label{sec:method}
+
+\subsection{Where a source can change a prediction}
+
+The system takes pretokenized words and a language identifier. For an ordinary
+token it tries corpus-derived form--lemma pairs, first by exact spelling and
+then by language-aware lowercase spelling. An unresolved form can proceed
+to the merged external vocabulary. If lookup fails, the system can apply a
+learned suffix edit and ultimately return the original form. The available
+stages depend on the language configuration. The catalog evaluation uses
+ordinary tokens. The library also has paths for supplied contextual cues
+and for entity mentions, which answer different questions.
+
+The multi-source research configuration includes national dictionaries, analyses derived from
+morphological tools, UniMorph paradigms \citep{kirov-etal-2018-unimorph}
+and inflection tables extracted from Wiktionary
+\citep{ylonen-2022-wiktextract}. Each source first yields a partial mapping
+from an NFC-normalized surface form to one lemma. When an input resource
+provides several analyses, the builder ranks them by the frequency of the
+pair within that resource, followed by overall lemma frequency, shorter lemma
+and source row order to break ties. This source-local decision is important
+for reproducibility. Adding entries to another dictionary cannot break a tie
+inside the first one.
+
+In that configuration the declared source policy supplies a reference order before learning.
+Its ordinary precedence starts with national dictionaries or Apertium,
+followed by registered imports, UniMorph and Wiktionary, subject to declared
+priorities. At build time the first source containing a form supplies the
+value stored for that form. At query time the system looks up a single
+compiled vocabulary. Consequently, the search over possible orders is an
+offline cost. It does not require an extra model call or a traversal of the
+source inventory for each input token.
+
+\subsection{The training objective}
+
+Let \(D_j(x)\) be the lemma that dictionary \(j\) gives form \(x\), and
+\(C_j\) the set of forms it covers. Let \(c(x,y)\) count annotated training
+tokens with form \(x\) and lemma \(y\). This count preserves distinct gold
+lemmas for an ambiguous form and the frequency of each reading. For an ordered
+subset \(\pi\), the prediction \(f_\pi(x)\) is the value of the first selected
+dictionary covering \(x\), or \(x\) if no selected dictionary covers it.
+We maximize the number of correctly lemmatized training tokens,
+\begin{equation}
+  Q(\pi) = \sum_x c\bigl(x,f_\pi(x)\bigr).
+  \label{eq:objective}
+\end{equation}
+A dictionary that only reproduces forms already handled by copying can change
+coverage without changing this objective. A source that rewrites them
+incorrectly can reduce it.
+
+For a set \(S\) of sources already placed, write
+\(U(S)=\bigcup_{i\in S}C_i\). Appending source \(j\) changes the score
+relative to copying on the previously unclaimed part of its domain.
+\begin{equation}
+  g(j,S)=\sum_{x\in C_j\setminus U(S)}
+     \bigl[c(x,D_j(x))-c(x,x)\bigr].
+  \label{eq:gain}
+\end{equation}
+The prefix order determines which answers were stored for forms in
+\(U(S)\). Its membership alone determines which forms remain available to
+\(j\). Hence the best cumulative gain \(F\) for each subset obeys
+\begin{align}
+  F(\emptyset)&=0, \nonumber\\
+  F(S)&=\max_{j\in S}
+     \{F(S\setminus\{j\})+g(j,S\setminus\{j\})\}.
+  \label{eq:recurrence}
+\end{align}
+Removing the last dictionary of an optimal order leaves a prefix on the
+smaller set. Replacing that prefix with a higher-scoring order would leave
+the last gain unchanged and improve the total. This gives optimal
+substructure. Taking the best state over \emph{all} subsets makes the
+stopping point a property of the objective. The empty set represents
+copying every word. There are \(2^n\) states and \(n2^{n-1}\) possible
+append transitions for \(n\geq1\). The implementation precomputes gains by
+coverage mask and limits exact search to 18 sources per language. At equal
+correctness it prefers greater token coverage, greater form coverage, a
+shorter list and then lexicographic source order.
+
+This formulation explains why a large, individually accurate resource need
+not go first. If a smaller dictionary covers disputed forms more accurately,
+placing it first preserves the larger dictionary's unique entries. A
+standalone score gives the larger resource credit for those unique entries
+under either order. Equation~\ref{eq:gain} counts only the entries whose
+predictions the particular decision can change.
+
+\subsection{From a training optimum to a policy}
+
+An optimizer may omit a dictionary whose placement makes no difference on
+training data. Such an omission gives little reason to lose that source's
+coverage of unseen words. For each omitted source we therefore examine the
+best training score obtainable when that source must be included. An exclusion
+is proposed only if this constraint costs at least 25 correct tokens or
+0.01\% of scored training tokens, whichever is larger (rounding up). Sources
+with weaker evidence remain available. The resulting candidate combines the
+training-derived priorities and all strongly supported exclusions. If a
+change is proposed, its complete specification is fixed before development.
+
+The development comparison approximates the point at which an external
+dictionary can influence a prediction. First it skips tokens covered by
+training-derived exact or locale-aware lowercase corpus keys. On the remaining
+tokens it tries the merged external table with exact and then lowercase
+keys, followed by copying. This comparison uses neither suffix edits nor
+entity processing. Accordingly, the optimizing objective, the development
+comparison and the complete inference cascade have three distinct domains.
+
+Let \(w\) count development tokens that a candidate corrects relative to
+the declared policy, and \(l\) those it spoils. A change passes when
+\(w-l \geq \max(5,\lceil N_{\rm dev}/10{,}000\rceil)\) and the exact
+two-sided binomial form of McNemar's test on the \(w+l\) discordant tokens
+gives \(p\leq0.05\). The effect threshold uses all scorable development
+tokens even if few reach external lookup. The comparison accepts or rejects
+the complete candidate in one step. We interpret the per-language test as
+a decision rule, with correlated words and comparisons across languages in
+mind when discussing the resulting count.
+
+\subsection{How much can a priority change?}
+
+Consider two policies run on the same \(N\) scorable tokens. Let \(D\) be
+the positions at which they predict different lemma strings. At some of those
+positions both strings may be wrong. Let \(w\) and \(l\) again count
+corrections and regressions. For nonempty \(D\), the overall accuracy difference
+can be written as
+\begin{equation}
+  \Delta_{\rm all}
+  = \frac{|D|}{N}\,\frac{w-l}{|D|}.
+  \label{eq:exposure}
+\end{equation}
+If the policies always predict the same lemma, their difference is zero.
+Equation~\ref{eq:exposure} gives two ways for a promising lexical decision
+to have a small effect on the full test. Few predictions may change, or the
+changes may correct almost as many words as they spoil. Counting only
+corrections discards the second possibility. Reporting accuracy only on
+disputed words discards the first.
+
+For pure reordering of fixed tables, dictionary membership is invariant.
+An exact key claimed by a single source retains its answer in every order,
+as does a key on which all sources agree. With earlier corpus lookups held
+fixed, the potential effect is therefore confined to tokens that reach a
+disputed key, including a lowercase key when exact lookup misses. Excluding
+a source changes the interpretation. A word unique to that source can now
+fall through to a suffix edit or to copying. This yields a concrete reason
+to record both the stage reached and the prediction returned in a
+controlled test of the complete system.
+
+\section{Data and evaluation}
+\label{sec:data}
+
+\paragraph{Inputs to the priority experiment.}
+The archived research configuration records one training optimization for
+each of 98 languages and a subsequent development decision where a split
+was available. It combines corpus lookups with external tables whose
+provenance and order were fixed for that experiment. Some internal
+development sets were formed earlier by partitioning an original UD test
+split. We treat the resulting comparisons as development evidence. They can
+explain why a policy passed an engineering decision rule, including why
+the rule rejected apparently promising training candidates.
+
+\paragraph{The 1.0.0 dictionaries.}
+For the packaged-system experiment we verified the engine and the dictionary
+artifacts from the same repository snapshot. The language roster has 172
+entries, each with one declared upstream resource. For 101 entries that
+resource is a UD treebank. Forty-three use a training file, 57 use a test
+file, and one uses all three splits. The remaining 71 use resources such
+as inflection paradigms and lexical databases. A lexical resource can contain
+several files. We use the input list recorded for the individual package.
+The source and runtime snapshot, checksums, language correspondence and
+retained counts per treebank are recorded with the experiment.
+
+\paragraph{Which test material remains?}
+We start with the official UD 2.18 distribution \citep{ud218}. Of its
+353 test treebanks, 330 have a file prefix corresponding to a packaged
+language in the fixed code map. For every UD-derived dictionary we recover
+the exact input files from its manifest and verify their digests. If an
+upstream test file contributed to building the dictionary, we exclude
+that file even if its revision changed. Within a treebank we check the
+remaining document and sentence identifiers against the dictionary inputs.
+Across treebanks of the same language we also match normalized word
+sequences against the inputs and against already retained evaluation
+sentences. Sequence comparison removes whitespace and folds case, then
+normalizes to NFC. It includes punctuation and uses syntactic words in
+their original order. This check can catch a repeated passage that was
+renumbered when moving between corpora.
+
+This procedure excludes 58 entire test files, 1,495 additional sentences
+matching source text, and 7,265 repeated evaluation sentences. Of the 172
+languages, 47 have only test files that supplied the dictionary. Three
+further entries have no scorable words after exclusions. One language,
+Turkmen, has no test file in the official distribution under its catalog
+code. The resulting evaluation contains 261 treebanks, 121 languages and
+4,214,133 words. The appendix retains a row for each of the original 172
+languages. Counts for excluded languages belong to catalog coverage.
+
+\paragraph{Predictions and uncertainty.}
+We pass a sentence's syntactic words to the ordinary-token API in their
+original case. We exclude withheld surface strings and missing gold lemmas.
+A word with an available form and lemma contributes one case-sensitive
+exact-match observation. Each word receives three predictions from the same
+input. These are its surface form, the default package output, and the output of the
+same engine and dictionary with suffix guessing disabled. User dictionaries
+are disabled throughout. Gold lexical annotations and part-of-speech tags
+are unavailable to the predictor. Tokens outside the scored subset stay
+in their original sentence positions.
+
+We report the pooled fraction of correct responses and the unweighted mean
+of per-language accuracies, pooling retained treebanks within each language.
+For a paired difference we resample blocks within each fixed treebank.
+When a document boundary is available we use the document as the block.
+Elsewhere we use the sentence. The 95\% interval uses 2,000 percentile
+bootstrap replicates with seed 20261118 \citep{dror-etal-2018-hitchhikers}.
+A resource-stratified analysis uses the same retained words and the same
+three predictions.
+
+\section{Results}
+
+\subsection{When does research development evidence support a change?}
+\label{sec:dev}
+
+\begin{table}[t]
+\centering\small
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lr@{}}
+\toprule
+Outcome of policy selection & Languages \\
+\midrule
+Change confirmed on development data & 15 \\
+Candidate evaluated, change declined & 38 \\
+No change proposed from training data & 42 \\
+Development split unavailable & 3 \\
+\midrule
+Languages with training evidence & 98 \\
+\bottomrule
+\end{tabular*}
+\caption{Decisions about external dictionaries. Of the 15 confirmed policies,
+six specify a new priority order and nine specify exclusions.}
+\label{tab:decisions}
+\end{table}
+
+Table~\ref{tab:decisions} traces the 98 languages with annotated training
+evidence. The procedure confirmed 15 changes to the declared policy. A
+training optimum often supplied no actionable change, or its proposed change
+failed on development data. The latter category includes candidates that
+made accuracy worse and candidates for which the available sample could not
+distinguish the two policies. A language without development data keeps its
+declared policy under this procedure.
+
+\paragraph{Why the best single dictionary goes second in Turkish.}
+The training record for Turkish contains 166,521 annotated tokens and six
+external sources. Used alone, with copying for missing entries, simplemma
+scores 88.93\% and spaCy's lookup table scores 78.19\%. Yet the exact optimum
+puts spaCy first and simplemma second, followed by Wiktionary and Zeyrek.
+The fixed reference order yields 128,023 correct training tokens, compared
+with 148,471 at the optimum. The two orders give different jobs to the
+same resource. As the only dictionary, spaCy must cover a broad sample of
+Turkish words. As the first dictionary in a cascade, it can supply its
+preferred analysis on overlaps while simplemma still answers words it misses.
+
+The two sources omitted at the training optimum also illustrate the
+difference between an optimizer's tie-break and evidence for removing a
+resource. The best order forced to include the national dictionary loses
+four training tokens. Forcing UniMorph into an order costs zero. Neither
+loss reaches the exclusion threshold of 25 tokens in this corpus. Both
+sources therefore remain available behind the learned priority prefix in
+the candidate tested on development data. Calling the entire optimized
+training gain a benefit of dropping dictionaries would misdescribe the
+intervention that was actually tested.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lrrrr@{}}
+\toprule
+Language & Dev & Reach & Wins & Losses \\
+\midrule
+Turkish & 6,995 & 872 & 69 & 38 \\
+Spanish & 53,476 & 2,567 & 67 & 20 \\
+English & 28,115 & 1,652 & 51 & 51 \\
+Irish & 9,999 & 1,180 & 10 & 4 \\
+Czech & 384,431 & 14,489 & 224 & 638 \\
+\bottomrule
+\end{tabular*}
+\caption{Illustrative development decisions from the same confirmation
+record. Reach counts tokens left after corpus lookup. Wins and losses compare
+the training candidate with declared priorities. Turkish and Spanish passed.}
+\label{tab:cases}
+\end{table}
+
+Turkish illustrates what a positive result amounts to
+(Table~\ref{tab:cases}). Corpus lookup left 872 of 6,995 development tokens
+to the lexical comparison. Moving sources within the order raised the number
+correct on those tokens from 644 to 675 (\(p=0.0035\)). The 69 corrections
+and 38 newly introduced errors show that each policy had words on which it
+was preferable. The outcome establishes the direction of the paired
+development difference for Turkish. It leaves open how often the same
+changes would occur under full inference or recur on another collection.
+
+Other languages give different answers to the same decision. The English
+candidate exchanged 51 improvements for 51 regressions. In Irish, ten
+improvements and four regressions cleared the minimum net count, but the
+paired test gave \(p=0.180\). In Czech a candidate that included a
+training-based exclusion produced 638 regressions and 224 improvements.
+Its rejection prevented a substantial development loss. These outcomes
+explain why the accepted subset alone gives a misleading impression of how
+reliably a source policy can be learned.
+
+\subsection{What do the packaged defaults contribute?}
+\label{sec:catalog}
+
+\begin{table}[t]
+\centering\small
+\input{accuracy}
+\caption{Case-sensitive token accuracy (\%). The same dictionary and test
+words underlie each row. The UD-derived stratum has 52 scored languages
+and the external-resource stratum 69.}
+\label{tab:accuracy}
+\end{table}
+
+Table~\ref{tab:accuracy} reports the packaged-system comparison. The
+default gains 6.76 macro accuracy points over copying (paired 95\% interval
+6.61 to 6.89). The difference on pooled tokens is 2.17 points. These
+aggregates weight the catalog differently. Relative to copying, 85
+languages gain correct answers, 33 lose them and three tie. Across all
+tokens the system corrects 715,637 copy errors and spoils 624,391 correct
+copies. Looking up a form can correct a large number of inflections while
+also changing a substantial number of words that already have their lemma
+as the surface form.
+
+Disabling suffix rules yields 68.58\% macro accuracy and 69.55\% pooled
+accuracy. Enabling them changes the macro score by $-4.17$ points
+(paired 95\% interval $-4.27$ to $-4.07$). The corresponding pooled
+difference is $-8.45$ points. In eight languages the rules improve the
+number of correct predictions, in 47 they reduce it, and in 66 it stays
+the same. These counts describe accuracy ties. Two systems can have equal
+numbers correct while producing different strings on individual tokens.
+
+\paragraph{Where does the rule effect arise?}
+All 52 scored languages with a UD-derived dictionary have the same number
+correct with and without suffix rules. Their macro accuracy is 75.16\%,
+compared with 58.42\% for copying. Among the 69 languages with an external
+resource, the defaults average 56.32\%, copying 57.08\%, and lookup with
+rules disabled 63.62\%. The difference between rule settings in this group
+is $-7.31$ macro points. Resource assignment and evaluation coverage vary
+with the language. The gap between the two groups therefore cannot by
+itself identify the effect of replacing one source type with the other.
+
+The paired counts show why a single choice of suffix settings has uneven
+consequences. On 195,423 English words the rules correct 1,855 lookup
+errors and introduce 197 new errors. In Spanish they correct 887 and
+introduce 6,230 on 96,925 words. In Turkish there are
+8,608 corrections and 10,851 regressions on 99,232 words. These languages
+all have paradigms from UniMorph in their packaged dictionary. A shared
+upstream resource family leaves considerable variation in what its suffix
+edits do on running text.
+
+\paragraph{Implications for a source comparison.}
+Changing a source can alter the set of words that receives a suffix
+prediction. A weaker lexical candidate might even improve accuracy if it
+prevents a particularly harmful fallback. Conversely, excluding a source can
+sacrifice entries on which its suffix replacement performs worse. A
+full-system test of priority needs both policies evaluated with the same
+fallback, plus a record of the positions where policy changes reach it.
+The current packaged comparison locates the importance of that control.
+No package contains the multiple source choices needed to estimate the
+priority effect directly.
+
+\subsection{What counts as a wrong lemma?}
+
+The Finnish compound in the introduction illustrates an error category
+that a better priority order alone may leave unresolved. If every source
+gives the unsegmented headword, reordering can never produce the treebank's
+boundary symbol. The archived development audit identified otherwise
+matching lemmas that differed only in compound markers. These accounted
+for 3.93 percentage points of all scorable development tokens in Finnish
+TDT, 2.18 in Estonian EDT and 1.72 in Dutch LassySmall. In Finnish, 574
+of the marker-only errors came from external lookup, 124 from the suffix
+rule and 19 from copying. The error occurs at multiple stages, which
+makes its linguistic description more informative than classifying every
+instance simply as a dictionary miss.
+
+The audit tested a separate repair. From training lemmas with marked
+components it inferred the treebank's boundary marker and annotated
+external compound lemmas with an unambiguous decomposition. On Finnish
+development data this change corrected 400 tokens and introduced 21
+regressions. These counts belong to the compound adapter's development
+comparison. They measure a change to the contents of lexical entries.
+The source-order comparison measures a choice among available entries.
+A matched experiment must freeze this adapter along with the source
+tables, especially across corpora that encode compounds differently.
+
+\section{Does a learned policy travel?}
+\label{sec:transfer}
+
+The development decisions give us a concrete transfer question.
+\emph{With lexical resources fixed, does an order learned on one corpus
+improve token lemmatization on an independently collected corpus of the same
+language?} The distinction between a change of corpus and a change of source
+order is essential. Measuring one frozen system on two treebanks mixes the
+difficulty of their vocabularies and the conventions of their annotators.
+For example, the Korean GSD and KAIST treebanks mark morpheme boundaries in
+lemmas with a plus sign, while Korean PUD omits those boundaries. A shift
+in agreement with these conventions can register as a substantial loss
+under exact match even when the lexical analysis is useful.
+
+\paragraph{A paired in-domain comparison.}
+The first contrast would run the declared order and the development-confirmed
+policy through the same complete system on the same test tokens.
+The main outcome would be the mean within-language accuracy difference
+across all languages with training evidence and scorable evaluation data,
+including those whose policy reverted to the declared order. A complementary
+analysis would compare the best single dictionary, a greedy order chosen by
+marginal training gain, the exact training candidate and the candidate after
+development confirmation. Fitting these alternatives would use training data
+only, reserving development data for the predefined confirmation step.
+Holding the corpus tables, suffix rules, resource versions and enabled
+stages fixed would isolate the source decision. A comparison with a
+competitor supplying lexical material could also remove that material from
+the cascade to expose the dependence.
+
+\paragraph{A paired target-corpus comparison.}
+For each eligible language we would freeze both policies and all other
+components before inspecting target labels. We would then apply both to
+the same independently sourced documents. Target eligibility would depend
+on available lemma annotations, comparable token boundaries and verifiable
+document provenance. Document identifiers and normalized sentence matches
+would identify shared material with the source splits and earlier evaluation
+sets. Where the target convention differs, the primary score would retain
+the original labels. A prespecified diagnostic could score a documented
+convention separately. Languages with no independent target or with too
+few disputed tokens would remain visible in the coverage report.
+
+\paragraph{Interpreting the outcome.}
+Besides overall exact match, the comparison would report reachable tokens,
+forms with disagreeing sources, forms whose gold lemma differs from their
+spelling, and corrections and regressions. For an order-only change, both
+orders agree on every exact key with a single proposed lemma. An exclusion
+can also change the result on a form that occurs in just one source.
+Separating these cases would distinguish a priority that resolves conflicts
+from one that gains by suppressing harmful rewrites. Paired resampling by
+document within language, using sentence blocks where document boundaries are
+unavailable, would yield intervals that respect the pairing
+\citep{dror-etal-2018-hitchhikers}. A positive in-domain effect alongside
+a precisely estimated target effect near zero would support a narrower claim
+about corpus adaptation. A wide interval on the target would instead leave
+the direction and size of transfer unresolved.
+
+\section{Conclusion}
+
+Dictionary precedence can be learned exactly on a token-weighted training
+objective. In the research configuration a separate development check
+supported 15 policy changes across 98 languages with training evidence.
+In the 1.0.0 package catalog, tracing dictionary inputs to their source
+removed 58 test files from evaluation. On the remaining scorable words,
+turning off suffix rules raised mean language accuracy from 64.42\% to
+68.58\%. These findings establish how source overlap affects what can be
+measured and how one fallback changes a prediction. The effect of a
+multi-source policy on independent documents remains to be measured with
+paired predictions from both frozen orders.
+
+\section*{Limitations}
+
+The 121 languages with usable test data represent 70\% of this package
+catalog. Some of the smallest language resources were built from the only
+available annotated test collection. Counting their own entries as test
+gold would give a different scientific quantity. Eleven scored languages
+contribute fewer than 1,000 words. Genre, annotation conventions, word
+segmentation and the amount of masked text also differ. The bootstrap
+conditions on the retained languages and treebanks and assumes independent
+blocks within each treebank. For corpora without document boundaries,
+repeated constructions can span several sentence blocks.
+
+The provenance screen checks the inputs declared by each dictionary.
+Reworded passages, translations and undocumented sharing upstream of a
+lexical database may evade a string-based screen. Earlier engineering work
+also used UD. The benchmark describes a fixed catalog on available text.
+An assessment of transfer requires documents collected independently of
+source-policy fitting and earlier error inspection.
+
+The exact training optimum concerns NFC exact-form evidence and a copy
+fallback. The development comparison additionally masks known corpus forms
+and allows lowercase lexical lookup. Its per-language McNemar decisions
+treat discordant tokens as units, despite correlation between repeated forms.
+They provide no family-wise guarantee. The package ablation holds one
+declared lexical resource fixed per language. A direct comparison of
+multi-source policies on the current engine still requires a separately
+frozen inventory and matched test predictions.
+
+\section*{Ethical considerations}
+
+The dictionaries have different licenses and attribution requirements.
+For each package the evidence inventory records the upstream source and
+license. The reproduction procedure verifies package bytes and obtains UD
+from its distributor. It preserves the corpora's restrictions on withheld
+text. The accompanying language and treebank ledgers contain counts and
+digests. Their coverage record makes visible where available annotations
+were already used to construct a dictionary and where a separate evaluation
+would require further work, especially for languages with little labeled text.
+
+\bibliography{references}
+
+\appendix
+\section{Language-level results}
+\label{app:catalog}
+The appendix enumerates all 172 dictionaries in snapshot 1.0.0. Sets gives
+scored treebanks divided by in-scope treebanks. Words counts scored syntactic
+tokens. Copy, Off and Full give exact-match accuracy (\%) for copying, the
+packaged engine with suffix rules disabled and the packaged defaults.
+\emph{Input file} means that every available test file had contributed to the
+dictionary. \emph{No test} means that the official archive had no test file
+for the code. \emph{No gold} denotes an entry with no scorable words after
+exclusions. The electronic treebank ledger records file digests, paired
+counts, overlap exclusions and missing annotations.
+
+\input{catalogue}
+
+\end{document}

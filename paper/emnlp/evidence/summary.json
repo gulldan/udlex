@@ -1,0 +1,357 @@
+{
+  "UD": {
+    "counts": {
+      "copy": 467639,
+      "copy_losses": 8373,
+      "copy_wins": 178110,
+      "full": 637376,
+      "lookup": 637376,
+      "tokens": 831008
+    },
+    "full_minus_copy": {
+      "language_wins_ties_losses": [
+        50,
+        2,
+        0
+      ],
+      "macro_ci95_pp": [
+        16.56218410330204,
+        16.95026639555691
+      ],
+      "macro_pp": 16.748195175125595,
+      "micro_pp": 20.425435134198473
+    },
+    "full_minus_lookup": {
+      "language_wins_ties_losses": [
+        0,
+        52,
+        0
+      ],
+      "macro_ci95_pp": [
+        0.0,
+        0.0
+      ],
+      "macro_pp": 0.0,
+      "micro_pp": 0.0
+    },
+    "macro_accuracy": {
+      "copy": 58.41593304333228,
+      "full": 75.16412821845788,
+      "lookup": 75.16412821845788
+    },
+    "micro_accuracy": {
+      "copy": 56.273706149639956,
+      "full": 76.69914128383843,
+      "lookup": 76.69914128383843
+    },
+    "scored_languages": 52
+  },
+  "all": {
+    "counts": {
+      "copy": 2483576,
+      "copy_losses": 624391,
+      "copy_wins": 715637,
+      "full": 2574822,
+      "lookup": 2930808,
+      "rules_losses": 504366,
+      "rules_wins": 148380,
+      "tokens": 4214133
+    },
+    "full_minus_copy": {
+      "language_wins_ties_losses": [
+        85,
+        3,
+        33
+      ],
+      "macro_ci95_pp": [
+        6.606118444970611,
+        6.894294367394459
+      ],
+      "macro_pp": 6.763597000252879,
+      "micro_pp": 2.1652377843793715
+    },
+    "full_minus_lookup": {
+      "language_wins_ties_losses": [
+        8,
+        66,
+        47
+      ],
+      "macro_ci95_pp": [
+        -4.265248083895623,
+        -4.074506611979846
+      ],
+      "macro_pp": -4.166642243449132,
+      "micro_pp": -8.447431535739383
+    },
+    "macro_accuracy": {
+      "copy": 57.65212900296297,
+      "full": 64.41572600321585,
+      "lookup": 68.58236824666498
+    },
+    "micro_accuracy": {
+      "copy": 58.93444748896155,
+      "full": 61.099685273340924,
+      "lookup": 69.54711680908031
+    },
+    "scored_languages": 121
+  },
+  "block_types": {
+    "doc": 10007,
+    "sent": 168304
+  },
+  "bootstrap": {
+    "numpy": "2.5.1",
+    "replicates": 2000,
+    "seed": 20261118,
+    "unit": "document if available, otherwise sentence; fixed treebanks and languages"
+  },
+  "excluded": {
+    "declared_dictionary_input_file": 58,
+    "masked_forms": 377812,
+    "no_scorable_words_sentences": 20434,
+    "repeated_evaluation_sentences": 7265,
+    "source_text_sentences": 1495,
+    "unknown_lemmas_with_visible_form": 80022
+  },
+  "external": {
+    "counts": {
+      "copy": 2015937,
+      "copy_losses": 616018,
+      "copy_wins": 537527,
+      "full": 1937446,
+      "lookup": 2293432,
+      "rules_losses": 504366,
+      "rules_wins": 148380,
+      "tokens": 3383125
+    },
+    "full_minus_copy": {
+      "language_wins_ties_losses": [
+        35,
+        1,
+        33
+      ],
+      "macro_ci95_pp": [
+        -0.9927236961727843,
+        -0.576456456541343
+      ],
+      "macro_pp": -0.7610277112454114,
+      "micro_pp": -2.3200738961758702
+    },
+    "full_minus_lookup": {
+      "language_wins_ties_losses": [
+        8,
+        14,
+        47
+      ],
+      "macro_ci95_pp": [
+        -7.479637944222758,
+        -7.1451492760806
+      ],
+      "macro_pp": -7.306720455903573,
+      "micro_pp": -10.522401625715865
+    },
+    "macro_accuracy": {
+      "copy": 57.07650856674261,
+      "full": 56.3154808554972,
+      "lookup": 63.62220131140077
+    },
+    "micro_accuracy": {
+      "copy": 59.588014040273414,
+      "full": 57.267940144097544,
+      "lookup": 67.79034176981341
+    },
+    "scored_languages": 69
+  },
+  "language_status": {
+    "all available tests used in dictionary": 47,
+    "no official test file for code": 1,
+    "no scorable test tokens after exclusions": 3,
+    "scored": 121
+  },
+  "run": {
+    "catalog_sha256": "57be9c16077c1a81ccb1f04d5fdac101364133f08f90e70069925e0cfea4804b",
+    "language_codes_sha256": "82ae6aa2ccdcf0a5a12e622945136508b60b205c61079ff670802de187a67018",
+    "languages": [
+      "abk",
+      "abq",
+      "afr",
+      "aii",
+      "ajp",
+      "akk",
+      "aln",
+      "amh",
+      "apu",
+      "aqz",
+      "arb",
+      "arh",
+      "arr",
+      "axm",
+      "aze",
+      "azz",
+      "bam",
+      "bel",
+      "ben",
+      "bho",
+      "bor",
+      "bre",
+      "brh",
+      "bul",
+      "bxr",
+      "cat",
+      "ceb",
+      "ces",
+      "chu",
+      "cmn",
+      "cop",
+      "cpg",
+      "ctn",
+      "cym",
+      "dan",
+      "deu",
+      "egy",
+      "ell",
+      "eme",
+      "eng",
+      "epo",
+      "ess",
+      "est",
+      "eus",
+      "fao",
+      "fin",
+      "fra",
+      "frm",
+      "fro",
+      "gla",
+      "gle",
+      "glg",
+      "glv",
+      "got",
+      "grc",
+      "gub",
+      "guj",
+      "gun",
+      "gwi",
+      "gya",
+      "hat",
+      "hau",
+      "hbo",
+      "heb",
+      "hin",
+      "hit",
+      "hrv",
+      "hsb",
+      "hun",
+      "hye",
+      "hyw",
+      "ind",
+      "isl",
+      "ita",
+      "jav",
+      "jpn",
+      "kat",
+      "kaz",
+      "kbc",
+      "kir",
+      "kmr",
+      "koi",
+      "kor",
+      "kpv",
+      "krl",
+      "lat",
+      "lav",
+      "lij",
+      "lit",
+      "lzh",
+      "mal",
+      "mar",
+      "mdf",
+      "mkd",
+      "myu",
+      "myv",
+      "naq",
+      "nds",
+      "nep",
+      "nhi",
+      "nld",
+      "nmf",
+      "nor",
+      "oci",
+      "oge",
+      "olo",
+      "ori",
+      "orv",
+      "ota",
+      "pan",
+      "pay",
+      "pcm",
+      "pes",
+      "pol",
+      "por",
+      "pro",
+      "pst",
+      "qaf",
+      "qpm",
+      "qtd",
+      "qti",
+      "quc",
+      "ron",
+      "ruc",
+      "rus",
+      "sab",
+      "sah",
+      "san",
+      "say",
+      "scn",
+      "sga",
+      "sin",
+      "sjo",
+      "slk",
+      "slv",
+      "sme",
+      "sms",
+      "snd",
+      "spa",
+      "sqi",
+      "srp",
+      "ssp",
+      "swe",
+      "tam",
+      "tat",
+      "tel",
+      "tgl",
+      "tha",
+      "tpn",
+      "tuk",
+      "tur",
+      "uig",
+      "ukr",
+      "urb",
+      "urd",
+      "uzb",
+      "vep",
+      "vie",
+      "wbp",
+      "wol",
+      "wuu",
+      "xav",
+      "xcl",
+      "xnr",
+      "xpg",
+      "xum",
+      "yid",
+      "yor",
+      "yrk",
+      "yrl",
+      "yue",
+      "zza"
+    ],
+    "program_sha256": "67d83de4b25c66e13f6edf29e1118d43f71d7afe7198682d85df218731a158ad",
+    "protocol_sha256": "e23082fe28b58e0175aa289d379aa5e2481ec56bff5ef6450ca50ee4e47b5c70",
+    "release_test_files": 353,
+    "snapshot_sha256": "9373adc037dca1b070ffc3dc393f59be83f5c0ae4537c70e06d7d181c25ccd7e",
+    "ud218_sha256": "a93fe8520bc4c5ff34670d9a93a5a7689c018c1e59643fa27e03036717841b8a",
+    "version": "1.0.0"
+  },
+  "test_files_in_scope": 330,
+  "test_files_scored": 261
+}

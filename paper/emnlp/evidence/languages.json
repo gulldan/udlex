@@ -1,0 +1,4341 @@
+{
+  "abk": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Abkhaz-AbNC/ab_abnc-ud-test.conllu": "0455d5d2e39544991666351e521e0ef0a2b8590d8fee18466d699f7c5891ea7d"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "abq": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Abaza-ATB/abq_atb-ud-test.conllu": "d271dc50e15ace0be9c3db71eeef0611d15ad7835e33f1a249fbdf42a1e53002"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "afr": {
+    "block_types": {
+      "sent": 425
+    },
+    "counts": {
+      "copy": 7943,
+      "copy_losses": 4,
+      "copy_wins": 1621,
+      "full": 9560,
+      "lookup": 9560,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10063
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Afrikaans-AfriBooms/af_afribooms-ud-train.conllu": "5dfd07a87750b4b535eca5a4b4254352d2d40fbdd3fc1a9d332e62cec0f0c05f"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "aii": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Assyrian-AS/aii_as-ud-test.conllu": "3fc0829e9ae9a7314bb7c2d5f93a4c7f7daa899c5d47aaba71890e31fcdc6e0b"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "ajp": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_South_Levantine_Arabic-MADAR/ajp_madar-ud-test.conllu": "4655a80a1b1145f8175fc4d53a8d2f4a1a00374b50c7e7497c66f38fa3d05a13"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "akk": {
+    "block_types": {
+      "sent": 101
+    },
+    "counts": {
+      "copy": 171,
+      "copy_losses": 0,
+      "copy_wins": 4,
+      "full": 175,
+      "lookup": 175,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 1814
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1,
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 38
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Akkadian-RIAO/akk_riao-ud-test.conllu": "ba10dec363a15196298157fcb551dfe3853178b1bf9ff4e24c65809efae43737"
+    },
+    "status": "scored",
+    "test_files": 2
+  },
+  "aln": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Gheg-GPS/aln_gps-ud-test.conllu": "080a83e775d2b1fe6f62339ae98e0550f3549181b633efbb26af93f470b8b285"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "amh": {
+    "block_types": {
+      "sent": 1029
+    },
+    "counts": {
+      "copy": 7275,
+      "copy_losses": 951,
+      "copy_wins": 0,
+      "full": 6324,
+      "lookup": 6800,
+      "rules_losses": 476,
+      "rules_wins": 0,
+      "tokens": 9573
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 45,
+      "unknown_lemmas_with_visible_form": 10
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "apu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Apurina-UFPA/apu_ufpa-ud-test.conllu": "f873e52f4a6f885fdeaa80d2913e88e25d3be87bc4be551d110ee70d4fbd0a3b"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "aqz": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Akuntsu-TuDeT/aqz_tudet-ud-test.conllu": "f6943a1351c2ea99c15f84bf410e457d48118e339af7856312d7c9c13bda9da9"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "arb": {
+    "block_types": {
+      "doc": 69
+    },
+    "counts": {
+      "copy": 3730,
+      "copy_losses": 162,
+      "copy_wins": 14947,
+      "full": 18515,
+      "lookup": 18515,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 28249
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1,
+      "masked_forms": 74125,
+      "no_scorable_words_sentences": 1963,
+      "repeated_evaluation_sentences": 6,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Arabic-PUD/ar_pud-ud-test.conllu": "befc6dd18b5b8803644ae8208e2e5f52c0957a36437627c05110914ec42281a3"
+    },
+    "status": "scored",
+    "test_files": 3
+  },
+  "arh": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Ika-ChibErgIS/arh_chibergis-ud-test.conllu": "689ad44d92f5dfd2e39872179c7aa370df1691135ba1c24d075e285c696cdd2e"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "arr": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Karo-TuDeT/arr_tudet-ud-test.conllu": "67af0c64fa401b41aa97ce7bb03caaedf5e3babdfa0dc8ba51a8602a1159db8b"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "axm": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Middle_Armenian-ArmTDP/axm_armtdp-ud-test.conllu": "4eaefe59fd9f8ba68151bf7321850bac0ee37a95e771bfd5526e9012bb936f39"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "aze": {
+    "block_types": {
+      "sent": 140
+    },
+    "counts": {
+      "copy": 436,
+      "copy_losses": 38,
+      "copy_wins": 98,
+      "full": 496,
+      "lookup": 475,
+      "rules_losses": 37,
+      "rules_wins": 58,
+      "tokens": 873
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 8,
+      "unknown_lemmas_with_visible_form": 7
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "azz": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Highland_Puebla_Nahuatl-ITML/azz_itml-ud-test.conllu": "d9dbf6e05c885557b4303d7c470d343a7befd5bef0d9bd66aba4ae05dc88fc7f"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "bam": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Bambara-CRB/bm_crb-ud-test.conllu": "b0c220c66fb6b04c715e26ad8e9a48b16a024e9814d3384b99121de77aff6fe9"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "bel": {
+    "block_types": {
+      "doc": 9,
+      "sent": 876
+    },
+    "counts": {
+      "copy": 7818,
+      "copy_losses": 1443,
+      "copy_wins": 112,
+      "full": 6487,
+      "lookup": 7919,
+      "rules_losses": 1442,
+      "rules_wins": 10,
+      "tokens": 15958
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 13,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "ben": {
+    "block_types": {
+      "sent": 56
+    },
+    "counts": {
+      "copy": 210,
+      "copy_losses": 80,
+      "copy_wins": 34,
+      "full": 164,
+      "lookup": 235,
+      "rules_losses": 73,
+      "rules_wins": 2,
+      "tokens": 320
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "bho": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Bhojpuri-BHTB/bho_bhtb-ud-test.conllu": "586cdabb8474e4f58ac97a7ff1fb8646c6d1fd0a4d86994ead7a720f9524b393"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "bor": {
+    "block_types": {
+      "doc": 5,
+      "sent": 37
+    },
+    "counts": {
+      "copy": 8394,
+      "copy_losses": 380,
+      "copy_wins": 4221,
+      "full": 12235,
+      "lookup": 12235,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 13924
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "no_scorable_words_sentences": 1,
+      "repeated_evaluation_sentences": 1,
+      "source_text_sentences": 182,
+      "unknown_lemmas_with_visible_form": 1719
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Bororo-BDT/bor_bdt-ud-train.conllu": "e985bea81b1d5d95235797839c16667093daf60e94968623b3acdfe84257a550"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "bre": {
+    "block_types": {
+      "sent": 882
+    },
+    "counts": {
+      "copy": 5691,
+      "copy_losses": 3084,
+      "copy_wins": 538,
+      "full": 3145,
+      "lookup": 5401,
+      "rules_losses": 2314,
+      "rules_wins": 58,
+      "tokens": 9996
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "brh": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Brahui-Kholum/brh_kholum-ud-test.conllu": "92f895953a4662c01c27ad9f48cabefaeee79ed39fdd0b858a42c0d70ccaac16"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "bul": {
+    "block_types": {
+      "doc": 40
+    },
+    "counts": {
+      "copy": 8316,
+      "copy_losses": 2640,
+      "copy_wins": 2600,
+      "full": 8276,
+      "lookup": 9304,
+      "rules_losses": 2530,
+      "rules_wins": 1502,
+      "tokens": 15724
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "bxr": {
+    "block_types": {
+      "sent": 904
+    },
+    "counts": {
+      "copy": 5428,
+      "copy_losses": 1,
+      "copy_wins": 237,
+      "full": 5664,
+      "lookup": 5664,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 9960
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 3,
+      "unknown_lemmas_with_visible_form": 46
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Buryat-BDT/bxr_bdt-ud-train.conllu": "5358bb9f3ec980174ba8e5ca00e721f729e63cebeeadd65328ad9578acfd6e80"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "cat": {
+    "block_types": {
+      "doc": 187
+    },
+    "counts": {
+      "copy": 40798,
+      "copy_losses": 13601,
+      "copy_wins": 3802,
+      "full": 30999,
+      "lookup": 42952,
+      "rules_losses": 12214,
+      "rules_wins": 261,
+      "tokens": 59571
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "ceb": {
+    "block_types": {
+      "sent": 198
+    },
+    "counts": {
+      "copy": 843,
+      "copy_losses": 9,
+      "copy_wins": 1,
+      "full": 835,
+      "lookup": 843,
+      "rules_losses": 8,
+      "rules_wins": 0,
+      "tokens": 1392
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 2
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "ces": {
+    "block_types": {
+      "doc": 1233
+    },
+    "counts": {
+      "copy": 196182,
+      "copy_losses": 56296,
+      "copy_wins": 102400,
+      "full": 242286,
+      "lookup": 252810,
+      "rules_losses": 53381,
+      "rules_wins": 42857,
+      "tokens": 366159
+    },
+    "excluded": {
+      "masked_forms": 1,
+      "repeated_evaluation_sentences": 922,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 6,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 6
+  },
+  "chu": {
+    "block_types": {
+      "sent": 2067
+    },
+    "counts": {
+      "copy": 4432,
+      "copy_losses": 1799,
+      "copy_wins": 712,
+      "full": 3345,
+      "lookup": 4651,
+      "rules_losses": 1783,
+      "rules_wins": 477,
+      "tokens": 20075
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 29,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "cmn": {
+    "block_types": {
+      "doc": 397,
+      "sent": 4711
+    },
+    "counts": {
+      "copy": 81522,
+      "copy_losses": 13886,
+      "copy_wins": 0,
+      "full": 67636,
+      "lookup": 68328,
+      "rules_losses": 692,
+      "rules_wins": 0,
+      "tokens": 82393
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "no_scorable_words_sentences": 200,
+      "repeated_evaluation_sentences": 39,
+      "unknown_lemmas_with_visible_form": 4784
+    },
+    "resource_type": "external",
+    "scored_files": 6,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 7
+  },
+  "cop": {
+    "block_types": {
+      "doc": 25
+    },
+    "counts": {
+      "copy": 13826,
+      "copy_losses": 312,
+      "copy_wins": 3760,
+      "full": 17274,
+      "lookup": 17274,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 21409
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "UD",
+    "scored_files": 2,
+    "source_conllu": {
+      "UD_Coptic-Scriptorium/cop_scriptorium-ud-train.conllu": "aa6fa27ce7e25b9cbb8afaee4a3a9b2c4042d1190d11d54c3ca2483dd4078bac"
+    },
+    "status": "scored",
+    "test_files": 2
+  },
+  "cpg": {
+    "block_types": {
+      "sent": 70
+    },
+    "counts": {
+      "copy": 418,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 418,
+      "lookup": 418,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 816
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1,
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 4
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Cappadocian-TueCL/cpg_tuecl-ud-test.conllu": "808c5f26a016bc9fc92eb34242ed248ec5b1529e17baf52a64d7cdff77d62482"
+    },
+    "status": "scored",
+    "test_files": 2
+  },
+  "ctn": {
+    "block_types": {
+      "doc": 6
+    },
+    "counts": {
+      "copy": 6945,
+      "copy_losses": 418,
+      "copy_wins": 1234,
+      "full": 7761,
+      "lookup": 7761,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 14199
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 69,
+      "unknown_lemmas_with_visible_form": 6
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "cym": {
+    "block_types": {
+      "doc": 7,
+      "sent": 459
+    },
+    "counts": {
+      "copy": 10379,
+      "copy_losses": 112,
+      "copy_wins": 5251,
+      "full": 15518,
+      "lookup": 15518,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 17026
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Welsh-CCG/cy_ccg-ud-train.conllu": "9da8036f144dc6e74c5f52be4bade6d1b34494b649bc65935911b12fa21417c4"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "dan": {
+    "block_types": {
+      "sent": 565
+    },
+    "counts": {
+      "copy": 6697,
+      "copy_losses": 1306,
+      "copy_wins": 1192,
+      "full": 6583,
+      "lookup": 6988,
+      "rules_losses": 1188,
+      "rules_wins": 783,
+      "tokens": 10023
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "deu": {
+    "block_types": {
+      "doc": 400,
+      "sent": 19335
+    },
+    "counts": {
+      "copy": 269198,
+      "copy_losses": 126362,
+      "copy_wins": 64809,
+      "full": 207645,
+      "lookup": 302397,
+      "rules_losses": 112279,
+      "rules_wins": 17527,
+      "tokens": 409328
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 101,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "resource_type": "external",
+    "scored_files": 4,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 4
+  },
+  "egy": {
+    "block_types": {
+      "sent": 1222
+    },
+    "counts": {
+      "copy": 6078,
+      "copy_losses": 296,
+      "copy_wins": 4132,
+      "full": 9914,
+      "lookup": 9914,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 11453
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 11,
+      "source_text_sentences": 7,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Egyptian-PC/egy_pc-ud-train.conllu": "27b6be6a7160b94c867cc9680d5b173857581f6bfa30ba2bdb589abff9c9ba27"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "ell": {
+    "block_types": {
+      "doc": 76,
+      "sent": 1421
+    },
+    "counts": {
+      "copy": 17315,
+      "copy_losses": 5074,
+      "copy_wins": 5037,
+      "full": 17278,
+      "lookup": 19769,
+      "rules_losses": 4558,
+      "rules_wins": 2067,
+      "tokens": 38734
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 4,
+      "unknown_lemmas_with_visible_form": 5
+    },
+    "resource_type": "external",
+    "scored_files": 6,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 6
+  },
+  "eme": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Teko-TuDeT/eme_tudet-ud-test.conllu": "383e2be7f7cd3a6bafb65dc0a4307f961f0a1cfe9473082b9d00c4b82a895892"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "eng": {
+    "block_types": {
+      "doc": 984,
+      "sent": 10008
+    },
+    "counts": {
+      "copy": 145439,
+      "copy_losses": 21121,
+      "copy_wins": 26805,
+      "full": 151123,
+      "lookup": 149465,
+      "rules_losses": 197,
+      "rules_wins": 1855,
+      "tokens": 195423
+    },
+    "excluded": {
+      "masked_forms": 1763,
+      "no_scorable_words_sentences": 322,
+      "repeated_evaluation_sentences": 602,
+      "unknown_lemmas_with_visible_form": 2252
+    },
+    "resource_type": "external",
+    "scored_files": 11,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 13
+  },
+  "epo": {
+    "block_types": {
+      "sent": 20
+    },
+    "counts": {
+      "copy": 107,
+      "copy_losses": 0,
+      "copy_wins": 19,
+      "full": 126,
+      "lookup": 126,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 175
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1,
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 2
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Esperanto-Prago/eo_prago-ud-test.conllu": "d91a9bbbce1fdd1ee4cfda66e90bbd3454b83180a653b195cde3613152110795"
+    },
+    "status": "scored",
+    "test_files": 2
+  },
+  "ess": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Yupik-SLI/ess_sli-ud-test.conllu": "7fa6d43981be1d2eb0875dd15c3163a2588182343ba304d3339a4565d21f38f0"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "est": {
+    "block_types": {
+      "doc": 10,
+      "sent": 750
+    },
+    "counts": {
+      "copy": 29872,
+      "copy_losses": 9256,
+      "copy_wins": 12256,
+      "full": 32872,
+      "lookup": 35209,
+      "rules_losses": 8392,
+      "rules_wins": 6055,
+      "tokens": 61488
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 28,
+      "unknown_lemmas_with_visible_form": 25
+    },
+    "resource_type": "external",
+    "scored_files": 2,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 2
+  },
+  "eus": {
+    "block_types": {
+      "sent": 1797
+    },
+    "counts": {
+      "copy": 11852,
+      "copy_losses": 210,
+      "copy_wins": 3880,
+      "full": 15522,
+      "lookup": 15522,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 24343
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 25
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "fao": {
+    "block_types": {
+      "sent": 1493
+    },
+    "counts": {
+      "copy": 6460,
+      "copy_losses": 1442,
+      "copy_wins": 1615,
+      "full": 6633,
+      "lookup": 7405,
+      "rules_losses": 1281,
+      "rules_wins": 509,
+      "tokens": 11039
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 16,
+      "unknown_lemmas_with_visible_form": 7539
+    },
+    "resource_type": "external",
+    "scored_files": 2,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 2
+  },
+  "fin": {
+    "block_types": {
+      "doc": 616,
+      "sent": 3222
+    },
+    "counts": {
+      "copy": 30944,
+      "copy_losses": 6713,
+      "copy_wins": 21247,
+      "full": 45478,
+      "lookup": 46860,
+      "rules_losses": 4868,
+      "rules_wins": 3486,
+      "tokens": 70280
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 452,
+      "unknown_lemmas_with_visible_form": 4
+    },
+    "resource_type": "external",
+    "scored_files": 4,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 4
+  },
+  "fra": {
+    "block_types": {
+      "doc": 397,
+      "sent": 5570
+    },
+    "counts": {
+      "copy": 73016,
+      "copy_losses": 42578,
+      "copy_wins": 5181,
+      "full": 35619,
+      "lookup": 71645,
+      "rules_losses": 36584,
+      "rules_wins": 558,
+      "tokens": 118580
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 147,
+      "unknown_lemmas_with_visible_form": 67
+    },
+    "resource_type": "external",
+    "scored_files": 9,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 9
+  },
+  "frm": {
+    "block_types": {
+      "sent": 907
+    },
+    "counts": {
+      "copy": 10017,
+      "copy_losses": 4757,
+      "copy_wins": 682,
+      "full": 5942,
+      "lookup": 10493,
+      "rules_losses": 4703,
+      "rules_wins": 152,
+      "tokens": 20670
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "no_scorable_words_sentences": 216,
+      "unknown_lemmas_with_visible_form": 4686
+    },
+    "resource_type": "external",
+    "scored_files": 2,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 2
+  },
+  "fro": {
+    "block_types": {
+      "doc": 4,
+      "sent": 549
+    },
+    "counts": {
+      "copy": 11176,
+      "copy_losses": 6850,
+      "copy_wins": 1152,
+      "full": 5478,
+      "lookup": 11159,
+      "rules_losses": 5794,
+      "rules_wins": 113,
+      "tokens": 26674
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "no_scorable_words_sentences": 1148,
+      "repeated_evaluation_sentences": 37,
+      "unknown_lemmas_with_visible_form": 13650
+    },
+    "resource_type": "external",
+    "scored_files": 2,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 2
+  },
+  "gla": {
+    "block_types": {
+      "doc": 10
+    },
+    "counts": {
+      "copy": 6774,
+      "copy_losses": 140,
+      "copy_wins": 3088,
+      "full": 9722,
+      "lookup": 9722,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10552
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 4,
+      "source_text_sentences": 14,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Scottish_Gaelic-ARCOSG/gd_arcosg-ud-train.conllu": "f3f5e6db533cda5accb0b49e9c0d7df0e51f6b43eeeeeff74d6a3f531ecb6e40"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "gle": {
+    "block_types": {
+      "doc": 1,
+      "sent": 1467
+    },
+    "counts": {
+      "copy": 19243,
+      "copy_losses": 2407,
+      "copy_wins": 1389,
+      "full": 18225,
+      "lookup": 19902,
+      "rules_losses": 1984,
+      "rules_wins": 307,
+      "tokens": 30275
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 3,
+      "unknown_lemmas_with_visible_form": 23
+    },
+    "resource_type": "external",
+    "scored_files": 3,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 3
+  },
+  "glg": {
+    "block_types": {
+      "sent": 1261
+    },
+    "counts": {
+      "copy": 25601,
+      "copy_losses": 809,
+      "copy_wins": 8754,
+      "full": 33546,
+      "lookup": 33546,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 39831
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1,
+      "masked_forms": 42,
+      "unknown_lemmas_with_visible_form": 29
+    },
+    "resource_type": "UD",
+    "scored_files": 2,
+    "source_conllu": {
+      "UD_Galician-PUD/gl_pud-ud-test.conllu": "4fc7406056b0445c2e0f368b0f9be507c3b096c85e2b5dfd108bb1e052bc7d41"
+    },
+    "status": "scored",
+    "test_files": 3
+  },
+  "glv": {
+    "block_types": {
+      "sent": 1147
+    },
+    "counts": {
+      "copy": 7478,
+      "copy_losses": 26,
+      "copy_wins": 2100,
+      "full": 9552,
+      "lookup": 9552,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10252
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "source_text_sentences": 17,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Manx-Cadhan/gv_cadhan-ud-train.conllu": "e85ea451720b2c32dfca05229573d0b668aedf423fa3e7b69c3819b99f211e2b"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "got": {
+    "block_types": {
+      "sent": 986
+    },
+    "counts": {
+      "copy": 4163,
+      "copy_losses": 2556,
+      "copy_wins": 1901,
+      "full": 3508,
+      "lookup": 5438,
+      "rules_losses": 2371,
+      "rules_wins": 441,
+      "tokens": 10052
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 43,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "grc": {
+    "block_types": {
+      "doc": 2,
+      "sent": 1435
+    },
+    "counts": {
+      "copy": 10354,
+      "copy_losses": 3562,
+      "copy_wins": 3248,
+      "full": 10040,
+      "lookup": 10668,
+      "rules_losses": 3538,
+      "rules_wins": 2910,
+      "tokens": 44503
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 23,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 3,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 3
+  },
+  "gub": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Guajajara-TuDeT/gub_tudet-ud-test.conllu": "199e18933f9cd0a5c9fcc64ef4ab7d6fa0aad3eadb87762859a3b3b11d47d1f1"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "guj": {
+    "block_types": {
+      "sent": 151
+    },
+    "counts": {
+      "copy": 1440,
+      "copy_losses": 732,
+      "copy_wins": 18,
+      "full": 726,
+      "lookup": 1411,
+      "rules_losses": 691,
+      "rules_wins": 6,
+      "tokens": 1575
+    },
+    "excluded": {
+      "masked_forms": 58,
+      "no_scorable_words_sentences": 36,
+      "unknown_lemmas_with_visible_form": 252
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "gun": {
+    "block_types": {
+      "sent": 98
+    },
+    "counts": {
+      "copy": 792,
+      "copy_losses": 0,
+      "copy_wins": 27,
+      "full": 819,
+      "lookup": 819,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 1318
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "gwi": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Gwichin-TueCL/gwi_tuecl-ud-test.conllu": "ae583b3418f585b09e80b995e1552ec529442e6ab4c28d517bcbc6d944265a78"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "gya": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Northwest_Gbaya-Autogramm/gya_autogramm-ud-test.conllu": "a7635c03ab95314b69eeff4aac4e7148e442823ffd49a204eb3fb5b4a61e62f0"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "hat": {
+    "block_types": {
+      "sent": 464
+    },
+    "counts": {
+      "copy": 9012,
+      "copy_losses": 92,
+      "copy_wins": 1499,
+      "full": 10419,
+      "lookup": 10419,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10599
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 15,
+      "source_text_sentences": 109,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "UD",
+    "scored_files": 2,
+    "source_conllu": {
+      "UD_Haitian_Creole-Adolphe/ht_adolphe-ud-train.conllu": "4aa3b19d7d08ac78fcd0208d481daf18bcd019b15e04367d4b319f844f13a390"
+    },
+    "status": "scored",
+    "test_files": 2
+  },
+  "hau": {
+    "block_types": {
+      "sent": 2637
+    },
+    "counts": {
+      "copy": 23861,
+      "copy_losses": 1687,
+      "copy_wins": 5107,
+      "full": 27281,
+      "lookup": 27281,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 36810
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1,
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 367,
+      "source_text_sentences": 33,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "UD",
+    "scored_files": 3,
+    "source_conllu": {
+      "UD_Hausa-NorthernAutogramm/ha_northernautogramm-ud-test.conllu": "271c213d3728ba21988329f7d1fbc87be9522463cc3196a760b6a8751e6b9708"
+    },
+    "status": "scored",
+    "test_files": 4
+  },
+  "hbo": {
+    "block_types": {
+      "doc": 18
+    },
+    "counts": {
+      "copy": 1940,
+      "copy_losses": 0,
+      "copy_wins": 15,
+      "full": 1955,
+      "lookup": 1955,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 14972
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "heb": {
+    "block_types": {
+      "doc": 18,
+      "sent": 823
+    },
+    "counts": {
+      "copy": 27068,
+      "copy_losses": 7617,
+      "copy_wins": 3184,
+      "full": 22635,
+      "lookup": 27358,
+      "rules_losses": 5827,
+      "rules_wins": 1104,
+      "tokens": 37102
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 289
+    },
+    "resource_type": "external",
+    "scored_files": 4,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 4
+  },
+  "hin": {
+    "block_types": {
+      "doc": 397,
+      "sent": 1683
+    },
+    "counts": {
+      "copy": 42854,
+      "copy_losses": 24883,
+      "copy_wins": 4561,
+      "full": 22532,
+      "lookup": 45173,
+      "rules_losses": 24717,
+      "rules_wins": 2076,
+      "tokens": 59242
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 2,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 2
+  },
+  "hit": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Hittite-HitTB/hit_hittb-ud-test.conllu": "a55968a8a694503431cfceebf06fad3d2de6a509cc32f92f53710b58fa5fd019"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "hrv": {
+    "block_types": {
+      "doc": 31
+    },
+    "counts": {
+      "copy": 11495,
+      "copy_losses": 173,
+      "copy_wins": 9231,
+      "full": 20553,
+      "lookup": 20553,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 24249
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "hsb": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Upper_Sorbian-UFAL/hsb_ufal-ud-test.conllu": "eeb14b07ff7af360f8afefc2907fd2c53cb64fa8ebd3dde07438c953c67a0063"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "hun": {
+    "block_types": {
+      "sent": 449
+    },
+    "counts": {
+      "copy": 6905,
+      "copy_losses": 1302,
+      "copy_wins": 2272,
+      "full": 7875,
+      "lookup": 8231,
+      "rules_losses": 971,
+      "rules_wins": 615,
+      "tokens": 10446
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 2
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "hye": {
+    "block_types": {
+      "doc": 38
+    },
+    "counts": {
+      "copy": 10931,
+      "copy_losses": 1531,
+      "copy_wins": 5383,
+      "full": 14783,
+      "lookup": 12796,
+      "rules_losses": 1400,
+      "rules_wins": 3387,
+      "tokens": 20819
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 6,
+      "unknown_lemmas_with_visible_form": 11
+    },
+    "resource_type": "external",
+    "scored_files": 2,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 2
+  },
+  "hyw": {
+    "block_types": {
+      "doc": 13
+    },
+    "counts": {
+      "copy": 7579,
+      "copy_losses": 36,
+      "copy_wins": 3894,
+      "full": 11437,
+      "lookup": 11437,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 13493
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "source_text_sentences": 3,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Western_Armenian-ArmTDP/hyw_armtdp-ud-train.conllu": "dc62b71b963f2b03efbf8ea203bfa0095f38b1941369517046bb64d2cfb1d10f"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "ind": {
+    "block_types": {
+      "sent": 1930
+    },
+    "counts": {
+      "copy": 29981,
+      "copy_losses": 449,
+      "copy_wins": 4987,
+      "full": 34519,
+      "lookup": 34519,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 41182
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "source_text_sentences": 1,
+      "unknown_lemmas_with_visible_form": 27
+    },
+    "resource_type": "UD",
+    "scored_files": 3,
+    "source_conllu": {
+      "UD_Indonesian-CSUI/id_csui-ud-train.conllu": "0b91a404b4d96ba7f8b21c087a225798d1671b00b3d6126eec9e0b1895a7ca24"
+    },
+    "status": "scored",
+    "test_files": 3
+  },
+  "isl": {
+    "block_types": {
+      "doc": 397,
+      "sent": 6128
+    },
+    "counts": {
+      "copy": 95187,
+      "copy_losses": 32880,
+      "copy_wins": 20500,
+      "full": 82807,
+      "lookup": 98076,
+      "rules_losses": 25040,
+      "rules_wins": 9771,
+      "tokens": 178358
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 7,
+      "unknown_lemmas_with_visible_form": 648
+    },
+    "resource_type": "external",
+    "scored_files": 4,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 4
+  },
+  "ita": {
+    "block_types": {
+      "doc": 398,
+      "sent": 5270
+    },
+    "counts": {
+      "copy": 86398,
+      "copy_losses": 42654,
+      "copy_wins": 8488,
+      "full": 52232,
+      "lookup": 87201,
+      "rules_losses": 36543,
+      "rules_wins": 1574,
+      "tokens": 134686
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 525,
+      "unknown_lemmas_with_visible_form": 12
+    },
+    "resource_type": "external",
+    "scored_files": 11,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 11
+  },
+  "jav": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Javanese-CSUI/jv_csui-ud-test.conllu": "6dd63637c8a679de75524b98a95091f915e920a2149df678a6baa01fb6994967"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "jpn": {
+    "block_types": {
+      "doc": 940
+    },
+    "counts": {
+      "copy": 33406,
+      "copy_losses": 1634,
+      "copy_wins": 70,
+      "full": 31842,
+      "lookup": 33207,
+      "rules_losses": 1417,
+      "rules_wins": 52,
+      "tokens": 41820
+    },
+    "excluded": {
+      "masked_forms": 301334,
+      "no_scorable_words_sentences": 15762,
+      "repeated_evaluation_sentences": 1543,
+      "unknown_lemmas_with_visible_form": 2
+    },
+    "resource_type": "external",
+    "scored_files": 2,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 6
+  },
+  "kat": {
+    "block_types": {
+      "sent": 1302
+    },
+    "counts": {
+      "copy": 11698,
+      "copy_losses": 92,
+      "copy_wins": 2640,
+      "full": 14246,
+      "lookup": 14246,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 20225
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 4,
+      "source_text_sentences": 5,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "UD",
+    "scored_files": 2,
+    "source_conllu": {
+      "UD_Georgian-GLC/ka_glc-ud-train.conllu": "12a620fe47e4ca1b1af6606b26e2ddd2fb0fe7373c6e52e8fcaf1bf33badcccb"
+    },
+    "status": "scored",
+    "test_files": 2
+  },
+  "kaz": {
+    "block_types": {
+      "sent": 1047
+    },
+    "counts": {
+      "copy": 5009,
+      "copy_losses": 750,
+      "copy_wins": 799,
+      "full": 5058,
+      "lookup": 5044,
+      "rules_losses": 749,
+      "rules_wins": 763,
+      "tokens": 10007
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "kbc": {
+    "block_types": {
+      "sent": 70
+    },
+    "counts": {
+      "copy": 151,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 151,
+      "lookup": 151,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 314
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "kir": {
+    "block_types": {
+      "sent": 1285
+    },
+    "counts": {
+      "copy": 5946,
+      "copy_losses": 172,
+      "copy_wins": 2653,
+      "full": 8427,
+      "lookup": 8427,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 12004
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 18,
+      "source_text_sentences": 92,
+      "unknown_lemmas_with_visible_form": 5
+    },
+    "resource_type": "UD",
+    "scored_files": 2,
+    "source_conllu": {
+      "UD_Kyrgyz-KTMU/ky_ktmu-ud-train.conllu": "7652f9b54ec96a778133cb1528769ceb2de83d0812076495f9943704b9672ea9"
+    },
+    "status": "scored",
+    "test_files": 2
+  },
+  "kmr": {
+    "block_types": {
+      "sent": 734
+    },
+    "counts": {
+      "copy": 5276,
+      "copy_losses": 47,
+      "copy_wins": 830,
+      "full": 6059,
+      "lookup": 6059,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 9963
+    },
+    "excluded": {
+      "masked_forms": 54,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Northern_Kurdish-Kurmanji/kmr_kurmanji-ud-train.conllu": "12b4ba91cca2748fb4bcdca03d6fb31c8792ee5e649b17f3209c68abd9ad17db"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "koi": {
+    "block_types": {
+      "sent": 105
+    },
+    "counts": {
+      "copy": 501,
+      "copy_losses": 0,
+      "copy_wins": 43,
+      "full": 544,
+      "lookup": 544,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 898
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Komi_Permyak-UH/koi_uh-ud-train.conllu": "16a935495e7ec2726b3a104a849457ebd1bfea11a61c5937a76973697db1bcd1"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "kor": {
+    "block_types": {
+      "sent": 7507
+    },
+    "counts": {
+      "copy": 23598,
+      "copy_losses": 389,
+      "copy_wins": 21131,
+      "full": 44340,
+      "lookup": 44340,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 74470
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 128,
+      "source_text_sentences": 5,
+      "unknown_lemmas_with_visible_form": 11331
+    },
+    "resource_type": "UD",
+    "scored_files": 5,
+    "source_conllu": {
+      "UD_Korean-Kaist/ko_kaist-ud-train.conllu": "6f99de7e21b8119022831afda52643dd8ff60ea386f2679c938dd7f652725d94"
+    },
+    "status": "scored",
+    "test_files": 5
+  },
+  "kpv": {
+    "block_types": {
+      "sent": 865
+    },
+    "counts": {
+      "copy": 5831,
+      "copy_losses": 4,
+      "copy_wins": 294,
+      "full": 6121,
+      "lookup": 6121,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10325
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 5
+    },
+    "resource_type": "UD",
+    "scored_files": 2,
+    "source_conllu": {
+      "UD_Komi_Zyrian-Lattice/kpv_lattice-ud-train.conllu": "9f0e532f036d4ba418281cc0b7ab028999d71d533da0b032db78b34f9a1a583e"
+    },
+    "status": "scored",
+    "test_files": 2
+  },
+  "krl": {
+    "block_types": {
+      "sent": 228
+    },
+    "counts": {
+      "copy": 1338,
+      "copy_losses": 215,
+      "copy_wins": 114,
+      "full": 1237,
+      "lookup": 1352,
+      "rules_losses": 215,
+      "rules_wins": 100,
+      "tokens": 3093
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "lat": {
+    "block_types": {
+      "doc": 4,
+      "sent": 5172
+    },
+    "counts": {
+      "copy": 44869,
+      "copy_losses": 18630,
+      "copy_wins": 7468,
+      "full": 33707,
+      "lookup": 47951,
+      "rules_losses": 17932,
+      "rules_wins": 3688,
+      "tokens": 102236
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 391,
+      "unknown_lemmas_with_visible_form": 31
+    },
+    "resource_type": "external",
+    "scored_files": 6,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 6
+  },
+  "lav": {
+    "block_types": {
+      "doc": 277
+    },
+    "counts": {
+      "copy": 17782,
+      "copy_losses": 7068,
+      "copy_wins": 10509,
+      "full": 21223,
+      "lookup": 22421,
+      "rules_losses": 6287,
+      "rules_wins": 5089,
+      "tokens": 37440
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 9,
+      "unknown_lemmas_with_visible_form": 19
+    },
+    "resource_type": "external",
+    "scored_files": 2,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 2
+  },
+  "lij": {
+    "block_types": {
+      "doc": 11
+    },
+    "counts": {
+      "copy": 4442,
+      "copy_losses": 146,
+      "copy_wins": 158,
+      "full": 4454,
+      "lookup": 4454,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 6700
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "lit": {
+    "block_types": {
+      "doc": 20,
+      "sent": 17
+    },
+    "counts": {
+      "copy": 5608,
+      "copy_losses": 1487,
+      "copy_wins": 2651,
+      "full": 6772,
+      "lookup": 6174,
+      "rules_losses": 1449,
+      "rules_wins": 2047,
+      "tokens": 11872
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 7,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 2,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 2
+  },
+  "lzh": {
+    "block_types": {
+      "doc": 37,
+      "sent": 96
+    },
+    "counts": {
+      "copy": 25313,
+      "copy_losses": 1,
+      "copy_wins": 395,
+      "full": 25707,
+      "lookup": 25707,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 25797
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 178,
+      "source_text_sentences": 701,
+      "unknown_lemmas_with_visible_form": 2
+    },
+    "resource_type": "UD",
+    "scored_files": 2,
+    "source_conllu": {
+      "UD_Classical_Chinese-Kyoto/lzh_kyoto-ud-train.conllu": "ce1202b74d176440a8a94d959e7ccd22496de49c80ca70bcda283bbc49191b68"
+    },
+    "status": "scored",
+    "test_files": 2
+  },
+  "mal": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Malayalam-UFAL/ml_ufal-ud-test.conllu": "cf7d726146e0fa3910436462e776c0ddc1fb562a49deb9a447d3b199fb682a9e"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "mar": {
+    "block_types": {
+      "sent": 1041
+    },
+    "counts": {
+      "copy": 7245,
+      "copy_losses": 123,
+      "copy_wins": 3258,
+      "full": 10380,
+      "lookup": 10380,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 12703
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 4,
+      "source_text_sentences": 5,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "UD",
+    "scored_files": 2,
+    "source_conllu": {
+      "UD_Marathi-CMUPAN/mr_cmupan-ud-train.conllu": "e8bcaebd7a0ba277777dcb30e2e8fc9470a93bcf57ef4b87d0aebe9fda6da6fa"
+    },
+    "status": "scored",
+    "test_files": 2
+  },
+  "mdf": {
+    "block_types": {
+      "sent": 465
+    },
+    "counts": {
+      "copy": 2146,
+      "copy_losses": 2,
+      "copy_wins": 153,
+      "full": 2297,
+      "lookup": 2297,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 4305
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 3,
+      "unknown_lemmas_with_visible_form": 3
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Moksha-JR/mdf_jr-ud-train.conllu": "849fff74b8f051981faaadd9c705af8925d8f9cdf0119eee20ed56ab4498ac89"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "mkd": {
+    "block_types": {
+      "doc": 2
+    },
+    "counts": {
+      "copy": 885,
+      "copy_losses": 355,
+      "copy_wins": 293,
+      "full": 823,
+      "lookup": 999,
+      "rules_losses": 227,
+      "rules_wins": 51,
+      "tokens": 1343
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "myu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Munduruku-TuDeT/myu_tudet-ud-test.conllu": "be065df80a7c073145300309458d758b1a25f69dbf25cc50553b559c942c6ad7"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "myv": {
+    "block_types": {
+      "sent": 925
+    },
+    "counts": {
+      "copy": 5260,
+      "copy_losses": 73,
+      "copy_wins": 1983,
+      "full": 7170,
+      "lookup": 7170,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10470
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 8,
+      "source_text_sentences": 2,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Erzya-JR/myv_jr-ud-train.conllu": "99f7244a06044b21ada930b1f3a923af0b5bfd24d4badee3ab400aaa77e201ec"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "naq": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Khoekhoe-KDT/naq_kdt-ud-dev.conllu": "42db0da34b73c3d61ca8c369005f58a63c98a6c72ca3adaf2eb4456456b95d42",
+      "UD_Khoekhoe-KDT/naq_kdt-ud-test.conllu": "28eb0dc32dbbaeec11a5327d03f0ec790fae844b433874e483c90a7c6316fbe3",
+      "UD_Khoekhoe-KDT/naq_kdt-ud-train.conllu": "ec78454997999f5183ac1865d0ce11a57df54a94ea6ad1d8f7dc47f4f92713fe"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "nds": {
+    "block_types": {
+      "sent": 500
+    },
+    "counts": {
+      "copy": 6761,
+      "copy_losses": 2729,
+      "copy_wins": 156,
+      "full": 4188,
+      "lookup": 6702,
+      "rules_losses": 2635,
+      "rules_wins": 121,
+      "tokens": 10966
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 7
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "nep": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Nepali-BK/ne_bk-ud-test.conllu": "118d6bf0213f2dbca84557e4d213e9b20ddbf45b4d8a5ae74eedbc54779387e2"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "nhi": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Western_Sierra_Puebla_Nahuatl-MesoTree/nhi_mesotree-ud-test.conllu": "db6c6986f9dfa3ae8c3fb08f2f529fbc95b030bd5a1a3a41b2d48b6fbaca047c"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "nld": {
+    "block_types": {
+      "sent": 2327
+    },
+    "counts": {
+      "copy": 29062,
+      "copy_losses": 10371,
+      "copy_wins": 2591,
+      "full": 21282,
+      "lookup": 29255,
+      "rules_losses": 8641,
+      "rules_wins": 668,
+      "tokens": 39961
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 30,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 2,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 2
+  },
+  "nmf": {
+    "block_types": {
+      "doc": 3
+    },
+    "counts": {
+      "copy": 1630,
+      "copy_losses": 1,
+      "copy_wins": 159,
+      "full": 1788,
+      "lookup": 1788,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 2931
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "no_scorable_words_sentences": 1,
+      "repeated_evaluation_sentences": 14,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Naga-Suansu/nmf_suansu-ud-train.conllu": "a956799227b92c37983aab97af1edf71a03f73e7d1b8d98f362f347701d4c3d6"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "nor": {
+    "block_types": {
+      "sent": 3415
+    },
+    "counts": {
+      "copy": 29202,
+      "copy_losses": 497,
+      "copy_wins": 11371,
+      "full": 40076,
+      "lookup": 40076,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 54640
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 11,
+      "source_text_sentences": 24,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "UD",
+    "scored_files": 2,
+    "source_conllu": {
+      "UD_Norwegian-Nynorsk/no_nynorsk-ud-train.conllu": "35bd1b52ce31749324268dba7b1e866309a2e82828e73305c99026b82357b79a"
+    },
+    "status": "scored",
+    "test_files": 2
+  },
+  "oci": {
+    "block_types": {
+      "sent": 604
+    },
+    "counts": {
+      "copy": 6446,
+      "copy_losses": 51,
+      "copy_wins": 951,
+      "full": 7346,
+      "lookup": 7346,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 9976
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 9,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "oge": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Old_Georgian-GLC/oge_glc-ud-test.conllu": "29a8e5c34f83460d021f417853983187b864c9cd3c83a12db7bec391e5fd73eb"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "olo": {
+    "block_types": {
+      "sent": 106
+    },
+    "counts": {
+      "copy": 694,
+      "copy_losses": 124,
+      "copy_wins": 502,
+      "full": 1072,
+      "lookup": 1139,
+      "rules_losses": 93,
+      "rules_wins": 26,
+      "tokens": 1485
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 3
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "ori": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Odia-ODTB/or_odtb-ud-test.conllu": "05bfe6833a3d1ba0edae8ca99611b216c7227234c84c06337f5da3947c6d95f4"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "orv": {
+    "block_types": {
+      "doc": 330,
+      "sent": 2968
+    },
+    "counts": {
+      "copy": 27033,
+      "copy_losses": 799,
+      "copy_wins": 11918,
+      "full": 38152,
+      "lookup": 38152,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 75846
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 57,
+      "unknown_lemmas_with_visible_form": 37
+    },
+    "resource_type": "UD",
+    "scored_files": 4,
+    "source_conllu": {
+      "UD_Old_East_Slavic-Ruthenian/orv_ruthenian-ud-train.conllu": "fc13f73dc71e5fac95938eba424b3d5236bfa8edd8ce7bd0e28db2d28a2f9680"
+    },
+    "status": "scored",
+    "test_files": 4
+  },
+  "ota": {
+    "block_types": {
+      "sent": 1555
+    },
+    "counts": {
+      "copy": 8792,
+      "copy_losses": 35,
+      "copy_wins": 3209,
+      "full": 11966,
+      "lookup": 11966,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 17781
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 5
+    },
+    "resource_type": "UD",
+    "scored_files": 3,
+    "source_conllu": {
+      "UD_Ottoman_Turkish-DUDU/ota_dudu-ud-train.conllu": "37f77df5e2cd87ee2d5aae4c9658acbdba0fb834cdffb9ba3616bdc22805b4b4"
+    },
+    "status": "scored",
+    "test_files": 3
+  },
+  "pan": {
+    "block_types": {
+      "sent": 45
+    },
+    "counts": {
+      "copy": 410,
+      "copy_losses": 7,
+      "copy_wins": 23,
+      "full": 426,
+      "lookup": 426,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 562
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 2,
+    "source_conllu": {
+      "UD_Punjabi-CS/pa_cs-ud-train.conllu": "e6dc75ffcb013071445f1b1de33b08ca7c4bf75c99249ad26e367b337a07fe10"
+    },
+    "status": "scored",
+    "test_files": 2
+  },
+  "pay": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Pesh-ChibErgIS/pay_chibergis-ud-test.conllu": "f8b4f7c9a26b955ab36f68c082624fdaf143bcba020ab4cda1fd67fb6e633578"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "pcm": {
+    "block_types": {
+      "sent": 918
+    },
+    "counts": {
+      "copy": 13331,
+      "copy_losses": 32,
+      "copy_wins": 678,
+      "full": 13977,
+      "lookup": 13977,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 14187
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 9,
+      "source_text_sentences": 45,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Naija-NSC/pcm_nsc-ud-train.conllu": "2ecbbbd970575573da99c82897a08ce8c32ddc4f88d65bdc213e30e772ee4804"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "pes": {
+    "block_types": {
+      "sent": 2051
+    },
+    "counts": {
+      "copy": 32273,
+      "copy_losses": 152,
+      "copy_wins": 6655,
+      "full": 38776,
+      "lookup": 38776,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 40127
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "source_text_sentences": 2,
+      "unknown_lemmas_with_visible_form": 5
+    },
+    "resource_type": "UD",
+    "scored_files": 2,
+    "source_conllu": {
+      "UD_Persian-PerDT/fa_perdt-ud-train.conllu": "bf6823e7a9010afe69367389116f5c1eaafd616c8fc6a302a4e0c779cc64b632"
+    },
+    "status": "scored",
+    "test_files": 2
+  },
+  "pol": {
+    "block_types": {
+      "sent": 4880
+    },
+    "counts": {
+      "copy": 36012,
+      "copy_losses": 11147,
+      "copy_wins": 21409,
+      "full": 46274,
+      "lookup": 48326,
+      "rules_losses": 10624,
+      "rules_wins": 8572,
+      "tokens": 71567
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 485,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 4,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 4
+  },
+  "por": {
+    "block_types": {
+      "doc": 399,
+      "sent": 8343
+    },
+    "counts": {
+      "copy": 159222,
+      "copy_losses": 68972,
+      "copy_wins": 19190,
+      "full": 109440,
+      "lookup": 166677,
+      "rules_losses": 57879,
+      "rules_wins": 642,
+      "tokens": 227396
+    },
+    "excluded": {
+      "masked_forms": 4,
+      "repeated_evaluation_sentences": 51,
+      "unknown_lemmas_with_visible_form": 10361
+    },
+    "resource_type": "external",
+    "scored_files": 7,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 7
+  },
+  "pro": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "no_scorable_words_sentences": 276,
+      "unknown_lemmas_with_visible_form": 10208
+    },
+    "resource_type": "external",
+    "scored_files": 0,
+    "source_conllu": {},
+    "status": "no scorable test tokens after exclusions",
+    "test_files": 1
+  },
+  "pst": {
+    "block_types": {
+      "sent": 64
+    },
+    "counts": {
+      "copy": 780,
+      "copy_losses": 79,
+      "copy_wins": 115,
+      "full": 816,
+      "lookup": 816,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 1118
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1,
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 62
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Pashto-Sikaram/ps_sikaram-ud-test.conllu": "d449b3e64337f33882db5d9fdfa50e38e61cf0aec7b5d55354cf195c1a1b357f"
+    },
+    "status": "scored",
+    "test_files": 2
+  },
+  "qaf": {
+    "block_types": {
+      "sent": 144
+    },
+    "counts": {
+      "copy": 468,
+      "copy_losses": 14,
+      "copy_wins": 542,
+      "full": 996,
+      "lookup": 996,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 2162
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "source_text_sentences": 1,
+      "unknown_lemmas_with_visible_form": 10
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Maghrebi_Arabic_French-Arabizi/qaf_arabizi-ud-train.conllu": "8e7e7f7d46bc54f915069275a61654b9333d0860f579d63af00f74addc9bda83"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "qpm": {
+    "block_types": {
+      "sent": 634
+    },
+    "counts": {
+      "copy": 3776,
+      "copy_losses": 22,
+      "copy_wins": 3718,
+      "full": 7472,
+      "lookup": 7472,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 8797
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "source_text_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Pomak-Philotis/qpm_philotis-ud-train.conllu": "352efd1ce4969b0b3289949004f5327d9be3d87bf06542490dcdabc61c069db7"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "qtd": {
+    "block_types": {
+      "sent": 805
+    },
+    "counts": {
+      "copy": 9149,
+      "copy_losses": 86,
+      "copy_wins": 2938,
+      "full": 12001,
+      "lookup": 12001,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 14088
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Turkish_German-SAGT/qtd_sagt-ud-train.conllu": "6fc9d5c2a4b3df31fac2810ae0824d48bfc1d7c7617d0f1884422d7357156c45"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "qti": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Turkish_English-BUTR/qti_butr-ud-test.conllu": "5f92c95d197348453a7f61b225b4ad4341f168025da81d7dbc69ca1ec867b1af"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "quc": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Kiche-IU/quc_iu-ud-test.conllu": "b95afdd239bcb05520b01784fc20d115682a6a9d2d8e9b99aecd1daebfe13d19"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "ron": {
+    "block_types": {
+      "doc": 48,
+      "sent": 751
+    },
+    "counts": {
+      "copy": 29213,
+      "copy_losses": 6893,
+      "copy_wins": 10879,
+      "full": 33199,
+      "lookup": 34166,
+      "rules_losses": 6565,
+      "rules_wins": 5598,
+      "tokens": 57002
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 7,
+      "unknown_lemmas_with_visible_form": 4
+    },
+    "resource_type": "external",
+    "scored_files": 6,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 6
+  },
+  "ruc": {
+    "block_types": {
+      "doc": 8
+    },
+    "counts": {
+      "copy": 2651,
+      "copy_losses": 30,
+      "copy_wins": 757,
+      "full": 3378,
+      "lookup": 3378,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 6212
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 38,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "rus": {
+    "block_types": {
+      "doc": 410,
+      "sent": 7855
+    },
+    "counts": {
+      "copy": 115000,
+      "copy_losses": 4017,
+      "copy_wins": 81566,
+      "full": 192549,
+      "lookup": 191771,
+      "rules_losses": 582,
+      "rules_wins": 1360,
+      "tokens": 213826
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 17,
+      "unknown_lemmas_with_visible_form": 12
+    },
+    "resource_type": "external",
+    "scored_files": 5,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 5
+  },
+  "sab": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Bokota-ChibErgIS/sab_chibergis-ud-test.conllu": "24499104f0423ee828b21d2eeb68a9d42c83f08b7275182fe7e569f890524541"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "sah": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Yakut-YKTDT/sah_yktdt-ud-test.conllu": "ecb202e2c652e5ddcdb84413a5a2a23b32f2e5a824ccb6dd67bbc8ea7db92bf0"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "san": {
+    "block_types": {
+      "doc": 1,
+      "sent": 2517
+    },
+    "counts": {
+      "copy": 5640,
+      "copy_losses": 187,
+      "copy_wins": 11611,
+      "full": 17064,
+      "lookup": 17064,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 21217
+    },
+    "excluded": {
+      "masked_forms": 344,
+      "repeated_evaluation_sentences": 66,
+      "source_text_sentences": 133,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 2,
+    "source_conllu": {
+      "UD_Sanskrit-Vedic/sa_vedic-ud-train.conllu": "05829c606047956b25aa6ebbd1fd2b11255ed04840fb90c3661f102b556c791d"
+    },
+    "status": "scored",
+    "test_files": 2
+  },
+  "say": {
+    "block_types": {
+      "sent": 1007
+    },
+    "counts": {
+      "copy": 6125,
+      "copy_losses": 416,
+      "copy_wins": 2275,
+      "full": 7984,
+      "lookup": 7984,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 9965
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 39,
+      "source_text_sentences": 81,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Zaar-Autogramm/say_autogramm-ud-train.conllu": "8e20de1794e63618188d62e7a482d01a1d5617f7c82430defa09006e30195d3f"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "scn": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Sicilian-STB/scn_stb-ud-test.conllu": "3a95c9e187e0241d1107e051abd2188e92c9cb406969e4e7a1b184e2099b8543"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "sga": {
+    "block_types": {
+      "sent": 97
+    },
+    "counts": {
+      "copy": 351,
+      "copy_losses": 105,
+      "copy_wins": 21,
+      "full": 267,
+      "lookup": 360,
+      "rules_losses": 99,
+      "rules_wins": 6,
+      "tokens": 818
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 36
+    },
+    "resource_type": "external",
+    "scored_files": 2,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 2
+  },
+  "sin": {
+    "block_types": {
+      "sent": 69
+    },
+    "counts": {
+      "copy": 374,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 374,
+      "lookup": 374,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 668
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1,
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Sinhala-STB/si_stb-ud-test.conllu": "7847eb43b4199aab75d84b4f63d2009e7d8ca47600e90bc5a2df60071798e3b6"
+    },
+    "status": "scored",
+    "test_files": 2
+  },
+  "sjo": {
+    "block_types": {
+      "sent": 809
+    },
+    "counts": {
+      "copy": 12286,
+      "copy_losses": 9,
+      "copy_wins": 1,
+      "full": 12278,
+      "lookup": 12278,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 15395
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "slk": {
+    "block_types": {
+      "sent": 1043
+    },
+    "counts": {
+      "copy": 5664,
+      "copy_losses": 37,
+      "copy_wins": 3261,
+      "full": 8888,
+      "lookup": 8888,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 12704
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 7,
+      "source_text_sentences": 11,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Slovak-SNK/sk_snk-ud-train.conllu": "086b3ec1b48bc5942ac42ae274d9a26a75633152b1d444c649369aa4faa5d825"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "slv": {
+    "block_types": {
+      "doc": 81
+    },
+    "counts": {
+      "copy": 19906,
+      "copy_losses": 149,
+      "copy_wins": 12995,
+      "full": 32752,
+      "lookup": 32752,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 36821
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 7,
+      "source_text_sentences": 7,
+      "unknown_lemmas_with_visible_form": 2
+    },
+    "resource_type": "UD",
+    "scored_files": 2,
+    "source_conllu": {
+      "UD_Slovenian-SSJ/sl_ssj-ud-train.conllu": "c6991732aaecf8d6346bb10e154898093337ad93c6f029c0bd7c55ba94957243"
+    },
+    "status": "scored",
+    "test_files": 2
+  },
+  "sme": {
+    "block_types": {
+      "sent": 862
+    },
+    "counts": {
+      "copy": 4739,
+      "copy_losses": 1561,
+      "copy_wins": 2168,
+      "full": 5346,
+      "lookup": 6001,
+      "rules_losses": 1450,
+      "rules_wins": 795,
+      "tokens": 9971
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 3,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "sms": {
+    "block_types": {
+      "sent": 240
+    },
+    "counts": {
+      "copy": 1600,
+      "copy_losses": 1,
+      "copy_wins": 164,
+      "full": 1763,
+      "lookup": 1763,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 2889
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Skolt_Sami-Giellagas/sms_giellagas-ud-train.conllu": "a0373fabf8dd981fed93d1acfa1071b516e8c02c1f985bf60bd9970400762026"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "snd": {
+    "block_types": {
+      "sent": 887
+    },
+    "counts": {
+      "copy": 8370,
+      "copy_losses": 28,
+      "copy_wins": 2182,
+      "full": 10524,
+      "lookup": 10524,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10954
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 105
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Sindhi-Isra/sd_isra-ud-train.conllu": "a321069b0337fc12078f5c44df7166068d7fa82aeed3a3c0b55b416d00dfa49c"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "spa": {
+    "block_types": {
+      "doc": 565,
+      "sent": 959
+    },
+    "counts": {
+      "copy": 64914,
+      "copy_losses": 9765,
+      "copy_wins": 15690,
+      "full": 70839,
+      "lookup": 76182,
+      "rules_losses": 6230,
+      "rules_wins": 887,
+      "tokens": 96925
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 15,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 4,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 4
+  },
+  "sqi": {
+    "block_types": {
+      "sent": 80
+    },
+    "counts": {
+      "copy": 670,
+      "copy_losses": 223,
+      "copy_wins": 290,
+      "full": 737,
+      "lookup": 767,
+      "rules_losses": 171,
+      "rules_wins": 141,
+      "tokens": 1293
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "resource_type": "external",
+    "scored_files": 2,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 2
+  },
+  "srp": {
+    "block_types": {
+      "doc": 22
+    },
+    "counts": {
+      "copy": 5424,
+      "copy_losses": 186,
+      "copy_wins": 4147,
+      "full": 9385,
+      "lookup": 9385,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 11410
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "ssp": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Spanish_Sign_Language-LSE/ssp_lse-ud-test.conllu": "7717cee81bae6100d168d6d6375c7c58b54fdf2f798bcc8a0003eb77857bd613"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "swe": {
+    "block_types": {
+      "doc": 421,
+      "sent": 677
+    },
+    "counts": {
+      "copy": 43564,
+      "copy_losses": 9982,
+      "copy_wins": 12798,
+      "full": 46380,
+      "lookup": 50517,
+      "rules_losses": 7682,
+      "rules_wins": 3545,
+      "tokens": 69960
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 9,
+      "unknown_lemmas_with_visible_form": 11
+    },
+    "resource_type": "external",
+    "scored_files": 5,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 5
+  },
+  "tam": {
+    "block_types": {
+      "sent": 120
+    },
+    "counts": {
+      "copy": 969,
+      "copy_losses": 10,
+      "copy_wins": 81,
+      "full": 1040,
+      "lookup": 1040,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 1989
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1,
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Tamil-MWTT/ta_mwtt-ud-test.conllu": "a1d1c312ce05d5a9de2f4272651f470920575cd59691e2e36085b61cbfad9318"
+    },
+    "status": "scored",
+    "test_files": 2
+  },
+  "tat": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Tatar-NMCTT/tt_nmctt-ud-test.conllu": "94ed206be1ef7f91580598947e1d05542a694ab09a8cecad500142abb27c6bb8"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "tel": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "no_scorable_words_sentences": 146,
+      "unknown_lemmas_with_visible_form": 721
+    },
+    "resource_type": "external",
+    "scored_files": 0,
+    "source_conllu": {},
+    "status": "no scorable test tokens after exclusions",
+    "test_files": 1
+  },
+  "tgl": {
+    "block_types": {
+      "sent": 94
+    },
+    "counts": {
+      "copy": 764,
+      "copy_losses": 2,
+      "copy_wins": 55,
+      "full": 817,
+      "lookup": 817,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 1097
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1,
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Tagalog-TRG/tl_trg-ud-test.conllu": "d21eb1072f6da530de2e0e3a9065a76ae36559efd43afc7c6d48264024afa8c1"
+    },
+    "status": "scored",
+    "test_files": 2
+  },
+  "tha": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1,
+      "masked_forms": 0,
+      "no_scorable_words_sentences": 363,
+      "unknown_lemmas_with_visible_form": 7683
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Thai-PUD/th_pud-ud-test.conllu": "0eeeaf5cf4352df2fe0b7f114e29d5ab5c1f54476faf64e99313de14d588a31b"
+    },
+    "status": "no scorable test tokens after exclusions",
+    "test_files": 2
+  },
+  "tpn": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Tupinamba-TuDeT/tpn_tudet-ud-test.conllu": "9357cf53c4dee3bb384225eeea46e0f8d4ea54f579d9dbccd4c84375ad13c692"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "tuk": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {},
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Turkmen-TUD/tk_tud-ud-train.conllu": "8f1c9d341e1cf86ba4b4a0f80c00d6ac280354dc9b013ef6561e0ea2e83b7df5"
+    },
+    "status": "no official test file for code",
+    "test_files": 0
+  },
+  "tur": {
+    "block_types": {
+      "doc": 444,
+      "sent": 9212
+    },
+    "counts": {
+      "copy": 48333,
+      "copy_losses": 13534,
+      "copy_wins": 15776,
+      "full": 50575,
+      "lookup": 52818,
+      "rules_losses": 10851,
+      "rules_wins": 8608,
+      "tokens": 99232
+    },
+    "excluded": {
+      "masked_forms": 1,
+      "repeated_evaluation_sentences": 355,
+      "unknown_lemmas_with_visible_form": 487
+    },
+    "resource_type": "external",
+    "scored_files": 10,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 10
+  },
+  "uig": {
+    "block_types": {
+      "sent": 900
+    },
+    "counts": {
+      "copy": 4853,
+      "copy_losses": 6,
+      "copy_wins": 1695,
+      "full": 6542,
+      "lookup": 6542,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 7564
+    },
+    "excluded": {
+      "masked_forms": 86,
+      "unknown_lemmas_with_visible_form": 2680
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Uyghur-UDT/ug_udt-ud-train.conllu": "8b41b86261138009342b6c4b5f6a51fa45746079712e37a74afeab841600d285"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "ukr": {
+    "block_types": {
+      "doc": 184,
+      "sent": 5
+    },
+    "counts": {
+      "copy": 15181,
+      "copy_losses": 3526,
+      "copy_wins": 6989,
+      "full": 18644,
+      "lookup": 18197,
+      "rules_losses": 3413,
+      "rules_wins": 3860,
+      "tokens": 27701
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 162,
+      "unknown_lemmas_with_visible_form": 2
+    },
+    "resource_type": "external",
+    "scored_files": 2,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 2
+  },
+  "urb": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Kaapor-TuDeT/urb_tudet-ud-test.conllu": "cb169ddc3605a69b0bacdf907f45145da98f316278091f325cc5a5aa582638e7"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "urd": {
+    "block_types": {
+      "sent": 527
+    },
+    "counts": {
+      "copy": 10906,
+      "copy_losses": 542,
+      "copy_wins": 812,
+      "full": 11176,
+      "lookup": 11176,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 14537
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 8,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "uzb": {
+    "block_types": {
+      "sent": 847
+    },
+    "counts": {
+      "copy": 4722,
+      "copy_losses": 643,
+      "copy_wins": 942,
+      "full": 5021,
+      "lookup": 4737,
+      "rules_losses": 642,
+      "rules_wins": 926,
+      "tokens": 8995
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 4
+    },
+    "resource_type": "external",
+    "scored_files": 3,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 3
+  },
+  "vep": {
+    "block_types": {
+      "sent": 103
+    },
+    "counts": {
+      "copy": 587,
+      "copy_losses": 102,
+      "copy_wins": 472,
+      "full": 957,
+      "lookup": 975,
+      "rules_losses": 48,
+      "rules_wins": 30,
+      "tokens": 1303
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "vie": {
+    "block_types": {
+      "sent": 892
+    },
+    "counts": {
+      "copy": 12610,
+      "copy_losses": 188,
+      "copy_wins": 803,
+      "full": 13225,
+      "lookup": 13225,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 13526
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "source_text_sentences": 8,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "UD",
+    "scored_files": 2,
+    "source_conllu": {
+      "UD_Vietnamese-VTB/vi_vtb-ud-train.conllu": "1df180722db99b724f7368aca50597133bee28606de3394cd8d12a57da89978d"
+    },
+    "status": "scored",
+    "test_files": 2
+  },
+  "wbp": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Warlpiri-UFAL/wbp_ufal-ud-test.conllu": "4a890f5dca1e25850503da5cfb4ca43146a5c23241c4751487387337bc4ae4c9"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "wol": {
+    "block_types": {
+      "doc": 12
+    },
+    "counts": {
+      "copy": 7611,
+      "copy_losses": 183,
+      "copy_wins": 2151,
+      "full": 9579,
+      "lookup": 9579,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10403
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Wolof-WTB/wo_wtb-ud-train.conllu": "206e6579debb4f6d1c333edf6cce00d74da298390f98046cc04ba5a9210d832d"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "wuu": {
+    "block_types": {
+      "sent": 99
+    },
+    "counts": {
+      "copy": 874,
+      "copy_losses": 63,
+      "copy_wins": 0,
+      "full": 811,
+      "lookup": 811,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 874
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "xav": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Xavante-XDT/xav_xdt-ud-test.conllu": "164d32abd625b66dd12f3a3bc6b00e143f955facc6b5077fa7dac8238d88b39e"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "xcl": {
+    "block_types": {
+      "sent": 562
+    },
+    "counts": {
+      "copy": 6844,
+      "copy_losses": 944,
+      "copy_wins": 1167,
+      "full": 7067,
+      "lookup": 7392,
+      "rules_losses": 609,
+      "rules_wins": 284,
+      "tokens": 11185
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "xnr": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Kangri-KDTB/xnr_kdtb-ud-test.conllu": "f3a7657175560cf0c621811c9c7186731b15997ba19dc68d1a7d946f520faf6c"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "xpg": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Phrygian-KUL/xpg_kul-ud-test.conllu": "efdea547cb551da56901b2933563f961ce5788a1d6e34a6c28557a3a30f092bc"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "xum": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Umbrian-IKUVINA/xum_ikuvina-ud-test.conllu": "6ba6697e5f2dda57795d4ff0061b8c1c20371f63da70de73a673181e3b4863bc"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "yid": {
+    "block_types": {
+      "sent": 1070
+    },
+    "counts": {
+      "copy": 6585,
+      "copy_losses": 33,
+      "copy_wins": 2463,
+      "full": 9015,
+      "lookup": 9015,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 9955
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 3,
+      "source_text_sentences": 6,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Yiddish-YiTB/yi_yitb-ud-train.conllu": "19f9461e4edec9ba96e2f2ba618f08849ada24d711caed09910969d31a9caed1"
+    },
+    "status": "scored",
+    "test_files": 1
+  },
+  "yor": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Yoruba-YTB/yo_ytb-ud-test.conllu": "b6c475516f4d9c9cdb56ef4285ea8dad215fc21f245ecdf0f95b285ce6309896"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "yrk": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Nenets-Tundra/yrk_tundra-ud-test.conllu": "4eeaed90a6162b75ef7405254fb2d000b6ffa42061b9f12842d473f24b558720"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "yrl": {
+    "block_types": {
+      "sent": 1027
+    },
+    "counts": {
+      "copy": 6767,
+      "copy_losses": 3,
+      "copy_wins": 587,
+      "full": 7351,
+      "lookup": 7351,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 9898
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 16,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "resource_type": "external",
+    "scored_files": 1,
+    "source_conllu": {},
+    "status": "scored",
+    "test_files": 1
+  },
+  "yue": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 0,
+    "source_conllu": {
+      "UD_Cantonese-HK/yue_hk-ud-test.conllu": "cbd843a195d0db4cdafbf6fcafb7b7b559afea750411006f4728311e70cc4e2a"
+    },
+    "status": "all available tests used in dictionary",
+    "test_files": 1
+  },
+  "zza": {
+    "block_types": {
+      "sent": 32
+    },
+    "counts": {
+      "copy": 150,
+      "copy_losses": 0,
+      "copy_wins": 47,
+      "full": 197,
+      "lookup": 197,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 249
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "resource_type": "UD",
+    "scored_files": 1,
+    "source_conllu": {
+      "UD_Zazaki-ZSD/zza_zsd-ud-train.conllu": "4b1bf756562bc9b1a8e9de15ad5010ebcdafc0bc185b6a981b7773637850aa01"
+    },
+    "status": "scored",
+    "test_files": 1
+  }
+}
