@@ -89,9 +89,10 @@ def score_language(
         "old_source": catalog[iso]["source"] if iso in catalog else None,
     }
     if row["mode"] == "official":
-        bundle = unpack(
-            release / "packages" / entry["archive"]["name"], work / "eval" / "new" / iso
-        )
+        archive = entry["archive"]
+        # Keyed by digest: a rebuilt package must never reuse a stale extraction.
+        scratch = work / "eval" / "new" / iso / archive["sha256"][:16]
+        bundle = unpack(release / "packages" / archive["name"], scratch)
         new = udlex.load(str(bundle), iso, use_user=False)
         test = jsonl(splits / "test.jsonl")
         parts = [(new, test)]
