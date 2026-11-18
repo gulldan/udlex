@@ -15,4 +15,5 @@ mkdir -p "$dir/cache" "$dir/work"
 "$py" "$here/package.py" "$dir/work" "$dir/release"
 if [ $# -gt 1 ]; then
     "$py" "$here/evaluate.py" "$dir/work" "$dir/release" "$2"
+    "$py" "$here/report.py" "$dir/release"
 fi

@@ -21,6 +21,7 @@ checkout and `pymorphy3==2.0.6`. It runs these stages, each resumable:
 | Choose order and options on dev, build | `choose.py` | `work/build/<iso>/decision.json` |
 | Wheels, archives, licenses, catalog | `package.py` | `release/packages/`, `release/DICTIONARIES.json` |
 | Score new, 1.0.0 and copying | `evaluate.py` | `release/evaluation.json` |
+| Per-language table | `report.py` | `release/EVALUATION.md` |
 
 ## Data use
 

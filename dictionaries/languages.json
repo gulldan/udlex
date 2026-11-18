@@ -103,7 +103,7 @@
  },
  "aze": {
   "group": "catalog",
-  "name": "aze",
+  "name": "Azerbaijani",
   "preferred": null,
   "ud": "az"
  },
@@ -133,7 +133,7 @@
  },
  "bel": {
   "group": "catalog",
-  "name": "bel",
+  "name": "Belarusian",
   "preferred": null,
   "ud": "be"
  },
@@ -163,7 +163,7 @@
  },
  "bre": {
   "group": "catalog",
-  "name": "bre",
+  "name": "Breton",
   "preferred": null,
   "ud": "br"
  },
@@ -175,7 +175,7 @@
  },
  "bul": {
   "group": "catalog",
-  "name": "bul",
+  "name": "Bulgarian",
   "preferred": null,
   "ud": "bg"
  },
@@ -187,7 +187,7 @@
  },
  "cat": {
   "group": "catalog",
-  "name": "cat",
+  "name": "Catalan",
   "preferred": null,
   "ud": "ca"
  },
@@ -211,7 +211,7 @@
  },
  "chu": {
   "group": "catalog",
-  "name": "chu",
+  "name": "Old Church Slavonic",
   "preferred": null,
   "ud": "cu"
  },
@@ -355,7 +355,7 @@
  },
  "fao": {
   "group": "catalog",
-  "name": "fao",
+  "name": "Faroese",
   "preferred": null,
   "ud": "fo"
  },
@@ -403,7 +403,7 @@
  },
  "gle": {
   "group": "catalog",
-  "name": "gle",
+  "name": "Irish",
   "preferred": null,
   "ud": "ga"
  },
@@ -535,13 +535,13 @@
  },
  "hun": {
   "group": "catalog",
-  "name": "hun",
+  "name": "Hungarian",
   "preferred": null,
   "ud": "hu"
  },
  "hye": {
   "group": "catalog",
-  "name": "hye",
+  "name": "Armenian",
   "preferred": null,
   "ud": "hy"
  },
@@ -559,13 +559,13 @@
  },
  "isl": {
   "group": "catalog",
-  "name": "isl",
+  "name": "Icelandic",
   "preferred": null,
   "ud": "is"
  },
  "ita": {
   "group": "catalog",
-  "name": "ita",
+  "name": "Italian",
   "preferred": null,
   "ud": "it"
  },
@@ -583,7 +583,7 @@
  },
  "jpn": {
   "group": "catalog",
-  "name": "jpn",
+  "name": "Japanese",
   "preferred": null,
   "ud": "ja"
  },
@@ -601,7 +601,7 @@
  },
  "kaz": {
   "group": "catalog",
-  "name": "kaz",
+  "name": "Kazakh",
   "preferred": null,
   "ud": "kk"
  },
@@ -661,7 +661,7 @@
  },
  "lav": {
   "group": "catalog",
-  "name": "lav",
+  "name": "Latvian",
   "preferred": null,
   "ud": "lv"
  },
@@ -673,7 +673,7 @@
  },
  "lit": {
   "group": "catalog",
-  "name": "lit",
+  "name": "Lithuanian",
   "preferred": null,
   "ud": "lt"
  },
@@ -1105,13 +1105,13 @@
  },
  "spa": {
   "group": "catalog",
-  "name": "spa",
+  "name": "Spanish",
   "preferred": null,
   "ud": "es"
  },
  "sqi": {
   "group": "catalog",
-  "name": "sqi",
+  "name": "Albanian",
   "preferred": null,
   "ud": "sq"
  },
@@ -1135,7 +1135,7 @@
  },
  "swe": {
   "group": "catalog",
-  "name": "swe",
+  "name": "Swedish",
   "preferred": null,
   "ud": "sv"
  },
@@ -1255,7 +1255,7 @@
  },
  "uzb": {
   "group": "catalog",
-  "name": "uzb",
+  "name": "Uzbek",
   "preferred": null,
   "ud": "uz"
  },
@@ -1303,7 +1303,7 @@
  },
  "xcl": {
   "group": "catalog",
-  "name": "xcl",
+  "name": "Classical Armenian",
   "preferred": null,
   "ud": "xcl"
  },
