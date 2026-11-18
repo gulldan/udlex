@@ -17,11 +17,11 @@ def latex(s):
     return "".join({"&": r"\&", "_": r"\_", "%": r"\%", "#": r"\#", "$": r"\$"}.get(c, c) for c in s)
 
 
-def generate():
-    root = EVIDENCE.parent
-    snap = read(EVIDENCE / "snapshot.json")["languages"]
-    rows = read(EVIDENCE / "languages.json")
-    result = read(EVIDENCE / "summary.json")
+def generate(evidence=EVIDENCE, root=None):
+    root = root or EVIDENCE.parent
+    snap = read(evidence / "snapshot.json")["languages"]
+    rows = read(evidence / "languages.json")
+    result = read(evidence / "summary.json")
     nl = r" \\"
     output = [
         r"\begingroup\small",

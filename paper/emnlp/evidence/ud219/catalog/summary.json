@@ -1,0 +1,362 @@
+{
+  "UD": {
+    "counts": {
+      "copy": 493957,
+      "copy_losses": 27579,
+      "copy_wins": 234719,
+      "full": 701097,
+      "lookup": 671109,
+      "rules_losses": 17942,
+      "rules_wins": 47930,
+      "tokens": 874978
+    },
+    "full_minus_copy": {
+      "language_wins_ties_losses": [
+        49,
+        1,
+        5
+      ],
+      "macro_ci95_pp": [
+        18.9849458180791,
+        19.640435739224802
+      ],
+      "macro_pp": 19.246674499037496,
+      "micro_pp": 23.6737380825575
+    },
+    "full_minus_lookup": {
+      "language_wins_ties_losses": [
+        34,
+        4,
+        17
+      ],
+      "macro_ci95_pp": [
+        2.3776987165687626,
+        2.989848336344321
+      ],
+      "macro_pp": 2.5919664727309026,
+      "micro_pp": 3.427286171766596
+    },
+    "macro_accuracy": {
+      "copy": 59.139091086996274,
+      "full": 78.38576558603377,
+      "lookup": 75.79379911330287
+    },
+    "micro_accuracy": {
+      "copy": 56.45364797743486,
+      "full": 80.12738605999236,
+      "lookup": 76.70009988822576
+    },
+    "scored_languages": 55
+  },
+  "all": {
+    "counts": {
+      "copy": 2561034,
+      "copy_losses": 663572,
+      "copy_wins": 787138,
+      "full": 2684600,
+      "lookup": 3024079,
+      "rules_losses": 543351,
+      "rules_wins": 203872,
+      "tokens": 4342811
+    },
+    "full_minus_copy": {
+      "language_wins_ties_losses": [
+        84,
+        1,
+        40
+      ],
+      "macro_ci95_pp": [
+        7.8806171350084755,
+        8.248182675916839
+      ],
+      "macro_pp": 8.046698753717962,
+      "micro_pp": 2.845299968154265
+    },
+    "full_minus_lookup": {
+      "language_wins_ties_losses": [
+        47,
+        7,
+        71
+      ],
+      "macro_ci95_pp": [
+        -3.0232264570375147,
+        -2.6998304455028856
+      ],
+      "macro_pp": -2.901926163508662,
+      "micro_pp": -7.81703371387794
+    },
+    "macro_accuracy": {
+      "copy": 57.84687788305406,
+      "full": 65.89357663677202,
+      "lookup": 68.79550280028069
+    },
+    "micro_accuracy": {
+      "copy": 58.97180420699865,
+      "full": 61.81710417515291,
+      "lookup": 69.63413788903085
+    },
+    "scored_languages": 125
+  },
+  "block_types": {
+    "doc": 10022,
+    "sent": 173270
+  },
+  "bootstrap": {
+    "numpy": "2.5.1",
+    "replicates": 2000,
+    "seed": 20261118,
+    "unit": "document if available, otherwise sentence; fixed treebanks and languages"
+  },
+  "excluded": {
+    "declared_dictionary_input_file": 56,
+    "masked_forms": 387410,
+    "no_scorable_words_sentences": 21988,
+    "repeated_evaluation_sentences": 7254,
+    "source_identifier_sentences": 410,
+    "source_text_sentences": 1538,
+    "unknown_lemmas_with_visible_form": 103089
+  },
+  "external": {
+    "counts": {
+      "copy": 2067077,
+      "copy_losses": 635993,
+      "copy_wins": 552419,
+      "full": 1983503,
+      "lookup": 2352970,
+      "rules_losses": 525409,
+      "rules_wins": 155942,
+      "tokens": 3467833
+    },
+    "full_minus_copy": {
+      "language_wins_ties_losses": [
+        35,
+        0,
+        35
+      ],
+      "macro_ci95_pp": [
+        -0.977706007894604,
+        -0.5571212503746794
+      ],
+      "macro_pp": -0.7532821890331078,
+      "micro_pp": -2.4099776430987347
+    },
+    "full_minus_lookup": {
+      "language_wins_ties_losses": [
+        13,
+        3,
+        54
+      ],
+      "macro_ci95_pp": [
+        -7.376921139557245,
+        -7.062738761326304
+      ],
+      "macro_pp": -7.218556091982606,
+      "micro_pp": -10.65411742722329
+    },
+    "macro_accuracy": {
+      "copy": 56.831567508528025,
+      "full": 56.07828531949492,
+      "lookup": 63.29684141147752
+    },
+    "micro_accuracy": {
+      "copy": 59.60716678109932,
+      "full": 57.19718913800059,
+      "lookup": 67.85130656522388
+    },
+    "scored_languages": 70
+  },
+  "language_status": {
+    "all available tests used in dictionary": 45,
+    "no official test file for code": 1,
+    "no scorable test tokens after exclusions": 1,
+    "scored": 125
+  },
+  "run": {
+    "catalog_sha256": "7042aaa89bd7b006fbbc5362eeb6eb1bef732ca34da960560eb939c7d22df97f",
+    "data_version": "1.0.0.post1",
+    "language_codes_sha256": "82ae6aa2ccdcf0a5a12e622945136508b60b205c61079ff670802de187a67018",
+    "languages": [
+      "abk",
+      "abq",
+      "afr",
+      "aii",
+      "ajp",
+      "akk",
+      "aln",
+      "amh",
+      "apu",
+      "aqz",
+      "arb",
+      "arh",
+      "arr",
+      "axm",
+      "aze",
+      "azz",
+      "bam",
+      "bel",
+      "ben",
+      "bho",
+      "bor",
+      "bre",
+      "brh",
+      "bul",
+      "bxr",
+      "cat",
+      "ceb",
+      "ces",
+      "chu",
+      "cmn",
+      "cop",
+      "cpg",
+      "ctn",
+      "cym",
+      "dan",
+      "deu",
+      "egy",
+      "ell",
+      "eme",
+      "eng",
+      "epo",
+      "ess",
+      "est",
+      "eus",
+      "fao",
+      "fin",
+      "fra",
+      "frm",
+      "fro",
+      "gla",
+      "gle",
+      "glg",
+      "glv",
+      "got",
+      "grc",
+      "gub",
+      "guj",
+      "gun",
+      "gwi",
+      "gya",
+      "hat",
+      "hau",
+      "hbo",
+      "heb",
+      "hin",
+      "hit",
+      "hrv",
+      "hsb",
+      "hun",
+      "hye",
+      "hyw",
+      "ind",
+      "isl",
+      "ita",
+      "jav",
+      "jpn",
+      "kat",
+      "kaz",
+      "kbc",
+      "kir",
+      "kmr",
+      "koi",
+      "kor",
+      "kpv",
+      "krl",
+      "lat",
+      "lav",
+      "lij",
+      "lit",
+      "lzh",
+      "mal",
+      "mar",
+      "mdf",
+      "mkd",
+      "myu",
+      "myv",
+      "naq",
+      "nds",
+      "nep",
+      "nhi",
+      "nld",
+      "nmf",
+      "nor",
+      "oci",
+      "oge",
+      "olo",
+      "ori",
+      "orv",
+      "ota",
+      "pan",
+      "pay",
+      "pcm",
+      "pes",
+      "pol",
+      "por",
+      "pro",
+      "pst",
+      "qaf",
+      "qpm",
+      "qtd",
+      "qti",
+      "quc",
+      "ron",
+      "ruc",
+      "rus",
+      "sab",
+      "sah",
+      "san",
+      "say",
+      "scn",
+      "sga",
+      "sin",
+      "sjo",
+      "slk",
+      "slv",
+      "sme",
+      "sms",
+      "snd",
+      "spa",
+      "sqi",
+      "srp",
+      "ssp",
+      "swe",
+      "tam",
+      "tat",
+      "tel",
+      "tgl",
+      "tha",
+      "tpn",
+      "tuk",
+      "tur",
+      "uig",
+      "ukr",
+      "urb",
+      "urd",
+      "uzb",
+      "vep",
+      "vie",
+      "wbp",
+      "wol",
+      "wuu",
+      "xav",
+      "xcl",
+      "xnr",
+      "xpg",
+      "xum",
+      "yid",
+      "yor",
+      "yrk",
+      "yrl",
+      "yue",
+      "zza"
+    ],
+    "program_sha256": "f85960df3c507a8ab189f0559b510b124ac9dcf465f8ff5f34f936b1b6a8d6e0",
+    "protocol_sha256": "8730cbb5155612e0939fefdfead0528c8433f3f838adb6ca9f01e5524b6f52dd",
+    "release_test_files": 402,
+    "scoring_program_sha256": "67d83de4b25c66e13f6edf29e1118d43f71d7afe7198682d85df218731a158ad",
+    "snapshot_sha256": "a97b331181edfa0515ece8f14f08972dff4fa4ec30babefc797cd65ba74825c9",
+    "ud219_sha256": "6bbe2f0234dcc2d2367cc912848259c94c278ea69932d228d744f265a19a4a31",
+    "version": "1.0.0"
+  },
+  "test_files_in_scope": 346,
+  "test_files_scored": 277
+}

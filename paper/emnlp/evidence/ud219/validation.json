@@ -1,0 +1,21 @@
+{
+  "catalog_sha256": "7042aaa89bd7b006fbbc5362eeb6eb1bef732ca34da960560eb939c7d22df97f",
+  "compute": "CPU",
+  "executor": "gpu-server",
+  "independent_rebuild_matching_input_hashes_and_generations": 172,
+  "order_fit_comparisons": 106,
+  "order_inventory_sha256": "f2512611cf71a7b8a788b6948358d647f53a37c55c860a4676fb8589a38d1d9e",
+  "platform": "x86_64",
+  "python": "3.12.13",
+  "python_tests_passed": 134,
+  "runtime": "UDlex 1.0.0",
+  "rust": "rustc 1.97.1 (8bab26f4f 2026-07-14)",
+  "rust_doc_ignored": 1,
+  "rust_unit_and_doc_passed": 271,
+  "wheel_install": {
+    "engine": "1.0.0",
+    "installed_wheels": 172,
+    "verified_example_calls": 854
+  },
+  "wheel_vs_native_fixture": "Exhaustive training optimum and full-cascade wheel predictions match {'tokens': 6, 'correct': 5, 'wins': 1, 'losses': 1, 'changed': 2}"
+}

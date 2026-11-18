@@ -1,0 +1,88 @@
+{
+  "binary_sha256": {
+    "off": "b5a78db164b6f06afcb53c351ba36ee5ed95bddae81861fb9cbc925c849833b7",
+    "on": "ec638bd4625214386c3cda34110035371ef8e1197a2a018059129a230a93d928"
+  },
+  "cells": {
+    "cross_validation": {
+      "rules_off": {
+        "declared": {
+          "correct": 293504,
+          "losses": 0,
+          "macro_accuracy": 84.27167476873059,
+          "micro_accuracy": 77.45354170295191,
+          "tokens": 378942,
+          "wins": 0
+        },
+        "learned": {
+          "correct": 293165,
+          "losses": 1249,
+          "macro_accuracy": 84.76075084337927,
+          "micro_accuracy": 77.36408210227422,
+          "tokens": 378942,
+          "wins": 910
+        }
+      },
+      "rules_on": {
+        "declared": {
+          "correct": 296052,
+          "losses": 0,
+          "macro_accuracy": 84.96263852785339,
+          "micro_accuracy": 78.125940117485,
+          "tokens": 378942,
+          "wins": 0
+        },
+        "learned": {
+          "correct": 295713,
+          "losses": 1249,
+          "macro_accuracy": 85.45171460250207,
+          "micro_accuracy": 78.03648051680732,
+          "tokens": 378942,
+          "wins": 910
+        }
+      }
+    },
+    "official": {
+      "rules_off": {
+        "declared": {
+          "correct": 1777714,
+          "losses": 0,
+          "macro_accuracy": 92.71179530466446,
+          "micro_accuracy": 95.0201536067767,
+          "tokens": 1870881,
+          "wins": 0
+        },
+        "learned": {
+          "correct": 1777919,
+          "losses": 1541,
+          "macro_accuracy": 92.75285117169736,
+          "micro_accuracy": 95.03111101133636,
+          "tokens": 1870881,
+          "wins": 1746
+        }
+      },
+      "rules_on": {
+        "declared": {
+          "correct": 1786235,
+          "losses": 0,
+          "macro_accuracy": 93.62006620067427,
+          "micro_accuracy": 95.47560748118133,
+          "tokens": 1870881,
+          "wins": 0
+        },
+        "learned": {
+          "correct": 1786440,
+          "losses": 1541,
+          "macro_accuracy": 93.66112206770718,
+          "micro_accuracy": 95.48656488574099,
+          "tokens": 1870881,
+          "wins": 1746
+        }
+      }
+    }
+  },
+  "fits_checked": 106,
+  "off_pairs_sha256": "e88230837ee00148ade3c2c21d5d52de25e6af89de056a512e8314c6f8f05273",
+  "on_pairs_sha256": "d4e354e358cc190153c9900ca4c40692fa7a93a6ea40967564b6d4e6d3cbd377",
+  "source_sha256": "f2512611cf71a7b8a788b6948358d647f53a37c55c860a4676fb8589a38d1d9e"
+}

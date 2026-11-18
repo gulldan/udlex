@@ -1,0 +1,149 @@
+{
+  "amh": {
+    "fold_tokens": [
+      4786,
+      4787
+    ],
+    "unit": "sentences"
+  },
+  "aze": {
+    "fold_tokens": [
+      437,
+      436
+    ],
+    "unit": "sentences"
+  },
+  "bam": {
+    "fold_tokens": [
+      6305,
+      6304
+    ],
+    "unit": "sentences"
+  },
+  "ben": {
+    "fold_tokens": [
+      160,
+      160
+    ],
+    "unit": "sentences"
+  },
+  "bre": {
+    "fold_tokens": [
+      4998,
+      4998
+    ],
+    "unit": "sentences"
+  },
+  "bul": {
+    "fold_tokens": [
+      77435,
+      77453
+    ],
+    "unit": "documents and ungrouped sentences"
+  },
+  "ceb": {
+    "fold_tokens": [
+      759,
+      758
+    ],
+    "unit": "sentences"
+  },
+  "epo": {
+    "fold_tokens": [
+      88,
+      87
+    ],
+    "unit": "sentences"
+  },
+  "fro": {
+    "fold_tokens": [
+      66008,
+      77503
+    ],
+    "unit": "documents and ungrouped sentences"
+  },
+  "guj": {
+    "fold_tokens": [
+      787,
+      788
+    ],
+    "unit": "sentences"
+  },
+  "hau": {
+    "fold_tokens": [
+      7645,
+      7646
+    ],
+    "unit": "sentences"
+  },
+  "hsb": {
+    "fold_tokens": [
+      5584,
+      5583
+    ],
+    "unit": "documents and ungrouped sentences"
+  },
+  "krl": {
+    "fold_tokens": [
+      1547,
+      1546
+    ],
+    "unit": "sentences"
+  },
+  "mkd": {
+    "fold_tokens": [
+      1172,
+      171
+    ],
+    "unit": "documents and ungrouped sentences"
+  },
+  "pst": {
+    "fold_tokens": [
+      3429,
+      3430
+    ],
+    "unit": "sentences"
+  },
+  "sah": {
+    "fold_tokens": [
+      727,
+      726
+    ],
+    "unit": "sentences"
+  },
+  "sga": {
+    "fold_tokens": [
+      197,
+      196
+    ],
+    "unit": "sentences"
+  },
+  "tat": {
+    "fold_tokens": [
+      1135,
+      1134
+    ],
+    "unit": "sentences"
+  },
+  "tel": {
+    "fold_tokens": [
+      0,
+      0
+    ],
+    "unit": "sentences"
+  },
+  "tgl": {
+    "fold_tokens": [
+      367,
+      367
+    ],
+    "unit": "sentences"
+  },
+  "vep": {
+    "fold_tokens": [
+      650,
+      653
+    ],
+    "unit": "sentences"
+  }
+}

@@ -1,0 +1,6 @@
+# Dictionary and suffix evaluation on UD 2.19
+
+Fit each single-resource dictionary anew from its declared upstream observations. Use the same 172 ISO entries, the official 2.19 revision for available UD inputs and the explicitly pinned Turkmen input where that revision lacks a treebank. Choose train, otherwise dev, otherwise test. Record every selected source file. For external resources use pinned paradigms or the verified lexical input projections. Fit language-aware lookup and suffix rules on the observed (form, lemma) evidence with the 1.0.0 engine, full cascade and fixed zero confidence thresholds. The sign-language ID-gloss dictionary has only identity labels and retains lexical membership alone.
+
+Follow the overlap and bootstrap procedure from the original catalog protocol. Screen all 402 official UD 2.19 test files. Remove every file used as a dictionary input, all overlapping document/sentence IDs, normalized source sentences, and duplicate evaluation sentences within a language. Score copying, the fresh package as built, and that identical new package with the rule stage disabled on the same tokens. Report the paired full-minus-lookup contrast; no training source or model component changes across these arms. Keep the multiple-external-source order contrast in its own denominator, because it also trains on a UD corpus.
+
