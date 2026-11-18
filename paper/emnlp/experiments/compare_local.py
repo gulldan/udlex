@@ -336,7 +336,10 @@ def opennlp(code):
             starts = [sum(parts[:i]) for i in range(len(parts))]
             whole = sum(parts) == len(row)
             answers.append(
-                [row[at] if n == 1 else None for at, n in zip(starts, parts)]
+                [
+                    row[at] if n == 1 else None
+                    for at, n in zip(starts, parts, strict=True)
+                ]
                 if whole
                 else None
             )
@@ -408,7 +411,9 @@ def score(run, test, keep):
                     correct += x == y
                     lost_tokens += x is None
     keep.parent.mkdir(parents=True, exist_ok=True)
-    keep.write_bytes(gzip.compress(json.dumps(kept, ensure_ascii=False).encode(), mtime=0))
+    keep.write_bytes(
+        gzip.compress(json.dumps(kept, ensure_ascii=False).encode(), mtime=0)
+    )
     return {
         "tokens": tokens,
         "correct": correct,
@@ -443,11 +448,21 @@ def main(a):
                 cells[iso] = {"status": "unsupported", "reason": reason}
                 print(engine, iso, reason, flush=True)
                 continue
-            cell = score(run, a.order / iso / "test.jsonl", a.predictions / engine / f"{iso}.json.gz")
+            cell = score(
+                run,
+                a.order / iso / "test.jsonl",
+                a.predictions / engine / f"{iso}.json.gz",
+            )
             if anchor.get(iso, {}).get("tokens", cell["tokens"]) != cell["tokens"]:
                 raise ValueError(f"{engine} was scored on other words for {iso}")
             cells[iso] = {"status": "scored", "model": model, **cell}
-            print(engine, iso, cell, f"{100 * cell['correct'] / cell['tokens']:.2f}", flush=True)
+            print(
+                engine,
+                iso,
+                cell,
+                f"{100 * cell['correct'] / cell['tokens']:.2f}",
+                flush=True,
+            )
         try:
             release = version(package)
         except PackageNotFoundError:
