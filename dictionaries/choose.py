@@ -410,16 +410,34 @@ def prepare_tables(
 ) -> list[dict[str, str]]:
     """Resolve every source with the training split's mark inventory.
 
-    Full tables go to disk for the engine; only ``wanted`` forms stay in memory.
+    Full tables go to disk for the engine, reused while their inputs and mark
+    inventory stay the same; only ``wanted`` forms stay in memory.
     """
     tokens = sum(y is not None for s in train or () for y in s["lemmas"])
     # A small treebank need not show every mark of the language's spelling.
     allowed = marks(train) if train and tokens >= MIN_STRIP_TOKENS else None
+    key = {
+        "marks": [sorted(m) for m in allowed] if allowed else None,
+        "pairs_sha256": None,
+    }
     maps = []
     for source in sources:
+        path, receipt = out / f"{source['id']}.tsv", out / f"{source['id']}.json"
+        key["pairs_sha256"] = source["pairs_sha256"]
+        if receipt.is_file() and read_json(receipt)["key"] == key:
+            source["rows"] = read_json(receipt)["rows"]
+            kept = {}
+            with path.open(encoding="utf-8") as stream:
+                for line in stream:
+                    form, lemma = line.rstrip("\n").split("\t")
+                    if form in wanted:
+                        kept[form] = lemma
+            maps.append(kept)
+            continue
         table = resolve(source["pairs"], allowed)
-        write_table(table, out / f"{source['id']}.tsv")
+        write_table(table, path)
         source["rows"] = len(table)
+        write_json(receipt, {"key": key, "rows": len(table)})
         maps.append({f: table[f] for f in wanted if f in table})
         del table
     return maps
@@ -489,6 +507,9 @@ def select_official(
     if carved:
         train_path, dev_path = fit_inputs(train, root, "fit")
         train, dev = jsonl(train_path), jsonl(dev_path) if dev_path else []
+    # Gate builds learn from train alone and pick their variant on a dev carved
+    # from it, so the dev they are scored on stays unseen.
+    trial_train, trial_dev = fit_inputs(train, root, "trial")
     votes = residual_votes(train)
     maps = prepare_tables(sources, train, root / "tables", set(votes))
     names = [s["id"] for s in sources]
@@ -501,7 +522,7 @@ def select_official(
             (name, tables.get(name) or root / "excluded" / f"{name}.tsv")
             for name in order
         ]
-        build(trial, row, train_path, None, tried, **extra)
+        build(trial, row, trial_train, trial_dev, tried, **extra)
         return predict(trial, dev)
 
     named = {k: [names[j] for j in v] for k, v in policies.items()}
