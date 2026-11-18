@@ -29,7 +29,10 @@ A language whose anchor treebank has train and test splits learns from train.
 Dev, when there is one, chooses the dictionary order, the engine options and the
 rule thresholds, and joins the final refit. Test is read only by `evaluate.py`.
 Dev and test lose every sentence whose document, sentence id or text occurs in
-an earlier split.
+an earlier split. When a treebank has no dev split, a tenth of the training
+documents, chosen by hash, stands in for it and joins the final refit; the
+engine's own fallback holds out unseen forms only and then often prefers
+copying.
 
 The dictionary order follows the study's protocol: the exact best permutation
 and ordered subset of the dictionaries are fitted on training words that the
@@ -43,7 +46,8 @@ removed from dictionary entries before lookup.
 A language with gold lemmas but no training split learns from its whole
 treebank. Its accuracy is a two-fold estimate: the treebank is cut into two
 halves of whole documents, and each half is scored by a build that learned from
-the other. Such packages keep the declared order. Languages without gold lemmas
+the other. Such packages keep the declared order; thresholds and the shipped
+variant come from a dev carved out of their own training half. Languages without gold lemmas
 get a package only when a dictionary covers them.
 
 ## Licenses

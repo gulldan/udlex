@@ -7,8 +7,9 @@ McNemar test at the policy's level and net gain. Options of the engine
 (lemma adapter, compound marker) pass the same gate one at a time. The package
 is then built with dev for its thresholds and refit; test is never read here.
 
-Two-fold languages keep the declared order (no dev to gate on), are scored
-fold by fold, and the package learns from the whole treebank. Languages
+Two-fold languages keep the declared order, are scored fold by fold, and the
+package learns from the whole treebank. Where no dev split exists, a tenth of
+the training documents is carved out as one. Languages
 without gold lemmas get dictionary-only packages.
 """
 
