@@ -124,6 +124,8 @@ python "$study/transfer_summary.py" "$fit/inputs/transfer" "$fit/results/transfe
 
 Для состояния без правил повторите цикл с исполняемым файлом без правил в `results/transfer-no-rules` и передайте `transfer_summary.py` сводку порядка без правил и `--roster "$fit/evidence/order/languages.json"`. Список изменённых ответов строится диагностической сборкой: `prepare_order_native.py --examples 2000000000`, тот же цикл в `results/transfer-diag`, затем `transfer_changes.py "$fit/evidence/transfer" "$fit/results/transfer" "$fit/results/transfer-diag" "$fit/evidence/transfer/changes.json"`. Таблица и числа раздела статьи пересобираются командой `python "$study/render_transfer.py"`, которая заодно сверяет оба состояния правил.
 
+Повтор с нуля выполнен на gpu-server 18 ноября 2026 года в пустых каталогах. Исполняемые файлы пересобраны из закреплённого исходника, внешние корпуса скачаны заново и сошлись с SHA-256. Опись входов порядка получила тот же хеш, парные счётчики порядка и все 167 файлов результатов переноса побайтно совпали с поставляемыми. Пересобранный исполняемый файл имеет другой SHA-256, чем использованный в опубликованных подгонках, потому что сборка зависит от пути. Повторная сборка каталога из 172 словарей в этот прогон не входила.
+
 Для проверки чисел каталога без обучения используйте поставляемые обезличенные счётчики. Главный документ для Overleaf — `udlex-emnlp.tex`.
 
 ~~~sh
@@ -139,6 +141,6 @@ cmp "$evidence/catalog/summary.json" "$fit/replay/summary.json"
 | Анализ ошибок и подготовка подачи | Вручную разметить стратифицированную выборку исправлений и регрессий из списка изменённых ответов, сверить интерпретации, подготовить анонимный пакет и заполнить форму ARR | 2–4 человеко-дня |
 | Библиография внешних корпусов | Сверить по первоисточникам описания MULTEXT-East, ELEXIS-WSD и hr500k, добавить ссылки на ELTE-DH, BanLemma, TOROT, RESTAURE и KazDet | 0,5 человеко-дня |
 
-Перенос на независимые корпуса измерен. Для 38 многословарных языков независимого корпуса с ручными леммами найти не удалось, они перечислены в описи по языкам. [Требования ARR](https://aclrollingreview.org/cfp) · [Исходная редакция шаблона ACL](https://github.com/acl-org/acl-style-files/tree/d5adc823ff0f80f98c80405ca0ab66c68e684409)
+Перенос на независимые корпуса измерен для 49 из 87 многословарных языков. У 34 языков независимого корпуса с ручными леммами нет: у пяти из них есть только корпус с автоматическими леммами или коллекция, общая с якорем. Ещё четыре языка не дотягивают до порога в 1 000 слов. Все они перечислены в описи по языкам. [Требования ARR](https://aclrollingreview.org/cfp) · [Исходная редакция шаблона ACL](https://github.com/acl-org/acl-style-files/tree/d5adc823ff0f80f98c80405ca0ab66c68e684409)
 
 Для заполнения формы ответственного исследования авторы могут использовать после сверки с финальной версией. “OpenAI Codex assisted with drafting and editing, implementing the evaluation and data preparation scripts, running the paired evaluations and preparing tables from the resulting counts.” [Форма ARR](https://aclrollingreview.org/authorchecklist)
