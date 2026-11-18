@@ -1,5 +1,8 @@
 """Typeset the transfer test from its ledgers and check that suffix rules leave the contrast unchanged."""
 
+import gzip
+import json
+
 from verify_snapshot import EVIDENCE, read
 
 ROWS = [
@@ -99,6 +102,23 @@ def main():
         )
     corpora = read(EVIDENCE / "ud219/transfer/corpora.json")
     team = s["shared_contributors"]
+    # The group without a shared contributor, with and without its two largest effects.
+    packed = (EVIDENCE / "ud219/transfer/pairs.json.gz").read_bytes()
+    rest = {}
+    for iso, runs in json.loads(gzip.decompress(packed))["gold"].items():
+        counts = [
+            r["test"]["counts"]
+            for r in runs
+            if not corpora[r["corpus"]]["shared_contributors"]
+        ]
+        words = sum(c[0]["tokens"] for c in counts)
+        if words >= 1000:
+            gain = sum(c[1]["correct"] - c[0]["correct"] for c in counts)
+            rest[iso] = 100 * gain / words
+    other = team["False"]["arms"]["learned"]["macro_delta_pp"]
+    if f"{sum(rest.values()) / len(rest):+.3f}" != f"{other:+.3f}":
+        raise ValueError("The contributor split cannot be rebuilt from the pairs")
+    del rest["hun"], rest["tgl"]
     eee = changes["slv"]["loss"]["top"][0]
     if eee["form"] != "eee":
         raise ValueError(
@@ -198,7 +218,8 @@ def main():
         trLooMacro=f"{loo['primary']['macro_pp'][0]:+.3f}",
         trLooOffMacroLo=f"{loo['official_fit']['macro_pp'][0]:+.3f}",
         trTeamMacro=f"{team['True']['arms']['learned']['macro_delta_pp']:+.3f}",
-        trOtherMacro=f"{team['False']['arms']['learned']['macro_delta_pp']:+.3f}",
+        trOtherMacro=f"{other:+.3f}",
+        trOtherRestMacro=f"{sum(rest.values()) / len(rest):+.3f}",
     )
     text.update({key: f"{v:,}" for key, v in nums.items()})
     (root / "transfer-metrics.tex").write_text(
