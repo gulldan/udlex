@@ -52,13 +52,33 @@ fn key_hash(key: &[u8], seed: u64) -> u64 {
         h = fold(h ^ u64::from_le_bytes(*chunk), K2);
     }
     if !rest.is_empty() {
-        let mut buf = [0_u8; 8];
-        if let Some(head) = buf.get_mut(..rest.len()) {
-            head.copy_from_slice(rest);
-        }
-        h = fold(h ^ u64::from_le_bytes(buf), K1);
+        h = fold(h ^ tail_word(rest), K1);
     }
     h
+}
+
+/// The last 1–7 key bytes as a zero-padded little-endian word, read with
+/// overlapping loads: a variable-length copy compiles to a `memcpy` call.
+#[expect(clippy::inline_always, reason = "part of the inlined hybrid read")]
+#[inline(always)]
+#[allow(
+    clippy::arithmetic_side_effects,
+    clippy::cast_possible_truncation,
+    reason = "the tail is shorter than eight bytes, so every shift stays below 64"
+)]
+fn tail_word(rest: &[u8]) -> u64 {
+    let n = rest.len() as u32;
+    if let (Some(lo), Some(hi)) = (rest.first_chunk::<4>(), rest.last_chunk::<4>()) {
+        // Overlapping bytes are equal in both reads, so OR keeps them intact.
+        return u64::from(u32::from_le_bytes(*lo))
+            | (u64::from(u32::from_le_bytes(*hi)) << (8 * (n - 4)));
+    }
+    match (rest.first(), rest.get(rest.len() / 2), rest.last()) {
+        (Some(&a), Some(&b), Some(&c)) => {
+            u64::from(a) | (u64::from(b) << (8 * (n / 2))) | (u64::from(c) << (8 * (n - 1)))
+        }
+        _ => 0,
+    }
 }
 
 /// Maps a hash onto `0..n` without a division: the top 64 bits of `h × n`
@@ -577,6 +597,19 @@ mod tests {
             assert_eq!(text, id.to_string());
         }
         assert!(table.get("ключ-50000-слово".as_bytes()).is_none());
+    }
+
+    #[test]
+    fn tail_word_equals_the_zero_padded_copy() {
+        // The hash is part of the on-disk format: the new read must give the old value.
+        let bytes: Vec<u8> = (0..=255_u8).rev().chain(0..=255).collect();
+        for len in 1..8 {
+            for window in bytes.windows(len) {
+                let mut padded = [0_u8; 8];
+                padded[..len].copy_from_slice(window);
+                assert_eq!(tail_word(window), u64::from_le_bytes(padded), "{window:?}");
+            }
+        }
     }
 
     #[test]
