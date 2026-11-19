@@ -313,6 +313,36 @@ pub(super) fn compact_inline_external(directory: &Path, strings: &mut StringTabl
     Ok(true)
 }
 
+/// Bytes of `strings.txt` and `strings.idx` that only the external table keeps
+/// alive: what [`compact_inline_external`] frees when that table goes inline.
+pub(super) fn external_only_string_bytes(directory: &Path, strings: &StringTable) -> Result<usize> {
+    let count = strings.len();
+    let mut shared = vec![false; count];
+    for table in LookupTableKind::ALL
+        .into_iter()
+        .filter(|table| table.retains_string_id())
+    {
+        let name = table.name();
+        mark_ids(
+            &directory.join(format!("{name}.tsv")),
+            count,
+            false,
+            &mut shared,
+        )?;
+    }
+    mark_ids(&directory.join("rules.tsv"), count, true, &mut shared)?;
+    let mut external = vec![false; count];
+    mark_ids(&directory.join("external.tsv"), count, false, &mut external)?;
+    Ok(external
+        .iter()
+        .zip(&shared)
+        .enumerate()
+        .filter(|&(_, (&used, &kept))| used && !kept)
+        // The text, its newline and one u32 offset in the index.
+        .map(|(index, _)| strings.get(index).map_or(0, str::len).saturating_add(5))
+        .sum())
+}
+
 fn mark_ids(path: &Path, string_count: usize, packed_rule: bool, live: &mut [bool]) -> Result<()> {
     for_each_numeric_row(path, |line, _key, value| {
         let id = if packed_rule {
@@ -598,6 +628,8 @@ mod tests {
         .unwrap();
 
         let mut strings = StringTable::normalise(&strings_path, &strings_path).unwrap();
+        // Only "dead-b" (6 bytes, newline, u32 offset) is external's alone.
+        assert_eq!(external_only_string_bytes(directory, &strings).unwrap(), 11);
         assert!(compact_inline_external(directory, &mut strings).unwrap());
         assert_eq!(
             read_to_string(&strings_path).unwrap(),

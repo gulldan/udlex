@@ -12,7 +12,8 @@ use super::super::{
     fst_error,
 };
 use super::source::{
-    StringTable, read_rows, validate_entity_key, validate_string_id, visit_sorted_rows,
+    StringTable, external_only_string_bytes, read_rows, validate_entity_key, validate_string_id,
+    visit_sorted_rows,
 };
 use super::writer::remove;
 use crate::format::LookupTableKind;
@@ -87,6 +88,15 @@ pub(super) fn prepare_table(
     }
     let name = table.name();
     let source_path = directory.join(format!("{name}.tsv"));
+    // An inline external table lets compaction drop the strings only it uses;
+    // every other codec keeps them, so they are charged for them. A source the
+    // scan cannot read credits nothing: compilation reports it later, in the
+    // documented error order.
+    let pool = if table == LookupTableKind::External {
+        external_only_string_bytes(directory, strings).unwrap_or(0)
+    } else {
+        0
+    };
     let mut automata = AutomataBuilder::new(directory, name)?;
     let mut da_compatible = true;
     let streamed = visit_sorted_rows(
@@ -104,7 +114,7 @@ pub(super) fn prepare_table(
         // sorted before any candidate can be compared.
         drop(automata);
         let rows = read_rows(&source_path)?;
-        return prepare_materialised(directory, table, strings, traffic, &rows);
+        return prepare_materialised(directory, table, strings, traffic, pool, &rows);
     };
     if entries == 0 {
         return Ok(PreparedTable {
@@ -113,8 +123,8 @@ pub(super) fn prepare_table(
         });
     }
 
-    let automaton = automata.finish(directory, name)?;
-    if da_compatible && da_cannot_win(entries, automaton.1.len, traffic) {
+    let automaton = automata.finish(directory, name, pool)?;
+    if da_compatible && da_cannot_win(entries, charged(&automaton, pool), pool, traffic) {
         return Ok(PreparedTable {
             entries,
             selected: Some(automaton),
@@ -123,7 +133,25 @@ pub(super) fn prepare_table(
 
     // yada builds from a slice, so a double array still in play needs the rows.
     let rows = read_rows(&source_path)?;
-    finish_with_da(directory, name, strings, traffic, &rows, Some(automaton))
+    finish_with_da(
+        directory,
+        name,
+        strings,
+        traffic,
+        pool,
+        &rows,
+        Some(automaton),
+    )
+}
+
+/// Bytes a candidate costs with the strings it keeps alive: an inline
+/// automaton carries its lemmas, the other codecs need the pool.
+fn charged((codec, artifact): &(Codec, Artifact), pool: usize) -> usize {
+    if *codec == Codec::Inline {
+        artifact.len
+    } else {
+        artifact.len.saturating_add(pool)
+    }
 }
 
 /// The hot tables take the hybrid codec outright; no cost model weighs it.
@@ -166,6 +194,7 @@ fn prepare_materialised(
     table: LookupTableKind,
     strings: &StringTable,
     traffic: f64,
+    pool: usize,
     rows: &[(String, u64)],
 ) -> Result<PreparedTable> {
     let name = table.name();
@@ -182,7 +211,7 @@ fn prepare_materialised(
             selected: None,
         });
     }
-    finish_with_da(directory, table.name(), strings, traffic, rows, None)
+    finish_with_da(directory, table.name(), strings, traffic, pool, rows, None)
 }
 
 fn finish_with_da(
@@ -190,19 +219,23 @@ fn finish_with_da(
     name: &str,
     strings: &StringTable,
     traffic: f64,
+    pool: usize,
     rows: &[(String, u64)],
     automaton: Option<(Codec, Artifact)>,
 ) -> Result<PreparedTable> {
     let entries = rows.len();
     let automaton = match automaton {
         Some(candidate) => candidate,
-        None => build_automata(directory, name, strings, rows)?,
+        None => build_automata(directory, name, strings, rows, pool)?,
     };
     let da_path = Codec::Da.file(directory, name);
     let da_bytes = build_da(rows, &da_path)?;
     let da = Artifact::from_bytes(&da_path, &da_bytes)?;
-    let affordable =
-        da.len.saturating_sub(automaton.1.len) as f64 <= AUTOMATON_BYTES_PER_PROBE_SHARE * traffic;
+    let affordable = da
+        .len
+        .saturating_add(pool)
+        .saturating_sub(charged(&automaton, pool)) as f64
+        <= AUTOMATON_BYTES_PER_PROBE_SHARE * traffic;
     let selected = if affordable {
         (Codec::Da, da)
     } else {
@@ -224,8 +257,11 @@ const fn minimum_da_bytes(entries: usize) -> usize {
         .saturating_mul(DA_UNIT_BYTES)
 }
 
-fn da_cannot_win(entries: usize, automaton: usize, traffic: f64) -> bool {
-    minimum_da_bytes(entries).saturating_sub(automaton) as f64
+/// `automaton` is the charged size; a double array always keeps the pool.
+fn da_cannot_win(entries: usize, automaton: usize, pool: usize, traffic: f64) -> bool {
+    minimum_da_bytes(entries)
+        .saturating_add(pool)
+        .saturating_sub(automaton) as f64
         > AUTOMATON_BYTES_PER_PROBE_SHARE * traffic
 }
 
@@ -252,12 +288,13 @@ fn build_automata(
     name: &str,
     strings: &StringTable,
     rows: &[(String, u64)],
+    pool: usize,
 ) -> Result<(Codec, Artifact)> {
     let mut builder = AutomataBuilder::new(directory, name)?;
     for (form, id) in rows {
         builder.insert(directory, name, form, *id, strings)?;
     }
-    builder.finish(directory, name)
+    builder.finish(directory, name, pool)
 }
 
 struct AutomataBuilder {
@@ -307,7 +344,8 @@ impl AutomataBuilder {
             .map_err(|source| fst_error(&Codec::Inline.file(directory, name), source))
     }
 
-    fn finish(self, directory: &Path, name: &str) -> Result<(Codec, Artifact)> {
+    /// `pool` is what the map's string IDs keep alive and inlining would free.
+    fn finish(self, directory: &Path, name: &str, pool: usize) -> Result<(Codec, Artifact)> {
         let map_path = Codec::Map.file(directory, name);
         let inline_path = Codec::Inline.file(directory, name);
         let map = Artifact::from_file(
@@ -322,7 +360,7 @@ impl AutomataBuilder {
                 .into_inner()
                 .map_err(|source| fst_error(&inline_path, source))?,
         )?;
-        if inline.len < map.len {
+        if inline.len < map.len.saturating_add(pool) {
             Ok((Codec::Inline, inline))
         } else {
             Ok((Codec::Map, map))
@@ -446,8 +484,11 @@ mod tests {
 
     #[test]
     fn lower_bound_never_skips_a_candidate_that_could_be_affordable() {
-        assert!(!da_cannot_win(10, 100, 1.0));
-        assert!(da_cannot_win(10_000_000, 1_000_000, 0.0));
+        assert!(!da_cannot_win(10, 100, 0, 1.0));
+        assert!(da_cannot_win(10_000_000, 1_000_000, 0, 0.0));
+        // The pool a double array keeps alive counts against it.
+        assert!(!da_cannot_win(10, 10_000, 0, 0.0));
+        assert!(da_cannot_win(10, 10_000, 20_000, 0.0));
         assert!(minimum_da_bytes(1) >= 2 * DA_UNIT_BYTES);
     }
 
