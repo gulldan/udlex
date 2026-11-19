@@ -31,6 +31,33 @@
   "min_net_gain": 5,
   "tokens_per_gain": 10000
  },
+ "mirror": {
+  "base": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/",
+  "sources": [
+   "bin",
+   "saldom",
+   "wiktionary-cs",
+   "wiktionary-de",
+   "wiktionary-el",
+   "wiktionary-en",
+   "wiktionary-es",
+   "wiktionary-fr",
+   "wiktionary-id",
+   "wiktionary-it",
+   "wiktionary-ja",
+   "wiktionary-ko",
+   "wiktionary-ku",
+   "wiktionary-ms",
+   "wiktionary-nl",
+   "wiktionary-pl",
+   "wiktionary-pt",
+   "wiktionary-ru",
+   "wiktionary-th",
+   "wiktionary-tr",
+   "wiktionary-vi",
+   "wiktionary-zh"
+  ]
+ },
  "noncommercial_review": [
   "frm",
   "hbo",

@@ -52,9 +52,24 @@ get a package only when a dictionary covers them.
 
 ## Licenses
 
-A package whose treebank, or one of whose dictionaries, is non-commercial is
-released under CC BY-NC-SA 4.0 and named `udlex-dict-<iso>-nc`. Otherwise the
-package takes the strictest license of its parts. A treebank whose README and
+Every table keeps the license of its source. The corpus tables (`exact`,
+`lower`, rules, `entities`) are learned from the treebank alone and carry its
+license; every row of the `external` table comes from exactly one dictionary
+and carries that dictionary's license. A package with a non-commercial part is
+named `udlex-dict-<iso>-nc` and released as a whole under CC BY-NC-SA 4.0;
+otherwise the package takes the strictest license of its parts.
+
+`SOURCES.json` (also the package's entry in `DICTIONARIES.json`) lists under
+`tables` which generation files hold which part, its source, license and row
+count, and `part_licenses` lists the distinct licenses. The generation format
+is unchanged, so the parts are separable by row, not by file: `external` merges
+all dictionaries, each row taken from the first dictionary in the shipped
+order that holds the form, minus the forms the corpus tables answer; rows whose
+shipped lemma differs from the dictionary's (lemma adapter, compound marker,
+script guard) are counted as `changed_lemmas`. `strings.txt`/`strings.idx` are
+one string pool shared by all tables and `meta.json` holds counts and the dev
+selection evidence; both are listed as the `shared` part under the package
+license. The NOTICE has one section per part. A treebank whose README and
 LICENSE disagree, and the treebanks listed in `noncommercial_review`, count as
 non-commercial and carry `requires_license_review`. Sources with copyleft or
 unclear licenses, and the sources named in `excluded_sources`, are left out;
@@ -69,8 +84,10 @@ evidence and the recipe.
 ## Pins
 
 Some upstream files are not versioned (kaikki.org extracts, BÍN, SALDO
-morphology). They are pinned by SHA-256, so a rebuild fails
-loudly once upstream changes; `fetch.py --pin` records new digests.
+morphology). They are pinned by SHA-256 and also carry `mirror` URLs: release
+assets of the tag named in `policy.json`, laid out by `mirror.py` (files above
+GitHub's 2 GiB asset limit are split into parts). `fetch.py` falls back to the
+mirror when upstream fails or has changed; `fetch.py --pin` records new digests.
 
 ## Catalog of this build
 

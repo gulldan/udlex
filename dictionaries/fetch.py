@@ -2,7 +2,8 @@
 
 ``--pin`` downloads entries that have no SHA-256 yet and writes the digest,
 size and upstream ``Last-Modified`` back into ``sources.json``; a normal run
-refuses any byte that differs from the pin.
+refuses any byte that differs from the pin. An entry with ``mirror`` parts
+falls back to them, concatenated, when its upstream URL fails or has changed.
 """
 
 from __future__ import annotations
@@ -45,6 +46,29 @@ def download(url: str, target: Path) -> str | None:
     return None
 
 
+def retrieve(item: dict[str, Any], target: Path) -> str | None:
+    """Upstream first; the pinned mirror when upstream is gone or has changed."""
+    try:
+        modified = download(item["url"], target)
+        if not item.get("sha256") or sha256(target) == item["sha256"]:
+            return modified
+        print(f"upstream changed: {item['url']}", file=sys.stderr, flush=True)
+    except OSError:
+        if not item.get("mirror"):
+            raise
+        print(f"upstream failed: {item['url']}", file=sys.stderr, flush=True)
+    if not item.get("mirror"):
+        return None
+    with target.open("wb") as out:
+        for n, url in enumerate(item["mirror"]):
+            part = target.with_name(f"{target.name}.part{n}")
+            download(url, part)
+            with part.open("rb") as stream:
+                shutil.copyfileobj(stream, out, 1 << 20)
+            part.unlink()
+    return None
+
+
 def fetch(cache: Path, *, pin: bool, only: set[str] | None) -> None:
     """Fill the cache; with ``pin`` record digests of unpinned entries."""
     config = read_json(SOURCES)
@@ -61,7 +85,8 @@ def fetch(cache: Path, *, pin: bool, only: set[str] | None) -> None:
                 msg = f"{source['id']}: unpinned input {item['url']}"
                 raise ValueError(msg)
             pending = cache / "pending" / Path(item["url"]).name
-            modified = download(item["url"], pending)
+            pending.parent.mkdir(parents=True, exist_ok=True)
+            modified = retrieve(item, pending)
             found = sha256(pending)
             if digest and found != digest:
                 msg = f"{item['url']}: SHA-256 {found}, pinned {digest}"

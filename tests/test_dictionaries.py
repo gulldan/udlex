@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import gzip
+import hashlib
 import itertools
 import random
 from collections import Counter
@@ -13,7 +14,9 @@ import pytest
 if TYPE_CHECKING:
     from pathlib import Path
 
+udlex = pytest.importorskip("udlex")
 choose = pytest.importorskip("choose")
+fetch = pytest.importorskip("fetch")
 extract = pytest.importorskip("extract")
 package = pytest.importorskip("package")
 splits = pytest.importorskip("splits")
@@ -164,3 +167,41 @@ def test_carved_dev_is_a_disjoint_tenth() -> None:
     assert 0.09 <= len(dev) / len(sentences) <= 0.12
     assert choose.carve(sentences) == (train, dev)
     assert choose.carve(sentences[:10]) == (sentences[:10], [])
+
+
+def test_fetch_falls_back_to_mirror_parts(tmp_path: Path) -> None:
+    (tmp_path / "upstream").write_bytes(b"changed upstream")
+    (tmp_path / "p1").write_bytes(b"pinned ")
+    (tmp_path / "p2").write_bytes(b"bytes")
+    item = {
+        "url": (tmp_path / "upstream").as_uri(),
+        "sha256": hashlib.sha256(b"pinned bytes").hexdigest(),
+        "mirror": [(tmp_path / "p1").as_uri(), (tmp_path / "p2").as_uri()],
+    }
+    fetch.retrieve(item, tmp_path / "got")
+    assert (tmp_path / "got").read_bytes() == b"pinned bytes"
+
+
+def test_external_rows_are_attributed_to_their_dictionary(tmp_path: Path) -> None:
+    train = tmp_path / "train.jsonl"
+    train.write_text('{"tokens": ["dogs"], "lemmas": ["dog"]}\n', encoding="utf-8")
+    tables = tmp_path / "tables"
+    tables.mkdir()
+    (tables / "a.tsv").write_text("cats\tcat\nmice\tmouse\n", encoding="utf-8")
+    (tables / "b.tsv").write_text("dogs\tdoggy\ngeese\tgoose\nmice\tmice\n")
+    lexicon = tmp_path / "bundle" / "eng"
+    lexicon.parent.mkdir()
+    udlex.build_lexicon(
+        str(lexicon),
+        train=str(train),
+        dev=None,
+        test=None,
+        paradigms=[(n, str(tables / f"{n}.tsv"), False, True) for n in ("a", "b")],
+        name="eng",
+        language="English",
+        iso639_3="eng",
+    )
+    found = package.external_provenance(lexicon, tables, ["a", "b"])
+    assert found["unattributed"] == 0
+    assert found["sources"]["a"] == {"rows": 2, "changed": 0}
+    assert found["sources"]["b"] == {"rows": 1, "changed": 0}
