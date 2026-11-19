@@ -501,11 +501,16 @@ def package_one(iso: str, row: dict, work: Path, out: Path, commit: str) -> dict
                     "attribution": sources[m]["attribution"],
                     "home": sources[m]["home"],
                     "inputs": [
-                        {k: f[k] for k in ("url", "sha256", "mirror") if k in f}
+                        {k: f[k] for k in ("url", "sha256") if k in f}
                         for f in sources[m]["files"]
                         if iso in f.get("languages", [iso])
                     ],
                 }
+                | (
+                    {"pairs_mirror": sources[m]["mirror"]}
+                    if sources[m].get("mirror")
+                    else {}
+                )
                 for m in s["members"]
             ],
             "table_sha256": s["pairs_sha256"],
