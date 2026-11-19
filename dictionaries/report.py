@@ -92,7 +92,8 @@ def main() -> None:
         corpus = entry["corpus"]
         treebank = f"{corpus['treebank']} ({corpus['license']})" if corpus else "—"
         sources = (
-            ", ".join(f"{s['id']} ({s['license']})" for s in entry["sources"]) or "—"
+            ", ".join(f"{s['id']} ({s['license']})" for s in entry["dictionaries"])
+            or "—"
         )
         mode = {"test": "test", "two-fold": "2-fold"}.get(entry["evaluation"], "none")
         if score:

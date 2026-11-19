@@ -152,7 +152,7 @@ def table_parts(
         name = path.rsplit("/", 1)[-1]
         if "/.generations/" in path:
             files.setdefault(name.split(".", 1)[0], []).append(name)
-    corpus, sources = entry["corpus"], entry["sources"]
+    corpus, sources = entry["corpus"], entry["dictionaries"]
     learned = [k for k in ("exact", "lower", "rules", "entities") if k in files]
     parts = []
     if corpus:
@@ -209,6 +209,51 @@ def table_parts(
     return parts
 
 
+def source_list(entry: dict, treebank_readme: bytes) -> list[dict]:
+    """Every source as spaCy's ``meta.json`` lists them, plus the files it fills."""
+    parts = {(p["part"], p["source"]): p for p in entry["tables"]}
+    listed = []
+    corpus = entry["corpus"]
+    if corpus:
+        found = re.search(rb"^Contributors:\s*(.+)$", treebank_readme, re.MULTILINE)
+        part = parts[("corpus", corpus["treebank"])]
+        listed.append(
+            {
+                "name": f"{corpus['treebank']} (Universal Dependencies 2.19)",
+                "url": f"https://github.com/UniversalDependencies/{corpus['treebank']}",
+                "version": "r2.19",
+                "author": found[1].decode().strip() if found else "UD contributors",
+                "license": part["license"],
+                "part": "corpus",
+                "tables": part["files"],
+                "rows": part["rows"],
+            }
+        )
+    for group in entry["dictionaries"]:
+        part = (
+            parts.get(("external", group["id"]))
+            or parts[("training dictionary", group["id"])]
+        )
+        listed += [
+            {
+                "name": member["id"],
+                "url": member["home"],
+                "version": member["revision"],
+                "author": member["attribution"],
+                "license": group["license"],
+                "part": part["part"],
+                "tables": part["files"],
+            }
+            | (
+                {"merged_as": group["id"], "merged_rows": part["rows"]}
+                if len(group["members"]) > 1
+                else {"rows": part["rows"]}
+            )
+            for member in group["members"]
+        ]
+    return listed
+
+
 def notice(entry: dict, conditions: str | None) -> bytes:
     """Attribution for the treebank base and every dictionary, one section per part."""
     lines = [
@@ -217,7 +262,7 @@ def notice(entry: dict, conditions: str | None) -> bytes:
         "",
     ]
     corpus = entry["corpus"]
-    members = {m["id"]: (s, m) for s in entry["sources"] for m in s["members"]}
+    members = {m["id"]: (s, m) for s in entry["dictionaries"] for m in s["members"]}
     for part in entry["tables"]:
         lines.append(f"== {part['part']}: {', '.join(part['files']) or '(none)'} ==")
         lines.append(
@@ -252,7 +297,7 @@ def notice(entry: dict, conditions: str | None) -> bytes:
                 lines.append(
                     f"{part['changed_lemmas']} of them answer differently: {why}."
                 )
-            source = next(s for s in entry["sources"] if s["id"] == part["source"])
+            source = next(s for s in entry["dictionaries"] if s["id"] == part["source"])
             for member in source["members"]:
                 _, info = members[member["id"]]
                 lines += [
@@ -486,7 +531,7 @@ def package_one(iso: str, row: dict, work: Path, out: Path, commit: str) -> dict
         "evaluation": {"official": "test", "twofold": "two-fold", "no-lemmas": None}[
             row["mode"]
         ],
-        "sources": source_entries,
+        "dictionaries": source_entries,
         "excluded_sources": [
             {k: s[k] for k in ("id", "license", "reason")}
             for s in decision["excluded"] + unused
@@ -520,6 +565,7 @@ def package_one(iso: str, row: dict, work: Path, out: Path, commit: str) -> dict
         raise ValueError(msg)
     entry["tables"] = table_parts(entry, runtime, tables)
     entry["part_licenses"] = sorted({p["license"] for p in entry["tables"]})
+    entry["sources"] = source_list(entry, docs.get("TREEBANK-README", b""))
     docs["NOTICE"] = notice(entry, conditions)
     for member in (m for s in used for m in s["members"]):
         # BSD and Apache terms travel with the data: upstream notices, verbatim.

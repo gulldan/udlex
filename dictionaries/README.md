@@ -52,6 +52,10 @@ get a package only when a dictionary covers them.
 
 ## Licenses
 
+The build code is MIT, like the rest of udlex. Each dictionary package has its
+own license, which follows from the sources listed in its `NOTICE` and in the
+`sources` of its metadata; packages named `-nc` are for non-commercial use only.
+
 Every table keeps the license of its source. The corpus tables (`exact`,
 `lower`, rules, `entities`) are learned from the treebank alone and carry its
 license; every row of the `external` table comes from exactly one dictionary
@@ -59,9 +63,12 @@ and carries that dictionary's license. A package with a non-commercial part is
 named `udlex-dict-<iso>-nc` and released as a whole under CC BY-NC-SA 4.0;
 otherwise the package takes the strictest license of its parts.
 
-`SOURCES.json` (also the package's entry in `DICTIONARIES.json`) lists under
-`tables` which generation files hold which part, its source, license and row
-count, and `part_licenses` lists the distinct licenses. The generation format
+Like spaCy's `meta.json`, `SOURCES.json` (also the package's entry in
+`DICTIONARIES.json`) lists `sources` with name, URL, version, author and SPDX
+license, and for each the generation files it fills; `tables` groups the files
+by part, `part_licenses` lists the distinct licenses, and `license`, the one
+declared in the wheel's `License-Expression`, is CC-BY-NC-SA-4.0 for `-nc`
+packages and the strictest part license otherwise. The generation format
 is unchanged, so the parts are separable by row, not by file: `external` merges
 all dictionaries, each row taken from the first dictionary in the shipped
 order that holds the form, minus the forms the corpus tables answer; rows whose
