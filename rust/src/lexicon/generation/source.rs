@@ -4,6 +4,7 @@ use std::fs::{File, Metadata};
 use std::io::{BufRead as _, BufReader, BufWriter, Read as _, Write as _};
 use std::path::Path;
 
+use super::super::table::SPLIT_BYTES;
 use super::super::{Error, Result, line_offsets};
 use super::writer::write_file;
 use crate::format::LookupTableKind;
@@ -99,23 +100,14 @@ impl StringTable {
         Ok(())
     }
 
-    /// Keeps the selected IDs in original order and returns old-to-new IDs.
-    fn retain(&mut self, live: &[bool], path: &Path) -> Result<Vec<u32>> {
-        if live.len() != self.len() {
-            return Err(Error::Invalid {
-                path: path.to_owned(),
-                message: "string liveness map does not match strings.txt".to_owned(),
-            });
-        }
-        let mut remap = vec![u32::MAX; live.len()];
+    /// Keeps the strings `order` names, in that order; returns old ID → new ID,
+    /// `u32::MAX` for a dropped string.
+    fn keep_in_order(&mut self, order: &[usize], path: &Path) -> Result<Vec<u32>> {
+        let mut remap = vec![u32::MAX; self.len()];
         let mut blob = String::new();
-        let mut offsets =
-            Vec::with_capacity(live.iter().filter(|&&keep| keep).count().saturating_add(1));
+        let mut offsets = Vec::with_capacity(order.len().saturating_add(1));
         offsets.push(0);
-        for (old, &keep) in live.iter().enumerate() {
-            if !keep {
-                continue;
-            }
+        for &old in order {
             let new = u32::try_from(offsets.len().saturating_sub(1)).map_err(|_| {
                 Error::StringsTooLarge {
                     path: path.to_owned(),
@@ -277,70 +269,136 @@ fn reject_duplicate_rows<T>(path: &Path, rows: &[(String, T)]) -> Result<()> {
     Ok(())
 }
 
-/// Removes strings used only by an external inline table and remaps every
-/// source whose compiled representation still stores an ID.
-pub(super) fn compact_inline_external(directory: &Path, strings: &mut StringTable) -> Result<bool> {
-    let old_count = strings.len();
-    let mut live = vec![false; old_count];
-    for table in LookupTableKind::ALL
-        .into_iter()
-        .filter(|table| table.retains_string_id())
-    {
-        let name = table.name();
-        mark_ids(
-            &directory.join(format!("{name}.tsv")),
-            old_count,
-            false,
-            &mut live,
-        )?;
-    }
-    mark_ids(&directory.join("rules.tsv"), old_count, true, &mut live)?;
-    if live.iter().all(|&keep| keep) {
-        return Ok(false);
-    }
+/// How [`apply_compaction`] reorders `strings.txt`: old IDs in their new order.
+pub(super) struct Compaction(Vec<usize>);
 
+/// Plans the pool for compilation without writing anything: first the strings
+/// a compiled table or rule stores an ID for, then those only long `hybrid`
+/// keys reference (their records carry the lemma, so `prune` cuts this tail
+/// off), dropping the rest. External IDs count only while its codec stores
+/// IDs. `None` when the pool is already in that order.
+pub(super) fn plan_compaction(
+    directory: &Path,
+    strings: &StringTable,
+    external_ids: bool,
+) -> Result<Option<Compaction>> {
+    let count = strings.len();
+    let (stored, long) = string_liveness(directory, count, external_ids)?;
+    let tail = long
+        .iter()
+        .zip(&stored)
+        .map(|(&long, &stored)| long && !stored);
+    let order: Vec<usize> = stored
+        .iter()
+        .enumerate()
+        .filter_map(|(id, &kept)| kept.then_some(id))
+        .chain(tail.enumerate().filter_map(|(id, kept)| kept.then_some(id)))
+        .collect();
+    let unchanged = order.len() == count && order.iter().enumerate().all(|(new, &old)| new == old);
+    Ok((!unchanged).then_some(Compaction(order)))
+}
+
+/// Rewrites `strings.txt` and every source that names a string in the planned
+/// order. External sources keep their IDs when `external_ids` is false: an
+/// inline codec embeds the lemma and never reads them.
+pub(super) fn apply_compaction(
+    directory: &Path,
+    strings: &mut StringTable,
+    Compaction(order): &Compaction,
+    external_ids: bool,
+) -> Result<()> {
     let strings_path = directory.join("strings.txt");
-    let remap = strings.retain(&live, &strings_path)?;
+    let remap = strings.keep_in_order(order, &strings_path)?;
     for table in LookupTableKind::ALL
         .into_iter()
-        .filter(|table| table.retains_string_id())
+        .filter(|table| table.retains_string_id() || external_ids)
     {
         let name = table.name();
         rewrite_ids(&directory.join(format!("{name}.tsv")), &remap, false)?;
     }
     rewrite_ids(&directory.join("rules.tsv"), &remap, true)?;
-    write_file(&strings_path, strings.blob.as_bytes())?;
-    Ok(true)
+    write_file(&strings_path, strings.blob.as_bytes())
 }
 
 /// Bytes of `strings.txt` and `strings.idx` that only the external table keeps
-/// alive: what [`compact_inline_external`] frees when that table goes inline.
+/// in a pruned bundle: what an inline external codec frees.
 pub(super) fn external_only_string_bytes(directory: &Path, strings: &StringTable) -> Result<usize> {
     let count = strings.len();
-    let mut shared = vec![false; count];
-    for table in LookupTableKind::ALL
-        .into_iter()
-        .filter(|table| table.retains_string_id())
-    {
-        let name = table.name();
-        mark_ids(
-            &directory.join(format!("{name}.tsv")),
-            count,
-            false,
-            &mut shared,
-        )?;
-    }
-    mark_ids(&directory.join("rules.tsv"), count, true, &mut shared)?;
+    let (stored, _) = string_liveness(directory, count, false)?;
     let mut external = vec![false; count];
     mark_ids(&directory.join("external.tsv"), count, false, &mut external)?;
     Ok(external
         .iter()
-        .zip(&shared)
+        .zip(&stored)
         .enumerate()
         .filter(|&(_, (&used, &kept))| used && !kept)
         // The text, its newline and one u32 offset in the index.
         .map(|(index, _)| strings.get(index).map_or(0, str::len).saturating_add(5))
         .sum())
+}
+
+/// Number of leading strings a pruned bundle keeps: up to the last one a
+/// compiled table or rule stores an ID for.
+pub(super) fn stored_string_count(
+    directory: &Path,
+    count: usize,
+    external_ids: bool,
+) -> Result<usize> {
+    let (stored, _) = string_liveness(directory, count, external_ids)?;
+    Ok(stored
+        .iter()
+        .rposition(|&kept| kept)
+        .map_or(0, |last| last.saturating_add(1)))
+}
+
+/// Strings a compiled table or rule stores an ID for, and strings only long
+/// `hybrid` keys reference. External is read first, as its table compiles first.
+fn string_liveness(
+    directory: &Path,
+    count: usize,
+    external_ids: bool,
+) -> Result<(Vec<bool>, Vec<bool>)> {
+    let mut stored = vec![false; count];
+    let mut long = vec![false; count];
+    if external_ids {
+        mark_ids(&directory.join("external.tsv"), count, false, &mut stored)?;
+    }
+    for table in LookupTableKind::ALL
+        .into_iter()
+        .filter(|table| table.retains_string_id())
+    {
+        let path = directory.join(format!("{}.tsv", table.name()));
+        if table.is_cold() {
+            mark_ids(&path, count, false, &mut stored)?;
+            continue;
+        }
+        // The hybrid splits on the canonical form's length, as `read_rows` gives it.
+        for_each_numeric_row(&path, |line, key, value| {
+            let index = checked_id(&path, line, value, count)?;
+            let side = if crate::normalization::nfc(key).len() <= SPLIT_BYTES {
+                &mut stored
+            } else {
+                &mut long
+            };
+            if let Some(slot) = side.get_mut(index) {
+                *slot = true;
+            }
+            Ok(())
+        })?;
+    }
+    mark_ids(&directory.join("rules.tsv"), count, true, &mut stored)?;
+    Ok((stored, long))
+}
+
+fn checked_id(path: &Path, line: usize, id: u64, string_count: usize) -> Result<usize> {
+    usize::try_from(id)
+        .ok()
+        .filter(|&id| id < string_count)
+        .ok_or_else(|| Error::Source {
+            path: path.to_owned(),
+            line,
+            message: format!("string identifier {id} is out of range 0..{string_count}"),
+        })
 }
 
 fn mark_ids(path: &Path, string_count: usize, packed_rule: bool, live: &mut [bool]) -> Result<()> {
@@ -350,14 +408,7 @@ fn mark_ids(path: &Path, string_count: usize, packed_rule: bool, live: &mut [boo
         } else {
             value
         };
-        let index = usize::try_from(id)
-            .ok()
-            .filter(|&id| id < string_count)
-            .ok_or_else(|| Error::Source {
-                path: path.to_owned(),
-                line,
-                message: format!("string identifier {id} is out of range 0..{string_count}"),
-            })?;
+        let index = checked_id(path, line, id, string_count)?;
         if let Some(slot) = live.get_mut(index) {
             *slot = true;
         }
@@ -546,16 +597,16 @@ mod tests {
     use crate::lexicon::runtime::read_to_string;
 
     #[test]
-    fn sparse_ids_are_retained_in_order_without_per_string_storage() {
+    fn kept_ids_follow_the_given_order_and_dropped_ones_map_to_max() {
         let temporary = tempfile::tempdir().unwrap();
         let path = temporary.path().join("strings.txt");
         write_file(&path, b"zero\none\ntwo\nthree\n").unwrap();
         let mut strings = StringTable::normalise(&path, &path).unwrap();
-        let remap = strings.retain(&[false, true, false, true], &path).unwrap();
-        assert_eq!(remap, [u32::MAX, 0, u32::MAX, 1]);
-        assert_eq!(strings.blob, "one\nthree\n");
-        assert_eq!(strings.get(0), Some("one"));
-        assert_eq!(strings.get(1), Some("three"));
+        let remap = strings.keep_in_order(&[3, 1], &path).unwrap();
+        assert_eq!(remap, [u32::MAX, 1, u32::MAX, 0]);
+        assert_eq!(strings.blob, "three\none\n");
+        assert_eq!(strings.get(0), Some("three"));
+        assert_eq!(strings.get(1), Some("one"));
     }
 
     #[test]
@@ -611,12 +662,17 @@ mod tests {
     }
 
     #[test]
-    fn compact_external_inline_remaps_every_stored_id_but_not_dead_source_ids() {
+    fn compaction_keeps_stored_ids_first_and_long_key_lemmas_last() {
         let temporary = tempfile::tempdir().unwrap();
         let directory = temporary.path();
         let strings_path = directory.join("strings.txt");
-        write_file(&strings_path, b"dead-a\nexact\ndead-b\nentity\nrule\n").unwrap();
-        write_file(&directory.join("exact.tsv"), b"cats\t1\n").unwrap();
+        write_file(
+            &strings_path,
+            b"dead-a\nexact\ndead-b\nentity\nrule\nlong\n",
+        )
+        .unwrap();
+        // "categorically" is past the hybrid split: its record carries "long".
+        write_file(&directory.join("exact.tsv"), b"categorically\t5\ncats\t1\n").unwrap();
         write_file(&directory.join("lower.tsv"), b"").unwrap();
         write_file(&directory.join("external.tsv"), b"outside\t2\n").unwrap();
         write_file(&directory.join("entities.tsv"), b"0Name\t3\n").unwrap();
@@ -630,14 +686,21 @@ mod tests {
         let mut strings = StringTable::normalise(&strings_path, &strings_path).unwrap();
         // Only "dead-b" (6 bytes, newline, u32 offset) is external's alone.
         assert_eq!(external_only_string_bytes(directory, &strings).unwrap(), 11);
-        assert!(compact_inline_external(directory, &mut strings).unwrap());
+        assert_eq!(
+            stored_string_count(directory, strings.len(), false).unwrap(),
+            5
+        );
+        let plan = plan_compaction(directory, &strings, false)
+            .unwrap()
+            .unwrap();
+        apply_compaction(directory, &mut strings, &plan, false).unwrap();
         assert_eq!(
             read_to_string(&strings_path).unwrap(),
-            "exact\nentity\nrule\n"
+            "exact\nentity\nrule\nlong\n"
         );
         assert_eq!(
             read_to_string(&directory.join("exact.tsv")).unwrap(),
-            "cats\t0\n"
+            "categorically\t3\ncats\t0\n"
         );
         assert_eq!(
             read_to_string(&directory.join("entities.tsv")).unwrap(),
@@ -651,6 +714,16 @@ mod tests {
         assert_eq!(
             read_to_string(&directory.join("external.tsv")).unwrap(),
             "outside\t2\n"
+        );
+        // The stored strings now form the prefix a pruned bundle keeps.
+        assert_eq!(
+            stored_string_count(directory, strings.len(), false).unwrap(),
+            3
+        );
+        assert!(
+            plan_compaction(directory, &strings, false)
+                .unwrap()
+                .is_none()
         );
     }
 }
