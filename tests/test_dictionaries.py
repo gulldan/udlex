@@ -205,3 +205,24 @@ def test_external_rows_are_attributed_to_their_dictionary(tmp_path: Path) -> Non
     assert found["unattributed"] == 0
     assert found["sources"]["a"] == {"rows": 2, "changed": 0}
     assert found["sources"]["b"] == {"rows": 1, "changed": 0}
+
+
+def test_parts_name_files_and_drop_unshipped_dictionaries() -> None:
+    entry = {
+        "corpus": {"treebank": "UD_X-Y", "part_license": "CC-BY-4.0"},
+        "dictionaries": [{"id": "w", "license": "CC-BY-SA-4.0", "members": []}],
+        "build": {"entries": {"exact": 3}},
+        "license": "CC-BY-4.0",
+    }
+    runtime = {
+        f"xxx/.generations/g/{n}": b""
+        for n in ("exact.hybrid", "strings.txt", "meta.json")
+    }
+    parts = package.table_parts(
+        entry, runtime, {"sources": {"w": {"rows": 0, "changed": 0}}}
+    )
+    assert [(p["part"], p["files"], p["license"]) for p in parts] == [
+        ("corpus", ["exact.hybrid"], "CC-BY-4.0"),
+        ("shared", ["meta.json", "strings.txt"], "CC-BY-4.0"),
+    ]
+    assert package.license_url("CC-BY-NC-SA-3.0").endswith("/by-nc-sa/3.0/")

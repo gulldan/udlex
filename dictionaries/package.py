@@ -154,7 +154,7 @@ def table_parts(
             files.setdefault(name.split(".", 1)[0], []).append(name)
     corpus, sources = entry["corpus"], entry["dictionaries"]
     learned = [k for k in ("exact", "lower", "rules", "entities") if k in files]
-    parts = []
+    parts: list[dict[str, Any]] = []
     if corpus:
         parts.append(
             {
@@ -181,20 +181,21 @@ def table_parts(
         dictionaries = sources[1:]
     else:
         dictionaries = []
-    if "external" in files:
-        counts = (provenance or {}).get("sources", {})
-        parts += [
-            {
-                "part": "external",
-                "tables": ["external"],
-                "files": files["external"],
-                "source": s["id"],
-                "license": s["license"],
-                "rows": counts.get(s["id"], {}).get("rows"),
-                "changed_lemmas": counts.get(s["id"], {}).get("changed"),
-            }
-            for s in dictionaries
-        ]
+    # A dictionary whose rows the chosen variant does not ship is no part of it.
+    counts = (provenance or {}).get("sources", {})
+    parts += [
+        {
+            "part": "external",
+            "tables": ["external"],
+            "files": files["external"],
+            "source": s["id"],
+            "license": s["license"],
+            "rows": counts[s["id"]]["rows"],
+            "changed_lemmas": counts[s["id"]]["changed"],
+        }
+        for s in dictionaries
+        if "external" in files and counts.get(s["id"], {}).get("rows")
+    ]
     shared = sorted({p["license"] for p in parts})
     parts.append(
         {
@@ -230,10 +231,11 @@ def source_list(entry: dict, treebank_readme: bytes) -> list[dict]:
             }
         )
     for group in entry["dictionaries"]:
-        part = (
-            parts.get(("external", group["id"]))
-            or parts[("training dictionary", group["id"])]
+        part = parts.get(("external", group["id"])) or parts.get(
+            ("training dictionary", group["id"])
         )
+        if part is None:
+            continue
         listed += [
             {
                 "name": member["id"],
@@ -471,8 +473,18 @@ def package_one(iso: str, row: dict, work: Path, out: Path, commit: str) -> dict
         docs["TREEBANK-README"] = (bank / lic["readme"]).read_bytes()
         if lic["license_file"]:
             docs["TREEBANK-LICENSE"] = (bank / lic["license_file"]).read_bytes()
-    components: list[str] = [corpus["license"]] if corpus else []
-    components += [s["license"] for s in used]
+    external = decision["order"] if corpus else decision["order"][1:]
+    tables = external_provenance(folder / "lexicon" / iso, folder / "tables", external)
+    shipped = sum(v["rows"] for v in tables["sources"].values())
+    if tables["unattributed"] or shipped != decision["outcome"]["entries"].get(
+        "external", 0
+    ):
+        msg = f"{iso}: external rows not attributable to one dictionary: {tables}"
+        raise ValueError(msg)
+    # Only parts that ship data license the package; a dropped external table does not.
+    rows = tables["sources"]
+    components: list[str] = [corpus["license"]] if corpus else [used[0]["license"]]
+    components += [s["license"] for s in used if rows.get(s["id"], {}).get("rows")]
     spdx, noncommercial = package_license(components)
     conditions = policy["special_conditions"].get(row["config"] or "")
     generation, runtime = runtime_files(folder / "lexicon" / iso, work / "stage", iso)
@@ -555,14 +567,6 @@ def package_one(iso: str, row: dict, work: Path, out: Path, commit: str) -> dict
         "recipe": recipe,
         "recipe_sha256": digest_bytes(json_bytes(recipe)),
     }
-    external = decision["order"] if corpus else decision["order"][1:]
-    tables = external_provenance(folder / "lexicon" / iso, folder / "tables", external)
-    shipped = sum(v["rows"] for v in tables["sources"].values())
-    if tables["unattributed"] or shipped != entry["build"]["entries"].get(
-        "external", 0
-    ):
-        msg = f"{iso}: external rows not attributable to one dictionary: {tables}"
-        raise ValueError(msg)
     entry["tables"] = table_parts(entry, runtime, tables)
     entry["part_licenses"] = sorted({p["license"] for p in entry["tables"]})
     entry["sources"] = source_list(entry, docs.get("TREEBANK-README", b""))
