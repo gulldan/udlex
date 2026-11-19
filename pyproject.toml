@@ -21,8 +21,8 @@ udlex = "udlex.cli:main"
 dev = [
     "maturin==1.16.0",
     "pytest==9.2.0",
-    "ruff==0.17.4",
-    "ty==0.0.99",
+    "ruff==0.17.5",
+    "ty==0.0.106",
 ]
 
 [build-system]
@@ -86,8 +86,8 @@ include = ["src/udlex", "tests"]
 [tool.ty.rules]
 # The shipped library is held to the strict end of the checker.
 possibly-unresolved-reference = "error"
-unresolved-attribute = "error"
-invalid-return-type = "error"
+missing-attribute = "error"
+invalid-explicit-return = "error"
 invalid-argument-type = "error"
 
 [tool.pytest.ini_options]

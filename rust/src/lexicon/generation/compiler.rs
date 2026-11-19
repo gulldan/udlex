@@ -709,7 +709,7 @@ mod tests {
             let form = format!("lemma{index:04}s");
             let lemma = format!("lemma{index:04}{lemma_suffix}");
             let id = index.saturating_mul(4_051) % EXTERNAL;
-            *lemmas.get_mut(id).unwrap() = lemma.clone();
+            *lemmas.get_mut(id).unwrap() = lemma;
             writeln!(external, "{form}\t{id}").unwrap();
         }
         let exact_id = lemmas.len();
