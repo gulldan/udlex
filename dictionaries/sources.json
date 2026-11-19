@@ -6,10 +6,6 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:48:24 GMT",
-     "mirror": [
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-en-raw-wiktextract-data.jsonl.gz.part1",
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-en-raw-wiktextract-data.jsonl.gz.part2"
-     ],
      "sha256": "5ff2c072f8099f2d2ce484bd6957bf179f046d2ad37bc36555edf8bb84cb5291",
      "size": 3082476978,
      "url": "https://kaikki.org/dictionary/raw-wiktextract-data.jsonl.gz"
@@ -19,6 +15,13 @@
    "id": "wiktionary-en",
    "license": "CC-BY-SA-4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "528cf96aa1f201f1df5239b48de1a217157d56ce5b50116c2ea6d424c437c820",
+     "size": 188948480,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-en.tar"
+    }
+   ],
    "parser": "wiktextract",
    "revision": "enwiktionary dump 2026-10-01 (kaikki.org extraction of 2026-10-30)"
   },
@@ -28,9 +31,6 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:51:19 GMT",
-     "mirror": [
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-cs-cs-extract.jsonl.gz"
-     ],
      "sha256": "bb7bde6f575d081ae8d3d19e68e8975c541b9102822c7651af401f0b04f98bb8",
      "size": 39633204,
      "url": "https://kaikki.org/dictionary/downloads/cs/cs-extract.jsonl.gz"
@@ -40,6 +40,13 @@
    "id": "wiktionary-cs",
    "license": "CC-BY-SA-4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "8bf995e71787be88ca485ccc8378124802b2a299a15ebbfabac9421a0d3e3eb9",
+     "size": 3512320,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-cs.tar"
+    }
+   ],
    "parser": "wiktextract",
    "revision": "Czech Wiktionary, kaikki.org extraction of 2026-10-30"
   },
@@ -49,9 +56,6 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:52:43 GMT",
-     "mirror": [
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-de-de-extract.jsonl.gz"
-     ],
      "sha256": "39ea559834e4cbcd2f1cc686037fc6ddc4590f29af94fd143292146ad9bf24c5",
      "size": 310139416,
      "url": "https://kaikki.org/dictionary/downloads/de/de-extract.jsonl.gz"
@@ -61,6 +65,13 @@
    "id": "wiktionary-de",
    "license": "CC-BY-SA-4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "9a1bbb6aaf193965e361c6069c8a3392baddd3613ae04d0065e07e6b53cee3ac",
+     "size": 7208960,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-de.tar"
+    }
+   ],
    "parser": "wiktextract",
    "revision": "German Wiktionary, kaikki.org extraction of 2026-10-30"
   },
@@ -70,9 +81,6 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:51:47 GMT",
-     "mirror": [
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-el-el-extract.jsonl.gz"
-     ],
      "sha256": "ddaf58feaaf2ade2cf382421569ac71a36546286845784e523fbf35251d11133",
      "size": 115806717,
      "url": "https://kaikki.org/dictionary/downloads/el/el-extract.jsonl.gz"
@@ -82,6 +90,13 @@
    "id": "wiktionary-el",
    "license": "CC-BY-SA-4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "b7cf577d3db8d78aa7889928e278ef626f3bb27e758cea7347c3d4dbb9ccaa58",
+     "size": 14315520,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-el.tar"
+    }
+   ],
    "parser": "wiktextract",
    "revision": "Greek Wiktionary, kaikki.org extraction of 2026-10-30"
   },
@@ -91,9 +106,6 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:48:52 GMT",
-     "mirror": [
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-es-es-extract.jsonl.gz"
-     ],
      "sha256": "0a7a02456ecf34dd3419e0d5adf4f18da5531487dde31829d126afe86eade861",
      "size": 103226090,
      "url": "https://kaikki.org/dictionary/downloads/es/es-extract.jsonl.gz"
@@ -103,6 +115,13 @@
    "id": "wiktionary-es",
    "license": "CC-BY-SA-4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "2d10b4002e4770c8e1475eafa8c7648a5c6a7ea8e3e61fda2be08d4e3ea8ed36",
+     "size": 4362240,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-es.tar"
+    }
+   ],
    "parser": "wiktextract",
    "revision": "Spanish Wiktionary, kaikki.org extraction of 2026-10-30"
   },
@@ -112,9 +131,6 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:50:57 GMT",
-     "mirror": [
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-fr-fr-extract.jsonl.gz"
-     ],
      "sha256": "61d27bfc4bef9eb8f19d6e280ebf310adb07196da41d2f5777ff5942bef66a28",
      "size": 736596796,
      "url": "https://kaikki.org/dictionary/downloads/fr/fr-extract.jsonl.gz"
@@ -124,6 +140,13 @@
    "id": "wiktionary-fr",
    "license": "CC-BY-SA-4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "aa28563482b39e6e1ac4a4a0d1b58c084ccf34b86688af9a0b43fd51df7a0d2e",
+     "size": 30842880,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-fr.tar"
+    }
+   ],
    "parser": "wiktextract",
    "revision": "French Wiktionary, kaikki.org extraction of 2026-10-30"
   },
@@ -133,9 +156,6 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:49:50 GMT",
-     "mirror": [
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-id-id-extract.jsonl.gz"
-     ],
      "sha256": "0c54402893e77610fa7a757cb5c56d0d1134047c0123079f84cee0f8d285dbc6",
      "size": 2940954,
      "url": "https://kaikki.org/dictionary/downloads/id/id-extract.jsonl.gz"
@@ -145,6 +165,13 @@
    "id": "wiktionary-id",
    "license": "CC-BY-SA-4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "4b7c38c3cced519dae46730cc22e4f6fe9327e41576452cd5f6a40641fec15b8",
+     "size": 491520,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-id.tar"
+    }
+   ],
    "parser": "wiktextract",
    "revision": "Indonesian Wiktionary, kaikki.org extraction of 2026-10-30"
   },
@@ -154,9 +181,6 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:52:48 GMT",
-     "mirror": [
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-it-it-extract.jsonl.gz"
-     ],
      "sha256": "9f35d5ac30f2fbab4774eb3e81ec6394806bd2723f802b405e7e9901185d5229",
      "size": 43849715,
      "url": "https://kaikki.org/dictionary/downloads/it/it-extract.jsonl.gz"
@@ -166,6 +190,13 @@
    "id": "wiktionary-it",
    "license": "CC-BY-SA-4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "f13c99b836bf0a5f2327e7caca394c08e77ea5a26b5d2089b020b499733dbe8a",
+     "size": 3348480,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-it.tar"
+    }
+   ],
    "parser": "wiktextract",
    "revision": "Italian Wiktionary, kaikki.org extraction of 2026-10-30"
   },
@@ -175,9 +206,6 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:48:41 GMT",
-     "mirror": [
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-ja-ja-extract.jsonl.gz"
-     ],
      "sha256": "cf8d3f8e35b87d9c94fe61baa0dd9bf5abbe84a2bc4b656c9465a15538c3394d",
      "size": 64975000,
      "url": "https://kaikki.org/dictionary/downloads/ja/ja-extract.jsonl.gz"
@@ -187,6 +215,13 @@
    "id": "wiktionary-ja",
    "license": "CC-BY-SA-4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "7032a3b7e58d69a9cc5dbda7fb10ddd406dd052c84c296f09892b70c41887670",
+     "size": 4823040,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-ja.tar"
+    }
+   ],
    "parser": "wiktextract",
    "revision": "Japanese Wiktionary, kaikki.org extraction of 2026-10-30"
   },
@@ -196,9 +231,6 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:51:01 GMT",
-     "mirror": [
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-ko-ko-extract.jsonl.gz"
-     ],
      "sha256": "7ce75eec9ac9d198a510eb9db57e1831810bba941099d3580ae59a7b026aaec1",
      "size": 26869664,
      "url": "https://kaikki.org/dictionary/downloads/ko/ko-extract.jsonl.gz"
@@ -208,6 +240,13 @@
    "id": "wiktionary-ko",
    "license": "CC-BY-SA-4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "c6866a044be0c2f68e42826acf0a07bb6a8c9bbae5310021a92153171fd79bc4",
+     "size": 1966080,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-ko.tar"
+    }
+   ],
    "parser": "wiktextract",
    "revision": "Korean Wiktionary, kaikki.org extraction of 2026-10-30"
   },
@@ -217,9 +256,6 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:49:37 GMT",
-     "mirror": [
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-ku-ku-extract.jsonl.gz"
-     ],
      "sha256": "70d65b0103d4101f54ef19e28929ac7966ff14de8551d9386030c878daeb3a06",
      "size": 61088951,
      "url": "https://kaikki.org/dictionary/downloads/ku/ku-extract.jsonl.gz"
@@ -229,6 +265,13 @@
    "id": "wiktionary-ku",
    "license": "CC-BY-SA-4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "8200f57a43f5c3bdba3d55a6b196d91d2d9deed75276161ce69d144826c31442",
+     "size": 3051520,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-ku.tar"
+    }
+   ],
    "parser": "wiktextract",
    "revision": "Kurdish Wiktionary, kaikki.org extraction of 2026-10-30"
   },
@@ -238,9 +281,6 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:51:12 GMT",
-     "mirror": [
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-ms-ms-extract.jsonl.gz"
-     ],
      "sha256": "ecd4789b6518067369b51ae97ddaa39f6db1d70dd2956d13f9454d164082c64c",
      "size": 6197038,
      "url": "https://kaikki.org/dictionary/downloads/ms/ms-extract.jsonl.gz"
@@ -250,6 +290,13 @@
    "id": "wiktionary-ms",
    "license": "CC-BY-SA-4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "62d1259516d3265bf1ed20a099094beda24538b0bda4a5f561bf164e4546c621",
+     "size": 225280,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-ms.tar"
+    }
+   ],
    "parser": "wiktextract",
    "revision": "Malay Wiktionary, kaikki.org extraction of 2026-10-30"
   },
@@ -259,9 +306,6 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:49:09 GMT",
-     "mirror": [
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-nl-nl-extract.jsonl.gz"
-     ],
      "sha256": "6eee5015514661292f5915c6c2fcc7da7ebff32714dd704217ea28ae37650801",
      "size": 134749667,
      "url": "https://kaikki.org/dictionary/downloads/nl/nl-extract.jsonl.gz"
@@ -271,6 +315,13 @@
    "id": "wiktionary-nl",
    "license": "CC-BY-SA-4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "63a0f0ba3e7b0ab9c870d710a84d6f50d0472bfed95f9c275593c347c1bbf535",
+     "size": 4833280,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-nl.tar"
+    }
+   ],
    "parser": "wiktextract",
    "revision": "Dutch Wiktionary, kaikki.org extraction of 2026-10-30"
   },
@@ -280,9 +331,6 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:49:49 GMT",
-     "mirror": [
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-pl-pl-extract.jsonl.gz"
-     ],
      "sha256": "c76fa8c844231ab2d27b79a88eb105b19ed6e873b2fdbc54826713fd8353db2c",
      "size": 137850838,
      "url": "https://kaikki.org/dictionary/downloads/pl/pl-extract.jsonl.gz"
@@ -292,6 +340,13 @@
    "id": "wiktionary-pl",
    "license": "CC-BY-SA-4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "cbc7321487aa7d8fd8e880a99ab97eb5c46d6cc38ede9301bca3cbce16c9ddcb",
+     "size": 8294400,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-pl.tar"
+    }
+   ],
    "parser": "wiktextract",
    "revision": "Polish Wiktionary, kaikki.org extraction of 2026-10-30"
   },
@@ -301,9 +356,6 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:48:56 GMT",
-     "mirror": [
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-pt-pt-extract.jsonl.gz"
-     ],
      "sha256": "26b244e5b25629e9a88cf926813e6987289fa61e8b8a2faa68aef78ed6efaaa6",
      "size": 37273123,
      "url": "https://kaikki.org/dictionary/downloads/pt/pt-extract.jsonl.gz"
@@ -313,6 +365,13 @@
    "id": "wiktionary-pt",
    "license": "CC-BY-SA-4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "9d3007d40c3084c6afb03805f134caf04cf74ded8787b2ca93e978389dcc336c",
+     "size": 2754560,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-pt.tar"
+    }
+   ],
    "parser": "wiktextract",
    "revision": "Portuguese Wiktionary, kaikki.org extraction of 2026-10-30"
   },
@@ -322,9 +381,6 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:52:14 GMT",
-     "mirror": [
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-ru-ru-extract.jsonl.gz"
-     ],
      "sha256": "fdcb978c76b660e0e43977bbf7487c812e6d42e965b0a73e3f5b4ba6981174c4",
      "size": 308932274,
      "url": "https://kaikki.org/dictionary/downloads/ru/ru-extract.jsonl.gz"
@@ -334,6 +390,13 @@
    "id": "wiktionary-ru",
    "license": "CC-BY-SA-4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "63c3676d0aa71245a6cdf4c7c812e38ace324c329efac7b049b965d715942112",
+     "size": 26562560,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-ru.tar"
+    }
+   ],
    "parser": "wiktextract",
    "revision": "Russian Wiktionary, kaikki.org extraction of 2026-10-30"
   },
@@ -343,9 +406,6 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:51:32 GMT",
-     "mirror": [
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-th-th-extract.jsonl.gz"
-     ],
      "sha256": "62dba8c33491dcd78a37f0f3c34fbb4ffa2f5a79afbfb4fdc45a226dd73a13e9",
      "size": 75595415,
      "url": "https://kaikki.org/dictionary/downloads/th/th-extract.jsonl.gz"
@@ -355,6 +415,13 @@
    "id": "wiktionary-th",
    "license": "CC-BY-SA-4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "fd76695e5aa01c0c75c9609f3e6b0bdd02209f05d256d15e0ba5e4b8479babfd",
+     "size": 8693760,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-th.tar"
+    }
+   ],
    "parser": "wiktextract",
    "revision": "Thai Wiktionary, kaikki.org extraction of 2026-10-30"
   },
@@ -364,9 +431,6 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:51:06 GMT",
-     "mirror": [
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-tr-tr-extract.jsonl.gz"
-     ],
      "sha256": "09bc9e87b010dcee5e22c48ae1f8379cef3e4fefaefbb7c8e5453b8c0ea88f6d",
      "size": 45899849,
      "url": "https://kaikki.org/dictionary/downloads/tr/tr-extract.jsonl.gz"
@@ -376,6 +440,13 @@
    "id": "wiktionary-tr",
    "license": "CC-BY-SA-4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "f434a6b27ec72fa0d8e6b13854f767c43333c3a12a858aadab28c6c895e3343e",
+     "size": 9728000,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-tr.tar"
+    }
+   ],
    "parser": "wiktextract",
    "revision": "Turkish Wiktionary, kaikki.org extraction of 2026-10-30"
   },
@@ -385,9 +456,6 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:51:15 GMT",
-     "mirror": [
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-vi-vi-extract.jsonl.gz"
-     ],
      "sha256": "f2139c262f45cbe32dbc8e7478369fbc936ff6640deec0d2b6e7ad647d58f273",
      "size": 34424532,
      "url": "https://kaikki.org/dictionary/downloads/vi/vi-extract.jsonl.gz"
@@ -397,6 +465,13 @@
    "id": "wiktionary-vi",
    "license": "CC-BY-SA-4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "bea2ae2badd13bb3e7c6b9fa5a7d10c3d965f42c986d9c2e3f567341b3b5643c",
+     "size": 1822720,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-vi.tar"
+    }
+   ],
    "parser": "wiktextract",
    "revision": "Vietnamese Wiktionary, kaikki.org extraction of 2026-10-30"
   },
@@ -406,9 +481,6 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:49:29 GMT",
-     "mirror": [
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-zh-zh-extract.jsonl.gz"
-     ],
      "sha256": "30f175aa641b204c43755e942a6e97d38cf5e93d7815ce1e2475e68c068b82c0",
      "size": 234450611,
      "url": "https://kaikki.org/dictionary/downloads/zh/zh-extract.jsonl.gz"
@@ -418,6 +490,13 @@
    "id": "wiktionary-zh",
    "license": "CC-BY-SA-4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "792e906c0cbc57e6120075a4ed77e42d615e124ee510d37e7d56a6cff17bed91",
+     "size": 14950400,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-zh.tar"
+    }
+   ],
    "parser": "wiktextract",
    "revision": "Chinese Wiktionary, kaikki.org extraction of 2026-10-30"
   },
@@ -1362,9 +1441,6 @@
    "family": "national",
    "files": [
     {
-     "mirror": [
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/bin-SHsnid.csv.zip"
-     ],
      "sha256": "28513f96d5215a6f5c18fd1ddc1210f42f24ed3a2cbcb880bf50082797ec50f0",
      "size": 33666908,
      "url": "https://bin.arnastofnun.is/django/api/nidurhal/?file=SHsnid.csv.zip"
@@ -1383,6 +1459,13 @@
     "isl"
    ],
    "license": "CC-BY-SA-4.0",
+   "mirror": [
+    {
+     "sha256": "4f45b4858f897c86f584ae9c5bab284e75669449e46b51474d34e0685013cd84",
+     "size": 14663680,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-bin.tar"
+    }
+   ],
    "parser": "table",
    "revision": "Sigrúnarsnið export downloaded 2026-11-19 (unversioned URL, pinned by SHA-256)"
   },
@@ -1705,9 +1788,6 @@
    "files": [
     {
      "last_modified": "Tue, 19 Sep 2017 01:00:47 GMT",
-     "mirror": [
-      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/saldom-saldom.xml"
-     ],
      "sha256": "8e484c61722e6ac1b40812aa09d9bea56852c178a95754d7406e752943ea05b2",
      "size": 254107385,
      "url": "https://svn.spraakbanken.gu.se/sb-arkiv/pub/lmf/saldom/saldom.xml"
@@ -1719,6 +1799,13 @@
     "swe"
    ],
    "license": "CC-BY-4.0",
+   "mirror": [
+    {
+     "sha256": "1e767ca9df95c195ec39834c1fb280d4540e740e09d5fa2f12638a9d9d9739ec",
+     "size": 2877440,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-saldom.tar"
+    }
+   ],
    "parser": "saldom",
    "revision": "saldom 2017-09-19 (unversioned URL, pinned by SHA-256)"
   },

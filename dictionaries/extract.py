@@ -381,6 +381,38 @@ def spool_wiktextract(path: Path, out: Path) -> dict:
     return languages
 
 
+def restore(source: dict, cache: Path, out: Path, inputs: list[str]) -> dict:
+    """Unpack mirrored pairs whose manifest names exactly these upstream inputs."""
+    parts = [cache / p["sha256"] for p in source["mirror"]]
+    if not all(p.is_file() for p in parts):
+        msg = f"{source['id']}: neither upstream inputs nor mirrored pairs in the cache"
+        raise ValueError(msg)
+    joined = out.with_name(out.name + ".tar")
+    with joined.open("wb") as dest:
+        for part, pin in zip(parts, source["mirror"], strict=True):
+            if sha256(part) != pin["sha256"]:
+                msg = f"{part}: not the pinned mirror part"
+                raise ValueError(msg)
+            with part.open("rb") as stream:
+                shutil.copyfileobj(stream, dest, 1 << 20)
+    with tarfile.open(joined) as archive:
+        members = archive.getmembers()
+        if any(not m.isfile() or "/" in m.name for m in members):
+            msg = f"{joined}: unexpected member in mirrored pairs"
+            raise ValueError(msg)
+        archive.extractall(out, members=members, filter="data")
+    joined.unlink()
+    manifest = read_json(out / "manifest.json")
+    tables = manifest["languages"]
+    if manifest.get("inputs") != inputs or any(
+        sha256(out / f"{iso}.tsv.gz") != row["sha256"] for iso, row in tables.items()
+    ):
+        msg = f"{source['id']}: mirrored pairs do not match the pinned inputs"
+        raise ValueError(msg)
+    print(source["id"], len(tables), "languages from the mirror", flush=True)
+    return manifest
+
+
 def extract(source: dict, cache: Path, root: Path) -> dict:
     """Extract one source into ``root/<id>/<iso>.tsv.gz``; resumable per source."""
     out = root / source["id"]
@@ -391,6 +423,8 @@ def extract(source: dict, cache: Path, root: Path) -> dict:
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
+    if source.get("mirror") and not all((cache / i).is_file() for i in inputs):
+        return restore(source, cache, out, inputs)
     if source["parser"] == "wiktextract":
         languages = spool_wiktextract(cache / source["files"][0]["sha256"], out)
     else:

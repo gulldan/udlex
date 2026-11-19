@@ -5,6 +5,7 @@ from __future__ import annotations
 import gzip
 import hashlib
 import itertools
+import json
 import random
 from collections import Counter
 from typing import TYPE_CHECKING
@@ -17,6 +18,7 @@ if TYPE_CHECKING:
 udlex = pytest.importorskip("udlex")
 choose = pytest.importorskip("choose")
 fetch = pytest.importorskip("fetch")
+mirror = pytest.importorskip("mirror")
 extract = pytest.importorskip("extract")
 package = pytest.importorskip("package")
 splits = pytest.importorskip("splits")
@@ -169,17 +171,53 @@ def test_carved_dev_is_a_disjoint_tenth() -> None:
     assert choose.carve(sentences[:10]) == (sentences[:10], [])
 
 
-def test_fetch_falls_back_to_mirror_parts(tmp_path: Path) -> None:
+def test_fetch_falls_back_to_the_mirrored_pairs(tmp_path: Path) -> None:
     (tmp_path / "upstream").write_bytes(b"changed upstream")
-    (tmp_path / "p1").write_bytes(b"pinned ")
-    (tmp_path / "p2").write_bytes(b"bytes")
-    item = {
-        "url": (tmp_path / "upstream").as_uri(),
-        "sha256": hashlib.sha256(b"pinned bytes").hexdigest(),
-        "mirror": [(tmp_path / "p1").as_uri(), (tmp_path / "p2").as_uri()],
+    (tmp_path / "pairs.tar").write_bytes(b"archive")
+    digest = hashlib.sha256(b"archive").hexdigest()
+    source = {
+        "id": "x",
+        "files": [
+            {"url": (tmp_path / "upstream").as_uri(), "sha256": "0" * 64, "size": 1}
+        ],
+        "mirror": [
+            {"url": (tmp_path / "pairs.tar").as_uri(), "sha256": digest, "size": 7}
+        ],
     }
-    fetch.retrieve(item, tmp_path / "got")
-    assert (tmp_path / "got").read_bytes() == b"pinned bytes"
+    cache = tmp_path / "cache"
+    fetch.PAUSE = 0
+    assert not fetch.fetch_source(source, cache, pin=False)
+    assert (cache / digest).read_bytes() == b"archive"
+
+
+def test_extraction_starts_from_mirrored_pairs(tmp_path: Path) -> None:
+    pairs = tmp_path / "work" / "pairs" / "x"
+    pairs.mkdir(parents=True)
+    with gzip.open(pairs / "eng.tsv.gz", "wt", encoding="utf-8") as out:
+        out.write("cats\tcat\t1\n")
+    table = hashlib.sha256((pairs / "eng.tsv.gz").read_bytes()).hexdigest()
+    manifest = {
+        "id": "x",
+        "inputs": ["f" * 64],
+        "languages": {"eng": {"sha256": table}},
+    }
+    (pairs / "manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
+    cache = tmp_path / "cache"
+    cache.mkdir()
+    mirror.pack(pairs, cache / "pairs.tar")
+    digest = hashlib.sha256((cache / "pairs.tar").read_bytes()).hexdigest()
+    (cache / "pairs.tar").rename(cache / digest)
+    source = {
+        "id": "x",
+        "parser": "wiktextract",
+        "files": [{"url": "https://example.org/raw", "sha256": "f" * 64}],
+        "mirror": [{"url": "https://example.org/pairs-x.tar", "sha256": digest}],
+    }
+    root = tmp_path / "restored"
+    assert extract.extract(source, cache, root) == manifest
+    assert (root / "x" / "eng.tsv.gz").read_bytes() == (
+        pairs / "eng.tsv.gz"
+    ).read_bytes()
 
 
 def test_external_rows_are_attributed_to_their_dictionary(tmp_path: Path) -> None:

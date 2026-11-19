@@ -91,10 +91,15 @@ evidence and the recipe.
 ## Pins
 
 Some upstream files are not versioned (kaikki.org extracts, BÍN, SALDO
-morphology). They are pinned by SHA-256 and also carry `mirror` URLs: release
-assets of the tag named in `policy.json`, laid out by `mirror.py` (files above
-GitHub's 2 GiB asset limit are split into parts). `fetch.py` falls back to the
-mirror when upstream fails or has changed; `fetch.py --pin` records new digests.
+morphology). They stay pinned by URL and SHA-256 as the primary source, and
+their sources also carry a `mirror`: `pairs-<id>.tar` release assets of the tag
+named in `policy.json`, holding the extracted `<iso>.tsv.gz` tables and the
+manifest that names the upstream digests (`mirror.py` packs them, splitting
+any archive above GitHub's 2 GiB asset limit). When an upstream file is gone
+or no longer matches its pin, `fetch.py` downloads the archive instead and
+`extract.py` starts from the pairs, after checking every table against the
+manifest; the build is the same byte for byte. `fetch.py --pin` records new
+digests.
 
 ## Catalog of this build
 

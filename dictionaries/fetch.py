@@ -2,8 +2,9 @@
 
 ``--pin`` downloads entries that have no SHA-256 yet and writes the digest,
 size and upstream ``Last-Modified`` back into ``sources.json``; a normal run
-refuses any byte that differs from the pin. An entry with ``mirror`` parts
-falls back to them, concatenated, when its upstream URL fails or has changed.
+refuses any byte that differs from the pin. A source with ``mirror`` archives
+of its extracted pairs falls back to them when an upstream file is gone or has
+changed.
 """
 
 from __future__ import annotations
@@ -46,62 +47,61 @@ def download(url: str, target: Path) -> str | None:
     return None
 
 
-def retrieve(item: dict[str, Any], target: Path) -> str | None:
-    """Upstream first; the pinned mirror when upstream is gone or has changed."""
-    try:
-        modified = download(item["url"], target)
-        if not item.get("sha256") or sha256(target) == item["sha256"]:
-            return modified
-        print(f"upstream changed: {item['url']}", file=sys.stderr, flush=True)
-    except OSError:
-        if not item.get("mirror"):
-            raise
-        print(f"upstream failed: {item['url']}", file=sys.stderr, flush=True)
-    if not item.get("mirror"):
-        return None
-    with target.open("wb") as out:
-        for n, url in enumerate(item["mirror"]):
-            part = target.with_name(f"{target.name}.part{n}")
-            download(url, part)
-            with part.open("rb") as stream:
-                shutil.copyfileobj(stream, out, 1 << 20)
-            part.unlink()
-    return None
+def fetch_item(item: dict[str, Any], cache: Path) -> bool:
+    """Download one upstream file into the cache; return whether its pin changed."""
+    digest = item.get("sha256")
+    pending = cache / "pending" / Path(item["url"]).name
+    modified = download(item["url"], pending)
+    found = sha256(pending)
+    if digest and found != digest:
+        msg = f"{item['url']}: SHA-256 {found}, pinned {digest}"
+        raise ValueError(msg)
+    pending.replace(cache / found)
+    print(found, item["url"], flush=True)
+    time.sleep(PAUSE)
+    if digest and item.get("size"):
+        return False
+    item.update(sha256=found, size=(cache / found).stat().st_size)
+    if modified and not digest:
+        item["last_modified"] = modified
+    return True
+
+
+def fetch_source(source: dict[str, Any], cache: Path, *, pin: bool) -> bool:
+    """Fill the cache for one source; return whether ``sources.json`` changed.
+
+    A source with ``mirror`` archives of its extracted pairs falls back to them
+    when an upstream file is gone or no longer matches its pin; extraction then
+    starts from the pairs.
+    """
+    changed = False
+    missing = False
+    for item in source["files"]:
+        if item.get("sha256") and (cache / item["sha256"]).is_file():
+            continue
+        if not item.get("sha256") and not pin:
+            msg = f"{source['id']}: unpinned input {item['url']}"
+            raise ValueError(msg)
+        try:
+            changed |= fetch_item(item, cache)
+        except (OSError, ValueError) as error:
+            if pin or not source.get("mirror"):
+                raise
+            print(f"{source['id']}: {error}; using the mirror", file=sys.stderr)
+            missing = True
+    for part in source.get("mirror", []) if missing else []:
+        if not (cache / part["sha256"]).is_file():
+            fetch_item(part, cache)
+    return changed
 
 
 def fetch(cache: Path, *, pin: bool, only: set[str] | None) -> None:
     """Fill the cache; with ``pin`` record digests of unpinned entries."""
     config = read_json(SOURCES)
-    changed = False
     sources: list[dict[str, Any]] = [{"id": "ud", "files": [config["ud"]]}]
     for source in sources + config["sources"]:
-        if only and source["id"] not in only:
-            continue
-        for item in source["files"]:
-            digest = item.get("sha256")
-            if digest and (cache / digest).is_file():
-                continue
-            if not digest and not pin:
-                msg = f"{source['id']}: unpinned input {item['url']}"
-                raise ValueError(msg)
-            pending = cache / "pending" / Path(item["url"]).name
-            pending.parent.mkdir(parents=True, exist_ok=True)
-            modified = retrieve(item, pending)
-            found = sha256(pending)
-            if digest and found != digest:
-                msg = f"{item['url']}: SHA-256 {found}, pinned {digest}"
-                raise ValueError(msg)
-            pending.replace(cache / found)
-            if not digest or not item.get("size"):
-                item.update(sha256=found, size=(cache / found).stat().st_size)
-                if modified and not digest:
-                    item["last_modified"] = modified
-                changed = True
-                write_json(SOURCES, config)
-            print(source["id"], found, item["url"], flush=True)
-            time.sleep(PAUSE)
-    if changed:
-        write_json(SOURCES, config)
+        if (not only or source["id"] in only) and fetch_source(source, cache, pin=pin):
+            write_json(SOURCES, config)
 
 
 def main() -> None:
