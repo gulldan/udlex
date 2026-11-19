@@ -6,6 +6,10 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:48:24 GMT",
+     "mirror": [
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-en-raw-wiktextract-data.jsonl.gz.part1",
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-en-raw-wiktextract-data.jsonl.gz.part2"
+     ],
      "sha256": "5ff2c072f8099f2d2ce484bd6957bf179f046d2ad37bc36555edf8bb84cb5291",
      "size": 3082476978,
      "url": "https://kaikki.org/dictionary/raw-wiktextract-data.jsonl.gz"
@@ -24,6 +28,9 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:51:19 GMT",
+     "mirror": [
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-cs-cs-extract.jsonl.gz"
+     ],
      "sha256": "bb7bde6f575d081ae8d3d19e68e8975c541b9102822c7651af401f0b04f98bb8",
      "size": 39633204,
      "url": "https://kaikki.org/dictionary/downloads/cs/cs-extract.jsonl.gz"
@@ -42,6 +49,9 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:52:43 GMT",
+     "mirror": [
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-de-de-extract.jsonl.gz"
+     ],
      "sha256": "39ea559834e4cbcd2f1cc686037fc6ddc4590f29af94fd143292146ad9bf24c5",
      "size": 310139416,
      "url": "https://kaikki.org/dictionary/downloads/de/de-extract.jsonl.gz"
@@ -60,6 +70,9 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:51:47 GMT",
+     "mirror": [
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-el-el-extract.jsonl.gz"
+     ],
      "sha256": "ddaf58feaaf2ade2cf382421569ac71a36546286845784e523fbf35251d11133",
      "size": 115806717,
      "url": "https://kaikki.org/dictionary/downloads/el/el-extract.jsonl.gz"
@@ -78,6 +91,9 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:48:52 GMT",
+     "mirror": [
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-es-es-extract.jsonl.gz"
+     ],
      "sha256": "0a7a02456ecf34dd3419e0d5adf4f18da5531487dde31829d126afe86eade861",
      "size": 103226090,
      "url": "https://kaikki.org/dictionary/downloads/es/es-extract.jsonl.gz"
@@ -96,6 +112,9 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:50:57 GMT",
+     "mirror": [
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-fr-fr-extract.jsonl.gz"
+     ],
      "sha256": "61d27bfc4bef9eb8f19d6e280ebf310adb07196da41d2f5777ff5942bef66a28",
      "size": 736596796,
      "url": "https://kaikki.org/dictionary/downloads/fr/fr-extract.jsonl.gz"
@@ -114,6 +133,9 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:49:50 GMT",
+     "mirror": [
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-id-id-extract.jsonl.gz"
+     ],
      "sha256": "0c54402893e77610fa7a757cb5c56d0d1134047c0123079f84cee0f8d285dbc6",
      "size": 2940954,
      "url": "https://kaikki.org/dictionary/downloads/id/id-extract.jsonl.gz"
@@ -132,6 +154,9 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:52:48 GMT",
+     "mirror": [
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-it-it-extract.jsonl.gz"
+     ],
      "sha256": "9f35d5ac30f2fbab4774eb3e81ec6394806bd2723f802b405e7e9901185d5229",
      "size": 43849715,
      "url": "https://kaikki.org/dictionary/downloads/it/it-extract.jsonl.gz"
@@ -150,6 +175,9 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:48:41 GMT",
+     "mirror": [
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-ja-ja-extract.jsonl.gz"
+     ],
      "sha256": "cf8d3f8e35b87d9c94fe61baa0dd9bf5abbe84a2bc4b656c9465a15538c3394d",
      "size": 64975000,
      "url": "https://kaikki.org/dictionary/downloads/ja/ja-extract.jsonl.gz"
@@ -168,6 +196,9 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:51:01 GMT",
+     "mirror": [
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-ko-ko-extract.jsonl.gz"
+     ],
      "sha256": "7ce75eec9ac9d198a510eb9db57e1831810bba941099d3580ae59a7b026aaec1",
      "size": 26869664,
      "url": "https://kaikki.org/dictionary/downloads/ko/ko-extract.jsonl.gz"
@@ -186,6 +217,9 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:49:37 GMT",
+     "mirror": [
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-ku-ku-extract.jsonl.gz"
+     ],
      "sha256": "70d65b0103d4101f54ef19e28929ac7966ff14de8551d9386030c878daeb3a06",
      "size": 61088951,
      "url": "https://kaikki.org/dictionary/downloads/ku/ku-extract.jsonl.gz"
@@ -204,6 +238,9 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:51:12 GMT",
+     "mirror": [
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-ms-ms-extract.jsonl.gz"
+     ],
      "sha256": "ecd4789b6518067369b51ae97ddaa39f6db1d70dd2956d13f9454d164082c64c",
      "size": 6197038,
      "url": "https://kaikki.org/dictionary/downloads/ms/ms-extract.jsonl.gz"
@@ -222,6 +259,9 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:49:09 GMT",
+     "mirror": [
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-nl-nl-extract.jsonl.gz"
+     ],
      "sha256": "6eee5015514661292f5915c6c2fcc7da7ebff32714dd704217ea28ae37650801",
      "size": 134749667,
      "url": "https://kaikki.org/dictionary/downloads/nl/nl-extract.jsonl.gz"
@@ -240,6 +280,9 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:49:49 GMT",
+     "mirror": [
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-pl-pl-extract.jsonl.gz"
+     ],
      "sha256": "c76fa8c844231ab2d27b79a88eb105b19ed6e873b2fdbc54826713fd8353db2c",
      "size": 137850838,
      "url": "https://kaikki.org/dictionary/downloads/pl/pl-extract.jsonl.gz"
@@ -258,6 +301,9 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:48:56 GMT",
+     "mirror": [
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-pt-pt-extract.jsonl.gz"
+     ],
      "sha256": "26b244e5b25629e9a88cf926813e6987289fa61e8b8a2faa68aef78ed6efaaa6",
      "size": 37273123,
      "url": "https://kaikki.org/dictionary/downloads/pt/pt-extract.jsonl.gz"
@@ -276,6 +322,9 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:52:14 GMT",
+     "mirror": [
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-ru-ru-extract.jsonl.gz"
+     ],
      "sha256": "fdcb978c76b660e0e43977bbf7487c812e6d42e965b0a73e3f5b4ba6981174c4",
      "size": 308932274,
      "url": "https://kaikki.org/dictionary/downloads/ru/ru-extract.jsonl.gz"
@@ -294,6 +343,9 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:51:32 GMT",
+     "mirror": [
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-th-th-extract.jsonl.gz"
+     ],
      "sha256": "62dba8c33491dcd78a37f0f3c34fbb4ffa2f5a79afbfb4fdc45a226dd73a13e9",
      "size": 75595415,
      "url": "https://kaikki.org/dictionary/downloads/th/th-extract.jsonl.gz"
@@ -312,6 +364,9 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:51:06 GMT",
+     "mirror": [
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-tr-tr-extract.jsonl.gz"
+     ],
      "sha256": "09bc9e87b010dcee5e22c48ae1f8379cef3e4fefaefbb7c8e5453b8c0ea88f6d",
      "size": 45899849,
      "url": "https://kaikki.org/dictionary/downloads/tr/tr-extract.jsonl.gz"
@@ -330,6 +385,9 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:51:15 GMT",
+     "mirror": [
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-vi-vi-extract.jsonl.gz"
+     ],
      "sha256": "f2139c262f45cbe32dbc8e7478369fbc936ff6640deec0d2b6e7ad647d58f273",
      "size": 34424532,
      "url": "https://kaikki.org/dictionary/downloads/vi/vi-extract.jsonl.gz"
@@ -348,6 +406,9 @@
    "files": [
     {
      "last_modified": "Fri, 30 Oct 2026 20:49:29 GMT",
+     "mirror": [
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/wiktionary-zh-zh-extract.jsonl.gz"
+     ],
      "sha256": "30f175aa641b204c43755e942a6e97d38cf5e93d7815ce1e2475e68c068b82c0",
      "size": 234450611,
      "url": "https://kaikki.org/dictionary/downloads/zh/zh-extract.jsonl.gz"
@@ -1301,6 +1362,9 @@
    "family": "national",
    "files": [
     {
+     "mirror": [
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/bin-SHsnid.csv.zip"
+     ],
      "sha256": "28513f96d5215a6f5c18fd1ddc1210f42f24ed3a2cbcb880bf50082797ec50f0",
      "size": 33666908,
      "url": "https://bin.arnastofnun.is/django/api/nidurhal/?file=SHsnid.csv.zip"
@@ -1641,6 +1705,9 @@
    "files": [
     {
      "last_modified": "Tue, 19 Sep 2017 01:00:47 GMT",
+     "mirror": [
+      "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/saldom-saldom.xml"
+     ],
      "sha256": "8e484c61722e6ac1b40812aa09d9bea56852c178a95754d7406e752943ea05b2",
      "size": 254107385,
      "url": "https://svn.spraakbanken.gu.se/sb-arkiv/pub/lmf/saldom/saldom.xml"
