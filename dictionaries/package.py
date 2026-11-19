@@ -133,13 +133,13 @@ def external_provenance(lexicon: Path, tables: Path, order: list[str]) -> dict:
                         heads[j] = next(stream, None)
                     head = heads[j]
                     if owner is None and head is not None and head[0] == form:
-                        owner = j
+                        owner = (order[j], head[1])
                 if owner is None:
                     unattributed += 1
                     continue
-                count = counts[order[owner]]
+                count = counts[owner[0]]
                 count["rows"] += 1
-                count["changed"] += heads[owner][1] != lemma  # type: ignore[index]
+                count["changed"] += owner[1] != lemma
     return {"sources": counts, "unattributed": unattributed}
 
 
