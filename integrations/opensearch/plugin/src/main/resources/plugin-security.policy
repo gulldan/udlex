@@ -1,0 +1,6 @@
+// Required by older OpenSearch/JDK security-manager deployments. JNI loads only
+// the library in this plugin's native/ directory; no user-supplied path exists.
+grant {
+    permission java.lang.RuntimePermission "getProtectionDomain";
+    permission java.lang.RuntimePermission "loadLibrary.*";
+};

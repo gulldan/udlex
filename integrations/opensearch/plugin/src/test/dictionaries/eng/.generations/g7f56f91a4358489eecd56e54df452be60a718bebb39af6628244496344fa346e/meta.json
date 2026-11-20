@@ -1,0 +1,46 @@
+{
+ "name": "eng",
+ "language": "English",
+ "iso639_3": "eng",
+ "source": "local/eng",
+ "training_tokens": 3,
+ "variant": "full",
+ "selected_on": null,
+ "max_suffix": 6,
+ "format_version": 5,
+ "entity_encoding": "namespaced-v1",
+ "generation": "g7f56f91a4358489eecd56e54df452be60a718bebb39af6628244496344fa346e",
+ "normalization": "NFC+locale-v1",
+ "files": {
+  "exact.hybrid": {
+   "size": 1168,
+   "sha256": "0b1ed9fcc0aa052e0b65a0bedd737a611ba8f78960a41c5984d4d17341f37b3a"
+  },
+  "strings.idx": {
+   "size": 16,
+   "sha256": "3d777f8cfbef51113a59fbfc552d386ce08d7babef400e8fa4e4aba78cb02b47"
+  },
+  "strings.txt": {
+   "size": 27,
+   "sha256": "5d3c0d22638b339978477b550bf85553843b576e4ed54443385f7838d40ca2c0"
+  }
+ },
+ "codecs": {
+  "exact": "hybrid"
+ },
+ "entries": {
+  "exact": 3,
+  "lower": 0,
+  "external": 0,
+  "entities": 0,
+  "phrases": 0,
+  "rules": 0,
+  "strings": 3
+ },
+ "traffic": {},
+ "gold_tokens": null,
+ "accuracy": null,
+ "baseline": null,
+ "beats_baseline": null,
+ "selection": null
+}

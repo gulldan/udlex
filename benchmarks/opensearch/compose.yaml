@@ -1,0 +1,14 @@
+services:
+  benchmark:
+    image: udlex-opensearch-bench:3.10.0-224-v1
+    pull_policy: never
+    build:
+      context: .
+      network: none
+    init: true
+    network_mode: none
+    volumes:
+      - ./inputs:/inputs:ro
+      - ./results:/results
+      - ./candidate:/candidate:ro
+      - ./runner/run.py:/opt/bench/run.py:ro

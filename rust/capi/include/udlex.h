@@ -30,6 +30,12 @@ const char *udlex_native_version(void);
 int32_t udlex_native_open(const uint8_t *path, size_t path_len,
                           udlex_native_lexicon **out);
 
+/* Open a language in a bundle. Both strings are UTF-8 without terminators.
+ * Set use_rules to 0 to disable suffix guesses. Ownership matches native_open. */
+int32_t udlex_native_load(const uint8_t *bundle, size_t bundle_len,
+                          const uint8_t *language, size_t language_len,
+                          uint8_t use_rules, udlex_native_lexicon **out);
+
 /* Close a live handle once. NULL is allowed. All reads must finish first. */
 int32_t udlex_native_close(udlex_native_lexicon *lexicon);
 

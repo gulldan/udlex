@@ -4,7 +4,7 @@ use std::ffi::c_char;
 use std::panic::{AssertUnwindSafe, catch_unwind};
 use std::{ptr, slice, str};
 
-use udlex_rs::Lexicon;
+use udlex_rs::{Lexicon, Options};
 
 // C can share and close handles across threads without Rust's type checks.
 const _: fn() = || {
@@ -16,6 +16,11 @@ const _: fn() = || {
 #[repr(C)]
 pub struct UdlexNativeLexicon {
     _opaque: [u8; 0],
+}
+
+struct Reader {
+    lexicon: Lexicon,
+    options: Options,
 }
 
 #[repr(i32)]
@@ -75,7 +80,53 @@ pub unsafe extern "C" fn udlex_native_open(
             return Err(Status::InvalidArgument);
         }
         let lexicon = Lexicon::open(path).map_err(|_| Status::OpenFailed)?;
-        unsafe { out.write(Box::into_raw(Box::new(lexicon)).cast()) };
+        let reader = Reader {
+            lexicon,
+            options: Options::default(),
+        };
+        unsafe { out.write(Box::into_raw(Box::new(reader)).cast()) };
+        Ok(())
+    })
+}
+
+/// Opens a language in a bundle for single-token lookup. A zero `use_rules`
+/// disables suffix guesses for the lifetime of the handle.
+///
+/// # Safety
+/// Both strings must be readable for their byte lengths. `out` must be aligned,
+/// writable, and disjoint from the strings. Close the returned handle once.
+#[unsafe(no_mangle)]
+pub unsafe extern "C" fn udlex_native_load(
+    bundle: *const u8,
+    bundle_len: usize,
+    language: *const u8,
+    language_len: usize,
+    use_rules: u8,
+    out: *mut *mut UdlexNativeLexicon,
+) -> i32 {
+    boundary(|| {
+        if out.is_null() || !out.is_aligned() {
+            return Err(Status::InvalidArgument);
+        }
+        unsafe { out.write(ptr::null_mut()) };
+        let bundle = unsafe { text(bundle, bundle_len) }?;
+        let language = unsafe { text(language, language_len) }?;
+        if bundle.is_empty()
+            || bundle.contains('\0')
+            || language.is_empty()
+            || language.contains('\0')
+        {
+            return Err(Status::InvalidArgument);
+        }
+        let lexicon = udlex_rs::load(bundle, language).map_err(|_| Status::OpenFailed)?;
+        let reader = Reader {
+            lexicon,
+            options: Options {
+                use_rules: use_rules != 0,
+                ..Options::default()
+            },
+        };
+        unsafe { out.write(Box::into_raw(Box::new(reader)).cast()) };
         Ok(())
     })
 }
@@ -88,7 +139,7 @@ pub unsafe extern "C" fn udlex_native_open(
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn udlex_native_close(lexicon: *mut UdlexNativeLexicon) -> i32 {
     boundary(|| {
-        let lexicon = lexicon.cast::<Lexicon>();
+        let lexicon = lexicon.cast::<Reader>();
         if !lexicon.is_null() {
             if !lexicon.is_aligned() {
                 return Err(Status::InvalidArgument);
@@ -120,7 +171,7 @@ pub unsafe extern "C" fn udlex_native_lemma(
             return Err(Status::InvalidArgument);
         }
         unsafe { out_len.write(0) };
-        let lexicon = lexicon.cast::<Lexicon>();
+        let lexicon = lexicon.cast::<Reader>();
         if lexicon.is_null()
             || !lexicon.is_aligned()
             || out_cap > isize::MAX as usize
@@ -129,7 +180,10 @@ pub unsafe extern "C" fn udlex_native_lemma(
             return Err(Status::InvalidArgument);
         }
         let token = unsafe { text(token, token_len) }?;
-        let lemma = unsafe { &*lexicon }.lemma(token, sentence_initial != 0);
+        let reader = unsafe { &*lexicon };
+        let lemma = reader
+            .lexicon
+            .lemma_with(token, sentence_initial != 0, reader.options);
         let len = lemma.len();
         unsafe { out_len.write(len) };
         if len > out_cap {
