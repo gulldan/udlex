@@ -112,8 +112,8 @@ impl GenerationWriter {
         // Long-key-only lemmas move to the pool's tail before any table stores
         // an ID, so `prune` can cut them. An unreadable source skips this and
         // fails below, in the documented error order.
-        if let Ok(Some(plan)) = plan_compaction(self.directory(), &strings, true) {
-            apply_compaction(self.directory(), &mut strings, &plan, true)?;
+        if let Ok(Some(plan)) = plan_compaction(self.directory(), &strings) {
+            apply_compaction(self.directory(), &mut strings, &plan)?;
         }
         let external =
             probe_share(&meta, LookupTableKind::External, &meta_path).and_then(|traffic| {
@@ -124,11 +124,11 @@ impl GenerationWriter {
                     traffic,
                 )
             });
-        let mut prepared_external = match external {
+        let prepared_external = match external {
             Ok(prepared) => prepared,
             Err(external_error) => {
-                // External is prepared first for compaction, but an invalid
-                // exact/lower source must still win the diagnostic.
+                // External is prepared first, but an invalid exact/lower source
+                // must still win the diagnostic.
                 for table in [LookupTableKind::Exact, LookupTableKind::Lower] {
                     let traffic = probe_share(&meta, table, &meta_path)?;
                     drop(prepare_table(self.directory(), table, &strings, traffic)?);
@@ -136,31 +136,7 @@ impl GenerationWriter {
                 return Err(external_error);
             }
         };
-        let compacted = if prepared_external.codec() == Some(Codec::Inline) {
-            match plan_compaction(self.directory(), &strings, false) {
-                Ok(Some(plan)) => {
-                    apply_compaction(self.directory(), &mut strings, &plan, false)?;
-                    true
-                }
-                Ok(None) => false,
-                Err(compaction_error) => {
-                    validate_before_compaction_error(self.directory(), &meta, &strings)?;
-                    return Err(compaction_error);
-                }
-            }
-        } else {
-            false
-        };
-        let external_identity = compacted
-            .then(|| prepared_external.integrity(self.directory(), LookupTableKind::External))
-            .transpose()?
-            .flatten();
-        let derived = external_identity
-            .as_ref()
-            .map(|integrity| vec![("external.inline", integrity)])
-            .unwrap_or_default();
-        let generation =
-            content_generation_id(self.directory(), &meta, "compiled-source", &derived)?;
+        let generation = content_generation_id(self.directory(), &meta, "compiled-source", &[])?;
         self.assign_generation(generation);
         let generation = self.id().to_owned();
         let outcome = compile_generation(
@@ -267,25 +243,6 @@ fn migrate_generation(
         tables: compiled,
         from_sources: true,
     })
-}
-
-/// After compaction failed, reports an earlier malformed source first.
-fn validate_before_compaction_error(
-    directory: &Path,
-    meta: &serde_json::Value,
-    strings: &StringTable,
-) -> Result<()> {
-    for table in LookupTableKind::ALL
-        .into_iter()
-        .filter(|table| table.retains_string_id())
-    {
-        let traffic = probe_share(meta, table, &directory.join("meta.json"))?;
-        drop(prepare_table(directory, table, strings, traffic)?);
-    }
-    let mut entries = serde_json::Map::new();
-    compile_phrase_table(directory, &mut entries)?;
-    compile_rule_table(directory, strings.len(), &mut entries)?;
-    Ok(())
 }
 
 /// Compiles the sorted TSV files a build produced into lookup tables,
@@ -466,11 +423,7 @@ fn truncate_pool(
             path: meta_path.clone(),
             message: "metadata declares no string count".to_owned(),
         })?;
-    let external_ids = meta
-        .codecs
-        .get("external")
-        .is_some_and(|codec| codec != "inline");
-    let kept = stored_string_count(sources, count, external_ids)?;
+    let kept = stored_string_count(sources, count)?;
     if kept >= count {
         return Ok(());
     }
@@ -849,53 +802,23 @@ mod tests {
     }
 
     #[test]
-    fn external_inline_keeps_answers_while_reclaiming_sparse_strings() {
+    fn external_compiles_as_a_hybrid_and_prune_drops_its_inline_lemmas() {
         let temporary = tempfile::tempdir().unwrap();
-        let root = temporary.path().join("xx_compact");
+        let root = temporary.path().join("xx_external_hybrid");
         publish_sparse_external(&root, "");
-
-        let resolved = resolve_generation(&root).unwrap();
-        let compact =
-            crate::lexicon::runtime::read_to_string(&resolved.directory.join("strings.txt"))
-                .unwrap();
-        assert_eq!(compact, "known-lemma\n");
         let lexicon = Lexicon::open(&root).unwrap();
         assert_eq!(
             lexicon.meta().codecs.get("external").map(String::as_str),
-            Some("inline")
+            Some("hybrid")
         );
+        assert_eq!(lexicon.lemma("lemma0042s", false), "lemma0042");
+
+        // Every external key is past the split, so only "known" keeps a string.
+        assert!(prune(&root).unwrap());
+        let lexicon = Lexicon::open(&root).unwrap();
         assert_eq!(lexicon.meta().entries.get("strings"), Some(&1));
         assert_eq!(lexicon.lemma("known", false), "known-lemma");
         assert_eq!(lexicon.lemma("lemma0042s", false), "lemma0042");
-    }
-
-    #[test]
-    fn compacted_external_artifact_participates_in_generation_identity() {
-        let temporary = tempfile::tempdir().unwrap();
-        let left = temporary.path().join("left/xx_identity");
-        let right = temporary.path().join("right/xx_identity");
-        let left_generation = publish_sparse_external(&left, "");
-        let right_generation = publish_sparse_external(&right, "x");
-
-        // Compaction makes the sources identical; only the inline artifact
-        // differs, so it must bind the content ID.
-        let left_resolved = resolve_generation(&left).unwrap();
-        let right_resolved = resolve_generation(&right).unwrap();
-        for source in SOURCES.into_iter().chain(["strings.txt"]) {
-            assert_eq!(
-                std::fs::read(left_resolved.directory.join(source)).unwrap(),
-                std::fs::read(right_resolved.directory.join(source)).unwrap()
-            );
-        }
-        assert_ne!(left_generation, right_generation);
-        assert_eq!(
-            Lexicon::open(&left).unwrap().lemma("lemma0042s", false),
-            "lemma0042"
-        );
-        assert_eq!(
-            Lexicon::open(&right).unwrap().lemma("lemma0042s", false),
-            "lemma0042x"
-        );
     }
 
     #[test]
