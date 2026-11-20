@@ -27,11 +27,16 @@ RUN apt-get update && apt-get install -y --no-install-recommends clang-tidy shel
 COPY integrations/opensearch/plugin/lint.sh integrations/opensearch/plugin/test.sh integrations/opensearch/plugin/
 COPY integrations/opensearch/plugin/checks/ integrations/opensearch/plugin/checks/
 COPY integrations/opensearch/plugin/src/test/ integrations/opensearch/plugin/src/test/
+COPY integrations/opensearch/plugin/src/test/build_dictionaries.rs rust/examples/build_dictionaries.rs
+COPY benchmarks/opensearch/runner/search-cases.tsv benchmarks/opensearch/runner/search-cases.tsv
 RUN --mount=from=distribution,source=/usr/share/opensearch,target=/distribution,ro \
     --mount=type=cache,target=/usr/local/cargo/registry \
     cargo fmt --manifest-path rust/Cargo.toml --all -- --check && \
     cargo clippy --locked --manifest-path rust/Cargo.toml -p udlex-capi --all-targets -- -D warnings && \
     bash integrations/opensearch/plugin/lint.sh /distribution && \
+    cargo run --locked --manifest-path rust/Cargo.toml --features train --example build_dictionaries -- \
+        benchmarks/opensearch/runner/search-cases.tsv /tmp/dictionaries && \
+    bash integrations/opensearch/plugin/test.sh /distribution /tmp/dictionaries && \
     bash integrations/opensearch/plugin/test.sh /distribution integrations/opensearch/plugin/src/test/dictionaries eng ox longexamplelemma
 
 FROM scratch

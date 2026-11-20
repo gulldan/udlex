@@ -24,14 +24,16 @@ docker build -f integrations/opensearch/plugin/Dockerfile --output type=local,de
 ./integrations/opensearch/plugin/lint.sh
 ```
 
-Команда запускает в Docker Checkstyle, clang-tidy, ShellCheck, rustfmt, Clippy и тест готового ZIP с `-Xcheck:jni`. Тест проверяет Unicode, рост буфера, атрибуты Lucene и одновременные запросы при закрытии словаря. Для проверки своего комплекта с распакованным OpenSearch на Linux выполните
+Команда запускает в Docker Checkstyle, clang-tidy, ShellCheck, rustfmt, Clippy и тест готового ZIP с `-Xcheck:jni`. Он открывает десять словарей в одном кеше, проверяет леммы и атрибуты Lucene для каждого языка, а также Unicode, рост буфера и закрытие словаря при одновременных запросах. Для проверки своего комплекта с распакованным OpenSearch на Linux выполните
 
 ```sh
-./integrations/opensearch/plugin/test.sh /path/to/opensearch /path/to/dictionaries rus котами кот
+./integrations/opensearch/plugin/test.sh /path/to/opensearch /path/to/dictionaries
 ```
 
 ## Анализ текста
 
-Для каждого языкового поля задайте анализатор, например `udlex_rus` или `udlex_eng`. Русская цепочка состоит из `standard → udlex(language=rus) → lowercase`. Фильтр сохраняет позиции и смещения, учитывает исходный регистр и пропускает токены с признаком `keyword`. Параметр `use_rules` управляет суффиксными правилами. [Настройки 224 анализаторов](../docker/analysis-224.json) · [Примеры запросов и подсветки](../docker/example.http)
+В одном индексе настроены поля `text.rus`, `text.eng`, `text.deu`, `text.fra`, `text.spa`, `text.ita`, `text.por`, `text.ukr`, `text.jpn` и `text.yue`. Приложение знает язык документа и пишет текст в соответствующее поле. В документе с переводами можно заполнить несколько полей. У каждого поля свой анализатор и общий `bundle_path` со значением `udlex`. [Настройки одного индекса на десять языков](examples/index-settings.json) · [Как OpenSearch выбирает анализатор поля](https://docs.opensearch.org/latest/mappings/mapping-parameters/analyzer/)
+
+Русская цепочка состоит из `standard → udlex(language=rus) → lowercase`. Фильтр сохраняет позиции и смещения, учитывает исходный регистр и пропускает токены с признаком `keyword`. Параметр `use_rules` управляет суффиксными правилами. [Настройки 224 анализаторов](../docker/analysis-224.json) · [Примеры запросов и подсветки](../docker/example.http)
 
 Словарь остаётся открытым до остановки узла. Для смены словарей установите новый комплект в отдельный каталог под `config`, создайте индекс с новым `bundle_path`, переиндексируйте документы и переключите алиас. [Повторяемый бенчмарк](../../../benchmarks/opensearch/README.md)

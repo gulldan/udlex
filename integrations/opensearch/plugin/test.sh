@@ -32,7 +32,12 @@ classpath="${jars[0]}:$os_home/lib/*"
 encode_argument() {
     printf '%s' "$1" | base64 | tr -d '\r\n'
 }
+if [[ $# == 2 ]]; then
+    arguments=("$bundle" "$plugin_dir/../../../benchmarks/opensearch/runner/search-cases.tsv")
+else
+    arguments=("$bundle" "${3:-rus}" "${4:-котами}" "${5:-кот}")
+fi
+encoded=()
+for argument in "${arguments[@]}"; do encoded+=("$(encode_argument "$argument")"); done
 "$jdk_dir/bin/java" -ea -Xcheck:jni --enable-native-access=ALL-UNNAMED \
-    -cp "$work/classes:$classpath" org.udlex.opensearch.NativeContractTest \
-    "$(encode_argument "$bundle")" "$(encode_argument "${3:-rus}")" \
-    "$(encode_argument "${4:-котами}")" "$(encode_argument "${5:-кот}")"
+    -cp "$work/classes:$classpath" org.udlex.opensearch.NativeContractTest "${encoded[@]}"

@@ -219,6 +219,9 @@ def main() -> None:
         },
         "russian_search_smoke": read(args.results / "Udlex/search-smoke.json"),
     }
+    multilingual = args.results / "Udlex/multilingual-search-smoke.json"
+    if multilingual.is_file():
+        recap["multilingual_search_smoke"] = read(multilingual)
     (args.out / "summary.json").write_text(
         json.dumps(recap, indent=2, ensure_ascii=False) + "\n"
     )

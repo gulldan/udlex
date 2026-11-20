@@ -5,1345 +5,1345 @@
         "lemma_abk": {
           "type": "udlex",
           "language": "abk",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_abq": {
           "type": "udlex",
           "language": "abq",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_afr": {
           "type": "udlex",
           "language": "afr",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_aii": {
           "type": "udlex",
           "language": "aii",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_ajp": {
           "type": "udlex",
           "language": "ajp",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_akk": {
           "type": "udlex",
           "language": "akk",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_aln": {
           "type": "udlex",
           "language": "aln",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_amh": {
           "type": "udlex",
           "language": "amh",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_ang": {
           "type": "udlex",
           "language": "ang",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_apu": {
           "type": "udlex",
           "language": "apu",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_aqz": {
           "type": "udlex",
           "language": "aqz",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_arb": {
           "type": "udlex",
           "language": "arb",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_arh": {
           "type": "udlex",
           "language": "arh",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_arr": {
           "type": "udlex",
           "language": "arr",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_asm": {
           "type": "udlex",
           "language": "asm",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_ave": {
           "type": "udlex",
           "language": "ave",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_axm": {
           "type": "udlex",
           "language": "axm",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_aze": {
           "type": "udlex",
           "language": "aze",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_azz": {
           "type": "udlex",
           "language": "azz",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_bam": {
           "type": "udlex",
           "language": "bam",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_bar": {
           "type": "udlex",
           "language": "bar",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_bej": {
           "type": "udlex",
           "language": "bej",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_bel": {
           "type": "udlex",
           "language": "bel",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_ben": {
           "type": "udlex",
           "language": "ben",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_bgs": {
           "type": "udlex",
           "language": "bgs",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_bho": {
           "type": "udlex",
           "language": "bho",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_bor": {
           "type": "udlex",
           "language": "bor",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_bre": {
           "type": "udlex",
           "language": "bre",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_brh": {
           "type": "udlex",
           "language": "brh",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_bul": {
           "type": "udlex",
           "language": "bul",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_bxr": {
           "type": "udlex",
           "language": "bxr",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_cat": {
           "type": "udlex",
           "language": "cat",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_ceb": {
           "type": "udlex",
           "language": "ceb",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_ces": {
           "type": "udlex",
           "language": "ces",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_che": {
           "type": "udlex",
           "language": "che",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_chu": {
           "type": "udlex",
           "language": "chu",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_ckb": {
           "type": "udlex",
           "language": "ckb",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_ckt": {
           "type": "udlex",
           "language": "ckt",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_cmn": {
           "type": "udlex",
           "language": "cmn",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_cop": {
           "type": "udlex",
           "language": "cop",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_cpg": {
           "type": "udlex",
           "language": "cpg",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_ctn": {
           "type": "udlex",
           "language": "ctn",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_cux": {
           "type": "udlex",
           "language": "cux",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_cym": {
           "type": "udlex",
           "language": "cym",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_dan": {
           "type": "udlex",
           "language": "dan",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_dar": {
           "type": "udlex",
           "language": "dar",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_deu": {
           "type": "udlex",
           "language": "deu",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_drs": {
           "type": "udlex",
           "language": "drs",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_dta": {
           "type": "udlex",
           "language": "dta",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_egy": {
           "type": "udlex",
           "language": "egy",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_ell": {
           "type": "udlex",
           "language": "ell",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_eme": {
           "type": "udlex",
           "language": "eme",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_eng": {
           "type": "udlex",
           "language": "eng",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_epo": {
           "type": "udlex",
           "language": "epo",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_ess": {
           "type": "udlex",
           "language": "ess",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_est": {
           "type": "udlex",
           "language": "est",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_eus": {
           "type": "udlex",
           "language": "eus",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_eve": {
           "type": "udlex",
           "language": "eve",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_evn": {
           "type": "udlex",
           "language": "evn",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_fao": {
           "type": "udlex",
           "language": "fao",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_fin": {
           "type": "udlex",
           "language": "fin",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_fra": {
           "type": "udlex",
           "language": "fra",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_frm": {
           "type": "udlex",
           "language": "frm",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_fro": {
           "type": "udlex",
           "language": "fro",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_fsl": {
           "type": "udlex",
           "language": "fsl",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_gla": {
           "type": "udlex",
           "language": "gla",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_gld": {
           "type": "udlex",
           "language": "gld",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_gle": {
           "type": "udlex",
           "language": "gle",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_glg": {
           "type": "udlex",
           "language": "glg",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_glv": {
           "type": "udlex",
           "language": "glv",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_gor": {
           "type": "udlex",
           "language": "gor",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_got": {
           "type": "udlex",
           "language": "got",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_grc": {
           "type": "udlex",
           "language": "grc",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_gsw": {
           "type": "udlex",
           "language": "gsw",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_gub": {
           "type": "udlex",
           "language": "gub",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_gug": {
           "type": "udlex",
           "language": "gug",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_guj": {
           "type": "udlex",
           "language": "guj",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_gun": {
           "type": "udlex",
           "language": "gun",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_gwi": {
           "type": "udlex",
           "language": "gwi",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_gya": {
           "type": "udlex",
           "language": "gya",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_hac": {
           "type": "udlex",
           "language": "hac",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_hat": {
           "type": "udlex",
           "language": "hat",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_hau": {
           "type": "udlex",
           "language": "hau",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_hbo": {
           "type": "udlex",
           "language": "hbo",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_heb": {
           "type": "udlex",
           "language": "heb",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_hin": {
           "type": "udlex",
           "language": "hin",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_hit": {
           "type": "udlex",
           "language": "hit",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_hrv": {
           "type": "udlex",
           "language": "hrv",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_hsb": {
           "type": "udlex",
           "language": "hsb",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_hun": {
           "type": "udlex",
           "language": "hun",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_hye": {
           "type": "udlex",
           "language": "hye",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_hyw": {
           "type": "udlex",
           "language": "hyw",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_ind": {
           "type": "udlex",
           "language": "ind",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_isl": {
           "type": "udlex",
           "language": "isl",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_ita": {
           "type": "udlex",
           "language": "ita",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_jaa": {
           "type": "udlex",
           "language": "jaa",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_jav": {
           "type": "udlex",
           "language": "jav",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_jpn": {
           "type": "udlex",
           "language": "jpn",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_kas": {
           "type": "udlex",
           "language": "kas",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_kat": {
           "type": "udlex",
           "language": "kat",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_kaz": {
           "type": "udlex",
           "language": "kaz",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_kbc": {
           "type": "udlex",
           "language": "kbc",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_kfx": {
           "type": "udlex",
           "language": "kfx",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_kir": {
           "type": "udlex",
           "language": "kir",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_kmr": {
           "type": "udlex",
           "language": "kmr",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_koi": {
           "type": "udlex",
           "language": "koi",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_kor": {
           "type": "udlex",
           "language": "kor",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_kpv": {
           "type": "udlex",
           "language": "kpv",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_krl": {
           "type": "udlex",
           "language": "krl",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_lat": {
           "type": "udlex",
           "language": "lat",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_lav": {
           "type": "udlex",
           "language": "lav",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_lij": {
           "type": "udlex",
           "language": "lij",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_lit": {
           "type": "udlex",
           "language": "lit",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_ltg": {
           "type": "udlex",
           "language": "ltg",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_ltz": {
           "type": "udlex",
           "language": "ltz",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_lzh": {
           "type": "udlex",
           "language": "lzh",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_lzz": {
           "type": "udlex",
           "language": "lzz",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_mal": {
           "type": "udlex",
           "language": "mal",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_mar": {
           "type": "udlex",
           "language": "mar",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_mdf": {
           "type": "udlex",
           "language": "mdf",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_mjg": {
           "type": "udlex",
           "language": "mjg",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_mjl": {
           "type": "udlex",
           "language": "mjl",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_mkd": {
           "type": "udlex",
           "language": "mkd",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_mlt": {
           "type": "udlex",
           "language": "mlt",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_mnc": {
           "type": "udlex",
           "language": "mnc",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_mon": {
           "type": "udlex",
           "language": "mon",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_mpu": {
           "type": "udlex",
           "language": "mpu",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_mvf": {
           "type": "udlex",
           "language": "mvf",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_myu": {
           "type": "udlex",
           "language": "myu",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_myv": {
           "type": "udlex",
           "language": "myv",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_nap": {
           "type": "udlex",
           "language": "nap",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_naq": {
           "type": "udlex",
           "language": "naq",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_nds": {
           "type": "udlex",
           "language": "nds",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_neg": {
           "type": "udlex",
           "language": "neg",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_nep": {
           "type": "udlex",
           "language": "nep",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_nhi": {
           "type": "udlex",
           "language": "nhi",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_nld": {
           "type": "udlex",
           "language": "nld",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_nmf": {
           "type": "udlex",
           "language": "nmf",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_nor": {
           "type": "udlex",
           "language": "nor",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_oac": {
           "type": "udlex",
           "language": "oac",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_oci": {
           "type": "udlex",
           "language": "oci",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_oge": {
           "type": "udlex",
           "language": "oge",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_olo": {
           "type": "udlex",
           "language": "olo",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_ori": {
           "type": "udlex",
           "language": "ori",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_orv": {
           "type": "udlex",
           "language": "orv",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_ota": {
           "type": "udlex",
           "language": "ota",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_otk": {
           "type": "udlex",
           "language": "otk",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_pad": {
           "type": "udlex",
           "language": "pad",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_pan": {
           "type": "udlex",
           "language": "pan",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_pay": {
           "type": "udlex",
           "language": "pay",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_pcm": {
           "type": "udlex",
           "language": "pcm",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_peh": {
           "type": "udlex",
           "language": "peh",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_pes": {
           "type": "udlex",
           "language": "pes",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_pka": {
           "type": "udlex",
           "language": "pka",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_pli": {
           "type": "udlex",
           "language": "pli",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_pol": {
           "type": "udlex",
           "language": "pol",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_por": {
           "type": "udlex",
           "language": "por",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_pro": {
           "type": "udlex",
           "language": "pro",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_pst": {
           "type": "udlex",
           "language": "pst",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_qaf": {
           "type": "udlex",
           "language": "qaf",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_qpm": {
           "type": "udlex",
           "language": "qpm",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_qtd": {
           "type": "udlex",
           "language": "qtd",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_qti": {
           "type": "udlex",
           "language": "qti",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_quc": {
           "type": "udlex",
           "language": "quc",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_ron": {
           "type": "udlex",
           "language": "ron",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_ruc": {
           "type": "udlex",
           "language": "ruc",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_rus": {
           "type": "udlex",
           "language": "rus",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_sab": {
           "type": "udlex",
           "language": "sab",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_sah": {
           "type": "udlex",
           "language": "sah",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_san": {
           "type": "udlex",
           "language": "san",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_say": {
           "type": "udlex",
           "language": "say",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_sce": {
           "type": "udlex",
           "language": "sce",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_scn": {
           "type": "udlex",
           "language": "scn",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_sdh": {
           "type": "udlex",
           "language": "sdh",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_sga": {
           "type": "udlex",
           "language": "sga",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_sin": {
           "type": "udlex",
           "language": "sin",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_sjo": {
           "type": "udlex",
           "language": "sjo",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_slk": {
           "type": "udlex",
           "language": "slk",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_slv": {
           "type": "udlex",
           "language": "slv",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_sme": {
           "type": "udlex",
           "language": "sme",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_sms": {
           "type": "udlex",
           "language": "sms",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_snd": {
           "type": "udlex",
           "language": "snd",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_spa": {
           "type": "udlex",
           "language": "spa",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_sqi": {
           "type": "udlex",
           "language": "sqi",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_srd": {
           "type": "udlex",
           "language": "srd",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_srp": {
           "type": "udlex",
           "language": "srp",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_swe": {
           "type": "udlex",
           "language": "swe",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_swl": {
           "type": "udlex",
           "language": "swl",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_tam": {
           "type": "udlex",
           "language": "tam",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_tat": {
           "type": "udlex",
           "language": "tat",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_tel": {
           "type": "udlex",
           "language": "tel",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_tgl": {
           "type": "udlex",
           "language": "tgl",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_tha": {
           "type": "udlex",
           "language": "tha",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_tir": {
           "type": "udlex",
           "language": "tir",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_tpn": {
           "type": "udlex",
           "language": "tpn",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_tsn": {
           "type": "udlex",
           "language": "tsn",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_tuk": {
           "type": "udlex",
           "language": "tuk",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_tur": {
           "type": "udlex",
           "language": "tur",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_txg": {
           "type": "udlex",
           "language": "txg",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_ude": {
           "type": "udlex",
           "language": "ude",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_uig": {
           "type": "udlex",
           "language": "uig",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_ukr": {
           "type": "udlex",
           "language": "ukr",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_ulc": {
           "type": "udlex",
           "language": "ulc",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_urb": {
           "type": "udlex",
           "language": "urb",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_urd": {
           "type": "udlex",
           "language": "urd",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_usp": {
           "type": "udlex",
           "language": "usp",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_uzb": {
           "type": "udlex",
           "language": "uzb",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_vep": {
           "type": "udlex",
           "language": "vep",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_vie": {
           "type": "udlex",
           "language": "vie",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_wbp": {
           "type": "udlex",
           "language": "wbp",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_wol": {
           "type": "udlex",
           "language": "wol",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_wuu": {
           "type": "udlex",
           "language": "wuu",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_xal": {
           "type": "udlex",
           "language": "xal",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_xav": {
           "type": "udlex",
           "language": "xav",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_xcl": {
           "type": "udlex",
           "language": "xcl",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_xnr": {
           "type": "udlex",
           "language": "xnr",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_xpg": {
           "type": "udlex",
           "language": "xpg",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_xum": {
           "type": "udlex",
           "language": "xum",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_yid": {
           "type": "udlex",
           "language": "yid",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_yor": {
           "type": "udlex",
           "language": "yor",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_yrk": {
           "type": "udlex",
           "language": "yrk",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_yrl": {
           "type": "udlex",
           "language": "yrl",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_yue": {
           "type": "udlex",
           "language": "yue",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         },
         "lemma_zza": {
           "type": "udlex",
           "language": "zza",
-          "bundle_path": "udlex-224-20261120",
+          "bundle_path": "udlex",
           "use_rules": true
         }
       },

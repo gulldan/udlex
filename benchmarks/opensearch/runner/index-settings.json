@@ -1,38 +1,50 @@
 {
   "settings": {
-    "number_of_shards": 1,
-    "number_of_replicas": 0,
     "analysis": {
       "filter": {
-        "udlex_rus": {
-          "type": "udlex",
-          "language": "rus",
-          "bundle_path": "udlex-bundle",
-          "use_rules": true
-        }
+        "lemma_rus": {"type": "udlex", "language": "rus", "bundle_path": "udlex", "use_rules": true},
+        "lemma_eng": {"type": "udlex", "language": "eng", "bundle_path": "udlex", "use_rules": true},
+        "lemma_deu": {"type": "udlex", "language": "deu", "bundle_path": "udlex", "use_rules": true},
+        "lemma_fra": {"type": "udlex", "language": "fra", "bundle_path": "udlex", "use_rules": true},
+        "lemma_spa": {"type": "udlex", "language": "spa", "bundle_path": "udlex", "use_rules": true},
+        "lemma_ita": {"type": "udlex", "language": "ita", "bundle_path": "udlex", "use_rules": true},
+        "lemma_por": {"type": "udlex", "language": "por", "bundle_path": "udlex", "use_rules": true},
+        "lemma_ukr": {"type": "udlex", "language": "ukr", "bundle_path": "udlex", "use_rules": true},
+        "lemma_jpn": {"type": "udlex", "language": "jpn", "bundle_path": "udlex", "use_rules": true},
+        "lemma_yue": {"type": "udlex", "language": "yue", "bundle_path": "udlex", "use_rules": true}
       },
       "analyzer": {
-        "udlex_text": {
-          "type": "custom",
-          "tokenizer": "standard",
-          "filter": ["udlex_rus", "lowercase"]
-        },
-        "udlex_gold_token": {
-          "type": "custom",
-          "tokenizer": "keyword",
-          "filter": ["udlex_rus"]
-        },
-        "udlex_gold_match": {
-          "type": "custom",
-          "tokenizer": "keyword",
-          "filter": ["udlex_rus", "lowercase"]
-        }
+        "udlex_rus": {"type": "custom", "tokenizer": "standard", "filter": ["lemma_rus", "lowercase"]},
+        "udlex_eng": {"type": "custom", "tokenizer": "standard", "filter": ["lemma_eng", "lowercase"]},
+        "udlex_deu": {"type": "custom", "tokenizer": "standard", "filter": ["lemma_deu", "lowercase"]},
+        "udlex_fra": {"type": "custom", "tokenizer": "standard", "filter": ["lemma_fra", "lowercase"]},
+        "udlex_spa": {"type": "custom", "tokenizer": "standard", "filter": ["lemma_spa", "lowercase"]},
+        "udlex_ita": {"type": "custom", "tokenizer": "standard", "filter": ["lemma_ita", "lowercase"]},
+        "udlex_por": {"type": "custom", "tokenizer": "standard", "filter": ["lemma_por", "lowercase"]},
+        "udlex_ukr": {"type": "custom", "tokenizer": "standard", "filter": ["lemma_ukr", "lowercase"]},
+        "udlex_jpn": {"type": "custom", "tokenizer": "standard", "filter": ["lemma_jpn", "lowercase"]},
+        "udlex_yue": {"type": "custom", "tokenizer": "standard", "filter": ["lemma_yue", "lowercase"]}
       }
     }
   },
   "mappings": {
     "properties": {
-      "text": {"type": "text", "analyzer": "udlex_text", "search_analyzer": "udlex_text"}
+      "text": {
+        "type": "object",
+        "dynamic": "strict",
+        "properties": {
+          "rus": {"type": "text", "analyzer": "udlex_rus"},
+          "eng": {"type": "text", "analyzer": "udlex_eng"},
+          "deu": {"type": "text", "analyzer": "udlex_deu"},
+          "fra": {"type": "text", "analyzer": "udlex_fra"},
+          "spa": {"type": "text", "analyzer": "udlex_spa"},
+          "ita": {"type": "text", "analyzer": "udlex_ita"},
+          "por": {"type": "text", "analyzer": "udlex_por"},
+          "ukr": {"type": "text", "analyzer": "udlex_ukr"},
+          "jpn": {"type": "text", "analyzer": "udlex_jpn"},
+          "yue": {"type": "text", "analyzer": "udlex_yue"}
+        }
+      }
     }
   }
 }

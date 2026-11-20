@@ -3,6 +3,10 @@
 !rust/**
 rust/target/
 !rust-toolchain.toml
+!benchmarks/
+!benchmarks/opensearch/
+!benchmarks/opensearch/runner/
+!benchmarks/opensearch/runner/search-cases.tsv
 !integrations/
 !integrations/opensearch/
 !integrations/opensearch/plugin/

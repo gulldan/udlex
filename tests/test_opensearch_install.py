@@ -79,3 +79,24 @@ def test_invalid_archive_leaves_no_partial_install(
         installer.install(destination)
     assert not destination.exists()
     assert not list(tmp_path.glob(".udlex-install-*"))
+
+
+def test_new_install_opens_through_both_names(
+    installer: ModuleType, tmp_path: Path
+) -> None:
+    destination = tmp_path / "config/udlex"
+    installer.install(destination)
+    legacy = destination.with_name(installer.LEGACY_DIRECTORY)
+    assert legacy.is_symlink()
+    assert legacy.samefile(destination)
+    installer.install(destination)
+
+
+def test_upgrade_reuses_previous_install(installer: ModuleType, tmp_path: Path) -> None:
+    destination = tmp_path / "config/udlex"
+    legacy = destination.with_name(installer.LEGACY_DIRECTORY)
+    installer.install(legacy)
+    (tmp_path / "dictionaries").rename(tmp_path / "archives-offline")
+    installer.install(destination)
+    assert destination.is_symlink()
+    assert destination.samefile(legacy)

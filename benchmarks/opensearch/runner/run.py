@@ -102,6 +102,8 @@ def prepare_inputs(root: Path, languages: list[str]) -> Path:
         ]:
             msg = f"Dictionary generation mismatch for {iso}"
             raise ValueError(msg)
+    # Keep the public index example usable alongside the frozen benchmark input layout.
+    (config / "udlex").symlink_to("bundle", target_is_directory=True)
     return config
 
 
@@ -306,7 +308,7 @@ def run(mode: str) -> None:
     """Run all profiles and save the completed or failed run receipt."""
     plugin_zip = select_plugin()
     stamp = dt.datetime.now(dt.UTC).strftime("%Y%m%dT%H%M%SZ")
-    report = Path(tempfile.mkdtemp(prefix=f"{stamp}-{mode}-", dir=OUTPUT))
+    report = Path(tempfile.mkdtemp(prefix=f"{mode}-", dir=OUTPUT))
     if os.getuid() == 0:
         owner = OUTPUT.stat()
         uid = owner.st_uid or 1000

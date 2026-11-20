@@ -9,12 +9,14 @@ import os
 import shutil
 import tarfile
 import tempfile
+from contextlib import suppress
 from pathlib import Path, PurePosixPath
 from typing import TypedDict
 
 CATALOG_SHA256 = "3a05785bafbb4c049e773b7be8a3fc2683d0d0b9d8095a35d18918b5f33e24df"
 MARKER = ".udlex-catalog-sha256"
 KIT = Path(__file__).resolve().parent
+LEGACY_DIRECTORY = "udlex-224-20261120"
 
 
 def checksum(path: Path) -> str:
@@ -99,8 +101,14 @@ def _extract_dictionary(archive: Path, bundle: Path, iso: str) -> None:
                 shutil.copyfileobj(src, dest, length=1024 * 1024)
 
 
+def _link_if_absent(link: Path, target: Path) -> None:
+    # Both names may already be in use by other installers or existing indices.
+    with suppress(FileExistsError):
+        link.symlink_to(target.name, target_is_directory=True)
+
+
 def install(destination: Path) -> None:
-    """Verify and publish the complete dictionary set in one directory rename."""
+    """Publish the dictionaries and preserve paths used by existing indices."""
     catalog = KIT / "DICTIONARIES.json"
     if checksum(catalog) != CATALOG_SHA256:
         msg = "Unexpected dictionary catalog SHA-256"
@@ -109,6 +117,21 @@ def install(destination: Path) -> None:
     if len(entries) != 224 or len({item["iso639_3"] for item in entries}) != 224:
         msg = "Expected 224 distinct languages"
         raise ValueError(msg)
+    if destination.name == "udlex":
+        legacy = destination.with_name(LEGACY_DIRECTORY)
+        if (
+            not destination.exists()
+            and not legacy.is_symlink()
+            and _already_installed(legacy, entries)
+        ):
+            _link_if_absent(destination, legacy)
+        _install_verified(destination, entries)
+        _link_if_absent(legacy, destination)
+    else:
+        _install_verified(destination, entries)
+
+
+def _install_verified(destination: Path, entries: list[_Dictionary]) -> None:
     if _already_installed(destination, entries):
         print("This 224-language dictionary set is already installed at", destination)
         return

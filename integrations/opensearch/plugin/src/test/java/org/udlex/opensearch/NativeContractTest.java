@@ -1,10 +1,12 @@
 package org.udlex.opensearch;
 
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Base64;
+import java.util.HashSet;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
@@ -26,17 +28,41 @@ public final class NativeContractTest {
     private static final String UNICODE = "🧪\u0000𐐨€ß🦊"; // 4-, 1-, 4-, 3-, 2-, 4-byte UTF-8
 
     public static void main(String[] args) throws Exception {
-        if (args.length != 4) {
-            throw new IllegalArgumentException(
-                    "Expected: base64(BUNDLE) base64(LANGUAGE) base64(TOKEN) base64(EXPECTED_LEMMA)");
+        if (args.length != 2 && args.length != 4) {
+            throw new IllegalArgumentException("Supply a bundle and either a case file or a language, token and lemma");
         }
         for (int i = 0; i < args.length; i++) {
             args[i] = new String(Base64.getDecoder().decode(args[i]), StandardCharsets.UTF_8);
         }
         Path bundle = Path.of(args[0]).toRealPath();
-        String language = args[1];
-        String token = args[2];
-        String expected = args[3];
+        if (args.length == 2) {
+            verifyLanguages(bundle, Path.of(args[1]));
+            verifyContract(bundle, "rus", "котами", "кот");
+        } else {
+            verifyContract(bundle, args[1], args[2], args[3]);
+        }
+    }
+
+    private static void verifyLanguages(Path bundle, Path cases) throws Exception {
+        List<String> lines = Files.readAllLines(cases, StandardCharsets.UTF_8);
+        equal("language\tsentence\tsurface\tlemma", lines.getFirst(), "case file header");
+        var languages = new HashSet<String>();
+        try (LexiconCache cache = new LexiconCache()) {
+            for (String row : lines.subList(1, lines.size())) {
+                String[] cells = row.split("\t", -1);
+                equal(4, cells.length, "case file columns");
+                check(languages.add(cells[0]), "duplicate language: " + cells[0]);
+                NativeLexicon dictionary = cache.acquire(bundle, cells[0], true);
+                verifyTokenAttributes(dictionary, cells[2], cells[3]);
+            }
+            equal(10, languages.size(), "language coverage");
+            equal("кот", lemma(cache.acquire(bundle, "rus", true), "котами"), "Russian lookup in shared cache");
+            equal("кіт", lemma(cache.acquire(bundle, "ukr", true), "котами"), "Ukrainian lookup in shared cache");
+        }
+        System.out.println("PASS: ten language dictionaries in one cache");
+    }
+
+    private static void verifyContract(Path bundle, String language, String token, String expected) throws Exception {
         try (LexiconCache cache = new LexiconCache()) {
             NativeLexicon lexicon = cache.acquire(bundle, language, true);
             equal(lexicon, cache.acquire(bundle, language, true), "cache reuses immutable handle");
