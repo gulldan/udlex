@@ -1,0 +1,2 @@
+opensearch/** text=auto eol=lf
+opensearch/reference/*.csv -text whitespace=cr-at-eol

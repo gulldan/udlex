@@ -8,6 +8,7 @@
 
 Биндинг для Go находится в репозитории [udlex-go](https://github.com/gulldan/udlex-go).
 Фильтр для OpenSearch и пример настройки индекса описаны в [руководстве по интеграции](integrations/opensearch/plugin/README.md).
+Сравнение с анализаторами OpenSearch на 224 языках можно повторить в Docker. [Автономный бенчмарк](benchmarks/opensearch/README.md)
 
 ## Установка
 
