@@ -7,6 +7,7 @@
 список токенов.
 
 Биндинг для Go находится в репозитории [udlex-go](https://github.com/gulldan/udlex-go).
+Фильтр для OpenSearch и пример настройки индекса описаны в [руководстве по интеграции](integrations/opensearch/plugin/README.md).
 
 ## Установка
 

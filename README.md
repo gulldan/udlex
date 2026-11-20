@@ -6,6 +6,7 @@ Fast local lemmatization for Python. It looks up word forms in a dictionary and
 can apply suffix rules to unknown words. Input is a list of tokens.
 
 The Go bindings live in [udlex-go](https://github.com/gulldan/udlex-go).
+The [OpenSearch plugin guide](integrations/opensearch/plugin/README.md) includes a field mapping and a working search example.
 
 ## Install
 

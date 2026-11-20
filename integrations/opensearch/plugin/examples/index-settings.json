@@ -1,0 +1,38 @@
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 0,
+    "analysis": {
+      "filter": {
+        "udlex_rus": {
+          "type": "udlex",
+          "language": "rus",
+          "bundle_path": "udlex-bundle",
+          "use_rules": true
+        }
+      },
+      "analyzer": {
+        "udlex_text": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": ["udlex_rus", "lowercase"]
+        },
+        "udlex_gold_token": {
+          "type": "custom",
+          "tokenizer": "keyword",
+          "filter": ["udlex_rus"]
+        },
+        "udlex_gold_match": {
+          "type": "custom",
+          "tokenizer": "keyword",
+          "filter": ["udlex_rus", "lowercase"]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "text": {"type": "text", "analyzer": "udlex_text", "search_analyzer": "udlex_text"}
+    }
+  }
+}
