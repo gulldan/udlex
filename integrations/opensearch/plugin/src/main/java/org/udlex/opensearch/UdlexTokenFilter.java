@@ -23,11 +23,14 @@ final class UdlexTokenFilter extends TokenFilter {
             return false;
         }
         if (!keyword.isKeyword()) {
-            int n = lexicon.lemma(term.buffer(), term.length());
+            int inputLength = term.length();
+            int n = lexicon.lemma(term.buffer(), inputLength);
             while (n > term.buffer().length) { // the lemma outgrew the buffer: grow it, look up again
-                n = lexicon.lemma(term.resizeBuffer(n), term.length());
+                n = lexicon.lemma(term.resizeBuffer(n), inputLength);
             }
-            if (n >= 0) term.setLength(n); // the buffer already holds an unchanged lemma
+            if (n >= 0) {
+                term.setLength(n);
+            }
         }
         return true;
     }

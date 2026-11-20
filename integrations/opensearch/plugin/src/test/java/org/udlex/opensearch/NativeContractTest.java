@@ -1,7 +1,7 @@
 package org.udlex.opensearch;
 
-import java.nio.file.Path;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Base64;
@@ -27,7 +27,8 @@ public final class NativeContractTest {
 
     public static void main(String[] args) throws Exception {
         if (args.length != 4) {
-            throw new IllegalArgumentException("Expected: base64(BUNDLE) base64(LANGUAGE) base64(TOKEN) base64(EXPECTED_LEMMA)");
+            throw new IllegalArgumentException(
+                    "Expected: base64(BUNDLE) base64(LANGUAGE) base64(TOKEN) base64(EXPECTED_LEMMA)");
         }
         for (int i = 0; i < args.length; i++) {
             args[i] = new String(Base64.getDecoder().decode(args[i]), StandardCharsets.UTF_8);
@@ -39,21 +40,25 @@ public final class NativeContractTest {
         try (LexiconCache cache = new LexiconCache()) {
             NativeLexicon lexicon = cache.acquire(bundle, language, true);
             equal(lexicon, cache.acquire(bundle, language, true), "cache reuses immutable handle");
-            equal(expected, lexicon.lemma(token), "known-token lemma");
-            equal("", lexicon.lemma(""), "empty-token roundtrip");
+            equal(expected, lemma(lexicon, token), "known-token lemma");
+            equal("", lemma(lexicon, ""), "empty-token roundtrip");
             for (String bad : new String[] {"\ud800", "\udc00", "a\ud800", "\udc00\ud800", "\ud800a"}) {
-                expectFailure(IllegalArgumentException.class, () -> lexicon.lemma(bad), "unpaired UTF-16 surrogate");
+                expectFailure(IllegalArgumentException.class,
+                        () -> lemma(lexicon, bad), "unpaired UTF-16 surrogate");
             }
             if (language.equals("rus")) { // shapes the generic arguments cannot force
-                equal("человек", lexicon.lemma("людей"), "lemma longer than the form grows the buffer");
-                equal("кошка", lexicon.lemma("Кошки"), "mixed-case form");
-                equal("Москва", lexicon.lemma("Москве"), "mixed-case lemma");
+                equal("человек", lemma(lexicon, "людей"), "lemma longer than the form grows the buffer");
+                equal("кошка", lemma(lexicon, "Кошки"), "mixed-case form");
+                equal("Москва", lemma(lexicon, "Москве"), "mixed-case lemma");
                 char[] tight = "людей".toCharArray();
                 equal(7, lexicon.lemma(tight, tight.length), "overflow reports the needed length");
                 equal("людей", new String(tight), "overflow leaves the buffer intact");
             }
             NativeLexicon noRules = cache.acquire(bundle, language, false);
-            equal(UNICODE, noRules.lemma(UNICODE), "supplementary Unicode and embedded NUL roundtrip");
+            equal(UNICODE, lemma(noRules, UNICODE), "supplementary Unicode and embedded NUL roundtrip");
+            String longToken = UNICODE.repeat(12000);
+            equal(longToken, lemma(noRules, longToken), "large unknown token");
+            equal(expected, lemma(lexicon, token), "ordinary lookup after a large token");
             verifyTokenAttributes(lexicon, token, expected);
         }
         verifyNativeErrors(bundle, language);
@@ -62,31 +67,48 @@ public final class NativeContractTest {
         NativeLexicon closed = closedCache.acquire(bundle, language, true);
         closedCache.close();
         closedCache.close();
-        expectFailure(IllegalStateException.class, () -> closed.lemma(token), "use after close");
-        expectFailure(IllegalStateException.class, () -> closedCache.acquire(bundle, language, true), "acquire after close");
-        System.out.println("PASS: JNI UTF-8, fail-closed errors, cache lifetime, concurrent close, and token-stream attributes");
+        expectFailure(IllegalStateException.class, () -> lemma(closed, token), "use after close");
+        expectFailure(IllegalStateException.class,
+                () -> closedCache.acquire(bundle, language, true), "acquire after close");
+        System.out.println("PASS: JNI UTF-8, fail-closed errors, cache lifetime, concurrent close, and "
+                           + "token-stream attributes");
+    }
+
+    private static String lemma(NativeLexicon lexicon, String token) {
+        char[] term = token.toCharArray();
+        int length = lexicon.lemma(term, token.length());
+        while (length > term.length) {
+            term = Arrays.copyOf(term, length);
+            length = lexicon.lemma(term, token.length());
+        }
+        return length < 0 ? token : new String(term, 0, length);
     }
 
     private static void verifyNativeErrors(Path bundle, String language) {
         expectFailure(IllegalStateException.class,
-            () -> UdlexNative.open(NativeLexicon.encode(bundle.resolve("does-not-exist").toString()),
-                NativeLexicon.encode(language), true), "missing bundle fails closed");
-        long raw = UdlexNative.open(NativeLexicon.encode(bundle.toString()), NativeLexicon.encode(language), false);
+                ()
+                        -> UdlexNative.open(NativeLexicon.encode(bundle.resolve("does-not-exist").toString()),
+                                NativeLexicon.encode(language), true),
+                "missing bundle fails closed");
+        long raw = UdlexNative.open(
+                NativeLexicon.encode(bundle.toString()), NativeLexicon.encode(language), false);
         try {
             expectFailure(IllegalStateException.class,
-                () -> UdlexNative.lemma(raw, new char[2], 3), "length beyond the buffer fails closed");
+                    () -> UdlexNative.lemma(raw, new char[2], 3), "length beyond the buffer fails closed");
             expectFailure(IllegalStateException.class,
-                () -> UdlexNative.lemma(raw, null, 0), "null char array fails closed");
+                    () -> UdlexNative.lemma(raw, null, 0), "null char array fails closed");
             expectFailure(IllegalStateException.class,
-                () -> UdlexNative.lemma(0, new char[0], 0), "null native handle fails closed");
+                    () -> UdlexNative.lemma(0, new char[0], 0), "null native handle fails closed");
             char[] spare = Arrays.copyOf("x\ud800".toCharArray(), 8);
-            equal(-1, UdlexNative.lemma(raw, spare, 1), "only term[0, length) is read: a trailing surrogate is ignored");
+            equal(-1, UdlexNative.lemma(raw, spare, 1),
+                    "only term[0, length) is read: a trailing surrogate is ignored");
         } finally {
             UdlexNative.close(raw);
         }
     }
 
-    private static void verifyTokenAttributes(NativeLexicon lexicon, String token, String expected) throws Exception {
+    private static void verifyTokenAttributes(NativeLexicon lexicon, String token, String expected)
+            throws Exception {
         String[] terms = {token, token, "🧪", token, ""};
         String[] lemmas = {expected, token, "🧪", expected, ""};
         try (TokenStream stream = new UdlexTokenFilter(new FixtureStream(terms), lexicon)) {
@@ -115,10 +137,11 @@ public final class NativeContractTest {
             stream.end();
             equal(1000, offset.endOffset(), "final offset");
         }
-        equal(expected, lexicon.lemma(token), "closing a token stream must not close its shared dictionary");
+        equal(expected, lemma(lexicon, token), "closing a token stream must not close its shared dictionary");
     }
 
-    private static void verifyConcurrentClose(Path bundle, String language, String token, String expected) throws Exception {
+    private static void verifyConcurrentClose(Path bundle, String language, String token, String expected)
+            throws Exception {
         NativeLexicon lexicon = new NativeLexicon(bundle, language, true);
         ExecutorService executor = Executors.newFixedThreadPool(4);
         CountDownLatch started = new CountDownLatch(4);
@@ -127,7 +150,7 @@ public final class NativeContractTest {
         try {
             for (int worker = 0; worker < 4; worker++) {
                 workers.add(executor.submit(() -> {
-                    equal(expected, lexicon.lemma(token), "concurrent initial lookup");
+                    equal(expected, lemma(lexicon, token), "concurrent initial lookup");
                     started.countDown();
                     try {
                         race.await();
@@ -137,7 +160,7 @@ public final class NativeContractTest {
                     }
                     for (int i = 0; i < 500; i++) {
                         try {
-                            equal(expected, lexicon.lemma(token), "concurrent lookup");
+                            equal(expected, lemma(lexicon, token), "concurrent lookup");
                         } catch (IllegalStateException closed) {
                             equal("udlex dictionary is closed", closed.getMessage(), "close race error");
                             return;
@@ -148,7 +171,9 @@ public final class NativeContractTest {
             check(started.await(30, java.util.concurrent.TimeUnit.SECONDS), "workers did not start");
             race.countDown();
             lexicon.close();
-            for (Future<?> worker : workers) worker.get(30, java.util.concurrent.TimeUnit.SECONDS);
+            for (Future<?> worker : workers) {
+                worker.get(30, java.util.concurrent.TimeUnit.SECONDS);
+            }
         } finally {
             race.countDown();
             lexicon.close();
@@ -168,7 +193,9 @@ public final class NativeContractTest {
         private final FlagsAttribute flags = addAttribute(FlagsAttribute.class);
         private final PayloadAttribute payload = addAttribute(PayloadAttribute.class);
 
-        FixtureStream(String[] terms) { this.terms = terms; }
+        FixtureStream(String[] terms) {
+            this.terms = terms;
+        }
 
         @Override
         public void reset() throws java.io.IOException {
@@ -178,7 +205,9 @@ public final class NativeContractTest {
 
         @Override
         public boolean incrementToken() {
-            if (index == terms.length) return false;
+            if (index == terms.length) {
+                return false;
+            }
             clearAttributes();
             term.append(terms[index]);
             offset.setOffset(index * 100, index * 100 + terms[index].length());
@@ -199,21 +228,28 @@ public final class NativeContractTest {
         }
     }
 
-    private static void expectFailure(Class<? extends Throwable> expected, Runnable action, String label) {
+    private static void expectFailure(
+            Class<? extends RuntimeException> expected, Runnable action, String label) {
         try {
             action.run();
-        } catch (Throwable failure) {
-            if (expected.isInstance(failure)) return;
+        } catch (RuntimeException failure) {
+            if (expected.isInstance(failure)) {
+                return;
+            }
             throw new AssertionError(label + ": wrong exception", failure);
         }
         throw new AssertionError(label + ": did not fail");
     }
 
     private static void equal(Object expected, Object actual, String label) {
-        if (!expected.equals(actual)) throw new AssertionError(label + ": expected " + expected + " but got " + actual);
+        if (!expected.equals(actual)) {
+            throw new AssertionError(label + ": expected " + expected + " but got " + actual);
+        }
     }
 
     private static void check(boolean condition, String label) {
-        if (!condition) throw new AssertionError(label);
+        if (!condition) {
+            throw new AssertionError(label);
+        }
     }
 }

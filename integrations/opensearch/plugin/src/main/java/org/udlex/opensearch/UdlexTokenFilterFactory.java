@@ -12,8 +12,8 @@ import org.opensearch.index.analysis.AbstractTokenFilterFactory;
 final class UdlexTokenFilterFactory extends AbstractTokenFilterFactory {
     private final NativeLexicon lexicon;
 
-    UdlexTokenFilterFactory(IndexSettings indexSettings, Environment environment,
-                           String name, Settings settings, LexiconCache cache) throws IOException {
+    UdlexTokenFilterFactory(IndexSettings indexSettings, Environment environment, String name,
+            Settings settings, LexiconCache cache) throws IOException {
         super(indexSettings, name, settings);
         String language = settings.get("language");
         if (language == null || !language.matches("[a-z]{3}")) {
@@ -21,13 +21,15 @@ final class UdlexTokenFilterFactory extends AbstractTokenFilterFactory {
         }
         String configuredPath = settings.get("bundle_path");
         if (configuredPath == null || configuredPath.isBlank()) {
-            throw new IllegalArgumentException("udlex requires bundle_path inside the OpenSearch config directory");
+            throw new IllegalArgumentException(
+                    "udlex requires bundle_path inside the OpenSearch config directory");
         }
         // Native file I/O is outside Java's sandbox. Validate before crossing JNI.
         Path config = environment.configDir().toRealPath();
         Path bundle = config.resolve(configuredPath).toRealPath();
         if (!bundle.startsWith(config) || !Files.isDirectory(bundle)) {
-            throw new IllegalArgumentException("udlex bundle_path must resolve to a directory inside OpenSearch config");
+            throw new IllegalArgumentException(
+                    "udlex bundle_path must resolve to a directory inside OpenSearch config");
         }
         lexicon = cache.acquire(bundle, language, settings.getAsBoolean("use_rules", true));
     }

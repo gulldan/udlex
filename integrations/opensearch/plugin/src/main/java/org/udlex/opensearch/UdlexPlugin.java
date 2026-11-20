@@ -1,6 +1,5 @@
 package org.udlex.opensearch;
 
-import java.io.IOException;
 import java.util.Map;
 import org.opensearch.index.analysis.TokenFilterFactory;
 import org.opensearch.indices.analysis.AnalysisModule.AnalysisProvider;
@@ -13,14 +12,15 @@ public final class UdlexPlugin extends Plugin implements AnalysisPlugin {
 
     @Override
     public Map<String, AnalysisProvider<TokenFilterFactory>> getTokenFilters() {
-        return Map.of("udlex", AnalysisPlugin.requiresAnalysisSettings(
-            (indexSettings, environment, name, settings) ->
-                new UdlexTokenFilterFactory(indexSettings, environment, name, settings, lexicons)
-        ));
+        return Map.of("udlex",
+                AnalysisPlugin.requiresAnalysisSettings(
+                        (indexSettings, environment, name, settings)
+                                -> new UdlexTokenFilterFactory(
+                                        indexSettings, environment, name, settings, lexicons)));
     }
 
     @Override
-    public void close() throws IOException {
+    public void close() {
         lexicons.close();
     }
 }

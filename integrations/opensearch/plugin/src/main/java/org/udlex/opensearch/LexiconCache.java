@@ -15,7 +15,7 @@ final class LexiconCache implements AutoCloseable {
             throw new IllegalStateException("udlex plugin is closed");
         }
         return handles.computeIfAbsent(new Key(bundle, language, useRules),
-            key -> new NativeLexicon(key.bundle(), key.language(), key.useRules()));
+                key -> new NativeLexicon(key.bundle(), key.language(), key.useRules()));
     }
 
     @Override

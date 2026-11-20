@@ -7,7 +7,7 @@
         "udlex_rus": {
           "type": "udlex",
           "language": "rus",
-          "bundle_path": "udlex-bundle",
+          "bundle_path": "udlex-224-20261120",
           "use_rules": true
         }
       },

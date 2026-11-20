@@ -10,3 +10,5 @@ services:
     volumes:
       - ./inputs:/inputs:ro
       - ./results:/results
+      - ./candidate:/candidate:ro
+      - ./runner/run.py:/opt/bench/run.py:ro

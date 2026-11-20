@@ -16,6 +16,7 @@ FILES = (
     "LICENSE",
     "Dockerfile",
     "compose.yaml",
+    "candidate/.gitignore",
     ".dockerignore",
     ".gitignore",
     "benchmark.lock.json",
@@ -77,21 +78,23 @@ def content() -> list[Path]:
     return sorted(set(files) | set(expected))
 
 
-def create(output: Path) -> None:
+def create(output: Path, plugin: Path | None = None) -> None:
     """Write a portable tar and its checksum without replacing an earlier run."""
     output = output.resolve()
     if output.exists():
         raise FileExistsError(output)
-    files = content()
+    files = {path.relative_to(BASE).as_posix(): path for path in content()}
+    if plugin is not None:
+        version = json.loads((BASE / "benchmark.lock.json").read_bytes())["opensearch"]
+        files[f"candidate/analysis-udlex-{version}.zip"] = plugin
     with tempfile.NamedTemporaryFile(
         dir=output.parent, prefix=output.name + ".", delete=False
     ) as temp:
         partial = Path(temp.name)
     try:
         with tarfile.open(partial, "w", format=tarfile.USTAR_FORMAT) as archive:
-            for path in files:
-                name = f"{NAME}/{path.relative_to(BASE).as_posix()}"
-                entry = tarfile.TarInfo(name)
+            for name, path in sorted(files.items()):
+                entry = tarfile.TarInfo(f"{NAME}/{name}")
                 entry.size = path.stat().st_size
                 entry.mode = 0o644
                 with path.open("rb") as stream:
@@ -108,4 +111,6 @@ def create(output: Path) -> None:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("output", type=Path, help=f"new archive path, e.g. {NAME}.tar")
-    create(parser.parse_args().output)
+    parser.add_argument("--plugin", type=Path, help="ship and measure this plugin ZIP")
+    args = parser.parse_args()
+    create(args.output, args.plugin)

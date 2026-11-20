@@ -1,7 +1,6 @@
 package org.udlex.opensearch;
 
 import java.net.URISyntaxException;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
 
 /** JNI uses byte arrays; Java's modified UTF-8 is never used for user data. */
@@ -9,8 +8,15 @@ final class UdlexNative {
     static {
         try {
             Path jar = Path.of(UdlexNative.class.getProtectionDomain().getCodeSource().getLocation().toURI());
-            Path library = jar.getParent().resolve("native").resolve(System.mapLibraryName("udlex_jni"));
-            System.load(library.toAbsolutePath().toString());
+            String arch = System.getProperty("os.arch");
+            String directory = switch (arch) {
+                case "amd64", "x86_64" -> "x86_64";
+                case "arm64", "aarch64" -> "aarch64";
+                default -> arch;
+            };
+            Path library = jar.getParent().resolve("native").resolve(directory)
+                    .resolve(System.mapLibraryName("udlex_jni"));
+            loadLibrary(library);
         } catch (URISyntaxException e) {
             throw new ExceptionInInitializerError(e);
         }
@@ -18,9 +24,9 @@ final class UdlexNative {
 
     private UdlexNative() {}
 
-    // Called by JNI so arbitrary native error text is decoded as real UTF-8 too.
-    private static void fail(byte[] message) {
-        throw new IllegalStateException(new String(message, StandardCharsets.UTF_8));
+    @SuppressWarnings("restricted") // The package-relative JNI library is part of the verified plugin ZIP.
+    private static void loadLibrary(Path library) {
+        System.load(library.toAbsolutePath().toString());
     }
 
     static native long open(byte[] bundle, byte[] language, boolean useRules);

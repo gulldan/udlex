@@ -18,6 +18,7 @@ import tempfile
 import time
 import urllib.error
 import urllib.request
+import zipfile
 from pathlib import Path
 from types import FrameType
 from typing import NoReturn, TextIO, TypedDict
@@ -53,6 +54,22 @@ def verify(path: Path, expected: str) -> None:
     if sha256(path) != expected:
         msg = f"SHA-256 mismatch for {path}"
         raise ValueError(msg)
+
+
+def select_plugin() -> Path:
+    """Install an optional candidate into the disposable benchmark image."""
+    archive = HERE / "artifacts/analysis-udlex.zip"
+    candidate = Path("/candidate") / f"analysis-udlex-{LOCK['opensearch']}.zip"
+    if candidate.exists():
+        shutil.copyfile(candidate, archive)
+        subprocess.run(  # noqa: S603 - the installer is part of the pinned image
+            [ENGINE / "bin/opensearch-plugin", "install", "--batch", archive.as_uri()],
+            check=True,
+        )
+        target = OPTIONAL / "analysis-udlex"
+        shutil.rmtree(target)
+        shutil.move(ENGINE / "plugins/analysis-udlex", target)
+    return archive
 
 
 def prepare_inputs(root: Path, languages: list[str]) -> Path:
@@ -287,6 +304,7 @@ def verify_quality(report: Path, languages: list[str]) -> None:
 
 def run(mode: str) -> None:
     """Run all profiles and save the completed or failed run receipt."""
+    plugin_zip = select_plugin()
     stamp = dt.datetime.now(dt.UTC).strftime("%Y%m%dT%H%M%SZ")
     report = Path(tempfile.mkdtemp(prefix=f"{stamp}-{mode}-", dir=OUTPUT))
     if os.getuid() == 0:
@@ -302,6 +320,11 @@ def run(mode: str) -> None:
     cpus = cpu_layout()
     languages = LOCK["smoke_languages"] if mode == "smoke" else []
     selection = ["--languages", *languages] if languages else []
+    with zipfile.ZipFile(plugin_zip) as package:
+        build_info = dict(
+            line.split("=", 1)
+            for line in package.read("build-info.txt").decode().splitlines()
+        )
     receipt = {
         "scope": mode,
         "state": "running",
@@ -311,6 +334,7 @@ def run(mode: str) -> None:
         "python": platform.python_version(),
         "cpu_layout": cpus,
         "lock": LOCK,
+        "measured_plugin": {"sha256": sha256(plugin_zip), "build": build_info},
         "harness_sha256": sha256(Path(__file__)),
         "completed_profiles": [],
     }

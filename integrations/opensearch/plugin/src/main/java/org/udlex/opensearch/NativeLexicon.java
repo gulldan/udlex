@@ -2,7 +2,6 @@ package org.udlex.opensearch;
 
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
-import java.util.Arrays;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /** The read lock permits concurrent Rust lookups and prevents close/use races. */
@@ -30,24 +29,10 @@ final class NativeLexicon implements AutoCloseable {
         }
     }
 
-    /** Allocating convenience for tests and tools. */
-    String lemma(String token) {
-        char[] term = token.toCharArray();
-        int n = lemma(term, term.length);
-        if (n > term.length) n = lemma(term = Arrays.copyOf(term, n), token.length());
-        return n < 0 ? token : new String(term, 0, n);
-    }
-
-    // String.getBytes is intrinsic and allocates once, but it writes '?' for an
-    // unpaired surrogate; the scan keeps the fail-closed contract.
+    // Used only while opening a dictionary. JNI term lookup takes Lucene's char buffer directly.
     static byte[] encode(String value) {
-        for (int i = 0, n = value.length(); i < n; i++) {
-            char c = value.charAt(i);
-            if (Character.isHighSurrogate(c) && i + 1 < n && Character.isLowSurrogate(value.charAt(i + 1))) {
-                i++;
-            } else if (Character.isSurrogate(c)) {
-                throw new IllegalArgumentException("udlex input contains an unpaired UTF-16 surrogate");
-            }
+        if (!StandardCharsets.UTF_8.newEncoder().canEncode(value)) {
+            throw new IllegalArgumentException("udlex input contains an unpaired UTF-16 surrogate");
         }
         return value.getBytes(StandardCharsets.UTF_8);
     }
