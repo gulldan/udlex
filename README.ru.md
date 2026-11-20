@@ -7,8 +7,8 @@
 список токенов.
 
 Биндинг для Go находится в репозитории [udlex-go](https://github.com/gulldan/udlex-go).
-Фильтр для OpenSearch и пример настройки индекса описаны в [руководстве по интеграции](integrations/opensearch/plugin/README.md).
-Сравнение с анализаторами OpenSearch на 224 языках можно повторить в Docker. [Автономный бенчмарк](benchmarks/opensearch/README.md)
+Фильтр для OpenSearch 3.10 можно собрать из исходников и установить в Docker Compose со всеми 224 словарями. [Сборка ZIP](integrations/opensearch/plugin/README.md#сборка-из-исходников) · [Установка в Compose](integrations/opensearch/docker/README.md)
+Сравнение с анализаторами OpenSearch на 224 языках можно повторить в Docker. [Автономный бенчмарк](benchmarks/opensearch/README.md) · [Результаты AMD64 и ARM64](benchmarks/opensearch/reports/README.md)
 
 ## Установка
 

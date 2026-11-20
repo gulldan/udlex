@@ -1,0 +1,124 @@
+# Версия сервера. Комплект рассчитан на 3.10.0.
+GET /
+
+# На каждом узле должна быть строка analysis-udlex.
+GET /_cat/plugins?v&h=name,component,version&s=name,component
+
+# Проверка словаря rus. Ожидаемый токен — кот.
+POST /_analyze
+{
+  "tokenizer": "standard",
+  "filter": [
+    {
+      "type": "udlex",
+      "language": "rus",
+      "bundle_path": "udlex-224-20261120",
+      "use_rules": true
+    },
+    "lowercase"
+  ],
+  "text": "котами"
+}
+
+# Проверка словаря eng. Ожидаемый токен — cat.
+POST /_analyze
+{
+  "tokenizer": "standard",
+  "filter": [
+    {
+      "type": "udlex",
+      "language": "eng",
+      "bundle_path": "udlex-224-20261120",
+      "use_rules": true
+    },
+    "lowercase"
+  ],
+  "text": "cats"
+}
+
+# Отдельный пример для двух полей. Используйте свободное имя индекса.
+PUT /udlex-install-demo-v1
+{
+  "settings": {
+    "analysis": {
+      "filter": {
+        "lemma_rus": {
+          "type": "udlex",
+          "language": "rus",
+          "bundle_path": "udlex-224-20261120",
+          "use_rules": true
+        },
+        "lemma_eng": {
+          "type": "udlex",
+          "language": "eng",
+          "bundle_path": "udlex-224-20261120",
+          "use_rules": true
+        }
+      },
+      "analyzer": {
+        "udlex_rus": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": [
+            "lemma_rus",
+            "lowercase"
+          ]
+        },
+        "udlex_eng": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": [
+            "lemma_eng",
+            "lowercase"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "text": {
+        "type": "text",
+        "analyzer": "udlex_rus",
+        "search_analyzer": "udlex_rus"
+      },
+      "text_en": {
+        "type": "text",
+        "analyzer": "udlex_eng",
+        "search_analyzer": "udlex_eng"
+      }
+    }
+  }
+}
+
+# Документ с двумя языковыми полями.
+PUT /udlex-install-demo-v1/_doc/1?refresh=true
+{
+  "text": "Играю с котами",
+  "text_en": "Cats sleep"
+}
+
+# Поиск по русскому полю с подсветкой исходной формы.
+GET /udlex-install-demo-v1/_search
+{
+  "query": {
+    "match_phrase": {
+      "text": "с котом"
+    }
+  },
+  "highlight": {
+    "fields": {
+      "text": {}
+    }
+  }
+}
+
+# Поиск по английскому полю.
+GET /udlex-install-demo-v1/_search
+{
+  "query": {
+    "match": {
+      "text_en": "cat"
+    }
+  }
+}
