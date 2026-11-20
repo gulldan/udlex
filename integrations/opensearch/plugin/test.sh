@@ -23,12 +23,10 @@ trap 'rm -rf -- "$work"' EXIT
 jars=("$work"/analysis-udlex-*.jar)
 [[ ${#jars[@]} == 1 ]] || { echo 'Expected exactly one plugin JAR in the ZIP' >&2; exit 1; }
 mkdir "$work/classes"
-sources=()
-while IFS= read -r -d '' source; do sources+=("$source"); done \
-    < <(find "$plugin_dir/src/test/java" -name '*.java' -type f -print0)
+test_sources="$plugin_dir/src/test/java"
 classpath="${jars[0]}:$os_home/lib/*"
-"$jdk_dir/bin/javac" -encoding UTF-8 -Xlint:all -Werror -cp "$classpath" \
-    -d "$work/classes" "${sources[@]}"
+"$jdk_dir/bin/javac" -encoding UTF-8 -Xlint:all -Werror -cp "$classpath" --source-path "$test_sources" \
+    -d "$work/classes" "$test_sources/org/udlex/opensearch/NativeContractTest.java"
 
 # Pass ASCII argv even when an SSH session uses the C locale.
 encode_argument() {
