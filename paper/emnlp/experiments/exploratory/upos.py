@@ -1,11 +1,17 @@
 """Exploratory: how much would a part-of-speech key resolve on forms seen with several lemmas?"""
 
-import json, collections, glob, os
+import collections
+import json
+from pathlib import Path
 
 R = "/mnt/hdd-4tb/codex-runs/udlex-v1-order-ud219-20261118.splMl6"
-inv = json.load(open(R + "/clean219/inputs/order/inventory.json"))["languages"]
-cov = json.load(
-    open("/mnt/hdd-4tb/codex-runs/udlex-compare-20261119/results/stanza-coverage.json")
+inv = json.loads(Path(R + "/clean219/inputs/order/inventory.json").read_text())[
+    "languages"
+]
+cov = json.loads(
+    Path(
+        "/mnt/hdd-4tb/codex-runs/udlex-compare-20261119/results/stanza-coverage.json"
+    ).read_text()
 )
 clean = [
     i
@@ -15,10 +21,11 @@ clean = [
 
 
 def rows(path):
-    for l in open(path, encoding="utf-8"):
-        p = l.rstrip("\n").split("\t")
-        if len(p) == 10 and p[0].isdecimal() and p[1] != "_" and p[2] != "_":
-            yield p[1], p[2], p[3], p[5]
+    with Path(path).open(encoding="utf-8") as lines:
+        for line in lines:
+            p = line.rstrip("\n").split("\t")
+            if len(p) == 10 and p[0].isdecimal() and p[1] != "_" and p[2] != "_":
+                yield p[1], p[2], p[3], p[5]
 
 
 tot = collections.Counter()
@@ -48,8 +55,9 @@ for iso in clean:
         for k in ("form", "upos", "feats"):
             macro[k].append(100 * c[k] / c["n"])
 print(
-    "forms seen in training with several lemmas, %d test words in %d languages"
-    % (tot["n"], len(clean))
+    "forms seen in training with several lemmas, {:d} test words in {:d} languages".format(
+        tot["n"], len(clean)
+    )
 )
 for k, name in (
     ("form", "majority lemma of the form"),

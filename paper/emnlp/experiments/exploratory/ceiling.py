@@ -1,24 +1,30 @@
 """Exploratory: how far can any context-free lemmatizer go on the official tests?"""
 
-import json, gzip, collections
+import collections
+import gzip
+import json
+from pathlib import Path
 
-O = "/mnt/hdd-4tb/codex-runs/udlex-v1-order-ud219-20261118.splMl6/clean219/inputs/order"
+ORDER = (
+    "/mnt/hdd-4tb/codex-runs/udlex-v1-order-ud219-20261118.splMl6/clean219/inputs/order"
+)
 C = "/mnt/hdd-4tb/codex-runs/udlex-compare-20261119"
-inv = json.load(open(O + "/inventory.json"))["languages"]
+inv = json.loads(Path(ORDER + "/inventory.json").read_text())["languages"]
 home = json.loads(
-    gzip.decompress(open(C + "/study/evidence/ud219/order/pairs.json.gz", "rb").read())
+    gzip.decompress(Path(C + "/study/evidence/ud219/order/pairs.json.gz").read_bytes())
 )["official"]
-st = json.load(open(C + "/results/stanza.json"))["cells"]
-cov = json.load(open(C + "/results/stanza-coverage.json"))
+st = json.loads(Path(C + "/results/stanza.json").read_text())["cells"]
+cov = json.loads(Path(C + "/results/stanza-coverage.json").read_text())
 
 
 def read(iso, split):
     out = []
-    for l in open(f"{O}/{iso}/{split}.jsonl"):
-        r = json.loads(l)
-        for i, (f, y) in enumerate(zip(r["tokens"], r["lemmas"])):
-            if y is not None:
-                out.append((f, y, i == 0))
+    with Path(f"{ORDER}/{iso}/{split}.jsonl").open() as lines:
+        for line in lines:
+            r = json.loads(line)
+            for i, (f, y) in enumerate(zip(r["tokens"], r["lemmas"], strict=True)):
+                if y is not None:
+                    out.append((f, y, i == 0))
     return out
 
 
@@ -52,25 +58,29 @@ for iso in sorted(home):
         and 2 * cov[iso]["covered"] < cov[iso]["unseen_types"]
     )
     rows.append(
-        dict(
-            iso=iso,
-            n=n,
-            oracle=100 * oracle / n,
-            ours=100 * ours / n,
-            stanza=100 * s["correct"] / n if ok else None,
-            seen_share=100 * len(seen) / n,
-            mem_seen=100 * mem_seen / max(len(seen), 1),
-            or_seen=100 * or_seen / max(len(seen), 1),
-            copy_unseen=100 * copy_unseen / max(len(unseen), 1),
-            or_unseen=100 * or_unseen / max(len(unseen), 1),
-            memory=100 * (mem_seen + copy_unseen) / n,
-        )
+        {
+            "iso": iso,
+            "n": n,
+            "oracle": 100 * oracle / n,
+            "ours": 100 * ours / n,
+            "stanza": 100 * s["correct"] / n if ok else None,
+            "seen_share": 100 * len(seen) / n,
+            "mem_seen": 100 * mem_seen / max(len(seen), 1),
+            "or_seen": 100 * or_seen / max(len(seen), 1),
+            "copy_unseen": 100 * copy_unseen / max(len(unseen), 1),
+            "or_unseen": 100 * or_unseen / max(len(unseen), 1),
+            "memory": 100 * (mem_seen + copy_unseen) / n,
+        }
     )
-json.dump(rows, open(C + "/ceiling.json", "w"))
-m = lambda k, rs: sum(r[k] for r in rs) / len(rs)
+Path(C + "/ceiling.json").write_text(json.dumps(rows))
+
+
+def m(k, rs):
+    return sum(r[k] for r in rs) / len(rs)
+
+
 print(
-    "66 langs: oracle ceiling macro %.2f | ours %.2f | train-memory+copy %.2f | seen share %.1f | acc on seen: memory %.2f oracle %.2f | unseen: copy %.2f oracle %.2f"
-    % (
+    "66 langs: oracle ceiling macro {:.2f} | ours {:.2f} | train-memory+copy {:.2f} | seen share {:.1f} | acc on seen: memory {:.2f} oracle {:.2f} | unseen: copy {:.2f} oracle {:.2f}".format(
         m("oracle", rows),
         m("ours", rows),
         m("memory", rows),
@@ -83,8 +93,7 @@ print(
 )
 cl = [r for r in rows if r["stanza"] is not None]
 print(
-    "58 clean langs: ceiling %.2f stanza %.2f ours %.2f; stanza above ceiling in %d langs; ours within 0.5 of stanza or better in %d"
-    % (
+    "58 clean langs: ceiling {:.2f} stanza {:.2f} ours {:.2f}; stanza above ceiling in {:d} langs; ours within 0.5 of stanza or better in {:d}".format(
         m("oracle", cl),
         m("stanza", cl),
         m("ours", cl),

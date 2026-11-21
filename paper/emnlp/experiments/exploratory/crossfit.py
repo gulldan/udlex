@@ -1,7 +1,10 @@
-"""Exploratory: learn the order on training words whose form is absent from the other folds,
-then score that order through the full cascade on the official dev and test splits."""
+"""Exploratory: learn the order on training words whose form is absent from the other folds, then score that order through the full cascade on the official dev and test splits."""
 
-import gzip, hashlib, json, os, subprocess, sys
+import gzip
+import hashlib
+import json
+import os
+import subprocess
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
@@ -46,26 +49,29 @@ def run(root, iso, row, train, dev, test, out):
 
 def one(iso):
     row = inv[iso]
-    sents = [json.loads(l) for l in (ORDER / iso / "train.jsonl").open()]
+    with (ORDER / iso / "train.jsonl").open() as lines:
+        sents = [json.loads(line) for line in lines]
     fold = [
         int.from_bytes(hashlib.sha256(s["block"].encode()).digest()[:4], "big") % K
         for s in sents
     ]
     seen = [set() for _ in range(K)]
-    for s, k in zip(sents, fold):
+    for s, k in zip(sents, fold, strict=True):
         seen[k].update(
-            f.lower() for f, y in zip(s["tokens"], s["lemmas"]) if y is not None
+            f.lower()
+            for f, y in zip(s["tokens"], s["lemmas"], strict=True)
+            if y is not None
         )
     work = OUT / "a" / iso
     work.mkdir(parents=True, exist_ok=True)
     kept = total = 0
     with (work / "oov.jsonl").open("w") as fh:
         others = [set().union(*(seen[j] for j in range(K) if j != k)) for k in range(K)]
-        for s, k in zip(sents, fold):
+        for s, k in zip(sents, fold, strict=True):
             elsewhere = others[k]
             lem = [
                 y if y is not None and f.lower() not in elsewhere else None
-                for f, y in zip(s["tokens"], s["lemmas"])
+                for f, y in zip(s["tokens"], s["lemmas"], strict=True)
             ]
             total += sum(y is not None for y in s["lemmas"])
             n = sum(y is not None for y in lem)

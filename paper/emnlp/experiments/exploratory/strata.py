@@ -1,11 +1,16 @@
 """Exploratory: the cascade and Stanza on the same strata of test words."""
 
-import json, gzip, collections, glob
+import collections
+import gzip
+import json
+from pathlib import Path
 
-O = "/mnt/hdd-4tb/codex-runs/udlex-v1-order-ud219-20261118.splMl6/clean219/inputs/order"
+ORDER = (
+    "/mnt/hdd-4tb/codex-runs/udlex-v1-order-ud219-20261118.splMl6/clean219/inputs/order"
+)
 D = "/mnt/hdd-4tb/codex-runs/udlex-transfer-20261118-full/anchor-diag3/results"
 C = "/mnt/hdd-4tb/codex-runs/udlex-compare-20261119"
-cov = json.load(open(C + "/results/stanza-coverage.json"))
+cov = json.loads(Path(C + "/results/stanza-coverage.json").read_text())
 clean = [
     i
     for i, v in cov.items()
@@ -21,39 +26,43 @@ STR = (
 tot = collections.Counter()
 per = {}
 for iso in sorted(clean):
-    r = json.load(open(f"{D}/{iso}.json"))
+    r = json.loads(Path(f"{D}/{iso}.json").read_text())
     ans = {a[0]: a[1:] for a in r["answers"]}
     tm = collections.defaultdict(set)
-    for l in open(f"{O}/{iso}/train.jsonl"):
-        s = json.loads(l)
-        for f, y in zip(s["tokens"], s["lemmas"]):
-            if y is not None:
-                tm[f].add(y)
+    with Path(f"{ORDER}/{iso}/train.jsonl").open() as lines:
+        for line in lines:
+            s = json.loads(line)
+            for f, y in zip(s["tokens"], s["lemmas"], strict=True):
+                if y is not None:
+                    tm[f].add(y)
     st = json.loads(
-        gzip.decompress(open(f"{C}/predictions/stanza/{iso}.json.gz", "rb").read())
+        gzip.decompress(Path(f"{C}/predictions/stanza/{iso}.json.gz").read_bytes())
     )
     c = collections.Counter()
-    for s, sp in zip((json.loads(l) for l in open(f"{O}/{iso}/test.jsonl")), st):
-        for i, (f, y, z) in enumerate(zip(s["tokens"], s["lemmas"], sp)):
-            if y is None:
-                continue
-            a = ans[f]
-            text, stage = (a[2], a[3]) if i == 0 else (a[0], a[1])
-            if f in tm:
-                k = 0 if len(tm[f]) == 1 else 1
-            elif stage in (2, 3, 4):
-                k = 2
-            elif stage in (5, 6):
-                k = 3
-            else:
-                k = 4
-            o = text == y
-            t = z == y
-            c[(k, "n")] += 1
-            c[(k, "ours")] += o
-            c[(k, "stanza")] += t
-            c[(k, "either")] += o or t
-            c[(k, "both")] += o and t
+    with Path(f"{ORDER}/{iso}/test.jsonl").open() as lines:
+        for s, sp in zip((json.loads(line) for line in lines), st, strict=True):
+            for i, (f, y, z) in enumerate(
+                zip(s["tokens"], s["lemmas"], sp, strict=True)
+            ):
+                if y is None:
+                    continue
+                a = ans[f]
+                text, stage = (a[2], a[3]) if i == 0 else (a[0], a[1])
+                if f in tm:
+                    k = 0 if len(tm[f]) == 1 else 1
+                elif stage in (2, 3, 4):
+                    k = 2
+                elif stage in (5, 6):
+                    k = 3
+                else:
+                    k = 4
+                o = text == y
+                t = z == y
+                c[(k, "n")] += 1
+                c[(k, "ours")] += o
+                c[(k, "stanza")] += t
+                c[(k, "either")] += o or t
+                c[(k, "both")] += o and t
     per[iso] = c
     tot.update(c)
 n = sum(tot[(k, "n")] for k in range(5))
@@ -93,7 +102,7 @@ for name, ch in (
 ):
     macro = []
     wins = 0
-    for iso, c in per.items():
+    for c in per.values():
         nn = sum(c[(k, "n")] for k in range(5))
         h = sum(c[(k, ch[k])] for k in range(5))
         s = sum(c[(k, "stanza")] for k in range(5))
@@ -110,8 +119,7 @@ mo = [
     100 * sum(c[(k, "ours")] for k in range(5)) / sum(c[(k, "n")] for k in range(5))
     for c in per.values()
 ]
-print("macro: cascade %.2f, Stanza %.2f" % (sum(mo) / len(mo), sum(ms) / len(ms)))
-json.dump(
-    {i: {f"{k[0]}|{k[1]}": v for k, v in c.items()} for i, c in per.items()},
-    open(C + "/strata.json", "w"),
+print(f"macro: cascade {sum(mo) / len(mo):.2f}, Stanza {sum(ms) / len(ms):.2f}")
+Path(C + "/strata.json").write_text(
+    json.dumps({i: {f"{k[0]}|{k[1]}": v for k, v in c.items()} for i, c in per.items()})
 )

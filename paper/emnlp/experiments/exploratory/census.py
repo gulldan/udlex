@@ -22,7 +22,7 @@ STRATA = (
 
 
 def rows(path):
-    with open(path) as f:
+    with path.open() as f:
         for line in f:
             s = json.loads(line)
             yield s["tokens"], s["lemmas"]

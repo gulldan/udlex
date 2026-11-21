@@ -22,7 +22,7 @@ from sklearn.linear_model import SGDClassifier
 
 def conllu(path):
     sent = []
-    with open(path, encoding="utf-8") as f:
+    with path.open(encoding="utf-8") as f:
         for line in f:
             p = line.rstrip("\n").split("\t")
             if len(p) == 10 and p[0].isdecimal():
@@ -63,7 +63,7 @@ def script(form, lemma):
     lf = form.lower()
     low = lemma != form and lemma[:1].islower() and form[:1].isupper()
     base = lf if low or lemma == lf else form
-    k = len(os.path.commonprefix([base, lemma]))
+    k = len(os.path.commonprefix([base, lemma]))  # noqa: RUF071 - words, not paths
     return (base is lf, len(base) - k, lemma[k:])
 
 
@@ -86,7 +86,7 @@ def run(job):
 
     def load(split):
         out = []
-        with open(census / "inputs/order" / iso / f"{split}.jsonl") as f:
+        with (census / "inputs/order" / iso / f"{split}.jsonl").open() as f:
             for line in f:
                 s = json.loads(line)
                 out.append((s["tokens"], s["lemmas"], tags.get(tuple(s["tokens"]))))
