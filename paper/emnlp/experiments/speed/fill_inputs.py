@@ -49,11 +49,15 @@ for src in CENSUS.iterdir():
     if src.name not in FILL and not (out / src.name).exists():
         (out / src.name).symlink_to(src)
 for iso, rel in FILL.items():
-    assert (CENSUS / iso / "test.jsonl").stat().st_size == 0, f"{iso}: census test is not empty"
+    assert (CENSUS / iso / "test.jsonl").stat().st_size == 0, (
+        f"{iso}: census test is not empty"
+    )
     rows = list(sentences(UD / rel))
     assert rows
     assert all(len(r["tokens"]) == len(r["lemmas"]) for r in rows)
     (out / iso).mkdir(exist_ok=True)
     with (out / iso / "test.jsonl").open("w", encoding="utf-8") as fh:
         fh.writelines(json.dumps(r, ensure_ascii=False) + "\n" for r in rows)
-    print(iso, len(rows), "sentences", sum(len(r["tokens"]) for r in rows), "tokens", rel)
+    print(
+        iso, len(rows), "sentences", sum(len(r["tokens"]) for r in rows), "tokens", rel
+    )

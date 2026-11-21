@@ -30,7 +30,20 @@ import time
 import zlib
 from pathlib import Path
 
-LANGS = ["eng", "rus", "deu", "fin", "tur", "arb", "hin", "kor", "jpn", "ces", "hun", "gla"]
+LANGS = [
+    "eng",
+    "rus",
+    "deu",
+    "fin",
+    "tur",
+    "arb",
+    "hin",
+    "kor",
+    "jpn",
+    "ces",
+    "hun",
+    "gla",
+]
 HERE = Path(__file__).resolve().parent
 # 1c: one pinned CPU; thr16: one process, 16 threads; proc16: 16 single-thread processes.
 MODES = {
@@ -150,7 +163,9 @@ def prepare(a):
     for iso in a.langs:
         # Only officially split languages have a scored extraction; twofold ones do not.
         scored_dir = dicts() / "work/eval/new" / iso
-        evaluated = next(scored_dir.iterdir()) / "bundle" if scored_dir.is_dir() else None
+        evaluated = (
+            next(scored_dir.iterdir()) / "bundle" if scored_dir.is_dir() else None
+        )
         row = {}
         if a.evaluated:
             dest = a.run / "bundles" / iso / f"evaluated-{evaluated.parent.name}"
@@ -218,7 +233,8 @@ def prepare(a):
             "checked_against_evaluation": same_test,
             "correct": hits,
             "scored": total,
-            "accuracy": 100 * hits / total if total else None,  # some tests carry no lemmas
+            # some tests carry no lemmas
+            "accuracy": 100 * hits / total if total else None,
         }
         print(iso, hits, total, flush=True)
     (out / "manifest.json").write_text(json.dumps(manifest, indent=1), encoding="utf-8")
@@ -627,7 +643,9 @@ def run_cell(name, mode, cfg, rnd, a, sampler, logs, memory):
             windows = []
             for w in range(a.windows):
                 for attempt in range(4):
-                    seed = zlib.crc32(f"{iso}/{name}/{mode}/{rnd}/{w}/{attempt}".encode())
+                    seed = zlib.crc32(
+                        f"{iso}/{name}/{mode}/{rnd}/{w}/{attempt}".encode()
+                    )
                     cell.ask(
                         [
                             {"cmd": "prep", "seed": seed * 64 + i, "sentences": n}
@@ -779,7 +797,9 @@ def run(a):
     sampler.start()
     for iso in a.langs:
         cells = cells_for(iso, a)
-        if all((iso, n, m, r) in done for n, m, _ in cells for r in range(1, a.rounds + 1)):
+        if all(
+            (iso, n, m, r) in done for n, m, _ in cells for r in range(1, a.rounds + 1)
+        ):
             continue  # everything measured (or reused): skip the idle sample
         memory = {}
         sampler.tag = f"{iso}/before"

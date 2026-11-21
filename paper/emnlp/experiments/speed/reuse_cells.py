@@ -14,12 +14,23 @@ langs = set((out / "languages.txt").read_text().split())
 have = set()
 if (out / "cells.jsonl").exists():
     with (out / "cells.jsonl").open() as old:
-        have = {(c["lang"], c["system"], c["mode"], c["round"]) for c in map(json.loads, old)}
+        have = {
+            (c["lang"], c["system"], c["mode"], c["round"])
+            for c in map(json.loads, old)
+        }
 copied = 0
-with (out / "cells.jsonl").open("a", encoding="utf-8") as fh, (src / "cells.jsonl").open() as cells:
+with (
+    (out / "cells.jsonl").open("a", encoding="utf-8") as fh,
+    (src / "cells.jsonl").open() as cells,
+):
     for c in map(json.loads, cells):
         key = (c["lang"], c["system"], c["mode"], c["round"])
-        if c["status"] != "ok" or c["system"].startswith("udlex") or c["lang"] not in langs or key in have:
+        if (
+            c["status"] != "ok"
+            or c["system"].startswith("udlex")
+            or c["lang"] not in langs
+            or key in have
+        ):
             continue
         have.add(key)
         fh.write(json.dumps(dict(c, reused_from=src.name), ensure_ascii=False) + "\n")
