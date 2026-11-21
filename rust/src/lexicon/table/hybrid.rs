@@ -43,7 +43,8 @@ const fn fold(a: u64, b: u64) -> u64 {
 }
 
 /// One folded multiply per eight bytes; part of the on-disk format.
-#[inline]
+#[expect(clippy::inline_always, reason = "part of the inlined hybrid read")]
+#[inline(always)]
 fn key_hash(key: &[u8], seed: u64) -> u64 {
     let mut h = fold(seed ^ (key.len() as u64), K1);
     let (chunks, rest) = key.as_chunks::<8>();
@@ -51,13 +52,33 @@ fn key_hash(key: &[u8], seed: u64) -> u64 {
         h = fold(h ^ u64::from_le_bytes(*chunk), K2);
     }
     if !rest.is_empty() {
-        let mut buf = [0_u8; 8];
-        if let Some(head) = buf.get_mut(..rest.len()) {
-            head.copy_from_slice(rest);
-        }
-        h = fold(h ^ u64::from_le_bytes(buf), K1);
+        h = fold(h ^ tail_word(rest), K1);
     }
     h
+}
+
+/// The last 1–7 key bytes as a zero-padded little-endian word, read with
+/// overlapping loads: a variable-length copy compiles to a `memcpy` call.
+#[expect(clippy::inline_always, reason = "part of the inlined hybrid read")]
+#[inline(always)]
+#[allow(
+    clippy::arithmetic_side_effects,
+    clippy::cast_possible_truncation,
+    reason = "the tail is shorter than eight bytes, so every shift stays below 64"
+)]
+fn tail_word(rest: &[u8]) -> u64 {
+    let n = rest.len() as u32;
+    if let (Some(lo), Some(hi)) = (rest.first_chunk::<4>(), rest.last_chunk::<4>()) {
+        // Overlapping bytes are equal in both reads, so OR keeps them intact.
+        return u64::from(u32::from_le_bytes(*lo))
+            | (u64::from(u32::from_le_bytes(*hi)) << (8 * (n - 4)));
+    }
+    match (rest.first(), rest.get(rest.len() / 2), rest.last()) {
+        (Some(&a), Some(&b), Some(&c)) => {
+            u64::from(a) | (u64::from(b) << (8 * (n / 2))) | (u64::from(c) << (8 * (n - 1)))
+        }
+        _ => 0,
+    }
 }
 
 /// Maps a hash onto `0..n` without a division: the top 64 bits of `h × n`
@@ -74,7 +95,8 @@ const fn slot_of(h: u64, pilot: u16, n_slots: usize) -> usize {
 }
 
 /// Equality of two same-length keys without a `memcmp` call.
-#[inline]
+#[expect(clippy::inline_always, reason = "part of the inlined hybrid read")]
+#[inline(always)]
 fn same(a: &[u8], b: &[u8]) -> bool {
     let (ca, ra) = a.as_chunks::<8>();
     let (cb, rb) = b.as_chunks::<8>();
@@ -297,8 +319,13 @@ impl HybridTable {
     // Every index below is `reduce` output, below a count whose section
     // `parse_layout` proved to lie inside the file, so the offsets cannot
     // overflow and the unchecked reads stay inside the mapping.
-    #[inline]
-    #[allow(clippy::arithmetic_side_effects, clippy::indexing_slicing)]
+    // Always inline: returned from a call, `Hit` travels through memory.
+    #[inline(always)]
+    #[allow(
+        clippy::arithmetic_side_effects,
+        clippy::indexing_slicing,
+        clippy::inline_always
+    )]
     pub(in crate::lexicon) fn get(&self, key: &[u8]) -> Option<Hit<'_>> {
         let layout = &self.layout;
         if key.len() <= SPLIT_BYTES {
@@ -570,6 +597,19 @@ mod tests {
             assert_eq!(text, id.to_string());
         }
         assert!(table.get("ключ-50000-слово".as_bytes()).is_none());
+    }
+
+    #[test]
+    fn tail_word_equals_the_zero_padded_copy() {
+        // The hash is part of the on-disk format: the new read must give the old value.
+        let bytes: Vec<u8> = (0..=255_u8).rev().chain(0..=255).collect();
+        for len in 1..8 {
+            for window in bytes.windows(len) {
+                let mut padded = [0_u8; 8];
+                padded[..len].copy_from_slice(window);
+                assert_eq!(tail_word(window), u64::from_le_bytes(padded), "{window:?}");
+            }
+        }
     }
 
     #[test]

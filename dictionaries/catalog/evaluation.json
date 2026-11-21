@@ -1,0 +1,4667 @@
+{
+ "languages": [
+  {
+   "copy": 4467,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-abk",
+   "iso639_3": "abk",
+   "language": "Abkhaz",
+   "mode": "twofold",
+   "new": 8946,
+   "old": 13808,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Abkhaz-AbNC",
+   "tokens": 14173,
+   "treebank": "UD_Abkhaz-AbNC"
+  },
+  {
+   "copy": 198,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-abq",
+   "iso639_3": "abq",
+   "language": "Abaza",
+   "mode": "twofold",
+   "new": 226,
+   "old": 638,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Abaza-ATB",
+   "tokens": 642,
+   "treebank": "UD_Abaza-ATB"
+  },
+  {
+   "copy": 7943,
+   "dev": {
+    "copy": 4322,
+    "declared_train_only": 5246,
+    "new_train_only": 5246,
+    "old": 5129,
+    "tokens": 5312
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-afr",
+   "iso639_3": "afr",
+   "language": "Afrikaans",
+   "mode": "official",
+   "new": 9940,
+   "old": 9654,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Afrikaans-AfriBooms",
+   "tokens": 10063,
+   "treebank": "UD_Afrikaans-AfriBooms"
+  },
+  {
+   "copy": 321,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-aii",
+   "iso639_3": "aii",
+   "language": "Assyrian",
+   "mode": "twofold",
+   "new": 305,
+   "old": 442,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Assyrian-AS",
+   "tokens": 451,
+   "treebank": "UD_Assyrian-AS"
+  },
+  {
+   "copy": 260,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-ajp",
+   "iso639_3": "ajp",
+   "language": "South Levantine Arabic",
+   "mode": "twofold",
+   "new": 492,
+   "old": 737,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "South_Levantine_Arabic-MADAR",
+   "tokens": 789,
+   "treebank": "UD_South_Levantine_Arabic-MADAR"
+  },
+  {
+   "copy": 6085,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-akk",
+   "iso639_3": "akk",
+   "language": "Akkadian",
+   "mode": "twofold",
+   "new": 16439,
+   "old": 16126,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Akkadian-RIAO",
+   "tokens": 17511,
+   "treebank": "UD_Akkadian-RIAO"
+  },
+  {
+   "copy": 7873,
+   "dictionaries": [
+    "wiktionary-fr"
+   ],
+   "distribution": "udlex-dict-aln",
+   "iso639_3": "aln",
+   "language": "Gheg",
+   "mode": "twofold",
+   "new": 13767,
+   "old": 15547,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Gheg-GPS",
+   "tokens": 15944,
+   "treebank": "UD_Gheg-GPS"
+  },
+  {
+   "copy": 7275,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-amh",
+   "iso639_3": "amh",
+   "language": "Amharic",
+   "mode": "twofold",
+   "new": 9161,
+   "old": 6324,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 9573,
+   "treebank": "UD_Amharic-ATT"
+  },
+  {
+   "copy": 97,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-ang",
+   "iso639_3": "ang",
+   "language": "Old English",
+   "mode": "twofold",
+   "new": 113,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 171,
+   "treebank": "UD_Old_English-Cairo"
+  },
+  {
+   "copy": 621,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-apu",
+   "iso639_3": "apu",
+   "language": "Apurina",
+   "mode": "twofold",
+   "new": 707,
+   "old": 1039,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Apurina-UFPA",
+   "tokens": 1073,
+   "treebank": "UD_Apurina-UFPA"
+  },
+  {
+   "copy": 980,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-aqz",
+   "iso639_3": "aqz",
+   "language": "Akuntsu",
+   "mode": "twofold",
+   "new": 980,
+   "old": 1370,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Akuntsu-TuDeT",
+   "tokens": 1392,
+   "treebank": "UD_Akuntsu-TuDeT"
+  },
+  {
+   "copy": 3714,
+   "dev": {
+    "copy": 4940,
+    "declared_train_only": 27479,
+    "new_train_only": 27479,
+    "old": 18645,
+    "tokens": 30168
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-arb-nc",
+   "iso639_3": "arb",
+   "language": "Arabic",
+   "mode": "official",
+   "new": 26029,
+   "old": 17903,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Arabic-PUD",
+   "tokens": 28183,
+   "treebank": "UD_Arabic-PADT"
+  },
+  {
+   "copy": 1925,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-arh",
+   "iso639_3": "arh",
+   "language": "Ika",
+   "mode": "twofold",
+   "new": 1925,
+   "old": 3549,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Ika-ChibErgIS",
+   "tokens": 3570,
+   "treebank": "UD_Ika-ChibErgIS"
+  },
+  {
+   "copy": 1321,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-arr",
+   "iso639_3": "arr",
+   "language": "Karo",
+   "mode": "twofold",
+   "new": 1321,
+   "old": 2206,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Karo-TuDeT",
+   "tokens": 2277,
+   "treebank": "UD_Karo-TuDeT"
+  },
+  {
+   "copy": 37,
+   "dev": {
+    "copy": 104,
+    "declared_train_only": 145,
+    "new_train_only": 145,
+    "old": null,
+    "tokens": 189
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-asm",
+   "iso639_3": "asm",
+   "language": "Assamese",
+   "mode": "official",
+   "new": 59,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 85,
+   "treebank": "UD_Assamese-AiW"
+  },
+  {
+   "copy": 1,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-ave",
+   "iso639_3": "ave",
+   "language": "Avestan",
+   "mode": "twofold",
+   "new": 132,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 297,
+   "treebank": "UD_Avestan-Old"
+  },
+  {
+   "copy": 3500,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-axm",
+   "iso639_3": "axm",
+   "language": "Middle Armenian",
+   "mode": "twofold",
+   "new": 4358,
+   "old": 5462,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Middle_Armenian-ArmTDP",
+   "tokens": 5578,
+   "treebank": "UD_Middle_Armenian-ArmTDP"
+  },
+  {
+   "copy": 436,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-aze",
+   "iso639_3": "aze",
+   "language": "Azerbaijani",
+   "mode": "twofold",
+   "new": 649,
+   "old": 496,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 873,
+   "treebank": "UD_Azerbaijani-TueCL"
+  },
+  {
+   "copy": 5283,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-azz",
+   "iso639_3": "azz",
+   "language": "Highland Puebla Nahuatl",
+   "mode": "twofold",
+   "new": 8638,
+   "old": 9627,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Highland_Puebla_Nahuatl-ITML",
+   "tokens": 9836,
+   "treebank": "UD_Highland_Puebla_Nahuatl-ITML"
+  },
+  {
+   "copy": 3491,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-bam",
+   "iso639_3": "bam",
+   "language": "Bambara",
+   "mode": "twofold",
+   "new": 10889,
+   "old": 11333,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Bambara-CRB",
+   "tokens": 12609,
+   "treebank": "UD_Bambara-CRB"
+  },
+  {
+   "copy": 7758,
+   "dev": {
+    "copy": 7803,
+    "declared_train_only": 13922,
+    "new_train_only": 13922,
+    "old": 6319,
+    "tokens": 14516
+   },
+   "dictionaries": [
+    "grammardb",
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-bel",
+   "iso639_3": "bel",
+   "language": "Belarusian",
+   "mode": "official",
+   "new": 14508,
+   "old": 6432,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 15871,
+   "treebank": "UD_Belarusian-HSE"
+  },
+  {
+   "copy": 210,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-ben",
+   "iso639_3": "ben",
+   "language": "Bengali",
+   "mode": "twofold",
+   "new": 277,
+   "old": 164,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 320,
+   "treebank": "UD_Bengali-BRU"
+  },
+  {
+   "copy": 640,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-bgs",
+   "iso639_3": "bgs",
+   "language": "Tagabawa",
+   "mode": "twofold",
+   "new": 710,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 874,
+   "treebank": "UD_Tagabawa-GJA"
+  },
+  {
+   "copy": 3862,
+   "dictionaries": [
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-bho",
+   "iso639_3": "bho",
+   "language": "Bhojpuri",
+   "mode": "twofold",
+   "new": 4487,
+   "old": 4744,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Bhojpuri-BHTB",
+   "tokens": 5085,
+   "treebank": "UD_Bhojpuri-BHTB"
+  },
+  {
+   "copy": 8374,
+   "dev": {
+    "copy": 8221,
+    "declared_train_only": 11937,
+    "new_train_only": 11937,
+    "old": 11900,
+    "tokens": 13432
+   },
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-bor",
+   "iso639_3": "bor",
+   "language": "Bororo",
+   "mode": "official",
+   "new": 12302,
+   "old": 12232,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Bororo-BDT",
+   "tokens": 13884,
+   "treebank": "UD_Bororo-BDT"
+  },
+  {
+   "copy": 5691,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-bre",
+   "iso639_3": "bre",
+   "language": "Breton",
+   "mode": "twofold",
+   "new": 9126,
+   "old": 3145,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 9996,
+   "treebank": "UD_Breton-KEB"
+  },
+  {
+   "copy": 501,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-brh",
+   "iso639_3": "brh",
+   "language": "Brahui",
+   "mode": "twofold",
+   "new": 501,
+   "old": 806,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Brahui-Kholum",
+   "tokens": 819,
+   "treebank": "UD_Brahui-Kholum"
+  },
+  {
+   "copy": 81341,
+   "dictionaries": [
+    "multext-east",
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-bul-nc",
+   "iso639_3": "bul",
+   "language": "Bulgarian",
+   "mode": "twofold",
+   "new": 145825,
+   "old": 81854,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 154888,
+   "treebank": "UD_Bulgarian-BTB"
+  },
+  {
+   "copy": 5428,
+   "dictionaries": [
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-bxr",
+   "iso639_3": "bxr",
+   "language": "Buryat",
+   "mode": "official",
+   "new": 5698,
+   "old": 5697,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Buryat-BDT",
+   "tokens": 9960,
+   "treebank": "UD_Buryat-BDT"
+  },
+  {
+   "copy": 40797,
+   "dev": {
+    "copy": 39260,
+    "declared_train_only": 56684,
+    "new_train_only": 56729,
+    "old": 29789,
+    "tokens": 58048
+   },
+   "dictionaries": [
+    "wiktionary-other",
+    "wiktionary-en",
+    "unimorph"
+   ],
+   "distribution": "udlex-dict-cat",
+   "iso639_3": "cat",
+   "language": "Catalan",
+   "mode": "official",
+   "new": 58197,
+   "old": 30999,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 59571,
+   "treebank": "UD_Catalan-AnCora"
+  },
+  {
+   "copy": 916,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-ceb",
+   "iso639_3": "ceb",
+   "language": "Cebuano",
+   "mode": "twofold",
+   "new": 916,
+   "old": 908,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 1517,
+   "treebank": "UD_Cebuano-GJA"
+  },
+  {
+   "copy": 160792,
+   "dev": {
+    "copy": 204757,
+    "declared_train_only": 371706,
+    "new_train_only": 371762,
+    "old": 253297,
+    "tokens": 377351
+   },
+   "dictionaries": [
+    "multext-east",
+    "unimorph",
+    "wiktionary-cs",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-ces-nc",
+   "iso639_3": "ces",
+   "language": "Czech",
+   "mode": "official",
+   "new": 293888,
+   "old": 198301,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 298180,
+   "treebank": "UD_Czech-PDTC"
+  },
+  {
+   "copy": 1518,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-che-nc",
+   "iso639_3": "che",
+   "language": "Chechen",
+   "mode": "twofold",
+   "new": 1518,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 3132,
+   "treebank": "UD_Chechen-MottDT"
+  },
+  {
+   "copy": 4355,
+   "dev": {
+    "copy": 4204,
+    "declared_train_only": 16062,
+    "new_train_only": 16076,
+    "old": 3308,
+    "tokens": 18597
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-chu-nc",
+   "iso639_3": "chu",
+   "language": "Old Church Slavonic",
+   "mode": "official",
+   "new": 16855,
+   "old": 3300,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 19816,
+   "treebank": "UD_Old_Church_Slavonic-PROIEL"
+  },
+  {
+   "copy": 81,
+   "dev": {
+    "copy": 62,
+    "declared_train_only": 63,
+    "new_train_only": 63,
+    "old": null,
+    "tokens": 85
+   },
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-ckb",
+   "iso639_3": "ckb",
+   "language": "Central Kurdish",
+   "mode": "official",
+   "new": 81,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 122,
+   "treebank": "UD_Central_Kurdish-Mukri"
+  },
+  {
+   "copy": 11930,
+   "dev": {
+    "copy": 12595,
+    "declared_train_only": 12656,
+    "new_train_only": 12656,
+    "old": 12589,
+    "tokens": 12665
+   },
+   "dictionaries": [
+    "cc-cedict",
+    "wiktionary-zh",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-cmn",
+   "iso639_3": "cmn",
+   "language": "Mandarin Chinese",
+   "mode": "official",
+   "new": 11997,
+   "old": 11923,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "CC-CEDICT",
+   "tokens": 12010,
+   "treebank": "UD_Chinese-GSDSimp"
+  },
+  {
+   "copy": 6588,
+   "dev": {
+    "copy": 6962,
+    "declared_train_only": 9811,
+    "new_train_only": 9811,
+    "old": 9811,
+    "tokens": 10952
+   },
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-cop",
+   "iso639_3": "cop",
+   "language": "Coptic",
+   "mode": "official",
+   "new": 9385,
+   "old": 9350,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Coptic-Scriptorium",
+   "tokens": 10348,
+   "treebank": "UD_Coptic-Scriptorium"
+  },
+  {
+   "copy": 1579,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-cpg",
+   "iso639_3": "cpg",
+   "language": "Cappadocian",
+   "mode": "twofold",
+   "new": 2728,
+   "old": 3486,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Cappadocian-TueCL",
+   "tokens": 3952,
+   "treebank": "UD_Cappadocian-TueCL"
+  },
+  {
+   "copy": 6945,
+   "dictionaries": [
+    "wiktionary-fr"
+   ],
+   "distribution": "udlex-dict-ctn-nc",
+   "iso639_3": "ctn",
+   "language": "Chintang",
+   "mode": "twofold",
+   "new": 10621,
+   "old": 7794,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Dictionaria Chintang Dictionary",
+   "tokens": 14199,
+   "treebank": "UD_Chintang-CTNTB"
+  },
+  {
+   "copy": 2625,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-cux",
+   "iso639_3": "cux",
+   "language": "Cuicatec",
+   "mode": "twofold",
+   "new": 3596,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 3682,
+   "treebank": "UD_Cuicatec-MesoTree"
+  },
+  {
+   "copy": 10379,
+   "dev": {
+    "copy": 5687,
+    "declared_train_only": 8664,
+    "new_train_only": 8664,
+    "old": 8178,
+    "tokens": 9072
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-cym",
+   "iso639_3": "cym",
+   "language": "Welsh",
+   "mode": "official",
+   "new": 16258,
+   "old": 15286,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Welsh-CCG",
+   "tokens": 17026,
+   "treebank": "UD_Welsh-CCG"
+  },
+  {
+   "copy": 6697,
+   "dev": {
+    "copy": 6822,
+    "declared_train_only": 9891,
+    "new_train_only": 9891,
+    "old": 6802,
+    "tokens": 10329
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-dan",
+   "iso639_3": "dan",
+   "language": "Danish",
+   "mode": "official",
+   "new": 9593,
+   "old": 6583,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 10022,
+   "treebank": "UD_Danish-DDT"
+  },
+  {
+   "copy": 1953,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-dar-nc",
+   "iso639_3": "dar",
+   "language": "Dargwa",
+   "mode": "twofold",
+   "new": 3338,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 4276,
+   "treebank": "UD_Dargwa-Mehweb"
+  },
+  {
+   "copy": 219657,
+   "dev": {
+    "copy": 214058,
+    "declared_train_only": 316141,
+    "new_train_only": 316418,
+    "old": 166155,
+    "tokens": 322723
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-other",
+    "wiktionary-en",
+    "wiktionary-de"
+   ],
+   "distribution": "udlex-dict-deu",
+   "iso639_3": "deu",
+   "language": "German",
+   "mode": "official",
+   "new": 323469,
+   "old": 167177,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 329795,
+   "treebank": "UD_German-HDT"
+  },
+  {
+   "copy": 248,
+   "dictionaries": [
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-drs",
+   "iso639_3": "drs",
+   "language": "Gedeo",
+   "mode": "twofold",
+   "new": 254,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 269,
+   "treebank": "UD_Gedeo-GDT"
+  },
+  {
+   "copy": 471,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-dta",
+   "iso639_3": "dta",
+   "language": "Daur",
+   "mode": "twofold",
+   "new": 549,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 659,
+   "treebank": "UD_Daur-GDUD"
+  },
+  {
+   "copy": 6049,
+   "dev": {
+    "copy": 1746,
+    "declared_train_only": 2863,
+    "new_train_only": 2863,
+    "old": 2564,
+    "tokens": 3181
+   },
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-egy",
+   "iso639_3": "egy",
+   "language": "Egyptian",
+   "mode": "official",
+   "new": 10352,
+   "old": 9720,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Egyptian-PC",
+   "tokens": 11436,
+   "treebank": "UD_Egyptian-PC"
+  },
+  {
+   "copy": 4609,
+   "dev": {
+    "copy": 4405,
+    "declared_train_only": 9957,
+    "new_train_only": 10047,
+    "old": 5022,
+    "tokens": 10436
+   },
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-el"
+   ],
+   "distribution": "udlex-dict-ell-nc",
+   "iso639_3": "ell",
+   "language": "(Modern) Greek",
+   "mode": "official",
+   "new": 10330,
+   "old": 5322,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 10656,
+   "treebank": "UD_Greek-GDT"
+  },
+  {
+   "copy": 984,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-eme",
+   "iso639_3": "eme",
+   "language": "Teko",
+   "mode": "twofold",
+   "new": 984,
+   "old": 2740,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Teko-TuDeT",
+   "tokens": 2808,
+   "treebank": "UD_Teko-TuDeT"
+  },
+  {
+   "copy": 21936,
+   "dev": {
+    "copy": 21739,
+    "declared_train_only": 27284,
+    "new_train_only": 27312,
+    "old": 21446,
+    "tokens": 27899
+   },
+   "dictionaries": [
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-eng-nc",
+   "iso639_3": "eng",
+   "language": "English",
+   "mode": "official",
+   "new": 27556,
+   "old": 21637,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph English paradigms",
+   "tokens": 28156,
+   "treebank": "UD_English-GUM"
+  },
+  {
+   "copy": 2708,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-epo",
+   "iso639_3": "epo",
+   "language": "Esperanto",
+   "mode": "twofold",
+   "new": 3556,
+   "old": 3731,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Esperanto-Prago",
+   "tokens": 3797,
+   "treebank": "UD_Esperanto-Prago"
+  },
+  {
+   "copy": 578,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-ess",
+   "iso639_3": "ess",
+   "language": "Yupik",
+   "mode": "twofold",
+   "new": 1046,
+   "old": 1458,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Yupik-SLI",
+   "tokens": 1464,
+   "treebank": "UD_Yupik-SLI"
+  },
+  {
+   "copy": 22889,
+   "dev": {
+    "copy": 21478,
+    "declared_train_only": 40268,
+    "new_train_only": 40724,
+    "old": 24218,
+    "tokens": 44614
+   },
+   "dictionaries": [
+    "eesthetic",
+    "multext-east",
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-est-nc",
+   "iso639_3": "est",
+   "language": "Estonian",
+   "mode": "official",
+   "new": 44573,
+   "old": 25725,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 48309,
+   "treebank": "UD_Estonian-EDT"
+  },
+  {
+   "copy": 11838,
+   "dev": {
+    "copy": 11800,
+    "declared_train_only": 22585,
+    "new_train_only": 22585,
+    "old": 16533,
+    "tokens": 24014
+   },
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-eus-nc",
+   "iso639_3": "eus",
+   "language": "Basque",
+   "mode": "official",
+   "new": 22954,
+   "old": 16809,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "English Wiktionary via Wiktextract",
+   "tokens": 24312,
+   "treebank": "UD_Basque-BDT"
+  },
+  {
+   "copy": 276,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-eve",
+   "iso639_3": "eve",
+   "language": "Even",
+   "mode": "twofold",
+   "new": 249,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 282,
+   "treebank": "UD_Even-GDUD"
+  },
+  {
+   "copy": 81,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-evn",
+   "iso639_3": "evn",
+   "language": "Evenki",
+   "mode": "twofold",
+   "new": 81,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 249,
+   "treebank": "UD_Evenki-GDUD"
+  },
+  {
+   "copy": 1105,
+   "dev": {
+    "copy": 1127,
+    "declared_train_only": 1127,
+    "new_train_only": 1127,
+    "old": 1127,
+    "tokens": 1127
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-fao",
+   "iso639_3": "fao",
+   "language": "Faroese",
+   "mode": "official",
+   "new": 1105,
+   "old": 1105,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 1105,
+   "treebank": "UD_Faroese-FarPaHC"
+  },
+  {
+   "copy": 9080,
+   "dev": {
+    "copy": 7865,
+    "declared_train_only": 16358,
+    "new_train_only": 16834,
+    "old": 11821,
+    "tokens": 18205
+   },
+   "dictionaries": [
+    "wiktionary-other",
+    "wiktionary-en",
+    "unimorph"
+   ],
+   "distribution": "udlex-dict-fin",
+   "iso639_3": "fin",
+   "language": "Finnish",
+   "mode": "official",
+   "new": 19373,
+   "old": 13373,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 20989,
+   "treebank": "UD_Finnish-TDT"
+  },
+  {
+   "copy": 6494,
+   "dev": {
+    "copy": 23607,
+    "declared_train_only": 34744,
+    "new_train_only": 34808,
+    "old": 11729,
+    "tokens": 35694
+   },
+   "dictionaries": [
+    "multext-east",
+    "lexique",
+    "glaff",
+    "wiktionary-other",
+    "wiktionary-en"
+   ],
+   "distribution": "udlex-dict-fra",
+   "iso639_3": "fra",
+   "language": "French",
+   "mode": "official",
+   "new": 9732,
+   "old": 3159,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 9959,
+   "treebank": "UD_French-GSD"
+  },
+  {
+   "copy": 6001,
+   "dev": {
+    "copy": 3621,
+    "declared_train_only": 7536,
+    "new_train_only": 7558,
+    "old": 2071,
+    "tokens": 8101
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-frm-nc",
+   "iso639_3": "frm",
+   "language": "Middle French",
+   "mode": "official",
+   "new": 12724,
+   "old": 3519,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 13586,
+   "treebank": "UD_Middle_French-PROFITEROLE"
+  },
+  {
+   "copy": 50547,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-fro-nc",
+   "iso639_3": "fro",
+   "language": "Old French",
+   "mode": "twofold",
+   "new": 78062,
+   "old": 31657,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 143511,
+   "treebank": "UD_Old_French-PROFITEROLE"
+  },
+  {
+   "copy": 491,
+   "dictionaries": [
+    "wiktionary-en"
+   ],
+   "distribution": "udlex-dict-fsl",
+   "iso639_3": "fsl",
+   "language": "French Sign Language",
+   "mode": "twofold",
+   "new": 465,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 615,
+   "treebank": "UD_French_Sign_Language-STKAutogramm"
+  },
+  {
+   "copy": 6773,
+   "dev": {
+    "copy": 6937,
+    "declared_train_only": 10020,
+    "new_train_only": 10020,
+    "old": 9574,
+    "tokens": 10585
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-gla",
+   "iso639_3": "gla",
+   "language": "Scottish Gaelic",
+   "mode": "official",
+   "new": 9919,
+   "old": 9533,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Scottish_Gaelic-ARCOSG",
+   "tokens": 10551,
+   "treebank": "UD_Scottish_Gaelic-ARCOSG"
+  },
+  {
+   "copy": 411,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-gld",
+   "iso639_3": "gld",
+   "language": "Nanai",
+   "mode": "twofold",
+   "new": 481,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 821,
+   "treebank": "UD_Nanai-GDUD"
+  },
+  {
+   "copy": 6253,
+   "dev": {
+    "copy": 6176,
+    "declared_train_only": 9269,
+    "new_train_only": 9269,
+    "old": 5841,
+    "tokens": 9906
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-gle",
+   "iso639_3": "gle",
+   "language": "Irish",
+   "mode": "official",
+   "new": 9489,
+   "old": 5950,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 10100,
+   "treebank": "UD_Irish-IDT"
+  },
+  {
+   "copy": 19235,
+   "dev": {
+    "copy": 19560,
+    "declared_train_only": 28852,
+    "new_train_only": 28852,
+    "old": 27634,
+    "tokens": 29785
+   },
+   "dictionaries": [
+    "freeling-gl",
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-glg-nc",
+   "iso639_3": "glg",
+   "language": "Galician",
+   "mode": "official",
+   "new": 28832,
+   "old": 27613,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Galician-PUD",
+   "tokens": 29740,
+   "treebank": "UD_Galician-CTG"
+  },
+  {
+   "copy": 7478,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-glv",
+   "iso639_3": "glv",
+   "language": "Manx",
+   "mode": "official",
+   "new": 9725,
+   "old": 9568,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Manx-Cadhan",
+   "tokens": 10252,
+   "treebank": "UD_Manx-Cadhan"
+  },
+  {
+   "copy": 126,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-gor",
+   "iso639_3": "gor",
+   "language": "Gorontalo",
+   "mode": "twofold",
+   "new": 160,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 205,
+   "treebank": "UD_Gorontalo-BungoLoLombi"
+  },
+  {
+   "copy": 4083,
+   "dev": {
+    "copy": 4104,
+    "declared_train_only": 8961,
+    "new_train_only": 9242,
+    "old": 3483,
+    "tokens": 9835
+   },
+   "dictionaries": [
+    "unimorph"
+   ],
+   "distribution": "udlex-dict-got-nc",
+   "iso639_3": "got",
+   "language": "Gothic",
+   "mode": "official",
+   "new": 9323,
+   "old": 3432,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 9878,
+   "treebank": "UD_Gothic-PROIEL"
+  },
+  {
+   "copy": 2159,
+   "dev": {
+    "copy": 2191,
+    "declared_train_only": 12780,
+    "new_train_only": 12809,
+    "old": 2109,
+    "tokens": 13447
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-grc-nc",
+   "iso639_3": "grc",
+   "language": "Ancient Greek",
+   "mode": "official",
+   "new": 12553,
+   "old": 2098,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 13091,
+   "treebank": "UD_Ancient_Greek-PROIEL"
+  },
+  {
+   "copy": 4992,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-gub",
+   "iso639_3": "gub",
+   "language": "Guajajara",
+   "mode": "twofold",
+   "new": 8138,
+   "old": 8917,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Guajajara-TuDeT",
+   "tokens": 9151,
+   "treebank": "UD_Guajajara-TuDeT"
+  },
+  {
+   "copy": 90,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-gug",
+   "iso639_3": "gug",
+   "language": "Guarani",
+   "mode": "twofold",
+   "new": 105,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 193,
+   "treebank": "UD_Guarani-OldTuDeT"
+  },
+  {
+   "copy": 1440,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-guj",
+   "iso639_3": "guj",
+   "language": "Gujarati",
+   "mode": "twofold",
+   "new": 1440,
+   "old": 726,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 1575,
+   "treebank": "UD_Gujarati-GujTB"
+  },
+  {
+   "copy": 792,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-gun-nc",
+   "iso639_3": "gun",
+   "language": "Mbya Guarani",
+   "mode": "twofold",
+   "new": 792,
+   "old": 819,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "English Wiktionary via Wiktextract",
+   "tokens": 1318,
+   "treebank": "UD_Mbya_Guarani-Thomas"
+  },
+  {
+   "copy": 190,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-gwi",
+   "iso639_3": "gwi",
+   "language": "Gwichin",
+   "mode": "twofold",
+   "new": 190,
+   "old": 623,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Gwichin-TueCL",
+   "tokens": 636,
+   "treebank": "UD_Gwichin-TueCL"
+  },
+  {
+   "copy": 2827,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-gya",
+   "iso639_3": "gya",
+   "language": "Northwest Gbaya",
+   "mode": "twofold",
+   "new": 3784,
+   "old": 4128,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Northwest_Gbaya-Autogramm",
+   "tokens": 4156,
+   "treebank": "UD_Northwest_Gbaya-Autogramm"
+  },
+  {
+   "copy": 225,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-hac",
+   "iso639_3": "hac",
+   "language": "Gorani",
+   "mode": "twofold",
+   "new": 319,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 518,
+   "treebank": "UD_Gorani-Hawrami"
+  },
+  {
+   "copy": 8508,
+   "dev": {
+    "copy": 5258,
+    "declared_train_only": 6072,
+    "new_train_only": 6072,
+    "old": 5878,
+    "tokens": 6165
+   },
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-hat",
+   "iso639_3": "hat",
+   "language": "Haitian Creole",
+   "mode": "official",
+   "new": 9831,
+   "old": 9571,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Haitian_Creole-Adolphe",
+   "tokens": 9957,
+   "treebank": "UD_Haitian_Creole-Adolphe"
+  },
+  {
+   "copy": 9019,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-hau",
+   "iso639_3": "hau",
+   "language": "Hausa",
+   "mode": "twofold",
+   "new": 13787,
+   "old": 14666,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Hausa-NorthernAutogramm",
+   "tokens": 15291,
+   "treebank": "UD_Hausa-NorthernAutogramm"
+  },
+  {
+   "copy": 1940,
+   "dev": {
+    "copy": 2301,
+    "declared_train_only": 13501,
+    "new_train_only": 13501,
+    "old": 2555,
+    "tokens": 16460
+   },
+   "dictionaries": [
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-hbo-nc",
+   "iso639_3": "hbo",
+   "language": "Ancient Hebrew",
+   "mode": "official",
+   "new": 12748,
+   "old": 2103,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "MACULA Hebrew WLC",
+   "tokens": 14972,
+   "treebank": "UD_Ancient_Hebrew-PTNK"
+  },
+  {
+   "copy": 8943,
+   "dev": {
+    "copy": 8111,
+    "declared_train_only": 10920,
+    "new_train_only": 10956,
+    "old": 6681,
+    "tokens": 11333
+   },
+   "dictionaries": [
+    "wiktionary-other",
+    "unimorph",
+    "wiktionary-en"
+   ],
+   "distribution": "udlex-dict-heb-nc",
+   "iso639_3": "heb",
+   "language": "Hebrew",
+   "mode": "official",
+   "new": 11504,
+   "old": 7197,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 11993,
+   "treebank": "UD_Hebrew-HTB"
+  },
+  {
+   "copy": 25534,
+   "dev": {
+    "copy": 25385,
+    "declared_train_only": 33847,
+    "new_train_only": 33847,
+    "old": 13340,
+    "tokens": 35183
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-hin-nc",
+   "iso639_3": "hin",
+   "language": "Hindi",
+   "mode": "official",
+   "new": 34092,
+   "old": 13475,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 35413,
+   "treebank": "UD_Hindi-HDTB"
+  },
+  {
+   "copy": 216,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-hit",
+   "iso639_3": "hit",
+   "language": "Hittite",
+   "mode": "twofold",
+   "new": 216,
+   "old": 1206,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Hittite-HitTB",
+   "tokens": 1309,
+   "treebank": "UD_Hittite-HitTB"
+  },
+  {
+   "copy": 11472,
+   "dev": {
+    "copy": 10815,
+    "declared_train_only": 21542,
+    "new_train_only": 21560,
+    "old": 18422,
+    "tokens": 22292
+   },
+   "dictionaries": [
+    "hrlex",
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-hrv",
+   "iso639_3": "hrv",
+   "language": "Croatian",
+   "mode": "official",
+   "new": 23550,
+   "old": 20136,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "CLARIN.SI Inflectional lexicon hrLex 1.3",
+   "tokens": 24203,
+   "treebank": "UD_Croatian-SET"
+  },
+  {
+   "copy": 6057,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-hsb",
+   "iso639_3": "hsb",
+   "language": "Upper Sorbian",
+   "mode": "twofold",
+   "new": 9530,
+   "old": 10550,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Upper_Sorbian-UFAL",
+   "tokens": 11167,
+   "treebank": "UD_Upper_Sorbian-UFAL"
+  },
+  {
+   "copy": 6894,
+   "dev": {
+    "copy": 7666,
+    "declared_train_only": 10586,
+    "new_train_only": 10624,
+    "old": 8601,
+    "tokens": 11416
+   },
+   "dictionaries": [
+    "multext-east",
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-hun-nc",
+   "iso639_3": "hun",
+   "language": "Hungarian",
+   "mode": "official",
+   "new": 9765,
+   "old": 7863,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 10432,
+   "treebank": "UD_Hungarian-Szeged"
+  },
+  {
+   "copy": 5546,
+   "dev": {
+    "copy": 5570,
+    "declared_train_only": 10309,
+    "new_train_only": 10309,
+    "old": 7737,
+    "tokens": 10719
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-hye",
+   "iso639_3": "hye",
+   "language": "Armenian",
+   "mode": "official",
+   "new": 10209,
+   "old": 7571,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 10610,
+   "treebank": "UD_Armenian-ArmTDP"
+  },
+  {
+   "copy": 7579,
+   "dev": {
+    "copy": 7348,
+    "declared_train_only": 12541,
+    "new_train_only": 12541,
+    "old": 12387,
+    "tokens": 13430
+   },
+   "dictionaries": [
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-hyw",
+   "iso639_3": "hyw",
+   "language": "Western Armenian",
+   "mode": "official",
+   "new": 12793,
+   "old": 12367,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Western_Armenian-ArmTDP",
+   "tokens": 13493,
+   "treebank": "UD_Western_Armenian-ArmTDP"
+  },
+  {
+   "copy": 8216,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other",
+    "wiktionary-id"
+   ],
+   "distribution": "udlex-dict-ind",
+   "iso639_3": "ind",
+   "language": "Indonesian",
+   "mode": "official",
+   "new": 9658,
+   "old": 9219,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Indonesian-CSUI",
+   "tokens": 10007,
+   "treebank": "UD_Indonesian-CSUI"
+  },
+  {
+   "copy": 73881,
+   "dev": {
+    "copy": 76688,
+    "declared_train_only": 132409,
+    "new_train_only": 132554,
+    "old": 63161,
+    "tokens": 139476
+   },
+   "dictionaries": [
+    "wiktionary-other",
+    "wiktionary-en",
+    "unimorph",
+    "bin"
+   ],
+   "distribution": "udlex-dict-isl",
+   "iso639_3": "isl",
+   "language": "Icelandic",
+   "mode": "official",
+   "new": 131591,
+   "old": 63985,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 139575,
+   "treebank": "UD_Icelandic-IcePaHC"
+  },
+  {
+   "copy": 6815,
+   "dev": {
+    "copy": 7738,
+    "declared_train_only": 11566,
+    "new_train_only": 11566,
+    "old": 4801,
+    "tokens": 11885
+   },
+   "dictionaries": [
+    "freeling-it",
+    "unimorph",
+    "wiktionary-it",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-ita-nc",
+   "iso639_3": "ita",
+   "language": "Italian",
+   "mode": "official",
+   "new": 10098,
+   "old": 4169,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 10416,
+   "treebank": "UD_Italian-ISDT"
+  },
+  {
+   "copy": 60,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-jaa",
+   "iso639_3": "jaa",
+   "language": "Madi",
+   "mode": "twofold",
+   "new": 74,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 105,
+   "treebank": "UD_Madi-Jarawara"
+  },
+  {
+   "copy": 9638,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-jav",
+   "iso639_3": "jav",
+   "language": "Javanese",
+   "mode": "twofold",
+   "new": 13074,
+   "old": 13994,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Javanese-CSUI",
+   "tokens": 14341,
+   "treebank": "UD_Javanese-CSUI"
+  },
+  {
+   "copy": 10245,
+   "dev": {
+    "copy": 9935,
+    "declared_train_only": 11866,
+    "new_train_only": 11866,
+    "old": 9458,
+    "tokens": 12286
+   },
+   "dictionaries": [
+    "sudachi",
+    "unimorph",
+    "wiktionary-ja",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-jpn",
+   "iso639_3": "jpn",
+   "language": "Japanese",
+   "mode": "official",
+   "new": 12510,
+   "old": 9687,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 13034,
+   "treebank": "UD_Japanese-GSD"
+  },
+  {
+   "copy": 1340,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-kas",
+   "iso639_3": "kas",
+   "language": "Kashmiri",
+   "mode": "twofold",
+   "new": 1340,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 2149,
+   "treebank": "UD_Kashmiri-Zaan"
+  },
+  {
+   "copy": 5693,
+   "dev": {
+    "copy": 5598,
+    "declared_train_only": 8977,
+    "new_train_only": 8986,
+    "old": 8844,
+    "tokens": 9411
+   },
+   "dictionaries": [
+    "wiktionary-other",
+    "unimorph",
+    "wiktionary-en"
+   ],
+   "distribution": "udlex-dict-kat",
+   "iso639_3": "kat",
+   "language": "Georgian",
+   "mode": "official",
+   "new": 9092,
+   "old": 8846,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Georgian-GLC",
+   "tokens": 9678,
+   "treebank": "UD_Georgian-GLC"
+  },
+  {
+   "copy": 5009,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-kaz",
+   "iso639_3": "kaz",
+   "language": "Kazakh",
+   "mode": "official",
+   "new": 6960,
+   "old": 5058,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 10007,
+   "treebank": "UD_Kazakh-KTB"
+  },
+  {
+   "copy": 417,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-kbc-nc",
+   "iso639_3": "kbc",
+   "language": "Kadiwéu",
+   "mode": "twofold",
+   "new": 699,
+   "old": 385,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "English Wiktionary via Wiktextract",
+   "tokens": 836,
+   "treebank": "UD_Kadiweu-Unicamp"
+  },
+  {
+   "copy": 5389,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-kir",
+   "iso639_3": "kir",
+   "language": "Kyrgyz",
+   "mode": "official",
+   "new": 9265,
+   "old": 8632,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Kyrgyz-KTMU",
+   "tokens": 10840,
+   "treebank": "UD_Kyrgyz-KTMU"
+  },
+  {
+   "copy": 5276,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-kmr",
+   "iso639_3": "kmr",
+   "language": "Northern Kurdish",
+   "mode": "official",
+   "new": 7361,
+   "old": 6798,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Northern_Kurdish-Kurmanji",
+   "tokens": 9963,
+   "treebank": "UD_Northern_Kurdish-Kurmanji"
+  },
+  {
+   "copy": 520,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-koi",
+   "iso639_3": "koi",
+   "language": "Komi Permyak",
+   "mode": "official",
+   "new": 590,
+   "old": 575,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Komi_Permyak-UH",
+   "tokens": 898,
+   "treebank": "UD_Komi_Permyak-UH"
+  },
+  {
+   "copy": 8700,
+   "dev": {
+    "copy": 7097,
+    "declared_train_only": 22459,
+    "new_train_only": 22459,
+    "old": 22396,
+    "tokens": 25274
+   },
+   "dictionaries": [
+    "wiktionary-ko",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-kor",
+   "iso639_3": "kor",
+   "language": "Korean",
+   "mode": "official",
+   "new": 24725,
+   "old": 24615,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Korean-Kaist",
+   "tokens": 28352,
+   "treebank": "UD_Korean-Kaist"
+  },
+  {
+   "copy": 4587,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-kpv",
+   "iso639_3": "kpv",
+   "language": "Komi Zyrian",
+   "mode": "official",
+   "new": 5141,
+   "old": 4561,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Komi_Zyrian-Lattice",
+   "tokens": 8040,
+   "treebank": "UD_Komi_Zyrian-Lattice"
+  },
+  {
+   "copy": 1338,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-krl",
+   "iso639_3": "krl",
+   "language": "Karelian",
+   "mode": "twofold",
+   "new": 2160,
+   "old": 1237,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 3093,
+   "treebank": "UD_Karelian-KKPP"
+  },
+  {
+   "copy": 15155,
+   "dev": {
+    "copy": 14934,
+    "declared_train_only": 28337,
+    "new_train_only": 28378,
+    "old": 11256,
+    "tokens": 29389
+   },
+   "dictionaries": [
+    "latinflexi",
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-lat-nc",
+   "iso639_3": "lat",
+   "language": "Latin",
+   "mode": "official",
+   "new": 28480,
+   "old": 11360,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 29220,
+   "treebank": "UD_Latin-ITTB"
+  },
+  {
+   "copy": 17605,
+   "dev": {
+    "copy": 16265,
+    "declared_train_only": 32659,
+    "new_train_only": 32823,
+    "old": 19936,
+    "tokens": 34498
+   },
+   "dictionaries": [
+    "tezaurs",
+    "wiktionary-other",
+    "wiktionary-en",
+    "unimorph"
+   ],
+   "distribution": "udlex-dict-lav",
+   "iso639_3": "lav",
+   "language": "Latvian",
+   "mode": "official",
+   "new": 35241,
+   "old": 21036,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 37080,
+   "treebank": "UD_Latvian-LVTB"
+  },
+  {
+   "copy": 4423,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-lij",
+   "iso639_3": "lij",
+   "language": "Ligurian",
+   "mode": "official",
+   "new": 5276,
+   "old": 4254,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "English Wiktionary via Wiktextract",
+   "tokens": 6683,
+   "treebank": "UD_Ligurian-GLT"
+  },
+  {
+   "copy": 5267,
+   "dev": {
+    "copy": 2467,
+    "declared_train_only": 4915,
+    "new_train_only": 4927,
+    "old": 3018,
+    "tokens": 5266
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-other",
+    "wiktionary-en"
+   ],
+   "distribution": "udlex-dict-lit",
+   "iso639_3": "lit",
+   "language": "Lithuanian",
+   "mode": "official",
+   "new": 11257,
+   "old": 6708,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 11953,
+   "treebank": "UD_Lithuanian-ALKSNIS"
+  },
+  {
+   "copy": 81,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-ltg",
+   "iso639_3": "ltg",
+   "language": "Latgalian",
+   "mode": "twofold",
+   "new": 114,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 170,
+   "treebank": "UD_Latgalian-Cairo"
+  },
+  {
+   "copy": 132,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-ltz",
+   "iso639_3": "ltz",
+   "language": "Luxembourgish",
+   "mode": "twofold",
+   "new": 171,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 206,
+   "treebank": "UD_Luxembourgish-LuxBank"
+  },
+  {
+   "copy": 24581,
+   "dev": {
+    "copy": 28079,
+    "declared_train_only": 28555,
+    "new_train_only": 28555,
+    "old": 28552,
+    "tokens": 28571
+   },
+   "dictionaries": [
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-lzh-nc",
+   "iso639_3": "lzh",
+   "language": "Classical Chinese",
+   "mode": "official",
+   "new": 24968,
+   "old": 24970,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Classical_Chinese-Kyoto",
+   "tokens": 25043,
+   "treebank": "UD_Classical_Chinese-Kyoto"
+  },
+  {
+   "copy": 1158,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-lzz",
+   "iso639_3": "lzz",
+   "language": "Laz",
+   "mode": "twofold",
+   "new": 1158,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 2237,
+   "treebank": "UD_Laz-BOUN"
+  },
+  {
+   "copy": 1481,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-mal",
+   "iso639_3": "mal",
+   "language": "Malayalam",
+   "mode": "twofold",
+   "new": 1669,
+   "old": 2333,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Malayalam-UFAL",
+   "tokens": 2402,
+   "treebank": "UD_Malayalam-UFAL"
+  },
+  {
+   "copy": 7022,
+   "dev": {
+    "copy": 6211,
+    "declared_train_only": 10037,
+    "new_train_only": 10048,
+    "old": 9778,
+    "tokens": 11282
+   },
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-mar",
+   "iso639_3": "mar",
+   "language": "Marathi",
+   "mode": "official",
+   "new": 10874,
+   "old": 10623,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Marathi-CMUPAN",
+   "tokens": 12291,
+   "treebank": "UD_Marathi-CMUPAN"
+  },
+  {
+   "copy": 2146,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-mdf",
+   "iso639_3": "mdf",
+   "language": "Moksha",
+   "mode": "official",
+   "new": 2848,
+   "old": 2416,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Moksha-JR",
+   "tokens": 4305,
+   "treebank": "UD_Moksha-JR"
+  },
+  {
+   "copy": 234,
+   "dictionaries": [
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-mjg",
+   "iso639_3": "mjg",
+   "language": "Tu",
+   "mode": "twofold",
+   "new": 267,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 320,
+   "treebank": "UD_Tu-GDUD"
+  },
+  {
+   "copy": 885,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-mkd",
+   "iso639_3": "mkd",
+   "language": "Macedonian",
+   "mode": "twofold",
+   "new": 1193,
+   "old": 823,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 1343,
+   "treebank": "UD_Macedonian-MTB"
+  },
+  {
+   "copy": 331,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-mnc",
+   "iso639_3": "mnc",
+   "language": "Manchu",
+   "mode": "twofold",
+   "new": 391,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 446,
+   "treebank": "UD_Manchu-GDUD"
+  },
+  {
+   "copy": 229,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-mon",
+   "iso639_3": "mon",
+   "language": "Mongolian",
+   "mode": "twofold",
+   "new": 331,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 472,
+   "treebank": "UD_Mongolian-GDUD"
+  },
+  {
+   "copy": 130,
+   "dictionaries": [
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-mpu",
+   "iso639_3": "mpu",
+   "language": "Makurap",
+   "mode": "twofold",
+   "new": 140,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 177,
+   "treebank": "UD_Makurap-TuDeT"
+  },
+  {
+   "copy": 117,
+   "dictionaries": [
+    "wiktionary-fr"
+   ],
+   "distribution": "udlex-dict-mvf",
+   "iso639_3": "mvf",
+   "language": "Peripheral Mongolian",
+   "mode": "twofold",
+   "new": 125,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 272,
+   "treebank": "UD_Peripheral_Mongolian-Ordos"
+  },
+  {
+   "copy": 612,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-myu",
+   "iso639_3": "myu",
+   "language": "Munduruku",
+   "mode": "twofold",
+   "new": 777,
+   "old": 956,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Munduruku-TuDeT",
+   "tokens": 997,
+   "treebank": "UD_Munduruku-TuDeT"
+  },
+  {
+   "copy": 5267,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-myv",
+   "iso639_3": "myv",
+   "language": "Erzya",
+   "mode": "official",
+   "new": 8546,
+   "old": 8342,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Erzya-JR",
+   "tokens": 10470,
+   "treebank": "UD_Erzya-JR"
+  },
+  {
+   "copy": 124,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-nap",
+   "iso639_3": "nap",
+   "language": "Neapolitan",
+   "mode": "twofold",
+   "new": 142,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 201,
+   "treebank": "UD_Neapolitan-RB"
+  },
+  {
+   "copy": 4667,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-naq-nc",
+   "iso639_3": "naq",
+   "language": "Khoekhoe",
+   "mode": "official",
+   "new": 6324,
+   "old": 6304,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Khoekhoe Dependency Treebank",
+   "tokens": 6638,
+   "treebank": "UD_Khoekhoe-KDT"
+  },
+  {
+   "copy": 6761,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-nds",
+   "iso639_3": "nds",
+   "language": "Low German",
+   "mode": "official",
+   "new": 8968,
+   "old": 4188,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 10966,
+   "treebank": "UD_Low_Saxon-LSDC"
+  },
+  {
+   "copy": 92,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-neg",
+   "iso639_3": "neg",
+   "language": "Negidal",
+   "mode": "twofold",
+   "new": 138,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 281,
+   "treebank": "UD_Negidal-GDUD"
+  },
+  {
+   "copy": 523,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-nep",
+   "iso639_3": "nep",
+   "language": "Nepali",
+   "mode": "twofold",
+   "new": 690,
+   "old": 774,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Nepali-BK",
+   "tokens": 795,
+   "treebank": "UD_Nepali-BK"
+  },
+  {
+   "copy": 9826,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-nhi",
+   "iso639_3": "nhi",
+   "language": "Western Sierra Puebla Nahuatl",
+   "mode": "twofold",
+   "new": 14963,
+   "old": 18245,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Western_Sierra_Puebla_Nahuatl-MesoTree",
+   "tokens": 19229,
+   "treebank": "UD_Western_Sierra_Puebla_Nahuatl-MesoTree"
+  },
+  {
+   "copy": 21111,
+   "dev": {
+    "copy": 20419,
+    "declared_train_only": 26444,
+    "new_train_only": 26639,
+    "old": 14729,
+    "tokens": 28008
+   },
+   "dictionaries": [
+    "wiktionary-other",
+    "unimorph",
+    "wiktionary-nl",
+    "wiktionary-en"
+   ],
+   "distribution": "udlex-dict-nld-nc",
+   "iso639_3": "nld",
+   "language": "Dutch",
+   "mode": "official",
+   "new": 27175,
+   "old": 15537,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 28804,
+   "treebank": "UD_Dutch-LassySmall"
+  },
+  {
+   "copy": 1602,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-fr"
+   ],
+   "distribution": "udlex-dict-nmf",
+   "iso639_3": "nmf",
+   "language": "Naga",
+   "mode": "official",
+   "new": 1831,
+   "old": 1832,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Naga-Suansu",
+   "tokens": 2890,
+   "treebank": "UD_Naga-Suansu"
+  },
+  {
+   "copy": 13322,
+   "dev": {
+    "copy": 17085,
+    "declared_train_only": 30428,
+    "new_train_only": 30462,
+    "old": 25797,
+    "tokens": 31099
+   },
+   "dictionaries": [
+    "unimorph",
+    "ordbank-nno",
+    "wiktionary-other",
+    "ordbank-nob"
+   ],
+   "distribution": "udlex-dict-nor",
+   "iso639_3": "nor",
+   "language": "Norwegian",
+   "mode": "official",
+   "new": 24157,
+   "old": 20439,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Norwegian-Nynorsk",
+   "tokens": 24697,
+   "treebank": "UD_Norwegian-Nynorsk"
+  },
+  {
+   "copy": 148,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-oac",
+   "iso639_3": "oac",
+   "language": "Oroch",
+   "mode": "twofold",
+   "new": 256,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 347,
+   "treebank": "UD_Oroch-GDUD"
+  },
+  {
+   "copy": 6434,
+   "dev": {
+    "copy": 1002,
+    "declared_train_only": 1418,
+    "new_train_only": 1418,
+    "old": 1122,
+    "tokens": 1535
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-oci-nc",
+   "iso639_3": "oci",
+   "language": "Occitan",
+   "mode": "official",
+   "new": 9151,
+   "old": 7230,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "English Wiktionary via Wiktextract",
+   "tokens": 9956,
+   "treebank": "UD_Occitan-TTB"
+  },
+  {
+   "copy": 6079,
+   "dev": {
+    "copy": 1298,
+    "declared_train_only": 2256,
+    "new_train_only": 2256,
+    "old": 2248,
+    "tokens": 2685
+   },
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-oge",
+   "iso639_3": "oge",
+   "language": "Old Georgian",
+   "mode": "official",
+   "new": 11113,
+   "old": 11023,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Old_Georgian-GLC",
+   "tokens": 13028,
+   "treebank": "UD_Old_Georgian-GLC"
+  },
+  {
+   "copy": 694,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-olo",
+   "iso639_3": "olo",
+   "language": "Livvi",
+   "mode": "official",
+   "new": 1148,
+   "old": 1069,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 1485,
+   "treebank": "UD_Livvi-KKPP"
+  },
+  {
+   "copy": 1186,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-ori",
+   "iso639_3": "ori",
+   "language": "Odia",
+   "mode": "twofold",
+   "new": 1186,
+   "old": 1485,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Odia-ODTB",
+   "tokens": 1578,
+   "treebank": "UD_Odia-ODTB"
+  },
+  {
+   "copy": 4118,
+   "dev": {
+    "copy": 4450,
+    "declared_train_only": 8595,
+    "new_train_only": 8595,
+    "old": 7856,
+    "tokens": 10433
+   },
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-orv",
+   "iso639_3": "orv",
+   "language": "Old East Slavic",
+   "mode": "official",
+   "new": 8007,
+   "old": 7677,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Old_East_Slavic-Ruthenian",
+   "tokens": 10008,
+   "treebank": "UD_Old_East_Slavic-Ruthenian"
+  },
+  {
+   "copy": 4709,
+   "dev": {
+    "copy": 705,
+    "declared_train_only": 1310,
+    "new_train_only": 1310,
+    "old": 1291,
+    "tokens": 1481
+   },
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-ota",
+   "iso639_3": "ota",
+   "language": "Ottoman Turkish",
+   "mode": "official",
+   "new": 8950,
+   "old": 8746,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Ottoman_Turkish-DUDU",
+   "tokens": 10007,
+   "treebank": "UD_Ottoman_Turkish-DUDU"
+  },
+  {
+   "copy": 194,
+   "dev": {
+    "copy": 208,
+    "declared_train_only": 208,
+    "new_train_only": 208,
+    "old": 243,
+    "tokens": 289
+   },
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-pan",
+   "iso639_3": "pan",
+   "language": "Punjabi",
+   "mode": "official",
+   "new": 222,
+   "old": 211,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Punjabi-CS",
+   "tokens": 263,
+   "treebank": "UD_Punjabi-CS"
+  },
+  {
+   "copy": 2078,
+   "dictionaries": [
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-pay",
+   "iso639_3": "pay",
+   "language": "Pesh",
+   "mode": "twofold",
+   "new": 2664,
+   "old": 3207,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Pesh-ChibErgIS",
+   "tokens": 3252,
+   "treebank": "UD_Pesh-ChibErgIS"
+  },
+  {
+   "copy": 13331,
+   "dev": {
+    "copy": 13570,
+    "declared_train_only": 14188,
+    "new_train_only": 14188,
+    "old": 14043,
+    "tokens": 14352
+   },
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-pcm",
+   "iso639_3": "pcm",
+   "language": "Naija",
+   "mode": "official",
+   "new": 14001,
+   "old": 13901,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Naija-NSC",
+   "tokens": 14130,
+   "treebank": "UD_Naija-NSC"
+  },
+  {
+   "copy": 6389,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-peh",
+   "iso639_3": "peh",
+   "language": "Bonan",
+   "mode": "twofold",
+   "new": 6389,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 7868,
+   "treebank": "UD_Bonan-GDUD"
+  },
+  {
+   "copy": 18911,
+   "dev": {
+    "copy": 19564,
+    "declared_train_only": 24565,
+    "new_train_only": 24586,
+    "old": 24524,
+    "tokens": 25136
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-pes",
+   "iso639_3": "pes",
+   "language": "Persian",
+   "mode": "official",
+   "new": 23745,
+   "old": 23701,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Persian-PerDT",
+   "tokens": 24118,
+   "treebank": "UD_Persian-PerDT"
+  },
+  {
+   "copy": 413,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-pka",
+   "iso639_3": "pka",
+   "language": "Prakrit",
+   "mode": "twofold",
+   "new": 563,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 964,
+   "treebank": "UD_Prakrit-DIPI"
+  },
+  {
+   "copy": 450,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-pli",
+   "iso639_3": "pli",
+   "language": "Pali",
+   "mode": "twofold",
+   "new": 1425,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 1683,
+   "treebank": "UD_Pali-PaliCanon"
+  },
+  {
+   "copy": 16890,
+   "dev": {
+    "copy": 17301,
+    "declared_train_only": 33753,
+    "new_train_only": 33778,
+    "old": 22618,
+    "tokens": 34611
+   },
+   "dictionaries": [
+    "polimorf",
+    "sgjp",
+    "unimorph",
+    "wiktionary-pl",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-pol-nc",
+   "iso639_3": "pol",
+   "language": "Polish",
+   "mode": "official",
+   "new": 32772,
+   "old": 21957,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 33572,
+   "treebank": "UD_Polish-PDB"
+  },
+  {
+   "copy": 17994,
+   "dev": {
+    "copy": 18064,
+    "declared_train_only": 25236,
+    "new_train_only": 25236,
+    "old": 12596,
+    "tokens": 25888
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-pt",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-por",
+   "iso639_3": "por",
+   "language": "Portuguese",
+   "mode": "official",
+   "new": 24822,
+   "old": 12620,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 25597,
+   "treebank": "UD_Portuguese-GSD"
+  },
+  {
+   "copy": 4205,
+   "dev": {
+    "copy": 1155,
+    "declared_train_only": 2334,
+    "new_train_only": 2334,
+    "old": 1309,
+    "tokens": 2537
+   },
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-pro",
+   "iso639_3": "pro",
+   "language": "Old Occitan",
+   "mode": "official",
+   "new": 8627,
+   "old": 4711,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "English Wiktionary via Wiktextract",
+   "tokens": 9330,
+   "treebank": "UD_Old_Occitan-CronOc"
+  },
+  {
+   "copy": 4641,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-pst",
+   "iso639_3": "pst",
+   "language": "Pashto",
+   "mode": "twofold",
+   "new": 6395,
+   "old": 6740,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Pashto-Sikaram",
+   "tokens": 6859,
+   "treebank": "UD_Pashto-Sikaram"
+  },
+  {
+   "copy": 468,
+   "dev": {
+    "copy": 456,
+    "declared_train_only": 1081,
+    "new_train_only": 1081,
+    "old": 981,
+    "tokens": 2204
+   },
+   "dictionaries": [],
+   "distribution": "udlex-dict-qaf",
+   "iso639_3": "qaf",
+   "language": "Maghrebi Arabic French",
+   "mode": "official",
+   "new": 1105,
+   "old": 988,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Maghrebi_Arabic_French-Arabizi",
+   "tokens": 2161,
+   "treebank": "UD_Maghrebi_Arabic_French-Arabizi"
+  },
+  {
+   "copy": 3776,
+   "dev": {
+    "copy": 3769,
+    "declared_train_only": 7638,
+    "new_train_only": 7638,
+    "old": 7571,
+    "tokens": 8741
+   },
+   "dictionaries": [],
+   "distribution": "udlex-dict-qpm-nc",
+   "iso639_3": "qpm",
+   "language": "Pomak",
+   "mode": "official",
+   "new": 7883,
+   "old": 7756,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Pomak-Philotis",
+   "tokens": 8797,
+   "treebank": "UD_Pomak-Philotis"
+  },
+  {
+   "copy": 9145,
+   "dev": {
+    "copy": 8428,
+    "declared_train_only": 11506,
+    "new_train_only": 11506,
+    "old": 11476,
+    "tokens": 13051
+   },
+   "dictionaries": [],
+   "distribution": "udlex-dict-qtd-nc",
+   "iso639_3": "qtd",
+   "language": "Turkish German",
+   "mode": "official",
+   "new": 12766,
+   "old": 12255,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Turkish_German-SAGT",
+   "tokens": 14084,
+   "treebank": "UD_Turkish_German-SAGT"
+  },
+  {
+   "copy": 263,
+   "dictionaries": [],
+   "distribution": "udlex-dict-qti",
+   "iso639_3": "qti",
+   "language": "Turkish English",
+   "mode": "twofold",
+   "new": 278,
+   "old": 438,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Turkish_English-BUTR",
+   "tokens": 441,
+   "treebank": "UD_Turkish_English-BUTR"
+  },
+  {
+   "copy": 5637,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-quc",
+   "iso639_3": "quc",
+   "language": "Kiche",
+   "mode": "twofold",
+   "new": 8270,
+   "old": 9533,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Kiche-IU",
+   "tokens": 9763,
+   "treebank": "UD_Kiche-IU"
+  },
+  {
+   "copy": 9357,
+   "dev": {
+    "copy": 8014,
+    "declared_train_only": 17103,
+    "new_train_only": 17103,
+    "old": 8472,
+    "tokens": 18531
+   },
+   "dictionaries": [
+    "multext-east",
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-ron",
+   "iso639_3": "ron",
+   "language": "Romanian",
+   "mode": "official",
+   "new": 19230,
+   "old": 9866,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 20943,
+   "treebank": "UD_Romanian-Nonstandard"
+  },
+  {
+   "copy": 3349,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-zh"
+   ],
+   "distribution": "udlex-dict-ruc-nc",
+   "iso639_3": "ruc",
+   "language": "Ruruuli-Lunyala",
+   "mode": "twofold",
+   "new": 5013,
+   "old": 4257,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "A dictionary and grammatical sketch of Ruruuli-Lunyala",
+   "tokens": 8082,
+   "treebank": "UD_Ruuli-RDT"
+  },
+  {
+   "copy": 8600,
+   "dev": {
+    "copy": 8532,
+    "declared_train_only": 14915,
+    "new_train_only": 14929,
+    "old": 13917,
+    "tokens": 15568
+   },
+   "dictionaries": [
+    "opencorpora",
+    "unimorph",
+    "wiktionary-ru",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-rus",
+   "iso639_3": "rus",
+   "language": "Russian",
+   "mode": "official",
+   "new": 14732,
+   "old": 13602,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "OpenCorpora Russian morphological dictionary",
+   "tokens": 15334,
+   "treebank": "UD_Russian-Taiga"
+  },
+  {
+   "copy": 1788,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-sab",
+   "iso639_3": "sab",
+   "language": "Bokota",
+   "mode": "twofold",
+   "new": 1788,
+   "old": 2181,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Bokota-ChibErgIS",
+   "tokens": 2187,
+   "treebank": "UD_Bokota-ChibErgIS"
+  },
+  {
+   "copy": 684,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-sah",
+   "iso639_3": "sah",
+   "language": "Yakut",
+   "mode": "twofold",
+   "new": 1151,
+   "old": 1426,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Yakut-YKTDT",
+   "tokens": 1453,
+   "treebank": "UD_Yakut-YKTDT"
+  },
+  {
+   "copy": 4973,
+   "dev": {
+    "copy": 5709,
+    "declared_train_only": 20259,
+    "new_train_only": 20259,
+    "old": 20261,
+    "tokens": 22214
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-san",
+   "iso639_3": "san",
+   "language": "Sanskrit",
+   "mode": "official",
+   "new": 17838,
+   "old": 17689,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Sanskrit-Vedic",
+   "tokens": 19338,
+   "treebank": "UD_Sanskrit-Vedic"
+  },
+  {
+   "copy": 6125,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-fr"
+   ],
+   "distribution": "udlex-dict-say",
+   "iso639_3": "say",
+   "language": "Zaar",
+   "mode": "official",
+   "new": 7968,
+   "old": 8044,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Zaar-Autogramm",
+   "tokens": 9964,
+   "treebank": "UD_Zaar-Autogramm"
+  },
+  {
+   "copy": 838,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-sce",
+   "iso639_3": "sce",
+   "language": "Dongxiang",
+   "mode": "twofold",
+   "new": 846,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 891,
+   "treebank": "UD_Dongxiang-GDUD"
+  },
+  {
+   "copy": 6730,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-scn",
+   "iso639_3": "scn",
+   "language": "Sicilian",
+   "mode": "twofold",
+   "new": 8957,
+   "old": 10675,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Sicilian-STB",
+   "tokens": 11204,
+   "treebank": "UD_Sicilian-STB"
+  },
+  {
+   "copy": 72,
+   "dev": {
+    "copy": 201,
+    "declared_train_only": 201,
+    "new_train_only": 201,
+    "old": null,
+    "tokens": 372
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-sdh",
+   "iso639_3": "sdh",
+   "language": "Southern Kurdish",
+   "mode": "official",
+   "new": 92,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 132,
+   "treebank": "UD_Southern_Kurdish-Garrusi"
+  },
+  {
+   "copy": 190,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-sga",
+   "iso639_3": "sga",
+   "language": "Old Irish",
+   "mode": "twofold",
+   "new": 269,
+   "old": 153,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 431,
+   "treebank": "UD_Old_Irish-DipWBG"
+  },
+  {
+   "copy": 516,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-sin",
+   "iso639_3": "sin",
+   "language": "Sinhala",
+   "mode": "twofold",
+   "new": 516,
+   "old": 851,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Sinhala-STB",
+   "tokens": 879,
+   "treebank": "UD_Sinhala-STB"
+  },
+  {
+   "copy": 12286,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-sjo-nc",
+   "iso639_3": "sjo",
+   "language": "Xibe",
+   "mode": "twofold",
+   "new": 15003,
+   "old": 12278,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "English Wiktionary via Wiktextract",
+   "tokens": 15395,
+   "treebank": "UD_Xibe-XDT"
+  },
+  {
+   "copy": 5664,
+   "dev": {
+    "copy": 5675,
+    "declared_train_only": 11996,
+    "new_train_only": 12056,
+    "old": 11451,
+    "tokens": 12722
+   },
+   "dictionaries": [
+    "multext-east"
+   ],
+   "distribution": "udlex-dict-slk",
+   "iso639_3": "slk",
+   "language": "Slovak",
+   "mode": "official",
+   "new": 12064,
+   "old": 11351,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Slovak-SNK",
+   "tokens": 12702,
+   "treebank": "UD_Slovak-SNK"
+  },
+  {
+   "copy": 12676,
+   "dev": {
+    "copy": 13297,
+    "declared_train_only": 25861,
+    "new_train_only": 25875,
+    "old": 24684,
+    "tokens": 26480
+   },
+   "dictionaries": [
+    "multext-east",
+    "unimorph",
+    "wiktionary-other",
+    "sloleks",
+    "wiktionary-en"
+   ],
+   "distribution": "udlex-dict-slv",
+   "iso639_3": "slv",
+   "language": "Slovenian",
+   "mode": "official",
+   "new": 24818,
+   "old": 23727,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Slovenian-SSJ",
+   "tokens": 25407,
+   "treebank": "UD_Slovenian-SSJ"
+  },
+  {
+   "copy": 4720,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-pl"
+   ],
+   "distribution": "udlex-dict-sme",
+   "iso639_3": "sme",
+   "language": "Northern Sami",
+   "mode": "official",
+   "new": 8449,
+   "old": 5324,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 9927,
+   "treebank": "UD_North_Sami-Giella"
+  },
+  {
+   "copy": 1628,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-sms",
+   "iso639_3": "sms",
+   "language": "Skolt Sami",
+   "mode": "official",
+   "new": 1808,
+   "old": 1604,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Skolt_Sami-Giellagas",
+   "tokens": 2954,
+   "treebank": "UD_Skolt_Sami-Giellagas"
+  },
+  {
+   "copy": 8371,
+   "dev": {
+    "copy": 6781,
+    "declared_train_only": 8860,
+    "new_train_only": 8860,
+    "old": 8849,
+    "tokens": 9128
+   },
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-snd",
+   "iso639_3": "snd",
+   "language": "Sindhi",
+   "mode": "official",
+   "new": 10615,
+   "old": 10528,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Sindhi-Isra",
+   "tokens": 10957,
+   "treebank": "UD_Sindhi-Isra"
+  },
+  {
+   "copy": 36915,
+   "dev": {
+    "copy": 36987,
+    "declared_train_only": 52318,
+    "new_train_only": 52417,
+    "old": 39375,
+    "tokens": 53388
+   },
+   "dictionaries": [
+    "wiktionary-other",
+    "wiktionary-es",
+    "unimorph",
+    "wiktionary-en"
+   ],
+   "distribution": "udlex-dict-spa",
+   "iso639_3": "spa",
+   "language": "Spanish",
+   "mode": "official",
+   "new": 52606,
+   "old": 39301,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 53584,
+   "treebank": "UD_Spanish-AnCora"
+  },
+  {
+   "copy": 241,
+   "dev": {
+    "copy": 202,
+    "declared_train_only": 261,
+    "new_train_only": 261,
+    "old": 201,
+    "tokens": 312
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-sqi",
+   "iso639_3": "sqi",
+   "language": "Albanian",
+   "mode": "official",
+   "new": 323,
+   "old": 215,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 371,
+   "treebank": "UD_Albanian-STAF"
+  },
+  {
+   "copy": 4523,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-srd-nc",
+   "iso639_3": "srd",
+   "language": "Sardinian",
+   "mode": "twofold",
+   "new": 6693,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 7921,
+   "treebank": "UD_Sardinian-ContSar"
+  },
+  {
+   "copy": 5424,
+   "dev": {
+    "copy": 5778,
+    "declared_train_only": 11582,
+    "new_train_only": 11596,
+    "old": 9574,
+    "tokens": 11993
+   },
+   "dictionaries": [
+    "srlex",
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-srp",
+   "iso639_3": "srp",
+   "language": "Serbian",
+   "mode": "official",
+   "new": 11081,
+   "old": 9066,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "CLARIN.SI Inflectional lexicon srLex 1.3",
+   "tokens": 11410,
+   "treebank": "UD_Serbian-SET"
+  },
+  {
+   "copy": 12567,
+   "dev": {
+    "copy": 6106,
+    "declared_train_only": 9543,
+    "new_train_only": 9543,
+    "old": 6681,
+    "tokens": 9792
+   },
+   "dictionaries": [
+    "saldom",
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-swe",
+   "iso639_3": "swe",
+   "language": "Swedish",
+   "mode": "official",
+   "new": 19888,
+   "old": 13707,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 20371,
+   "treebank": "UD_Swedish-Talbanken"
+  },
+  {
+   "copy": 969,
+   "dev": {
+    "copy": 625,
+    "declared_train_only": 1128,
+    "new_train_only": 1128,
+    "old": 741,
+    "tokens": 1263
+   },
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-tam-nc",
+   "iso639_3": "tam",
+   "language": "Tamil",
+   "mode": "official",
+   "new": 1781,
+   "old": 1163,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Tamil-MWTT",
+   "tokens": 1989,
+   "treebank": "UD_Tamil-TTB"
+  },
+  {
+   "copy": 1193,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-tat",
+   "iso639_3": "tat",
+   "language": "Tatar",
+   "mode": "twofold",
+   "new": 1688,
+   "old": 2153,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Tatar-NMCTT",
+   "tokens": 2269,
+   "treebank": "UD_Tatar-NMCTT"
+  },
+  {
+   "copy": 531,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-tgl",
+   "iso639_3": "tgl",
+   "language": "Tagalog",
+   "mode": "twofold",
+   "new": 660,
+   "old": 733,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Tagalog-TRG",
+   "tokens": 734,
+   "treebank": "UD_Tagalog-TRG"
+  },
+  {
+   "copy": 22312,
+   "dictionaries": [
+    "wiktionary-th",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-tha",
+   "iso639_3": "tha",
+   "language": "Thai",
+   "mode": "twofold",
+   "new": 22312,
+   "old": 22322,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Thai-PUD",
+   "tokens": 22326,
+   "treebank": "UD_Thai-PUD"
+  },
+  {
+   "copy": 1228,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-tir",
+   "iso639_3": "tir",
+   "language": "Tigrinya",
+   "mode": "twofold",
+   "new": 1228,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 1598,
+   "treebank": "UD_Tigrinya-TiTB"
+  },
+  {
+   "copy": 2146,
+   "dictionaries": [
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-tpn",
+   "iso639_3": "tpn",
+   "language": "Tupinamba",
+   "mode": "twofold",
+   "new": 2814,
+   "old": 4107,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Tupinamba-TuDeT",
+   "tokens": 4291,
+   "treebank": "UD_Tupinamba-TuDeT"
+  },
+  {
+   "copy": 409,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-tsn",
+   "iso639_3": "tsn",
+   "language": "Tswana",
+   "mode": "twofold",
+   "new": 472,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 578,
+   "treebank": "UD_Tswana-Popapolelo"
+  },
+  {
+   "copy": 5187,
+   "dev": {
+    "copy": 3506,
+    "declared_train_only": 6412,
+    "new_train_only": 6476,
+    "old": 3651,
+    "tokens": 6832
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-tr",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-tur",
+   "iso639_3": "tur",
+   "language": "Turkish",
+   "mode": "official",
+   "new": 9134,
+   "old": 5195,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 9904,
+   "treebank": "UD_Turkish-Penn"
+  },
+  {
+   "copy": 13831,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-txg",
+   "iso639_3": "txg",
+   "language": "Tangut",
+   "mode": "twofold",
+   "new": 13831,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 13838,
+   "treebank": "UD_Tangut-MiCA"
+  },
+  {
+   "copy": 220,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-ude",
+   "iso639_3": "ude",
+   "language": "Udihe",
+   "mode": "twofold",
+   "new": 265,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 506,
+   "treebank": "UD_Udihe-GDUD"
+  },
+  {
+   "copy": 4853,
+   "dev": {
+    "copy": 5160,
+    "declared_train_only": 7327,
+    "new_train_only": 7327,
+    "old": 7227,
+    "tokens": 7790
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-uig",
+   "iso639_3": "uig",
+   "language": "Uyghur",
+   "mode": "official",
+   "new": 7227,
+   "old": 7077,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Uyghur-UDT",
+   "tokens": 7573,
+   "treebank": "UD_Uyghur-UDT"
+  },
+  {
+   "copy": 8672,
+   "dev": {
+    "copy": 6626,
+    "declared_train_only": 11067,
+    "new_train_only": 11152,
+    "old": 8036,
+    "tokens": 11798
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-ukr-nc",
+   "iso639_3": "ukr",
+   "language": "Ukrainian",
+   "mode": "official",
+   "new": 15229,
+   "old": 10877,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 16075,
+   "treebank": "UD_Ukrainian-IU"
+  },
+  {
+   "copy": 69,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-ulc",
+   "iso639_3": "ulc",
+   "language": "Ulch",
+   "mode": "twofold",
+   "new": 164,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 232,
+   "treebank": "UD_Ulch-GDUD"
+  },
+  {
+   "copy": 208,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-urb",
+   "iso639_3": "urb",
+   "language": "Kaapor",
+   "mode": "twofold",
+   "new": 249,
+   "old": 338,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Kaapor-TuDeT",
+   "tokens": 349,
+   "treebank": "UD_Kaapor-TuDeT"
+  },
+  {
+   "copy": 10906,
+   "dev": {
+    "copy": 10489,
+    "declared_train_only": 13606,
+    "new_train_only": 13606,
+    "old": 10680,
+    "tokens": 14311
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-urd-nc",
+   "iso639_3": "urd",
+   "language": "Urdu",
+   "mode": "official",
+   "new": 13775,
+   "old": 10986,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "English Wiktionary via Wiktextract",
+   "tokens": 14537,
+   "treebank": "UD_Urdu-UDTB"
+  },
+  {
+   "copy": 11004,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-usp",
+   "iso639_3": "usp",
+   "language": "Uspanteko",
+   "mode": "twofold",
+   "new": 12829,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 12902,
+   "treebank": "UD_Uspanteko-MesoTree"
+  },
+  {
+   "copy": 1196,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-uzb",
+   "iso639_3": "uzb",
+   "language": "Uzbek",
+   "mode": "official",
+   "new": 1831,
+   "old": 1248,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 2128,
+   "treebank": "UD_Uzbek-UzUDT"
+  },
+  {
+   "copy": 587,
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-vep",
+   "iso639_3": "vep",
+   "language": "Veps (Vepsian)",
+   "mode": "twofold",
+   "new": 1143,
+   "old": 957,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 1303,
+   "treebank": "UD_Veps-VWT"
+  },
+  {
+   "copy": 10823,
+   "dev": {
+    "copy": 24264,
+    "declared_train_only": 25430,
+    "new_train_only": 25438,
+    "old": 25274,
+    "tokens": 26034
+   },
+   "dictionaries": [
+    "wiktionary-vi",
+    "wiktionary-other",
+    "wiktionary-en"
+   ],
+   "distribution": "udlex-dict-vie",
+   "iso639_3": "vie",
+   "language": "Vietnamese",
+   "mode": "official",
+   "new": 11462,
+   "old": 11233,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Vietnamese-VTB",
+   "tokens": 11638,
+   "treebank": "UD_Vietnamese-VTB"
+  },
+  {
+   "copy": 118,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-wbp",
+   "iso639_3": "wbp",
+   "language": "Warlpiri",
+   "mode": "twofold",
+   "new": 249,
+   "old": 312,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Warlpiri-UFAL",
+   "tokens": 315,
+   "treebank": "UD_Warlpiri-UFAL"
+  },
+  {
+   "copy": 7611,
+   "dev": {
+    "copy": 7594,
+    "declared_train_only": 9624,
+    "new_train_only": 9624,
+    "old": 9307,
+    "tokens": 10294
+   },
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-wol",
+   "iso639_3": "wol",
+   "language": "Wolof",
+   "mode": "official",
+   "new": 9789,
+   "old": 9542,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Wolof-WTB",
+   "tokens": 10403,
+   "treebank": "UD_Wolof-WTB"
+  },
+  {
+   "copy": 874,
+   "dev": {
+    "copy": 883,
+    "declared_train_only": 883,
+    "new_train_only": 883,
+    "old": 817,
+    "tokens": 883
+   },
+   "dictionaries": [
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-wuu",
+   "iso639_3": "wuu",
+   "language": "Shanghainese (Wu Chinese)",
+   "mode": "official",
+   "new": 874,
+   "old": 811,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Shanghainese Word Frequency (v1.0): a spoken-weighted frequency list with rank uncertainty",
+   "tokens": 874,
+   "treebank": "UD_Shanghainese-ShUD"
+  },
+  {
+   "copy": 185,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-xal",
+   "iso639_3": "xal",
+   "language": "Kalmyk",
+   "mode": "twofold",
+   "new": 296,
+   "old": null,
+   "old_available": false,
+   "old_saw_evaluation": false,
+   "old_source": null,
+   "tokens": 484,
+   "treebank": "UD_Kalmyk-GDUD"
+  },
+  {
+   "copy": 1641,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-xav",
+   "iso639_3": "xav",
+   "language": "Xavante",
+   "mode": "twofold",
+   "new": 1796,
+   "old": 2146,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Xavante-XDT",
+   "tokens": 2180,
+   "treebank": "UD_Xavante-XDT"
+  },
+  {
+   "copy": 6832,
+   "dev": {
+    "copy": 5534,
+    "declared_train_only": 8724,
+    "new_train_only": 8816,
+    "old": 5598,
+    "tokens": 8955
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-xcl-nc",
+   "iso639_3": "xcl",
+   "language": "Classical Armenian",
+   "mode": "official",
+   "new": 11010,
+   "old": 7053,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "UniMorph",
+   "tokens": 11166,
+   "treebank": "UD_Classical_Armenian-CAVaL"
+  },
+  {
+   "copy": 1692,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-xnr",
+   "iso639_3": "xnr",
+   "language": "Kangri",
+   "mode": "twofold",
+   "new": 1692,
+   "old": 2420,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Kangri-KDTB",
+   "tokens": 2514,
+   "treebank": "UD_Kangri-KDTB"
+  },
+  {
+   "copy": 742,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-xpg",
+   "iso639_3": "xpg",
+   "language": "Phrygian",
+   "mode": "twofold",
+   "new": 742,
+   "old": 1882,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Phrygian-KUL",
+   "tokens": 2016,
+   "treebank": "UD_Phrygian-KUL"
+  },
+  {
+   "copy": 43,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-xum",
+   "iso639_3": "xum",
+   "language": "Umbrian",
+   "mode": "twofold",
+   "new": 86,
+   "old": 95,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Umbrian-IKUVINA",
+   "tokens": 96,
+   "treebank": "UD_Umbrian-IKUVINA"
+  },
+  {
+   "copy": 6734,
+   "dev": {
+    "copy": 1278,
+    "declared_train_only": 1730,
+    "new_train_only": 1730,
+    "old": 1684,
+    "tokens": 1873
+   },
+   "dictionaries": [
+    "unimorph",
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-yid",
+   "iso639_3": "yid",
+   "language": "Yiddish",
+   "mode": "official",
+   "new": 9317,
+   "old": 9166,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Yiddish-YiTB",
+   "tokens": 9955,
+   "treebank": "UD_Yiddish-YiTB"
+  },
+  {
+   "copy": 7501,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-yor",
+   "iso639_3": "yor",
+   "language": "Yoruba",
+   "mode": "twofold",
+   "new": 7923,
+   "old": 8049,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Yoruba-YTB",
+   "tokens": 8236,
+   "treebank": "UD_Yoruba-YTB"
+  },
+  {
+   "copy": 654,
+   "dictionaries": [
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-yrk",
+   "iso639_3": "yrk",
+   "language": "Nenets",
+   "mode": "twofold",
+   "new": 654,
+   "old": 1251,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Nenets-Tundra",
+   "tokens": 1271,
+   "treebank": "UD_Nenets-Tundra"
+  },
+  {
+   "copy": 6741,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-yrl-nc",
+   "iso639_3": "yrl",
+   "language": "Nheengatu",
+   "mode": "official",
+   "new": 9437,
+   "old": 7394,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "English Wiktionary via Wiktextract",
+   "tokens": 9860,
+   "treebank": "UD_Nheengatu-CompLin"
+  },
+  {
+   "copy": 13486,
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-yue",
+   "iso639_3": "yue",
+   "language": "Cantonese",
+   "mode": "twofold",
+   "new": 13735,
+   "old": 13752,
+   "old_available": true,
+   "old_saw_evaluation": true,
+   "old_source": "Cantonese-HK",
+   "tokens": 13768,
+   "treebank": "UD_Cantonese-HK"
+  },
+  {
+   "copy": 150,
+   "dev": {
+    "copy": 126,
+    "declared_train_only": 170,
+    "new_train_only": 170,
+    "old": 164,
+    "tokens": 213
+   },
+   "dictionaries": [
+    "wiktionary-en",
+    "wiktionary-other"
+   ],
+   "distribution": "udlex-dict-zza",
+   "iso639_3": "zza",
+   "language": "Zazaki",
+   "mode": "official",
+   "new": 211,
+   "old": 197,
+   "old_available": true,
+   "old_saw_evaluation": false,
+   "old_source": "Zazaki-ZSD",
+   "tokens": 249,
+   "treebank": "UD_Zazaki-ZSD"
+  }
+ ],
+ "summary": {
+  "official": {
+   "languages": 103,
+   "macro": {
+    "copy": 58.40511986272007,
+    "new": 89.85071906890796
+   },
+   "pooled": {
+    "copy": 58.173977374027004,
+    "new": 94.70963947322471
+   },
+   "tokens": 2176260,
+   "with_1.0.0": {
+    "languages": 100,
+    "macro": {
+     "copy": 58.512590369270555,
+     "new": 90.49121887071718,
+     "old": 69.93835954078202
+    },
+    "new_better": 96,
+    "new_worse": 3
+   }
+  },
+  "official, 1.0.0 did not see test": {
+   "languages": 100,
+   "macro": {
+    "copy": 58.512590369270555,
+    "new": 90.49121887071718
+   },
+   "pooled": {
+    "copy": 58.17430871800952,
+    "new": 94.71373271364172
+   },
+   "tokens": 2175921,
+   "with_1.0.0": {
+    "languages": 100,
+    "macro": {
+     "copy": 58.512590369270555,
+     "new": 90.49121887071718,
+     "old": 69.93835954078202
+    },
+    "new_better": 96,
+    "new_worse": 3
+   }
+  },
+  "official, with dictionaries": {
+   "languages": 100,
+   "macro": {
+    "copy": 58.86215143872959,
+    "new": 90.23238372257872
+   },
+   "pooled": {
+    "copy": 58.22878016082052,
+    "new": 94.8008988396341
+   },
+   "tokens": 2151218,
+   "with_1.0.0": {
+    "languages": 97,
+    "macro": {
+     "copy": 58.98708077257575,
+     "new": 90.90449685806257,
+     "old": 69.82408584480082
+    },
+    "new_better": 93,
+    "new_worse": 3
+   }
+  },
+  "official, without dictionaries": {
+   "languages": 3,
+   "macro": {
+    "copy": 43.170733995735844,
+    "new": 77.12856394654966
+   },
+   "pooled": {
+    "copy": 53.46617682293746,
+    "new": 86.87005830205256
+   },
+   "tokens": 25042,
+   "with_1.0.0": {
+    "languages": 3,
+    "macro": {
+     "copy": 43.170733995735844,
+     "new": 77.12856394654966,
+     "old": 73.63320904417377
+    },
+    "new_better": 3,
+    "new_worse": 0
+   }
+  },
+  "two-fold": {
+   "languages": 109,
+   "macro": {
+    "copy": 57.53923109845245,
+    "new": 73.87332492514417
+   },
+   "pooled": {
+    "copy": 54.71325229839642,
+    "new": 80.1286797523835
+   },
+   "tokens": 722569,
+   "with_1.0.0": {
+    "languages": 69,
+    "macro": {
+     "copy": 56.83975059082803,
+     "new": 74.91492915205507,
+     "old": 85.94118641140275
+    },
+    "new_better": 17,
+    "new_worse": 52
+   }
+  },
+  "two-fold, 1.0.0 did not see the folds": {
+   "languages": 17,
+   "macro": {
+    "copy": 56.85058470637586,
+    "new": 78.53148912326212
+   },
+   "pooled": {
+    "copy": 47.4252755578366,
+    "new": 76.67255935457416
+   },
+   "tokens": 368253,
+   "with_1.0.0": {
+    "languages": 17,
+    "macro": {
+     "copy": 56.85058470637586,
+     "new": 78.53148912326212,
+     "old": 52.48079476247093
+    },
+    "new_better": 16,
+    "new_worse": 1
+   }
+  },
+  "two-fold, with dictionaries": {
+   "languages": 108,
+   "macro": {
+    "copy": 57.519805569654636,
+    "new": 73.97364692673963
+   },
+   "pooled": {
+    "copy": 54.710245275075884,
+    "new": 80.13911661090555
+   },
+   "tokens": 722128,
+   "with_1.0.0": {
+    "languages": 68,
+    "macro": {
+     "copy": 56.798611802331145,
+     "new": 75.08958180498477,
+     "old": 85.74444315434755
+    },
+    "new_better": 17,
+    "new_worse": 51
+   }
+  },
+  "two-fold, without dictionaries": {
+   "languages": 1,
+   "macro": {
+    "copy": 59.63718820861678,
+    "new": 63.038548752834465
+   },
+   "pooled": {
+    "copy": 59.63718820861678,
+    "new": 63.038548752834465
+   },
+   "tokens": 441,
+   "with_1.0.0": {
+    "languages": 1,
+    "macro": {
+     "copy": 59.63718820861678,
+     "new": 63.038548752834465,
+     "old": 99.31972789115646
+    },
+    "new_better": 0,
+    "new_worse": 1
+   }
+  }
+ }
+}

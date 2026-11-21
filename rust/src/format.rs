@@ -253,16 +253,11 @@ impl LookupTableKind {
         matches!(self, Self::Entities)
     }
 
-    /// Whether size normally wins over the hot double-array tolerance.
+    /// Whether the table compiles for size (a double array or an automaton)
+    /// rather than as a hybrid; only the rarely probed entity table does.
     #[cfg(any(feature = "train", test))]
     pub(crate) const fn is_cold(self) -> bool {
-        matches!(self, Self::External | Self::Entities)
-    }
-
-    /// Whether the source's string IDs remain live after external inlining.
-    #[cfg(any(feature = "train", test))]
-    pub(crate) const fn retains_string_id(self) -> bool {
-        !matches!(self, Self::External)
+        matches!(self, Self::Entities)
     }
 }
 
@@ -804,11 +799,7 @@ mod tests {
         );
         assert_eq!(
             LookupTableKind::ALL.map(LookupTableKind::is_cold),
-            [false, false, true, true]
-        );
-        assert_eq!(
-            LookupTableKind::ALL.map(LookupTableKind::retains_string_id),
-            [true, true, false, true]
+            [false, false, false, true]
         );
     }
 

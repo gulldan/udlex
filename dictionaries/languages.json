@@ -1,0 +1,1364 @@
+{
+ "abk": {
+  "group": "catalog",
+  "name": "Abkhaz",
+  "preferred": "UD_Abkhaz-AbNC",
+  "ud": "ab"
+ },
+ "abq": {
+  "group": "catalog",
+  "name": "Abaza",
+  "preferred": "UD_Abaza-ATB",
+  "ud": "abq"
+ },
+ "afr": {
+  "group": "catalog",
+  "name": "Afrikaans",
+  "preferred": "UD_Afrikaans-AfriBooms",
+  "ud": "af"
+ },
+ "aii": {
+  "group": "catalog",
+  "name": "Assyrian",
+  "preferred": "UD_Assyrian-AS",
+  "ud": "aii"
+ },
+ "ajp": {
+  "group": "catalog",
+  "name": "South Levantine Arabic",
+  "preferred": "UD_South_Levantine_Arabic-MADAR",
+  "ud": "ajp"
+ },
+ "akk": {
+  "group": "catalog",
+  "name": "Akkadian",
+  "preferred": "UD_Akkadian-RIAO",
+  "ud": "akk"
+ },
+ "aln": {
+  "group": "catalog",
+  "name": "Gheg",
+  "preferred": "UD_Gheg-GPS",
+  "ud": "aln"
+ },
+ "amh": {
+  "group": "catalog",
+  "name": "Amharic",
+  "preferred": null,
+  "ud": "am"
+ },
+ "ang": {
+  "group": "ud219-extra",
+  "name": "Old English",
+  "preferred": null,
+  "ud": "ang"
+ },
+ "apu": {
+  "group": "catalog",
+  "name": "Apurina",
+  "preferred": "UD_Apurina-UFPA",
+  "ud": "apu"
+ },
+ "aqz": {
+  "group": "catalog",
+  "name": "Akuntsu",
+  "preferred": "UD_Akuntsu-TuDeT",
+  "ud": "aqz"
+ },
+ "arb": {
+  "group": "catalog",
+  "name": "Arabic",
+  "preferred": "UD_Arabic-PUD",
+  "ud": "ar"
+ },
+ "arh": {
+  "group": "catalog",
+  "name": "Ika",
+  "preferred": "UD_Ika-ChibErgIS",
+  "ud": "arh"
+ },
+ "arr": {
+  "group": "catalog",
+  "name": "Karo",
+  "preferred": "UD_Karo-TuDeT",
+  "ud": "arr"
+ },
+ "asm": {
+  "group": "ud219-extra",
+  "name": "Assamese",
+  "preferred": null,
+  "ud": "as"
+ },
+ "ave": {
+  "group": "ud219-extra",
+  "name": "Avestan",
+  "preferred": null,
+  "ud": "ae"
+ },
+ "axm": {
+  "group": "catalog",
+  "name": "Middle Armenian",
+  "preferred": "UD_Middle_Armenian-ArmTDP",
+  "ud": "axm"
+ },
+ "aze": {
+  "group": "catalog",
+  "name": "Azerbaijani",
+  "preferred": null,
+  "ud": "az"
+ },
+ "azz": {
+  "group": "catalog",
+  "name": "Highland Puebla Nahuatl",
+  "preferred": "UD_Highland_Puebla_Nahuatl-ITML",
+  "ud": "azz"
+ },
+ "bam": {
+  "group": "catalog",
+  "name": "Bambara",
+  "preferred": "UD_Bambara-CRB",
+  "ud": "bm"
+ },
+ "bar": {
+  "group": "ud219-extra",
+  "name": "Bavarian",
+  "preferred": null,
+  "ud": "bar"
+ },
+ "bej": {
+  "group": "ud219-extra",
+  "name": "Beja",
+  "preferred": null,
+  "ud": "bej"
+ },
+ "bel": {
+  "group": "catalog",
+  "name": "Belarusian",
+  "preferred": null,
+  "ud": "be"
+ },
+ "ben": {
+  "group": "catalog",
+  "name": "Bengali",
+  "preferred": null,
+  "ud": "bn"
+ },
+ "bgs": {
+  "group": "ud219-extra",
+  "name": "Tagabawa",
+  "preferred": null,
+  "ud": "bgs"
+ },
+ "bho": {
+  "group": "catalog",
+  "name": "Bhojpuri",
+  "preferred": "UD_Bhojpuri-BHTB",
+  "ud": "bho"
+ },
+ "bor": {
+  "group": "catalog",
+  "name": "Bororo",
+  "preferred": "UD_Bororo-BDT",
+  "ud": "bor"
+ },
+ "bre": {
+  "group": "catalog",
+  "name": "Breton",
+  "preferred": null,
+  "ud": "br"
+ },
+ "brh": {
+  "group": "catalog",
+  "name": "Brahui",
+  "preferred": "UD_Brahui-Kholum",
+  "ud": "brh"
+ },
+ "bul": {
+  "group": "catalog",
+  "name": "Bulgarian",
+  "preferred": null,
+  "ud": "bg"
+ },
+ "bxr": {
+  "group": "catalog",
+  "name": "Buryat",
+  "preferred": "UD_Buryat-BDT",
+  "ud": "bxr"
+ },
+ "cat": {
+  "group": "catalog",
+  "name": "Catalan",
+  "preferred": null,
+  "ud": "ca"
+ },
+ "ceb": {
+  "group": "catalog",
+  "name": "Cebuano",
+  "preferred": null,
+  "ud": "ceb"
+ },
+ "ces": {
+  "group": "catalog",
+  "name": "Czech",
+  "preferred": null,
+  "ud": "cs"
+ },
+ "che": {
+  "group": "ud219-extra",
+  "name": "Chechen",
+  "preferred": null,
+  "ud": "ce"
+ },
+ "chu": {
+  "group": "catalog",
+  "name": "Old Church Slavonic",
+  "preferred": null,
+  "ud": "cu"
+ },
+ "ckb": {
+  "group": "ud219-extra",
+  "name": "Central Kurdish",
+  "preferred": null,
+  "ud": "ckb"
+ },
+ "ckt": {
+  "group": "ud219-extra",
+  "name": "Chukchi",
+  "preferred": null,
+  "ud": "ckt"
+ },
+ "cmn": {
+  "group": "catalog",
+  "name": "Mandarin Chinese",
+  "preferred": null,
+  "ud": "zh"
+ },
+ "cop": {
+  "group": "catalog",
+  "name": "Coptic",
+  "preferred": "UD_Coptic-Scriptorium",
+  "ud": "cop"
+ },
+ "cpg": {
+  "group": "catalog",
+  "name": "Cappadocian",
+  "preferred": "UD_Cappadocian-TueCL",
+  "ud": "cpg"
+ },
+ "ctn": {
+  "group": "catalog",
+  "name": "Chintang",
+  "preferred": null,
+  "ud": "ctn"
+ },
+ "cux": {
+  "group": "ud219-extra",
+  "name": "Cuicatec",
+  "preferred": null,
+  "ud": "cux"
+ },
+ "cym": {
+  "group": "catalog",
+  "name": "Welsh",
+  "preferred": "UD_Welsh-CCG",
+  "ud": "cy"
+ },
+ "dan": {
+  "group": "catalog",
+  "name": "Danish",
+  "preferred": null,
+  "ud": "da"
+ },
+ "dar": {
+  "group": "ud219-extra",
+  "name": "Dargwa",
+  "preferred": null,
+  "ud": "dar"
+ },
+ "deu": {
+  "group": "catalog",
+  "name": "German",
+  "preferred": null,
+  "ud": "de"
+ },
+ "drs": {
+  "group": "ud219-extra",
+  "name": "Gedeo",
+  "preferred": null,
+  "ud": "drs"
+ },
+ "dta": {
+  "group": "ud219-extra",
+  "name": "Daur",
+  "preferred": null,
+  "ud": "dta"
+ },
+ "egy": {
+  "group": "catalog",
+  "name": "Egyptian",
+  "preferred": "UD_Egyptian-PC",
+  "ud": "egy"
+ },
+ "ell": {
+  "group": "catalog",
+  "name": "(Modern) Greek",
+  "preferred": null,
+  "ud": "el"
+ },
+ "eme": {
+  "group": "catalog",
+  "name": "Teko",
+  "preferred": "UD_Teko-TuDeT",
+  "ud": "eme"
+ },
+ "eng": {
+  "group": "catalog",
+  "name": "English",
+  "preferred": null,
+  "ud": "en"
+ },
+ "epo": {
+  "group": "catalog",
+  "name": "Esperanto",
+  "preferred": "UD_Esperanto-Prago",
+  "ud": "eo"
+ },
+ "ess": {
+  "group": "catalog",
+  "name": "Yupik",
+  "preferred": "UD_Yupik-SLI",
+  "ud": "ess"
+ },
+ "est": {
+  "group": "catalog",
+  "name": "Estonian",
+  "preferred": null,
+  "ud": "et"
+ },
+ "eus": {
+  "group": "catalog",
+  "name": "Basque",
+  "preferred": null,
+  "ud": "eu"
+ },
+ "eve": {
+  "group": "ud219-extra",
+  "name": "Even",
+  "preferred": null,
+  "ud": "eve"
+ },
+ "evn": {
+  "group": "ud219-extra",
+  "name": "Evenki",
+  "preferred": null,
+  "ud": "evn"
+ },
+ "fao": {
+  "group": "catalog",
+  "name": "Faroese",
+  "preferred": null,
+  "ud": "fo"
+ },
+ "fin": {
+  "group": "catalog",
+  "name": "Finnish",
+  "preferred": null,
+  "ud": "fi"
+ },
+ "fra": {
+  "group": "catalog",
+  "name": "French",
+  "preferred": null,
+  "ud": "fr"
+ },
+ "frm": {
+  "group": "catalog",
+  "name": "Middle French",
+  "preferred": null,
+  "ud": "frm"
+ },
+ "fro": {
+  "group": "catalog",
+  "name": "Old French",
+  "preferred": null,
+  "ud": "fro"
+ },
+ "fsl": {
+  "group": "ud219-extra",
+  "name": "French Sign Language",
+  "preferred": null,
+  "ud": "fsl"
+ },
+ "gla": {
+  "group": "catalog",
+  "name": "Scottish Gaelic",
+  "preferred": "UD_Scottish_Gaelic-ARCOSG",
+  "ud": "gd"
+ },
+ "gld": {
+  "group": "ud219-extra",
+  "name": "Nanai",
+  "preferred": null,
+  "ud": "gld"
+ },
+ "gle": {
+  "group": "catalog",
+  "name": "Irish",
+  "preferred": null,
+  "ud": "ga"
+ },
+ "glg": {
+  "group": "catalog",
+  "name": "Galician",
+  "preferred": "UD_Galician-PUD",
+  "ud": "gl"
+ },
+ "glv": {
+  "group": "catalog",
+  "name": "Manx",
+  "preferred": "UD_Manx-Cadhan",
+  "ud": "gv"
+ },
+ "gor": {
+  "group": "ud219-extra",
+  "name": "Gorontalo",
+  "preferred": null,
+  "ud": "gor"
+ },
+ "got": {
+  "group": "catalog",
+  "name": "Gothic",
+  "preferred": null,
+  "ud": "got"
+ },
+ "grc": {
+  "group": "catalog",
+  "name": "Ancient Greek",
+  "preferred": null,
+  "ud": "grc"
+ },
+ "gsw": {
+  "group": "ud219-extra",
+  "name": "Alemannic",
+  "preferred": null,
+  "ud": "gsw"
+ },
+ "gub": {
+  "group": "catalog",
+  "name": "Guajajara",
+  "preferred": "UD_Guajajara-TuDeT",
+  "ud": "gub"
+ },
+ "gug": {
+  "group": "ud219-extra",
+  "name": "Guarani",
+  "preferred": null,
+  "ud": "gn"
+ },
+ "guj": {
+  "group": "catalog",
+  "name": "Gujarati",
+  "preferred": null,
+  "ud": "gu"
+ },
+ "gun": {
+  "group": "catalog",
+  "name": "Mbya Guarani",
+  "preferred": null,
+  "ud": "gun"
+ },
+ "gwi": {
+  "group": "catalog",
+  "name": "Gwichin",
+  "preferred": "UD_Gwichin-TueCL",
+  "ud": "gwi"
+ },
+ "gya": {
+  "group": "catalog",
+  "name": "Northwest Gbaya",
+  "preferred": "UD_Northwest_Gbaya-Autogramm",
+  "ud": "gya"
+ },
+ "hac": {
+  "group": "ud219-extra",
+  "name": "Gorani",
+  "preferred": null,
+  "ud": "hac"
+ },
+ "hat": {
+  "group": "catalog",
+  "name": "Haitian Creole",
+  "preferred": "UD_Haitian_Creole-Adolphe",
+  "ud": "ht"
+ },
+ "hau": {
+  "group": "catalog",
+  "name": "Hausa",
+  "preferred": "UD_Hausa-NorthernAutogramm",
+  "ud": "ha"
+ },
+ "hbo": {
+  "group": "catalog",
+  "name": "Ancient Hebrew",
+  "preferred": null,
+  "ud": "hbo"
+ },
+ "heb": {
+  "group": "catalog",
+  "name": "Hebrew",
+  "preferred": null,
+  "ud": "he"
+ },
+ "hin": {
+  "group": "catalog",
+  "name": "Hindi",
+  "preferred": null,
+  "ud": "hi"
+ },
+ "hit": {
+  "group": "catalog",
+  "name": "Hittite",
+  "preferred": "UD_Hittite-HitTB",
+  "ud": "hit"
+ },
+ "hrv": {
+  "group": "catalog",
+  "name": "Croatian",
+  "preferred": null,
+  "ud": "hr"
+ },
+ "hsb": {
+  "group": "catalog",
+  "name": "Upper Sorbian",
+  "preferred": "UD_Upper_Sorbian-UFAL",
+  "ud": "hsb"
+ },
+ "hun": {
+  "group": "catalog",
+  "name": "Hungarian",
+  "preferred": null,
+  "ud": "hu"
+ },
+ "hye": {
+  "group": "catalog",
+  "name": "Armenian",
+  "preferred": null,
+  "ud": "hy"
+ },
+ "hyw": {
+  "group": "catalog",
+  "name": "Western Armenian",
+  "preferred": "UD_Western_Armenian-ArmTDP",
+  "ud": "hyw"
+ },
+ "ind": {
+  "group": "catalog",
+  "name": "Indonesian",
+  "preferred": "UD_Indonesian-CSUI",
+  "ud": "id"
+ },
+ "isl": {
+  "group": "catalog",
+  "name": "Icelandic",
+  "preferred": null,
+  "ud": "is"
+ },
+ "ita": {
+  "group": "catalog",
+  "name": "Italian",
+  "preferred": null,
+  "ud": "it"
+ },
+ "jaa": {
+  "group": "ud219-extra",
+  "name": "Madi",
+  "preferred": null,
+  "ud": "jaa"
+ },
+ "jav": {
+  "group": "catalog",
+  "name": "Javanese",
+  "preferred": "UD_Javanese-CSUI",
+  "ud": "jv"
+ },
+ "jpn": {
+  "group": "catalog",
+  "name": "Japanese",
+  "preferred": null,
+  "ud": "ja"
+ },
+ "kas": {
+  "group": "ud219-extra",
+  "name": "Kashmiri",
+  "preferred": null,
+  "ud": "ks"
+ },
+ "kat": {
+  "group": "catalog",
+  "name": "Georgian",
+  "preferred": "UD_Georgian-GLC",
+  "ud": "ka"
+ },
+ "kaz": {
+  "group": "catalog",
+  "name": "Kazakh",
+  "preferred": null,
+  "ud": "kk"
+ },
+ "kbc": {
+  "group": "catalog",
+  "name": "Kadiwéu",
+  "preferred": null,
+  "ud": "kbc"
+ },
+ "kfx": {
+  "group": "ud219-extra",
+  "name": "Kullvi",
+  "preferred": null,
+  "ud": "kfx"
+ },
+ "kir": {
+  "group": "catalog",
+  "name": "Kyrgyz",
+  "preferred": "UD_Kyrgyz-KTMU",
+  "ud": "ky"
+ },
+ "kmr": {
+  "group": "catalog",
+  "name": "Northern Kurdish",
+  "preferred": "UD_Northern_Kurdish-Kurmanji",
+  "ud": "kmr"
+ },
+ "koi": {
+  "group": "catalog",
+  "name": "Komi Permyak",
+  "preferred": "UD_Komi_Permyak-UH",
+  "ud": "koi"
+ },
+ "kor": {
+  "group": "catalog",
+  "name": "Korean",
+  "preferred": "UD_Korean-Kaist",
+  "ud": "ko"
+ },
+ "kpv": {
+  "group": "catalog",
+  "name": "Komi Zyrian",
+  "preferred": "UD_Komi_Zyrian-Lattice",
+  "ud": "kpv"
+ },
+ "krl": {
+  "group": "catalog",
+  "name": "Karelian",
+  "preferred": null,
+  "ud": "krl"
+ },
+ "lat": {
+  "group": "catalog",
+  "name": "Latin",
+  "preferred": null,
+  "ud": "la"
+ },
+ "lav": {
+  "group": "catalog",
+  "name": "Latvian",
+  "preferred": null,
+  "ud": "lv"
+ },
+ "lij": {
+  "group": "catalog",
+  "name": "Ligurian",
+  "preferred": null,
+  "ud": "lij"
+ },
+ "lit": {
+  "group": "catalog",
+  "name": "Lithuanian",
+  "preferred": null,
+  "ud": "lt"
+ },
+ "ltg": {
+  "group": "ud219-extra",
+  "name": "Latgalian",
+  "preferred": null,
+  "ud": "ltg"
+ },
+ "ltz": {
+  "group": "ud219-extra",
+  "name": "Luxembourgish",
+  "preferred": null,
+  "ud": "lb"
+ },
+ "lzh": {
+  "group": "catalog",
+  "name": "Classical Chinese",
+  "preferred": "UD_Classical_Chinese-Kyoto",
+  "ud": "lzh"
+ },
+ "lzz": {
+  "group": "ud219-extra",
+  "name": "Laz",
+  "preferred": null,
+  "ud": "lzz"
+ },
+ "mal": {
+  "group": "catalog",
+  "name": "Malayalam",
+  "preferred": "UD_Malayalam-UFAL",
+  "ud": "ml"
+ },
+ "mar": {
+  "group": "catalog",
+  "name": "Marathi",
+  "preferred": "UD_Marathi-CMUPAN",
+  "ud": "mr"
+ },
+ "mdf": {
+  "group": "catalog",
+  "name": "Moksha",
+  "preferred": "UD_Moksha-JR",
+  "ud": "mdf"
+ },
+ "mjg": {
+  "group": "ud219-extra",
+  "name": "Tu",
+  "preferred": null,
+  "ud": "mjg"
+ },
+ "mjl": {
+  "group": "ud219-extra",
+  "name": "Mandyali",
+  "preferred": null,
+  "ud": "mjl"
+ },
+ "mkd": {
+  "group": "catalog",
+  "name": "Macedonian",
+  "preferred": null,
+  "ud": "mk"
+ },
+ "mlt": {
+  "group": "ud219-extra",
+  "name": "Maltese",
+  "preferred": null,
+  "ud": "mt"
+ },
+ "mnc": {
+  "group": "ud219-extra",
+  "name": "Manchu",
+  "preferred": null,
+  "ud": "mnc"
+ },
+ "mon": {
+  "group": "ud219-extra",
+  "name": "Mongolian",
+  "preferred": null,
+  "ud": "mn"
+ },
+ "mpu": {
+  "group": "ud219-extra",
+  "name": "Makurap",
+  "preferred": null,
+  "ud": "mpu"
+ },
+ "mvf": {
+  "group": "ud219-extra",
+  "name": "Peripheral Mongolian",
+  "preferred": null,
+  "ud": "mvf"
+ },
+ "myu": {
+  "group": "catalog",
+  "name": "Munduruku",
+  "preferred": "UD_Munduruku-TuDeT",
+  "ud": "myu"
+ },
+ "myv": {
+  "group": "catalog",
+  "name": "Erzya",
+  "preferred": "UD_Erzya-JR",
+  "ud": "myv"
+ },
+ "nap": {
+  "group": "ud219-extra",
+  "name": "Neapolitan",
+  "preferred": null,
+  "ud": "nap"
+ },
+ "naq": {
+  "group": "catalog",
+  "name": "Khoekhoe",
+  "preferred": "UD_Khoekhoe-KDT",
+  "ud": "naq"
+ },
+ "nds": {
+  "group": "catalog",
+  "name": "Low German",
+  "preferred": null,
+  "ud": "nds"
+ },
+ "neg": {
+  "group": "ud219-extra",
+  "name": "Negidal",
+  "preferred": null,
+  "ud": "neg"
+ },
+ "nep": {
+  "group": "catalog",
+  "name": "Nepali",
+  "preferred": "UD_Nepali-BK",
+  "ud": "ne"
+ },
+ "nhi": {
+  "group": "catalog",
+  "name": "Western Sierra Puebla Nahuatl",
+  "preferred": "UD_Western_Sierra_Puebla_Nahuatl-MesoTree",
+  "ud": "nhi"
+ },
+ "nld": {
+  "group": "catalog",
+  "name": "Dutch",
+  "preferred": null,
+  "ud": "nl"
+ },
+ "nmf": {
+  "group": "catalog",
+  "name": "Naga",
+  "preferred": "UD_Naga-Suansu",
+  "ud": "nmf"
+ },
+ "nor": {
+  "group": "catalog",
+  "name": "Norwegian",
+  "preferred": "UD_Norwegian-Nynorsk",
+  "ud": "no"
+ },
+ "oac": {
+  "group": "ud219-extra",
+  "name": "Oroch",
+  "preferred": null,
+  "ud": "oac"
+ },
+ "oci": {
+  "group": "catalog",
+  "name": "Occitan",
+  "preferred": null,
+  "ud": "oc"
+ },
+ "oge": {
+  "group": "catalog",
+  "name": "Old Georgian",
+  "preferred": "UD_Old_Georgian-GLC",
+  "ud": "oge"
+ },
+ "olo": {
+  "group": "catalog",
+  "name": "Livvi",
+  "preferred": null,
+  "ud": "olo"
+ },
+ "ori": {
+  "group": "catalog",
+  "name": "Odia",
+  "preferred": "UD_Odia-ODTB",
+  "ud": "or"
+ },
+ "orv": {
+  "group": "catalog",
+  "name": "Old East Slavic",
+  "preferred": "UD_Old_East_Slavic-Ruthenian",
+  "ud": "orv"
+ },
+ "ota": {
+  "group": "catalog",
+  "name": "Ottoman Turkish",
+  "preferred": "UD_Ottoman_Turkish-DUDU",
+  "ud": "ota"
+ },
+ "otk": {
+  "group": "ud219-extra",
+  "name": "Old Turkish",
+  "preferred": null,
+  "ud": "otk"
+ },
+ "pad": {
+  "group": "ud219-extra",
+  "name": "Paumari",
+  "preferred": null,
+  "ud": "pad"
+ },
+ "pan": {
+  "group": "catalog",
+  "name": "Punjabi",
+  "preferred": "UD_Punjabi-CS",
+  "ud": "pa"
+ },
+ "pay": {
+  "group": "catalog",
+  "name": "Pesh",
+  "preferred": "UD_Pesh-ChibErgIS",
+  "ud": "pay"
+ },
+ "pcm": {
+  "group": "catalog",
+  "name": "Naija",
+  "preferred": "UD_Naija-NSC",
+  "ud": "pcm"
+ },
+ "peh": {
+  "group": "ud219-extra",
+  "name": "Bonan",
+  "preferred": null,
+  "ud": "peh"
+ },
+ "pes": {
+  "group": "catalog",
+  "name": "Persian",
+  "preferred": "UD_Persian-PerDT",
+  "ud": "fa"
+ },
+ "pka": {
+  "group": "ud219-extra",
+  "name": "Prakrit",
+  "preferred": null,
+  "ud": "pra"
+ },
+ "pli": {
+  "group": "ud219-extra",
+  "name": "Pali",
+  "preferred": null,
+  "ud": "pi"
+ },
+ "pol": {
+  "group": "catalog",
+  "name": "Polish",
+  "preferred": null,
+  "ud": "pl"
+ },
+ "por": {
+  "group": "catalog",
+  "name": "Portuguese",
+  "preferred": null,
+  "ud": "pt"
+ },
+ "pro": {
+  "group": "catalog",
+  "name": "Old Occitan",
+  "preferred": null,
+  "ud": "pro"
+ },
+ "pst": {
+  "group": "catalog",
+  "name": "Pashto",
+  "preferred": "UD_Pashto-Sikaram",
+  "ud": "ps"
+ },
+ "qaf": {
+  "group": "catalog",
+  "name": "Maghrebi Arabic French",
+  "preferred": "UD_Maghrebi_Arabic_French-Arabizi",
+  "ud": "qaf"
+ },
+ "qfn": {
+  "group": "ud219-extra",
+  "name": "Frisian Dutch",
+  "preferred": null,
+  "ud": "qfn"
+ },
+ "qpm": {
+  "group": "catalog",
+  "name": "Pomak",
+  "preferred": "UD_Pomak-Philotis",
+  "ud": "qpm"
+ },
+ "qtd": {
+  "group": "catalog",
+  "name": "Turkish German",
+  "preferred": "UD_Turkish_German-SAGT",
+  "ud": "qtd"
+ },
+ "qte": {
+  "group": "ud219-extra",
+  "name": "Telugu English",
+  "preferred": null,
+  "ud": "qte"
+ },
+ "qti": {
+  "group": "catalog",
+  "name": "Turkish English",
+  "preferred": "UD_Turkish_English-BUTR",
+  "ud": "qti"
+ },
+ "quc": {
+  "group": "catalog",
+  "name": "Kiche",
+  "preferred": "UD_Kiche-IU",
+  "ud": "quc"
+ },
+ "ron": {
+  "group": "catalog",
+  "name": "Romanian",
+  "preferred": null,
+  "ud": "ro"
+ },
+ "ruc": {
+  "group": "catalog",
+  "name": "Ruruuli-Lunyala",
+  "preferred": null,
+  "ud": "ruc"
+ },
+ "rus": {
+  "group": "catalog",
+  "name": "Russian",
+  "preferred": null,
+  "ud": "ru"
+ },
+ "sab": {
+  "group": "catalog",
+  "name": "Bokota",
+  "preferred": "UD_Bokota-ChibErgIS",
+  "ud": "sab"
+ },
+ "sah": {
+  "group": "catalog",
+  "name": "Yakut",
+  "preferred": "UD_Yakut-YKTDT",
+  "ud": "sah"
+ },
+ "san": {
+  "group": "catalog",
+  "name": "Sanskrit",
+  "preferred": "UD_Sanskrit-Vedic",
+  "ud": "sa"
+ },
+ "say": {
+  "group": "catalog",
+  "name": "Zaar",
+  "preferred": "UD_Zaar-Autogramm",
+  "ud": "say"
+ },
+ "sce": {
+  "group": "ud219-extra",
+  "name": "Dongxiang",
+  "preferred": null,
+  "ud": "sce"
+ },
+ "scn": {
+  "group": "catalog",
+  "name": "Sicilian",
+  "preferred": "UD_Sicilian-STB",
+  "ud": "scn"
+ },
+ "sdh": {
+  "group": "ud219-extra",
+  "name": "Southern Kurdish",
+  "preferred": null,
+  "ud": "sdh"
+ },
+ "sga": {
+  "group": "catalog",
+  "name": "Old Irish",
+  "preferred": null,
+  "ud": "sga"
+ },
+ "sin": {
+  "group": "catalog",
+  "name": "Sinhala",
+  "preferred": "UD_Sinhala-STB",
+  "ud": "si"
+ },
+ "sjo": {
+  "group": "catalog",
+  "name": "Xibe",
+  "preferred": null,
+  "ud": "sjo"
+ },
+ "slk": {
+  "group": "catalog",
+  "name": "Slovak",
+  "preferred": "UD_Slovak-SNK",
+  "ud": "sk"
+ },
+ "slv": {
+  "group": "catalog",
+  "name": "Slovenian",
+  "preferred": "UD_Slovenian-SSJ",
+  "ud": "sl"
+ },
+ "sme": {
+  "group": "catalog",
+  "name": "Northern Sami",
+  "preferred": null,
+  "ud": "sme"
+ },
+ "sms": {
+  "group": "catalog",
+  "name": "Skolt Sami",
+  "preferred": "UD_Skolt_Sami-Giellagas",
+  "ud": "sms"
+ },
+ "snd": {
+  "group": "catalog",
+  "name": "Sindhi",
+  "preferred": "UD_Sindhi-Isra",
+  "ud": "sd"
+ },
+ "spa": {
+  "group": "catalog",
+  "name": "Spanish",
+  "preferred": null,
+  "ud": "es"
+ },
+ "sqi": {
+  "group": "catalog",
+  "name": "Albanian",
+  "preferred": null,
+  "ud": "sq"
+ },
+ "srd": {
+  "group": "ud219-extra",
+  "name": "Sardinian",
+  "preferred": null,
+  "ud": "sc"
+ },
+ "srp": {
+  "group": "catalog",
+  "name": "Serbian",
+  "preferred": null,
+  "ud": "sr"
+ },
+ "ssp": {
+  "group": "catalog",
+  "name": "Spanish Sign Language",
+  "preferred": "UD_Spanish_Sign_Language-LSE",
+  "ud": "ssp"
+ },
+ "swe": {
+  "group": "catalog",
+  "name": "Swedish",
+  "preferred": null,
+  "ud": "sv"
+ },
+ "swl": {
+  "group": "ud219-extra",
+  "name": "Swedish Sign Language",
+  "preferred": null,
+  "ud": "swl"
+ },
+ "tam": {
+  "group": "catalog",
+  "name": "Tamil",
+  "preferred": "UD_Tamil-MWTT",
+  "ud": "ta"
+ },
+ "tat": {
+  "group": "catalog",
+  "name": "Tatar",
+  "preferred": "UD_Tatar-NMCTT",
+  "ud": "tt"
+ },
+ "tel": {
+  "group": "catalog",
+  "name": "Telugu",
+  "preferred": null,
+  "ud": "te"
+ },
+ "tgl": {
+  "group": "catalog",
+  "name": "Tagalog",
+  "preferred": "UD_Tagalog-TRG",
+  "ud": "tl"
+ },
+ "tha": {
+  "group": "catalog",
+  "name": "Thai",
+  "preferred": "UD_Thai-PUD",
+  "ud": "th"
+ },
+ "tir": {
+  "group": "ud219-extra",
+  "name": "Tigrinya",
+  "preferred": null,
+  "ud": "ti"
+ },
+ "tpn": {
+  "group": "catalog",
+  "name": "Tupinamba",
+  "preferred": "UD_Tupinamba-TuDeT",
+  "ud": "tpn"
+ },
+ "tsn": {
+  "group": "ud219-extra",
+  "name": "Tswana",
+  "preferred": null,
+  "ud": "tn"
+ },
+ "tuk": {
+  "group": "catalog",
+  "name": "Turkmen",
+  "preferred": null,
+  "ud": "tk"
+ },
+ "tur": {
+  "group": "catalog",
+  "name": "Turkish",
+  "preferred": null,
+  "ud": "tr"
+ },
+ "txg": {
+  "group": "ud219-extra",
+  "name": "Tangut",
+  "preferred": null,
+  "ud": "txg"
+ },
+ "ude": {
+  "group": "ud219-extra",
+  "name": "Udihe",
+  "preferred": null,
+  "ud": "ude"
+ },
+ "uig": {
+  "group": "catalog",
+  "name": "Uyghur",
+  "preferred": "UD_Uyghur-UDT",
+  "ud": "ug"
+ },
+ "ukr": {
+  "group": "catalog",
+  "name": "Ukrainian",
+  "preferred": null,
+  "ud": "uk"
+ },
+ "ulc": {
+  "group": "ud219-extra",
+  "name": "Ulch",
+  "preferred": null,
+  "ud": "ulc"
+ },
+ "urb": {
+  "group": "catalog",
+  "name": "Kaapor",
+  "preferred": "UD_Kaapor-TuDeT",
+  "ud": "urb"
+ },
+ "urd": {
+  "group": "catalog",
+  "name": "Urdu",
+  "preferred": null,
+  "ud": "ur"
+ },
+ "usp": {
+  "group": "ud219-extra",
+  "name": "Uspanteko",
+  "preferred": null,
+  "ud": "usp"
+ },
+ "uzb": {
+  "group": "catalog",
+  "name": "Uzbek",
+  "preferred": null,
+  "ud": "uz"
+ },
+ "vep": {
+  "group": "catalog",
+  "name": "Veps (Vepsian)",
+  "preferred": null,
+  "ud": "vep"
+ },
+ "vie": {
+  "group": "catalog",
+  "name": "Vietnamese",
+  "preferred": "UD_Vietnamese-VTB",
+  "ud": "vi"
+ },
+ "wbp": {
+  "group": "catalog",
+  "name": "Warlpiri",
+  "preferred": "UD_Warlpiri-UFAL",
+  "ud": "wbp"
+ },
+ "wol": {
+  "group": "catalog",
+  "name": "Wolof",
+  "preferred": "UD_Wolof-WTB",
+  "ud": "wo"
+ },
+ "wuu": {
+  "group": "catalog",
+  "name": "Shanghainese (Wu Chinese)",
+  "preferred": null,
+  "ud": "wuu"
+ },
+ "xal": {
+  "group": "ud219-extra",
+  "name": "Kalmyk",
+  "preferred": null,
+  "ud": "xal"
+ },
+ "xav": {
+  "group": "catalog",
+  "name": "Xavante",
+  "preferred": "UD_Xavante-XDT",
+  "ud": "xav"
+ },
+ "xcl": {
+  "group": "catalog",
+  "name": "Classical Armenian",
+  "preferred": null,
+  "ud": "xcl"
+ },
+ "xnr": {
+  "group": "catalog",
+  "name": "Kangri",
+  "preferred": "UD_Kangri-KDTB",
+  "ud": "xnr"
+ },
+ "xpg": {
+  "group": "catalog",
+  "name": "Phrygian",
+  "preferred": "UD_Phrygian-KUL",
+  "ud": "xpg"
+ },
+ "xum": {
+  "group": "catalog",
+  "name": "Umbrian",
+  "preferred": "UD_Umbrian-IKUVINA",
+  "ud": "xum"
+ },
+ "yid": {
+  "group": "catalog",
+  "name": "Yiddish",
+  "preferred": "UD_Yiddish-YiTB",
+  "ud": "yi"
+ },
+ "yor": {
+  "group": "catalog",
+  "name": "Yoruba",
+  "preferred": "UD_Yoruba-YTB",
+  "ud": "yo"
+ },
+ "yrk": {
+  "group": "catalog",
+  "name": "Nenets",
+  "preferred": "UD_Nenets-Tundra",
+  "ud": "yrk"
+ },
+ "yrl": {
+  "group": "catalog",
+  "name": "Nheengatu",
+  "preferred": null,
+  "ud": "yrl"
+ },
+ "yue": {
+  "group": "catalog",
+  "name": "Cantonese",
+  "preferred": "UD_Cantonese-HK",
+  "ud": "yue"
+ },
+ "zza": {
+  "group": "catalog",
+  "name": "Zazaki",
+  "preferred": "UD_Zazaki-ZSD",
+  "ud": "zza"
+ }
+}
