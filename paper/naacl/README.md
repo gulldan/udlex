@@ -35,7 +35,8 @@ Each start of a run snapshots the environment, including the SHA-256 of every ha
 file (`environment*.json`; those of the reused run are under `evidence/speed/reused/`).
 The harness changed between starts: the reused competitor cells were timed by an
 earlier `bench.py`, and the udlex cells by the version committed in
-`../emnlp/experiments/speed` at "Add the C9 speed harness as it ran", which differs from
+`../emnlp/experiments/speed` by commit `6ce4303` ("Add the C9 speed harness as it ran",
+kept by the tag `research/emnlp-v1-evaluation`), which differs from
 the measured files only in reading the list of paused services from `UDLEX_SPEED_PAUSE`.
 The first 16 udlex cells (Abkhaz, and one Abaza cell) were timed before a restart, by
 the `bench.py` of `environment.json`, which differs only in not skipping languages
