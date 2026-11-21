@@ -117,7 +117,8 @@ def cedict(path: Path) -> Iterator[tuple[str, str]]:
 
 def pymorphy(path: Path) -> Iterator[tuple[str, str]]:
     """Every OpenCorpora form with its most frequent normal form."""
-    from pymorphy3.opencorpora_dict.wrapper import Dictionary  # noqa: PLC0415
+    # Optional input tool, installed only for the Russian build (see README).
+    from pymorphy3.opencorpora_dict.wrapper import Dictionary  # noqa: PLC0415  # ty: ignore[import-not-found]
 
     with tempfile.TemporaryDirectory() as tmp, zipfile.ZipFile(path) as wheel:
         for name in wheel.namelist():
