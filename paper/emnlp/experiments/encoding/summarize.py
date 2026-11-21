@@ -95,9 +95,9 @@ for line in bench.read_text().splitlines() if bench.exists() else []:
     for workload, modes in rec["results"].items():
         for mode, got in modes.items():
             if not skipped:
-                runs[base + (workload, mode)].append(clock(got))
+                runs[(*base, workload, mode)].append(clock(got))
             if "per_query" in got:
-                counters[base + (workload,)] = got["per_query"]
+                counters[(*base, workload)] = got["per_query"]
 NOISY = "noisy" in notes
 ns = {key: settle(values, NOISY) for key, values in runs.items()}
 langs = sorted({k[0] for k in ns})
@@ -299,16 +299,20 @@ for keyset in keysets:
     rows = []
     for cand in names:
         heap = next(
-            (info(l, keyset, cand).get("heap") for l in langs if info(l, keyset, cand)),
+            (
+                info(iso, keyset, cand).get("heap")
+                for iso in langs
+                if info(iso, keyset, cand)
+            ),
             "",
         )
-        exact = all(info(l, keyset, cand).get("exact", True) for l in langs)
+        exact = all(info(iso, keyset, cand).get("exact", True) for iso in langs)
         build = gm(
             [
-                info(l, keyset, cand).get("build_ns", 0)
-                / max(1, prepared[l][keyset]["stats"]["keys"])
-                for l in langs
-                if keyset in prepared.get(l, {})
+                info(iso, keyset, cand).get("build_ns", 0)
+                / max(1, prepared[iso][keyset]["stats"]["keys"])
+                for iso in langs
+                if keyset in prepared.get(iso, {})
             ]
         )
         rows.append(
@@ -356,13 +360,14 @@ for keyset in keysets:
     )
 
     print(f"### Поток теста (iid) по языкам, `{keyset}`, thr\n")
-    rows = [[f"`{c}`"] + [fmt(t(l, keyset, c)) for l in langs] for c in names]
-    print(table(["кандидат"] + langs, rows))
+    rows = [[f"`{c}`"] + [fmt(t(iso, keyset, c)) for iso in langs] for c in names]
+    print(table(["кандидат", *langs], rows))
     print(f"### Поток теста (iid) по языкам, `{keyset}`, lat\n")
     rows = [
-        [f"`{c}`"] + [fmt(t(l, keyset, c, mode="lat")) for l in langs] for c in names
+        [f"`{c}`"] + [fmt(t(iso, keyset, c, mode="lat")) for iso in langs]
+        for c in names
     ]
-    print(table(["кандидат"] + langs, rows))
+    print(table(["кандидат", *langs], rows))
 
     print(f"## 4. Порог деления по длине ключа, `{keyset}`\n")
     for long in ("pilot", "ptrhash"):
@@ -378,7 +383,7 @@ for keyset in keysets:
                 values = [t(lang, keyset, c, mode=mode) for c in ladder]
                 if not any(values):
                     continue
-                best = min((v, h) for v, h in zip(values, heads) if v)[1]
+                best = min((v, h) for v, h in zip(values, heads, strict=True) if v)[1]
                 s = prepared[lang][keyset]["stats"]
                 singles = [
                     (t(lang, keyset, c, mode=mode), c) for c in names if is_single(c)
@@ -407,9 +412,11 @@ for keyset in keysets:
             print(f"Длинная сторона `{long}`, поток теста (iid), {mode}:\n")
             print(
                 table(
-                    ["язык", "ср. длина ключа", "байт/символ"]
-                    + heads
-                    + [
+                    [
+                        "язык",
+                        "ср. длина ключа",
+                        "байт/символ",
+                        *heads,
                         "лучший порог",
                         "лучшая одиночная (точная)",
                         "лучшее деление к ней, %",
@@ -510,7 +517,7 @@ for keyset in keysets:
 
     print(f"## 7. Слой значений, `{keyset}`\n")
     rows = []
-    for family, variants in (
+    for _family, variants in (
         ("dacore", ["dacore+ids", "dacore+off", "dacore+offid", "dacore+rule"]),
         ("fst", ["fst+ids", "fst+rule"]),
         ("pilot", ["pilot+ids", "pilot+off", "pilot+inline", "pilot+rule"]),
@@ -534,9 +541,9 @@ for keyset in keysets:
             ratios = {
                 m: gm(
                     [
-                        t(l, keyset, cand, mode=m) / t(l, keyset, base, mode=m)
-                        for l in langs
-                        if t(l, keyset, cand, mode=m) and t(l, keyset, base, mode=m)
+                        t(iso, keyset, cand, mode=m) / t(iso, keyset, base, mode=m)
+                        for iso in langs
+                        if t(iso, keyset, cand, mode=m) and t(iso, keyset, base, mode=m)
                     ]
                 )
                 for m in ("thr", "lat")
@@ -585,16 +592,20 @@ for keyset in keysets:
                 info(lang, keyset, f"bf8>{inner}").get("bytes_per_key", 0) or 0
             ) - (info(lang, keyset, inner).get("bytes_per_key", 0) or 0)
             rows.append(
-                [f"`{inner}`", lang, fmt(100 * miss) if miss is not None else "—"]
-                + cells
-                + [fmt(extra, 2)]
+                [
+                    f"`{inner}`",
+                    lang,
+                    fmt(100 * miss) if miss is not None else "—",
+                    *cells,
+                    fmt(extra, 2),
+                ]
             )
     print(
         "Изменение времени с фильтром к тому же кандидату без фильтра, % (минус — быстрее).\n"
     )
     print(
         table(
-            ["структура", "язык", "промахов в потоке, %"] + workloads + ["+Б/ключ"],
+            ["структура", "язык", "промахов в потоке, %", *workloads, "+Б/ключ"],
             rows,
         )
     )
@@ -670,8 +681,11 @@ for keyset in keysets:
     )
     rows = []
     for cand in names:
-        got = [counters.get((l, keyset, cand, MAIN), {}) for l in langs]
-        cell = lambda name, d=2: fmt(gm([g.get(name) for g in got]), d)
+        got = [counters.get((iso, keyset, cand, MAIN), {}) for iso in langs]
+
+        def cell(name, d=2, got=got):
+            return fmt(gm([g.get(name) for g in got]), d)
+
         rows.append(
             [
                 f"`{cand}`",
@@ -704,11 +718,13 @@ for keyset in keysets:
     rows = []
     for cand in names:
         warm = [
-            statistics.median(opens[(l, keyset, cand)]) / 1e3
-            for l in langs
-            if opens.get((l, keyset, cand))
+            statistics.median(opens[(iso, keyset, cand)]) / 1e3
+            for iso in langs
+            if opens.get((iso, keyset, cand))
         ]
-        cold = [colds[(l, keyset, cand)] for l in langs if (l, keyset, cand) in colds]
+        cold = [
+            colds[(iso, keyset, cand)] for iso in langs if (iso, keyset, cand) in colds
+        ]
         rows.append(
             [
                 f"`{cand}`",
@@ -805,7 +821,7 @@ print(
 if census:
     print(f"## 13. Перепись: размер и сборка корпусной таблицы, {len(census)} языков\n")
     per = defaultdict(lambda: defaultdict(list))
-    for lang, sets in census.items():
+    for sets in census.values():
         body = sets.get("exact")
         if not body:
             continue
@@ -969,7 +985,7 @@ if lengths.exists():
             rows.append(row)
         heads = [f"{mode}: `{a}`×`{b}`" for mode in ("thr", "lat") for a, b in pairs]
         print(f"Таблица `{keyset}`: длина пересечения, байт.\n")
-        print(table(["язык"] + heads, rows))
+        print(table(["язык", *heads], rows))
         for mode in ("thr", "lat"):
             print(
                 f"Нс на попадание по длине ключа, `{keyset}`, {mode} (геом. среднее по языкам):\n"

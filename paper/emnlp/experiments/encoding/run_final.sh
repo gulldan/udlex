@@ -95,13 +95,13 @@ CANDS=${CANDS:-$($BIN list | paste -sd, -)}
 
 {
     echo "--- $(date -u +%Y-%m-%dT%H:%M:%SZ) rounds ${ROUND_FIRST:-1}..$ROUNDS cold=${COLD:-1}"
-    echo "mode: $MODE  stamp: $STAMP  cpu: $CPU (SMT siblings $(cat /sys/devices/system/cpu/cpu$CPU/topology/thread_siblings_list))  rounds: $ROUNDS  sample: ${SAMPLES}x${SAMPLE_MS}ms"
+    echo "mode: $MODE  stamp: $STAMP  cpu: $CPU (SMT siblings $(cat /sys/devices/system/cpu/cpu"$CPU"/topology/thread_siblings_list))  rounds: $ROUNDS  sample: ${SAMPLES}x${SAMPLE_MS}ms"
     echo "keysets: $KEYSETS  census: $CENSUS  memmodes: ${MEMMODES:-1}"
     echo "force: ${FORCE:-0}${FORCE_WHY:+ ($FORCE_WHY)}"
     echo "host: $(uname -srm)"
     echo "cpu model: $(lscpu | sed -n 's/^Model name: *//p')"
     echo "caches: $(lscpu | grep -E '^L(1d|2|3) cache' | tr -s ' ' | paste -sd';' -)"
-    echo "governor: $(cat /sys/devices/system/cpu/cpu$CPU/cpufreq/scaling_governor)"
+    echo "governor: $(cat /sys/devices/system/cpu/cpu"$CPU"/cpufreq/scaling_governor)"
     echo "thp: $(cat /sys/kernel/mm/transparent_hugepage/enabled) (the lab disables it for itself)"
     echo "perf_event_paranoid: $(cat /proc/sys/kernel/perf_event_paranoid)"
     echo "loadavg at start: $(cat /proc/loadavg)"
@@ -192,6 +192,7 @@ if [[ $CENSUS == 1 ]]; then
     for dir in "$INPUTS"/*/; do
         lang=$(basename "$dir")
         [[ -s $dir/train.jsonl && -s $dir/test.jsonl ]] || continue
+        # shellcheck disable=SC2015  # a failed copy is a failed language too
         taskset -c "$CPU" "$BIN" prepare --inputs "$INPUTS" "${dicts[@]}" --work "$WORK-census" \
             --lang "$lang" --keysets exact --cands "$CANDS" --discard \
             --uniform-queries 20000 --mixed-queries 5000 2>>"$OUT/census.log" \
