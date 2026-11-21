@@ -16,7 +16,11 @@ from pathlib import Path
 
 out, cpu = Path(sys.argv[1]), int(sys.argv[2])
 interval = float(sys.argv[3]) if len(sys.argv) > 3 else 60.0
-siblings = Path(f"/sys/devices/system/cpu/cpu{cpu}/topology/thread_siblings_list").read_text().strip()
+siblings = (
+    Path(f"/sys/devices/system/cpu/cpu{cpu}/topology/thread_siblings_list")
+    .read_text()
+    .strip()
+)
 tick = os.sysconf("SC_CLK_TCK")
 
 
@@ -50,7 +54,15 @@ while True:
     time.sleep(interval)
     now_cpu, now_proc, now = cpus(), procs(), time.time()
     busy = {
-        c: round(100 * (1 - (now_cpu[c][1] - before_cpu[c][1]) / max(1, now_cpu[c][0] - before_cpu[c][0])), 1)
+        c: round(
+            100
+            * (
+                1
+                - (now_cpu[c][1] - before_cpu[c][1])
+                / max(1, now_cpu[c][0] - before_cpu[c][0])
+            ),
+            1,
+        )
         for c in now_cpu
     }
     used = []
@@ -65,9 +77,14 @@ while True:
         "loadavg": Path("/proc/loadavg").read_text().split()[:3],
         "cpu": cpu,
         "siblings": siblings,
-        "busy_measuring": {s: busy[int(s)] for s in siblings.replace("-", ",").split(",")},
+        "busy_measuring": {
+            s: busy[int(s)] for s in siblings.replace("-", ",").split(",")
+        },
         "busy_all_mean": round(sum(busy.values()) / len(busy), 1),
-        "top": [{"cpu_pct": s, "name": n, "pid": p, "last_cpu": c} for s, n, p, c in used[:5]],
+        "top": [
+            {"cpu_pct": s, "name": n, "pid": p, "last_cpu": c}
+            for s, n, p, c in used[:5]
+        ],
     }
     with out.open("a") as handle:
         handle.write(json.dumps(record) + "\n")

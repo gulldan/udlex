@@ -1,4 +1,5 @@
 """Evaluate verified 1.0.0 dictionaries on UD with a declared-source overlap screen."""
+
 import argparse
 import hashlib
 import json
@@ -17,7 +18,16 @@ import udlex
 from verify_snapshot import CATALOG, EVIDENCE, read, save, sha
 
 UD218 = "a93fe8520bc4c5ff34670d9a93a5a7689c018c1e59643fa27e03036717841b8a"
-ARMS = ("tokens", "copy", "lookup", "full", "copy_wins", "copy_losses", "rules_wins", "rules_losses")
+ARMS = (
+    "tokens",
+    "copy",
+    "lookup",
+    "full",
+    "copy_wins",
+    "copy_losses",
+    "rules_wins",
+    "rules_losses",
+)
 
 
 def sentences(path):
@@ -54,8 +64,11 @@ def fingerprint(forms):
 
 
 def dictionary_sources(row, release, cache):
-    inputs = [f for f in (row.get("source_files") or row.get("inputs") or [])
-              if f.get("url", "").endswith(".conllu")]
+    inputs = [
+        f
+        for f in (row.get("source_files") or row.get("inputs") or [])
+        if f.get("url", "").endswith(".conllu")
+    ]
     if not inputs:
         inputs = [{"url": row["download"], "sha256": row["source_sha256"]}]
     pinned, docs, ids, texts = {}, set(), set(), set()
@@ -68,7 +81,10 @@ def dictionary_sources(row, release, cache):
             path = cache / f"{source['sha256']}.conllu"
             if not path.exists():
                 tmp = path.with_suffix(f".{os.getpid()}.tmp")
-                with urllib.request.urlopen(url, timeout=60) as remote, tmp.open("wb") as out:
+                with (
+                    urllib.request.urlopen(url, timeout=60) as remote,
+                    tmp.open("wb") as out,
+                ):
                     shutil.copyfileobj(remote, out)
                 if sha(tmp) != source["sha256"]:
                     raise ValueError(f"Declared dictionary input has changed at {url}")
@@ -110,13 +126,22 @@ def score_language(job):
                     continue
                 key = fingerprint(forms)
                 if key in texts or key in seen:
-                    reason["source_text_sentences" if key in texts else "repeated_evaluation_sentences"] += 1
+                    reason[
+                        "source_text_sentences"
+                        if key in texts
+                        else "repeated_evaluation_sentences"
+                    ] += 1
                     continue
-                valid = [i for i, (f, g) in enumerate(zip(forms, lemmas, strict=True))
-                         if f not in ("", "_") and g not in ("", "_")]
+                valid = [
+                    i
+                    for i, (f, g) in enumerate(zip(forms, lemmas, strict=True))
+                    if f not in ("", "_") and g not in ("", "_")
+                ]
                 reason["masked_forms"] += sum(f in ("", "_") for f in forms)
-                reason["unknown_lemmas_with_visible_form"] += sum(f not in ("", "_") and g in ("", "_")
-                                                                  for f, g in zip(forms, lemmas, strict=True))
+                reason["unknown_lemmas_with_visible_form"] += sum(
+                    f not in ("", "_") and g in ("", "_")
+                    for f, g in zip(forms, lemmas, strict=True)
+                )
                 if not valid:
                     reason["no_scorable_words_sentences"] += 1
                     continue
@@ -127,7 +152,11 @@ def score_language(job):
                 counts = clusters[block]
                 kinds[block[0]] += 1
                 for i in valid:
-                    a, b, c = forms[i] == lemmas[i], lookup[i] == lemmas[i], full[i] == lemmas[i]
+                    a, b, c = (
+                        forms[i] == lemmas[i],
+                        lookup[i] == lemmas[i],
+                        full[i] == lemmas[i],
+                    )
                     counts["tokens"] += 1
                     counts["copy"] += a
                     counts["lookup"] += b
@@ -139,20 +168,37 @@ def score_language(job):
         histogram = Counter()
         for counts in clusters.values():
             scores.update(counts)
-            histogram[(counts["tokens"], counts["full"] - counts["copy"], counts["full"] - counts["lookup"])] += 1
-        result[f"{repo}/{path.name}"] = {"sha256": sha(path), "excluded": dict(reason),
-            "counts": {a: scores[a] for a in ARMS}, "block_types": dict(Counter(b[0] for b in clusters)),
+            histogram[
+                (
+                    counts["tokens"],
+                    counts["full"] - counts["copy"],
+                    counts["full"] - counts["lookup"],
+                )
+            ] += 1
+        result[f"{repo}/{path.name}"] = {
+            "sha256": sha(path),
+            "excluded": dict(reason),
+            "counts": {a: scores[a] for a in ARMS},
+            "block_types": dict(Counter(b[0] for b in clusters)),
             "sentences_by_block_type": dict(kinds),
-            "block_histogram": [list(k) + [m] for k, m in sorted(histogram.items())]}
-    value = {"iso": iso, "resource_type": "UD" if snap["ud_repository"] else "external",
-             "source_conllu": {f"{r}/{n}": v for (r,n),v in pinned.items()}, "test_files": result}
+            "block_histogram": [list(k) + [m] for k, m in sorted(histogram.items())],
+        }
+    value = {
+        "iso": iso,
+        "resource_type": "UD" if snap["ud_repository"] else "external",
+        "source_conllu": {f"{r}/{n}": v for (r, n), v in pinned.items()},
+        "test_files": result,
+    }
     save(output / f"{iso}.json", value)
     return iso
 
 
 def main(args):
     snapshot = read(args.snapshot)
-    if snapshot["catalog_sha256"] != CATALOG or udlex.__version__ != snapshot["version"]:
+    if (
+        snapshot["catalog_sha256"] != CATALOG
+        or udlex.__version__ != snapshot["version"]
+    ):
         raise ValueError("Runtime or catalog differs from the verified snapshot")
     if sha(args.ud_archive) != UD218:
         raise ValueError("Unexpected UD 2.18 distribution")
@@ -160,7 +206,10 @@ def main(args):
         raise ValueError("Dictionary catalog changed")
     args.output.mkdir(parents=True, exist_ok=True)
     mapping = read(EVIDENCE / "language-codes.json")
-    registry = {r["iso639_3"]: r for r in read(args.assets / "DICTIONARIES.json")["dictionaries"]}
+    registry = {
+        r["iso639_3"]: r
+        for r in read(args.assets / "DICTIONARIES.json")["dictionaries"]
+    }
     if set(registry) != set(mapping) or len(set(mapping.values())) != len(mapping):
         raise ValueError("Language correspondence is incomplete or ambiguous")
     by_code = defaultdict(list)
@@ -172,28 +221,55 @@ def main(args):
         for entry in packed:
             if entry.isfile() and entry.name.endswith("-ud-test.conllu"):
                 with packed.extractfile(entry) as stream:
-                    expected[str(Path(entry.name).relative_to("ud-treebanks-v2.18"))] = hashlib.file_digest(stream, "sha256").hexdigest()
+                    expected[
+                        str(Path(entry.name).relative_to("ud-treebanks-v2.18"))
+                    ] = hashlib.file_digest(stream, "sha256").hexdigest()
     if {str(p.relative_to(args.ud_directory)): sha(p) for p in files} != expected:
         raise ValueError("Extracted test files differ from the pinned archive")
     for path in files:
         by_code[re.split(r"[_-]", path.name, maxsplit=1)[0]].append(path)
-    jobs = [(iso, registry[iso], snapshot["languages"][iso], by_code[code], args.ud_directory,
-             args.bundle, args.output) for iso, code in sorted(mapping.items())]
+    jobs = [
+        (
+            iso,
+            registry[iso],
+            snapshot["languages"][iso],
+            by_code[code],
+            args.ud_directory,
+            args.bundle,
+            args.output,
+        )
+        for iso, code in sorted(mapping.items())
+    ]
     with ProcessPoolExecutor(max_workers=args.jobs) as pool:
         for n, iso in enumerate(pool.map(score_language, jobs), 1):
             if n % 20 == 0 or n == len(jobs):
                 print(f"{n}/{len(jobs)} languages ({iso})", flush=True)
-    save(args.output / "run.json", {"version": snapshot["version"], "catalog_sha256": CATALOG,
-        "ud218_sha256": UD218, "snapshot_sha256": sha(args.snapshot),
-        "language_codes_sha256": sha(EVIDENCE / "language-codes.json"),
-        "protocol_sha256": sha(Path(__file__).with_name("protocol.md")),
-        "program_sha256": sha(Path(__file__)), "release_test_files": len(files),
-        "languages": sorted(registry)})
+    save(
+        args.output / "run.json",
+        {
+            "version": snapshot["version"],
+            "catalog_sha256": CATALOG,
+            "ud218_sha256": UD218,
+            "snapshot_sha256": sha(args.snapshot),
+            "language_codes_sha256": sha(EVIDENCE / "language-codes.json"),
+            "protocol_sha256": sha(Path(__file__).with_name("protocol.md")),
+            "program_sha256": sha(Path(__file__)),
+            "release_test_files": len(files),
+            "languages": sorted(registry),
+        },
+    )
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    for name in ("assets", "bundle", "snapshot", "ud_archive", "ud_directory", "output"):
+    for name in (
+        "assets",
+        "bundle",
+        "snapshot",
+        "ud_archive",
+        "ud_directory",
+        "output",
+    ):
         parser.add_argument(name, type=Path)
     parser.add_argument("--jobs", type=int, default=4)
     main(parser.parse_args())

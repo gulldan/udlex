@@ -1,4 +1,5 @@
 """Materialize a flat copy of the pinned GitHub draft, reusing verified local files."""
+
 import argparse
 import shutil
 import subprocess
@@ -20,20 +21,35 @@ def materialize(destination, caches):
         out = destination / name
 
         def matches(path):
-            return path.is_file() and path.stat().st_size == pin["size"] and sha(path) == pin["sha256"]
+            return (
+                path.is_file()
+                and path.stat().st_size == pin["size"]
+                and sha(path) == pin["sha256"]
+            )
 
         if matches(out):
             return
         with tempfile.NamedTemporaryFile(dir=destination, delete=False) as fh:
             temp = Path(fh.name)
             try:
-                cached = next((base / name for base in caches if matches(base / name)), None)
+                cached = next(
+                    (base / name for base in caches if matches(base / name)), None
+                )
                 if cached:
                     with cached.open("rb") as source:
                         shutil.copyfileobj(source, fh)
                 else:
-                    subprocess.run(["gh", "api", "-H", "Accept: application/octet-stream",
-                                    f"repos/gulldan/udlex/releases/assets/{pin['id']}"], stdout=fh, check=True)
+                    subprocess.run(
+                        [
+                            "gh",
+                            "api",
+                            "-H",
+                            "Accept: application/octet-stream",
+                            f"repos/gulldan/udlex/releases/assets/{pin['id']}",
+                        ],
+                        stdout=fh,
+                        check=True,
+                    )
                 fh.flush()
                 if not matches(temp):
                     raise ValueError(f"GitHub asset digest mismatch for {name}")

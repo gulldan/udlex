@@ -1,4 +1,5 @@
 """Verify the canonical engine and every dictionary before an evaluation."""
+
 import argparse
 import hashlib
 import json
@@ -27,7 +28,9 @@ def read(path):
 def save(path, data):
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(".partial")
-    tmp.write_text(json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
+    tmp.write_text(
+        json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
+    )
     tmp.replace(path)
 
 
@@ -50,7 +53,11 @@ def verify(repo, assets, build, report):
     data = read(assets / "DICTIONARIES.json")
     locks = {a["name"]: a for a in read(EVIDENCE / "asset-digests.json")}
     rows = {r["iso639_3"]: r for r in data["dictionaries"]}
-    if len(rows) != 172 or set(rows) != set(data["language_codes"]) or data["release"] != "v1.0.0":
+    if (
+        len(rows) != 172
+        or set(rows) != set(data["language_codes"])
+        or data["release"] != "v1.0.0"
+    ):
         raise ValueError("Incomplete dictionary catalog")
     wanted = {"DICTIONARIES.json", ENGINE, *(r["wheel"]["name"] for r in rows.values())}
     if len(locks) != 355 or not wanted.issubset(locks):
@@ -64,13 +71,18 @@ def verify(repo, assets, build, report):
             if entry.startswith("udlex/") and entry.endswith((".py", ".so")):
                 installed = Path(udlex.__file__).parent / entry.removeprefix("udlex/")
                 if sha(installed) != hashlib.sha256(wheel.read(entry)).hexdigest():
-                    raise ValueError(f"Installed runtime differs from the wheel at {entry}")
+                    raise ValueError(
+                        f"Installed runtime differs from the wheel at {entry}"
+                    )
     inventory = {}
     for iso, row in sorted(rows.items()):
         wheel = row["wheel"]
         pin = locks[wheel["name"]]
-        if (row["engine_commit"] != TAG or row["dictionary_version"] != "1.0.0"
-                or any(wheel[k] != pin[k] for k in ("name", "size", "sha256"))):
+        if (
+            row["engine_commit"] != TAG
+            or row["dictionary_version"] != "1.0.0"
+            or any(wheel[k] != pin[k] for k in ("name", "size", "sha256"))
+        ):
             raise ValueError(f"Dictionary identity changed for {iso}")
         folder = build / iso
         prefix = f"udlex_bundle/{iso}/"
@@ -86,21 +98,52 @@ def verify(repo, assets, build, report):
                         shutil.copyfileobj(src, dest)
         gen = (folder / "current").read_text().strip()
         meta = read(folder / ".generations" / gen / "meta.json")
-        if gen != row["compiled_generation"] or gen != meta["generation"] or meta["iso639_3"] != iso:
+        if (
+            gen != row["compiled_generation"]
+            or gen != meta["generation"]
+            or meta["iso639_3"] != iso
+        ):
             raise ValueError(f"Unexpected compiled generation for {iso}")
         lex = udlex.Lexicon(str(folder), use_user=False)
         examples = row["examples"]
-        verified = sum(lex.lemmatize([word])[0] == lemma for word, lemma in examples.items())
-        ud_repo = row["source_home"].split("/tree/")[0].split("/")[-1] if "/UniversalDependencies/UD_" in row["source_home"] else None
-        inventory[iso] = {"name": row["language"], "source": row["source"], "source_url": row["download"],
-                          "source_split": row.get("source_split"), "ud_repository": ud_repo,
-                          "variant": meta["variant"], "generation": gen, "wheel_sha256": wheel["sha256"],
-                          "license": row["license"], "examples": len(examples), "examples_matched": verified}
-    save(report, {"upstream": "gulldan/udlex", "base_commit": MAIN, "dictionary_engine_commit": TAG,
-                  "upstream_release_status_at_snapshot": "draft", "version": udlex.__version__,
-                  "engine_wheel_sha256": locks[ENGINE]["sha256"], "catalog_sha256": CATALOG,
-                  "rust_tree": git(repo, "rev-parse", "HEAD:rust"), "python_tree": git(repo, "rev-parse", "HEAD:src"),
-                  "verified_assets": len(locks), "evaluation_assets": len(wanted), "languages": inventory})
+        verified = sum(
+            lex.lemmatize([word])[0] == lemma for word, lemma in examples.items()
+        )
+        ud_repo = (
+            row["source_home"].split("/tree/")[0].split("/")[-1]
+            if "/UniversalDependencies/UD_" in row["source_home"]
+            else None
+        )
+        inventory[iso] = {
+            "name": row["language"],
+            "source": row["source"],
+            "source_url": row["download"],
+            "source_split": row.get("source_split"),
+            "ud_repository": ud_repo,
+            "variant": meta["variant"],
+            "generation": gen,
+            "wheel_sha256": wheel["sha256"],
+            "license": row["license"],
+            "examples": len(examples),
+            "examples_matched": verified,
+        }
+    save(
+        report,
+        {
+            "upstream": "gulldan/udlex",
+            "base_commit": MAIN,
+            "dictionary_engine_commit": TAG,
+            "upstream_release_status_at_snapshot": "draft",
+            "version": udlex.__version__,
+            "engine_wheel_sha256": locks[ENGINE]["sha256"],
+            "catalog_sha256": CATALOG,
+            "rust_tree": git(repo, "rev-parse", "HEAD:rust"),
+            "python_tree": git(repo, "rev-parse", "HEAD:src"),
+            "verified_assets": len(locks),
+            "evaluation_assets": len(wanted),
+            "languages": inventory,
+        },
+    )
 
 
 if __name__ == "__main__":
