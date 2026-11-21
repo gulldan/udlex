@@ -2592,7 +2592,6 @@
  },
  "compare_engines_sha256": "c50137d679876c3de4968746a8f4ebdde3fac2d8657c9a4e45229c4707c8d802",
  "loadavg_start": "2.19 1.51 1.40 2/3213 65204",
- "note": "C9 on all 169 languages, CPU modes; vLLM and other services as vllm.log or services.log record; udlex 4107fcdbbc86d75c02c1c03afbfd3c7829c7e0b2",
  "owner_jobs_at_start": [],
  "args": {
   "mode": "run",
@@ -2615,7 +2614,6 @@
   "load_timeout": "900",
   "step_timeout": "900",
   "native": "<runs>/udlex-speed-20261119/target/release/udlex-speed",
-  "note": "C9 on all 169 languages, CPU modes; vLLM and other services as vllm.log or services.log record; udlex 4107fcdbbc86d75c02c1c03afbfd3c7829c7e0b2",
   "pause_while": "[]",
   "pause_tmux": "[]",
   "retry_failed": "False",

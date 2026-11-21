@@ -27,14 +27,27 @@ The speed receipts were produced by the harness in
 `all_languages.sh` (CPU modes) and a GPU phase, `bench.py` times each cell in a fresh
 pinned process and checks every answer against the system's own accuracy run, and
 `native/` is the Rust worker for udlex. The CPU cells of the other systems were reused
-from an earlier session on the same machine with the same harness;
+from an earlier session on the same machine with an earlier version of the harness;
 [`evidence/speed/REUSED.md`](evidence/speed/REUSED.md) says which, and each reused cell
 carries `reused_from`.
 
+Each start of a run snapshots the environment, including the SHA-256 of every harness
+file (`environment*.json`; those of the reused run are under `evidence/speed/reused/`).
+The harness changed between starts: the reused competitor cells were timed by an
+earlier `bench.py`, and the udlex cells by the version committed in
+`../emnlp/experiments/speed` at "Add the C9 speed harness as it ran", which differs from
+the measured files only in reading the list of paused services from `UDLEX_SPEED_PAUSE`.
+The first 16 udlex cells (Abkhaz, and one Abaza cell) were timed before a restart, by
+the `bench.py` of `environment.json`, which differs only in not skipping languages
+whose cells are all done.
+The worker (`worker.py`) and the native udlex worker have the same hashes in every
+snapshot.
+
 `scripts/collect_evidence.py` copied the receipts and the release manifest into this
 directory. It keeps every measured value and drops what describes the machine's other
-users: names of foreign processes (their CPU share stays) and absolute paths. The
-SHA-256 of each original file is in [`evidence/sources.json`](evidence/sources.json).
+users: names of foreign processes (their CPU share stays), free-text operator notes and
+absolute paths. The SHA-256 of each original file is in
+[`evidence/sources.json`](evidence/sources.json).
 Running it again on the same originals gives byte-identical files.
 
 ## Comparison rules
