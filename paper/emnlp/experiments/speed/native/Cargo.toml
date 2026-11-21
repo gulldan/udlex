@@ -1,0 +1,18 @@
+[package]
+name = "udlex-speed"
+version = "0.1.0"
+edition = "2024"
+publish = false
+description = "Native udlex worker of the speed harness (same protocol as worker.py)"
+
+[dependencies]
+# run.sh copies this directory to $RUN/harness/speed and udlex at the measured commit to $RUN/src-udlex.
+udlex-rs = { path = "../../../src-udlex/rust", default-features = false, features = ["infer"] }
+serde_json = "1"
+
+# The wheel's own release profile (rust/Cargo.toml); a dependency's profile is ignored.
+[profile.release]
+lto = true
+codegen-units = 1
+
+[workspace]
