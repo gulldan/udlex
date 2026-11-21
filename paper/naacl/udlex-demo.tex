@@ -1,0 +1,308 @@
+\documentclass[11pt]{article}
+\usepackage[final]{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{inconsolata}
+\usepackage{booktabs}
+\usepackage{graphicx}
+
+\input{generated/numbers}
+
+\title{udlex: Dictionary Lemmatization for \relLangs{} Languages\\
+at Tens of Millions of Words per Second on One Core}
+
+\author{Maksim Kleshchenok \\
+  Independent Researcher}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We present udlex, a lemmatizer that answers from compiled dictionaries and
+falls back to learned suffix rules, with no neural model at inference. One
+command rebuilds its dictionaries for \relLangs{} languages from Universal
+Dependencies 2.19 and \relSources{} pinned lexical sources, including
+Wiktionary, UniMorph and \relNational{} national resources. On the official
+test splits of \accOffN{} languages it lemmatizes \accOffMacro\% of gold tokens
+correctly (macro average), against \accOffCopy\% for copying the form. A
+Rust core with Python, C, Go and OpenSearch interfaces processes a median of
+\speedRsOneMedian{} words per second on one CPU core across \speedLangs{}
+languages, and is the fastest of ten measured systems on \speedRsFastestLangs{}
+of the \speedRivalLangs{} languages where another system was timed. Neural
+toolkits remain more accurate where they have models: Stanza reaches
+\accstanzaTheirs\% against \accstanzaOurs\% on \accstanzaN{} shared languages,
+at a throughput thousands of times lower. All dictionaries, receipts and scripts
+are public.
+\end{abstract}
+
+\section{Introduction}
+
+Lemmatization is a preprocessing step in search engines, keyword extraction
+and feature pipelines for named entity recognition, where a corpus may hold
+billions of tokens and the step runs on every document and every query.
+Neural toolkits such as Stanza \citep{qi-etal-2020-stanza}, Trankit
+\citep{nguyen-etal-2021-trankit} and UDPipe~2 \citep{straka-2018-udpipe} are
+the most accurate option for the languages they cover, but they tag
+part of speech first, need a model per language and process at most tens
+of thousands of words per second on one CPU core. Lookup lemmatizers such as simplemma
+\citep{barbaresi-simplemma} and the lookup tables of spaCy
+\citep{honnibal-2020-spacy} are fast, yet each covers a few dozen
+languages with one resource per language.
+
+udlex sits between the two. For each language it compiles a corpus table
+learned from a Universal Dependencies treebank \citep{nivre-etal-2020-universal,ud219},
+one or more external morphological dictionaries in a learned order of
+priority, and a set of suffix rules for words that no table knows. Answers
+are deterministic and every answer reports the stage that produced it. The
+system makes three contributions:
+\begin{itemize}
+\item \textbf{Dictionaries for \relLangs{} languages}, rebuilt from pinned
+inputs by one command and packaged with a license for each of their parts;
+\relNoncommercial{} packages contain noncommercial data and are marked as
+such (\S\ref{sec:dictionaries}).
+\item \textbf{A compiled lookup engine} in Rust, memory-mapped, validated
+when opened, and reachable from Python, C, Go and an OpenSearch analysis
+plugin (\S\ref{sec:engine}).
+\item \textbf{An evaluation on every language} with a test split, against
+nine other lemmatizers on identical test words, with speed and memory
+measured for all systems on one machine (\S\ref{sec:evaluation}).
+\end{itemize}
+
+\section{The lookup cascade}
+\label{sec:engine}
+
+udlex takes a sentence as a list of tokens and returns one lemma per token.
+Each token goes through a fixed cascade of stages and the first stage that
+knows the token answers:
+\begin{enumerate}
+\item \emph{entities}: curated proper names, first with the exact key, then
+lowercased;
+\item \emph{exact}: the corpus table, keyed by the surface form;
+\item \emph{lower}: the lowercased corpus table, and the exact table retried
+with a lowercased key;
+\item \emph{external}: the external dictionaries, exact and then lowercased;
+\item \emph{rule}: the longest matching learned suffix rewrite;
+\item \emph{identity}: the form itself.
+\end{enumerate}
+The external table holds the dictionaries merged in a learned priority
+order: when two sources disagree on a form, the earlier source owns the
+entry. Per-language options, such as an adapter that maps dictionary lemmas to the
+treebank's conventions or a compound-boundary marker, are decided on
+development data when the dictionary is built and stored with it.
+
+Tables are compiled into a bundle that the engine memory-maps. A table is
+stored as a double-array trie, a finite-state transducer, or a hybrid that
+keeps keys of up to eight bytes in a double array and longer keys in a hash
+index with the lemma inline. All tables of the release that hold external
+dictionaries use the hybrid, the fastest of the codecs on these lookups in
+our measurements. A lemma that equals
+its form is not copied: the engine returns a borrowed slice of the input, so
+the common path allocates nothing. Bundles carry checksums and are validated
+when opened, so a truncated or corrupted file fails to load instead of
+returning wrong lemmas.
+
+\paragraph{Interfaces.} The Python package wraps the Rust core through PyO3:
+{\small
+\begin{verbatim}
+import udlex
+lex = udlex.load("bundles", "fin")
+lex.lemmatize(["Kirjakaupat", "olivat"])
+lex.lemmatize_many(sentences)
+lex.lemmatize_with_info(tokens)  # + stage
+\end{verbatim}
+}
+A command-line tool lists, compiles and verifies bundles and maintains a
+user dictionary, a small overlay of corrections with atomic updates and
+rollback that takes precedence over the shipped tables. The same core is
+exposed as a C library, through Go bindings, and as an OpenSearch 3.10
+analysis plugin that ships with all \relLangs{} dictionaries.
+
+\section{Building the dictionaries}
+\label{sec:dictionaries}
+
+A single script fetches every input by URL and SHA-256, splits the treebanks,
+extracts form--lemma pairs, decides the source order, packages and evaluates.
+Each package records the hash of every input it was built from.
+
+\paragraph{Corpora.} Each language anchors on one UD~2.19 treebank. Of the
+\relLangs{} languages, \accOffN{} have an official train and test split. For
+\accTwoN{} test-only treebanks the evaluation uses two folds: a dictionary
+learned on one half is scored on the other, and the shipped dictionary is
+learned on all of it. \relNoCorpus{} languages have no treebank in UD~2.19 and
+ship external dictionaries only. When a treebank lacks a development split, a
+tenth of the training documents, chosen by hash, serves as one.
+
+\paragraph{External dictionaries.} The \relSources{} sources are Wiktionary
+editions extracted with Wiktextract \citep{ylonen-2022-wiktextract},
+UniMorph \citep{kirov-etal-2018-unimorph}, MULTEXT-East
+\citep{erjavec-2012-multext}, CC-CEDICT and \relNational{} national
+resources, among them the Polish SGJP and PoliMorf, Slovenian Sloleks,
+Icelandic B\'IN, Swedish SALDO, Latvian T\=ezaurs and Russian OpenCorpora.
+A license policy excludes sources with copyleft or unclear terms; the
+packages are under CC~BY-SA, CC~BY or CC~BY-NC-SA.
+
+\paragraph{Source order.} The external dictionaries start in a declared order
+by family: national resources and CC-CEDICT, then UniMorph, then Wiktionary. An order
+learned on held-out training words replaces it only when it fixes
+significantly more development words than it breaks (McNemar test,
+$p \le 0.05$, with a minimum net gain); per-language options pass the same
+gate. Without development data the declared order stays.
+
+\paragraph{Licenses.} A package records the license of each table and the
+attribution of each source, in the format of spaCy's package metadata. A
+package containing any noncommercial part is named \texttt{-nc}. The
+\relLangs{} packages take \relArchiveGB{}~GB compressed (median
+\relArchiveMedianKB{}~kB, largest \relArchiveMaxMB{}~MB for Finnish) and are
+distributed as release assets, because the largest exceed the size limit of
+the Python package index.
+
+\section{Evaluation}
+\label{sec:evaluation}
+
+\subsection{Accuracy}
+
+We score exact lemma match on gold tokens of the UD~2.19 test split. On the
+\accOffN{} languages with an official split, udlex reaches a macro average of
+\accOffMacro\% (\accOffPooled\% of all \accOffTokens{} tokens), against
+\accOffCopy\% for copying the form. On the \accTwoN{} two-fold languages it
+reaches \accTwoMacro\%, against \accTwoCopy\%; these treebanks are small,
+often a few hundred sentences.
+
+Table~\ref{tab:accuracy} compares udlex with other lemmatizers on identical
+test words. Each row uses only the languages that system covers, so rows are
+not comparable with each other. We drop a language for a system when its
+model was trained on data containing more than 1\% of our test sentences
+(the UD release behind each model is known), when its Stanza package has no
+lemmatizer, or when Stanza's lemma dictionary already knows at least half of
+the test words that our training split lacks.
+
+\begin{table}[t]
+\centering\small
+\setlength{\tabcolsep}{2.8pt}
+\begin{tabular}{lrrrrr}
+\toprule
+System & Langs & Theirs & udlex & $\Delta$ & udlex $>$ / $<$ \\
+\midrule
+\accuracyRows
+\bottomrule
+\end{tabular}
+\caption{Macro-averaged lemma accuracy (\%) on identical UD~2.19 test words.
+Each row averages over the languages that system covers after removing test
+leakage; the last column counts languages where udlex is more / less
+accurate.}
+\label{tab:accuracy}
+\end{table}
+
+udlex is more accurate than every dictionary or statistical lemmatizer on its
+shared languages: \accudpipeOneOurs\% against \accudpipeOneTheirs\% for
+UDPipe~1 on \accudpipeOneN{} languages and \accsimplemmaOurs\% against
+\accsimplemmaTheirs\% for simplemma on \accsimplemmaN. Against Trankit
+it is ahead on average but not everywhere. The two neural toolkits trained on
+recent UD releases remain more accurate: Stanza reaches \accstanzaTheirs\%
+against \accstanzaOurs\% for udlex on \accstanzaN{} languages, and UDPipe~2
+\accudpipeTwoTheirs\% against \accudpipeTwoOurs\% on \accudpipeTwoN. They see the sentence and
+the part of speech; udlex sees one token at a time.
+
+\subsection{Speed and memory}
+
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{lrrrrrrr}
+\toprule
+& & \multicolumn{3}{c}{One core} & \multicolumn{2}{c}{Parallel} & Peak RSS, MB \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-7}
+System & Langs & words/s & udlex-rs $\times$ & udlex-py $\times$ & words/s & udlex-rs $\times$ & theirs / udlex-rs \\
+\midrule
+\speedRows
+\bottomrule
+\end{tabular}
+\caption{Throughput of other systems and udlex's speed-up over them, on the
+languages each system was timed on. Rates are medians over languages;
+speed-ups are geometric means of per-language ratios. ``Parallel'' is the
+better of 16 processes and 16 threads on 16 physical cores, or one RTX~4090
+for neural systems, against udlex's Rust core on 16 threads.}
+\label{tab:speed}
+\end{table*}
+
+All systems were timed on one machine, an AMD Ryzen~9 7950X with 16 cores
+and an RTX~4090, on the UD~2.19 test sentences of all \speedLangs{} languages
+that have both a test text and a dictionary. A cell is one language, system
+and mode in a fresh process pinned to its cores: one core, 16 processes or
+16 threads on one hardware thread of each physical core, or the GPU. A cell
+times three windows of at least a second, each on a new sample of sentences
+drawn with replacement; we report the median over three rounds in shuffled
+order. Input is pre-tokenized. Neural systems run the pipeline their
+lemmatizer requires, including tagging. Every answer in a window is compared
+with the system's answers in the accuracy run; udlex differed in
+\speedMismatch{} of \speedChecked{} checked answers.
+
+Table~\ref{tab:speed} shows the result. On one core, udlex's Rust core
+processes a median of \speedRsOneMedian{} words per second
+(\speedRsOneMin{} to \speedRsOneMax{} across languages) and its Python
+binding \speedPyOneMedian. The nearest competitor is simplemma, which udlex
+outruns by a factor of \speedsimplemmaUp{} on \speedsimplemmaN{} shared
+languages; the only language where it does not win is Georgian (kat), where
+simplemma is faster by a percent. On an RTX~4090, Stanza processes a median
+of \speedstanzaGpu{} words per second, and udlex on one CPU core is still
+\speedstanzaGpuOneUp{} times faster on the same languages. On 16
+threads udlex reaches a median of \speedRsSixteenMedian{} words per second.
+Opening a bundle and answering the first sentence takes a median of
+\loadRsMedianMs{}~ms and at most \loadRsMaxMs~ms, for the largest bundle
+(Finnish). udlex's peak memory includes the test text that the timing
+process holds.
+
+\paragraph{Measurement conditions.} The \cellsNew{} cells of udlex and of the
+GPU systems were timed with the machine's other services paused, with a
+median foreign load of \foreignNew{} cores. The \cellsReused{} CPU cells of
+the other systems come from an earlier session on the same machine with the
+same harness, when other processes used a median of \foreignReused{} cores;
+their models and inputs do not depend on udlex's dictionaries. Each cell
+records its foreign load.
+
+\section{Related work}
+
+Dictionary information already helps neural lemmatizers, as extra training
+data \citep{bergmanis-goldwater-2019-data} or as candidate analyses at
+inference \citep{milintsevich-sirts-2021-enhancing}, and lemma generation
+without language-specific training has been studied with large language models
+\citep{toporkov-etal-2025-lemma}. LemmaGen \citep{jursic-etal-2010-lemmagen}
+learns ripple-down suffix rules, and UDPipe~1 \citep{straka-strakova-2017-tokenizing}
+a tagger with lemma rules. udlex combines corpus tables, ordered dictionaries
+and suffix rules and targets throughput and coverage rather than the last
+point of accuracy.
+
+\section{Conclusion}
+
+udlex lemmatizes \relLangs{} languages from compiled dictionaries, is the
+fastest measured lemmatizer on nearly every language, and is more accurate
+than the other non-neural systems we compared. Neural toolkits remain the
+choice when the last points of accuracy matter more than throughput. The
+code is MIT-licensed; dictionaries, evaluation receipts and the scripts that
+produced every table are public.
+
+\section*{Limitations}
+
+udlex lemmatizes one token at a time and cannot resolve forms whose lemma
+depends on context; this is the main gap to Stanza and UDPipe~2. Two-fold
+scores come from small treebanks whose halves may share documents. For the
+languages without a development split, the dictionary builder introduced the
+development carve-out after the first test evaluation, so those scores are
+partly exploratory. Accuracy on languages without a treebank is unmeasured.
+Speed numbers depend on the CPU and on the token mix of the UD test texts,
+which repeat frequent words; the competitor CPU cells were timed under a
+slightly higher background load than udlex's.
+
+\section*{Ethical considerations}
+
+The dictionaries are derived from public resources and keep their licenses
+and attribution. Packages with noncommercial parts are marked; users must
+follow each package's license. Lemmatization quality differs widely across
+languages, which can disadvantage speakers of low-resource languages in
+downstream systems.
+
+\bibliography{references}
+
+\end{document}
