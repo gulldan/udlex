@@ -33,7 +33,7 @@ def main():
         a, b = home["kinds"][key], away["kinds"][key]
         lines.append(
             f"{label} & {a['win']:,} / {a['loss']:,} & {b['win']:,} / {b['loss']:,}"
-            + r" \\"
+            r" \\"
         )
     totals = [
         tuple(sum(t["kinds"][k][o] for k, _ in KINDS) for o in ("win", "loss"))
@@ -49,7 +49,7 @@ def main():
             )
     lines.append(
         r"\midrule All & "
-        + " & ".join(f"{w:,} / {l:,}" for w, l in totals)
+        + " & ".join(f"{w:,} / {lo:,}" for w, lo in totals)
         + r" \\"
         + "\n"
         + r"\bottomrule\end{tabular*}"

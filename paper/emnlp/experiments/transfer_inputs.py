@@ -14,8 +14,8 @@ from pathlib import Path
 # Run with -I: corpora are untrusted input, so only this directory joins the path.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from order_inputs import fingerprint, sentences, valid  # noqa: E402
-from verify_snapshot import EVIDENCE, read, save, sha  # noqa: E402
+from order_inputs import fingerprint, sentences, valid
+from verify_snapshot import EVIDENCE, read, save, sha
 
 GOLD = {
     "manual native",
@@ -46,7 +46,7 @@ def config(bank):
 
 def contributors(bank):
     text = min(bank.glob("README*")).read_text(errors="replace")
-    found = re.search(r"^Contributors:[ \t]*(.*)$", text, re.M)
+    found = re.search(r"^Contributors:[ \t]*(.*)$", text, re.MULTILINE)
     return (
         {n.strip().casefold() for n in found[1].split(";") if n.strip()}
         if found
@@ -121,7 +121,7 @@ def language(job):
                 continue
             if any(f.name.startswith(code + "_") for f in bank.glob("*.conllu")):
                 text = min(bank.glob("README*")).read_text(errors="replace")
-                found = re.search(r"^Lemmas:[ \t]*(.*)$", text, re.M)
+                found = re.search(r"^Lemmas:[ \t]*(.*)$", text, re.MULTILINE)
                 status = found[1].strip() if found else "not available"
                 tier = (
                     "gold"

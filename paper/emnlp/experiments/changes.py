@@ -36,7 +36,7 @@ def kind(form, declared, learned):
     short, long = sorted((a, b), key=len)
     if long.startswith(short):
         return "nested"  # a shorter and a longer base, such as stem and infinitive
-    shared = len(os.path.commonprefix([short, long]))
+    shared = len(os.path.commonprefix([short, long]))  # noqa: RUF071 - words, not paths
     if shared >= 3 and 2 * shared >= len(long):
         return "ending"
     return "other"

@@ -57,7 +57,7 @@ def _measure(catalog_dir: Path, binary: Path) -> dict[str, object]:
                     msg = f"{iso}: exact.hybrid digest mismatch"
                     raise ValueError(msg)
                 # The caller supplies the locally compiled measurement binary.
-                result = subprocess.run(  # noqa: S603
+                result = subprocess.run(
                     [binary],
                     input=image,
                     stdout=subprocess.PIPE,

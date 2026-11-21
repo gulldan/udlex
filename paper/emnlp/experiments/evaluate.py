@@ -2,7 +2,6 @@
 
 import argparse
 import hashlib
-import json
 import os
 import re
 import shutil
@@ -13,9 +12,9 @@ from collections import Counter, defaultdict
 from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
 
-import udlex
-
 from verify_snapshot import CATALOG, EVIDENCE, read, save, sha
+
+import udlex
 
 UD218 = "a93fe8520bc4c5ff34670d9a93a5a7689c018c1e59643fa27e03036717841b8a"
 ARMS = (
@@ -82,7 +81,7 @@ def dictionary_sources(row, release, cache):
             if not path.exists():
                 tmp = path.with_suffix(f".{os.getpid()}.tmp")
                 with (
-                    urllib.request.urlopen(url, timeout=60) as remote,
+                    urllib.request.urlopen(url, timeout=60) as remote,  # noqa: S310 - pinned https source
                     tmp.open("wb") as out,
                 ):
                     shutil.copyfileobj(remote, out)
@@ -181,7 +180,7 @@ def score_language(job):
             "counts": {a: scores[a] for a in ARMS},
             "block_types": dict(Counter(b[0] for b in clusters)),
             "sentences_by_block_type": dict(kinds),
-            "block_histogram": [list(k) + [m] for k, m in sorted(histogram.items())],
+            "block_histogram": [[*list(k), m] for k, m in sorted(histogram.items())],
         }
     value = {
         "iso": iso,

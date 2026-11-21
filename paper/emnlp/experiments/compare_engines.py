@@ -93,7 +93,7 @@ def stanza_pipeline(lang, config, models):
 def udpipe_service(treebank, release):
     """Tag pretokenized sentences with the model trained on one treebank."""
     model = f"{treebank[3:].lower()}-{release}"
-    with urllib.request.urlopen(UDPIPE + "models", timeout=60) as reply:
+    with urllib.request.urlopen(UDPIPE + "models", timeout=60) as reply:  # noqa: S310 - fixed https service
         if model not in json.load(reply)["models"]:
             raise LookupError(f"the service has no model {model}")
 
@@ -113,7 +113,7 @@ def udpipe_service(treebank, release):
             ).encode()
             for attempt in range(5):
                 try:
-                    with urllib.request.urlopen(
+                    with urllib.request.urlopen(  # noqa: S310 - fixed https service
                         UDPIPE + "process", query, timeout=600
                     ) as reply:
                         result = json.load(reply)["result"]
@@ -181,7 +181,7 @@ def trankit_pipeline(lang, treebank, cache):
             for i, s in enumerate(batch, 1)
         ]
         # What nlp(batch) does minus the entity tagger: the lemmatizer reads predicted tags.
-        answer = nlp._lemmatize_doc(nlp._posdep_doc(doc))
+        answer = nlp._lemmatize_doc(nlp._posdep_doc(doc))  # noqa: SLF001 - no public tagger-only call
         return [[t.get("lemma") or t["text"] for t in s["tokens"]] for s in answer]
 
     return run, f"{name}/xlm-roberta-large"
@@ -337,11 +337,9 @@ def run(a):
             )
             for name, (config, treebank, test) in sorted(targets.items())
         ]
-        cells = {}
         slow = engine in SLOW or engine in UDPIPE_RELEASE
         with ProcessPoolExecutor(a.stanza_jobs if slow else a.jobs) as pool:
-            for _, iso, record in pool.map(cell, jobs):
-                cells[iso] = record
+            cells = {iso: record for _, iso, record in pool.map(cell, jobs)}
         package = "spacy" if engine in SPACY_SIZE else ADAPTERS.get(engine, engine)
         try:
             release = UDPIPE_RELEASE.get(engine) or version(package)
@@ -361,8 +359,8 @@ def run(a):
 
 def screen(a):
     """Does a Stanza lemma dictionary hold test words that the official training split lacks?"""
-    import stanza.models.lemma.trainer as trainer
     import torch
+    from stanza.models.lemma import trainer
 
     unpack = next(getattr(trainer, n) for n in dir(trainer) if n.startswith("_unpack"))
     report = {}
@@ -447,7 +445,7 @@ def summarize(a):
     save(a.output / "summary.json", report)
     for name, v in sorted(report.items(), key=lambda kv: -kv[1]["languages"]):
         print(
-            f"{name:18s} {str(v['version']):10s} langs={v['languages']:2d} theirs={v['macro_accuracy']:.2f} "
+            f"{name:18s} {v['version']!s:10s} langs={v['languages']:2d} theirs={v['macro_accuracy']:.2f} "
             f"declared={v['declared_macro_accuracy']:.2f} confirmed={v['confirmed_macro_accuracy']:.2f} "
             f"above={v['languages_above_declared']}"
         )

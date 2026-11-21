@@ -18,7 +18,7 @@ for lang_dir in sorted(p for p in inputs.iterdir() if (p / "test.jsonl").exists(
         continue
     lex = udlex.Lexicon(str(bundles / iso))
     c = collections.Counter()
-    with open(lang_dir / "test.jsonl") as f:
+    with (lang_dir / "test.jsonl").open() as f:
         for line in f:
             s = json.loads(line)
             for i, (tok, gold) in enumerate(zip(s["tokens"], s["lemmas"], strict=True)):
@@ -29,6 +29,6 @@ for lang_dir in sorted(p for p in inputs.iterdir() if (p / "test.jsonl").exists(
     if not n:
         print(iso, "no lemmatised test tokens", flush=True)
         continue
-    result[iso] = {"tokens": n, **{k: v for k, v in sorted(c.items())}}
+    result[iso] = {"tokens": n, **dict(sorted(c.items()))}
     print(iso, n, f"exact {100 * c['exact'] / n:.1f}%", flush=True)
 out.write_text(json.dumps(result, indent=1, sort_keys=True))

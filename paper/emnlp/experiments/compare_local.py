@@ -14,7 +14,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))  # python -I drops it
 
-from verify_snapshot import read, save  # noqa: E402
+from verify_snapshot import read, save
 
 # Binaries, models and caches of the tools; nothing is written elsewhere.
 TOOLS = Path("/mnt/hdd-4tb/codex-runs/udlex-compare-20261119/venvs")
@@ -59,7 +59,7 @@ def post(url, fields):
     query = urllib.parse.urlencode(fields).encode()
     for attempt in range(5):
         try:
-            with urllib.request.urlopen(url, query, timeout=600) as reply:
+            with urllib.request.urlopen(url, query, timeout=600) as reply:  # noqa: S310 - fixed https service
                 return json.load(reply)["result"]
         except OSError:
             time.sleep(10 * (attempt + 1))
@@ -313,7 +313,7 @@ def opennlp(code):
 
     def run(batch):
         # The lemmatizer needs tags; the tool's own tagger supplies them.
-        done = subprocess.run(
+        done = subprocess.run(  # noqa: S602 - a fixed pipe between two tool commands
             f"{tool} POSTagger {pos} | {tool} LemmatizerME {lemmas}",
             shell=True,
             input="".join(" ".join(s) + "\n" for s in batch),
@@ -399,7 +399,8 @@ def score(run, test, keep):
     for start in range(0, len(data), CHUNK):
         part = data[start : start + CHUNK]
         answers = run([words for words, _ in part])
-        for (words, gold), lemmas in zip(part, answers, strict=True):
+        for (words, gold), answer in zip(part, answers, strict=True):
+            lemmas = answer
             if lemmas is None or len(lemmas) != len(words):
                 lemmas = [None] * len(words)  # the tool changed the tokenization
             kept.append(lemmas)
@@ -424,7 +425,7 @@ def score(run, test, keep):
 
 
 def main(a):
-    global TOOLS
+    global TOOLS  # noqa: PLW0603 - the engine loaders read the venv root set here
     TOOLS = a.tools
     inv = read(a.order / "inventory.json")["languages"]
     anchor = a.output / "udpipe2.json"

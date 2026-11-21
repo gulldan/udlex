@@ -14,8 +14,7 @@ SHARED = 0.10
 
 
 def net(runs, arm=1):
-    c = sum((Counter(r["test"]["counts"][arm]) for r in runs), Counter())
-    return c
+    return sum((Counter(r["test"]["counts"][arm]) for r in runs), Counter())
 
 
 def leave_one_out(view):
@@ -80,7 +79,7 @@ def main(a):
         )
         runs[group].append((cfg, iso, dict(r, corpus=cfg)))
 
-    def cohort(group, keep=lambda cfg: True, floor=FLOOR):
+    def cohort(group, keep=lambda _cfg: True, floor=FLOOR):
         by = defaultdict(list)
         for cfg, iso, r in runs[group]:
             if keep(cfg):
@@ -131,7 +130,7 @@ def main(a):
                 direction[f"{signs[0]:+d} then {signs[1]:+d}"] += 1
     if stamps != {read(a.released / "summary.json")["binary"]["executable"]}:
         raise ValueError("Results do not come from the executable of the released fit")
-    summary = {name: summarize(v, True) for name, v in views.items() if v}
+    summary = {name: summarize(v, bootstrap=True) for name, v in views.items() if v}
     summary.update(
         executable=stamps.pop(),
         floor=FLOOR,
@@ -154,7 +153,7 @@ def main(a):
         screen=dict(
             sum((Counter(v.get("screen", {})) for v in corpora.values()), Counter())
         ),
-        flagged_sources={k: v for k, v in sorted(flags.items())},
+        flagged_sources=dict(sorted(flags.items())),
         in_domain_then_transfer_sign=dict(direction),
         leave_one_language_out={
             k: leave_one_out(views[k]) for k in ("primary", "official_fit")
@@ -165,7 +164,7 @@ def main(a):
                     "gold",
                     lambda cfg, flag=flag: corpora[cfg]["shared_contributors"] == flag,
                 ),
-                True,
+                bootstrap=True,
             )
             for flag in (True, False)
         },

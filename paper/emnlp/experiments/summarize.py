@@ -7,7 +7,6 @@ from collections import Counter
 from pathlib import Path
 
 import numpy as np
-
 from verify_snapshot import read, save, sha
 
 ARMS = ("copy", "lookup", "full")

@@ -9,8 +9,10 @@ ROOT = Path(__file__).resolve().parent
 OUT = ROOT.parent.parent / "output/udlex-emnlp-supplement.zip"
 # The repository slug is the only identifying string in the shipped files.
 SLUG = re.compile("gull" + "dan/udlex")
-IDENTITY = re.compile(r"gull" + r"dan|/Users/|/mnt/|/home/|qw" + r"erty|noreply", re.I)
-EMAIL = re.compile(r"[\w.+-]+@[\w-]+\.[a-z]{2,}", re.I)
+IDENTITY = re.compile(
+    r"gull" + r"dan|/Users/|/mnt/|/home/|qw" + r"erty|noreply", re.IGNORECASE
+)
+EMAIL = re.compile(r"[\w.+-]+@[\w-]+\.[a-z]{2,}", re.IGNORECASE)
 PROSE = {".py", ".md", ".rs", ".tex"}
 
 

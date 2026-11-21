@@ -10,7 +10,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from verify_snapshot import read, save  # noqa: E402
+from verify_snapshot import read, save
 
 TYPES, SHARE = 200, 0.98
 MARKED, MARKED_SHARE = 30, 0.50

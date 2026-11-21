@@ -31,8 +31,10 @@ def main():
                 )
     lines = [
         r"\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrrrrrr@{}}",
-        r"\toprule Evaluation set & Lang. & Words & Declared & Learned $\Delta$ (95\% int.)"
-        r" & Confirmed $\Delta$ & Corr. / regr. \\\midrule",
+        (
+            r"\toprule Evaluation set & Lang. & Words & Declared & Learned $\Delta$ (95\% int.)"
+            r" & Confirmed $\Delta$ & Corr. / regr. \\\midrule"
+        ),
     ]
     for view, label in ROWS:
         v = s[view]
@@ -96,7 +98,7 @@ def main():
     named = [
         loo["official_fit"][k] for k in ("lowest_micro_without", "lowest_macro_without")
     ]
-    if named + [loo["primary"]["lowest_macro_without"]] != ["hun", "tur", "tgl"]:
+    if [*named, loo["primary"]["lowest_macro_without"]] != ["hun", "tur", "tgl"]:
         raise ValueError(
             "The manuscript names Hungarian, Turkish and Tagalog as most influential"
         )

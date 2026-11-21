@@ -8,11 +8,11 @@ from collections import defaultdict
 from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
 
-import udlex
-
 from evaluate import score_language
 from order_inputs import RELEASES
 from verify_snapshot import EVIDENCE, read, save, sha
+
+import udlex
 
 
 def main(args):

@@ -8,7 +8,6 @@ from collections import Counter
 from pathlib import Path
 
 import numpy as np
-
 from order_summary import SEED, summarize
 from verify_snapshot import read, save
 
@@ -65,13 +64,16 @@ def inference(rows, rng):
 
 def stress(groups, flagged):
     rng = np.random.default_rng(SEED)
-    confirmed = lambda dev: accepts(dev, 0.05, True)  # noqa: E731
+
+    def confirmed(dev):
+        return accepts(dev, 0.05, floor=True)
+
     clean = {i: v for i, v in groups.items() if i not in flagged}
     return {
         "learned": inference(by_language(groups), rng),
         "confirmed": inference(by_language(groups, confirmed), rng),
         "flagged_languages": sorted(set(groups) & flagged),
-        "without_flagged": summarize(clean, True)["arms"] if clean else None,
+        "without_flagged": summarize(clean, bootstrap=True)["arms"] if clean else None,
         "confirmation_grid": [
             dict(
                 alpha=alpha,

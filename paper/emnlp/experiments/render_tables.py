@@ -1,7 +1,5 @@
 """Generate LaTeX results tables from the complete language and treebank ledgers."""
 
-from pathlib import Path
-
 from verify_snapshot import EVIDENCE, read
 
 # Some package labels repeat the ISO code. These are the corresponding UD names.

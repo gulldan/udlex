@@ -13,7 +13,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from verify_snapshot import read, sha  # noqa: E402
+from verify_snapshot import read, sha
 
 TOKEN = re.compile(r'<w\b[^>]*?lemma="([^"]*)"[^>]*>([^<]*)</w>|<c\b[^>]*>([^<]*)</c>')
 
@@ -23,7 +23,7 @@ def fetch(name, spec, cache):
     if not path.exists():
         path.parent.mkdir(parents=True)
         with (
-            urllib.request.urlopen(spec["url"], timeout=300) as remote,
+            urllib.request.urlopen(spec["url"], timeout=300) as remote,  # noqa: S310 - pinned https source
             path.open("wb") as out,
         ):
             shutil.copyfileobj(remote, out)
@@ -75,8 +75,8 @@ def rows(text, name):
         yield doc or name, sid, tag, sent
 
 
-def tei(text, name):
-    for found in re.finditer(r'<s xml:id="([^"]+)">(.*?)</s>', text, re.S):
+def tei(text, _name):
+    for found in re.finditer(r'<s xml:id="([^"]+)">(.*?)</s>', text, re.DOTALL):
         sent = [
             (html.unescape(w or c), html.unescape(lemma if w or lemma else c))
             for lemma, w, c in TOKEN.findall(found[2])
@@ -107,7 +107,7 @@ def people(names):
     return "; ".join(dict.fromkeys(found))
 
 
-def credits(corpus, specs, cache):
+def contributors(corpus, specs, cache):
     if "contributors" in corpus:
         return corpus["contributors"]
     if corpus["parser"] == "tei":
@@ -121,7 +121,7 @@ def credits(corpus, specs, cache):
         text = next(texts(fetch(c["download"], specs[c["download"]], cache), c, None))[
             1
         ]
-        return people(re.search(rf"^{c['line']}: (.*)$", text, re.M)[1])
+        return people(re.search(rf"^{c['line']}: (.*)$", text, re.MULTILINE)[1])
     return ""
 
 
@@ -162,7 +162,7 @@ def main(a):
         (bank / "README.md").write_text(
             f"# {corpus['treebank']}\n\nConverted for the transfer test from {urls}\n\n"
             f"Basis: {corpus['basis']}\nLemmas: {corpus['lemmas']}\n"
-            f"Contributors: {credits(corpus, specs, a.cache)}\n"
+            f"Contributors: {contributors(corpus, specs, a.cache)}\n"
         )
         print(corpus["config"], tokens, flush=True)
 

@@ -8,9 +8,9 @@ import tempfile
 from collections import Counter
 from pathlib import Path
 
-import udlex
-
 from verify_snapshot import save, sha
+
+import udlex
 
 
 def main(binary):
@@ -51,13 +51,13 @@ def main(binary):
                 "".join(x + "\t" + y + "\n" for x, y in sorted(mapping.items()))
             )
             inputs.append(
-                dict(
-                    id=names[j],
-                    path=file.name,
-                    sha256=sha(file),
-                    lemma_first=False,
-                    unique=True,
-                )
+                {
+                    "id": names[j],
+                    "path": file.name,
+                    "sha256": sha(file),
+                    "lemma_first": False,
+                    "unique": True,
+                }
             )
         save(
             root / "inventory.json",
@@ -121,21 +121,21 @@ def main(binary):
             entries = dict(tables.write_sources(str(dst), "full", (0.0, 0.0)))
             save(
                 dst / "meta.json",
-                dict(
-                    name="eng",
-                    iso639_3="eng",
-                    language="English",
-                    format_version=5,
-                    source="enumerated fixture",
-                    training_tokens=len(train),
-                    max_suffix=6,
-                    variant="full",
-                    entity_encoding="namespaced-v1",
-                    entries=entries,
-                    token_case="keep",
-                    normalization="NFC+locale-v1",
-                    traffic={},
-                ),
+                {
+                    "name": "eng",
+                    "iso639_3": "eng",
+                    "language": "English",
+                    "format_version": 5,
+                    "source": "enumerated fixture",
+                    "training_tokens": len(train),
+                    "max_suffix": 6,
+                    "variant": "full",
+                    "entity_encoding": "namespaced-v1",
+                    "entries": entries,
+                    "token_case": "keep",
+                    "normalization": "NFC+locale-v1",
+                    "traffic": {},
+                },
             )
             udlex.compile_bundle(str(dst))
             lex = udlex.Lexicon(str(dst), use_user=False)

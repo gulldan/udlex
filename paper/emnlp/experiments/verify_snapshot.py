@@ -8,7 +8,6 @@ import subprocess
 import zipfile
 from pathlib import Path
 
-
 MAIN = "7afe2fe8f3ea6ea56fff835bbc61d8af49da731f"
 TAG = "2270bc1cb1c7144a85cf581318ca669417608fe4"
 CATALOG = "57be9c16077c1a81ccb1f04d5fdac101364133f08f90e70069925e0cfea4804b"

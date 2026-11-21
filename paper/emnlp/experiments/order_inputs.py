@@ -5,9 +5,10 @@ import json
 from collections import Counter
 from pathlib import Path
 
-from udlex.language_codes import source_language_candidates
 from evaluate import UD218, fingerprint, sentences
 from verify_snapshot import EVIDENCE, read, save, sha
+
+from udlex.language_codes import source_language_candidates
 
 MARKERS = {
     "de_hdt": {"unknown", "-", "NULL"},
@@ -157,15 +158,15 @@ def main(a):
         raise ValueError(f"UD {a.release} archive hash mismatch")
     regfile = a.research / "registry/imported_sources.json"
     specs = [
-        dict(
-            id="dictionary",
-            folder="dictionaries",
-            priority=0,
-            manifest_required=True,
-            exclude=["hun"],
-        ),
-        dict(id="unimorph", folder="unimorph", priority=200, lemma_first=True),
-        dict(id="wiktionary", folder="kaikki", priority=210),
+        {
+            "id": "dictionary",
+            "folder": "dictionaries",
+            "priority": 0,
+            "manifest_required": True,
+            "exclude": ["hun"],
+        },
+        {"id": "unimorph", "folder": "unimorph", "priority": 200, "lemma_first": True},
+        {"id": "wiktionary", "folder": "kaikki", "priority": 210},
     ]
     specs.extend(
         dict(v, folder="imported/" + v["directory"]) for v in read(regfile)["sources"]
@@ -185,7 +186,7 @@ def main(a):
         # A language outside the catalog has no preferred treebank.
         preferred = catalog.get(iso, {}).get("main", {}).get("config", "\0")
 
-        def priority(path):
+        def priority(path, preferred=preferred):
             train = path.with_name(path.name.replace("-test.conllu", "-train.conllu"))
             return (
                 -int(train.is_file()),

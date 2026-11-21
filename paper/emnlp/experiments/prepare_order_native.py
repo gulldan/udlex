@@ -4,7 +4,6 @@ import argparse
 import shutil
 from pathlib import Path
 
-
 SOLO = """    let mut solo = Vec::new();
     for map in &maps {
         tables.external = eligible
@@ -49,7 +48,7 @@ def expose(path, old, new):
     path.write_text(body.replace(old, new))
 
 
-def prepare(root, disable_rules=False, examples=None):
+def prepare(root, *, disable_rules=False, examples=None):
     src = root / "rust/src"
     if (root / ".git").exists() or not src.is_dir():
         raise ValueError("Use a separate git archive export of the pinned 1.0.0 source")
@@ -100,4 +99,4 @@ if __name__ == "__main__":
     p.add_argument("--disable-rules", action="store_true")
     p.add_argument("--examples", type=int)
     args = p.parse_args()
-    prepare(args.export, args.disable_rules, args.examples)
+    prepare(args.export, disable_rules=args.disable_rules, examples=args.examples)

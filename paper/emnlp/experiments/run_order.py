@@ -4,6 +4,7 @@ import argparse
 import subprocess
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
+
 from verify_snapshot import read, save, sha
 
 

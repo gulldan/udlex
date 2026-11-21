@@ -8,7 +8,6 @@ from collections import Counter
 from pathlib import Path
 
 import numpy as np
-
 from verify_snapshot import read, save, sha
 
 LABELS = ["declared", "learned", "single", "greedy_subset", "exact_subset", "dev_gated"]
@@ -18,15 +17,15 @@ DRAWS = 2000
 
 def gate(dev):
     c = dev["counts"][1]
-    w, l, n = c["wins"], c["losses"], c["tokens"]
-    if w - l < max(5, math.ceil(n / 10000)):
+    w, lo, n = c["wins"], c["losses"], c["tokens"]
+    if w - lo < max(5, math.ceil(n / 10000)):
         return False
-    m = w + l
+    m = w + lo
     term = math.exp(
-        math.lgamma(m + 1) - math.lgamma(l + 1) - math.lgamma(w + 1) - m * math.log(2)
+        math.lgamma(m + 1) - math.lgamma(lo + 1) - math.lgamma(w + 1) - m * math.log(2)
     )
     tail = term
-    for i in range(l, 0, -1):
+    for i in range(lo, 0, -1):
         term *= i / (m - i + 1)
         tail += term
         if term < tail * 1e-15:
@@ -59,7 +58,7 @@ def summarize(groups, bootstrap):
             if bootstrap:
                 h = row["test"]["hist"]
                 vals = np.array(
-                    [v + [v[1 + int(trained)]] for v, _ in h], dtype=np.int64
+                    [[*v, v[1 + int(trained)]] for v, _ in h], dtype=np.int64
                 )
                 multiplicity = np.array([f for _, f in h], dtype=np.int64)
                 if list(multiplicity @ vals) != [metrics[0]["tokens"]] + [
@@ -162,9 +161,11 @@ def main(src, dest):
             fold_unit=cv_ledger.get(iso, {}).get("unit"),
         )
     results = {
-        "official": summarize(groups["official"], True),
-        "cross_validation": summarize(groups["cross_validation"], False),
-        "combined": summarize(groups["official"] | groups["cross_validation"], False),
+        "official": summarize(groups["official"], bootstrap=True),
+        "cross_validation": summarize(groups["cross_validation"], bootstrap=False),
+        "combined": summarize(
+            groups["official"] | groups["cross_validation"], bootstrap=False
+        ),
         "source_inventory_sha256": sha(src / "inputs/order/inventory.json"),
         "binary": read(src / "results/run.json"),
         "cohorts": dict(Counter(v["cohort"] for v in ledger.values())),

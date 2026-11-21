@@ -5,6 +5,7 @@ import hashlib
 import json
 from collections import defaultdict
 from pathlib import Path
+
 from order_inputs import fingerprint, sentences, valid
 from verify_snapshot import read, save, sha
 
@@ -29,7 +30,7 @@ def split_language(row, root):
             ident = (
                 "d:" + doc if doc and not doc.startswith("@line-") else f"s:{split}:{n}"
             )
-            groups[ident].append(dict(tokens=forms, lemmas=lemmas, block=ident))
+            groups[ident].append({"tokens": forms, "lemmas": lemmas, "block": ident})
     if len(groups) == 1:
         group = next(iter(groups.values()))
         groups = {f"s:{n}": [dict(s, block=f"s:{n}")] for n, s in enumerate(group, 1)}
