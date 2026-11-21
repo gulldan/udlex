@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # GPU cells of the all-language C9 run, after its CPU phases: vLLM is stopped for this phase
 # only (the owner allowed about three hours, 20.11.2026) and started again on any exit.
-#   gpu_phase.sh OUT
+#   gpu_phase.sh OUT              the stand as in run.sh
 set -uo pipefail
-RUN=/mnt/hdd-4tb/codex-runs/udlex-speed-20261119
+RUN=${UDLEX_SPEED_RUN:?set UDLEX_SPEED_RUN to the run directory}
 H=$RUN/harness/speed
 PY=$RUN/.venv-udlex/bin/python
-LOCK=/mnt/hdd-2tb/lemmatest-perf-results/.exclusive.lock
+LOCK=${UDLEX_SPEED_LOCK:?set UDLEX_SPEED_LOCK to the exclusive lock file of the stand}
 QUIET=${UDLEX_SPEED_PAUSE:-}  # containers to stop (vLLM), space-separated
 OUT=$1
 LIMIT=${LIMIT:-12600}  # 3.5 hours, then vLLM comes back whatever is left

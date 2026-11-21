@@ -3,13 +3,16 @@
 # Neural systems are timed on one core only: their 16-thread cells stall whenever another
 # process takes a core (final of 19.11). GPU cells go in a separate phase with vLLM off.
 #   all_languages.sh OUT          (server, in tmux) prepare, wait for the stand, time, summarise
+# The stand as in run.sh; UDLEX_SPEED_RELEASE, if set, is a rebuilt release timed instead of
+# the build's own (the build still gives the languages and the Python of prepare).
 set -uo pipefail
-RUN=/mnt/hdd-4tb/codex-runs/udlex-speed-20261119
+RUN=${UDLEX_SPEED_RUN:?set UDLEX_SPEED_RUN to the run directory}
 H=$RUN/harness/speed
-C=/mnt/hdd-4tb/codex-runs/udlex-compare-20261119
-D=/mnt/hdd-4tb/codex-runs/udlex-dicts-20261119
+C=${UDLEX_SPEED_COMPARE:?set UDLEX_SPEED_COMPARE to the quality comparison}
+D=${UDLEX_SPEED_DICTS:?set UDLEX_SPEED_DICTS to the dictionary build}
+export UDLEX_SPEED_DICTS=${UDLEX_SPEED_RELEASE:-$D}
 PY=$RUN/.venv-udlex/bin/python
-LOCK=/mnt/hdd-2tb/lemmatest-perf-results/.exclusive.lock
+LOCK=${UDLEX_SPEED_LOCK:?set UDLEX_SPEED_LOCK to the exclusive lock file of the stand}
 OUT=$1
 # Systems to time, and a file whose presence pauses timing before each cell (a build).
 DICT_SYSTEMS=${DICT_SYSTEMS:-udlex-rs udlex-py spacy-sm spacy-lg simplemma lemmagen3 udpipe1 corenlp}
@@ -17,11 +20,11 @@ NEURAL_SYSTEMS=${NEURAL_SYSTEMS:-stanza trankit spacy-trf}
 PAUSE_FILE=${PAUSE_FILE:-}
 say() { echo "$(TZ=Asia/Tokyo date '+%F %T %Z') $*"; }
 mkdir -p "$OUT"
-LANGS=$("$PY" -I - <<'EOF'
-import json, os
-C = "/mnt/hdd-4tb/codex-runs/udlex-compare-20261119/census/inputs/order"
+LANGS=$("$PY" -I - "$C" "$D" <<'EOF'
+import json, os, sys
+C = f"{sys.argv[1]}/census/inputs/order"
 inv = json.load(open(f"{C}/inventory.json"))["languages"]
-ev = {r["iso639_3"] for r in json.load(open("/mnt/hdd-4tb/codex-runs/udlex-dicts-20261119/release/evaluation.json"))["languages"]}
+ev = {r["iso639_3"] for r in json.load(open(f"{sys.argv[2]}/release/evaluation.json"))["languages"]}
 print(" ".join(sorted(i for i in inv if os.path.exists(f"{C}/{i}/test.jsonl") and i in ev)))
 EOF
 )

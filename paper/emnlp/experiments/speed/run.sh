@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Speed and memory of udlex 1.0.0 against the compared lemmatizers (task C9).
 #
-#   speed/run.sh ship     (laptop) copy the harness and udlex at $COMMIT to gpu-server
+#   speed/run.sh ship     (laptop) copy the harness and udlex at $COMMIT to $UDLEX_SPEED_HOST
 #   run.sh setup          (server) environments, dictionary bundles, udlex reference answers
 #   run.sh smoke          (server) every code path on two CPUs, no lock: times are not results
 #   run.sh auto           (server) the whole measurement unattended, in tmux `speed-auto-<stamp>`:
@@ -13,37 +13,52 @@
 #
 # Every timed step waits for the stand's exclusive lock; no timing runs while the owner's
 # dictionary build is up ($REPRO exists or tmux dicts-repro lives).
+#
+# The stand, from the environment: UDLEX_SPEED_RUN the run directory, UDLEX_SPEED_LOCK the
+# exclusive lock file, UDLEX_SPEED_COMPARE the quality comparison, UDLEX_SPEED_DICTS the
+# dictionary build; optional UDLEX_SPEED_PAUSE, UDLEX_SPEED_INPUTS, REPRO, ORACLE (auto).
 set -euo pipefail
 
-RUN=${RUN:-/mnt/hdd-4tb/codex-runs/udlex-speed-20261119}
+RUN=${UDLEX_SPEED_RUN:?set UDLEX_SPEED_RUN to the run directory}
 H=$(cd "$(dirname "$0")" && pwd)
-LOCK=${LOCK:-/mnt/hdd-2tb/lemmatest-perf-results/.exclusive.lock}
-C=/mnt/hdd-4tb/codex-runs/udlex-compare-20261119
-D=/mnt/hdd-4tb/codex-runs/udlex-dicts-20261119
+LOCK=${UDLEX_SPEED_LOCK:?set UDLEX_SPEED_LOCK to the exclusive lock file of the stand}
+C=${UDLEX_SPEED_COMPARE:?set UDLEX_SPEED_COMPARE to the quality comparison}
+D=${UDLEX_SPEED_DICTS:?set UDLEX_SPEED_DICTS to the dictionary build}
 PY=$RUN/.venv-udlex/bin/python
 LANGS=${LANGS:-eng rus deu fin tur arb hin kor jpn ces hun gla}
-REPRO=${REPRO:-/mnt/hdd-4tb/codex-runs/udlex-repro-20261120/RUNNING}
-PAUSE=(--pause-while "$REPRO" --pause-tmux dicts-repro)
-owner_busy() { [[ -e $REPRO ]] || tmux has-session -t dicts-repro 2>/dev/null; }
+REPRO=${REPRO:-}  # a flag file that exists while the owner's dictionary build runs
+PAUSE=(--pause-tmux dicts-repro)
+[[ -z $REPRO ]] || PAUSE=(--pause-while "$REPRO" "${PAUSE[@]}")
+owner_busy() { [[ -n $REPRO && -e $REPRO ]] || tmux has-session -t dicts-repro 2>/dev/null; }
 say() { echo "$(TZ=Asia/Tokyo date '+%F %T %Z') $*"; }  # the owner reads JST
-ORACLE=${ORACLE:-/mnt/hdd-4tb/codex-runs/udlex-inline-20261119/oracle-20261119T080705Z.txt}
+ORACLE=${ORACLE:-}  # the engine's lemma oracle report, required by auto
+# A tmux session starts from the tmux server's environment: hand it the stand.
+stand() {
+    local v
+    printf env
+    for v in UDLEX_SPEED_RUN UDLEX_SPEED_LOCK UDLEX_SPEED_COMPARE UDLEX_SPEED_DICTS \
+        UDLEX_SPEED_INPUTS UDLEX_SPEED_PAUSE REPRO ORACLE; do
+        [[ -z ${!v:-} ]] || printf ' %q' "$v=${!v}"
+    done
+}
 QUIET=${UDLEX_SPEED_PAUSE:-}  # containers stopped for the final only (vLLM), space-separated
 
 case ${1:-} in
 ship)
-    SRC=${UDLEX_SRC:-/Users/mmk/github/udlex-inline}
+    SRC=${UDLEX_SRC:?set UDLEX_SRC to a udlex checkout}
+    HOST=${UDLEX_SPEED_HOST:?set UDLEX_SPEED_HOST to the stand, as ssh knows it}
     COMMIT=${COMMIT:-4107fcd}
     E=$(cd "$H/.." && pwd)
-    ssh gpu-server "mkdir -p $RUN/harness $RUN/src-udlex"
-    git -C "$SRC" archive "$COMMIT" | ssh gpu-server "tar -x -C $RUN/src-udlex"
-    git -C "$SRC" rev-parse "$COMMIT" | ssh gpu-server "cat > $RUN/src-udlex/COMMIT"
+    ssh "$HOST" "mkdir -p $RUN/harness $RUN/src-udlex"
+    git -C "$SRC" archive "$COMMIT" | ssh "$HOST" "tar -x -C $RUN/src-udlex"
+    git -C "$SRC" rev-parse "$COMMIT" | ssh "$HOST" "cat > $RUN/src-udlex/COMMIT"
     rsync -a --exclude target --exclude __pycache__ --exclude Cargo.lock \
         "$H" "$E/compare_engines.py" "$E/order_summary.py" "$E/verify_snapshot.py" \
-        "gpu-server:$RUN/harness/"
+        "$HOST:$RUN/harness/"
     ;;
 setup)
     export PATH=$HOME/.cargo/bin:$HOME/.local/bin:$PATH
-    export UV_CACHE_DIR=/mnt/hdd-4tb/lemmas-bench/uv-cache CARGO_TARGET_DIR=$RUN/target
+    export CARGO_TARGET_DIR=$RUN/target
     cd "$RUN"
     # The wheel and the native worker: one toolchain, one release profile (LTO, 1 unit).
     RUSTUP_TOOLCHAIN=$(sed -n 's/^channel = "\(.*\)"/\1/p' src-udlex/rust-toolchain.toml)
@@ -75,7 +90,7 @@ smoke)
     mkdir -p "$OUT"
     # Beside someone else's locked run: low priority, tiny windows, two CPUs of CCD1.
     tmux new-session -d -s "speed-smoke-$STAMP" \
-        "nice -n 19 taskset -c 24-27 $PY -I $H/bench.py run $RUN $OUT --langs eng kor --rounds 1 --windows 1 --target 0.5 --warm 0.5 --cpu1 9 --cpus16 9 10 ${ARGS:-} 2>&1 | tee $OUT/run.log; $PY -I $H/bench.py summary $OUT > $OUT/summary.log 2>&1"
+        "$(stand) nice -n 19 taskset -c 24-27 $PY -I $H/bench.py run $RUN $OUT --langs eng kor --rounds 1 --windows 1 --target 0.5 --warm 0.5 --cpu1 9 --cpus16 9 10 ${ARGS:-} 2>&1 | tee $OUT/run.log; $PY -I $H/bench.py summary $OUT > $OUT/summary.log 2>&1"
     echo "tmux speed-smoke-$STAMP; receipts: $OUT"
     ;;
 final)
@@ -84,14 +99,14 @@ final)
     BASE=$RUN/receipts/final-$STAMP
     mkdir -p "$BASE"
     tmux new-session -d -s "speed-final-$STAMP" \
-        "flock $LOCK bash $0 final-inner $BASE ${ARGS:-} 2>&1 | tee -a $BASE/auto.log; $PY -I $H/bench.py summary $BASE/final > $BASE/summary.log 2>&1"
+        "$(stand) flock $LOCK bash $0 final-inner $BASE ${ARGS:-} 2>&1 | tee -a $BASE/auto.log; $PY -I $H/bench.py summary $BASE/final > $BASE/summary.log 2>&1"
     echo "tmux speed-final-$STAMP; receipts: $BASE/final"
     ;;
 auto)
     STAMP=$(date -u +%Y%m%dT%H%M%SZ)
     BASE=$RUN/receipts/auto-$STAMP
     mkdir -p "$BASE"
-    tmux new-session -d -s "speed-auto-$STAMP" "bash $0 auto-inner $BASE 2>&1 | tee -a $BASE/auto.log"
+    tmux new-session -d -s "speed-auto-$STAMP" "$(stand) bash $0 auto-inner $BASE 2>&1 | tee -a $BASE/auto.log"
     echo "tmux speed-auto-$STAMP; receipts: $BASE"
     ;;
 auto-inner)
@@ -172,7 +187,7 @@ retry)
     # Time again the failed cells of a finished auto run, vLLM off meanwhile.
     BASE=$2
     STAMP=$(date -u +%Y%m%dT%H%M%SZ)
-    tmux new-session -d -s "speed-retry-$STAMP" "bash $0 retry-inner $BASE 2>&1 | tee -a $BASE/auto.log"
+    tmux new-session -d -s "speed-retry-$STAMP" "$(stand) bash $0 retry-inner $BASE 2>&1 | tee -a $BASE/auto.log"
     echo "tmux speed-retry-$STAMP; receipts: $BASE/final"
     ;;
 retry-inner)
@@ -231,7 +246,7 @@ summary)
     "$PY" -I "$H/bench.py" summary "$2"
     ;;
 *)
-    sed -n '2,16p' "$0"
+    sed -n '2,19p' "$0"
     exit 2
     ;;
 esac

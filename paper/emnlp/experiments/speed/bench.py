@@ -9,6 +9,10 @@ A cell is (language, system, mode, round): fresh worker processes pinned with ta
 the system, warm up, then time windows of at least a second, each on a fresh random sample
 of test sentences. Within a language the cells of a round run in a random order. Answers of
 every window are checked against the predictions the quality was scored from.
+
+Directories of the stand come from the environment (prepare, run and verify need them):
+UDLEX_SPEED_COMPARE the quality comparison, UDLEX_SPEED_DICTS the dictionary build,
+UDLEX_SPEED_INPUTS the timing inputs (default: the census inputs of the comparison).
 """
 
 import argparse
@@ -26,11 +30,6 @@ import time
 import zlib
 from pathlib import Path
 
-COMPARE = Path("/mnt/hdd-4tb/codex-runs/udlex-compare-20261119")
-# The build whose release and scored extractions are timed; a rebuild overrides it.
-DICTS = Path(os.environ.get("UDLEX_SPEED_DICTS", "/mnt/hdd-4tb/codex-runs/udlex-dicts-20261119"))
-# fill_inputs.py builds an overlay with text for the twofold languages whose census test is empty.
-INPUTS = Path(os.environ.get("UDLEX_SPEED_INPUTS", COMPARE / "census/inputs/order"))
 LANGS = "eng rus deu fin tur arb hin kor jpn ces hun gla".split()
 HERE = Path(__file__).resolve().parent
 # 1c: one pinned CPU; thr16: one process, 16 threads; proc16: 16 single-thread processes.
@@ -56,6 +55,31 @@ SIXTEEN = list(
     range(16)
 )  # one hardware thread on each physical core; siblings are 16-31
 TICK = os.sysconf("SC_CLK_TCK")
+
+
+def stand(name):
+    """A directory of the stand, from the environment: the harness carries no paths."""
+    value = os.environ.get(name)
+    if not value:
+        raise SystemExit(f"{name} is not set (see run.sh)")
+    return Path(value)
+
+
+def compare():
+    """The quality comparison: census inputs, predictions and environments."""
+    return stand("UDLEX_SPEED_COMPARE")
+
+
+def dicts():
+    """The build whose release and scored extractions are timed; a rebuild overrides it."""
+    return stand("UDLEX_SPEED_DICTS")
+
+
+def inputs():
+    """Census inputs; fill_inputs.py builds an overlay with text for twofold languages."""
+    if os.environ.get("UDLEX_SPEED_INPUTS"):
+        return stand("UDLEX_SPEED_INPUTS")
+    return compare() / "census/inputs/order"
 
 
 def read(path):
@@ -108,10 +132,10 @@ def prepare(a):
 
     import udlex
 
-    release = DICTS / "release"
+    release = dicts() / "release"
     evaluation = release / "evaluation.json"
     if not evaluation.exists():
-        evaluation = DICTS / "work/evaluation.final.json"
+        evaluation = dicts() / "work/evaluation.final.json"
     scored = {r["iso639_3"]: r for r in read(evaluation)["languages"]}
     entries = [] if a.evaluated else read(release / "DICTIONARIES.json")["dictionaries"]
     out = a.run / "ref" / "udlex"
@@ -125,7 +149,7 @@ def prepare(a):
     }
     for iso in a.langs:
         # Only officially split languages have a scored extraction; twofold ones do not.
-        scored_dir = DICTS / "work/eval/new" / iso
+        scored_dir = dicts() / "work/eval/new" / iso
         evaluated = next(scored_dir.iterdir()) / "bundle" if scored_dir.is_dir() else None
         row = {}
         if a.evaluated:
@@ -150,7 +174,7 @@ def prepare(a):
             }
         bundle = dest / "bundle"
         lexicon = udlex.load(str(bundle), iso, use_user=False)
-        with open(INPUTS / iso / "test.jsonl", encoding="utf-8") as fh:
+        with open(inputs() / iso / "test.jsonl", encoding="utf-8") as fh:
             rows = [json.loads(line) for line in fh]
         answers = lexicon.lemmatize_many([r["tokens"] for r in rows])
         nfc = lambda s: unicodedata.normalize("NFC", s)  # noqa: E731 - evaluate.py's scoring
@@ -343,7 +367,7 @@ class Sampler(threading.Thread):
 
 
 def census(engine):
-    path = COMPARE / "results-census" / f"{engine}.json"
+    path = compare() / "results-census" / f"{engine}.json"
     return (
         {i: c for i, c in read(path)["cells"].items() if c["status"] == "scored"}
         if path.exists()
@@ -353,16 +377,16 @@ def census(engine):
 
 def cells_for(iso, a):
     """Every (system, mode) the language supports, with the worker configuration."""
-    row = read(INPUTS / "inventory.json")["languages"][iso]
+    row = read(inputs() / "inventory.json")["languages"][iso]
     lang = row["config"].split("_")[0]
     base = {
         "iso": iso,
         "lang": lang,
         "config": row["config"],
         "treebank": row["treebank"],
-        "test": str(INPUTS / iso / "test.jsonl"),
+        "test": str(inputs() / iso / "test.jsonl"),
         "experiments": str(a.harness),
-        "repo": str(COMPARE / "repo"),
+        "repo": str(compare() / "repo"),
         "cupy": str(a.run / "pylib-cupy"),
     }
     out = []
@@ -384,20 +408,20 @@ def cells_for(iso, a):
         )
     )
     pythons = {
-        "stanza": COMPARE / ".venv",
-        "spacy-sm": COMPARE / ".venv",
-        "simplemma": COMPARE / ".venv",
-        "lemmagen3": COMPARE / ".venv",
-        "spacy-lg": COMPARE / ".venv-spacy-big",
-        "spacy-trf": COMPARE / ".venv-spacy-big",
-        "trankit": COMPARE / ".venv-trankit-git",
+        "stanza": compare() / ".venv",
+        "spacy-sm": compare() / ".venv",
+        "simplemma": compare() / ".venv",
+        "lemmagen3": compare() / ".venv",
+        "spacy-lg": compare() / ".venv-spacy-big",
+        "spacy-trf": compare() / ".venv-spacy-big",
+        "trankit": compare() / ".venv-trankit-git",
         "udpipe1": a.run / ".venv-udpipe1",
         "corenlp": a.run / ".venv-udlex",  # the client needs the standard library only
     }
     models = {
-        "stanza": COMPARE / "stanza",
-        "trankit": COMPARE / "trankit-cache-git",
-        "corenlp": COMPARE / "corenlp/stanford-corenlp-4.6.0",
+        "stanza": compare() / "stanza",
+        "trankit": compare() / "trankit-cache-git",
+        "corenlp": compare() / "corenlp/stanford-corenlp-4.6.0",
     }
     for engine, python in pythons.items():
         scored = census(engine).get(iso)
@@ -407,7 +431,7 @@ def cells_for(iso, a):
             base,
             system=engine,
             python=str(python / "bin/python"),
-            ref=str(COMPARE / "predictions-census" / engine / f"{iso}.json.gz"),
+            ref=str(compare() / "predictions-census" / engine / f"{iso}.json.gz"),
             model=scored["model"],
             models=str(models.get(engine, "")),
         )
@@ -535,7 +559,7 @@ def wait_quiet(a):
 
 
 def mean_length(iso):
-    with open(INPUTS / iso / "test.jsonl", encoding="utf-8") as fh:
+    with open(inputs() / iso / "test.jsonl", encoding="utf-8") as fh:
         lengths = [len(json.loads(line)["tokens"]) for line in fh]
     return sum(lengths) / len(lengths)
 
@@ -1088,7 +1112,7 @@ def verify(a):
     report = {"udlex_file": udlex.__file__, "so_sha256": sha256(so), "languages": {}}
     for iso, row in read(a.run / "ref/udlex/manifest.json")["languages"].items():
         lexicon = udlex.load(row["bundle"], iso, use_user=False)
-        with open(INPUTS / iso / "test.jsonl", encoding="utf-8") as fh:
+        with open(inputs() / iso / "test.jsonl", encoding="utf-8") as fh:
             tokens = [json.loads(line)["tokens"] for line in fh]
         mine = json.dumps(lexicon.lemmatize_many(tokens), ensure_ascii=False)
         theirs = (a.run / "ref/udlex" / f"{iso}.json").read_text(encoding="utf-8")

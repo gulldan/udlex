@@ -1,16 +1,19 @@
 """Timing inputs: the census inputs, with UD 2.19 test text for the twofold languages whose
 census test is empty (bul, fro, tha). Timing needs running text, not a held-out split.
     fill_inputs.py OUT   (server) OUT gets symlinks to the census dirs plus three real dirs
+UDLEX_SPEED_COMPARE is the quality comparison, UDLEX_SPEED_UD the UD 2.19 treebanks.
 """
 
 import json
+import os
 import sys
 from pathlib import Path
 
-CENSUS = Path("/mnt/hdd-4tb/codex-runs/udlex-compare-20261119/census/inputs/order")
-UD = Path(
-    "/mnt/hdd-4tb/codex-runs/udlex-v1-order-ud219-20261118.splMl6/inputs/ud-treebanks-v2.19"
-)
+for name in ("UDLEX_SPEED_COMPARE", "UDLEX_SPEED_UD"):
+    if not os.environ.get(name):
+        raise SystemExit(f"{name} is not set (see the docstring)")
+CENSUS = Path(os.environ["UDLEX_SPEED_COMPARE"], "census/inputs/order")
+UD = Path(os.environ["UDLEX_SPEED_UD"])
 # The treebank each language was scored on (evaluation.json "treebank").
 FILL = {
     "bul": "UD_Bulgarian-BTB/bg_btb-ud-test.conllu",

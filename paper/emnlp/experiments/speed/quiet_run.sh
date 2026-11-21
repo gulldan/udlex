@@ -2,11 +2,13 @@
 # C9 again on a quiet machine (the owner allowed it, 21.11.2026): after the current GPU phase,
 # stop vLLM and the other services of UDLEX_SPEED_PAUSE, time every system on all 169 languages
 # (udlex on the hybrid release), then start exactly the stopped containers again.
+# The stand as in run.sh; UDLEX_SPEED_RELEASE is the hybrid release, UDLEX_SPEED_UD the
+# UD 2.19 treebanks for fill_inputs.py.
 set -u
-S=/mnt/hdd-4tb/codex-runs/udlex-speed-20261119
+S=${UDLEX_SPEED_RUN:?set UDLEX_SPEED_RUN to the run directory}
 H=$S/harness/speed
-REL=/mnt/hdd-4tb/codex-runs/udlex-release-hybrid-20261120/out
-LOCK=/mnt/hdd-2tb/lemmatest-perf-results/.exclusive.lock
+REL=${UDLEX_SPEED_RELEASE:?set UDLEX_SPEED_RELEASE to the release to time}
+LOCK=${UDLEX_SPEED_LOCK:?set UDLEX_SPEED_LOCK to the exclusive lock file of the stand}
 OUT=${OUT:-$S/receipts/quiet-$(date -u +%Y%m%dT%H%M%SZ)}  # an existing OUT resumes its cells.jsonl
 mkdir -p "$OUT"
 export UDLEX_SPEED_INPUTS=$S/inputs-order  # census inputs + UD test text for bul, fro, tha
@@ -31,7 +33,7 @@ for c in $QUIET; do
 done
 sleep 120
 say "settled; load $(cut -d" " -f1-3 /proc/loadavg); top: $(ps -eo pcpu,comm --sort=-pcpu | sed -n 2,5p | tr -s " " | paste -sd";")"
-env UDLEX_SPEED_DICTS=$REL DICT_SYSTEMS="udlex-rs udlex-py spacy-sm spacy-lg simplemma lemmagen3 udpipe1 corenlp" \
+env DICT_SYSTEMS="udlex-rs udlex-py spacy-sm spacy-lg simplemma lemmagen3 udpipe1 corenlp" \
     NEURAL_SYSTEMS="stanza trankit spacy-trf" "$H/all_languages.sh" "$OUT" 2>&1 | tee -a "$OUT.log"
 say "CPU phases done; GPU phase"
 OPTS=$("$S/.venv-udlex/bin/python" -I -c "import json,sys; print(\" \".join(json.load(open(sys.argv[1]))[\"options\"]))" "$S/receipts/auto-20261119T081436Z/sweep/chosen.json")
