@@ -30,13 +30,16 @@ EOF
 )
 echo "$LANGS" > "$OUT/languages.txt"
 say "languages: $(wc -w <<<"$LANGS")"
-cd "$RUN"
+cd "$RUN" || exit 1
+# shellcheck disable=SC2086  # LANGS is a word list, split on purpose
 for m in $("$PY" -I -c 'import json,sys; c=json.load(open(sys.argv[1]))["cells"]; print(" ".join(c[i]["model"] for i in sys.argv[2:] if c.get(i,{}).get("status")=="scored"))' "$C/results-census/udpipe1.json" $LANGS); do
     [[ -s udpipe1-models/$m.udpipe ]] ||
         curl -fsSL -o "udpipe1-models/$m.udpipe" "https://lindat.mff.cuni.cz/repository/xmlui/bitstream/handle/11234/1-3131/$m.udpipe" ||
         say "udpipe1 model $m: download failed"
 done
+# shellcheck disable=SC2012  # a count for the log
 say "udpipe1 models: $(ls udpipe1-models | wc -l)"
+# shellcheck disable=SC2086  # LANGS is a word list, split on purpose
 taskset -c 0-7 "$D/.venv/bin/python" -I "$H/bench.py" prepare "$RUN" $LANGS > "$OUT/prepare.log" 2>&1 ||
     { say "prepare failed, see prepare.log"; exit 1; }
 say "prepared"
@@ -46,12 +49,15 @@ say "waiting for the lock; options $OPTS"
 exec 9>"$LOCK"; flock 9
 say "lock taken; load $(cut -d' ' -f1-3 /proc/loadavg)"
 pause=(); [[ -n $PAUSE_FILE ]] && pause=(--pause-while "$PAUSE_FILE")
+# shellcheck disable=SC2206  # LANGS and OPTS are word lists, split on purpose
 common=(--langs $LANGS --rounds 3 --windows 3 --cpu1 4 $OPTS "${pause[@]}"
     --note "C9 on all 169 languages, CPU modes; vLLM and other services as vllm.log or services.log record; udlex $(cat "$RUN/src-udlex/COMMIT")")
+# shellcheck disable=SC2086  # a word list, split on purpose
 taskset -c 16-31 "$PY" -I "$H/bench.py" run "$RUN" "$OUT" "${common[@]}" \
     --systems $DICT_SYSTEMS \
     --modes 1c thr16 proc16 >>"$OUT/run.log" 2>&1 || say "dictionary systems: bench.py exited with $?"
 say "dictionary systems done"
+# shellcheck disable=SC2086  # a word list, split on purpose
 [[ -z $NEURAL_SYSTEMS ]] ||
     taskset -c 16-31 "$PY" -I "$H/bench.py" run "$RUN" "$OUT" "${common[@]}" \
         --systems $NEURAL_SYSTEMS --modes 1c >>"$OUT/run.log" 2>&1 ||

@@ -101,11 +101,13 @@ class UdlexPy(Plain):
             chunks.append((flat, mask))
         return chunks
 
-    def call(self, chunks):
+    def call(self, payload):
         f = self.lexicon.lemmatize
         if self.pool:
-            return list(self.pool.map(lambda c: f(c[0], sentence_initial=c[1]), chunks))
-        return [f(flat, sentence_initial=mask) for flat, mask in chunks]
+            return list(
+                self.pool.map(lambda c: f(c[0], sentence_initial=c[1]), payload)
+            )
+        return [f(flat, sentence_initial=mask) for flat, mask in payload]
 
     def extract(self, picks, raw, stride):
         out, k = [], 0
@@ -199,7 +201,7 @@ def build(cfg, forms):
     files, extras = [], {}
     t = time.perf_counter()
     if name in ("stanza", "trankit", "spacy-trf"):
-        import torch
+        import torch  # ty: ignore[import-not-found]  # in the system's own venv
 
         torch.set_num_threads(threads)
     if name.startswith("spacy") and gpu:
@@ -216,7 +218,7 @@ def build(cfg, forms):
         model = f"udlex {udlex.__version__} {cfg['iso']}"
         files = [cfg["bundle"]]
     elif name == "stanza":
-        import stanza
+        import stanza  # ty: ignore[import-not-found]  # in the system's own venv
 
         imported = time.perf_counter()
         code, package = cfg["model"].split("/")
@@ -242,16 +244,16 @@ def build(cfg, forms):
 
         system, model = Plain(forms, run), cfg["model"]
     elif name == "trankit":
-        import trankit
+        import trankit  # ty: ignore[import-not-found]  # in the system's own venv
 
         imported = time.perf_counter()
         if gpu:
             plain = trankit.Pipeline
             trankit.Pipeline = lambda *a, **k: plain(*a, **dict(k, gpu=True))
-        run, model = compare_engines.trankit_pipeline(
+        run, model = compare_engines.trankit_pipeline(  # ty: ignore[possibly-unresolved-reference]  # imported above for this system
             lang, cfg["treebank"], Path(cfg["models"])
         )
-        torch.set_num_threads(threads)  # trankit_pipeline sets 6
+        torch.set_num_threads(threads)  # ty: ignore[possibly-unresolved-reference]  # imported above for this system; trankit_pipeline sets 6
         system = Plain(forms, run)
         snapshot = Path(cfg["models"], "xlm-roberta-large", "models--xlm-roberta-large")
         files = [
@@ -259,20 +261,20 @@ def build(cfg, forms):
             str(Path(cfg["models"], "xlm-roberta-large", model.split("/")[0])),
         ]
     elif name.startswith("spacy"):
-        import spacy
+        import spacy  # ty: ignore[import-not-found]  # in the system's own venv
 
         imported = time.perf_counter()
         if gpu:
             spacy.require_gpu()
-        size = compare_engines.SPACY_SIZE[name]
-        run, model = compare_engines.spacy_pipeline(lang, size)
+        size = compare_engines.SPACY_SIZE[name]  # ty: ignore[possibly-unresolved-reference]  # imported above for this system
+        run, model = compare_engines.spacy_pipeline(lang, size)  # ty: ignore[possibly-unresolved-reference]  # imported above for this system
         if size == "trf":
-            torch.set_num_threads(threads)  # spacy_pipeline sets 6
+            torch.set_num_threads(threads)  # ty: ignore[possibly-unresolved-reference]  # imported above for this system; spacy_pipeline sets 6
         system = Plain(forms, run)
         files = [str(spacy.util.get_package_path(model.rsplit("-", 1)[0]))]
     elif name in ("simplemma", "lemmagen3"):
         sys.path.insert(0, cfg["repo"])
-        from bench import adapters
+        from bench import adapters  # ty: ignore[import-not-found]  # the bench package of cfg['repo']
 
         imported = time.perf_counter()
         adapters.configure_project_root(cfg["repo"])
@@ -281,7 +283,7 @@ def build(cfg, forms):
         system = Plain(forms, adapter.run, adapter.reset)
         model = str(getattr(adapter, "model", None) or name)
         if name == "lemmagen3":
-            import lemmagen3
+            import lemmagen3  # ty: ignore[import-not-found]  # in the system's own venv
 
             # The bench adapter memoises every form; that is harness, not LemmaGen3,
             # and on a sample of one test set nearly every call would hit it.
@@ -291,7 +293,7 @@ def build(cfg, forms):
             )
             files = [str(Path(lemmagen3.__file__).parent / "models" / f"{lang}.bin")]
     elif name == "udpipe1":
-        from ufal.udpipe import Model, Pipeline, ProcessingError
+        from ufal.udpipe import Model, Pipeline, ProcessingError  # ty: ignore[import-not-found]  # in the system's own venv
 
         imported = time.perf_counter()
         tagger = Model.load(cfg["model_file"])
@@ -322,7 +324,7 @@ def build(cfg, forms):
             return [r for r in rows if r]
 
         system, model, files = Plain(forms, run), cfg["model"], [cfg["model_file"]]
-        system.tagger = tagger  # the SWIG pipeline does not own its model
+        system.tagger = tagger  # ty: ignore[unresolved-attribute]  # the SWIG pipeline does not own its model
     elif name == "corenlp":
         system, java, files, disk = corenlp(cfg, forms, threads)
         model, extras = (
@@ -391,7 +393,7 @@ def serve(command, state, system, forms, expected, lengths, java):
     if what == "warm":
         # Grow the sample until a window lasts as long as the timed ones will.
         goal, floor = command.get("min_window", 0.0), command.get("min_sentences", 1)
-        n, spent, rounds, dt, last = 1, 0.0, 0, 0.0, 0
+        n, spent, rounds, dt, last, rate = 1, 0.0, 0, 0.0, 0, 0.0
         while spent < command["seconds"] or rounds < 2 or dt < goal or last < floor:
             draw = random.Random(10**9 + rounds).choices(range(len(forms)), k=n)
             system.reset()

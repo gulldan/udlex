@@ -39,6 +39,7 @@ say "CPU phases done; GPU phase"
 OPTS=$("$S/.venv-udlex/bin/python" -I -c "import json,sys; print(\" \".join(json.load(open(sys.argv[1]))[\"options\"]))" "$S/receipts/auto-20261119T081436Z/sweep/chosen.json")
 (
     exec 9>"$LOCK"; flock 9
+    # shellcheck disable=SC2046,SC2086  # languages and options are word lists
     UDLEX_SPEED_DICTS=$REL taskset -c 16-31 "$S/.venv-udlex/bin/python" -I "$H/bench.py" run "$S" "$OUT" \
         --langs $(cat "$OUT/languages.txt") --rounds 3 --windows 3 --cpu1 4 $OPTS --stanza-gpu-tokens 0 \
         --systems stanza trankit spacy-trf --modes gpu \

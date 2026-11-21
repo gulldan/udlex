@@ -29,8 +29,15 @@ fn status_kb(key: &str) -> u64 {
 /// User plus system CPU seconds of the process; Linux reports them in 1/100 s ticks.
 fn cpu_seconds() -> f64 {
     let stat = std::fs::read_to_string("/proc/self/stat").unwrap_or_default();
-    let fields: Vec<&str> = stat.rsplit_once(") ").map_or(vec![], |(_, rest)| rest.split(' ').collect());
-    let tick = |i: usize| fields.get(i).and_then(|v| v.parse::<f64>().ok()).unwrap_or(0.0);
+    let fields: Vec<&str> = stat
+        .rsplit_once(") ")
+        .map_or(vec![], |(_, rest)| rest.split(' ').collect());
+    let tick = |i: usize| {
+        fields
+            .get(i)
+            .and_then(|v| v.parse::<f64>().ok())
+            .unwrap_or(0.0)
+    };
     (tick(11) + tick(12)) / 100.0
 }
 
@@ -44,12 +51,18 @@ fn splitmix(state: &mut u64) -> u64 {
 
 fn sample(seed: u64, n: usize, population: usize) -> Vec<usize> {
     let mut state = seed;
-    (0..n).map(|_| (splitmix(&mut state) % population as u64) as usize).collect()
+    (0..n)
+        .map(|_| (splitmix(&mut state) % population as u64) as usize)
+        .collect()
 }
 
 type Kept<'a> = Vec<(usize, Vec<Cow<'a, str>>)>;
 
 /// Lemmatises the sample on `threads` threads; keeps every `stride`-th answer for checking.
+#[allow(
+    clippy::manual_is_multiple_of,
+    reason = "the timed loop stays as measured: is_multiple_of adds a branch for stride 0"
+)]
 fn window<'a>(
     lexicon: &'a udlex_rs::Lexicon,
     sentences: &'a [Vec<&'a str>],
@@ -80,12 +93,19 @@ fn window<'a>(
                 .enumerate()
                 .map(|(c, part)| scope.spawn(move || run(part, c * size)))
                 .collect();
-            handles.into_iter().map(|h| h.join().expect("worker thread")).collect()
+            handles
+                .into_iter()
+                .map(|h| h.join().expect("worker thread"))
+                .collect()
         })
     };
     let seconds = start.elapsed().as_secs_f64();
     let bytes = std::hint::black_box(parts.iter().map(|(b, _)| *b).sum::<usize>());
-    (seconds, bytes, parts.into_iter().flat_map(|(_, kept)| kept).collect())
+    (
+        seconds,
+        bytes,
+        parts.into_iter().flat_map(|(_, kept)| kept).collect(),
+    )
 }
 
 fn main() {
@@ -107,12 +127,23 @@ fn main() {
                 .collect()
         })
         .collect();
-    let sentences: Vec<Vec<&str>> = owned.iter().map(|s| s.iter().map(String::as_str).collect()).collect();
+    let sentences: Vec<Vec<&str>> = owned
+        .iter()
+        .map(|s| s.iter().map(String::as_str).collect())
+        .collect();
     let expected: Vec<Vec<String>> =
-        serde_json::from_reader(std::fs::File::open(reference).expect("reference")).expect("reference json");
-    assert_eq!(expected.len(), sentences.len(), "reference and test differ in length");
+        serde_json::from_reader(std::fs::File::open(reference).expect("reference"))
+            .expect("reference json");
+    assert_eq!(
+        expected.len(),
+        sentences.len(),
+        "reference and test differ in length"
+    );
     let lengths: Vec<usize> = sentences.iter().map(Vec::len).collect();
-    let expected_bytes: Vec<usize> = expected.iter().map(|s| s.iter().map(String::len).sum()).collect();
+    let expected_bytes: Vec<usize> = expected
+        .iter()
+        .map(|s| s.iter().map(String::len).sum())
+        .collect();
 
     let start = Instant::now();
     let lexicon = udlex_rs::load(bundle, iso).expect("load");
@@ -120,8 +151,10 @@ fn main() {
     let start = Instant::now();
     std::hint::black_box(lexicon.lemmatize(&sentences[0]));
     let first_s = start.elapsed().as_secs_f64();
-    send(&json!({"event": "ready", "import_s": 0.0, "load_s": load_s, "first_s": first_s,
-                 "rss_load_kb": status_kb("VmRSS:"), "model": format!("udlex-rs {iso}"), "files": [bundle]}));
+    send(
+        &json!({"event": "ready", "import_s": 0.0, "load_s": load_s, "first_s": first_s,
+                 "rss_load_kb": status_kb("VmRSS:"), "model": format!("udlex-rs {iso}"), "files": [bundle]}),
+    );
 
     let mut picks: Vec<usize> = Vec::new();
     for line in std::io::stdin().lock().lines() {
@@ -156,12 +189,18 @@ fn main() {
                 let mut checked = 0_usize;
                 for (i, out) in &kept {
                     checked += out.len();
-                    mismatch += out.iter().zip(&expected[*i]).filter(|(a, b)| a.as_ref() != b.as_str()).count();
+                    mismatch += out
+                        .iter()
+                        .zip(&expected[*i])
+                        .filter(|(a, b)| a.as_ref() != b.as_str())
+                        .count();
                     mismatch += out.len().abs_diff(expected[*i].len());
                 }
                 let want: usize = picks.iter().map(|&i| expected_bytes[i]).sum();
-                send(&json!({"tokens": picks.iter().map(|&i| lengths[i]).sum::<usize>(), "seconds": seconds,
-                             "cpu_s": cpu, "checked": checked, "mismatch": mismatch, "bytes_ok": bytes == want}));
+                send(
+                    &json!({"tokens": picks.iter().map(|&i| lengths[i]).sum::<usize>(), "seconds": seconds,
+                             "cpu_s": cpu, "checked": checked, "mismatch": mismatch, "bytes_ok": bytes == want}),
+                );
             }
             "exit" => {
                 send(&json!({"vmhwm_kb": status_kb("VmHWM:"), "vmrss_kb": status_kb("VmRSS:")}));

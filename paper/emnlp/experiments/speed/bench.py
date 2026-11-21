@@ -168,6 +168,8 @@ def prepare(a):
         )
         row = {}
         if a.evaluated:
+            if evaluated is None:
+                raise SystemExit(f"{iso}: no evaluated extraction to time")
             dest = a.run / "bundles" / iso / f"evaluated-{evaluated.parent.name}"
             if not dest.is_dir():
                 shutil.copytree(evaluated, dest / "bundle")
@@ -515,7 +517,7 @@ class Cell:
         else:
             argv = [cfg["python"], "-I", str(HERE / "worker.py"), json.dumps(cfg)]
         self.procs = [
-            subprocess.Popen(
+            subprocess.Popen(  # ty: ignore[no-matching-overload]  # cfg values are str here
                 ["taskset", "-c", ",".join(map(str, cs)), *argv],
                 stdin=subprocess.PIPE,
                 stdout=subprocess.PIPE,
@@ -529,8 +531,8 @@ class Cell:
 
     def ask(self, commands, timeout):
         for p, c in zip(self.procs, commands, strict=True):
-            p.stdin.write(json.dumps(c) + "\n")
-            p.stdin.flush()
+            p.stdin.write(json.dumps(c) + "\n")  # ty: ignore[unresolved-attribute, no-matching-overload]  # stdin=PIPE, text
+            p.stdin.flush()  # ty: ignore[unresolved-attribute]  # stdin=PIPE
         return [self.recv(p, timeout) for p in self.procs]
 
     def recv(self, p, timeout):

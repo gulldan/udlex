@@ -49,8 +49,11 @@ ship)
     HOST=${UDLEX_SPEED_HOST:?set UDLEX_SPEED_HOST to the stand, as ssh knows it}
     COMMIT=${COMMIT:-4107fcd}
     E=$(cd "$H/.." && pwd)
+    # shellcheck disable=SC2029  # RUN names the server's directory: expanded here
     ssh "$HOST" "mkdir -p $RUN/harness $RUN/src-udlex"
+    # shellcheck disable=SC2029  # RUN names the server's directory: expanded here
     git -C "$SRC" archive "$COMMIT" | ssh "$HOST" "tar -x -C $RUN/src-udlex"
+    # shellcheck disable=SC2029  # RUN names the server's directory: expanded here
     git -C "$SRC" rev-parse "$COMMIT" | ssh "$HOST" "cat > $RUN/src-udlex/COMMIT"
     rsync -a --exclude target --exclude __pycache__ --exclude Cargo.lock \
         "$H" "$E/compare_engines.py" "$E/order_summary.py" "$E/verify_snapshot.py" \
@@ -73,6 +76,7 @@ setup)
     [[ -x .venv-udpipe1/bin/python ]] || uv venv -q --python 3.12 .venv-udpipe1
     VIRTUAL_ENV=$RUN/.venv-udpipe1 uv pip install -q ufal.udpipe==1.4.0.1
     mkdir -p udpipe1-models
+    # shellcheck disable=SC2086  # LANGS is a word list, split on purpose
     for m in $("$PY" -I -c 'import json,sys; c=json.load(open(sys.argv[1]))["cells"]; print(" ".join(c[i]["model"] for i in sys.argv[2:] if c.get(i,{}).get("status")=="scored"))' "$C/results-census/udpipe1.json" $LANGS); do
         [[ -s udpipe1-models/$m.udpipe ]] ||
             curl -fsSL -o "udpipe1-models/$m.udpipe" "https://lindat.mff.cuni.cz/repository/xmlui/bitstream/handle/11234/1-3131/$m.udpipe"
@@ -81,6 +85,7 @@ setup)
     VIRTUAL_ENV=$RUN/.venv-udlex uv pip install -q --target pylib-cupy --no-deps cupy-cuda13x==14.2.0 fastrlock ||
         echo "no cupy: spaCy GPU cells will fail"
     # Bundles and reference answers, with the Python that scored the dictionaries.
+    # shellcheck disable=SC2086  # LANGS is a word list, split on purpose
     "$D/.venv/bin/python" -I "$H/bench.py" prepare "$RUN" $LANGS
     echo SETUP-DONE
     ;;
@@ -178,6 +183,7 @@ final-inner)
     done
     extra=()
     [[ ${RETRY:-0} == 1 ]] && extra=(--retry-failed)  # same cells, rounds and order
+    # shellcheck disable=SC2086  # LANGS is a word list, split on purpose
     taskset -c 16-31 "$PY" -I "$H/bench.py" run "$RUN" "$BASE/final" --langs $LANGS \
         --rounds 5 --windows 3 "$@" --stanza-gpu-tokens 0 "${PAUSE[@]}" "${extra[@]}" \
         --note "containers ${QUIET:-none} stopped for the final, times in vllm.log; udlex $(cat "$RUN/src-udlex/COMMIT")" \

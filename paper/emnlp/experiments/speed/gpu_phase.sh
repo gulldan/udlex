@@ -37,7 +37,7 @@ for c in $QUIET; do
     say "$c stopped: $(docker inspect -f '{{.State.Status}}' "$c")"
 done
 OPTS=$("$PY" -I -c 'import json,sys; print(" ".join(json.load(open(sys.argv[1]))["options"]))' "$RUN/receipts/auto-20261119T081436Z/sweep/chosen.json")
-# shellcheck disable=SC2046
+# shellcheck disable=SC2046,SC2086  # languages and options are word lists
 timeout "$LIMIT" taskset -c 16-31 "$PY" -I "$H/bench.py" run "$RUN" "$OUT" \
     --langs $(cat "$OUT/languages.txt") --rounds 3 --windows 3 --cpu1 4 $OPTS --stanza-gpu-tokens 0 \
     --systems stanza trankit spacy-trf --modes gpu \
