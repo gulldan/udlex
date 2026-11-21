@@ -23,8 +23,8 @@ def fetch(item):
     for attempt in range(4):
         try:
             with (
-                urllib.request.urlopen(
-                    urllib.request.Request(
+                urllib.request.urlopen(  # noqa: S310 - https URL pinned in the catalog
+                    urllib.request.Request(  # noqa: S310 - checked by SHA-256 below
                         url, headers={"User-Agent": "udlex-research/1.0"}
                     ),
                     timeout=120,
@@ -33,13 +33,14 @@ def fetch(item):
             ):
                 shutil.copyfileobj(response, dest)
             if sha(path.with_suffix(".partial")) != digest:
-                raise ValueError(f"Source checksum mismatch: {url}")
+                raise ValueError(f"Source checksum mismatch: {url}")  # noqa: TRY301 - retried like a network error
             path.with_suffix(".partial").replace(path)
-            return
-        except (OSError, ValueError) as error:
+        except (OSError, ValueError):
             if attempt == 3:
                 raise
             time.sleep(1 + attempt)
+        else:
+            return
 
 
 def inputs(row):

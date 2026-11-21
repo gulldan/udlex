@@ -1,4 +1,4 @@
-"""Independently verify all wheels, portable archives, manifests, bytes and engine lookups."""
+"""Independently verify all wheels, portable archives, manifests, bytes and engine lookups."""  # noqa: E501
 
 import argparse
 import base64
@@ -12,9 +12,9 @@ import zipfile
 from collections import Counter
 from pathlib import Path
 
-import udlex
-
 from fetch_sources import sha
+
+import udlex
 
 
 def verify(catalog, report):

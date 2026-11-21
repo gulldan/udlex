@@ -48,6 +48,13 @@ rust = false
 line-length = 88
 target-version = "py311"
 src = ["src"]
+# refresh.py hashes its own bytes and those of source_tables.py into the
+# recipe_sha256 of every published dictionary: reformatting either changes
+# the catalog a rebuild writes, so ruff must leave both files byte for byte.
+extend-exclude = [
+  "dictionaries/ud-2.19/refresh.py",
+  "dictionaries/ud-2.19/source_tables.py",
+]
 
 [tool.ruff.lint]
 select = ["ALL"]
@@ -103,6 +110,15 @@ convention = "google"
 "paper/emnlp/experiments/speed/worker.py" = [
   "S310",    # urlopen to the CoreNLP server it started on 127.0.0.1
   "PTH100",  # abspath keeps the recorded file names; Path.resolve follows links
+]
+
+# Catalog build and check scripts run once per release, not a package or an API.
+"dictionaries/ud-2.19/**" = [
+  "INP001",  # a script folder, not a package
+  "D1",      # helpers of release scripts need no docstrings
+  "ANN",     # annotations on script helpers would be noise, not checked types
+  "C901", "PLR0912", "PLR0915",  # verify() checks every artefact in one pass
+  "TRY003", "EM101", "EM102",  # inline error messages are fine in scripts
 ]
 
 [tool.ty.environment]
