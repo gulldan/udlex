@@ -1,0 +1,36 @@
+group,family,iso639_3,language,bundle,script,width,n,forms_per_lemma,key_bytes_mean,h0_edit_bits,best,role,in_lab_panel
+Slavic,Indo-European,slk,Slovak,sk_snk,Latin,1 B/симв,8742324,3.260450434188483,18.36498063901544,5.599138470892719,fst_edit,family test,false
+Slavic,Indo-European,rus,Russian,ru_taiga,Cyrillic,2 B/симв,3962047,9.929419754849995,22.80943815154136,6.104801370070864,fst_edit,family test,true
+Slavic,Indo-European,ces,Czech,cs_pdtc,Latin,1 B/симв,4293454,15.01727521064984,12.646910156717645,10.067093755559132,fst_id,family test,true
+Slavic,Indo-European,chu,Old Church Slavonic,cu_proiel,Cyrillic,2 B/симв,112849,28.83214103219213,18.258017350618967,6.807625878377615,fst_id,family test,false
+Italic,Indo-European,ron,Romanian,ro_nonstandard,Latin,1 B/симв,1704012,5.629877788900893,10.901370412884416,5.277490314522875,fst_inline,family test,false
+Italic,Indo-European,spa,Spanish,es_ancora,Latin,1 B/симв,645688,9.432987582176771,10.795745003778915,4.670280944920733,fst_inline,family test,false
+Italic,Indo-European,cat,Catalan,ca_ancora,Latin,1 B/симв,894261,10.197283798576901,10.575110622066711,4.853958889524093,fst_inline,family test,false
+Italic,Indo-European,oci,Occitan,oc_ttb,Latin,1 B/симв,1767812,20.750428433927272,12.030716501528444,11.718597150822319,fst_id,family test,false
+Uralic,Uralic,est,Estonian,et_edt,Latin,1 B/симв,246321,6.0213405690818425,10.84122344420492,5.005861740696326,fst_edit,family test,false
+Uralic,Uralic,hun,Hungarian,hu_szeged,Latin,1 B/симв,59767890,8.631971281398334,17.41944468844391,3.1022855864371865,fst_edit,family test,true
+Uralic,Uralic,fin,Finnish,fi_tdt,Latin,1 B/симв,26578255,10.5001426185235,16.69493535222685,6.490346203654832,fst_edit,family test,true
+Uralic,Uralic,koi,Komi Permyak,koi_uh,Cyrillic,2 B/симв,14073123,80.98660305804766,32.43385558415144,4.976959791994624,fst_edit,family test,false
+Germanic,Indo-European,eng,English,en_gum,Latin,1 B/симв,1196974,1.5882000936753236,9.82303040834638,3.0862040514881444,marisa_inline,family test,true
+Germanic,Indo-European,afr,Afrikaans,af_afribooms,Latin,1 B/симв,301045,1.7198640310786106,11.698443754256008,2.515549379508312,marisa_inline,family test,false
+Germanic,Indo-European,deu,German,de_hdt,Latin,1 B/симв,903603,2.98754203076801,12.455260772706598,4.30472812485761,fst_edit,family test,true
+Germanic,Indo-European,got,Gothic,got_proiel,Gothic,3 B/симв,146252,14.64277132559071,26.152073134042613,6.869665084248645,fst_edit,family test,false
+Turkic,Turkic,tur,Turkish,tr_penn,Latin,1 B/симв,6371388,7.407402068040245,15.72441358146765,4.640921229223088,fst_edit,family test,true
+Turkic,Turkic,sah,Yakut,sah_yktdt,Cyrillic,2 B/симв,102750,17.528147389969295,31.587795620437955,4.236898745570867,fst_edit,family test,false
+Turkic,Turkic,kaz,Kazakh,kk_ktb,Cyrillic,2 B/симв,4609849,128.51544466127683,24.215151081955177,4.0872548207794175,fst_edit,family test,false
+Turkic,Turkic,uig,Uyghur,ug_udt,Arabic,2 B/симв,4337821,207.71025665581305,24.823025431432047,4.691406518198512,fst_id,family test,false
+Indo-Iranian,Indo-European,pes,Persian,fa_perdt,Arabic,2 B/симв,845060,4.381545927784806,24.058834875630133,7.9567598436269815,fst_edit,family test,false
+Indo-Iranian,Indo-European,hin,Hindi,hi_hdtb,Devanagari,3 B/симв,104684,5.713880246711424,23.594379274769782,5.379654490147312,marisa_inline,family test,true
+Indo-Iranian,Indo-European,kmr,Northern Kurdish,kmr_kurmanji,Latin,1 B/симв,304066,14.862212229336722,10.040313616122816,4.595867813144605,fst_inline,family test,false
+Celtic,Indo-European,gla,Scottish Gaelic,gd_arcosg,Latin,1 B/симв,69302,4.0240390198583205,9.93538426019451,9.248049229650187,marisa_inline,family test,false
+Celtic,Indo-European,glv,Manx,gv_cadhan,Latin,1 B/симв,75868,5.413342846949697,9.259107924289555,11.066845532844752,marisa_inline,family test,false
+Celtic,Indo-European,gle,Irish,ga_idt,Latin,1 B/симв,508464,9.21280643583193,11.911093017401429,12.693337127506046,fst_id,family test,false
+Celtic,Indo-European,cym,Welsh,cy_ccg,Latin,1 B/симв,398105,17.030501368925393,9.606377714422075,11.5088512452011,fst_id,family test,false
+Afro-Asiatic,Afro-Asiatic,arb,Arabic,ar_padt,Arabic,2 B/симв,1621495,27.393820110825786,17.04236645811427,16.559704929188783,fst_id,script control,true
+Armenic,Indo-European,hye,Armenian,hy_armtdp,Armenian,2 B/симв,1069086,13.596240668438657,20.81779763274423,6.303616713968412,fst_edit,script control,false
+Graeco-Phrygian,Indo-European,grc,Ancient Greek,grc_proiel,Greek,2 B/симв,982123,20.85851120314325,21.956505447891963,13.885256308599546,fst_id,script control,false
+Kartvelian,Kartvelian,kat,Georgian,ka_gnc,Georgian,3 B/симв,460307,23.729611300134035,32.21450249507394,5.059924222662609,fst_edit,script control,false
+Japonic,Japonic,jpn,Japanese,ja_gsd,Hiragana,3 B/симв,391637,1.3037747971783067,17.476676105679495,7.659036600386699,fst_edit,script control,true
+Dravidian,Dravidian,tam,Tamil,ta_all,Tamil,3 B/симв,176855,17.83891466612871,35.03227502756496,5.003997838476175,fst_edit,script control,false
+Afro-Asiatic,Afro-Asiatic,heb,Hebrew,he_htb,Hebrew,2 B/симв,157239,13.949520936834634,17.466779870134,13.20514364770232,fst_id,script control,false
+Dravidian,Dravidian,tel,Telugu,te_mtg,Telugu,3 B/симв,27599,1.4948274928234848,22.52451175767238,2.4845518283327066,marisa_inline,script control,false

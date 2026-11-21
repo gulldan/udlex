@@ -29,3 +29,6 @@ example-bundle/
 *.pfx
 .codex/
 .claude/
+
+# Experiment crates under paper/ build in place
+paper/**/target/
