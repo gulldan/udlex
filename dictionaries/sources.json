@@ -1,0 +1,2466 @@
+{
+ "sources": [
+  {
+   "attribution": "Wiktionary contributors (en.wiktionary.org), extracted with Wiktextract (Ylonen, LREC 2022) and published by kaikki.org",
+   "family": "wiktionary",
+   "files": [
+    {
+     "last_modified": "Fri, 30 Oct 2026 20:48:24 GMT",
+     "sha256": "5ff2c072f8099f2d2ce484bd6957bf179f046d2ad37bc36555edf8bb84cb5291",
+     "size": 3082476978,
+     "url": "https://kaikki.org/dictionary/raw-wiktextract-data.jsonl.gz"
+    }
+   ],
+   "home": "https://kaikki.org/dictionary/rawdata.html",
+   "id": "wiktionary-en",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "528cf96aa1f201f1df5239b48de1a217157d56ce5b50116c2ea6d424c437c820",
+     "size": 188948480,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-en.tar"
+    }
+   ],
+   "parser": "wiktextract",
+   "revision": "enwiktionary dump 2026-10-01 (kaikki.org extraction of 2026-10-30)"
+  },
+  {
+   "attribution": "Wiktionary contributors (cs.wiktionary.org), extracted with Wiktextract (Ylonen, LREC 2022) and published by kaikki.org",
+   "family": "wiktionary-native",
+   "files": [
+    {
+     "last_modified": "Fri, 30 Oct 2026 20:51:19 GMT",
+     "sha256": "bb7bde6f575d081ae8d3d19e68e8975c541b9102822c7651af401f0b04f98bb8",
+     "size": 39633204,
+     "url": "https://kaikki.org/dictionary/downloads/cs/cs-extract.jsonl.gz"
+    }
+   ],
+   "home": "https://kaikki.org/dictionary/rawdata.html",
+   "id": "wiktionary-cs",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "8bf995e71787be88ca485ccc8378124802b2a299a15ebbfabac9421a0d3e3eb9",
+     "size": 3512320,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-cs.tar"
+    }
+   ],
+   "parser": "wiktextract",
+   "revision": "Czech Wiktionary, kaikki.org extraction of 2026-10-30"
+  },
+  {
+   "attribution": "Wiktionary contributors (de.wiktionary.org), extracted with Wiktextract (Ylonen, LREC 2022) and published by kaikki.org",
+   "family": "wiktionary-native",
+   "files": [
+    {
+     "last_modified": "Fri, 30 Oct 2026 20:52:43 GMT",
+     "sha256": "39ea559834e4cbcd2f1cc686037fc6ddc4590f29af94fd143292146ad9bf24c5",
+     "size": 310139416,
+     "url": "https://kaikki.org/dictionary/downloads/de/de-extract.jsonl.gz"
+    }
+   ],
+   "home": "https://kaikki.org/dictionary/rawdata.html",
+   "id": "wiktionary-de",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "9a1bbb6aaf193965e361c6069c8a3392baddd3613ae04d0065e07e6b53cee3ac",
+     "size": 7208960,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-de.tar"
+    }
+   ],
+   "parser": "wiktextract",
+   "revision": "German Wiktionary, kaikki.org extraction of 2026-10-30"
+  },
+  {
+   "attribution": "Wiktionary contributors (el.wiktionary.org), extracted with Wiktextract (Ylonen, LREC 2022) and published by kaikki.org",
+   "family": "wiktionary-native",
+   "files": [
+    {
+     "last_modified": "Fri, 30 Oct 2026 20:51:47 GMT",
+     "sha256": "ddaf58feaaf2ade2cf382421569ac71a36546286845784e523fbf35251d11133",
+     "size": 115806717,
+     "url": "https://kaikki.org/dictionary/downloads/el/el-extract.jsonl.gz"
+    }
+   ],
+   "home": "https://kaikki.org/dictionary/rawdata.html",
+   "id": "wiktionary-el",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "b7cf577d3db8d78aa7889928e278ef626f3bb27e758cea7347c3d4dbb9ccaa58",
+     "size": 14315520,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-el.tar"
+    }
+   ],
+   "parser": "wiktextract",
+   "revision": "Greek Wiktionary, kaikki.org extraction of 2026-10-30"
+  },
+  {
+   "attribution": "Wiktionary contributors (es.wiktionary.org), extracted with Wiktextract (Ylonen, LREC 2022) and published by kaikki.org",
+   "family": "wiktionary-native",
+   "files": [
+    {
+     "last_modified": "Fri, 30 Oct 2026 20:48:52 GMT",
+     "sha256": "0a7a02456ecf34dd3419e0d5adf4f18da5531487dde31829d126afe86eade861",
+     "size": 103226090,
+     "url": "https://kaikki.org/dictionary/downloads/es/es-extract.jsonl.gz"
+    }
+   ],
+   "home": "https://kaikki.org/dictionary/rawdata.html",
+   "id": "wiktionary-es",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "2d10b4002e4770c8e1475eafa8c7648a5c6a7ea8e3e61fda2be08d4e3ea8ed36",
+     "size": 4362240,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-es.tar"
+    }
+   ],
+   "parser": "wiktextract",
+   "revision": "Spanish Wiktionary, kaikki.org extraction of 2026-10-30"
+  },
+  {
+   "attribution": "Wiktionary contributors (fr.wiktionary.org), extracted with Wiktextract (Ylonen, LREC 2022) and published by kaikki.org",
+   "family": "wiktionary-native",
+   "files": [
+    {
+     "last_modified": "Fri, 30 Oct 2026 20:50:57 GMT",
+     "sha256": "61d27bfc4bef9eb8f19d6e280ebf310adb07196da41d2f5777ff5942bef66a28",
+     "size": 736596796,
+     "url": "https://kaikki.org/dictionary/downloads/fr/fr-extract.jsonl.gz"
+    }
+   ],
+   "home": "https://kaikki.org/dictionary/rawdata.html",
+   "id": "wiktionary-fr",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "aa28563482b39e6e1ac4a4a0d1b58c084ccf34b86688af9a0b43fd51df7a0d2e",
+     "size": 30842880,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-fr.tar"
+    }
+   ],
+   "parser": "wiktextract",
+   "revision": "French Wiktionary, kaikki.org extraction of 2026-10-30"
+  },
+  {
+   "attribution": "Wiktionary contributors (id.wiktionary.org), extracted with Wiktextract (Ylonen, LREC 2022) and published by kaikki.org",
+   "family": "wiktionary-native",
+   "files": [
+    {
+     "last_modified": "Fri, 30 Oct 2026 20:49:50 GMT",
+     "sha256": "0c54402893e77610fa7a757cb5c56d0d1134047c0123079f84cee0f8d285dbc6",
+     "size": 2940954,
+     "url": "https://kaikki.org/dictionary/downloads/id/id-extract.jsonl.gz"
+    }
+   ],
+   "home": "https://kaikki.org/dictionary/rawdata.html",
+   "id": "wiktionary-id",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "4b7c38c3cced519dae46730cc22e4f6fe9327e41576452cd5f6a40641fec15b8",
+     "size": 491520,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-id.tar"
+    }
+   ],
+   "parser": "wiktextract",
+   "revision": "Indonesian Wiktionary, kaikki.org extraction of 2026-10-30"
+  },
+  {
+   "attribution": "Wiktionary contributors (it.wiktionary.org), extracted with Wiktextract (Ylonen, LREC 2022) and published by kaikki.org",
+   "family": "wiktionary-native",
+   "files": [
+    {
+     "last_modified": "Fri, 30 Oct 2026 20:52:48 GMT",
+     "sha256": "9f35d5ac30f2fbab4774eb3e81ec6394806bd2723f802b405e7e9901185d5229",
+     "size": 43849715,
+     "url": "https://kaikki.org/dictionary/downloads/it/it-extract.jsonl.gz"
+    }
+   ],
+   "home": "https://kaikki.org/dictionary/rawdata.html",
+   "id": "wiktionary-it",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "f13c99b836bf0a5f2327e7caca394c08e77ea5a26b5d2089b020b499733dbe8a",
+     "size": 3348480,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-it.tar"
+    }
+   ],
+   "parser": "wiktextract",
+   "revision": "Italian Wiktionary, kaikki.org extraction of 2026-10-30"
+  },
+  {
+   "attribution": "Wiktionary contributors (ja.wiktionary.org), extracted with Wiktextract (Ylonen, LREC 2022) and published by kaikki.org",
+   "family": "wiktionary-native",
+   "files": [
+    {
+     "last_modified": "Fri, 30 Oct 2026 20:48:41 GMT",
+     "sha256": "cf8d3f8e35b87d9c94fe61baa0dd9bf5abbe84a2bc4b656c9465a15538c3394d",
+     "size": 64975000,
+     "url": "https://kaikki.org/dictionary/downloads/ja/ja-extract.jsonl.gz"
+    }
+   ],
+   "home": "https://kaikki.org/dictionary/rawdata.html",
+   "id": "wiktionary-ja",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "7032a3b7e58d69a9cc5dbda7fb10ddd406dd052c84c296f09892b70c41887670",
+     "size": 4823040,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-ja.tar"
+    }
+   ],
+   "parser": "wiktextract",
+   "revision": "Japanese Wiktionary, kaikki.org extraction of 2026-10-30"
+  },
+  {
+   "attribution": "Wiktionary contributors (ko.wiktionary.org), extracted with Wiktextract (Ylonen, LREC 2022) and published by kaikki.org",
+   "family": "wiktionary-native",
+   "files": [
+    {
+     "last_modified": "Fri, 30 Oct 2026 20:51:01 GMT",
+     "sha256": "7ce75eec9ac9d198a510eb9db57e1831810bba941099d3580ae59a7b026aaec1",
+     "size": 26869664,
+     "url": "https://kaikki.org/dictionary/downloads/ko/ko-extract.jsonl.gz"
+    }
+   ],
+   "home": "https://kaikki.org/dictionary/rawdata.html",
+   "id": "wiktionary-ko",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "c6866a044be0c2f68e42826acf0a07bb6a8c9bbae5310021a92153171fd79bc4",
+     "size": 1966080,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-ko.tar"
+    }
+   ],
+   "parser": "wiktextract",
+   "revision": "Korean Wiktionary, kaikki.org extraction of 2026-10-30"
+  },
+  {
+   "attribution": "Wiktionary contributors (ku.wiktionary.org), extracted with Wiktextract (Ylonen, LREC 2022) and published by kaikki.org",
+   "family": "wiktionary-native",
+   "files": [
+    {
+     "last_modified": "Fri, 30 Oct 2026 20:49:37 GMT",
+     "sha256": "70d65b0103d4101f54ef19e28929ac7966ff14de8551d9386030c878daeb3a06",
+     "size": 61088951,
+     "url": "https://kaikki.org/dictionary/downloads/ku/ku-extract.jsonl.gz"
+    }
+   ],
+   "home": "https://kaikki.org/dictionary/rawdata.html",
+   "id": "wiktionary-ku",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "8200f57a43f5c3bdba3d55a6b196d91d2d9deed75276161ce69d144826c31442",
+     "size": 3051520,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-ku.tar"
+    }
+   ],
+   "parser": "wiktextract",
+   "revision": "Kurdish Wiktionary, kaikki.org extraction of 2026-10-30"
+  },
+  {
+   "attribution": "Wiktionary contributors (ms.wiktionary.org), extracted with Wiktextract (Ylonen, LREC 2022) and published by kaikki.org",
+   "family": "wiktionary-native",
+   "files": [
+    {
+     "last_modified": "Fri, 30 Oct 2026 20:51:12 GMT",
+     "sha256": "ecd4789b6518067369b51ae97ddaa39f6db1d70dd2956d13f9454d164082c64c",
+     "size": 6197038,
+     "url": "https://kaikki.org/dictionary/downloads/ms/ms-extract.jsonl.gz"
+    }
+   ],
+   "home": "https://kaikki.org/dictionary/rawdata.html",
+   "id": "wiktionary-ms",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "62d1259516d3265bf1ed20a099094beda24538b0bda4a5f561bf164e4546c621",
+     "size": 225280,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-ms.tar"
+    }
+   ],
+   "parser": "wiktextract",
+   "revision": "Malay Wiktionary, kaikki.org extraction of 2026-10-30"
+  },
+  {
+   "attribution": "Wiktionary contributors (nl.wiktionary.org), extracted with Wiktextract (Ylonen, LREC 2022) and published by kaikki.org",
+   "family": "wiktionary-native",
+   "files": [
+    {
+     "last_modified": "Fri, 30 Oct 2026 20:49:09 GMT",
+     "sha256": "6eee5015514661292f5915c6c2fcc7da7ebff32714dd704217ea28ae37650801",
+     "size": 134749667,
+     "url": "https://kaikki.org/dictionary/downloads/nl/nl-extract.jsonl.gz"
+    }
+   ],
+   "home": "https://kaikki.org/dictionary/rawdata.html",
+   "id": "wiktionary-nl",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "63a0f0ba3e7b0ab9c870d710a84d6f50d0472bfed95f9c275593c347c1bbf535",
+     "size": 4833280,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-nl.tar"
+    }
+   ],
+   "parser": "wiktextract",
+   "revision": "Dutch Wiktionary, kaikki.org extraction of 2026-10-30"
+  },
+  {
+   "attribution": "Wiktionary contributors (pl.wiktionary.org), extracted with Wiktextract (Ylonen, LREC 2022) and published by kaikki.org",
+   "family": "wiktionary-native",
+   "files": [
+    {
+     "last_modified": "Fri, 30 Oct 2026 20:49:49 GMT",
+     "sha256": "c76fa8c844231ab2d27b79a88eb105b19ed6e873b2fdbc54826713fd8353db2c",
+     "size": 137850838,
+     "url": "https://kaikki.org/dictionary/downloads/pl/pl-extract.jsonl.gz"
+    }
+   ],
+   "home": "https://kaikki.org/dictionary/rawdata.html",
+   "id": "wiktionary-pl",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "cbc7321487aa7d8fd8e880a99ab97eb5c46d6cc38ede9301bca3cbce16c9ddcb",
+     "size": 8294400,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-pl.tar"
+    }
+   ],
+   "parser": "wiktextract",
+   "revision": "Polish Wiktionary, kaikki.org extraction of 2026-10-30"
+  },
+  {
+   "attribution": "Wiktionary contributors (pt.wiktionary.org), extracted with Wiktextract (Ylonen, LREC 2022) and published by kaikki.org",
+   "family": "wiktionary-native",
+   "files": [
+    {
+     "last_modified": "Fri, 30 Oct 2026 20:48:56 GMT",
+     "sha256": "26b244e5b25629e9a88cf926813e6987289fa61e8b8a2faa68aef78ed6efaaa6",
+     "size": 37273123,
+     "url": "https://kaikki.org/dictionary/downloads/pt/pt-extract.jsonl.gz"
+    }
+   ],
+   "home": "https://kaikki.org/dictionary/rawdata.html",
+   "id": "wiktionary-pt",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "9d3007d40c3084c6afb03805f134caf04cf74ded8787b2ca93e978389dcc336c",
+     "size": 2754560,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-pt.tar"
+    }
+   ],
+   "parser": "wiktextract",
+   "revision": "Portuguese Wiktionary, kaikki.org extraction of 2026-10-30"
+  },
+  {
+   "attribution": "Wiktionary contributors (ru.wiktionary.org), extracted with Wiktextract (Ylonen, LREC 2022) and published by kaikki.org",
+   "family": "wiktionary-native",
+   "files": [
+    {
+     "last_modified": "Fri, 30 Oct 2026 20:52:14 GMT",
+     "sha256": "fdcb978c76b660e0e43977bbf7487c812e6d42e965b0a73e3f5b4ba6981174c4",
+     "size": 308932274,
+     "url": "https://kaikki.org/dictionary/downloads/ru/ru-extract.jsonl.gz"
+    }
+   ],
+   "home": "https://kaikki.org/dictionary/rawdata.html",
+   "id": "wiktionary-ru",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "63c3676d0aa71245a6cdf4c7c812e38ace324c329efac7b049b965d715942112",
+     "size": 26562560,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-ru.tar"
+    }
+   ],
+   "parser": "wiktextract",
+   "revision": "Russian Wiktionary, kaikki.org extraction of 2026-10-30"
+  },
+  {
+   "attribution": "Wiktionary contributors (th.wiktionary.org), extracted with Wiktextract (Ylonen, LREC 2022) and published by kaikki.org",
+   "family": "wiktionary-native",
+   "files": [
+    {
+     "last_modified": "Fri, 30 Oct 2026 20:51:32 GMT",
+     "sha256": "62dba8c33491dcd78a37f0f3c34fbb4ffa2f5a79afbfb4fdc45a226dd73a13e9",
+     "size": 75595415,
+     "url": "https://kaikki.org/dictionary/downloads/th/th-extract.jsonl.gz"
+    }
+   ],
+   "home": "https://kaikki.org/dictionary/rawdata.html",
+   "id": "wiktionary-th",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "fd76695e5aa01c0c75c9609f3e6b0bdd02209f05d256d15e0ba5e4b8479babfd",
+     "size": 8693760,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-th.tar"
+    }
+   ],
+   "parser": "wiktextract",
+   "revision": "Thai Wiktionary, kaikki.org extraction of 2026-10-30"
+  },
+  {
+   "attribution": "Wiktionary contributors (tr.wiktionary.org), extracted with Wiktextract (Ylonen, LREC 2022) and published by kaikki.org",
+   "family": "wiktionary-native",
+   "files": [
+    {
+     "last_modified": "Fri, 30 Oct 2026 20:51:06 GMT",
+     "sha256": "09bc9e87b010dcee5e22c48ae1f8379cef3e4fefaefbb7c8e5453b8c0ea88f6d",
+     "size": 45899849,
+     "url": "https://kaikki.org/dictionary/downloads/tr/tr-extract.jsonl.gz"
+    }
+   ],
+   "home": "https://kaikki.org/dictionary/rawdata.html",
+   "id": "wiktionary-tr",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "f434a6b27ec72fa0d8e6b13854f767c43333c3a12a858aadab28c6c895e3343e",
+     "size": 9728000,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-tr.tar"
+    }
+   ],
+   "parser": "wiktextract",
+   "revision": "Turkish Wiktionary, kaikki.org extraction of 2026-10-30"
+  },
+  {
+   "attribution": "Wiktionary contributors (vi.wiktionary.org), extracted with Wiktextract (Ylonen, LREC 2022) and published by kaikki.org",
+   "family": "wiktionary-native",
+   "files": [
+    {
+     "last_modified": "Fri, 30 Oct 2026 20:51:15 GMT",
+     "sha256": "f2139c262f45cbe32dbc8e7478369fbc936ff6640deec0d2b6e7ad647d58f273",
+     "size": 34424532,
+     "url": "https://kaikki.org/dictionary/downloads/vi/vi-extract.jsonl.gz"
+    }
+   ],
+   "home": "https://kaikki.org/dictionary/rawdata.html",
+   "id": "wiktionary-vi",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "bea2ae2badd13bb3e7c6b9fa5a7d10c3d965f42c986d9c2e3f567341b3b5643c",
+     "size": 1822720,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-vi.tar"
+    }
+   ],
+   "parser": "wiktextract",
+   "revision": "Vietnamese Wiktionary, kaikki.org extraction of 2026-10-30"
+  },
+  {
+   "attribution": "Wiktionary contributors (zh.wiktionary.org), extracted with Wiktextract (Ylonen, LREC 2022) and published by kaikki.org",
+   "family": "wiktionary-native",
+   "files": [
+    {
+     "last_modified": "Fri, 30 Oct 2026 20:49:29 GMT",
+     "sha256": "30f175aa641b204c43755e942a6e97d38cf5e93d7815ce1e2475e68c068b82c0",
+     "size": 234450611,
+     "url": "https://kaikki.org/dictionary/downloads/zh/zh-extract.jsonl.gz"
+    }
+   ],
+   "home": "https://kaikki.org/dictionary/rawdata.html",
+   "id": "wiktionary-zh",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "mirror": [
+    {
+     "sha256": "792e906c0cbc57e6120075a4ed77e42d615e124ee510d37e7d56a6cff17bed91",
+     "size": 14950400,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-wiktionary-zh.tar"
+    }
+   ],
+   "parser": "wiktextract",
+   "revision": "Chinese Wiktionary, kaikki.org extraction of 2026-10-30"
+  },
+  {
+   "attribution": "UniMorph contributors (Batsuren et al., LREC 2022; McCarthy et al., LREC 2020)",
+   "family": "unimorph",
+   "files": [
+    {
+     "languages": [
+      "afr"
+     ],
+     "sha256": "dcdf6278cda8c252b776e6974b14a5232eee60be91f8a0259b085e701ba55bed",
+     "size": 10427062,
+     "url": "https://raw.githubusercontent.com/unimorph/afr/cc2df0c0de1a4e44a96739c1670c52d386cbf401/afr"
+    },
+    {
+     "languages": [
+      "amh"
+     ],
+     "sha256": "42014c1c3066495613a5cd1bc7375e4cb3572b779d80f1dc5508d99c753e267f",
+     "size": 1763293,
+     "url": "https://raw.githubusercontent.com/unimorph/amh/02db5a185339f6d7a3440f05a4f1d1ca0131881a/amh"
+    },
+    {
+     "languages": [
+      "ang"
+     ],
+     "sha256": "e1568ebdf73db88cf3adc1f9d976524d458ef0c9fc69fbef926d0af9dfe8d580",
+     "size": 7034720,
+     "url": "https://raw.githubusercontent.com/unimorph/ang/825a9e35208fd8fcbc340bd8129d69012386e048/ang"
+    },
+    {
+     "languages": [
+      "arb"
+     ],
+     "sha256": "01663d08dbc6bb2a4207749cb4c000926c72c7cf9ec3faa8521e4cb5e9d690f1",
+     "size": 7155824,
+     "url": "https://raw.githubusercontent.com/unimorph/ara/e9b7521ab75e3a7da6f996a428031164993e6f19/ara"
+    },
+    {
+     "languages": [
+      "asm"
+     ],
+     "sha256": "043bc127d1ea3d370872c602a06b0710df8dfc1d455bcbd2bde07f9dd257d164",
+     "size": 6532792,
+     "url": "https://raw.githubusercontent.com/unimorph/asm/2763a62176e3cf4ce29a6b555624cc13a5df389d/asm"
+    },
+    {
+     "languages": [
+      "aze"
+     ],
+     "sha256": "1736642125985f6da4a7491dc708b45cfb6f7c4ef93575dc6025bd2b873d14bc",
+     "size": 274525,
+     "url": "https://raw.githubusercontent.com/unimorph/aze/fd9fa8f004be414c1a837bf0845697cc94f553a1/aze"
+    },
+    {
+     "languages": [
+      "bel"
+     ],
+     "sha256": "07073665ab13b448624933b8643998cf40b89529d6b32317adeadb161dc960ee",
+     "size": 739537,
+     "url": "https://raw.githubusercontent.com/unimorph/bel/cba29019d3ba581c26d4152ead81c27ff16a6550/bel"
+    },
+    {
+     "languages": [
+      "ben"
+     ],
+     "sha256": "b0f1e2d005bce183dfcc2a570de1ce3d4d9a17feafa6c222b3f72b3e6ff894b2",
+     "size": 251991,
+     "url": "https://raw.githubusercontent.com/unimorph/ben/55a44fa60e9b7a3a5ff7acbed66b07571ceefa79/ben"
+    },
+    {
+     "languages": [
+      "bre"
+     ],
+     "sha256": "0c972479ee89e93fa49e14ac2ccf408d25bac26ea6f414e33ccce3bc2d1d8435",
+     "size": 82159,
+     "url": "https://raw.githubusercontent.com/unimorph/bre/2f20b8cc95217ffce35e0f8f6fa31c29955c271a/bre"
+    },
+    {
+     "languages": [
+      "bul"
+     ],
+     "sha256": "bccdd8b4e279e1aa75c8c4667711270289fe15cf6b3c7ecde244a04eca126727",
+     "size": 3074574,
+     "url": "https://raw.githubusercontent.com/unimorph/bul/b60b78dbf1d65867419a260e91ca213dc355c2f3/bul"
+    },
+    {
+     "languages": [
+      "cat"
+     ],
+     "sha256": "22d8ec53f9f6bb40ad97619c01961ca60c0c046804173a9f395c6bf54194ca15",
+     "size": 2902458,
+     "url": "https://raw.githubusercontent.com/unimorph/cat/5fe904e0fb37867b4d9e6099fd0798aeeba37d14/cat"
+    },
+    {
+     "languages": [
+      "ceb"
+     ],
+     "sha256": "d84f9923795f5914cce2a299191686c4b66e8c6c0c8c0bd5c368edfb9c0cbcde",
+     "size": 16292,
+     "url": "https://raw.githubusercontent.com/unimorph/ceb/edbada3630dc12c4025f0b80d5a745a256ef25f6/ceb"
+    },
+    {
+     "languages": [
+      "ces"
+     ],
+     "sha256": "4c0a1841a78d45cfa8a3f447943f9c2135baa9c986ae9de0ba704b3d99da5d42",
+     "size": 4875289,
+     "url": "https://raw.githubusercontent.com/unimorph/ces/f0d4a4dfaec45b1f4a0ba0a1db1298f3d64af503/ces"
+    },
+    {
+     "languages": [
+      "chu"
+     ],
+     "sha256": "3d7226d29c443d0c46bfb4bfb81ac4e8992608c4cb4b6127983a1e27c2385c51",
+     "size": 149081,
+     "url": "https://raw.githubusercontent.com/unimorph/chu/35f1e2af69f3f618fe6a95245198c380852d3337/chu"
+    },
+    {
+     "languages": [
+      "ckt"
+     ],
+     "sha256": "488ad4bfeff6aef4b8d5de536251c7a3887e05f66be68d0901688d6db88e65da",
+     "size": 12277,
+     "url": "https://raw.githubusercontent.com/unimorph/ckt/facbd482ef2558916b7283b398c9810a8649e7f2/ckt"
+    },
+    {
+     "languages": [
+      "cym"
+     ],
+     "sha256": "9f0ea78662a71898d70e5940b0f1030a25a018a0fd44ac282ba1f791c758e75c",
+     "size": 374501,
+     "url": "https://raw.githubusercontent.com/unimorph/cym/6ec33a49f2adc1c57233528e1413221f979b7936/cym"
+    },
+    {
+     "languages": [
+      "dan"
+     ],
+     "sha256": "3fa7338992f9e49deb9d033426d29de156575648de22b5783e32ac1604255605",
+     "size": 1070000,
+     "url": "https://raw.githubusercontent.com/unimorph/dan/a14f95effb01e2fb81a252d36ee332d86f24d28b/dan"
+    },
+    {
+     "languages": [
+      "deu"
+     ],
+     "sha256": "8bc98487e3caf86188e2c072ebf2dc734f2ca35afef016bb399eb5a43e69d7c0",
+     "size": 18932560,
+     "url": "https://raw.githubusercontent.com/unimorph/deu/d226d2112d3490d8f04ece10d4538123d4297a39/deu"
+    },
+    {
+     "languages": [
+      "ell"
+     ],
+     "sha256": "68f71b889fa29d31d975ebbc29f9f0f1b3a2dd6cca4f40a21b2c06f443811941",
+     "size": 11222248,
+     "url": "https://raw.githubusercontent.com/unimorph/ell/fce1186efc7c8036fe2b6a13c110c2f2cd140e38/ell"
+    },
+    {
+     "languages": [
+      "eng"
+     ],
+     "sha256": "20a191cefdc7cad6fa74b00f49d6f658684f17b14541aae372e5a3d5a8c15c67",
+     "size": 18022905,
+     "url": "https://raw.githubusercontent.com/unimorph/eng/66e0e9e8e2dcd196da081a25a48e5c1fe3d8b49b/eng"
+    },
+    {
+     "languages": [
+      "est"
+     ],
+     "sha256": "602b778567b4607514ee380152fe8a6ccd70dbc15190339f7f5a6d9a710b899f",
+     "size": 1397385,
+     "url": "https://raw.githubusercontent.com/unimorph/est/97663990872e6bbc06701839d33462833676ebc2/est"
+    },
+    {
+     "languages": [
+      "eus"
+     ],
+     "sha256": "b80f253838429c5aa4326342cd2e2f30b3b7c2dd9f9dcee64297c3f7c5ad8ab5",
+     "size": 876480,
+     "url": "https://raw.githubusercontent.com/unimorph/eus/256a35d915d4689e96e79cc9725e0518b8152db0/eus"
+    },
+    {
+     "languages": [
+      "evn"
+     ],
+     "sha256": "9406c3d0779ac05d2ce731cbc20f7db525a0e81459917ac47c6b7b581eb8ecff",
+     "size": 399117,
+     "url": "https://raw.githubusercontent.com/unimorph/evn/cdbe7b44ba754403d60fd38818ac173bec13ba34/evn"
+    },
+    {
+     "languages": [
+      "fao"
+     ],
+     "sha256": "8c5282080aa840158c2073c9b9a658374ed3c96e28c7c0e42ef94ebbb039ca23",
+     "size": 1450065,
+     "url": "https://raw.githubusercontent.com/unimorph/fao/82bf05c94fbb54e13a48e0dac49a805d766e834e/fao"
+    },
+    {
+     "languages": [
+      "pes"
+     ],
+     "sha256": "58e271562c184ed0bc38d85bf91e0d5427c32e4b5a55f2bf42bbdeb0843ca232",
+     "size": 2104724,
+     "url": "https://raw.githubusercontent.com/unimorph/fas/b0e4f832b6ffe5fc2457b8549c02525955b2ff97/fas"
+    },
+    {
+     "languages": [
+      "fin"
+     ],
+     "sha256": "0aaebec5dfc5493840321b4457873a3b5b8d4ee0b507c4f13304de3c85a3095f",
+     "size": 56591018,
+     "url": "https://raw.githubusercontent.com/unimorph/fin/fe0a2707244ed2ce2fe5d92a4a57c92271b32e1f/fin.1"
+    },
+    {
+     "languages": [
+      "fin"
+     ],
+     "sha256": "94c4808def5f9ff60d1ff5b9051b7ace44ec55d818aff9cfd83896a1f4446cb3",
+     "size": 59005468,
+     "url": "https://raw.githubusercontent.com/unimorph/fin/fe0a2707244ed2ce2fe5d92a4a57c92271b32e1f/fin.2"
+    },
+    {
+     "languages": [
+      "fra"
+     ],
+     "sha256": "4760fc36435a9ffba9b4de6f0787d8eca5b15022e6b141e3b242b129f0d88dcb",
+     "size": 13405679,
+     "url": "https://raw.githubusercontent.com/unimorph/fra/f672f8cceb2d5f5a1e2241b5622c8845f8274635/fra"
+    },
+    {
+     "languages": [
+      "frm"
+     ],
+     "sha256": "45af05cce1284b1c07fac6a4179adf075e56691c5f0885323c33ba3eba800927",
+     "size": 1441122,
+     "url": "https://raw.githubusercontent.com/unimorph/frm/7baa5932dbdd25f5f8c5d55c43a76e972b18cf8f/frm"
+    },
+    {
+     "languages": [
+      "fro"
+     ],
+     "sha256": "18dcf34c57321db9c8646435bf34ca3f69d4142a22e90a8387d71a7a0d3083f3",
+     "size": 4945582,
+     "url": "https://raw.githubusercontent.com/unimorph/fro/7b0937f7ca90103b390e93f9bfab026e8daedff2/fro"
+    },
+    {
+     "languages": [
+      "glg"
+     ],
+     "sha256": "93945d193c6bb8ee3370446ba722f04a4c893c20082edd9ca735b677f135b1fc",
+     "size": 1259120,
+     "url": "https://raw.githubusercontent.com/unimorph/gal/7927b7b3b2379df0870c23fafb6481bda214c572/gal"
+    },
+    {
+     "languages": [
+      "gla"
+     ],
+     "sha256": "641adebe1aca2e55837464f6388527b782dfb646f242a1e28ba23f52abff686e",
+     "size": 25025,
+     "url": "https://raw.githubusercontent.com/unimorph/gla/7051cc47fb89ccda4282e53a42add3c5b74bbf71/gla"
+    },
+    {
+     "languages": [
+      "gle"
+     ],
+     "sha256": "88b9c0dee797fc16a20486ff300b70f94770847406364f473a03e86cc30173cb",
+     "size": 3853188,
+     "url": "https://raw.githubusercontent.com/unimorph/gle/efdca3ead351c804224b97336c3bcef8c78b6015/gle"
+    },
+    {
+     "languages": [
+      "glv"
+     ],
+     "sha256": "ba9f01f469f8227cdf338db2a7305abbfa3061f458bb42d60d71b10024d940bd",
+     "size": 401,
+     "url": "https://raw.githubusercontent.com/unimorph/glv/92565416550aebef179078fd0256777c189afce5/glv"
+    },
+    {
+     "languages": [
+      "got"
+     ],
+     "sha256": "90983d0a16f46b34dc1056d29637d5aeabbb54d744ab37be8edfe22d5bc5b42b",
+     "size": 14287321,
+     "url": "https://raw.githubusercontent.com/unimorph/got/d3aa0b4386646cd6c7c24eb36796726d234ab418/got"
+    },
+    {
+     "languages": [
+      "grc"
+     ],
+     "sha256": "09ff9231d90dbe481942bba143f04800ab919a31ab11801c01301488605cadd9",
+     "size": 2057514,
+     "url": "https://raw.githubusercontent.com/unimorph/grc/7f4a58df733726c75c1355dd3a038e950d5e308f/grc"
+    },
+    {
+     "languages": [
+      "gsw"
+     ],
+     "sha256": "cec99240124fe57d262ebf5b48fec33e8053897318fbaad40d09f83218a8b580",
+     "size": 65123,
+     "url": "https://raw.githubusercontent.com/unimorph/gsw/dc1e9fce09ae14c2ef22b06ee10da3ab943388fe/gsw"
+    },
+    {
+     "languages": [
+      "guj"
+     ],
+     "sha256": "fb6437c6544b823c00c85d78e3ba614bec80d1ee8a8982770ff24181f6a503a3",
+     "size": 435258,
+     "url": "https://raw.githubusercontent.com/unimorph/guj/f98348eea353912a61ca5d5af5c68c602a483ebe/guj"
+    },
+    {
+     "languages": [
+      "hrv",
+      "srp"
+     ],
+     "sha256": "736bf8f0cb726f2c6f88af67c01cd72271889169b227e05a1f665af874a54bf0",
+     "size": 32194142,
+     "url": "https://raw.githubusercontent.com/unimorph/hbs/f41348090bf8ec35e41fee61d7c52d12ae1feff1/hbs"
+    },
+    {
+     "languages": [
+      "heb"
+     ],
+     "sha256": "d671647f0a4fb55c97d27ebe9ebe3321c956d8560afb0f08ef95174beb97174d",
+     "size": 1153218,
+     "url": "https://raw.githubusercontent.com/unimorph/heb/b2bff12338caa1922e6aeea128c617730f93d334/heb"
+    },
+    {
+     "languages": [
+      "hin"
+     ],
+     "sha256": "3c9228053925a69fa5c20c5bafc880268c294afd8d267504258ee405597fb18a",
+     "size": 3994359,
+     "url": "https://raw.githubusercontent.com/unimorph/hin/ae6231f736fa5a08205c768ca23ff6c19e80d25e/hin"
+    },
+    {
+     "languages": [
+      "hsb"
+     ],
+     "sha256": "a62d4ac203560350420509c97d51272e4396ea7609c7f996f8664f09e4162426",
+     "size": 11494,
+     "url": "https://raw.githubusercontent.com/unimorph/hsb/0b3dfaa4c60a218cff087cf6df35751a111a1753/hsb"
+    },
+    {
+     "languages": [
+      "hun"
+     ],
+     "sha256": "b2dea372d041b44558d207714b0a8c3eda3b47c77739fc5a3a8e4e4e8c6f89ad",
+     "size": 37281606,
+     "url": "https://raw.githubusercontent.com/unimorph/hun/20d5e04211bbab3dd689c99637356a8eab7c5fd7/hun"
+    },
+    {
+     "languages": [
+      "hye"
+     ],
+     "sha256": "850ca7b5fa06398795edc35daf0e202adab8765946b8920ab3307c3fb22ce091",
+     "size": 17556146,
+     "url": "https://raw.githubusercontent.com/unimorph/hye/8d404710b0451dae1576d3aaf77c91e638eff66b/hye"
+    },
+    {
+     "languages": [
+      "ind"
+     ],
+     "sha256": "77c709f98b581a80051d0e18aa899e0d84d70436223054efa09831d71cdc2ac6",
+     "size": 832127,
+     "url": "https://raw.githubusercontent.com/unimorph/ind/4663cf3b8127fb85cb7e8a0c1a4f07e96103fe34/ind"
+    },
+    {
+     "languages": [
+      "isl"
+     ],
+     "sha256": "a944234d2d62775d2d0490664630ddaf1ce50ae164218582bc8fedb45ea26422",
+     "size": 2472980,
+     "url": "https://raw.githubusercontent.com/unimorph/isl/71a748303ef3fcc30810f90687a543313563fa1a/isl"
+    },
+    {
+     "languages": [
+      "ita"
+     ],
+     "sha256": "6347bb15b3d2c3dafcbe4adc0e7beaa97a8bc61bcccc345079afb154c03f1321",
+     "size": 19801423,
+     "url": "https://raw.githubusercontent.com/unimorph/ita/fa2cc6ce173643e748bd8f4162709365bdc98805/ita"
+    },
+    {
+     "languages": [
+      "jpn"
+     ],
+     "sha256": "6ba4589cd43846c8afab5bdf5f4c498e03e32849f95c3e5c9840be2975d4b888",
+     "size": 645197,
+     "url": "https://raw.githubusercontent.com/unimorph/jpn/ef6d7bf780d177d4b0802568cff45a76056396e5/jpn"
+    },
+    {
+     "languages": [
+      "kat"
+     ],
+     "sha256": "0525c4946cc86618a9c5af2681f5befff29aad5822da0e5c1bdcebf4b6607822",
+     "size": 6011828,
+     "url": "https://raw.githubusercontent.com/unimorph/kat/25a1350977ae1f9c5cadf6267276260fc9eb9a21/kat"
+    },
+    {
+     "languages": [
+      "kaz"
+     ],
+     "sha256": "2474e66a4a112528c6b2cbeed498a75c87c4de5f36da276143e8fa90aa5a7488",
+     "size": 14228,
+     "url": "https://raw.githubusercontent.com/unimorph/kaz/91885d96011368d91397033f4a8f8b0f9c2b60a0/kaz"
+    },
+    {
+     "languages": [
+      "mon"
+     ],
+     "sha256": "4ff606bbf23b8de81a6f6ec9aedab44136f38c11e45607130a328e1a2d388630",
+     "size": 1363022,
+     "url": "https://raw.githubusercontent.com/unimorph/khk/c062afd9bf2dc36f54cc8f16efecfd97fc4a6b8c/khk"
+    },
+    {
+     "languages": [
+      "kir"
+     ],
+     "sha256": "05ab494323aa83a3b27be2264ea450a28957bf48c32804b743c77ccc6a066e73",
+     "size": 294027,
+     "url": "https://raw.githubusercontent.com/unimorph/kir/3eba9b72cc8222bf964a06842e4ae31c45ce21bf/kir"
+    },
+    {
+     "languages": [
+      "kmr"
+     ],
+     "sha256": "f1450888ea2ab13503e71c3249e2fa5ad295e9460bf5bff8a8bad05c52c68bd6",
+     "size": 8592722,
+     "url": "https://raw.githubusercontent.com/unimorph/kmr/3da8e1102f4c25f672423fc026789febb3f67f80/kmr"
+    },
+    {
+     "languages": [
+      "kor"
+     ],
+     "sha256": "fcf730bfa5f51bfa15285a619f53283054fd38045a1ad426fbdc3336c9b99195",
+     "size": 11608436,
+     "url": "https://raw.githubusercontent.com/unimorph/kor/35bbecb10a3045e24b783a6efd2202e844a1ba3d/kor"
+    },
+    {
+     "languages": [
+      "krl"
+     ],
+     "sha256": "44f7d33c6d68e09d45d0c7e6a711beea43be15bff2bca6a45ab575783db8930d",
+     "size": 19024,
+     "url": "https://raw.githubusercontent.com/unimorph/krl/d72ba9566b70640b415a2cecc95595fe239e17d3/krl"
+    },
+    {
+     "languages": [
+      "lat"
+     ],
+     "sha256": "7aed5a2fd17c29474e85e315d42654d1794a3d3efc956b387714ca601a608a2b",
+     "size": 40357629,
+     "url": "https://raw.githubusercontent.com/unimorph/lat/050924c9f013e6aba4d7c87be243a1d79b6c5b10/lat"
+    },
+    {
+     "languages": [
+      "lav"
+     ],
+     "sha256": "87e2fa40a690c1f6ea4f020065a4c30518eccc6e270daf91df33a730d6ae9e41",
+     "size": 5048680,
+     "url": "https://raw.githubusercontent.com/unimorph/lav/0103e8ae2f0921378763c7d7875765a3ca3dc8df/lav"
+    },
+    {
+     "languages": [
+      "lit"
+     ],
+     "sha256": "e90f7d7e4f544017d097f7ef201c6558b2d910c8b1b57b12ce3d3b0a36a1a630",
+     "size": 1191554,
+     "url": "https://raw.githubusercontent.com/unimorph/lit/8367e0ab8cac32555e2f040da468bbfd7d476586/lit"
+    },
+    {
+     "languages": [
+      "mkd"
+     ],
+     "sha256": "b36b174601c6b22bc55c29084b8c3df2a7ca16007d0fdfe5feacc360b6c26166",
+     "size": 8157589,
+     "url": "https://raw.githubusercontent.com/unimorph/mkd/d7a3968a6c70041ccbbddf47a4651ddfd75e4109/mkd"
+    },
+    {
+     "languages": [
+      "mlt"
+     ],
+     "sha256": "1d46d8f620cdf65c1d67893f819f3839f3bf466f24c289b10be98d2f788db388",
+     "size": 124584,
+     "url": "https://raw.githubusercontent.com/unimorph/mlt/9f60b87c1d391b5316caa6d868eb118341d06043/mlt"
+    },
+    {
+     "languages": [
+      "nap"
+     ],
+     "sha256": "d4e435389ccd4a7f6bafac36177611747cd3fe73fe51d4babb9a7ee27cecb7c8",
+     "size": 64163,
+     "url": "https://raw.githubusercontent.com/unimorph/nap/d0d1edda9214ae3543272b82471a568c6df9dad5/nap"
+    },
+    {
+     "languages": [
+      "nds"
+     ],
+     "sha256": "c5a87be1d8cd2ac2c47c60901e840f16c94706031091d05732bdd595cbbb43f1",
+     "size": 347527,
+     "url": "https://raw.githubusercontent.com/unimorph/nds/531ffb061f0462f1c42d09001ba2caf8227d118d/nds"
+    },
+    {
+     "languages": [
+      "nld"
+     ],
+     "sha256": "86f3504cc426c9beffe8566406294f7f71505d46a2bba8773bdcf2e9c5a3d750",
+     "size": 1874427,
+     "url": "https://raw.githubusercontent.com/unimorph/nld/7654cbfbb81589d03f98231cec2e3ad21ee9e8aa/nld"
+    },
+    {
+     "languages": [
+      "nor"
+     ],
+     "sha256": "0a1176969d4c7d9b6e833116145d688a261dd76a780b99b5745b6d14d81e6b29",
+     "size": 420695,
+     "url": "https://raw.githubusercontent.com/unimorph/nno/dbd8ec0820f60b630b734dacea04edcffe921d27/nno"
+    },
+    {
+     "languages": [
+      "nor"
+     ],
+     "sha256": "e9e7b9cb1e1303f9c722a2a2d9abd25db153a74b5435814e97b1823a80100d2c",
+     "size": 2560515,
+     "url": "https://raw.githubusercontent.com/unimorph/nob/7f6a1e622f8f36668704f149625ba4ec10d01673/nob"
+    },
+    {
+     "languages": [
+      "oci"
+     ],
+     "sha256": "130250118bd875bb1f29dd45fc7f74be1faaca1c0b112dc57065d996b6782609",
+     "size": 276611,
+     "url": "https://raw.githubusercontent.com/unimorph/oci/87d0d0c63141efd9ec9e13b72239a740cd0cbc74/oci"
+    },
+    {
+     "languages": [
+      "olo"
+     ],
+     "sha256": "b77b4598eed861d3d2c1abbcbdf0ef9207679e0065e65a524b6a9938215708b3",
+     "size": 48417858,
+     "url": "https://raw.githubusercontent.com/unimorph/olo/848160d0e32eb5f8291fe6cf5fcacb871a542e57/olo-new-written-livvic"
+    },
+    {
+     "languages": [
+      "pol"
+     ],
+     "sha256": "97c7f9394d0acbf2bf1471bd8268703cd4e312e2fbcf35cc76775610ec637360",
+     "size": 6666265,
+     "url": "https://raw.githubusercontent.com/unimorph/pol/021f30fde6529be8433ec2f0e41b062f1c694c4c/pol"
+    },
+    {
+     "languages": [
+      "por"
+     ],
+     "sha256": "af71c94afbb857b3875817d8edb8ea4a1211d902326b74de4d86de85ea348944",
+     "size": 10982524,
+     "url": "https://raw.githubusercontent.com/unimorph/por/fc2778e08e2da476d9d2f27f15f218b1cbb25ad5/por"
+    },
+    {
+     "languages": [
+      "pst"
+     ],
+     "sha256": "564c5e0ad18482b3200bbdf71832119155ef2033e379b7273ae82955baa045bf",
+     "size": 297043,
+     "url": "https://raw.githubusercontent.com/unimorph/pus/94a599739a3f886d9a3639ad45368fd838e8d5b2/pus"
+    },
+    {
+     "languages": [
+      "ron"
+     ],
+     "sha256": "0c007e572cacf37b0e538f024cea9e630cc17669c4faa7a5054655530871fd22",
+     "size": 2990521,
+     "url": "https://raw.githubusercontent.com/unimorph/ron/0910e7850baef37f67817060fa8aae7c42cbe269/ron"
+    },
+    {
+     "languages": [
+      "rus"
+     ],
+     "sha256": "6c13f849fc12844b23f46e70a02a45a2f537e60c62c8ffd8798bdff3991dc880",
+     "size": 25151401,
+     "url": "https://raw.githubusercontent.com/unimorph/rus/50dcabfd0a04bd4d187ffb0d5cdd54af94863dec/rus"
+    },
+    {
+     "languages": [
+      "sah"
+     ],
+     "sha256": "4d5e8c4328d697d0dc4d59e2afe471ff764e22cddcf0f4fcf9805918cf87ab21",
+     "size": 33664200,
+     "url": "https://raw.githubusercontent.com/unimorph/sah/892f4a7884f8f802d4a14b114fb91dba6076d487/sah"
+    },
+    {
+     "languages": [
+      "san"
+     ],
+     "sha256": "2ee128970334d8a2ba391f1e50b986d3c9a09f3ff2f1b77effbedccf76ea769e",
+     "size": 1788739,
+     "url": "https://raw.githubusercontent.com/unimorph/san/9b4dd794a5c0ec58c25fe92e3687823d029f9596/san"
+    },
+    {
+     "languages": [
+      "sdh"
+     ],
+     "sha256": "c0d89ec8d84c96dbef8392d93a3d4c081604cdb971b0570696384f05ac815524",
+     "size": 7776,
+     "url": "https://raw.githubusercontent.com/unimorph/sdh/99f7edcace30616a591a79ce01959218e02bb849/sdh"
+    },
+    {
+     "languages": [
+      "sga"
+     ],
+     "sha256": "2234deeed0f585fe41d11295aa637e90c425ccaf27f89931a554265bc13d67e6",
+     "size": 43469,
+     "url": "https://raw.githubusercontent.com/unimorph/sga/de9858d9966879b78d44fcded5287858146a6e16/sga"
+    },
+    {
+     "languages": [
+      "sjo"
+     ],
+     "sha256": "9d85520a153d0b159747634dab75388e9e784e32c019aa771fe9bc3e6cbcc49a",
+     "size": 158033,
+     "url": "https://raw.githubusercontent.com/unimorph/sjo/cd7ff346bffe85c134167eec0130e282acb6442e/sjo"
+    },
+    {
+     "languages": [
+      "slv"
+     ],
+     "sha256": "18dd079cae1a1efba3e7133b64af1b7624b5a0006f214847f1f289b841db84a2",
+     "size": 1911039,
+     "url": "https://raw.githubusercontent.com/unimorph/slv/92e4836ba766cfde14586dbb53feafe76a0b4b85/slv"
+    },
+    {
+     "languages": [
+      "sme"
+     ],
+     "sha256": "e1f59ff6621557a89f91d8401a7397450e12a193414c30fa1912d688adff4096",
+     "size": 2050015,
+     "url": "https://raw.githubusercontent.com/unimorph/sme/dcb1abed05e25b2ce85f3a806c270e2b192a6dfe/sme"
+    },
+    {
+     "languages": [
+      "spa"
+     ],
+     "sha256": "7a165d4b44eb078d23964f3eee3813f5140c5df0ffab0143c806c562e67f8771",
+     "size": 50335761,
+     "url": "https://raw.githubusercontent.com/unimorph/spa/b9655efb0e5ce0f99809badaa7f4e93017ab8430/spa"
+    },
+    {
+     "languages": [
+      "sqi"
+     ],
+     "sha256": "f0e00a1cfb2b07a1b057987edcd8eeb3ba4c57ad8e6bbb978f091292b0cfdb84",
+     "size": 1261468,
+     "url": "https://raw.githubusercontent.com/unimorph/sqi/63fed8fdd510d14a75d2d2dacb1c5ab1475617e7/sqi"
+    },
+    {
+     "languages": [
+      "swe"
+     ],
+     "sha256": "a1ef4efe25c561a1ccce761e37cbc257d3ab278a11dbcd1de9ae9ce8f118d3af",
+     "size": 4590664,
+     "url": "https://raw.githubusercontent.com/unimorph/swe/dbd4aef2bb0940277894523708b2341930a94d57/swe"
+    },
+    {
+     "languages": [
+      "tat"
+     ],
+     "sha256": "291dff3a570fc4f30ff16146ef74550df4ff6afd45f8e5b2193f0bfd6319372d",
+     "size": 194277,
+     "url": "https://raw.githubusercontent.com/unimorph/tat/3a208d3c1679ca6d8bc4e1200ead7843a34e1d7b/tat"
+    },
+    {
+     "languages": [
+      "tel"
+     ],
+     "sha256": "369009d424e9d9ab81d85d20c71e36a8ebfb1323cc2b29b8bff2238f84cec78d",
+     "size": 95069,
+     "url": "https://raw.githubusercontent.com/unimorph/tel/551f60f5f43448e4503580e8dd6d338c7b5a7c6e/tel"
+    },
+    {
+     "languages": [
+      "tgl"
+     ],
+     "sha256": "84bcc773fde9430d9c8f9d10c72cd4ebca6410eac0eb8408accf0fd6b49e840b",
+     "size": 84917,
+     "url": "https://raw.githubusercontent.com/unimorph/tgl/799d79de338d1370ebfbeabb9823a0e8f86a2b6a/tgl"
+    },
+    {
+     "languages": [
+      "tuk"
+     ],
+     "sha256": "a55fd886ed0f5522035e0f1d776d00a0393f51a42e0560dc53f6e6bbb54df773",
+     "size": 20540,
+     "url": "https://raw.githubusercontent.com/unimorph/tuk/35f8a7ac8aabb21ad2b4f64012821fc123bd2ed1/tuk"
+    },
+    {
+     "languages": [
+      "tur"
+     ],
+     "sha256": "4ae44f4b039c344f7078d8073b968b0d67133d1e9d7e653ce8aba5ed24387957",
+     "size": 31596675,
+     "url": "https://raw.githubusercontent.com/unimorph/tur/6c179ace7d2f3d7f3484020e5304c1544d07bb6b/tur"
+    },
+    {
+     "languages": [
+      "uig"
+     ],
+     "sha256": "9beffd61140fff8e38e62576fe21da71bca1d3338f8fe654d18f9a70c007a3c0",
+     "size": 333525,
+     "url": "https://raw.githubusercontent.com/unimorph/uig/0786d110b042c9e64599f53a6a0ac80889eb7f31/uig"
+    },
+    {
+     "languages": [
+      "ukr"
+     ],
+     "sha256": "c0ad5ba0348b829b2363a215f712b84c4d302535ebb97557d93082e4f32eab42",
+     "size": 870660,
+     "url": "https://raw.githubusercontent.com/unimorph/ukr/d7d0284e926b7d4947c52aaafd1d7f8a40a2dec0/ukr"
+    },
+    {
+     "languages": [
+      "urd"
+     ],
+     "sha256": "3a3129d858c7c02d0ec5c8971f5b60842813dbe2513efaf7effd22842dcff4a3",
+     "size": 685613,
+     "url": "https://raw.githubusercontent.com/unimorph/urd/17b2fb34fac79ba7bc4b90f8e10e6a25bac3d396/urd"
+    },
+    {
+     "languages": [
+      "uzb"
+     ],
+     "sha256": "bd31a9361cbf0a7016d1925793a4dfcc6775d36b7a7218d4c60d9e979cdd65dd",
+     "size": 41921,
+     "url": "https://raw.githubusercontent.com/unimorph/uzb/0d06920a2aaf8dfb58b4a5492355e8f6425d2e51/uzb"
+    },
+    {
+     "languages": [
+      "vep"
+     ],
+     "sha256": "327b5220468fb8c82889e202744a40a34cc34a4a20302efbed1202c8ba4a941a",
+     "size": 27407329,
+     "url": "https://raw.githubusercontent.com/unimorph/vep/c8dec3ba7ae102756346f340daf20ba73c07faba/vep-new-written-veps"
+    },
+    {
+     "languages": [
+      "xcl"
+     ],
+     "sha256": "f1d408bad34bb2c57fba41665b3ce671631cd55e9eb1e849a0067047aebcc0e3",
+     "size": 4950513,
+     "url": "https://raw.githubusercontent.com/unimorph/xcl/847afc046ac9e56294b878cc0ec3ccbdb023c0f7/xcl"
+    },
+    {
+     "languages": [
+      "yid"
+     ],
+     "sha256": "fab02220c852018707a760e98e07b7111f37f31781edf09f2fef1d39474337c8",
+     "size": 429391,
+     "url": "https://raw.githubusercontent.com/unimorph/yid/9156c6f51b907c82248415202eceb64180ea8104/yid"
+    }
+   ],
+   "home": "https://unimorph.github.io/",
+   "id": "unimorph",
+   "license": "CC-BY-SA-3.0",
+   "license_by_language": {
+    "ckb": "LicenseRef-LGPL-LR",
+    "eus": null,
+    "kmr": "LicenseRef-LGPL-LR"
+   },
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "parser": "unimorph",
+   "revision": "HEAD of each unimorph/<iso> repository on 2026-11-19"
+  },
+  {
+   "attribution": "CC-CEDICT, MDBG and contributors",
+   "family": "cc-cedict",
+   "files": [
+    {
+     "sha256": "00e6c188df0056c42c0448386d0b4f532aa805d9fdd87aef139f72b421ace2f4",
+     "size": 3979067,
+     "url": "https://github.com/oxalis-ink/cc-cedict/releases/download/1.0%2B20261007032622/cedict_1_0_ts_utf-8_mdbg.txt.gz"
+    }
+   ],
+   "home": "https://www.mdbg.net/chinese/dictionary?page=cc-cedict",
+   "id": "cc-cedict",
+   "languages": [
+    "cmn"
+   ],
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "parser": "cedict",
+   "revision": "MDBG export of 2026-10-07 03:26:22 (dated mirror release)"
+  },
+  {
+   "attribution": "OpenCorpora project (opencorpora.org); compiled dictionary packaged as pymorphy3-dicts-ru",
+   "family": "national",
+   "files": [
+    {
+     "sha256": "718bac64c73c10c16073a199402657283d9b64c04188b694f6d3e9b0d85440f4",
+     "size": 8442043,
+     "url": "https://files.pythonhosted.org/packages/b0/67/469e9e52d046863f5959928794d3067d455a77f580bf4a662630a43eb426/pymorphy3_dicts_ru-2.4.417150.4580142-py2.py3-none-any.whl"
+    }
+   ],
+   "home": "https://opencorpora.org/",
+   "id": "opencorpora",
+   "languages": [
+    "rus"
+   ],
+   "license": "CC-BY-SA-3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "parser": "pymorphy",
+   "revision": "OpenCorpora revision 417150, pymorphy3-dicts-ru 2.4.417150.4580142"
+  },
+  {
+   "attribution": "Grammatical Dictionary of Polish (SGJP), Zygmunt Saloni, Marcin Woliński, Robert Wołosz, Włodzimierz Gruszczyński, Danuta Skowrońska; Institute of Computer Science, Polish Academy of Sciences",
+   "family": "national",
+   "files": [
+    {
+     "last_modified": "Sun, 15 Nov 2026 23:08:08 GMT",
+     "sha256": "fda1147c04425101c41753645ec430473289a0ae521c612c00b52540e01f3ee9",
+     "size": 42691385,
+     "url": "https://download.sgjp.pl/morfeusz/20261115/sgjp-20261115.tab.gz"
+    }
+   ],
+   "format": {
+    "block": [
+     "#<COPYRIGHT>",
+     "#</COPYRIGHT>"
+    ],
+    "comment": "#",
+    "container": "gz",
+    "delimiter": "\t",
+    "form": 0,
+    "lemma": 1,
+    "lemma_sub": [
+     [
+      "(?<=.):.*$",
+      ""
+     ]
+    ]
+   },
+   "home": "https://download.sgjp.pl/morfeusz/",
+   "id": "sgjp",
+   "languages": [
+    "pol"
+   ],
+   "license": "BSD-2-Clause",
+   "parser": "table",
+   "revision": "Morfeusz 2 dictionary dump 2026-11-15"
+  },
+  {
+   "attribution": "PoliMorf: SGJP merged with Morfologik; Institute of Computer Science, Polish Academy of Sciences",
+   "family": "national",
+   "files": [
+    {
+     "last_modified": "Sun, 15 Nov 2026 23:16:44 GMT",
+     "sha256": "86c79247811e6c7b735475effd818ee7b421ae3b53288a02ab3fa526a48ecf0e",
+     "size": 47390358,
+     "url": "https://download.sgjp.pl/morfeusz/20261115/polimorf-20261115.tab.gz"
+    }
+   ],
+   "format": {
+    "block": [
+     "#<COPYRIGHT>",
+     "#</COPYRIGHT>"
+    ],
+    "comment": "#",
+    "container": "gz",
+    "delimiter": "\t",
+    "form": 0,
+    "lemma": 1,
+    "lemma_sub": [
+     [
+      "(?<=.):.*$",
+      ""
+     ]
+    ]
+   },
+   "home": "https://download.sgjp.pl/morfeusz/",
+   "id": "polimorf",
+   "languages": [
+    "pol"
+   ],
+   "license": "BSD-2-Clause",
+   "parser": "table",
+   "revision": "Morfeusz 2 dictionary dump 2026-11-15"
+  },
+  {
+   "attribution": "Inflectional lexicon hrLex 1.3, Nikola Ljubešić (CLARIN.SI, hdl:11356/1232)",
+   "family": "national",
+   "files": [
+    {
+     "last_modified": "Mon, 27 Mar 2023 17:01:19 GMT",
+     "sha256": "94fcccc237cccf2256f382ece8d4ccc523bf80fd73f5e32b858f43412f46f9df",
+     "size": 54477922,
+     "url": "https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1232/hrLex_v1.3.gz?sequence=1"
+    }
+   ],
+   "format": {
+    "container": "gz",
+    "delimiter": "\t",
+    "form": 0,
+    "lemma": 1
+   },
+   "home": "https://hdl.handle.net/11356/1232",
+   "id": "hrlex",
+   "languages": [
+    "hrv"
+   ],
+   "license": "CC-BY-SA-4.0",
+   "parser": "table",
+   "revision": "hrLex 1.3"
+  },
+  {
+   "attribution": "Inflectional lexicon srLex 1.3, Nikola Ljubešić (CLARIN.SI, hdl:11356/1233)",
+   "family": "national",
+   "files": [
+    {
+     "last_modified": "Mon, 27 Mar 2023 17:01:19 GMT",
+     "sha256": "1177ab49a60965fca0ab12d2c901d54e843bff82e805b33fd4c2d0c49a6ecdf9",
+     "size": 56796017,
+     "url": "https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1233/srLex_v1.3.gz?sequence=3"
+    }
+   ],
+   "format": {
+    "container": "gz",
+    "delimiter": "\t",
+    "form": 0,
+    "lemma": 1
+   },
+   "home": "https://hdl.handle.net/11356/1233",
+   "id": "srlex",
+   "languages": [
+    "srp"
+   ],
+   "license": "CC-BY-SA-4.0",
+   "parser": "table",
+   "revision": "srLex 1.3"
+  },
+  {
+   "attribution": "Beygingarlýsing íslensks nútímamáls (Database of Icelandic Morphology), Stofnun Árna Magnússonar í íslenskum fræðum; author and editor Kristín Bjarnadóttir",
+   "family": "national",
+   "files": [
+    {
+     "sha256": "28513f96d5215a6f5c18fd1ddc1210f42f24ed3a2cbcb880bf50082797ec50f0",
+     "size": 33666908,
+     "url": "https://bin.arnastofnun.is/django/api/nidurhal/?file=SHsnid.csv.zip"
+    }
+   ],
+   "format": {
+    "container": "zip",
+    "delimiter": ";",
+    "form": 4,
+    "lemma": 0,
+    "member": "SHsnid.csv"
+   },
+   "home": "https://bin.arnastofnun.is/DMII/LTdata/",
+   "id": "bin",
+   "languages": [
+    "isl"
+   ],
+   "license": "CC-BY-SA-4.0",
+   "mirror": [
+    {
+     "sha256": "4f45b4858f897c86f584ae9c5bab284e75669449e46b51474d34e0685013cd84",
+     "size": 14663680,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-bin.tar"
+    }
+   ],
+   "parser": "table",
+   "revision": "Sigrúnarsnið export downloaded 2026-11-19 (unversioned URL, pinned by SHA-256)"
+  },
+  {
+   "attribution": "Norsk ordbank (Nynorsk), Språkbanken, National Library of Norway, and the University of Bergen",
+   "family": "national",
+   "files": [
+    {
+     "last_modified": "Fri, 30 Oct 2026 12:56:05 GMT",
+     "sha256": "7e1ca8aa4bbe043b25da24ec9f5603d169003cd1e2acb1ef1518324b06046496",
+     "size": 3698607,
+     "url": "https://www.nb.no/sbfil/norsk_ordbank/20260915_norsk_ordbank_nno.zip"
+    }
+   ],
+   "format": {
+    "comment": "#",
+    "container": "zip",
+    "delimiter": "\t",
+    "form": 3,
+    "lemma": 1,
+    "member": ".*\\.tsv"
+   },
+   "home": "https://www.nb.no/sprakbanken/ressurskatalog/oai-nb-no-sbr-109/",
+   "id": "ordbank-nno",
+   "languages": [
+    "nor"
+   ],
+   "license": "CC-BY-4.0",
+   "parser": "table",
+   "revision": "2026-09-15"
+  },
+  {
+   "attribution": "Norsk ordbank (Bokmål), Språkbanken, National Library of Norway, and the University of Oslo",
+   "family": "national",
+   "files": [
+    {
+     "last_modified": "Fri, 30 Oct 2026 15:29:50 GMT",
+     "sha256": "edb159b1c8f1310d9498d19c0f398ea4ea81eeca353cdc5d4dcaf7843fbc1ba4",
+     "size": 6772125,
+     "url": "https://www.nb.no/sbfil/norsk_ordbank/20260915_norsk_ordbank_nob.zip"
+    }
+   ],
+   "format": {
+    "comment": "#",
+    "container": "zip",
+    "delimiter": "\t",
+    "form": 3,
+    "lemma": 1,
+    "member": ".*\\.tsv"
+   },
+   "home": "https://www.nb.no/sprakbanken/ressurskatalog/oai-nb-no-sbr-110/",
+   "id": "ordbank-nob",
+   "languages": [
+    "nor"
+   ],
+   "license": "CC-BY-4.0",
+   "parser": "table",
+   "revision": "2026-09-15"
+  },
+  {
+   "attribution": "MULTEXT-East free lexicons 4.0, Tomaž Erjavec et al. (CLARIN.SI, hdl:11356/1041)",
+   "family": "national",
+   "files": [
+    {
+     "languages": [
+      "bul"
+     ],
+     "last_modified": "Tue, 20 Jun 2023 12:37:55 GMT",
+     "sha256": "03941deff763f347790bc9232198354fd4ffdc6f0a20cece4a37dfa01aa6d628",
+     "size": 351609,
+     "url": "https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1041/wfl-bg.txt.gz?sequence=1"
+    },
+    {
+     "languages": [
+      "ces"
+     ],
+     "last_modified": "Tue, 20 Jun 2023 12:37:55 GMT",
+     "sha256": "d25ba8acd1803ae9fe8606d2692a31a8f49c0ce2f67978cc729b3cfa1af3440e",
+     "size": 773998,
+     "url": "https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1041/wfl-cs.txt.gz?sequence=4"
+    },
+    {
+     "languages": [
+      "est"
+     ],
+     "last_modified": "Tue, 20 Jun 2023 12:37:55 GMT",
+     "sha256": "307959e65b4df9f2661f132a16bddd3739ab5a289febf09e5fc81e74acbd1d8f",
+     "size": 744946,
+     "url": "https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1041/wfl-et.txt.gz?sequence=6"
+    },
+    {
+     "languages": [
+      "fra"
+     ],
+     "last_modified": "Tue, 20 Jun 2023 12:37:55 GMT",
+     "sha256": "9cfae837c6d0cc84174060b6ac225b0e0d96ba257936051500242d354bfe8a07",
+     "size": 1419041,
+     "url": "https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1041/wfl-fr.txt.gz?sequence=7"
+    },
+    {
+     "languages": [
+      "hun"
+     ],
+     "last_modified": "Tue, 20 Jun 2023 12:37:55 GMT",
+     "sha256": "5666f933531fba14391904c85ab60221a7b3f3f06540513fb78c35a645dbe0ce",
+     "size": 412619,
+     "url": "https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1041/wfl-hu.txt.gz?sequence=8"
+    },
+    {
+     "languages": [
+      "ron"
+     ],
+     "last_modified": "Tue, 20 Jun 2023 12:37:55 GMT",
+     "sha256": "ecc4dd726a8fc836ebd5ef05f23708504ec4d5723b3d93cacb3b7d6f713d2ef6",
+     "size": 2238654,
+     "url": "https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1041/wfl-ro.txt.gz?sequence=9"
+    },
+    {
+     "languages": [
+      "slk"
+     ],
+     "last_modified": "Tue, 20 Jun 2023 12:37:55 GMT",
+     "sha256": "9dae1ae6b734bae7f55b0b460910bfee8a7e59bf621808a45753d6b65f594cd2",
+     "size": 8228671,
+     "url": "https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1041/wfl-sk.txt.gz?sequence=10"
+    },
+    {
+     "languages": [
+      "slv"
+     ],
+     "last_modified": "Tue, 20 Jun 2023 12:37:55 GMT",
+     "sha256": "c070115b4c47773438dc46280480dae1ecee7ca669d2498ec04543102c15d563",
+     "size": 961376,
+     "url": "https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1041/wfl-sl.txt.gz?sequence=12"
+    }
+   ],
+   "format": {
+    "container": "gz",
+    "delimiter": "\t",
+    "form": 0,
+    "lemma": 1,
+    "skip": "_"
+   },
+   "home": "https://hdl.handle.net/11356/1041",
+   "id": "multext-east",
+   "languages": [],
+   "license": "CC-BY-SA-4.0",
+   "parser": "table",
+   "revision": "4.0"
+  },
+  {
+   "attribution": "Lexique 3.83, Boris New and Christophe Pallier",
+   "family": "national",
+   "files": [
+    {
+     "last_modified": "Tue, 04 Jun 2019 19:38:50 GMT",
+     "sha256": "637ba37a767a66679c48371d673ece50cbf541b49a4e40e598963d4f3fbce52b",
+     "size": 25850780,
+     "url": "http://www.lexique.org/databases/Lexique383/Lexique383.tsv"
+    }
+   ],
+   "format": {
+    "delimiter": "\t",
+    "form": 0,
+    "header": 1,
+    "lemma": 2
+   },
+   "home": "http://www.lexique.org/",
+   "id": "lexique",
+   "languages": [
+    "fra"
+   ],
+   "license": "CC-BY-SA-4.0",
+   "parser": "table",
+   "revision": "3.83"
+  },
+  {
+   "attribution": "GLÀFF 1.2.2, Nabil Hathout, Franck Sajous, Basilio Calderone (CLLE-ERSS), derived from Wiktionnaire",
+   "family": "national",
+   "files": [
+    {
+     "last_modified": "Fri, 22 Dec 2017 13:21:46 GMT",
+     "sha256": "5338b223a86f93fe35a1fbe69c096b4fcdcadfece0f1b1fcba013f5b3ce335c1",
+     "size": 13856732,
+     "url": "https://redac.univ-tlse2.fr/lexicons/glaff/GLAFF-1.2.2.tar.bz2"
+    }
+   ],
+   "format": {
+    "container": "tar",
+    "delimiter": "|",
+    "form": 0,
+    "lemma": 2,
+    "member": ".*glaff-1\\.2\\.2\\.txt"
+   },
+   "home": "https://redac.univ-tlse2.fr/lexicons/glaff_en.html",
+   "id": "glaff",
+   "languages": [
+    "fra"
+   ],
+   "license": "CC-BY-SA-3.0",
+   "parser": "table",
+   "revision": "1.2.2"
+  },
+  {
+   "attribution": "Galician dictionary of FreeLing (OpenTrad project, Seminario de Lingüística Informática, Universidade de Vigo)",
+   "family": "national",
+   "files": [
+    {
+     "sha256": "a85e204f39f03e7a7b926baca1121b480decefe4e104ba6888fc7484ca25c1ce",
+     "size": 1183239,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/gl/dictionary/entries/adjs"
+    },
+    {
+     "sha256": "5a58a551e2b5ce00f920fbc97a37e90ea242690b0f3815874826329759d1149f",
+     "size": 57932,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/gl/dictionary/entries/adv"
+    },
+    {
+     "sha256": "0d6279adad9634e52b8daa179258cdf01959c9866acb6cb0613b4aced8454374",
+     "size": 1814185,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/gl/dictionary/entries/nouns"
+    },
+    {
+     "sha256": "fb8c3727404d63f046c810ee0f789cbb0a84fff6f3e4c6a6112bfff327201b46",
+     "size": 9867,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/gl/dictionary/entries/other"
+    },
+    {
+     "sha256": "7f02ea3f2532dbe81e30a99751786381858314c3cd44297c6d0c17408e9934b4",
+     "size": 13084975,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/gl/dictionary/entries/verbs"
+    }
+   ],
+   "format": {
+    "delimiter": " ",
+    "form": 0,
+    "lemma": 1
+   },
+   "home": "https://github.com/TALP-UPC/FreeLing",
+   "id": "freeling-gl",
+   "languages": [
+    "glg"
+   ],
+   "license": "CC-BY-SA-3.0",
+   "parser": "table",
+   "revision": "FreeLing commit 0bae6b7f6d1b405e67658895de54b59bfb3b6338"
+  },
+  {
+   "attribution": "LatInfLexi 2, Matteo Pellegrini and Marco Passarotti",
+   "family": "national",
+   "files": [
+    {
+     "sha256": "239dfd0f2d9559c5272a187d808c79804f44739e4ef63a6413990a44659fa63c",
+     "size": 77856492,
+     "url": "https://raw.githubusercontent.com/matteo-pellegrini/LatInfLexi/v2.0.1/LatInfLexi-forms.csv"
+    }
+   ],
+   "format": {
+    "delimiter": "csv",
+    "form": "orth_form",
+    "header": 1,
+    "lemma": "lexeme",
+    "lemma_sub": [
+     [
+      "_[a-zA-Z0-9]+$",
+      ""
+     ]
+    ]
+   },
+   "home": "https://github.com/matteo-pellegrini/LatInfLexi",
+   "id": "latinflexi",
+   "languages": [
+    "lat"
+   ],
+   "license": "CC-BY-SA-4.0",
+   "parser": "table",
+   "revision": "v2.0.1"
+  },
+  {
+   "attribution": "SudachiDict, Works Applications Co., Ltd. (includes UniDic vocabulary, NINJAL)",
+   "family": "national",
+   "files": [
+    {
+     "last_modified": "Thu, 15 Oct 2026 06:57:49 GMT",
+     "sha256": "981b78cdc532ce058b34c76cd9acd3c9a6c771cc0ce528d7de92424b21172125",
+     "size": 14623322,
+     "url": "https://d2ej7fkh96fzlu.cloudfront.net/sudachidict-raw/v1/20261015/small_lex.zip"
+    },
+    {
+     "last_modified": "Thu, 15 Oct 2026 06:58:10 GMT",
+     "sha256": "e9ac06222f0ce401a0fef9b129e61e93d59e3ff395a1b037f498962ee5b8ad8b",
+     "size": 21934496,
+     "url": "https://d2ej7fkh96fzlu.cloudfront.net/sudachidict-raw/v1/20261015/core_lex.zip"
+    },
+    {
+     "notice": "LEGAL",
+     "sha256": "725a8776b38e058b185e905594bc9a2437dbf3787df022fffeefedb9a84e4665",
+     "size": 6037,
+     "url": "https://raw.githubusercontent.com/WorksApplications/SudachiDict/830bf9e1313f6f75235ba87ee041e144dbcad8c1/LEGAL"
+    },
+    {
+     "notice": "LICENSE-2.0.txt",
+     "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+     "size": 11358,
+     "url": "https://raw.githubusercontent.com/WorksApplications/SudachiDict/830bf9e1313f6f75235ba87ee041e144dbcad8c1/LICENSE-2.0.txt"
+    }
+   ],
+   "home": "https://github.com/WorksApplications/SudachiDict",
+   "id": "sudachi",
+   "languages": [
+    "jpn"
+   ],
+   "license": "Apache-2.0",
+   "parser": "sudachi",
+   "revision": "SudachiDict raw v1 20261015"
+  },
+  {
+   "attribution": "SALDO morphology (saldom), Språkbanken Text, University of Gothenburg",
+   "family": "national",
+   "files": [
+    {
+     "last_modified": "Tue, 19 Sep 2017 01:00:47 GMT",
+     "sha256": "8e484c61722e6ac1b40812aa09d9bea56852c178a95754d7406e752943ea05b2",
+     "size": 254107385,
+     "url": "https://svn.spraakbanken.gu.se/sb-arkiv/pub/lmf/saldom/saldom.xml"
+    }
+   ],
+   "home": "https://spraakbanken.gu.se/en/resources/saldom",
+   "id": "saldom",
+   "languages": [
+    "swe"
+   ],
+   "license": "CC-BY-4.0",
+   "mirror": [
+    {
+     "sha256": "1e767ca9df95c195ec39834c1fb280d4540e740e09d5fa2f12638a9d9d9739ec",
+     "size": 2877440,
+     "url": "https://github.com/gulldan/udlex/releases/download/dictionary-inputs-2026-11/pairs-saldom.tar"
+    }
+   ],
+   "parser": "saldom",
+   "revision": "saldom 2017-09-19 (unversioned URL, pinned by SHA-256)"
+  },
+  {
+   "attribution": "Belarusian grammar database GrammarDB (Belarus/GrammarDB contributors)",
+   "family": "national",
+   "files": [
+    {
+     "last_modified": "Wed, 07 Jan 2026 15:31:54 GMT",
+     "sha256": "393756f3cb5c94ab86cdbd64b95fa9d096775f559ae65de6375ebb6d5571df00",
+     "size": 51373273,
+     "url": "https://github.com/Belarus/GrammarDB/releases/download/RELEASE-202601/RELEASE-202601.zip"
+    }
+   ],
+   "home": "https://github.com/Belarus/GrammarDB",
+   "id": "grammardb",
+   "languages": [
+    "bel"
+   ],
+   "license": "CC-BY-SA-4.0",
+   "parser": "grammardb",
+   "revision": "RELEASE-202601"
+  },
+  {
+   "attribution": "Morphological lexicon Sloleks 3.0, Jaka Čibej et al. (CLARIN.SI, hdl:11356/1745)",
+   "family": "national",
+   "files": [
+    {
+     "last_modified": "Sun, 25 Oct 2026 09:08:04 GMT",
+     "sha256": "61ff30639daca968f92b262d5c33d6c6e62f0909b037228478b25c1bd7862151",
+     "size": 251391521,
+     "url": "https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1745/Sloleks.3.0.zip?sequence=1"
+    }
+   ],
+   "home": "https://hdl.handle.net/11356/1745",
+   "id": "sloleks",
+   "languages": [
+    "slv"
+   ],
+   "license": "CC-BY-SA-4.0",
+   "parser": "sloleks",
+   "revision": "3.0"
+  },
+  {
+   "attribution": "Tēzaurs.lv 2026 autumn edition, word forms appendix, Institute of Mathematics and Computer Science, University of Latvia (CLARIN-LV, hdl:20.500.12574/162)",
+   "family": "national",
+   "files": [
+    {
+     "last_modified": "Thu, 24 Sep 2026 15:38:46 GMT",
+     "sha256": "22e2f6d9acd330150d57e324a7a9f54272da8e09e262aa5ba46cc536150f9e10",
+     "size": 224116217,
+     "url": "https://repository.clarin.lv/repository/xmlui/bitstream/handle/20.500.12574/162/tezaurs_2026_4_wordforms_tei.xml.zip?sequence=2"
+    }
+   ],
+   "home": "https://hdl.handle.net/20.500.12574/162",
+   "id": "tezaurs",
+   "languages": [
+    "lav"
+   ],
+   "license": "CC-BY-SA-4.0",
+   "parser": "tezaurs",
+   "revision": "2026-09"
+  },
+  {
+   "attribution": "Eesthetic: Estonian inflection in Paralex format, derived from Ekilex (EKI), Sacha Beniamine and Mari Aigro (doi:10.5281/zenodo.8383522)",
+   "family": "national",
+   "files": [
+    {
+     "sha256": "5b3e4421c45bf42b45eb878ec92be60b6509995e0ce1cf96e4f516a93fef98ce",
+     "size": 15969841,
+     "url": "https://zenodo.org/api/records/14069724/files/eesthetic-v1.0.5.zip/content"
+    }
+   ],
+   "home": "https://doi.org/10.5281/zenodo.8383522",
+   "id": "eesthetic",
+   "languages": [
+    "est"
+   ],
+   "license": "CC-BY-SA-4.0",
+   "parser": "eesthetic",
+   "revision": "v1.0.5"
+  },
+  {
+   "attribution": "Italian dictionary of FreeLing, extracted from Morph-it! (Marco Baroni and Eros Zanchetta, University of Bologna)",
+   "family": "national",
+   "files": [
+    {
+     "sha256": "0390ca2138f738185d132511bb24bd9d72a7e453b3d2576a0f0dc11c76c74ae2",
+     "size": 1262620,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/it/dictionary/entries/adjs"
+    },
+    {
+     "sha256": "796453235fcd0e56b0fbee67dfa91349a9754789666fd39a3c89aa40dff66fe8",
+     "size": 23962,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/it/dictionary/entries/adv"
+    },
+    {
+     "sha256": "c53c3b60ebb43782618a8fa83fa200160bece88481ec7c88307b6c2dae452918",
+     "size": 912989,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/it/dictionary/entries/nouns"
+    },
+    {
+     "sha256": "defda4b3bbcbc36b05ddfb5f6039654d0bb6ad3225888bd0b3f838fb696024ed",
+     "size": 8009,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/it/dictionary/entries/other"
+    },
+    {
+     "sha256": "128575eb45c0d956cc00b763983715b936da63051a04a78bb5bb23ce38689893",
+     "size": 10883699,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/it/dictionary/entries/verbs"
+    }
+   ],
+   "format": {
+    "delimiter": " ",
+    "form": 0,
+    "lemma": 1
+   },
+   "home": "https://github.com/TALP-UPC/FreeLing",
+   "id": "freeling-it",
+   "languages": [
+    "ita"
+   ],
+   "license": "CC-BY-SA-3.0",
+   "parser": "table",
+   "revision": "FreeLing commit 0bae6b7f6d1b405e67658895de54b59bfb3b6338"
+  },
+  {
+   "attribution": "German dictionary of FreeLing, extracted from Morphy (Wolfgang Lezius) by Daniel Naber",
+   "family": "national",
+   "files": [
+    {
+     "sha256": "b46373cd9b6bd89f3cffc3400a5cb35bd7d09c7e4d10c68896f23db046cd77b1",
+     "size": 23291442,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/de/dictionary/entries/de.adj"
+    },
+    {
+     "sha256": "e045878305f4f5a581ad1df24b38bb1d3377796f1e66ac00254b8ec83d531655",
+     "size": 22255,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/de/dictionary/entries/de.adv"
+    },
+    {
+     "sha256": "bc1c0f8cddb3f74a0f73ddbbe7500a5914db196f30f447e6fde86d4a00addf1e",
+     "size": 29347,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/de/dictionary/entries/de.closed"
+    },
+    {
+     "sha256": "79962f3ed3d0a8d5e6819a71a1c533ac740a0ad119192b13a5e53b5a9252c2d2",
+     "size": 397,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/de/dictionary/entries/de.contr"
+    },
+    {
+     "sha256": "639824f613d762dc12508f266af9c15afcd3e576850b55207b1d1152f6686322",
+     "size": 534,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/de/dictionary/entries/de.int"
+    },
+    {
+     "sha256": "6846bd875615540997c398861e97f662e9ffacc9ca39248b8fe120d9a036f339",
+     "size": 4886562,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/de/dictionary/entries/de.nouns"
+    },
+    {
+     "sha256": "b40c06df317e4626f5629b70b944e16f566d368c55779d7fde05540a1541b2a4",
+     "size": 496284,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/de/dictionary/entries/de.proper"
+    },
+    {
+     "sha256": "14645b1bfb216c778654bec7419d4379ddebd505c928244de5596375f7d9da16",
+     "size": 7197721,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/de/dictionary/entries/de.verbs"
+    }
+   ],
+   "format": {
+    "delimiter": " ",
+    "form": 0,
+    "lemma": 1
+   },
+   "home": "https://github.com/TALP-UPC/FreeLing",
+   "id": "freeling-de",
+   "languages": [
+    "deu"
+   ],
+   "license": "CC-BY-SA-3.0",
+   "parser": "table",
+   "revision": "FreeLing commit 0bae6b7f6d1b405e67658895de54b59bfb3b6338"
+  },
+  {
+   "attribution": "Spanish dictionary of FreeLing, from the Spanish Resource Grammar (IULA, Universitat Pompeu Fabra)",
+   "family": "national",
+   "files": [
+    {
+     "sha256": "0bfdce1ec95f3a5128e961b018118da1c5f34b3a3a8b5610642020e526c8f616",
+     "size": 1908746,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/es/dictionary/entries/MM.adj"
+    },
+    {
+     "sha256": "38acce505fe58f2a30597d8b949bb57606fbe93d9951a9722784188b6ba99b36",
+     "size": 3601,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/es/dictionary/entries/MM.adv"
+    },
+    {
+     "sha256": "bdd6cd33cde58eb0ca4d232515eb7e103a3e7028125eeb8fa274df93703ea5e3",
+     "size": 2920,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/es/dictionary/entries/MM.int"
+    },
+    {
+     "sha256": "574828e19d023444ca4073e324261be8df872e3f03cbaf052b4891446c7b451f",
+     "size": 3151447,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/es/dictionary/entries/MM.nom"
+    },
+    {
+     "sha256": "d7abd54ea3d8f4cdafaadffcbb5a1e63b94a2b12b1f2db525ee8b63a5a1952cb",
+     "size": 7725,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/es/dictionary/entries/MM.tanc"
+    },
+    {
+     "sha256": "7067a5474d942ea3ae32171d0a483b7cb2fe4add8ba298eb22b230c5c797b133",
+     "size": 5132,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/es/dictionary/entries/MM.vaux"
+    },
+    {
+     "sha256": "72a0dafe3df20e2d23a6f5b823240aaeb01f4715b9cf373970991da086e18033",
+     "size": 14406354,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/es/dictionary/entries/MM.verb"
+    }
+   ],
+   "format": {
+    "delimiter": " ",
+    "form": 0,
+    "lemma": 1
+   },
+   "home": "https://github.com/TALP-UPC/FreeLing",
+   "id": "freeling-es",
+   "languages": [
+    "spa"
+   ],
+   "license": "LicenseRef-LGPL-LR",
+   "parser": "table",
+   "revision": "FreeLing commit 0bae6b7f6d1b405e67658895de54b59bfb3b6338"
+  },
+  {
+   "attribution": "Catalan dictionary of FreeLing (TALP, Universitat Politècnica de Catalunya)",
+   "family": "national",
+   "files": [
+    {
+     "sha256": "0b49817dbd7d75a51572354dd8f920546cf23f8d5f3f456fd7a0c8b1b7b451dc",
+     "size": 1564552,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/ca/dictionary/entries/adjs"
+    },
+    {
+     "sha256": "1b1d908bdbfae6a338e8b780bbe64ff487fff59acca0077800fd7be82a26f8ae",
+     "size": 5148,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/ca/dictionary/entries/advs"
+    },
+    {
+     "sha256": "aa4c6f18eda08805a8f77f70c94c741fc371819f92b7cd67fb0eaa451d14d56d",
+     "size": 2511842,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/ca/dictionary/entries/noms"
+    },
+    {
+     "sha256": "fc6974a504bed28e42d71b4e67afa172a230c68a2c3d9ce8486d5f2e6aa377a3",
+     "size": 20596,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/ca/dictionary/entries/ordinals"
+    },
+    {
+     "sha256": "564f0dfb4f5c16d30b33a24af2329d45d841997f7ebfc3b2f31ceb99f68707e5",
+     "size": 9256,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/ca/dictionary/entries/tanc"
+    },
+    {
+     "sha256": "207f3c840f62e7017c47792501acf367e1897f140ad5b885f5f2217604650522",
+     "size": 2694,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/ca/dictionary/entries/vaux"
+    },
+    {
+     "sha256": "70da6ae8f2b116920cb3ec61e2e0b0d82848501a86332f66c7d550d99dd2d996",
+     "size": 14553391,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/ca/dictionary/entries/verbs"
+    }
+   ],
+   "format": {
+    "delimiter": " ",
+    "form": 0,
+    "lemma": 1
+   },
+   "home": "https://github.com/TALP-UPC/FreeLing",
+   "id": "freeling-ca",
+   "languages": [
+    "cat"
+   ],
+   "license": "AGPL-3.0-or-later",
+   "parser": "table",
+   "revision": "FreeLing commit 0bae6b7f6d1b405e67658895de54b59bfb3b6338"
+  },
+  {
+   "attribution": "Portuguese dictionary of FreeLing, from LABEL-LEX (Laboratório de Engenharia da Linguagem, Universidade Técnica de Lisboa)",
+   "family": "national",
+   "files": [
+    {
+     "sha256": "4a0f838549751807b95c90c719edbb98276dd28ae1f9564209cc678c145ab0d5",
+     "size": 3702094,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/pt/dictionary/entries/adjs"
+    },
+    {
+     "sha256": "1e2ca39aa662e2e8a1191fea7d949744f2d1d038d102a96a3cfc40e4f1ee199b",
+     "size": 35264,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/pt/dictionary/entries/adv"
+    },
+    {
+     "sha256": "9a967bc1c2784a75175fe05a8bbc7d720ff46c28f3909231dcad6b778db77024",
+     "size": 3828118,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/pt/dictionary/entries/nouns"
+    },
+    {
+     "sha256": "6c152d37139b9997e98bc2c83399217ee5f655466a388ff63b422ac5cd16e2e6",
+     "size": 13896,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/pt/dictionary/entries/other"
+    },
+    {
+     "sha256": "1bd09a305ce13e2f48f8528f8abc2643bd64470e0c68487df7ea084dc16ff00e",
+     "size": 27969626,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/pt/dictionary/entries/verbs"
+    }
+   ],
+   "format": {
+    "delimiter": " ",
+    "form": 0,
+    "lemma": 1
+   },
+   "home": "https://github.com/TALP-UPC/FreeLing",
+   "id": "freeling-pt",
+   "languages": [
+    "por"
+   ],
+   "license": "GPL-3.0-only",
+   "parser": "table",
+   "revision": "FreeLing commit 0bae6b7f6d1b405e67658895de54b59bfb3b6338"
+  },
+  {
+   "attribution": "Welsh dictionary of FreeLing, from Eurfa (Kevin Donnelly)",
+   "family": "national",
+   "files": [
+    {
+     "sha256": "fa4415ffcb83e031a3cb7be4cce7d3e6aec82eea160fa89fa2c6979abcb09a25",
+     "size": 179887,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/cy/dictionary/entries/adjs"
+    },
+    {
+     "sha256": "fe8d79e32adb20382888fa4c96da858b91ffa198d9e7cf2dd2a835979db61bd9",
+     "size": 1587,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/cy/dictionary/entries/adv"
+    },
+    {
+     "sha256": "2873d903f61fbb6a801b75f8240bb011531a33a684117f397f2dd7539d5baa4e",
+     "size": 373589,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/cy/dictionary/entries/nouns"
+    },
+    {
+     "sha256": "aaee673a1a62fefcc1df38604644b020b004a4773bb263eba54b1427b4414598",
+     "size": 9069,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/cy/dictionary/entries/other"
+    },
+    {
+     "sha256": "b33e1636ea3fa9fabd51e7711bbd4671c55c4e8cb681cdcc09d0cd53cef7ae28",
+     "size": 10779917,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/cy/dictionary/entries/verbs"
+    }
+   ],
+   "format": {
+    "delimiter": " ",
+    "form": 0,
+    "lemma": 1
+   },
+   "home": "https://github.com/TALP-UPC/FreeLing",
+   "id": "freeling-cy",
+   "languages": [
+    "cym"
+   ],
+   "license": "GPL-3.0-or-later",
+   "parser": "table",
+   "revision": "FreeLing commit 0bae6b7f6d1b405e67658895de54b59bfb3b6338"
+  },
+  {
+   "attribution": "French dictionary of FreeLing, from LEFFF (Benoît Sagot, INRIA)",
+   "family": "national",
+   "files": [
+    {
+     "sha256": "f058e6096c27da1233c5898b311c6d57073c50da01ff501eeebf5bb216fb38c3",
+     "size": 842137,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/fr/dictionary/entries/lefff.adj"
+    },
+    {
+     "sha256": "e58735dc52e07bb25495102939e075e790e17f32c98a1baed56754d6113981f3",
+     "size": 6221,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/fr/dictionary/entries/lefff.adv"
+    },
+    {
+     "sha256": "8ba3e71c73ff5d23dbf7fa6c45cddef4be18283ddc28e95e84fe6d5aaca81301",
+     "size": 880,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/fr/dictionary/entries/lefff.int"
+    },
+    {
+     "sha256": "c6cd829e16dbce033fe13a7b6a0a9359e8bd1cbba0a2fe4f0a98d0a49fb82597",
+     "size": 2248851,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/fr/dictionary/entries/lefff.nom"
+    },
+    {
+     "sha256": "bd9179459cc34c3d2343ce7732b13e0d322872c2ead842de8c24aaaa59ccc6d1",
+     "size": 6768,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/fr/dictionary/entries/lefff.tanc"
+    },
+    {
+     "sha256": "95fc1506794c77193fa4cd0cdf038cdda59f493e73096cb389bfd9990124795a",
+     "size": 1984,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/fr/dictionary/entries/lefff.vaux"
+    },
+    {
+     "sha256": "510ed128df1cfde284c33950696df522572c42ea513ebc717cdacc1dd64c56ba",
+     "size": 10207616,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/fr/dictionary/entries/lefff.verb"
+    }
+   ],
+   "format": {
+    "delimiter": " ",
+    "form": 0,
+    "lemma": 1
+   },
+   "home": "https://github.com/TALP-UPC/FreeLing",
+   "id": "freeling-fr",
+   "languages": [
+    "fra"
+   ],
+   "license": "LicenseRef-LGPL-LR",
+   "parser": "table",
+   "revision": "FreeLing commit 0bae6b7f6d1b405e67658895de54b59bfb3b6338"
+  },
+  {
+   "attribution": "English dictionary of FreeLing (TALP, Universitat Politècnica de Catalunya)",
+   "family": "national",
+   "files": [
+    {
+     "sha256": "d5dbb3a817742a4ac30377facfbadfa9c9e25afbb5720c610eaaae7c2725ba58",
+     "size": 184277,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/en/dictionary/entries/adjs"
+    },
+    {
+     "sha256": "d33f5ab572b1c2eb6fc40f14d1c53596fd906163db5c9b0486d9087756158405",
+     "size": 183,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/en/dictionary/entries/adjs.comp"
+    },
+    {
+     "sha256": "0bcb457c42b308857c80c04003d15a46a1b57fdd84f01e83941c10f0c69ddbc1",
+     "size": 6868,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/en/dictionary/entries/adv"
+    },
+    {
+     "sha256": "41e0cacf841815d3c901948032d8f87a2a07b58746d797247cca3945a5163489",
+     "size": 124,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/en/dictionary/entries/adv.comp"
+    },
+    {
+     "sha256": "a9f16fe6cb118c3cd7054053256bdc71890412d326b19721613e873329745a47",
+     "size": 1749,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/en/dictionary/entries/contraccions"
+    },
+    {
+     "sha256": "b3c59428d0c38973d227973590cf0b45aa73824222203fe50971eaeea3bd264c",
+     "size": 11507,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/en/dictionary/entries/extra"
+    },
+    {
+     "sha256": "5d0b8935649f3c4584b1d890de3b62dec7ba5870ea4d9e9f38d4fb589d29f54f",
+     "size": 1159,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/en/dictionary/entries/interj"
+    },
+    {
+     "sha256": "4634e1abd7e77bb6ff1f92e9747d411bb61b297e8654a40d8a7531389795bb93",
+     "size": 902607,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/en/dictionary/entries/noms"
+    },
+    {
+     "sha256": "08b64b0852348848bc1f4ba74e2f3d1e1d4d43100c1614c9615b58c8cf0f3955",
+     "size": 4211,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/en/dictionary/entries/tanc"
+    },
+    {
+     "sha256": "b1545425ab9414fd4aee485ee037e6877f179b35d2d37ccba03f4f964d012bbe",
+     "size": 784454,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/en/dictionary/entries/verbs"
+    },
+    {
+     "sha256": "0d8ffd979991ca7e29fce752df296416f2bb3844a7522a2dd51df524c6c9da2f",
+     "size": 710,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/en/dictionary/entries/verbs.aux"
+    }
+   ],
+   "format": {
+    "delimiter": " ",
+    "form": 0,
+    "lemma": 1
+   },
+   "home": "https://github.com/TALP-UPC/FreeLing",
+   "id": "freeling-en",
+   "languages": [
+    "eng"
+   ],
+   "license": "AGPL-3.0-or-later",
+   "parser": "table",
+   "revision": "FreeLing commit 0bae6b7f6d1b405e67658895de54b59bfb3b6338"
+  },
+  {
+   "attribution": "Russian dictionary of FreeLing (TALP, Universitat Politècnica de Catalunya)",
+   "family": "national",
+   "files": [
+    {
+     "sha256": "b3bcfb02873e5bca095dd98167b35947d3e6f64d0060ed55bed64c802576257e",
+     "size": 76738712,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/ru/dictionary/entries/adjs"
+    },
+    {
+     "sha256": "058815fd30e159114b5fa079dd9398f6aea67ca9ba27115aa1167a43e375d5f6",
+     "size": 248734,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/ru/dictionary/entries/adverb"
+    },
+    {
+     "sha256": "4ccd08c470c141dee5426d0027f2484bab756b12df978393a9dc6a7cf598a375",
+     "size": 2032,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/ru/dictionary/entries/conjunction"
+    },
+    {
+     "sha256": "b7a89cada3cf453d58bb9e8a0231c06024a5ff7ee4973e7965d864570461955f",
+     "size": 1299,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/ru/dictionary/entries/cpart"
+    },
+    {
+     "sha256": "486917e191cf614fef039aa3ecba270141fe500c2f1b69ad3f19e670467b07cf",
+     "size": 4168,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/ru/dictionary/entries/interjection"
+    },
+    {
+     "sha256": "113cef7a86da9c6573ef5fa84be4a8a0c65ee4090f9ba4e83c67c3df5a1c67d4",
+     "size": 35061012,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/ru/dictionary/entries/nouns"
+    },
+    {
+     "sha256": "3b96ce6e8c69da7384fb15b4684b9c7054be0e0fe9e91257db7f9efa67c60724",
+     "size": 11403,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/ru/dictionary/entries/numeral"
+    },
+    {
+     "sha256": "5e14ea7d01ff23ef0895f4b303d530ee6295f247829d226568ee52227d5665a7",
+     "size": 182202,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/ru/dictionary/entries/ordinal_numeral"
+    },
+    {
+     "sha256": "57165467cec2a8aa855718c1a7dde7328609b7b40d941f9d747c22c027dd592a",
+     "size": 24683706,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/ru/dictionary/entries/participle"
+    },
+    {
+     "sha256": "dce3eb266b779ee1ad646840aed5bd7e5af1b03272a560ca8b55411f9934a2fd",
+     "size": 2713,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/ru/dictionary/entries/particle"
+    },
+    {
+     "sha256": "fa213f80971768dc3cd38155d8126f9f1313242c534b24e5bbf7fe4e6aca638e",
+     "size": 3461,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/ru/dictionary/entries/preposition"
+    },
+    {
+     "sha256": "efa992b4409d63b11b86a3fc694a7bfeda9706e1e7dd5fa8f11fe63296d1b7a5",
+     "size": 51224,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/ru/dictionary/entries/pronominal_adjs"
+    },
+    {
+     "sha256": "cbfc74d539eeb30e350ac39bfd4778caa1cfc9edfacb6e092c044519e5b0e6bf",
+     "size": 856,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/ru/dictionary/entries/pronominal_adverb"
+    },
+    {
+     "sha256": "c7fd03185d0f52214781c2c592ff931490ee22736993b9506483035601d5d53a",
+     "size": 9682,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/ru/dictionary/entries/pronoun"
+    },
+    {
+     "sha256": "bbde569392e4c84c08075f7e4e05315d1e2c0277f4df7201d14b61d88a3dc1c1",
+     "size": 21813576,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/ru/dictionary/entries/verbs"
+    }
+   ],
+   "format": {
+    "delimiter": " ",
+    "form": 0,
+    "lemma": 1
+   },
+   "home": "https://github.com/TALP-UPC/FreeLing",
+   "id": "freeling-ru",
+   "languages": [
+    "rus"
+   ],
+   "license": "AGPL-3.0-or-later",
+   "parser": "table",
+   "revision": "FreeLing commit 0bae6b7f6d1b405e67658895de54b59bfb3b6338"
+  },
+  {
+   "attribution": "Norwegian dictionary of FreeLing, from Norsk Ordbank (University of Oslo)",
+   "family": "national",
+   "files": [
+    {
+     "sha256": "1179cc6a286c1bdce0badd01c1ebe04475387c989b8de4d5715190b21a0fd3c4",
+     "size": 5719847,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/nb/dictionary/entries/adjs"
+    },
+    {
+     "sha256": "6eefb3b1579ccd0656bbbaedfc4d8fb37c597e48ebae16e6e507fbc22d675266",
+     "size": 16323,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/nb/dictionary/entries/advs"
+    },
+    {
+     "sha256": "52d6b036825d9c87070c138a82ce6f44fd82a5e12bdf401c98fe036f854d3676",
+     "size": 20859,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/nb/dictionary/entries/closed"
+    },
+    {
+     "sha256": "04ba9734a15733cbe22196042bd61baa1baa1861532f0becda9974febc6bb0f4",
+     "size": 20989245,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/nb/dictionary/entries/nouns"
+    },
+    {
+     "sha256": "3dce6a9a20a2dbbac9ceee38d93603d15310a8b03c90b840f009fad60a7a4716",
+     "size": 1536978,
+     "url": "https://raw.githubusercontent.com/TALP-UPC/FreeLing/0bae6b7f6d1b405e67658895de54b59bfb3b6338/data/nb/dictionary/entries/verbs"
+    }
+   ],
+   "format": {
+    "delimiter": " ",
+    "form": 0,
+    "lemma": 1
+   },
+   "home": "https://github.com/TALP-UPC/FreeLing",
+   "id": "freeling-nb",
+   "languages": [
+    "nor"
+   ],
+   "license": "GPL-3.0-or-later",
+   "parser": "table",
+   "revision": "FreeLing commit 0bae6b7f6d1b405e67658895de54b59bfb3b6338"
+  }
+ ],
+ "ud": {
+  "home": "https://universaldependencies.org/",
+  "id": "ud-2.19",
+  "name": "ud-treebanks-v2.19.tgz",
+  "revision": "Universal Dependencies 2.19",
+  "sha256": "6bbe2f0234dcc2d2367cc912848259c94c278ea69932d228d744f265a19a4a31",
+  "size": 693376253,
+  "url": "https://lindat.mff.cuni.cz/repository/server/api/core/bitstreams/bd57416d-f1ec-43a0-8ebd-0a53cb9bda59/content"
+ }
+}
