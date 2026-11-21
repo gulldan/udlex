@@ -1,0 +1,27 @@
+{
+  "opensearch": "3.10.0",
+  "lucene": "10.6.0",
+  "rust": "1.100.0",
+  "core_commit": "01addf4caa1230f23cef9f70d57e729220765bc5",
+  "plugin_commit": "0a3334f519e2ee0dda7865f0eca7882833a04267",
+  "dictionary_count": 224,
+  "dictionary_catalog_sha256": "3a05785bafbb4c049e773b7be8a3fc2683d0d0b9d8095a35d18918b5f33e24df",
+  "benchmark_inputs_sha256": "cc0ef94a0f1babf0453e6d3005e100dfab54dcf2f0520c5019ca8ad40a457b99",
+  "input_manifest_sha256": "2a9316368b59fdb85090567e916323bd341b12e60df7c8cab666d45d4bf89c65",
+  "reference_sha256": {
+    "by-language.csv": "2a96748929e3756932971f7d43818c8c4804e661c5e212d4c3a1b40d5500d889",
+    "cjk.csv": "72ff992e47b85fcd08c7f0a68c1376dc0534c3a422df8eb1bd3bc5ebd811dc27"
+  },
+  "smoke_languages": [
+    "rus",
+    "eng",
+    "deu",
+    "fra",
+    "spa",
+    "ita",
+    "por",
+    "ukr",
+    "jpn",
+    "yue"
+  ]
+}

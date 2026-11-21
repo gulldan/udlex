@@ -11,8 +11,8 @@ use super::codec::{Codec, table_codec};
 use super::metadata::{FileIntegrity, Meta, validate_meta};
 use super::table::build_phrase_table;
 use super::table::{
-    Bytes, CachedMap, Entities, Found, HybridTable, Strings, Table, Tables, assemble_key,
-    da_search, validate_tables,
+    Bytes, CachedMap, Entities, Found, HybridHit, HybridTable, Strings, Table, Tables,
+    assemble_key, da_search, validate_tables,
 };
 use super::{CURRENT, Error, GENERATIONS, IDENTITY, PHRASE_CODEC, Result};
 use crate::format::{LookupTableKind, TokenCase};
@@ -733,6 +733,8 @@ impl Lexicon {
     }
 
     /// Resolves a string identifier stored in a table.
+    #[expect(clippy::inline_always, reason = "part of the inlined hybrid read")]
+    #[inline(always)]
     fn string(&self, id: u64) -> Option<&str> {
         self.strings.entry(id)
     }
@@ -744,6 +746,24 @@ impl Lexicon {
             Found::Lemma(lemma) => Some(Cow::Owned(lemma)),
             Found::Text(text) => Some(Cow::Borrowed(text)),
         }
+    }
+
+    /// One `exact`/`lower` probe. The compiler writes both tables as
+    /// `hybrid`, so that codec is read inside the probe; [`Table::get`]
+    /// stays out of line for every other codec.
+    #[expect(
+        clippy::inline_always,
+        reason = "behind a call, the hybrid read costs ~30 more instructions"
+    )]
+    #[inline(always)]
+    fn read_hot<'a>(&'a self, table: &'a Table, key: &str) -> Option<Cow<'a, str>> {
+        if let Table::Hybrid(hybrid) = table {
+            return Some(Cow::Borrowed(match hybrid.get(key.as_bytes())? {
+                HybridHit::Id(id) => self.string(u64::from(id))?,
+                HybridHit::Text(text) => text,
+            }));
+        }
+        self.resolve(table.get(key)?)
     }
 
     /// The profile the span path of this generation was accepted with:
@@ -986,12 +1006,16 @@ impl Lexicon {
 
 /// The compiled tables; a hit borrows from the string table, never allocates.
 impl probe::Tables for Lexicon {
+    #[expect(clippy::inline_always, reason = "see `Lexicon::read_hot`")]
+    #[inline(always)]
     fn exact(&self, key: &str) -> Option<Cow<'_, str>> {
-        self.resolve(self.tables.exact.as_ref()?.get(key)?)
+        self.read_hot(self.tables.exact.as_ref()?, key)
     }
 
+    #[expect(clippy::inline_always, reason = "see `Lexicon::read_hot`")]
+    #[inline(always)]
     fn lower(&self, key: &str) -> Option<Cow<'_, str>> {
-        self.resolve(self.tables.lower.as_ref()?.get(key)?)
+        self.read_hot(self.tables.lower.as_ref()?, key)
     }
 
     fn external(&self, key: &str) -> Option<Cow<'_, str>> {

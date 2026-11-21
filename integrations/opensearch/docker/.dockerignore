@@ -1,0 +1,9 @@
+**
+!plugins
+!plugins/*.zip
+!plugins/SHA256SUMS
+!dictionaries
+!dictionaries/*.tar.gz
+!DICTIONARIES.json
+!install-dictionaries.py
+!90-udlex.options

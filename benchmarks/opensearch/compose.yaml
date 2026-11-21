@@ -1,0 +1,19 @@
+services:
+  benchmark:
+    image: udlex-opensearch-bench:3.10.0-224-v1
+    pull_policy: never
+    build:
+      context: .
+      network: none
+    init: true
+    network_mode: none
+    volumes:
+      - ./inputs:/inputs:ro
+      - ./results:/results
+      - ./candidate:/candidate:ro
+      - ./runner/run.py:/opt/bench/run.py:ro
+      - ./runner/smoke.py:/opt/bench/smoke.py:ro
+      - ./runner/summarize.py:/opt/bench/summarize.py:ro
+      - ./runner/index-settings.json:/opt/bench/index-settings.json:ro
+      - ./runner/search-cases.tsv:/opt/bench/search-cases.tsv:ro
+      - ./benchmark.lock.json:/opt/bench/benchmark.lock.json:ro

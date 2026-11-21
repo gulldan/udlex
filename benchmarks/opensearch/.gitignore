@@ -1,0 +1,4 @@
+/inputs/
+/build-inputs/
+/results/*
+!/results/.gitkeep

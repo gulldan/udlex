@@ -850,6 +850,36 @@ fn pruning_publishes_a_runtime_only_generation_without_mutating_readers() {
 }
 
 #[test]
+fn pruning_cuts_lemmas_only_long_hybrid_keys_reference() {
+    let temporary = tempfile::tempdir().unwrap();
+    let root = temporary.path().join("xx_prune_tail");
+    // Past the eight-byte split, so its record carries "categorical" itself.
+    publish_sources(
+        &root,
+        &[pair("cats", "cat"), pair("categorically", "categorical")],
+    );
+    compile(&root).unwrap();
+    let lines = |root: &Path| {
+        let directory = resolve_generation(root).unwrap().directory;
+        std::fs::read_to_string(directory.join("strings.txt"))
+            .unwrap()
+            .lines()
+            .map(str::to_owned)
+            .collect::<Vec<_>>()
+    };
+    let before = lines(&root);
+    assert_eq!(before.last().map(String::as_str), Some("categorical"));
+
+    assert!(prune(&root).unwrap());
+    let after = lines(&root);
+    assert!(!after.iter().any(|line| line == "categorical"));
+    assert_eq!(after.len(), before.len() - 1);
+    let lexicon = Lexicon::open(&root).unwrap();
+    assert_eq!(lexicon.lemma("categorically", false), "categorical");
+    assert_eq!(lexicon.lemma("cats", false), "cat");
+}
+
+#[test]
 fn advisory_writer_lock_survives_stale_files_but_blocks_live_writers() {
     let temporary = tempfile::tempdir().unwrap();
     let root = temporary.path().join("xx_lock");

@@ -1,0 +1,225 @@
+ISO 639-3	Language	Package
+abk	Abkhaz	udlex-dict-abk
+abq	Abaza	udlex-dict-abq
+afr	Afrikaans	udlex-dict-afr
+aii	Assyrian	udlex-dict-aii
+ajp	South Levantine Arabic	udlex-dict-ajp
+akk	Akkadian	udlex-dict-akk
+aln	Gheg	udlex-dict-aln
+amh	Amharic	udlex-dict-amh
+ang	Old English	udlex-dict-ang
+apu	Apurina	udlex-dict-apu
+aqz	Akuntsu	udlex-dict-aqz
+arb	Arabic	udlex-dict-arb-nc
+arh	Ika	udlex-dict-arh
+arr	Karo	udlex-dict-arr
+asm	Assamese	udlex-dict-asm
+ave	Avestan	udlex-dict-ave
+axm	Middle Armenian	udlex-dict-axm
+aze	Azerbaijani	udlex-dict-aze
+azz	Highland Puebla Nahuatl	udlex-dict-azz
+bam	Bambara	udlex-dict-bam
+bar	Bavarian	udlex-dict-bar
+bej	Beja	udlex-dict-bej
+bel	Belarusian	udlex-dict-bel
+ben	Bengali	udlex-dict-ben
+bgs	Tagabawa	udlex-dict-bgs
+bho	Bhojpuri	udlex-dict-bho
+bor	Bororo	udlex-dict-bor
+bre	Breton	udlex-dict-bre
+brh	Brahui	udlex-dict-brh
+bul	Bulgarian	udlex-dict-bul-nc
+bxr	Buryat	udlex-dict-bxr
+cat	Catalan	udlex-dict-cat
+ceb	Cebuano	udlex-dict-ceb
+ces	Czech	udlex-dict-ces-nc
+che	Chechen	udlex-dict-che-nc
+chu	Old Church Slavonic	udlex-dict-chu-nc
+ckb	Central Kurdish	udlex-dict-ckb
+ckt	Chukchi	udlex-dict-ckt
+cmn	Mandarin Chinese	udlex-dict-cmn
+cop	Coptic	udlex-dict-cop
+cpg	Cappadocian	udlex-dict-cpg
+ctn	Chintang	udlex-dict-ctn-nc
+cux	Cuicatec	udlex-dict-cux
+cym	Welsh	udlex-dict-cym
+dan	Danish	udlex-dict-dan
+dar	Dargwa	udlex-dict-dar-nc
+deu	German	udlex-dict-deu
+drs	Gedeo	udlex-dict-drs
+dta	Daur	udlex-dict-dta
+egy	Egyptian	udlex-dict-egy
+ell	(Modern) Greek	udlex-dict-ell-nc
+eme	Teko	udlex-dict-eme
+eng	English	udlex-dict-eng-nc
+epo	Esperanto	udlex-dict-epo
+ess	Yupik	udlex-dict-ess
+est	Estonian	udlex-dict-est-nc
+eus	Basque	udlex-dict-eus-nc
+eve	Even	udlex-dict-eve
+evn	Evenki	udlex-dict-evn
+fao	Faroese	udlex-dict-fao
+fin	Finnish	udlex-dict-fin
+fra	French	udlex-dict-fra
+frm	Middle French	udlex-dict-frm-nc
+fro	Old French	udlex-dict-fro-nc
+fsl	French Sign Language	udlex-dict-fsl
+gla	Scottish Gaelic	udlex-dict-gla
+gld	Nanai	udlex-dict-gld
+gle	Irish	udlex-dict-gle
+glg	Galician	udlex-dict-glg-nc
+glv	Manx	udlex-dict-glv
+gor	Gorontalo	udlex-dict-gor
+got	Gothic	udlex-dict-got-nc
+grc	Ancient Greek	udlex-dict-grc-nc
+gsw	Alemannic	udlex-dict-gsw
+gub	Guajajara	udlex-dict-gub
+gug	Guarani	udlex-dict-gug
+guj	Gujarati	udlex-dict-guj
+gun	Mbya Guarani	udlex-dict-gun-nc
+gwi	Gwichin	udlex-dict-gwi
+gya	Northwest Gbaya	udlex-dict-gya
+hac	Gorani	udlex-dict-hac
+hat	Haitian Creole	udlex-dict-hat
+hau	Hausa	udlex-dict-hau
+hbo	Ancient Hebrew	udlex-dict-hbo-nc
+heb	Hebrew	udlex-dict-heb-nc
+hin	Hindi	udlex-dict-hin-nc
+hit	Hittite	udlex-dict-hit
+hrv	Croatian	udlex-dict-hrv
+hsb	Upper Sorbian	udlex-dict-hsb
+hun	Hungarian	udlex-dict-hun-nc
+hye	Armenian	udlex-dict-hye
+hyw	Western Armenian	udlex-dict-hyw
+ind	Indonesian	udlex-dict-ind
+isl	Icelandic	udlex-dict-isl
+ita	Italian	udlex-dict-ita-nc
+jaa	Madi	udlex-dict-jaa
+jav	Javanese	udlex-dict-jav
+jpn	Japanese	udlex-dict-jpn
+kas	Kashmiri	udlex-dict-kas
+kat	Georgian	udlex-dict-kat
+kaz	Kazakh	udlex-dict-kaz
+kbc	Kadiwéu	udlex-dict-kbc-nc
+kfx	Kullvi	udlex-dict-kfx
+kir	Kyrgyz	udlex-dict-kir
+kmr	Northern Kurdish	udlex-dict-kmr
+koi	Komi Permyak	udlex-dict-koi
+kor	Korean	udlex-dict-kor
+kpv	Komi Zyrian	udlex-dict-kpv
+krl	Karelian	udlex-dict-krl
+lat	Latin	udlex-dict-lat-nc
+lav	Latvian	udlex-dict-lav
+lij	Ligurian	udlex-dict-lij
+lit	Lithuanian	udlex-dict-lit
+ltg	Latgalian	udlex-dict-ltg
+ltz	Luxembourgish	udlex-dict-ltz
+lzh	Classical Chinese	udlex-dict-lzh-nc
+lzz	Laz	udlex-dict-lzz
+mal	Malayalam	udlex-dict-mal
+mar	Marathi	udlex-dict-mar
+mdf	Moksha	udlex-dict-mdf
+mjg	Tu	udlex-dict-mjg
+mjl	Mandyali	udlex-dict-mjl
+mkd	Macedonian	udlex-dict-mkd
+mlt	Maltese	udlex-dict-mlt
+mnc	Manchu	udlex-dict-mnc
+mon	Mongolian	udlex-dict-mon
+mpu	Makurap	udlex-dict-mpu
+mvf	Peripheral Mongolian	udlex-dict-mvf
+myu	Munduruku	udlex-dict-myu
+myv	Erzya	udlex-dict-myv
+nap	Neapolitan	udlex-dict-nap
+naq	Khoekhoe	udlex-dict-naq-nc
+nds	Low German	udlex-dict-nds
+neg	Negidal	udlex-dict-neg
+nep	Nepali	udlex-dict-nep
+nhi	Western Sierra Puebla Nahuatl	udlex-dict-nhi
+nld	Dutch	udlex-dict-nld-nc
+nmf	Naga	udlex-dict-nmf
+nor	Norwegian	udlex-dict-nor
+oac	Oroch	udlex-dict-oac
+oci	Occitan	udlex-dict-oci-nc
+oge	Old Georgian	udlex-dict-oge
+olo	Livvi	udlex-dict-olo
+ori	Odia	udlex-dict-ori
+orv	Old East Slavic	udlex-dict-orv
+ota	Ottoman Turkish	udlex-dict-ota
+otk	Old Turkish	udlex-dict-otk
+pad	Paumari	udlex-dict-pad
+pan	Punjabi	udlex-dict-pan
+pay	Pesh	udlex-dict-pay
+pcm	Naija	udlex-dict-pcm
+peh	Bonan	udlex-dict-peh
+pes	Persian	udlex-dict-pes
+pka	Prakrit	udlex-dict-pka
+pli	Pali	udlex-dict-pli
+pol	Polish	udlex-dict-pol-nc
+por	Portuguese	udlex-dict-por
+pro	Old Occitan	udlex-dict-pro
+pst	Pashto	udlex-dict-pst
+qaf	Maghrebi Arabic French	udlex-dict-qaf
+qpm	Pomak	udlex-dict-qpm-nc
+qtd	Turkish German	udlex-dict-qtd-nc
+qti	Turkish English	udlex-dict-qti
+quc	Kiche	udlex-dict-quc
+ron	Romanian	udlex-dict-ron
+ruc	Ruruuli-Lunyala	udlex-dict-ruc-nc
+rus	Russian	udlex-dict-rus
+sab	Bokota	udlex-dict-sab
+sah	Yakut	udlex-dict-sah
+san	Sanskrit	udlex-dict-san
+say	Zaar	udlex-dict-say
+sce	Dongxiang	udlex-dict-sce
+scn	Sicilian	udlex-dict-scn
+sdh	Southern Kurdish	udlex-dict-sdh
+sga	Old Irish	udlex-dict-sga
+sin	Sinhala	udlex-dict-sin
+sjo	Xibe	udlex-dict-sjo-nc
+slk	Slovak	udlex-dict-slk
+slv	Slovenian	udlex-dict-slv
+sme	Northern Sami	udlex-dict-sme
+sms	Skolt Sami	udlex-dict-sms
+snd	Sindhi	udlex-dict-snd
+spa	Spanish	udlex-dict-spa
+sqi	Albanian	udlex-dict-sqi
+srd	Sardinian	udlex-dict-srd-nc
+srp	Serbian	udlex-dict-srp
+swe	Swedish	udlex-dict-swe
+swl	Swedish Sign Language	udlex-dict-swl
+tam	Tamil	udlex-dict-tam-nc
+tat	Tatar	udlex-dict-tat
+tel	Telugu	udlex-dict-tel
+tgl	Tagalog	udlex-dict-tgl
+tha	Thai	udlex-dict-tha
+tir	Tigrinya	udlex-dict-tir
+tpn	Tupinamba	udlex-dict-tpn
+tsn	Tswana	udlex-dict-tsn
+tuk	Turkmen	udlex-dict-tuk
+tur	Turkish	udlex-dict-tur
+txg	Tangut	udlex-dict-txg
+ude	Udihe	udlex-dict-ude
+uig	Uyghur	udlex-dict-uig
+ukr	Ukrainian	udlex-dict-ukr-nc
+ulc	Ulch	udlex-dict-ulc
+urb	Kaapor	udlex-dict-urb
+urd	Urdu	udlex-dict-urd-nc
+usp	Uspanteko	udlex-dict-usp
+uzb	Uzbek	udlex-dict-uzb
+vep	Veps (Vepsian)	udlex-dict-vep
+vie	Vietnamese	udlex-dict-vie
+wbp	Warlpiri	udlex-dict-wbp
+wol	Wolof	udlex-dict-wol
+wuu	Shanghainese (Wu Chinese)	udlex-dict-wuu
+xal	Kalmyk	udlex-dict-xal
+xav	Xavante	udlex-dict-xav
+xcl	Classical Armenian	udlex-dict-xcl-nc
+xnr	Kangri	udlex-dict-xnr
+xpg	Phrygian	udlex-dict-xpg
+xum	Umbrian	udlex-dict-xum
+yid	Yiddish	udlex-dict-yid
+yor	Yoruba	udlex-dict-yor
+yrk	Nenets	udlex-dict-yrk
+yrl	Nheengatu	udlex-dict-yrl-nc
+yue	Cantonese	udlex-dict-yue
+zza	Zazaki	udlex-dict-zza

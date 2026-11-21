@@ -43,5 +43,23 @@ int main(int argc, char **argv) {
 
   assert(udlex_native_close(lexicon) == UDLEX_NATIVE_OK);
   assert(udlex_native_close(NULL) == UDLEX_NATIVE_OK);
+
+  /* The test fixture is installed as <bundle>/eng, just like an archive. */
+  const char *slash = strrchr(argv[1], '/');
+  assert(slash != NULL && slash != argv[1]);
+  size_t bundle_len = (size_t)(slash - argv[1]);
+  const uint8_t *language = (const uint8_t *)(slash + 1);
+  for (uint8_t rules = 0; rules <= 1; ++rules) {
+    assert(udlex_native_load(directory, bundle_len, language, strlen(slash + 1),
+                             rules, &lexicon) == UDLEX_NATIVE_OK);
+    assert(udlex_native_lemma(lexicon, cats, sizeof cats, 0, output, sizeof output,
+                              &length) == UDLEX_NATIVE_OK);
+    assert(length == 3 && memcmp(output, "cat", 3) == 0);
+    assert(udlex_native_close(lexicon) == UDLEX_NATIVE_OK);
+  }
+  assert(udlex_native_load(directory, bundle_len, (const uint8_t *)"absent", 6,
+                           1, &lexicon) == UDLEX_NATIVE_OPEN_FAILED);
+  assert(lexicon == NULL);
+
   return 0;
 }

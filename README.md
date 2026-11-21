@@ -6,6 +6,8 @@ Fast local lemmatization for Python. It looks up word forms in a dictionary and
 can apply suffix rules to unknown words. Input is a list of tokens.
 
 The Go bindings live in [udlex-go](https://github.com/gulldan/udlex-go).
+Build the OpenSearch 3.10 plugin from source or install it with all 224 dictionaries in Docker Compose. [Build the ZIP](integrations/opensearch/plugin/README.md) · [Install in Compose](integrations/opensearch/docker/README.md) · [Index and search ten languages in one index](integrations/opensearch/docker/example.http)
+The [standalone Docker benchmark](benchmarks/opensearch/README.md) reproduces the comparison on 224 languages. [Measured CPU throughput on AMD64 and ARM64](benchmarks/opensearch/reports/README.md)
 
 ## Install
 

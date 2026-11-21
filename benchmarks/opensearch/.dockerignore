@@ -1,0 +1,12 @@
+**
+!Dockerfile
+!build-inputs
+!build-inputs/*
+!build-inputs.sha256
+!benchmark.lock.json
+!reference
+!reference/*
+!runner
+!runner/**
+**/__pycache__
+**/*.pyc

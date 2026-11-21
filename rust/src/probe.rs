@@ -382,9 +382,14 @@ impl<T: Tables + ?Sized, const KIND: u8> Tables for View<T, KIND> {
     fn entities_lower(&self, key: &str) -> Option<Cow<'_, str>> {
         self.0.entities_lower(key)
     }
+    // Not inlined, the grown hot read stays behind a call in this view.
+    #[expect(clippy::inline_always, reason = "see the comment above")]
+    #[inline(always)]
     fn exact(&self, key: &str) -> Option<Cow<'_, str>> {
         self.0.exact(key)
     }
+    #[expect(clippy::inline_always, reason = "as `exact`")]
+    #[inline(always)]
     fn lower(&self, key: &str) -> Option<Cow<'_, str>> {
         self.0.lower(key)
     }

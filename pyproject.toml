@@ -21,8 +21,8 @@ udlex = "udlex.cli:main"
 dev = [
     "maturin==1.16.0",
     "pytest==9.2.0",
-    "ruff==0.17.4",
-    "ty==0.0.99",
+    "ruff==0.17.5",
+    "ty==0.0.106",
 ]
 
 [build-system]
@@ -78,6 +78,8 @@ convention = "google"
 
 [tool.ruff.lint.per-file-ignores]
 "tests/*" = ["D", "PLR2004", "INP001", "FBT001"]
+# Build scripts for the dictionary packages, run as files rather than imported.
+"dictionaries/*" = ["INP001"]
 
 # PYI021 bans docstrings in stubs, which is right for typeshed and wrong here:
 # this stub is the only place an editor or a type checker can read what the
@@ -125,15 +127,20 @@ convention = "google"
 python-version = "3.11"
 
 [tool.ty.src]
-include = ["src/udlex", "tests"]
+include = ["src/udlex", "tests", "dictionaries"]
+# Hashed into recipe_sha256 of the 1.0.0.post1 catalog; see the ruff exclusion.
+exclude = [
+  "dictionaries/ud-2.19/refresh.py",
+  "dictionaries/ud-2.19/source_tables.py",
+]
 
 [tool.ty.rules]
 # The shipped library is held to the strict end of the checker.
 possibly-unresolved-reference = "error"
-unresolved-attribute = "error"
-invalid-return-type = "error"
+missing-attribute = "error"
+invalid-explicit-return = "error"
 invalid-argument-type = "error"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-pythonpath = ["src"]
+pythonpath = ["src", "dictionaries"]

@@ -8,8 +8,7 @@ use yada::builder::DoubleArrayBuilder;
 
 use super::super::table::build_hybrid;
 use super::super::{
-    AUTOMATON_BYTES_PER_PROBE_SHARE, Codec, Error, FileIntegrity, Result, encode_key_into,
-    fst_error,
+    AUTOMATON_BYTES_PER_PROBE_SHARE, Codec, Error, Result, encode_key_into, fst_error,
 };
 use super::source::{
     StringTable, read_rows, validate_entity_key, validate_string_id, visit_sorted_rows,
@@ -33,23 +32,6 @@ pub(super) struct PreparedTable {
 impl PreparedTable {
     pub(super) const fn entries(&self) -> usize {
         self.entries
-    }
-
-    pub(super) fn codec(&self) -> Option<Codec> {
-        self.selected.as_ref().map(|(codec, _)| *codec)
-    }
-
-    /// Hashes the selected anonymous artifact before it is installed.
-    pub(super) fn integrity(
-        &mut self,
-        directory: &Path,
-        table: LookupTableKind,
-    ) -> Result<Option<FileIntegrity>> {
-        let name = table.name();
-        self.selected
-            .as_mut()
-            .map(|(codec, artifact)| artifact.integrity(&codec.file(directory, name)))
-            .transpose()
     }
 
     /// Installs exactly one encoding and removes every loser.
@@ -360,43 +342,6 @@ impl Artifact {
         Ok(Self {
             file,
             len: bytes.len(),
-        })
-    }
-
-    fn integrity(&mut self, path: &Path) -> Result<FileIntegrity> {
-        self.file
-            .seek(SeekFrom::Start(0))
-            .map_err(|source| Error::Io {
-                path: path.to_owned(),
-                source,
-            })?;
-        let observed =
-            crate::secure_fs::opened_integrity(&mut self.file).map_err(|error| match error {
-                crate::secure_fs::MapVerifiedError::Read(source) => Error::Io {
-                    path: path.to_owned(),
-                    source,
-                },
-                crate::secure_fs::MapVerifiedError::LengthOverflow => Error::Invalid {
-                    path: path.to_owned(),
-                    message: "compiled table is too large to hash".to_owned(),
-                },
-                _ => Error::Invalid {
-                    path: path.to_owned(),
-                    message: "unexpected failure while hashing compiled table".to_owned(),
-                },
-            })?;
-        if usize::try_from(observed.size).ok() != Some(self.len) {
-            return Err(Error::Invalid {
-                path: path.to_owned(),
-                message: format!(
-                    "hashed {} bytes from a {}-byte candidate",
-                    observed.size, self.len
-                ),
-            });
-        }
-        Ok(FileIntegrity {
-            size: observed.size,
-            sha256: observed.sha256,
         })
     }
 

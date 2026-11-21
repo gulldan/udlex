@@ -9,6 +9,8 @@ use pyo3::prelude::*;
 /// The compiled half of `udlex`, imported as `udlex._udlex`.
 ///
 /// `gil_used = false` is stated as this module's free-threading contract.
+// A leading underscore is the Python-private name, which `#[pyfunction]` reuses.
+#[allow(clippy::used_underscore_items)]
 #[pymodule(gil_used = false)]
 mod _udlex {
     use pyo3::prelude::*;

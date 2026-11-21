@@ -83,7 +83,10 @@ def verify(catalog, report):
                     else:
                         continue
                     expected.add(tarname)
-                    with parcel.extractfile(tarname) as stream:
+                    stream = parcel.extractfile(tarname)
+                    if stream is None:
+                        raise ValueError(f"{tarname} is not a regular file")
+                    with stream:
                         if stream.read() != data:
                             raise ValueError(
                                 f"Portable and wheel payload differ for {name}"
