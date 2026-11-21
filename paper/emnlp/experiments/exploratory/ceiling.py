@@ -3,12 +3,14 @@
 import collections
 import gzip
 import json
+import os
 from pathlib import Path
 
-ORDER = (
-    "/mnt/hdd-4tb/codex-runs/udlex-v1-order-ud219-20261118.splMl6/clean219/inputs/order"
-)
-C = "/mnt/hdd-4tb/codex-runs/udlex-compare-20261119"
+COMPARE_DIR = os.environ["UDLEX_COMPARE"]
+ORDER_RUN = os.environ["UDLEX_ORDER_RUN"]
+
+ORDER = f"{ORDER_RUN}/clean219/inputs/order"
+C = COMPARE_DIR
 inv = json.loads(Path(ORDER + "/inventory.json").read_text())["languages"]
 home = json.loads(
     gzip.decompress(Path(C + "/study/evidence/ud219/order/pairs.json.gz").read_bytes())

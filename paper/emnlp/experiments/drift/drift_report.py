@@ -7,10 +7,13 @@ Trankit's model table; prints one row per language above the threshold.
 """
 
 import json
+import os
 import sys
 from pathlib import Path
 
-C = Path("/mnt/hdd-4tb/codex-runs/udlex-compare-20261119")
+COMPARE_DIR = os.environ["UDLEX_COMPARE"]
+
+C = Path(COMPARE_DIR)
 STANZA_CODE = {"no_nynorsk": "nn", "no_bokmaal": "nb"}
 # Trankit's own names of two UD 2.5 treebanks.
 ALIAS = {

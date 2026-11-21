@@ -3,13 +3,16 @@
 import collections
 import gzip
 import json
+import os
 from pathlib import Path
 
-ORDER = (
-    "/mnt/hdd-4tb/codex-runs/udlex-v1-order-ud219-20261118.splMl6/clean219/inputs/order"
-)
-D = "/mnt/hdd-4tb/codex-runs/udlex-transfer-20261118-full/anchor-diag3/results"
-C = "/mnt/hdd-4tb/codex-runs/udlex-compare-20261119"
+COMPARE_DIR = os.environ["UDLEX_COMPARE"]
+ORDER_RUN = os.environ["UDLEX_ORDER_RUN"]
+TRANSFER_RUN = os.environ["UDLEX_TRANSFER_RUN"]
+
+ORDER = f"{ORDER_RUN}/clean219/inputs/order"
+D = f"{TRANSFER_RUN}/anchor-diag3/results"
+C = COMPARE_DIR
 cov = json.loads(Path(C + "/results/stanza-coverage.json").read_text())
 clean = [
     i

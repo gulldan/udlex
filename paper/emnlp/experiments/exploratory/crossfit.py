@@ -8,18 +8,20 @@ import subprocess
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-R = Path("/mnt/hdd-4tb/codex-runs/udlex-v1-order-ud219-20261118.splMl6")
-SRC = "/mnt/hdd-4tb/lemmas-bench/bench-v280/repo"
+ORDER_RUN = os.environ["UDLEX_ORDER_RUN"]
+TRANSFER_RUN = os.environ["UDLEX_TRANSFER_RUN"]
+BENCH_REPO = os.environ["UDLEX_BENCH_REPO"]
+
+R = Path(ORDER_RUN)
+SRC = BENCH_REPO
 BIN = str(R / "cargo-target/dev-fast/paper_order")
 ORDER = R / "clean219/inputs/order"
-OUT = Path("/mnt/hdd-4tb/codex-runs/udlex-transfer-20261118-full/crossfit")
+OUT = Path(f"{TRANSFER_RUN}/crossfit")
 K = 5
 inv = json.loads((ORDER / "inventory.json").read_bytes())["languages"]
 home = json.loads(
     gzip.decompress(
-        Path(
-            "/mnt/hdd-4tb/codex-runs/udlex-transfer-20261118-full/study/evidence/ud219/order/pairs.json.gz"
-        ).read_bytes()
+        Path(f"{TRANSFER_RUN}/study/evidence/ud219/order/pairs.json.gz").read_bytes()
     )
 )["official"]
 

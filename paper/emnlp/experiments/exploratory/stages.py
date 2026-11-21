@@ -3,12 +3,15 @@
 import collections
 import glob
 import json
+import os
 from pathlib import Path
 
-ORDER = (
-    "/mnt/hdd-4tb/codex-runs/udlex-v1-order-ud219-20261118.splMl6/clean219/inputs/order"
-)
-D = "/mnt/hdd-4tb/codex-runs/udlex-transfer-20261118-full/anchor-diag3/results"
+COMPARE_DIR = os.environ["UDLEX_COMPARE"]
+ORDER_RUN = os.environ["UDLEX_ORDER_RUN"]
+TRANSFER_RUN = os.environ["UDLEX_TRANSFER_RUN"]
+
+ORDER = f"{ORDER_RUN}/clean219/inputs/order"
+D = f"{TRANSFER_RUN}/anchor-diag3/results"
 STAGE = {
     2: "corpus",
     3: "corpus",
@@ -81,6 +84,6 @@ sa = [
 print(
     f"macro: accuracy on seen {sum(sa) / len(sa):.2f}, on unseen {sum(ua) / len(ua):.2f}"
 )
-Path("/mnt/hdd-4tb/codex-runs/udlex-compare-20261119/stages.json").write_text(
+Path(f"{COMPARE_DIR}/stages.json").write_text(
     json.dumps({i: {"|".join(k): v for k, v in c.items()} for i, c in per.items()})
 )

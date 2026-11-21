@@ -10,11 +10,15 @@ language code in the old release; "language" counts a sentence once over all its
 
 import hashlib
 import json
+import os
 import sys
 import unicodedata
 from pathlib import Path
 
-C = Path("/mnt/hdd-4tb/codex-runs/udlex-compare-20261119")
+COMPARE_DIR = os.environ["UDLEX_COMPARE"]
+ORDER_RUN = os.environ["UDLEX_ORDER_RUN"]
+
+C = Path(COMPARE_DIR)
 OLD = C / "ud-old"
 # Handles as listed on universaldependencies.org/download.html.
 RELEASES = {
@@ -25,9 +29,7 @@ RELEASES = {
     "2.18": ("http://hdl.handle.net/11234/1-6149", OLD / "ud-treebanks-v2.18"),
     "2.19": (
         "http://hdl.handle.net/11234/1-6316",
-        Path(
-            "/mnt/hdd-4tb/codex-runs/udlex-v1-order-ud219-20261118.splMl6/inputs/ud-treebanks-v2.19"
-        ),
+        Path(f"{ORDER_RUN}/inputs/ud-treebanks-v2.19"),
     ),
 }
 

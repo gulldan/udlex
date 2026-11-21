@@ -3,10 +3,22 @@
 import argparse
 import gzip
 import json
+import platform
 from pathlib import Path
 
 from order_summary import summarize
 from verify_snapshot import read, save, sha
+
+
+def without_intervals(summary):
+    """A cohort summary without its bootstrap intervals, which depend on the platform."""
+    return {
+        **summary,
+        "arms": {
+            name: {k: v for k, v in arm.items() if k != "ci95_pp"}
+            for name, arm in summary["arms"].items()
+        },
+    }
 
 
 def compare(enabled, disabled):
@@ -15,7 +27,14 @@ def compare(enabled, disabled):
         groups = json.loads(gzip.decompress((directory / "pairs.json.gz").read_bytes()))
         summary = read(directory / "summary.json")
         for cohort, runs in groups.items():
-            if summarize(runs, cohort == "official") != summary[cohort]:
+            got = summarize(runs, cohort == "official")
+            if got != summary[cohort]:
+                if without_intervals(got) == without_intervals(summary[cohort]):
+                    raise ValueError(
+                        f"{directory.name} {cohort}: counts match, bootstrap intervals"
+                        " do not; NumPy's sampler reproduces them on Linux x86-64,"
+                        f" this is {platform.system()} {platform.machine()}"
+                    )
                 raise ValueError(
                     f"Released per-block counts do not reproduce {directory.name} {cohort}"
                 )

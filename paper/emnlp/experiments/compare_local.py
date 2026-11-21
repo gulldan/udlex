@@ -16,8 +16,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))  # python -I drops it
 
 from verify_snapshot import read, save
 
+COMPARE_DIR = os.environ["UDLEX_COMPARE"]
+
 # Binaries, models and caches of the tools; nothing is written elsewhere.
-TOOLS = Path("/mnt/hdd-4tb/codex-runs/udlex-compare-20261119/venvs")
+TOOLS = Path(f"{COMPARE_DIR}/venvs")
 LINDAT = "https://lindat.mff.cuni.cz/services/"
 CHUNK = 500
 

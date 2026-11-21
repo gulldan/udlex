@@ -2,17 +2,17 @@
 
 import collections
 import json
+import os
 from pathlib import Path
 
-R = "/mnt/hdd-4tb/codex-runs/udlex-v1-order-ud219-20261118.splMl6"
+COMPARE_DIR = os.environ["UDLEX_COMPARE"]
+ORDER_RUN = os.environ["UDLEX_ORDER_RUN"]
+
+R = ORDER_RUN
 inv = json.loads(Path(R + "/clean219/inputs/order/inventory.json").read_text())[
     "languages"
 ]
-cov = json.loads(
-    Path(
-        "/mnt/hdd-4tb/codex-runs/udlex-compare-20261119/results/stanza-coverage.json"
-    ).read_text()
-)
+cov = json.loads(Path(f"{COMPARE_DIR}/results/stanza-coverage.json").read_text())
 clean = [
     i
     for i, v in cov.items()

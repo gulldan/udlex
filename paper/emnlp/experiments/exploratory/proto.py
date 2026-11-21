@@ -12,10 +12,15 @@ import numpy as np
 from sklearn.feature_extraction import FeatureHasher
 from sklearn.linear_model import SGDClassifier
 
-R = "/mnt/hdd-4tb/codex-runs/udlex-v1-order-ud219-20261118.splMl6"
+COMPARE_DIR = os.environ["UDLEX_COMPARE"]
+ORDER_RUN = os.environ["UDLEX_ORDER_RUN"]
+TRANSFER_RUN = os.environ["UDLEX_TRANSFER_RUN"]
+BENCH_REPO = os.environ["UDLEX_BENCH_REPO"]
+
+R = ORDER_RUN
 ORDER = R + "/clean219/inputs/order"
-D = "/mnt/hdd-4tb/codex-runs/udlex-transfer-20261118-full/anchor-diag3/results"
-C = "/mnt/hdd-4tb/codex-runs/udlex-compare-20261119"
+D = f"{TRANSFER_RUN}/anchor-diag3/results"
+C = COMPARE_DIR
 inv = json.loads(Path(ORDER + "/inventory.json").read_text())["languages"]
 
 
@@ -139,7 +144,7 @@ def run(iso):
     }
     # the same list from dictionary pairs: other lexemes with the same inflection
     dl = collections.defaultdict(collections.Counter)
-    bench = "/mnt/hdd-4tb/lemmas-bench/bench-v280/repo/"
+    bench = f"{BENCH_REPO}/"
     npairs = 0
     for src in row["sources"]:
         seenf = set()
