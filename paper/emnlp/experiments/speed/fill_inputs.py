@@ -1,5 +1,7 @@
-"""Timing inputs: the census inputs, with UD 2.19 test text for the twofold languages whose
-census test is empty (bul, fro, tha). Timing needs running text, not a held-out split.
+"""Timing inputs: the census inputs, with UD 2.19 test text for three twofold languages.
+
+The census test of bul, fro and tha is empty; timing needs running text, not a held-out
+split.
     fill_inputs.py OUT   (server) OUT gets symlinks to the census dirs plus three real dirs
 UDLEX_SPEED_COMPARE is the quality comparison, UDLEX_SPEED_UD the UD 2.19 treebanks.
 """
@@ -24,8 +26,8 @@ FILL = {
 
 def sentences(path):
     tokens, lemmas, n = [], [], 0
-    for line in path.open(encoding="utf-8"):
-        line = line.rstrip("\n")
+    for raw in path.open(encoding="utf-8"):
+        line = raw.rstrip("\n")
         if not line:
             if tokens:
                 n += 1
@@ -49,8 +51,9 @@ for src in CENSUS.iterdir():
 for iso, rel in FILL.items():
     assert (CENSUS / iso / "test.jsonl").stat().st_size == 0, f"{iso}: census test is not empty"
     rows = list(sentences(UD / rel))
-    assert rows and all(len(r["tokens"]) == len(r["lemmas"]) for r in rows)
+    assert rows
+    assert all(len(r["tokens"]) == len(r["lemmas"]) for r in rows)
     (out / iso).mkdir(exist_ok=True)
-    with open(out / iso / "test.jsonl", "w", encoding="utf-8") as fh:
+    with (out / iso / "test.jsonl").open("w", encoding="utf-8") as fh:
         fh.writelines(json.dumps(r, ensure_ascii=False) + "\n" for r in rows)
     print(iso, len(rows), "sentences", sum(len(r["tokens"]) for r in rows), "tokens", rel)

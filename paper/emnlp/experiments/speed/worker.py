@@ -54,7 +54,7 @@ def data_files(paths):
             continue
         if p.endswith(CODE) or ".so." in p or ".dist-info" in p or "__pycache__" in p:
             continue
-        if os.path.isfile(p):
+        if Path(p).is_file():
             keep.add(os.path.abspath(p))
     return sorted(keep)
 
@@ -346,7 +346,7 @@ def main():
     cfg = json.loads(sys.argv[1])
     if cfg["system"] == "trankit":  # torch 2.0.1 rejects the expandable_segments option
         os.environ.pop("PYTORCH_CUDA_ALLOC_CONF", None)
-    with open(cfg["test"], encoding="utf-8") as fh:
+    with Path(cfg["test"]).open(encoding="utf-8") as fh:
         forms = [json.loads(line)["tokens"] for line in fh]
     expected = references(cfg["ref"])
     if len(expected) != len(forms):
@@ -358,7 +358,7 @@ def main():
         t = time.perf_counter()
         system.call(system.prepare([0]))
         first_s = time.perf_counter() - t
-    except Exception as error:  # noqa: BLE001 - reported to the driver as a failed cell
+    except Exception as error:  # reported to the driver as a failed cell
         send({"event": "error", "reason": f"{type(error).__name__}: {error}"[:400]})
         return
     ARMED[0] = False
@@ -372,7 +372,7 @@ def main():
             "first_s": first_s,
             "files": data_files(OPENED) + files,
             "disk_bytes": extras.get("disk_bytes"),
-            **{"rss_load_kb": memory(java.pid if java else "self")["vmrss_kb"]},
+            "rss_load_kb": memory(java.pid if java else "self")["vmrss_kb"],
         }
     )
     state = {"picks": [], "payload": None}
@@ -380,12 +380,12 @@ def main():
         try:
             if serve(json.loads(line), state, system, forms, expected, lengths, java):
                 return
-        except Exception as error:  # noqa: BLE001 - CUDA OOM in a window, say: reported
+        except Exception as error:  # CUDA OOM in a window, say: reported
             send({"event": "error", "reason": f"{type(error).__name__}: {error}"[:400]})
             return
 
 
-def serve(command, state, system, forms, expected, lengths, java):  # noqa: PLR0913
+def serve(command, state, system, forms, expected, lengths, java):
     """Answer one driver command; True once the worker should exit."""
     what = command["cmd"]
     if what == "warm":

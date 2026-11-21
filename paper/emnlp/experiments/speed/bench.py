@@ -30,7 +30,7 @@ import time
 import zlib
 from pathlib import Path
 
-LANGS = "eng rus deu fin tur arb hin kor jpn ces hun gla".split()
+LANGS = ["eng", "rus", "deu", "fin", "tur", "arb", "hin", "kor", "jpn", "ces", "hun", "gla"]
 HERE = Path(__file__).resolve().parent
 # 1c: one pinned CPU; thr16: one process, 16 threads; proc16: 16 single-thread processes.
 MODES = {
@@ -90,7 +90,7 @@ def read(path):
 
 def sha256(path):
     h = hashlib.sha256()
-    with open(path, "rb") as fh:
+    with Path(path).open("rb") as fh:
         for block in iter(lambda: fh.read(1 << 20), b""):
             h.update(block)
     return h.hexdigest()
@@ -104,7 +104,7 @@ def size(*paths):
         for f in p.rglob("*") if p.is_dir() else [p]:
             if f.is_file():
                 real.add(os.path.realpath(f))
-    return sum(os.path.getsize(f) for f in real)
+    return sum(Path(f).stat().st_size for f in real)
 
 
 # ----------------------------------------------------------------------------- prepare
@@ -174,10 +174,13 @@ def prepare(a):
             }
         bundle = dest / "bundle"
         lexicon = udlex.load(str(bundle), iso, use_user=False)
-        with open(inputs() / iso / "test.jsonl", encoding="utf-8") as fh:
+        with (inputs() / iso / "test.jsonl").open(encoding="utf-8") as fh:
             rows = [json.loads(line) for line in fh]
         answers = lexicon.lemmatize_many([r["tokens"] for r in rows])
-        nfc = lambda s: unicodedata.normalize("NFC", s)  # noqa: E731 - evaluate.py's scoring
+
+        def nfc(s):
+            return unicodedata.normalize("NFC", s)  # evaluate.py's scoring
+
         pairs = [
             (x, y)
             for r, row_ in zip(rows, answers, strict=True)
@@ -288,18 +291,19 @@ def gpu_state():
                 "--format=csv,noheader,nounits",
             ],
             capture_output=True,
+            check=False,
             text=True,
             timeout=10,
         ).stdout
         util, used, total, power = (float(x) for x in out.strip().split(","))
-        return {
-            "util": util,
-            "mem_used_mb": used,
-            "mem_total_mb": total,
-            "power_w": power,
-        }
-    except Exception:  # noqa: BLE001 - no GPU reading is recorded as none
-        return None
+    except (OSError, subprocess.SubprocessError, ValueError):
+        return None  # no GPU reading is recorded as none
+    return {
+        "util": util,
+        "mem_used_mb": used,
+        "mem_total_mb": total,
+        "power_w": power,
+    }
 
 
 class Sampler(threading.Thread):
@@ -311,7 +315,7 @@ class Sampler(threading.Thread):
 
     def run(self):
         last, k = cpu_counters(), 0
-        with open(self.path, "a", encoding="utf-8") as fh:
+        with self.path.open("a", encoding="utf-8") as fh:
             while not self.stop.wait(1.0):
                 now = cpu_counters()
                 load1 = float(Path("/proc/loadavg").read_text().split()[0])
@@ -544,7 +548,7 @@ def owner_jobs(a):
         s
         for s in a.pause_tmux
         if subprocess.run(
-            ["tmux", "has-session", "-t", s], capture_output=True
+            ["tmux", "has-session", "-t", s], capture_output=True, check=False
         ).returncode
         == 0
     ]
@@ -559,7 +563,7 @@ def wait_quiet(a):
 
 
 def mean_length(iso):
-    with open(inputs() / iso / "test.jsonl", encoding="utf-8") as fh:
+    with (inputs() / iso / "test.jsonl").open(encoding="utf-8") as fh:
         lengths = [len(json.loads(line)["tokens"]) for line in fh]
     return sum(lengths) / len(lengths)
 
@@ -588,97 +592,93 @@ def run_cell(name, mode, cfg, rnd, a, sampler, logs, memory):
         record["gpu_before"] = state
         if not state or state["mem_total_mb"] - state["mem_used_mb"] < a.gpu_free_mb:
             return dict(record, status="skipped", reason=f"GPU busy: {state}")
-    log = open(logs / f"{iso}-{name}-{mode}-r{rnd}.log", "w")
-    sampler.tag = f"{iso}/{name}/{mode}/r{rnd}"
-    cell = None
-    try:
-        cell = Cell(name, mode, cfg, a, log)
-        record["cpus"] = cell.cpus
-        record["workers"] = cell.workers
-        record["settings"] = {
-            k: cell.cfg[k]
-            for k in ("batch", "call_sentences", "stanza_kwargs")
-            if k in cell.cfg
-        }
-        procs0, t0 = processes(), time.time()
-        record["ready"] = [cell.recv(p, a.load_timeout) for p in cell.procs]
-        if any(r.get("event") != "ready" for r in record["ready"]):
-            raise RuntimeError(
-                next(r["reason"] for r in record["ready"] if r.get("event") != "ready")
+    with (logs / f"{iso}-{name}-{mode}-r{rnd}.log").open("w") as log:
+        sampler.tag = f"{iso}/{name}/{mode}/r{rnd}"
+        cell = None
+        try:
+            cell = Cell(name, mode, cfg, a, log)
+            record["cpus"] = cell.cpus
+            record["workers"] = cell.workers
+            record["settings"] = {
+                k: cell.cfg[k]
+                for k in ("batch", "call_sentences", "stanza_kwargs")
+                if k in cell.cfg
+            }
+            procs0, t0 = processes(), time.time()
+            record["ready"] = [cell.recv(p, a.load_timeout) for p in cell.procs]
+            check_ready(record["ready"])
+            # Neural systems with threads or a GPU get calls of --neural-batch sentences.
+            floor = cfg.get("call_sentences", 1)
+            warm = cell.ask(
+                [
+                    {
+                        "cmd": "warm",
+                        "seconds": a.warm,
+                        "min_window": a.target,
+                        "min_sentences": floor,
+                    }
+                ]
+                * cell.workers,
+                a.step_timeout,
             )
-        # Neural systems with threads or a GPU get calls of --neural-batch sentences.
-        floor = cfg.get("call_sentences", 1)
-        warm = cell.ask(
-            [
-                {
-                    "cmd": "warm",
-                    "seconds": a.warm,
-                    "min_window": a.target,
-                    "min_sentences": floor,
-                }
-            ]
-            * cell.workers,
-            a.step_timeout,
-        )
-        record["warm"] = warm
-        rate = statistics.median(w["rate"] for w in warm)
-        n = max(floor, math.ceil(a.target * rate / mean_length(iso)))
-        windows = []
-        for w in range(a.windows):
-            for attempt in range(4):
-                seed = zlib.crc32(f"{iso}/{name}/{mode}/{rnd}/{w}/{attempt}".encode())
-                cell.ask(
-                    [
-                        {"cmd": "prep", "seed": seed * 64 + i, "sentences": n}
-                        for i in range(cell.workers)
-                    ],
-                    a.step_timeout,
-                )
-                start = time.perf_counter()
-                replies = cell.ask(
-                    [{"cmd": "go"}] * cell.workers, a.step_timeout + 20 * a.target
-                )
-                wall = time.perf_counter() - start
-                seconds = wall if cell.workers > 1 else replies[0]["seconds"]
-                window = {
-                    "window": w,
-                    "sentences": n * cell.workers,
-                    "tokens": sum(r["tokens"] for r in replies),
-                    "seconds": seconds,
-                    "wall": wall,
-                    "cpu_s": sum(r["cpu_s"] for r in replies),
-                    "checked": sum(r["checked"] for r in replies),
-                    "mismatch": sum(r["mismatch"] for r in replies),
-                    "bad": [b for r in replies for b in r.get("bad", [])][:3],
-                    "bytes_ok": all(r.get("bytes_ok", True) for r in replies),
-                    "short": seconds < 1.0,
-                }
-                windows.append(window)
-                # Steer the next window to the target; aim above it after a short one.
-                aim = a.target * (1.2 if window["short"] else 1.0)
-                n = max(floor, math.ceil(n * aim / max(seconds, 1e-6)))
-                if not window["short"]:
-                    break
-        record["windows"] = windows
-        procs1, t1 = processes(), time.time()
-        record["exit"] = cell.ask([{"cmd": "exit"}] * cell.workers, a.step_timeout)
-        record["foreign_cores"], record["foreign_top"] = foreign(
-            procs0, procs1, t1 - t0
-        )
-        record["status"] = "ok"
-        peak = record["exit"][0].get("java", record["exit"][0])["vmhwm_kb"]
-        if mode == "1c":
-            memory[name] = peak
-    except Exception as error:  # noqa: BLE001 - a failed cell is a result, not a crash
-        record["status"], record["reason"] = (
-            "failed",
-            f"{type(error).__name__}: {error}"[:400],
-        )
-    finally:
-        if cell:
-            cell.kill()
-        log.close()
-        sampler.tag = "between"
+            record["warm"] = warm
+            rate = statistics.median(w["rate"] for w in warm)
+            n = max(floor, math.ceil(a.target * rate / mean_length(iso)))
+            windows = []
+            for w in range(a.windows):
+                for attempt in range(4):
+                    seed = zlib.crc32(f"{iso}/{name}/{mode}/{rnd}/{w}/{attempt}".encode())
+                    cell.ask(
+                        [
+                            {"cmd": "prep", "seed": seed * 64 + i, "sentences": n}
+                            for i in range(cell.workers)
+                        ],
+                        a.step_timeout,
+                    )
+                    start = time.perf_counter()
+                    replies = cell.ask(
+                        [{"cmd": "go"}] * cell.workers, a.step_timeout + 20 * a.target
+                    )
+                    wall = time.perf_counter() - start
+                    seconds = wall if cell.workers > 1 else replies[0]["seconds"]
+                    window = {
+                        "window": w,
+                        "sentences": n * cell.workers,
+                        "tokens": sum(r["tokens"] for r in replies),
+                        "seconds": seconds,
+                        "wall": wall,
+                        "cpu_s": sum(r["cpu_s"] for r in replies),
+                        "checked": sum(r["checked"] for r in replies),
+                        "mismatch": sum(r["mismatch"] for r in replies),
+                        "bad": [b for r in replies for b in r.get("bad", [])][:3],
+                        "bytes_ok": all(r.get("bytes_ok", True) for r in replies),
+                        "short": seconds < 1.0,
+                    }
+                    windows.append(window)
+                    # Steer the next window to the target; aim above it after a short one.
+                    aim = a.target * (1.2 if window["short"] else 1.0)
+                    n = max(floor, math.ceil(n * aim / max(seconds, 1e-6)))
+                    if not window["short"]:
+                        break
+            record["windows"] = windows
+            procs1, t1 = processes(), time.time()
+            record["exit"] = cell.ask([{"cmd": "exit"}] * cell.workers, a.step_timeout)
+            record["foreign_cores"], record["foreign_top"] = foreign(
+                procs0, procs1, t1 - t0
+            )
+            record["status"] = "ok"
+            peak = record["exit"][0].get("java", record["exit"][0])["vmhwm_kb"]
+            if mode == "1c":
+                memory[name] = peak
+        except Exception as error:
+            record["status"], record["reason"] = (
+                "failed",
+                f"{type(error).__name__}: {error}"[:400],
+            )
+        finally:
+            if cell:
+                cell.kill()
+            sampler.tag = "between"
     record["ended"] = time.time()
     record["machine"] = sampler.summary(
         record["started"], record["ended"], record.get("cpus", [])
@@ -686,6 +686,13 @@ def run_cell(name, mode, cfg, rnd, a, sampler, logs, memory):
     if mode == "gpu":
         record["gpu_after"] = gpu_state()
     return record
+
+
+def check_ready(replies):
+    """Raise the reason of the first worker that could not load."""
+    for r in replies:
+        if r.get("event") != "ready":
+            raise RuntimeError(r["reason"])
 
 
 def least_busy_cpu():
@@ -698,7 +705,7 @@ def least_busy_cpu():
 def environment(a):
     def sh(cmd):
         return subprocess.run(
-            cmd, shell=True, capture_output=True, text=True
+            cmd, shell=True, capture_output=True, check=False, text=True
         ).stdout.strip()
 
     files = sorted(
@@ -861,7 +868,10 @@ def summarize(a):
         for r in rows
         if r["status"] == "ok"
     }
-    key = lambda r: (r["lang"], r["system"], r["mode"], r["round"])  # noqa: E731
+
+    def key(r):
+        return (r["lang"], r["system"], r["mode"], r["round"])
+
     superseded = [r for r in rows if r["status"] == "failed" and key(r) in timed]
     rows = [r for r in rows if not (r["status"] == "failed" and key(r) in timed)]
     env = read(a.out / "environment.json")
@@ -955,7 +965,9 @@ def fmt(x):
 def render(table, env, rows):
     langs = list(dict.fromkeys(k.split("/")[0] for k in table))
     systems = list(dict.fromkeys(k.split("/")[1] for k in table))
-    get = lambda iso, s, m: table.get(f"{iso}/{s}/{m}", {})  # noqa: E731
+
+    def get(iso, s, m):
+        return table.get(f"{iso}/{s}/{m}", {})
 
     def best(iso, name):
         return max(get(iso, name, m).get("wps") or 0 for m in ("thr16", "proc16"))
@@ -963,11 +975,15 @@ def render(table, env, rows):
     out = [
         "# Скорость и память лемматизаторов (C9)",
         "",
-        f"Машина: {env['cpu']}, {env['host']}; GPU: {env['gpu']}. 1 ядро — CPU {env['cpu1']} "
-        f"(SMT-сосед {env['cpu1_siblings']}), 16 ядер — CPU {env['cpus16']}"
-        " (0–15 — по одному потоку на физическое ядро).",
-        "Числа — слова (токены теста UD 2.19) в секунду: медиана по раундам, в скобках мин–макс раундов;"
-        " раунд — медиана его окон (≥ 1 с, новая случайная выборка предложений с возвращением).",
+        (
+            f"Машина: {env['cpu']}, {env['host']}; GPU: {env['gpu']}. 1 ядро — CPU {env['cpu1']} "
+            f"(SMT-сосед {env['cpu1_siblings']}), 16 ядер — CPU {env['cpus16']}"
+            " (0–15 — по одному потоку на физическое ядро)."
+        ),
+        (
+            "Числа — слова (токены теста UD 2.19) в секунду: медиана по раундам, в скобках мин–макс раундов;"
+            " раунд — медиана его окон (≥ 1 с, новая случайная выборка предложений с возвращением)."
+        ),
         "Загрузка — от начала построения модели до первого ответа (без импорта библиотеки), медиана по раундам.",
         f"Примечание прогона: {env.get('note') or '—'}",
         "",
@@ -1112,7 +1128,7 @@ def verify(a):
     report = {"udlex_file": udlex.__file__, "so_sha256": sha256(so), "languages": {}}
     for iso, row in read(a.run / "ref/udlex/manifest.json")["languages"].items():
         lexicon = udlex.load(row["bundle"], iso, use_user=False)
-        with open(inputs() / iso / "test.jsonl", encoding="utf-8") as fh:
+        with (inputs() / iso / "test.jsonl").open(encoding="utf-8") as fh:
             tokens = [json.loads(line)["tokens"] for line in fh]
         mine = json.dumps(lexicon.lemmatize_many(tokens), ensure_ascii=False)
         theirs = (a.run / "ref/udlex" / f"{iso}.json").read_text(encoding="utf-8")

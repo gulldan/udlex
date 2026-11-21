@@ -91,6 +91,19 @@ convention = "google"
 # Each compared lemmatizer lives in its own venv and is imported only when it is
 # scored; verify_snapshot keeps udlex out of the helpers other scripts import.
 "paper/emnlp/experiments/{compare_engines,compare_local,verify_snapshot}.py" = ["PLC0415"]
+# The C9 speed harness: what it times decides these, not style.
+"paper/emnlp/experiments/speed/{bench,worker}.py" = [
+  "PLC0415",  # import time is measured (import_s); udlex exists only in its own venv
+  "BLE001",   # any failure of a cell is recorded as its result, never a crash
+  "S311",     # seeded sampling of test sentences, not cryptography
+]
+"paper/emnlp/experiments/speed/bench.py" = [
+  "S602",  # environment.json records fixed shell pipelines (lscpu | sed, ...)
+]
+"paper/emnlp/experiments/speed/worker.py" = [
+  "S310",    # urlopen to the CoreNLP server it started on 127.0.0.1
+  "PTH100",  # abspath keeps the recorded file names; Path.resolve follows links
+]
 
 [tool.ty.environment]
 python-version = "3.11"
