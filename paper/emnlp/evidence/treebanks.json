@@ -1,0 +1,7805 @@
+{
+  "UD_Abaza-ATB/abq_atb-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "abq",
+    "sentences_by_block_type": {},
+    "sha256": "d271dc50e15ace0be9c3db71eeef0611d15ad7835e33f1a249fbdf42a1e53002"
+  },
+  "UD_Abkhaz-AbNC/ab_abnc-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "abk",
+    "sentences_by_block_type": {},
+    "sha256": "0455d5d2e39544991666351e521e0ef0a2b8590d8fee18466d699f7c5891ea7d"
+  },
+  "UD_Afrikaans-AfriBooms/af_afribooms-ud-test.conllu": {
+    "block_types": {
+      "sent": 425
+    },
+    "counts": {
+      "copy": 7943,
+      "copy_losses": 4,
+      "copy_wins": 1621,
+      "full": 9560,
+      "lookup": 9560,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10063
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "afr",
+    "sentences_by_block_type": {
+      "sent": 425
+    },
+    "sha256": "e41f9111795ea733f91a93787e76a3191a088c213375c50f8ec6a9597a94e967"
+  },
+  "UD_Akkadian-PISANDUB/akk_pisandub-ud-test.conllu": {
+    "block_types": {
+      "sent": 101
+    },
+    "counts": {
+      "copy": 171,
+      "copy_losses": 0,
+      "copy_wins": 4,
+      "full": 175,
+      "lookup": 175,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 1814
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 38
+    },
+    "iso": "akk",
+    "sentences_by_block_type": {
+      "sent": 101
+    },
+    "sha256": "2b8dbee244e3c8181c7176ea00e576fc7ee7c0a88f3a1ce37e1ef49ab27cfd6f"
+  },
+  "UD_Akkadian-RIAO/akk_riao-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "akk",
+    "sentences_by_block_type": {},
+    "sha256": "ba10dec363a15196298157fcb551dfe3853178b1bf9ff4e24c65809efae43737"
+  },
+  "UD_Akuntsu-TuDeT/aqz_tudet-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "aqz",
+    "sentences_by_block_type": {},
+    "sha256": "f6943a1351c2ea99c15f84bf410e457d48118e339af7856312d7c9c13bda9da9"
+  },
+  "UD_Albanian-STAF/sq_staf-ud-test.conllu": {
+    "block_types": {
+      "sent": 20
+    },
+    "counts": {
+      "copy": 241,
+      "copy_losses": 89,
+      "copy_wins": 63,
+      "full": 215,
+      "lookup": 268,
+      "rules_losses": 74,
+      "rules_wins": 21,
+      "tokens": 371
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "sqi",
+    "sentences_by_block_type": {
+      "sent": 20
+    },
+    "sha256": "c693a5370df5228445e45cbe72329800d0513cf7bdd71602e7b5f245405131f9"
+  },
+  "UD_Albanian-TSA/sq_tsa-ud-test.conllu": {
+    "block_types": {
+      "sent": 60
+    },
+    "counts": {
+      "copy": 429,
+      "copy_losses": 134,
+      "copy_wins": 227,
+      "full": 522,
+      "lookup": 499,
+      "rules_losses": 97,
+      "rules_wins": 120,
+      "tokens": 922
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "sqi",
+    "sentences_by_block_type": {
+      "sent": 60
+    },
+    "sha256": "7b610b073d90a11737bba4f46edcb36495dbbac5dd49c4eb6877112f949775c8"
+  },
+  "UD_Amharic-ATT/am_att-ud-test.conllu": {
+    "block_types": {
+      "sent": 1029
+    },
+    "counts": {
+      "copy": 7275,
+      "copy_losses": 951,
+      "copy_wins": 0,
+      "full": 6324,
+      "lookup": 6800,
+      "rules_losses": 476,
+      "rules_wins": 0,
+      "tokens": 9573
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 45,
+      "unknown_lemmas_with_visible_form": 10
+    },
+    "iso": "amh",
+    "sentences_by_block_type": {
+      "sent": 1029
+    },
+    "sha256": "7960fde84b71012ee0aac89fc6a23fb13856f095b0186d48f220ab09115bc0c3"
+  },
+  "UD_Ancient_Greek-PROIEL/grc_proiel-ud-test.conllu": {
+    "block_types": {
+      "sent": 1025
+    },
+    "counts": {
+      "copy": 2182,
+      "copy_losses": 1183,
+      "copy_wins": 1130,
+      "full": 2129,
+      "lookup": 2299,
+      "rules_losses": 1171,
+      "rules_wins": 1001,
+      "tokens": 13204
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 22,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "grc",
+    "sentences_by_block_type": {
+      "sent": 1025
+    },
+    "sha256": "ac5576c048c57e01a5a6d2e1b9067fb80b4da65cf8b66913e9a273d8b83ba3b8"
+  },
+  "UD_Ancient_Greek-PTNK/grc_ptnk-ud-test.conllu": {
+    "block_types": {
+      "sent": 410
+    },
+    "counts": {
+      "copy": 2667,
+      "copy_losses": 604,
+      "copy_wins": 864,
+      "full": 2927,
+      "lookup": 2729,
+      "rules_losses": 604,
+      "rules_wins": 802,
+      "tokens": 10346
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "grc",
+    "sentences_by_block_type": {
+      "sent": 410
+    },
+    "sha256": "16fc6f69cf38c08604629120f481751980e823731b287133e38b71e1d33a354e"
+  },
+  "UD_Ancient_Greek-Perseus/grc_perseus-ud-test.conllu": {
+    "block_types": {
+      "doc": 2
+    },
+    "counts": {
+      "copy": 5505,
+      "copy_losses": 1775,
+      "copy_wins": 1254,
+      "full": 4984,
+      "lookup": 5640,
+      "rules_losses": 1763,
+      "rules_wins": 1107,
+      "tokens": 20953
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "grc",
+    "sentences_by_block_type": {
+      "doc": 1305
+    },
+    "sha256": "e18d47c395c0ec8da678fb5e315ce6d90133e88c25ed2a55bc72a2a66e6254d5"
+  },
+  "UD_Ancient_Hebrew-PTNK/hbo_ptnk-ud-test.conllu": {
+    "block_types": {
+      "doc": 18
+    },
+    "counts": {
+      "copy": 1940,
+      "copy_losses": 0,
+      "copy_wins": 15,
+      "full": 1955,
+      "lookup": 1955,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 14972
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "hbo",
+    "sentences_by_block_type": {
+      "doc": 552
+    },
+    "sha256": "836592b67175d3c62347a54def059657448b587317ccc04b7df6ea21dba4f833"
+  },
+  "UD_Apurina-UFPA/apu_ufpa-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "apu",
+    "sentences_by_block_type": {},
+    "sha256": "f873e52f4a6f885fdeaa80d2913e88e25d3be87bc4be551d110ee70d4fbd0a3b"
+  },
+  "UD_Arabic-NYUAD/ar_nyuad-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "masked_forms": 74125,
+      "no_scorable_words_sentences": 1963,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "arb",
+    "sentences_by_block_type": {},
+    "sha256": "bc4670763e0e3f282ef079b55af0c58d73ac541aafc421161eb4d904bbaca52b"
+  },
+  "UD_Arabic-PADT/ar_padt-ud-test.conllu": {
+    "block_types": {
+      "doc": 69
+    },
+    "counts": {
+      "copy": 3730,
+      "copy_losses": 162,
+      "copy_wins": 14947,
+      "full": 18515,
+      "lookup": 18515,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 28249
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 6,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "arb",
+    "sentences_by_block_type": {
+      "doc": 674
+    },
+    "sha256": "793c87bf173d491af2092ef7f87b04a2cf6c596490e7347a2065058a053a6389"
+  },
+  "UD_Arabic-PUD/ar_pud-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "arb",
+    "sentences_by_block_type": {},
+    "sha256": "befc6dd18b5b8803644ae8208e2e5f52c0957a36437627c05110914ec42281a3"
+  },
+  "UD_Armenian-ArmTDP/hy_armtdp-ud-test.conllu": {
+    "block_types": {
+      "doc": 25
+    },
+    "counts": {
+      "copy": 5554,
+      "copy_losses": 762,
+      "copy_wins": 2790,
+      "full": 7582,
+      "lookup": 6519,
+      "rules_losses": 697,
+      "rules_wins": 1760,
+      "tokens": 10628
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 4,
+      "unknown_lemmas_with_visible_form": 11
+    },
+    "iso": "hye",
+    "sentences_by_block_type": {
+      "doc": 596
+    },
+    "sha256": "1d8e20312013ddf277e789ec961104fd3de981cd1fcb8087796f22b43ae354a6"
+  },
+  "UD_Armenian-BSUT/hy_bsut-ud-test.conllu": {
+    "block_types": {
+      "doc": 13
+    },
+    "counts": {
+      "copy": 5377,
+      "copy_losses": 769,
+      "copy_wins": 2593,
+      "full": 7201,
+      "lookup": 6277,
+      "rules_losses": 703,
+      "rules_wins": 1627,
+      "tokens": 10191
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "hye",
+    "sentences_by_block_type": {
+      "doc": 591
+    },
+    "sha256": "21f33b8e31c84001eb1c8e16dc963650db5f11c121f6370ccd25438f69714269"
+  },
+  "UD_Assyrian-AS/aii_as-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "aii",
+    "sentences_by_block_type": {},
+    "sha256": "3fc0829e9ae9a7314bb7c2d5f93a4c7f7daa899c5d47aaba71890e31fcdc6e0b"
+  },
+  "UD_Azerbaijani-TueCL/az_tuecl-ud-test.conllu": {
+    "block_types": {
+      "sent": 140
+    },
+    "counts": {
+      "copy": 436,
+      "copy_losses": 38,
+      "copy_wins": 98,
+      "full": 496,
+      "lookup": 475,
+      "rules_losses": 37,
+      "rules_wins": 58,
+      "tokens": 873
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 8,
+      "unknown_lemmas_with_visible_form": 7
+    },
+    "iso": "aze",
+    "sentences_by_block_type": {
+      "sent": 140
+    },
+    "sha256": "8b315f8b065f094e38482465706ba44a9caf1b082fc8bbc94908f6fdeee8c3b5"
+  },
+  "UD_Bambara-CRB/bm_crb-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "bam",
+    "sentences_by_block_type": {},
+    "sha256": "b0c220c66fb6b04c715e26ad8e9a48b16a024e9814d3384b99121de77aff6fe9"
+  },
+  "UD_Basque-BDT/eu_bdt-ud-test.conllu": {
+    "block_types": {
+      "sent": 1797
+    },
+    "counts": {
+      "copy": 11852,
+      "copy_losses": 210,
+      "copy_wins": 3880,
+      "full": 15522,
+      "lookup": 15522,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 24343
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 25
+    },
+    "iso": "eus",
+    "sentences_by_block_type": {
+      "sent": 1797
+    },
+    "sha256": "69859963a9639e254ebb0702c6b914bd03915a77bf0bfd759c3dca86eca6859f"
+  },
+  "UD_Belarusian-HSE/be_hse-ud-test.conllu": {
+    "block_types": {
+      "doc": 9,
+      "sent": 876
+    },
+    "counts": {
+      "copy": 7818,
+      "copy_losses": 1443,
+      "copy_wins": 112,
+      "full": 6487,
+      "lookup": 7919,
+      "rules_losses": 1442,
+      "rules_wins": 10,
+      "tokens": 15958
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 13,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "bel",
+    "sentences_by_block_type": {
+      "doc": 188,
+      "sent": 876
+    },
+    "sha256": "3c6b786004182392fe2e58f95ebd51014e801a35bcdef7b3198dc9e4b1481eb7"
+  },
+  "UD_Bengali-BRU/bn_bru-ud-test.conllu": {
+    "block_types": {
+      "sent": 56
+    },
+    "counts": {
+      "copy": 210,
+      "copy_losses": 80,
+      "copy_wins": 34,
+      "full": 164,
+      "lookup": 235,
+      "rules_losses": 73,
+      "rules_wins": 2,
+      "tokens": 320
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ben",
+    "sentences_by_block_type": {
+      "sent": 56
+    },
+    "sha256": "8030755486fed8ec345138092b26cab8bae26744c9271037022f44774bdba9a3"
+  },
+  "UD_Bhojpuri-BHTB/bho_bhtb-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "bho",
+    "sentences_by_block_type": {},
+    "sha256": "586cdabb8474e4f58ac97a7ff1fb8646c6d1fd0a4d86994ead7a720f9524b393"
+  },
+  "UD_Bokota-ChibErgIS/sab_chibergis-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "sab",
+    "sentences_by_block_type": {},
+    "sha256": "24499104f0423ee828b21d2eeb68a9d42c83f08b7275182fe7e569f890524541"
+  },
+  "UD_Bororo-BDT/bor_bdt-ud-test.conllu": {
+    "block_types": {
+      "doc": 5,
+      "sent": 37
+    },
+    "counts": {
+      "copy": 8394,
+      "copy_losses": 380,
+      "copy_wins": 4221,
+      "full": 12235,
+      "lookup": 12235,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 13924
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "no_scorable_words_sentences": 1,
+      "repeated_evaluation_sentences": 1,
+      "source_text_sentences": 182,
+      "unknown_lemmas_with_visible_form": 1719
+    },
+    "iso": "bor",
+    "sentences_by_block_type": {
+      "doc": 1918,
+      "sent": 37
+    },
+    "sha256": "c102da808d9a76f227d899a66588fdb2b2441a23cbcaea0b72c890687a9482c6"
+  },
+  "UD_Brahui-Kholum/brh_kholum-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "brh",
+    "sentences_by_block_type": {},
+    "sha256": "92f895953a4662c01c27ad9f48cabefaeee79ed39fdd0b858a42c0d70ccaac16"
+  },
+  "UD_Breton-KEB/br_keb-ud-test.conllu": {
+    "block_types": {
+      "sent": 882
+    },
+    "counts": {
+      "copy": 5691,
+      "copy_losses": 3084,
+      "copy_wins": 538,
+      "full": 3145,
+      "lookup": 5401,
+      "rules_losses": 2314,
+      "rules_wins": 58,
+      "tokens": 9996
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "bre",
+    "sentences_by_block_type": {
+      "sent": 882
+    },
+    "sha256": "f6eec6ee7f844a92df0023314202655c0a5a6341f9c1708d40c0d3beebcbeff9"
+  },
+  "UD_Bulgarian-BTB/bg_btb-ud-test.conllu": {
+    "block_types": {
+      "doc": 40
+    },
+    "counts": {
+      "copy": 8316,
+      "copy_losses": 2640,
+      "copy_wins": 2600,
+      "full": 8276,
+      "lookup": 9304,
+      "rules_losses": 2530,
+      "rules_wins": 1502,
+      "tokens": 15724
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "bul",
+    "sentences_by_block_type": {
+      "doc": 1116
+    },
+    "sha256": "3c9889c328093ab8b529b821ad0863c63f6f79776d625454170e1791cd97e450"
+  },
+  "UD_Buryat-BDT/bxr_bdt-ud-test.conllu": {
+    "block_types": {
+      "sent": 904
+    },
+    "counts": {
+      "copy": 5428,
+      "copy_losses": 1,
+      "copy_wins": 237,
+      "full": 5664,
+      "lookup": 5664,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 9960
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 3,
+      "unknown_lemmas_with_visible_form": 46
+    },
+    "iso": "bxr",
+    "sentences_by_block_type": {
+      "sent": 904
+    },
+    "sha256": "550a7722dd83f4c482602ed348ce5765df23b47d74f51eb3d5479533403c1d36"
+  },
+  "UD_Cantonese-HK/yue_hk-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "yue",
+    "sentences_by_block_type": {},
+    "sha256": "cbd843a195d0db4cdafbf6fcafb7b7b559afea750411006f4728311e70cc4e2a"
+  },
+  "UD_Cappadocian-AMGiC/cpg_amgic-ud-test.conllu": {
+    "block_types": {
+      "sent": 70
+    },
+    "counts": {
+      "copy": 418,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 418,
+      "lookup": 418,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 816
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 4
+    },
+    "iso": "cpg",
+    "sentences_by_block_type": {
+      "sent": 70
+    },
+    "sha256": "c78e42f40b7b2ab6e4bae44021afe38c1bfd5b25c48a993b18d12fff1312d3a3"
+  },
+  "UD_Cappadocian-TueCL/cpg_tuecl-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "cpg",
+    "sentences_by_block_type": {},
+    "sha256": "808c5f26a016bc9fc92eb34242ed248ec5b1529e17baf52a64d7cdff77d62482"
+  },
+  "UD_Catalan-AnCora/ca_ancora-ud-test.conllu": {
+    "block_types": {
+      "doc": 187
+    },
+    "counts": {
+      "copy": 40798,
+      "copy_losses": 13601,
+      "copy_wins": 3802,
+      "full": 30999,
+      "lookup": 42952,
+      "rules_losses": 12214,
+      "rules_wins": 261,
+      "tokens": 59571
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "cat",
+    "sentences_by_block_type": {
+      "doc": 1844
+    },
+    "sha256": "7cd23807c1f8b090959b82fcab566c6312fc048c29bc9db5ff0bf794c9b98633"
+  },
+  "UD_Cebuano-GJA/ceb_gja-ud-test.conllu": {
+    "block_types": {
+      "sent": 198
+    },
+    "counts": {
+      "copy": 843,
+      "copy_losses": 9,
+      "copy_wins": 1,
+      "full": 835,
+      "lookup": 843,
+      "rules_losses": 8,
+      "rules_wins": 0,
+      "tokens": 1392
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 2
+    },
+    "iso": "ceb",
+    "sentences_by_block_type": {
+      "sent": 198
+    },
+    "sha256": "b04bff0dffbe01145124741050b7ff972e3c2805075125d6e5ee13b8cead1b1d"
+  },
+  "UD_Chinese-Beginner/zh_beginner-ud-test.conllu": {
+    "block_types": {
+      "sent": 2291
+    },
+    "counts": {
+      "copy": 19921,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 19921,
+      "lookup": 19921,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 19963
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 4,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "cmn",
+    "sentences_by_block_type": {
+      "sent": 2291
+    },
+    "sha256": "f9cf5aebf620d370097e7f46c26ac1233f201f923cdb0eb5e70ac0aeafefff41"
+  },
+  "UD_Chinese-CFL/zh_cfl-ud-test.conllu": {
+    "block_types": {
+      "sent": 451
+    },
+    "counts": {
+      "copy": 7058,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 7058,
+      "lookup": 7058,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 7256
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "cmn",
+    "sentences_by_block_type": {
+      "sent": 451
+    },
+    "sha256": "5eb666265585bc1cd1a04ea5ca2d94f2ddc6f00b782ae7dfe815e08504879923"
+  },
+  "UD_Chinese-GSD/zh_gsd-ud-test.conllu": {
+    "block_types": {
+      "sent": 500
+    },
+    "counts": {
+      "copy": 11930,
+      "copy_losses": 4060,
+      "copy_wins": 0,
+      "full": 7870,
+      "lookup": 8107,
+      "rules_losses": 237,
+      "rules_wins": 0,
+      "tokens": 12010
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "cmn",
+    "sentences_by_block_type": {
+      "sent": 500
+    },
+    "sha256": "ff01a3d01d62b623756396085e78bdaeefb7c2b7935a890dde5b18e92712d54f"
+  },
+  "UD_Chinese-GSDSimp/zh_gsdsimp-ud-test.conllu": {
+    "block_types": {
+      "sent": 499
+    },
+    "counts": {
+      "copy": 11923,
+      "copy_losses": 7,
+      "copy_wins": 0,
+      "full": 11916,
+      "lookup": 11923,
+      "rules_losses": 7,
+      "rules_wins": 0,
+      "tokens": 12003
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "cmn",
+    "sentences_by_block_type": {
+      "sent": 499
+    },
+    "sha256": "3af8046a6f32477b4d5cf3dd06bbf38682a380fe77aade3f68de97e51ab94900"
+  },
+  "UD_Chinese-HK/zh_hk-ud-test.conllu": {
+    "block_types": {
+      "sent": 970
+    },
+    "counts": {
+      "copy": 9583,
+      "copy_losses": 2741,
+      "copy_wins": 0,
+      "full": 6842,
+      "lookup": 6937,
+      "rules_losses": 95,
+      "rules_wins": 0,
+      "tokens": 9746
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 34,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "cmn",
+    "sentences_by_block_type": {
+      "sent": 970
+    },
+    "sha256": "a71ff348dd1e45c2cd525ed537a78d6c4b6c5edc15a19641bedc0a8465de820e"
+  },
+  "UD_Chinese-PUD/zh_pud-ud-test.conllu": {
+    "block_types": {
+      "doc": 397
+    },
+    "counts": {
+      "copy": 21107,
+      "copy_losses": 7078,
+      "copy_wins": 0,
+      "full": 14029,
+      "lookup": 14382,
+      "rules_losses": 353,
+      "rules_wins": 0,
+      "tokens": 21415
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "cmn",
+    "sentences_by_block_type": {
+      "doc": 1000
+    },
+    "sha256": "e12582af2e2bbc2e27155ca7dc12b6fc4a037dbc716e1f805d67e34ffb2596b3"
+  },
+  "UD_Chinese-PatentChar/zh_patentchar-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "no_scorable_words_sentences": 200,
+      "unknown_lemmas_with_visible_form": 4784
+    },
+    "iso": "cmn",
+    "sentences_by_block_type": {},
+    "sha256": "7006128e286bba35ca96ce62a58a47d8277cda0cd05ccacb8ffadfbf4e47097f"
+  },
+  "UD_Chintang-CTNTB/ctn_ctntb-ud-test.conllu": {
+    "block_types": {
+      "doc": 6
+    },
+    "counts": {
+      "copy": 6945,
+      "copy_losses": 418,
+      "copy_wins": 1234,
+      "full": 7761,
+      "lookup": 7761,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 14199
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 69,
+      "unknown_lemmas_with_visible_form": 6
+    },
+    "iso": "ctn",
+    "sentences_by_block_type": {
+      "doc": 2220
+    },
+    "sha256": "af540715fa7c4aba9d1073c90331dee860ff8f8db509b203de8c5097778651c7"
+  },
+  "UD_Classical_Armenian-CAVaL/xcl_caval-ud-test.conllu": {
+    "block_types": {
+      "sent": 562
+    },
+    "counts": {
+      "copy": 6844,
+      "copy_losses": 944,
+      "copy_wins": 1167,
+      "full": 7067,
+      "lookup": 7392,
+      "rules_losses": 609,
+      "rules_wins": 284,
+      "tokens": 11185
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "xcl",
+    "sentences_by_block_type": {
+      "sent": 562
+    },
+    "sha256": "85bf6eaf1588e49ad29033fe5c2e1a5492584fa2a3a32e9f5f47e0e7a3c13ab7"
+  },
+  "UD_Classical_Chinese-Kyoto/lzh_kyoto-ud-test.conllu": {
+    "block_types": {
+      "doc": 37
+    },
+    "counts": {
+      "copy": 24700,
+      "copy_losses": 1,
+      "copy_wins": 392,
+      "full": 25091,
+      "lookup": 25091,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 25164
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 176,
+      "source_text_sentences": 699,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "lzh",
+    "sentences_by_block_type": {
+      "doc": 4653
+    },
+    "sha256": "e492ba5f5054ee560c33197e1681a5c18c3f21adff7dca82be3ed4af09cbf1e5"
+  },
+  "UD_Classical_Chinese-TueCL/lzh_tuecl-ud-test.conllu": {
+    "block_types": {
+      "sent": 96
+    },
+    "counts": {
+      "copy": 613,
+      "copy_losses": 0,
+      "copy_wins": 3,
+      "full": 616,
+      "lookup": 616,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 633
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "source_text_sentences": 2,
+      "unknown_lemmas_with_visible_form": 2
+    },
+    "iso": "lzh",
+    "sentences_by_block_type": {
+      "sent": 96
+    },
+    "sha256": "596d6b22837e0e5bc72471dc6d10d80029da276c4e3298d89bfd4a1c1727fa2a"
+  },
+  "UD_Coptic-Bohairic/cop_bohairic-ud-test.conllu": {
+    "block_types": {
+      "doc": 8
+    },
+    "counts": {
+      "copy": 7238,
+      "copy_losses": 240,
+      "copy_wins": 931,
+      "full": 7929,
+      "lookup": 7929,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 11061
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "cop",
+    "sentences_by_block_type": {
+      "doc": 358
+    },
+    "sha256": "fe42a33fa03c665bbb2dce47955921893405cf1fe969b07edfd47813ad01dbbc"
+  },
+  "UD_Coptic-Scriptorium/cop_scriptorium-ud-test.conllu": {
+    "block_types": {
+      "doc": 17
+    },
+    "counts": {
+      "copy": 6588,
+      "copy_losses": 72,
+      "copy_wins": 2829,
+      "full": 9345,
+      "lookup": 9345,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10348
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "cop",
+    "sentences_by_block_type": {
+      "doc": 403
+    },
+    "sha256": "13ad24c3726502b4e2699b185cda1df3295a5f4962da9f0dd5c6fc642d4ad222"
+  },
+  "UD_Croatian-SET/hr_set-ud-test.conllu": {
+    "block_types": {
+      "doc": 31
+    },
+    "counts": {
+      "copy": 11495,
+      "copy_losses": 173,
+      "copy_wins": 9231,
+      "full": 20553,
+      "lookup": 20553,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 24249
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "hrv",
+    "sentences_by_block_type": {
+      "doc": 1135
+    },
+    "sha256": "9d766b171f4fa06c8e6da5d1d1712cf763d80d294f45b92ae96ef4c6e6c649e5"
+  },
+  "UD_Czech-CAC/cs_cac-ud-test.conllu": {
+    "block_types": {
+      "doc": 3
+    },
+    "counts": {
+      "copy": 5221,
+      "copy_losses": 1573,
+      "copy_wins": 3681,
+      "full": 7329,
+      "lookup": 7103,
+      "rules_losses": 1505,
+      "rules_wins": 1731,
+      "tokens": 10856
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ces",
+    "sentences_by_block_type": {
+      "doc": 626
+    },
+    "sha256": "71c03ef1ab14451e294bbc0d7896ea4f8a3faf26790fc2f04cc473e62e43162c"
+  },
+  "UD_Czech-CLTT/cs_cltt-ud-test.conllu": {
+    "block_types": {
+      "doc": 6
+    },
+    "counts": {
+      "copy": 6077,
+      "copy_losses": 2210,
+      "copy_wins": 3778,
+      "full": 7645,
+      "lookup": 7577,
+      "rules_losses": 2102,
+      "rules_wins": 2170,
+      "tokens": 11374
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ces",
+    "sentences_by_block_type": {
+      "doc": 336
+    },
+    "sha256": "22c4c7a972d685b9d2408b39ede626f23c39be6756c625462020dbf12223f258"
+  },
+  "UD_Czech-FicTree/cs_fictree-ud-test.conllu": {
+    "block_types": {
+      "doc": 8
+    },
+    "counts": {
+      "copy": 9029,
+      "copy_losses": 2528,
+      "copy_wins": 3919,
+      "full": 10420,
+      "lookup": 11275,
+      "rules_losses": 2406,
+      "rules_wins": 1551,
+      "tokens": 16674
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 8,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ces",
+    "sentences_by_block_type": {
+      "doc": 1283
+    },
+    "sha256": "94e0fd0011d91010b2967bf5230c596d4235e754bd8bae086d73e32832155f39"
+  },
+  "UD_Czech-PDTC/cs_pdtc-ud-test.conllu": {
+    "block_types": {
+      "doc": 790
+    },
+    "counts": {
+      "copy": 163139,
+      "copy_losses": 46250,
+      "copy_wins": 84171,
+      "full": 201060,
+      "lookup": 210438,
+      "rules_losses": 43852,
+      "rules_wins": 34474,
+      "tokens": 302401
+    },
+    "excluded": {
+      "masked_forms": 1,
+      "repeated_evaluation_sentences": 902,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ces",
+    "sentences_by_block_type": {
+      "doc": 19285
+    },
+    "sha256": "f5c1a7ee2575e7e42fbedf958f2d2f55af51d60a8c770643a514e627f04fa97a"
+  },
+  "UD_Czech-PUD/cs_pud-ud-test.conllu": {
+    "block_types": {
+      "doc": 397
+    },
+    "counts": {
+      "copy": 9568,
+      "copy_losses": 2987,
+      "copy_wins": 5310,
+      "full": 11891,
+      "lookup": 12384,
+      "rules_losses": 2809,
+      "rules_wins": 2316,
+      "tokens": 18609
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ces",
+    "sentences_by_block_type": {
+      "doc": 1000
+    },
+    "sha256": "af365749e569cc9daeeebee916dd33161e5c23b278077553f6ffbf4f82c5b652"
+  },
+  "UD_Czech-Poetry/cs_poetry-ud-test.conllu": {
+    "block_types": {
+      "doc": 29
+    },
+    "counts": {
+      "copy": 3148,
+      "copy_losses": 748,
+      "copy_wins": 1541,
+      "full": 3941,
+      "lookup": 4033,
+      "rules_losses": 707,
+      "rules_wins": 615,
+      "tokens": 6245
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 8,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ces",
+    "sentences_by_block_type": {
+      "doc": 289
+    },
+    "sha256": "6005155e5c2de75894e3cd055e7031f9dfa0b7ab23d73c740d5d8e67b3535d73"
+  },
+  "UD_Danish-DDT/da_ddt-ud-test.conllu": {
+    "block_types": {
+      "sent": 565
+    },
+    "counts": {
+      "copy": 6697,
+      "copy_losses": 1306,
+      "copy_wins": 1192,
+      "full": 6583,
+      "lookup": 6988,
+      "rules_losses": 1188,
+      "rules_wins": 783,
+      "tokens": 10023
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "dan",
+    "sentences_by_block_type": {
+      "sent": 565
+    },
+    "sha256": "2232ee43dcd35dba32b476534d230edf1aa26d4bd830813f452fd829c276f737"
+  },
+  "UD_Dutch-Alpino/nl_alpino-ud-test.conllu": {
+    "block_types": {
+      "sent": 596
+    },
+    "counts": {
+      "copy": 7891,
+      "copy_losses": 2984,
+      "copy_wins": 781,
+      "full": 5688,
+      "lookup": 8007,
+      "rules_losses": 2498,
+      "rules_wins": 179,
+      "tokens": 11046
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "nld",
+    "sentences_by_block_type": {
+      "sent": 596
+    },
+    "sha256": "20d0f718cdc73b51dbb2744386c9d4ecb1a9df6a076efa81b4c008ace3801fc0"
+  },
+  "UD_Dutch-LassySmall/nl_lassysmall-ud-test.conllu": {
+    "block_types": {
+      "sent": 1731
+    },
+    "counts": {
+      "copy": 21171,
+      "copy_losses": 7387,
+      "copy_wins": 1810,
+      "full": 15594,
+      "lookup": 21248,
+      "rules_losses": 6143,
+      "rules_wins": 489,
+      "tokens": 28915
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 30,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "nld",
+    "sentences_by_block_type": {
+      "sent": 1731
+    },
+    "sha256": "a52efa0878331f1d49f6350ee95f86d1f6dc8578fcf90c652ce5764d486ad4cf"
+  },
+  "UD_Egyptian-PC/egy_pc-ud-test.conllu": {
+    "block_types": {
+      "sent": 1222
+    },
+    "counts": {
+      "copy": 6078,
+      "copy_losses": 296,
+      "copy_wins": 4132,
+      "full": 9914,
+      "lookup": 9914,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 11453
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 11,
+      "source_text_sentences": 7,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "egy",
+    "sentences_by_block_type": {
+      "sent": 1222
+    },
+    "sha256": "9b04cd3a15772b604e822961297ba2b60ac627d774530fcb9fefb0d151c464af"
+  },
+  "UD_English-Atis/en_atis-ud-test.conllu": {
+    "block_types": {
+      "sent": 585
+    },
+    "counts": {
+      "copy": 3719,
+      "copy_losses": 1174,
+      "copy_wins": 1074,
+      "full": 3619,
+      "lookup": 3323,
+      "rules_losses": 1,
+      "rules_wins": 297,
+      "tokens": 6575
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "eng",
+    "sentences_by_block_type": {
+      "sent": 585
+    },
+    "sha256": "a98df5e2f11e81deb4698a05ffcb361cff5d74cbba61b234b59685ec304d66a7"
+  },
+  "UD_English-CHILDES/en_childes-ud-test.conllu": {
+    "block_types": {
+      "sent": 9271
+    },
+    "counts": {
+      "copy": 39570,
+      "copy_losses": 4424,
+      "copy_wins": 8704,
+      "full": 43850,
+      "lookup": 43744,
+      "rules_losses": 36,
+      "rules_wins": 142,
+      "tokens": 56232
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 320,
+      "unknown_lemmas_with_visible_form": 9
+    },
+    "iso": "eng",
+    "sentences_by_block_type": {
+      "sent": 9271
+    },
+    "sha256": "a985573aeb9fabc10ab54bd3f99fb739628e4bb16da95fd814f84aee19d95f90"
+  },
+  "UD_English-CTeTex/en_ctetex-ud-test.conllu": {
+    "block_types": {
+      "doc": 196
+    },
+    "counts": {
+      "copy": 7208,
+      "copy_losses": 994,
+      "copy_wins": 1361,
+      "full": 7575,
+      "lookup": 7459,
+      "rules_losses": 11,
+      "rules_wins": 127,
+      "tokens": 9222
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 7
+    },
+    "iso": "eng",
+    "sentences_by_block_type": {
+      "doc": 274
+    },
+    "sha256": "626b1da3281f9f203d9b0c68c8132a2d4211a742a348498a1d8388de89a3aa64"
+  },
+  "UD_English-ESLSpok/en_eslspok-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "no_scorable_words_sentences": 219,
+      "repeated_evaluation_sentences": 13,
+      "unknown_lemmas_with_visible_form": 2214
+    },
+    "iso": "eng",
+    "sentences_by_block_type": {},
+    "sha256": "7d3b37af353205dc3b2964937e7c511e7763cdca25ec9c830638a2540ffe04be"
+  },
+  "UD_English-EWT/en_ewt-ud-test.conllu": {
+    "block_types": {
+      "doc": 316
+    },
+    "counts": {
+      "copy": 19235,
+      "copy_losses": 3060,
+      "copy_wins": 2761,
+      "full": 18936,
+      "lookup": 18808,
+      "rules_losses": 52,
+      "rules_wins": 180,
+      "tokens": 24675
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 120,
+      "unknown_lemmas_with_visible_form": 15
+    },
+    "iso": "eng",
+    "sentences_by_block_type": {
+      "doc": 1957
+    },
+    "sha256": "fa024f43dc5da3c5ac02563bc9bd0e974f46cbb1560823976a8f342a37dc494a"
+  },
+  "UD_English-GENTLE/en_gentle-ud-test.conllu": {
+    "block_types": {
+      "doc": 26
+    },
+    "counts": {
+      "copy": 13525,
+      "copy_losses": 2026,
+      "copy_wins": 2337,
+      "full": 13836,
+      "lookup": 13724,
+      "rules_losses": 12,
+      "rules_wins": 124,
+      "tokens": 17465
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 85,
+      "unknown_lemmas_with_visible_form": 5
+    },
+    "iso": "eng",
+    "sentences_by_block_type": {
+      "doc": 1249
+    },
+    "sha256": "42d12cdef99bcd3160a3241ba1811fe9e7fd4b37a77f9b9e8c2852f04d69f3fa"
+  },
+  "UD_English-GUM/en_gum-ud-test.conllu": {
+    "block_types": {
+      "doc": 30
+    },
+    "counts": {
+      "copy": 21964,
+      "copy_losses": 3557,
+      "copy_wins": 3492,
+      "full": 21899,
+      "lookup": 21617,
+      "rules_losses": 29,
+      "rules_wins": 311,
+      "tokens": 28201
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 46,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "eng",
+    "sentences_by_block_type": {
+      "doc": 1418
+    },
+    "sha256": "cd96a285e7339f401f4803dd0f4f61109c51692e3ef6f9186a1f977544080b69"
+  },
+  "UD_English-GUMReddit/en_gumreddit-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "masked_forms": 1763,
+      "no_scorable_words_sentences": 103,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "eng",
+    "sentences_by_block_type": {},
+    "sha256": "9afecc3c76deea4540a5f1fe6b2c851857ce5d272f78b476949a90352ea4f381"
+  },
+  "UD_English-LinES/en_lines-ud-test.conllu": {
+    "block_types": {
+      "doc": 9
+    },
+    "counts": {
+      "copy": 15158,
+      "copy_losses": 2200,
+      "copy_wins": 2564,
+      "full": 15522,
+      "lookup": 15346,
+      "rules_losses": 24,
+      "rules_wins": 200,
+      "tokens": 19971
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 3,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "eng",
+    "sentences_by_block_type": {
+      "doc": 1118
+    },
+    "sha256": "46cb8e412aab30725acfb916fdb092672597e12eef511165f0843efaf6c6926a"
+  },
+  "UD_English-LittlePrince/en_littleprince-ud-test.conllu": {
+    "block_types": {
+      "doc": 9
+    },
+    "counts": {
+      "copy": 5331,
+      "copy_losses": 685,
+      "copy_wins": 762,
+      "full": 5408,
+      "lookup": 5361,
+      "rules_losses": 7,
+      "rules_wins": 54,
+      "tokens": 6823
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 9,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "eng",
+    "sentences_by_block_type": {
+      "doc": 491
+    },
+    "sha256": "b1832f66187dea5b8ff27cf7bd607d4fa33962850b84435066c06c4cc1c35232"
+  },
+  "UD_English-PUD/en_pud-ud-test.conllu": {
+    "block_types": {
+      "doc": 397
+    },
+    "counts": {
+      "copy": 16326,
+      "copy_losses": 2434,
+      "copy_wins": 2839,
+      "full": 16731,
+      "lookup": 16489,
+      "rules_losses": 25,
+      "rules_wins": 267,
+      "tokens": 21179
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "eng",
+    "sentences_by_block_type": {
+      "doc": 1000
+    },
+    "sha256": "c80584f2bc2b31d5bada78a1136f9feec7ac49e5e18898db02dea434b5b8f0aa"
+  },
+  "UD_English-ParTUT/en_partut-ud-test.conllu": {
+    "block_types": {
+      "sent": 152
+    },
+    "counts": {
+      "copy": 2547,
+      "copy_losses": 456,
+      "copy_wins": 502,
+      "full": 2593,
+      "lookup": 2537,
+      "rules_losses": 0,
+      "rules_wins": 56,
+      "tokens": 3375
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "eng",
+    "sentences_by_block_type": {
+      "sent": 152
+    },
+    "sha256": "c625f76a815f34392d7976435a8334e3fd64fe4f966c9761718fc1c07da5d23f"
+  },
+  "UD_English-Pronouns/en_pronouns-ud-test.conllu": {
+    "block_types": {
+      "doc": 1
+    },
+    "counts": {
+      "copy": 856,
+      "copy_losses": 111,
+      "copy_wins": 409,
+      "full": 1154,
+      "lookup": 1057,
+      "rules_losses": 0,
+      "rules_wins": 97,
+      "tokens": 1705
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "eng",
+    "sentences_by_block_type": {
+      "doc": 285
+    },
+    "sha256": "b4e42921354d71e44e4758892f1a78f53773705e21425a64f454022570caf5b0"
+  },
+  "UD_Erzya-JR/myv_jr-ud-test.conllu": {
+    "block_types": {
+      "sent": 925
+    },
+    "counts": {
+      "copy": 5260,
+      "copy_losses": 73,
+      "copy_wins": 1983,
+      "full": 7170,
+      "lookup": 7170,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10470
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 8,
+      "source_text_sentences": 2,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "myv",
+    "sentences_by_block_type": {
+      "sent": 925
+    },
+    "sha256": "3757d7d7fade34e36551e22c047a490cf65799b6517a9c1da4f10effa89c4c75"
+  },
+  "UD_Esperanto-Cairo/eo_cairo-ud-test.conllu": {
+    "block_types": {
+      "sent": 20
+    },
+    "counts": {
+      "copy": 107,
+      "copy_losses": 0,
+      "copy_wins": 19,
+      "full": 126,
+      "lookup": 126,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 175
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 2
+    },
+    "iso": "epo",
+    "sentences_by_block_type": {
+      "sent": 20
+    },
+    "sha256": "7591318b925ac2d78eb0678d5d6eef7466347c429c02634ef7db9836ef673ed7"
+  },
+  "UD_Esperanto-Prago/eo_prago-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "epo",
+    "sentences_by_block_type": {},
+    "sha256": "d91a9bbbce1fdd1ee4cfda66e90bbd3454b83180a653b195cde3613152110795"
+  },
+  "UD_Estonian-EDT/et_edt-ud-test.conllu": {
+    "block_types": {
+      "doc": 4,
+      "sent": 750
+    },
+    "counts": {
+      "copy": 22910,
+      "copy_losses": 7021,
+      "copy_wins": 9856,
+      "full": 25745,
+      "lookup": 27033,
+      "rules_losses": 6312,
+      "rules_wins": 5024,
+      "tokens": 48343
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 26,
+      "unknown_lemmas_with_visible_form": 21
+    },
+    "iso": "est",
+    "sentences_by_block_type": {
+      "doc": 2431,
+      "sent": 750
+    },
+    "sha256": "ad138953e46b36ea378c28b21a70265dba56c6696ec9f7418adae01d5dfb1525"
+  },
+  "UD_Estonian-EWT/et_ewt-ud-test.conllu": {
+    "block_types": {
+      "doc": 6
+    },
+    "counts": {
+      "copy": 6962,
+      "copy_losses": 2235,
+      "copy_wins": 2400,
+      "full": 7127,
+      "lookup": 8176,
+      "rules_losses": 2080,
+      "rules_wins": 1031,
+      "tokens": 13145
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 4
+    },
+    "iso": "est",
+    "sentences_by_block_type": {
+      "doc": 911
+    },
+    "sha256": "d25af6367170fe1ee83a5757542fc5b8d8353370d35659ff70e7db8249346d1b"
+  },
+  "UD_Faroese-FarPaHC/fo_farpahc-ud-test.conllu": {
+    "block_types": {
+      "sent": 301
+    },
+    "counts": {
+      "copy": 1105,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 1105,
+      "lookup": 1105,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 1105
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 7539
+    },
+    "iso": "fao",
+    "sentences_by_block_type": {
+      "sent": 301
+    },
+    "sha256": "ad601746b37d6940761af31dc0df42a929c106ea68504e2705fb3a04f7743cc0"
+  },
+  "UD_Faroese-OFT/fo_oft-ud-test.conllu": {
+    "block_types": {
+      "sent": 1192
+    },
+    "counts": {
+      "copy": 5355,
+      "copy_losses": 1442,
+      "copy_wins": 1615,
+      "full": 5528,
+      "lookup": 6300,
+      "rules_losses": 1281,
+      "rules_wins": 509,
+      "tokens": 9934
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 16,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "fao",
+    "sentences_by_block_type": {
+      "sent": 1192
+    },
+    "sha256": "3fa80518bc02b034231390467631e40389a721e5e9d9774cf84c692e15419dc1"
+  },
+  "UD_Finnish-FTB/fi_ftb-ud-test.conllu": {
+    "block_types": {
+      "sent": 1867
+    },
+    "counts": {
+      "copy": 6774,
+      "copy_losses": 1595,
+      "copy_wins": 5327,
+      "full": 10506,
+      "lookup": 10713,
+      "rules_losses": 1168,
+      "rules_wins": 961,
+      "tokens": 16286
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "fin",
+    "sentences_by_block_type": {
+      "sent": 1867
+    },
+    "sha256": "f7b738e86bf79c4c2db18ad8141649b175846d9f57c452ac1ca8671cc34f954e"
+  },
+  "UD_Finnish-OOD/fi_ood-ud-test.conllu": {
+    "block_types": {
+      "doc": 219
+    },
+    "counts": {
+      "copy": 9036,
+      "copy_losses": 2031,
+      "copy_wins": 5200,
+      "full": 12205,
+      "lookup": 13018,
+      "rules_losses": 1554,
+      "rules_wins": 741,
+      "tokens": 18868
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 252,
+      "unknown_lemmas_with_visible_form": 3
+    },
+    "iso": "fin",
+    "sentences_by_block_type": {
+      "doc": 1870
+    },
+    "sha256": "cd84438725207499fd72f34916550ebef2a99acf7bd6077b62dd33e3c656c714"
+  },
+  "UD_Finnish-PUD/fi_pud-ud-test.conllu": {
+    "block_types": {
+      "doc": 397
+    },
+    "counts": {
+      "copy": 6759,
+      "copy_losses": 1411,
+      "copy_wins": 5090,
+      "full": 10438,
+      "lookup": 10551,
+      "rules_losses": 961,
+      "rules_wins": 848,
+      "tokens": 15813
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "fin",
+    "sentences_by_block_type": {
+      "doc": 1000
+    },
+    "sha256": "303c3d03795ca8ddb3340d4d7c2ac28d2aaececa8f9ba962f0440f5c2c2412a0"
+  },
+  "UD_Finnish-TDT/fi_tdt-ud-test.conllu": {
+    "block_types": {
+      "sent": 1355
+    },
+    "counts": {
+      "copy": 8375,
+      "copy_losses": 1676,
+      "copy_wins": 5630,
+      "full": 12329,
+      "lookup": 12578,
+      "rules_losses": 1185,
+      "rules_wins": 936,
+      "tokens": 19313
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 200,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "fin",
+    "sentences_by_block_type": {
+      "sent": 1355
+    },
+    "sha256": "3317528f16ab74333dce44051971e1ed0d115c8ffa1359a20f3bddb8e63498ee"
+  },
+  "UD_French-ALTS/fr_alts-ud-test.conllu": {
+    "block_types": {
+      "sent": 665
+    },
+    "counts": {
+      "copy": 10409,
+      "copy_losses": 6638,
+      "copy_wins": 666,
+      "full": 4437,
+      "lookup": 10137,
+      "rules_losses": 5817,
+      "rules_wins": 117,
+      "tokens": 19946
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 5,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "fra",
+    "sentences_by_block_type": {
+      "sent": 665
+    },
+    "sha256": "d2a471d83597c8943bedf4bb3cb5261f5065e008558972e0c002fe94d4ca8b97"
+  },
+  "UD_French-FQB/fr_fqb-ud-test.conllu": {
+    "block_types": {
+      "sent": 2264
+    },
+    "counts": {
+      "copy": 13838,
+      "copy_losses": 7670,
+      "copy_wins": 1046,
+      "full": 7214,
+      "lookup": 13613,
+      "rules_losses": 6519,
+      "rules_wins": 120,
+      "tokens": 23662
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 25,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "fra",
+    "sentences_by_block_type": {
+      "sent": 2264
+    },
+    "sha256": "a69d8e10f10a8de921c272d15494c93ac79f72c7ef6c3cf0bd390e25b3cd4fe0"
+  },
+  "UD_French-GSD/fr_gsd-ud-test.conllu": {
+    "block_types": {
+      "sent": 416
+    },
+    "counts": {
+      "copy": 6538,
+      "copy_losses": 3812,
+      "copy_wins": 455,
+      "full": 3181,
+      "lookup": 6380,
+      "rules_losses": 3233,
+      "rules_wins": 34,
+      "tokens": 10015
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 2
+    },
+    "iso": "fra",
+    "sentences_by_block_type": {
+      "sent": 416
+    },
+    "sha256": "eee5a599b429658b6ee8582fae9993eb07161247fc64bad57d16b2050ed4eb1a"
+  },
+  "UD_French-PUD/fr_pud-ud-test.conllu": {
+    "block_types": {
+      "doc": 397
+    },
+    "counts": {
+      "copy": 15383,
+      "copy_losses": 9217,
+      "copy_wins": 1350,
+      "full": 7516,
+      "lookup": 15288,
+      "rules_losses": 7876,
+      "rules_wins": 104,
+      "tokens": 24723
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 3
+    },
+    "iso": "fra",
+    "sentences_by_block_type": {
+      "doc": 1000
+    },
+    "sha256": "4dfed37b83d76e77fd2e9963d0be00d723e9a010e7e2a746f8b7640c48063c10"
+  },
+  "UD_French-ParTUT/fr_partut-ud-test.conllu": {
+    "block_types": {
+      "sent": 109
+    },
+    "counts": {
+      "copy": 1561,
+      "copy_losses": 1052,
+      "copy_wins": 107,
+      "full": 616,
+      "lookup": 1495,
+      "rules_losses": 898,
+      "rules_wins": 19,
+      "tokens": 2576
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "fra",
+    "sentences_by_block_type": {
+      "sent": 109
+    },
+    "sha256": "4c50a65d81c7b57efc50b4d243de71a10859598d8e108c7e85279e53d8fb8528"
+  },
+  "UD_French-ParisStories/fr_parisstories-ud-test.conllu": {
+    "block_types": {
+      "sent": 670
+    },
+    "counts": {
+      "copy": 7153,
+      "copy_losses": 3609,
+      "copy_wins": 529,
+      "full": 4073,
+      "lookup": 7092,
+      "rules_losses": 3083,
+      "rules_wins": 64,
+      "tokens": 10213
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 27,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "fra",
+    "sentences_by_block_type": {
+      "sent": 670
+    },
+    "sha256": "30c53f9836827c57bcba1a2166559f5936e0b36b9e8b904e849934e5c7190383"
+  },
+  "UD_French-PoitevinDIVITAL/fr_poitevindivital-ud-test.conllu": {
+    "block_types": {
+      "sent": 239
+    },
+    "counts": {
+      "copy": 3586,
+      "copy_losses": 2273,
+      "copy_wins": 16,
+      "full": 1329,
+      "lookup": 3307,
+      "rules_losses": 1984,
+      "rules_wins": 6,
+      "tokens": 5423
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 61
+    },
+    "iso": "fra",
+    "sentences_by_block_type": {
+      "sent": 239
+    },
+    "sha256": "7bb607e5adef4016c08c5a0a7c9ce7a2151fcb0412ec5989ef0b0db52bb93229"
+  },
+  "UD_French-Rhapsodie/fr_rhapsodie-ud-test.conllu": {
+    "block_types": {
+      "sent": 758
+    },
+    "counts": {
+      "copy": 8125,
+      "copy_losses": 4542,
+      "copy_wins": 603,
+      "full": 4186,
+      "lookup": 8027,
+      "rules_losses": 3901,
+      "rules_wins": 60,
+      "tokens": 11987
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 82,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "fra",
+    "sentences_by_block_type": {
+      "sent": 758
+    },
+    "sha256": "ace8853a4c6c8040d94eaef2a9d46f40d414cecdf44fea8730d9beeca898ab11"
+  },
+  "UD_French-Sequoia/fr_sequoia-ud-test.conllu": {
+    "block_types": {
+      "sent": 449
+    },
+    "counts": {
+      "copy": 6423,
+      "copy_losses": 3765,
+      "copy_wins": 409,
+      "full": 3067,
+      "lookup": 6306,
+      "rules_losses": 3273,
+      "rules_wins": 34,
+      "tokens": 10035
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 7,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "fra",
+    "sentences_by_block_type": {
+      "sent": 449
+    },
+    "sha256": "e942bb60d379b83a848ff58b403d9133090fd80f1732e720f55c2e718dda179a"
+  },
+  "UD_Galician-CTG/gl_ctg-ud-test.conllu": {
+    "block_types": {
+      "sent": 861
+    },
+    "counts": {
+      "copy": 19235,
+      "copy_losses": 604,
+      "copy_wins": 6642,
+      "full": 25273,
+      "lookup": 25273,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 29740
+    },
+    "excluded": {
+      "masked_forms": 21,
+      "unknown_lemmas_with_visible_form": 29
+    },
+    "iso": "glg",
+    "sentences_by_block_type": {
+      "sent": 861
+    },
+    "sha256": "a3bc34353d32b3cfb68d2834f856fd373a460902bca89f7bce552f8aa89e8de6"
+  },
+  "UD_Galician-PUD/gl_pud-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "glg",
+    "sentences_by_block_type": {},
+    "sha256": "4fc7406056b0445c2e0f368b0f9be507c3b096c85e2b5dfd108bb1e052bc7d41"
+  },
+  "UD_Galician-TreeGal/gl_treegal-ud-test.conllu": {
+    "block_types": {
+      "sent": 400
+    },
+    "counts": {
+      "copy": 6366,
+      "copy_losses": 205,
+      "copy_wins": 2112,
+      "full": 8273,
+      "lookup": 8273,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10091
+    },
+    "excluded": {
+      "masked_forms": 21,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "glg",
+    "sentences_by_block_type": {
+      "sent": 400
+    },
+    "sha256": "685d6f2e8d4fc819247c9c1fafdcca310f9796522c22672733690fd751673817"
+  },
+  "UD_Georgian-GLC/ka_glc-ud-test.conllu": {
+    "block_types": {
+      "sent": 472
+    },
+    "counts": {
+      "copy": 5764,
+      "copy_losses": 13,
+      "copy_wins": 2173,
+      "full": 7924,
+      "lookup": 7924,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 9799
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 4,
+      "source_text_sentences": 5,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "kat",
+    "sentences_by_block_type": {
+      "sent": 472
+    },
+    "sha256": "676354f37d64841380096ff89d424e22ab48876a59548ce808bc15aef1f9a7c3"
+  },
+  "UD_Georgian-GNC/ka_gnc-ud-test.conllu": {
+    "block_types": {
+      "sent": 830
+    },
+    "counts": {
+      "copy": 5934,
+      "copy_losses": 79,
+      "copy_wins": 467,
+      "full": 6322,
+      "lookup": 6322,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10426
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "kat",
+    "sentences_by_block_type": {
+      "sent": 830
+    },
+    "sha256": "732d4efea4266ddff88b06ff8ddb0bbb7fe7badc5b58006611e3d691cfa57dea"
+  },
+  "UD_German-GSD/de_gsd-ud-test.conllu": {
+    "block_types": {
+      "sent": 976
+    },
+    "counts": {
+      "copy": 10875,
+      "copy_losses": 4576,
+      "copy_wins": 2734,
+      "full": 9033,
+      "lookup": 12273,
+      "rules_losses": 3928,
+      "rules_wins": 688,
+      "tokens": 16476
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "deu",
+    "sentences_by_block_type": {
+      "sent": 976
+    },
+    "sha256": "595070aa50b706a91dc66f17c296f7a9a25cbc75269f177c27680fb1c21528ab"
+  },
+  "UD_German-HDT/de_hdt-ud-test.conllu": {
+    "block_types": {
+      "sent": 18359
+    },
+    "counts": {
+      "copy": 218900,
+      "copy_losses": 103568,
+      "copy_wins": 51565,
+      "full": 166897,
+      "lookup": 245668,
+      "rules_losses": 92642,
+      "rules_wins": 13871,
+      "tokens": 331071
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 100,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "deu",
+    "sentences_by_block_type": {
+      "sent": 18359
+    },
+    "sha256": "6e1b32752a20022b33bf40493402488eff1df2467b9cf9b32313311cd4872ddf"
+  },
+  "UD_German-LIT/de_lit-ud-test.conllu": {
+    "block_types": {
+      "doc": 3
+    },
+    "counts": {
+      "copy": 25970,
+      "copy_losses": 12462,
+      "copy_wins": 6452,
+      "full": 19960,
+      "lookup": 28709,
+      "rules_losses": 10622,
+      "rules_wins": 1873,
+      "tokens": 40449
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "deu",
+    "sentences_by_block_type": {
+      "doc": 1920
+    },
+    "sha256": "7fe641e69e7b7a5d444300db838a8a5016d82be5d3d45a7ad5c3f5c8d0f4c826"
+  },
+  "UD_German-PUD/de_pud-ud-test.conllu": {
+    "block_types": {
+      "doc": 397
+    },
+    "counts": {
+      "copy": 13453,
+      "copy_losses": 5756,
+      "copy_wins": 4058,
+      "full": 11755,
+      "lookup": 15747,
+      "rules_losses": 5087,
+      "rules_wins": 1095,
+      "tokens": 21332
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "deu",
+    "sentences_by_block_type": {
+      "doc": 1000
+    },
+    "sha256": "a530bdb50349bbd7c13706b6a759a9d73e8f514fff41fbf27149e914b0c3e723"
+  },
+  "UD_Gheg-GPS/aln_gps-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "aln",
+    "sentences_by_block_type": {},
+    "sha256": "080a83e775d2b1fe6f62339ae98e0550f3549181b633efbb26af93f470b8b285"
+  },
+  "UD_Gothic-PROIEL/got_proiel-ud-test.conllu": {
+    "block_types": {
+      "sent": 986
+    },
+    "counts": {
+      "copy": 4163,
+      "copy_losses": 2556,
+      "copy_wins": 1901,
+      "full": 3508,
+      "lookup": 5438,
+      "rules_losses": 2371,
+      "rules_wins": 441,
+      "tokens": 10052
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 43,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "got",
+    "sentences_by_block_type": {
+      "sent": 986
+    },
+    "sha256": "12fb4d7377c413db6f913ef03c9c90a0e893f816225c3e86fee5367f3655f682"
+  },
+  "UD_Greek-Cretan/el_cretan-ud-test.conllu": {
+    "block_types": {
+      "sent": 30
+    },
+    "counts": {
+      "copy": 222,
+      "copy_losses": 60,
+      "copy_wins": 52,
+      "full": 214,
+      "lookup": 231,
+      "rules_losses": 43,
+      "rules_wins": 26,
+      "tokens": 493
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ell",
+    "sentences_by_block_type": {
+      "sent": 30
+    },
+    "sha256": "b86298c7e0653e1e441043539ec7245c109b6475869619b30e0e6140a790959c"
+  },
+  "UD_Greek-GDT/el_gdt-ud-test.conllu": {
+    "block_types": {
+      "doc": 26
+    },
+    "counts": {
+      "copy": 4615,
+      "copy_losses": 1310,
+      "copy_wins": 2058,
+      "full": 5363,
+      "lookup": 5786,
+      "rules_losses": 1192,
+      "rules_wins": 769,
+      "tokens": 10663
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 3,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ell",
+    "sentences_by_block_type": {
+      "doc": 453
+    },
+    "sha256": "30cb5881ce6f8ba628de88853a4c105e716a365e8fcd9024a85befe41165c260"
+  },
+  "UD_Greek-GLCII/el_glcii-ud-test.conllu": {
+    "block_types": {
+      "doc": 50
+    },
+    "counts": {
+      "copy": 4709,
+      "copy_losses": 1565,
+      "copy_wins": 1294,
+      "full": 4438,
+      "lookup": 5260,
+      "rules_losses": 1455,
+      "rules_wins": 633,
+      "tokens": 9864
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 3
+    },
+    "iso": "ell",
+    "sentences_by_block_type": {
+      "doc": 670
+    },
+    "sha256": "5f854840dd39e155ab92091ea64c5291e951f09db14bc2db8080863cc7d58fb2"
+  },
+  "UD_Greek-GUD/el_gud-ud-test.conllu": {
+    "block_types": {
+      "sent": 736
+    },
+    "counts": {
+      "copy": 5236,
+      "copy_losses": 1406,
+      "copy_wins": 1468,
+      "full": 5298,
+      "lookup": 6005,
+      "rules_losses": 1239,
+      "rules_wins": 532,
+      "tokens": 10634
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ell",
+    "sentences_by_block_type": {
+      "sent": 736
+    },
+    "sha256": "1810904eb8fb9711f5c12eb0da63dc440fc42e3d41bbd24be194b59e07d19a69"
+  },
+  "UD_Greek-Lesbian/el_lesbian-ud-test.conllu": {
+    "block_types": {
+      "sent": 625
+    },
+    "counts": {
+      "copy": 2428,
+      "copy_losses": 707,
+      "copy_wins": 133,
+      "full": 1854,
+      "lookup": 2366,
+      "rules_losses": 608,
+      "rules_wins": 96,
+      "tokens": 6838
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 2
+    },
+    "iso": "ell",
+    "sentences_by_block_type": {
+      "sent": 625
+    },
+    "sha256": "73f684206f15390e6ed94eaeb8d38d71c57eaf5cd5d967e46c5fc30b2a510974"
+  },
+  "UD_Greek-Messinian/el_messinian-ud-test.conllu": {
+    "block_types": {
+      "sent": 30
+    },
+    "counts": {
+      "copy": 105,
+      "copy_losses": 26,
+      "copy_wins": 32,
+      "full": 111,
+      "lookup": 121,
+      "rules_losses": 21,
+      "rules_wins": 11,
+      "tokens": 242
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ell",
+    "sentences_by_block_type": {
+      "sent": 30
+    },
+    "sha256": "d29a102fedee985581e9eadda1f33b441267d56a7a7f1bc407dd6241a5d3ce36"
+  },
+  "UD_Guajajara-TuDeT/gub_tudet-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "gub",
+    "sentences_by_block_type": {},
+    "sha256": "199e18933f9cd0a5c9fcc64ef4ab7d6fa0aad3eadb87762859a3b3b11d47d1f1"
+  },
+  "UD_Gujarati-GujTB/gu_gujtb-ud-test.conllu": {
+    "block_types": {
+      "sent": 151
+    },
+    "counts": {
+      "copy": 1440,
+      "copy_losses": 732,
+      "copy_wins": 18,
+      "full": 726,
+      "lookup": 1411,
+      "rules_losses": 691,
+      "rules_wins": 6,
+      "tokens": 1575
+    },
+    "excluded": {
+      "masked_forms": 58,
+      "no_scorable_words_sentences": 36,
+      "unknown_lemmas_with_visible_form": 252
+    },
+    "iso": "guj",
+    "sentences_by_block_type": {
+      "sent": 151
+    },
+    "sha256": "7c66318f76301f4bfc3336386679fc909371a9e15f78002b6b793a6a789228a9"
+  },
+  "UD_Gwichin-TueCL/gwi_tuecl-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "gwi",
+    "sentences_by_block_type": {},
+    "sha256": "ae583b3418f585b09e80b995e1552ec529442e6ab4c28d517bcbc6d944265a78"
+  },
+  "UD_Haitian_Creole-Adolphe/ht_adolphe-ud-test.conllu": {
+    "block_types": {
+      "sent": 435
+    },
+    "counts": {
+      "copy": 8508,
+      "copy_losses": 80,
+      "copy_wins": 1379,
+      "full": 9807,
+      "lookup": 9807,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 9957
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "source_text_sentences": 9,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "hat",
+    "sentences_by_block_type": {
+      "sent": 435
+    },
+    "sha256": "bade643a6f41417fce5e52101e1ecaa2090ad97d59e0eb88fbe276d2c4c333bd"
+  },
+  "UD_Haitian_Creole-Autogramm/ht_autogramm-ud-test.conllu": {
+    "block_types": {
+      "sent": 29
+    },
+    "counts": {
+      "copy": 504,
+      "copy_losses": 12,
+      "copy_wins": 120,
+      "full": 612,
+      "lookup": 612,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 642
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 15,
+      "source_text_sentences": 100,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "hat",
+    "sentences_by_block_type": {
+      "sent": 29
+    },
+    "sha256": "c3ffe9169c10d22d1c29246c3a16ee1c20db7e912642e3d7a9271c198fd20921"
+  },
+  "UD_Hausa-EasternAutogramm/ha_easternautogramm-ud-test.conllu": {
+    "block_types": {
+      "sent": 334
+    },
+    "counts": {
+      "copy": 5498,
+      "copy_losses": 475,
+      "copy_wins": 1167,
+      "full": 6190,
+      "lookup": 6190,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 9469
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "hau",
+    "sentences_by_block_type": {
+      "sent": 334
+    },
+    "sha256": "25c2ee4d7ddaa64b15e3f179ac81889bab9c65dd88684731db4cba9ae49cea9c"
+  },
+  "UD_Hausa-NorthernAutogramm/ha_northernautogramm-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "hau",
+    "sentences_by_block_type": {},
+    "sha256": "271c213d3728ba21988329f7d1fbc87be9522463cc3196a760b6a8751e6b9708"
+  },
+  "UD_Hausa-SouthernAutogramm/ha_southernautogramm-ud-test.conllu": {
+    "block_types": {
+      "sent": 1538
+    },
+    "counts": {
+      "copy": 9178,
+      "copy_losses": 489,
+      "copy_wins": 1629,
+      "full": 10318,
+      "lookup": 10318,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 13487
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 356,
+      "source_text_sentences": 33,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "hau",
+    "sentences_by_block_type": {
+      "sent": 1538
+    },
+    "sha256": "9a700e3f7ed889025543177f7080d18963dff7c6f41641d66e7d28a8771772f0"
+  },
+  "UD_Hausa-WesternAutogramm/ha_westernautogramm-ud-test.conllu": {
+    "block_types": {
+      "sent": 765
+    },
+    "counts": {
+      "copy": 9185,
+      "copy_losses": 723,
+      "copy_wins": 2311,
+      "full": 10773,
+      "lookup": 10773,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 13854
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 10,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "hau",
+    "sentences_by_block_type": {
+      "sent": 765
+    },
+    "sha256": "46577042a34f8757b4898ce9a8a3b6d5fcbc3d53910eaf6ea2289b2427f0f877"
+  },
+  "UD_Hebrew-HTB/he_htb-ud-test.conllu": {
+    "block_types": {
+      "sent": 491
+    },
+    "counts": {
+      "copy": 8943,
+      "copy_losses": 2626,
+      "copy_wins": 880,
+      "full": 7197,
+      "lookup": 8918,
+      "rules_losses": 2086,
+      "rules_wins": 365,
+      "tokens": 11993
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 289
+    },
+    "iso": "heb",
+    "sentences_by_block_type": {
+      "sent": 491
+    },
+    "sha256": "026fcebd2e953776fe9e954ae5506a2c9d1a7449266ce0cbe76b3297ed793ce7"
+  },
+  "UD_Hebrew-IAHLTknesset/he_iahltknesset-ud-test.conllu": {
+    "block_types": {
+      "doc": 11,
+      "sent": 37
+    },
+    "counts": {
+      "copy": 4597,
+      "copy_losses": 1312,
+      "copy_wins": 667,
+      "full": 3952,
+      "lookup": 4798,
+      "rules_losses": 1019,
+      "rules_wins": 173,
+      "tokens": 6357
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "heb",
+    "sentences_by_block_type": {
+      "doc": 231,
+      "sent": 37
+    },
+    "sha256": "9f646c1af22f58ca404be2be92481b3395683dfcb6d8cc31dbb4a530a6d3bd55"
+  },
+  "UD_Hebrew-IAHLTwiki/he_iahltwiki-ud-test.conllu": {
+    "block_types": {
+      "doc": 7
+    },
+    "counts": {
+      "copy": 8205,
+      "copy_losses": 2358,
+      "copy_wins": 850,
+      "full": 6697,
+      "lookup": 8083,
+      "rules_losses": 1775,
+      "rules_wins": 389,
+      "tokens": 10734
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "heb",
+    "sentences_by_block_type": {
+      "doc": 393
+    },
+    "sha256": "57af21391a7e031d1581256fa5dc3fd7b97de81356ff782e613705ae5ac52e07"
+  },
+  "UD_Hebrew-PostRab/he_postrab-ud-test.conllu": {
+    "block_types": {
+      "sent": 295
+    },
+    "counts": {
+      "copy": 5323,
+      "copy_losses": 1321,
+      "copy_wins": 787,
+      "full": 4789,
+      "lookup": 5559,
+      "rules_losses": 947,
+      "rules_wins": 177,
+      "tokens": 8018
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "heb",
+    "sentences_by_block_type": {
+      "sent": 295
+    },
+    "sha256": "d95be2095689d7f3e300fb2ae40fcba51bc83c02007a14697280bbb8d94f315e"
+  },
+  "UD_Highland_Puebla_Nahuatl-ITML/azz_itml-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "azz",
+    "sentences_by_block_type": {},
+    "sha256": "d9dbf6e05c885557b4303d7c470d343a7befd5bef0d9bd66aba4ae05dc88fc7f"
+  },
+  "UD_Hindi-HDTB/hi_hdtb-ud-test.conllu": {
+    "block_types": {
+      "sent": 1683
+    },
+    "counts": {
+      "copy": 25534,
+      "copy_losses": 14856,
+      "copy_wins": 2797,
+      "full": 13475,
+      "lookup": 27028,
+      "rules_losses": 14762,
+      "rules_wins": 1209,
+      "tokens": 35413
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "hin",
+    "sentences_by_block_type": {
+      "sent": 1683
+    },
+    "sha256": "ad5c21d8774847a3a0f5f4c1b85313222f8e5dda8874d6fde6880f9f46b02975"
+  },
+  "UD_Hindi-PUD/hi_pud-ud-test.conllu": {
+    "block_types": {
+      "doc": 397
+    },
+    "counts": {
+      "copy": 17320,
+      "copy_losses": 10027,
+      "copy_wins": 1764,
+      "full": 9057,
+      "lookup": 18145,
+      "rules_losses": 9955,
+      "rules_wins": 867,
+      "tokens": 23829
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "hin",
+    "sentences_by_block_type": {
+      "doc": 1000
+    },
+    "sha256": "3562b7f49420912acad70a45a483f683dcb44624ea92f82e21b29f2ee41a9dff"
+  },
+  "UD_Hittite-HitTB/hit_hittb-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "hit",
+    "sentences_by_block_type": {},
+    "sha256": "a55968a8a694503431cfceebf06fad3d2de6a509cc32f92f53710b58fa5fd019"
+  },
+  "UD_Hungarian-Szeged/hu_szeged-ud-test.conllu": {
+    "block_types": {
+      "sent": 449
+    },
+    "counts": {
+      "copy": 6905,
+      "copy_losses": 1302,
+      "copy_wins": 2272,
+      "full": 7875,
+      "lookup": 8231,
+      "rules_losses": 971,
+      "rules_wins": 615,
+      "tokens": 10446
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 2
+    },
+    "iso": "hun",
+    "sentences_by_block_type": {
+      "sent": 449
+    },
+    "sha256": "9031ec98f775ceae6940580a1bb4ef8a2a9e9bee38c40eb9e8ce0f006b56fa59"
+  },
+  "UD_Icelandic-GC/is_gc-ud-test.conllu": {
+    "block_types": {
+      "sent": 540
+    },
+    "counts": {
+      "copy": 5284,
+      "copy_losses": 2047,
+      "copy_wins": 1421,
+      "full": 4658,
+      "lookup": 5504,
+      "rules_losses": 1526,
+      "rules_wins": 680,
+      "tokens": 9704
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 645
+    },
+    "iso": "isl",
+    "sentences_by_block_type": {
+      "sent": 540
+    },
+    "sha256": "d7593fba5a12600417e392aafdb81cbe1ff588f86f5ed1ad0cf0f17b4bd0e0da"
+  },
+  "UD_Icelandic-IcePaHC/is_icepahc-ud-test.conllu": {
+    "block_types": {
+      "sent": 5150
+    },
+    "counts": {
+      "copy": 73931,
+      "copy_losses": 25122,
+      "copy_wins": 15230,
+      "full": 64039,
+      "lookup": 76100,
+      "rules_losses": 19225,
+      "rules_wins": 7164,
+      "tokens": 139674
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 7,
+      "unknown_lemmas_with_visible_form": 3
+    },
+    "iso": "isl",
+    "sentences_by_block_type": {
+      "sent": 5150
+    },
+    "sha256": "2b30b3d504f344ffc96b3e9433020b38b8305c301312a3aaf1710a5d88186b1f"
+  },
+  "UD_Icelandic-Modern/is_modern-ud-test.conllu": {
+    "block_types": {
+      "sent": 438
+    },
+    "counts": {
+      "copy": 5361,
+      "copy_losses": 2185,
+      "copy_wins": 1244,
+      "full": 4420,
+      "lookup": 5571,
+      "rules_losses": 1711,
+      "rules_wins": 560,
+      "tokens": 10147
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "isl",
+    "sentences_by_block_type": {
+      "sent": 438
+    },
+    "sha256": "d746fdc1c4ea1aea83e9136293aca2b57028e8fbb43229d3d57ba5cb4fcbc412"
+  },
+  "UD_Icelandic-PUD/is_pud-ud-test.conllu": {
+    "block_types": {
+      "doc": 397
+    },
+    "counts": {
+      "copy": 10611,
+      "copy_losses": 3526,
+      "copy_wins": 2605,
+      "full": 9690,
+      "lookup": 10901,
+      "rules_losses": 2578,
+      "rules_wins": 1367,
+      "tokens": 18833
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "isl",
+    "sentences_by_block_type": {
+      "doc": 1000
+    },
+    "sha256": "a024997a765ba1c5350f999a421b7faef43f7ebc0412b1378305ab7b91a8df52"
+  },
+  "UD_Ika-ChibErgIS/arh_chibergis-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "arh",
+    "sentences_by_block_type": {},
+    "sha256": "689ad44d92f5dfd2e39872179c7aa370df1691135ba1c24d075e285c696cdd2e"
+  },
+  "UD_Indonesian-CSUI/id_csui-ud-test.conllu": {
+    "block_types": {
+      "sent": 373
+    },
+    "counts": {
+      "copy": 8216,
+      "copy_losses": 187,
+      "copy_wins": 1440,
+      "full": 9469,
+      "lookup": 9469,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10007
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "source_text_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ind",
+    "sentences_by_block_type": {
+      "sent": 373
+    },
+    "sha256": "93800d74e254437e0219240770cdc18f99003f2993b7dae717358b524c8f474d"
+  },
+  "UD_Indonesian-GSD/id_gsd-ud-test.conllu": {
+    "block_types": {
+      "sent": 557
+    },
+    "counts": {
+      "copy": 7346,
+      "copy_losses": 208,
+      "copy_wins": 1116,
+      "full": 8254,
+      "lookup": 8254,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 11732
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 24
+    },
+    "iso": "ind",
+    "sentences_by_block_type": {
+      "sent": 557
+    },
+    "sha256": "155171c985bc04b12aa9dfa5704fa686a9fb8182cd2d1f42c3ede828e1502e70"
+  },
+  "UD_Indonesian-PUD/id_pud-ud-test.conllu": {
+    "block_types": {
+      "sent": 1000
+    },
+    "counts": {
+      "copy": 14419,
+      "copy_losses": 54,
+      "copy_wins": 2431,
+      "full": 16796,
+      "lookup": 16796,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 19443
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 3
+    },
+    "iso": "ind",
+    "sentences_by_block_type": {
+      "sent": 1000
+    },
+    "sha256": "07efad4d64863ab442aef820afdb34c269f80366c6efb583225f943e5baf88b2"
+  },
+  "UD_Irish-Cadhan/ga_cadhan-ud-test.conllu": {
+    "block_types": {
+      "doc": 1,
+      "sent": 150
+    },
+    "counts": {
+      "copy": 2291,
+      "copy_losses": 245,
+      "copy_wins": 105,
+      "full": 2151,
+      "lookup": 2300,
+      "rules_losses": 188,
+      "rules_wins": 39,
+      "tokens": 4783
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "gle",
+    "sentences_by_block_type": {
+      "doc": 43,
+      "sent": 150
+    },
+    "sha256": "0acb2f14db45c47149aaaed41a719813871ca62f54b6dea66b839671b515c48c"
+  },
+  "UD_Irish-IDT/ga_idt-ud-test.conllu": {
+    "block_types": {
+      "sent": 453
+    },
+    "counts": {
+      "copy": 6260,
+      "copy_losses": 838,
+      "copy_wins": 605,
+      "full": 6027,
+      "lookup": 6533,
+      "rules_losses": 663,
+      "rules_wins": 157,
+      "tokens": 10108
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "gle",
+    "sentences_by_block_type": {
+      "sent": 453
+    },
+    "sha256": "01aa878295cc5620e1843f27657112910d2ca402640c9afafe3ed65338610a98"
+  },
+  "UD_Irish-TwittIrish/ga_twittirish-ud-test.conllu": {
+    "block_types": {
+      "sent": 864
+    },
+    "counts": {
+      "copy": 10692,
+      "copy_losses": 1324,
+      "copy_wins": 679,
+      "full": 10047,
+      "lookup": 11069,
+      "rules_losses": 1133,
+      "rules_wins": 111,
+      "tokens": 15384
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 23
+    },
+    "iso": "gle",
+    "sentences_by_block_type": {
+      "sent": 864
+    },
+    "sha256": "cde47f3ee17432ad6180169dbad2aad88d07b1e6231bd98000f15c4384a3c3c9"
+  },
+  "UD_Italian-ISDT/it_isdt-ud-test.conllu": {
+    "block_types": {
+      "sent": 482
+    },
+    "counts": {
+      "copy": 6815,
+      "copy_losses": 3206,
+      "copy_wins": 560,
+      "full": 4169,
+      "lookup": 6754,
+      "rules_losses": 2691,
+      "rules_wins": 106,
+      "tokens": 10416
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "ita",
+    "sentences_by_block_type": {
+      "sent": 482
+    },
+    "sha256": "cea8ca0e8d1ddf7ce509f10afff426d00e058982f49473e0744cd0ee477129e3"
+  },
+  "UD_Italian-KIParlaForest/it_kiparlaforest-ud-test.conllu": {
+    "block_types": {
+      "sent": 1836
+    },
+    "counts": {
+      "copy": 11343,
+      "copy_losses": 6855,
+      "copy_wins": 1417,
+      "full": 5905,
+      "lookup": 11710,
+      "rules_losses": 6131,
+      "rules_wins": 326,
+      "tokens": 18201
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 385,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ita",
+    "sentences_by_block_type": {
+      "sent": 1836
+    },
+    "sha256": "b879a507c87706690f8039fa592dfffcdd5ddb8fcd4fbda379879a410785431b"
+  },
+  "UD_Italian-MarkIT/it_markit-ud-test.conllu": {
+    "block_types": {
+      "sent": 340
+    },
+    "counts": {
+      "copy": 5838,
+      "copy_losses": 3648,
+      "copy_wins": 550,
+      "full": 2740,
+      "lookup": 5857,
+      "rules_losses": 3197,
+      "rules_wins": 80,
+      "tokens": 10196
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ita",
+    "sentences_by_block_type": {
+      "sent": 340
+    },
+    "sha256": "9048ed0064e3989e2c37377755a28c25c7e462b1ad916e5808dc0a7ce95fc3fc"
+  },
+  "UD_Italian-Old/it_old-ud-test.conllu": {
+    "block_types": {
+      "sent": 337
+    },
+    "counts": {
+      "copy": 7108,
+      "copy_losses": 3189,
+      "copy_wins": 880,
+      "full": 4799,
+      "lookup": 7431,
+      "rules_losses": 2770,
+      "rules_wins": 138,
+      "tokens": 12140
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ita",
+    "sentences_by_block_type": {
+      "sent": 337
+    },
+    "sha256": "19dc1ecf5bfffd552130be63c3dab02d1dd9b9e6a6d4bc31ace0fe6494ebdf89"
+  },
+  "UD_Italian-PUD/it_pud-ud-test.conllu": {
+    "block_types": {
+      "doc": 397
+    },
+    "counts": {
+      "copy": 15511,
+      "copy_losses": 7080,
+      "copy_wins": 1455,
+      "full": 9886,
+      "lookup": 15484,
+      "rules_losses": 5879,
+      "rules_wins": 281,
+      "tokens": 23732
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ita",
+    "sentences_by_block_type": {
+      "doc": 1000
+    },
+    "sha256": "ad5d302bdfd05194155d9ad43dc54c3cb915076d66b3eb6ef33eca9a11f1372a"
+  },
+  "UD_Italian-ParTUT/it_partut-ud-test.conllu": {
+    "block_types": {
+      "sent": 85
+    },
+    "counts": {
+      "copy": 1214,
+      "copy_losses": 687,
+      "copy_wins": 90,
+      "full": 617,
+      "lookup": 1181,
+      "rules_losses": 582,
+      "rules_wins": 18,
+      "tokens": 1961
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 68,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ita",
+    "sentences_by_block_type": {
+      "sent": 85
+    },
+    "sha256": "6a3f3437fd3ab383ba37122ec84cc1bd53662512f5ff1e80ed306c6b668eb6a2"
+  },
+  "UD_Italian-ParlaMint/it_parlamint-ud-test.conllu": {
+    "block_types": {
+      "sent": 361
+    },
+    "counts": {
+      "copy": 6603,
+      "copy_losses": 3357,
+      "copy_wins": 625,
+      "full": 3871,
+      "lookup": 6737,
+      "rules_losses": 2954,
+      "rules_wins": 88,
+      "tokens": 10388
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 14,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ita",
+    "sentences_by_block_type": {
+      "sent": 361
+    },
+    "sha256": "aa0e0fc94683fef4d4ee73a387e747c31b1639c1123570b4a536174af2327229"
+  },
+  "UD_Italian-PoSTWITA/it_postwita-ud-test.conllu": {
+    "block_types": {
+      "sent": 674
+    },
+    "counts": {
+      "copy": 8561,
+      "copy_losses": 3712,
+      "copy_wins": 740,
+      "full": 5589,
+      "lookup": 8476,
+      "rules_losses": 3005,
+      "rules_wins": 118,
+      "tokens": 12674
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 2
+    },
+    "iso": "ita",
+    "sentences_by_block_type": {
+      "sent": 674
+    },
+    "sha256": "5db5e37ed8dc904595ac7d5bc3f746e6232a9fec0689948ffd17219c082a77c4"
+  },
+  "UD_Italian-TWITTIRO/it_twittiro-ud-test.conllu": {
+    "block_types": {
+      "sent": 89
+    },
+    "counts": {
+      "copy": 1269,
+      "copy_losses": 498,
+      "copy_wins": 111,
+      "full": 882,
+      "lookup": 1300,
+      "rules_losses": 432,
+      "rules_wins": 14,
+      "tokens": 1882
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 53,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "ita",
+    "sentences_by_block_type": {
+      "sent": 89
+    },
+    "sha256": "ae8560ce8471d20fda2e242dc45b3be7d2e0e8f0ccec323a7750fe7511f8b9d4"
+  },
+  "UD_Italian-VIT/it_vit-ud-test.conllu": {
+    "block_types": {
+      "sent": 1066
+    },
+    "counts": {
+      "copy": 17651,
+      "copy_losses": 8133,
+      "copy_wins": 1428,
+      "full": 10946,
+      "lookup": 17627,
+      "rules_losses": 6915,
+      "rules_wins": 234,
+      "tokens": 26334
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ita",
+    "sentences_by_block_type": {
+      "sent": 1066
+    },
+    "sha256": "1569c1c28727e1f99d8246c57b0ffa61ae0442747599051bfbd0e63d7081503f"
+  },
+  "UD_Italian-Valico/it_valico-ud-test.conllu": {
+    "block_types": {
+      "doc": 1
+    },
+    "counts": {
+      "copy": 4485,
+      "copy_losses": 2289,
+      "copy_wins": 632,
+      "full": 2828,
+      "lookup": 4644,
+      "rules_losses": 1987,
+      "rules_wins": 171,
+      "tokens": 6762
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 4,
+      "unknown_lemmas_with_visible_form": 8
+    },
+    "iso": "ita",
+    "sentences_by_block_type": {
+      "doc": 394
+    },
+    "sha256": "a9f026703c1f3321eeba060460a1dac9d49677a641a7f03e78bcf8103667815a"
+  },
+  "UD_Japanese-BCCWJ/ja_bccwj-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "masked_forms": 166859,
+      "no_scorable_words_sentences": 7881,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "jpn",
+    "sentences_by_block_type": {},
+    "sha256": "42bc7313281bf8f66d280242b340342115d336a1a686cae0cf04a38f8efb698e"
+  },
+  "UD_Japanese-BCCWJLUW/ja_bccwjluw-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "masked_forms": 134475,
+      "no_scorable_words_sentences": 7881,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "jpn",
+    "sentences_by_block_type": {},
+    "sha256": "4f422e1ae7d9de0fb45a8a08dd9beef4e139880a37f3a0ce38f5a2b2693490b1"
+  },
+  "UD_Japanese-GSD/ja_gsd-ud-test.conllu": {
+    "block_types": {
+      "doc": 543
+    },
+    "counts": {
+      "copy": 10245,
+      "copy_losses": 604,
+      "copy_wins": 46,
+      "full": 9687,
+      "lookup": 10190,
+      "rules_losses": 535,
+      "rules_wins": 32,
+      "tokens": 13034
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "jpn",
+    "sentences_by_block_type": {
+      "doc": 543
+    },
+    "sha256": "5f50ee6ed45c7ebda3787e593eaf5e9a225f25e53f6b4b32df778031862c843f"
+  },
+  "UD_Japanese-GSDLUW/ja_gsdluw-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "repeated_evaluation_sentences": 543
+    },
+    "iso": "jpn",
+    "sentences_by_block_type": {},
+    "sha256": "ece9979804365bac228003e859d976e48634f2f9b71dc771a2f07079e8e65659"
+  },
+  "UD_Japanese-PUD/ja_pud-ud-test.conllu": {
+    "block_types": {
+      "doc": 397
+    },
+    "counts": {
+      "copy": 23161,
+      "copy_losses": 1030,
+      "copy_wins": 24,
+      "full": 22155,
+      "lookup": 23017,
+      "rules_losses": 882,
+      "rules_wins": 20,
+      "tokens": 28786
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 2
+    },
+    "iso": "jpn",
+    "sentences_by_block_type": {
+      "doc": 1000
+    },
+    "sha256": "7ac51383189bdf5513102f9f8ac7ee1b967d5449f8c2dc1a9108fa21a8f1a688"
+  },
+  "UD_Japanese-PUDLUW/ja_pudluw-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "repeated_evaluation_sentences": 1000
+    },
+    "iso": "jpn",
+    "sentences_by_block_type": {},
+    "sha256": "f4cc4fa04184dba6e8c06263db2aa9db654abede243053adb63eb9faa8e4180c"
+  },
+  "UD_Javanese-CSUI/jv_csui-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "jav",
+    "sentences_by_block_type": {},
+    "sha256": "6dd63637c8a679de75524b98a95091f915e920a2149df678a6baa01fb6994967"
+  },
+  "UD_Kaapor-TuDeT/urb_tudet-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "urb",
+    "sentences_by_block_type": {},
+    "sha256": "cb169ddc3605a69b0bacdf907f45145da98f316278091f325cc5a5aa582638e7"
+  },
+  "UD_Kadiweu-Unicamp/kbc_unicamp-ud-test.conllu": {
+    "block_types": {
+      "sent": 70
+    },
+    "counts": {
+      "copy": 151,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 151,
+      "lookup": 151,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 314
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "kbc",
+    "sentences_by_block_type": {
+      "sent": 70
+    },
+    "sha256": "22d45847b3a6fae52a2336791e4ae7bcb74a1cef0080d26bbaa84f10e3001722"
+  },
+  "UD_Kangri-KDTB/xnr_kdtb-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "xnr",
+    "sentences_by_block_type": {},
+    "sha256": "f3a7657175560cf0c621811c9c7186731b15997ba19dc68d1a7d946f520faf6c"
+  },
+  "UD_Karelian-KKPP/krl_kkpp-ud-test.conllu": {
+    "block_types": {
+      "sent": 228
+    },
+    "counts": {
+      "copy": 1338,
+      "copy_losses": 215,
+      "copy_wins": 114,
+      "full": 1237,
+      "lookup": 1352,
+      "rules_losses": 215,
+      "rules_wins": 100,
+      "tokens": 3093
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "krl",
+    "sentences_by_block_type": {
+      "sent": 228
+    },
+    "sha256": "df72612b74d93dad19590855f59017547c4a2faafce1f060c455f66213da0520"
+  },
+  "UD_Karo-TuDeT/arr_tudet-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "arr",
+    "sentences_by_block_type": {},
+    "sha256": "67af0c64fa401b41aa97ce7bb03caaedf5e3babdfa0dc8ba51a8602a1159db8b"
+  },
+  "UD_Kazakh-KTB/kk_ktb-ud-test.conllu": {
+    "block_types": {
+      "sent": 1047
+    },
+    "counts": {
+      "copy": 5009,
+      "copy_losses": 750,
+      "copy_wins": 799,
+      "full": 5058,
+      "lookup": 5044,
+      "rules_losses": 749,
+      "rules_wins": 763,
+      "tokens": 10007
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "kaz",
+    "sentences_by_block_type": {
+      "sent": 1047
+    },
+    "sha256": "1100846ee50c2f970562a21dca8415a381c470ea06bdb8496ae213d59c3a3c4e"
+  },
+  "UD_Khoekhoe-KDT/naq_kdt-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "naq",
+    "sentences_by_block_type": {},
+    "sha256": "8ce192f87f99654689e6e68fd7822946aa1e932a1f4c931051b27a3e83661f2a"
+  },
+  "UD_Kiche-IU/quc_iu-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "quc",
+    "sentences_by_block_type": {},
+    "sha256": "b95afdd239bcb05520b01784fc20d115682a6a9d2d8e9b99aecd1daebfe13d19"
+  },
+  "UD_Komi_Permyak-UH/koi_uh-ud-test.conllu": {
+    "block_types": {
+      "sent": 105
+    },
+    "counts": {
+      "copy": 501,
+      "copy_losses": 0,
+      "copy_wins": 43,
+      "full": 544,
+      "lookup": 544,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 898
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "koi",
+    "sentences_by_block_type": {
+      "sent": 105
+    },
+    "sha256": "e712e8d722925e72b87c7e4b4ef1221296a36f285dc6801c4d404f0d97f75335"
+  },
+  "UD_Komi_Zyrian-IKDP/kpv_ikdp-ud-test.conllu": {
+    "block_types": {
+      "sent": 214
+    },
+    "counts": {
+      "copy": 1260,
+      "copy_losses": 0,
+      "copy_wins": 63,
+      "full": 1323,
+      "lookup": 1323,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 2309
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "kpv",
+    "sentences_by_block_type": {
+      "sent": 214
+    },
+    "sha256": "7bbf4167697614b1089eb2ee4a086da276f5f0256cc7a3e012e95c53f869450e"
+  },
+  "UD_Komi_Zyrian-Lattice/kpv_lattice-ud-test.conllu": {
+    "block_types": {
+      "sent": 651
+    },
+    "counts": {
+      "copy": 4571,
+      "copy_losses": 4,
+      "copy_wins": 231,
+      "full": 4798,
+      "lookup": 4798,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 8016
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 5
+    },
+    "iso": "kpv",
+    "sentences_by_block_type": {
+      "sent": 651
+    },
+    "sha256": "4ddb1105ad0c14e25ee253f74dc625cf67163f775cbce9ebba37317ed570c3c4"
+  },
+  "UD_Korean-GSD/ko_gsd-ud-test.conllu": {
+    "block_types": {
+      "sent": 961
+    },
+    "counts": {
+      "copy": 4468,
+      "copy_losses": 86,
+      "copy_wins": 2931,
+      "full": 7313,
+      "lookup": 7313,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 11348
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 28,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "kor",
+    "sentences_by_block_type": {
+      "sent": 961
+    },
+    "sha256": "3d1df99bda4800235e14bcfd915baf706eafa1a3935a75ffd32420a51e57f5aa"
+  },
+  "UD_Korean-KSL/ko_ksl-ud-test.conllu": {
+    "block_types": {
+      "sent": 1795
+    },
+    "counts": {
+      "copy": 5094,
+      "copy_losses": 138,
+      "copy_wins": 6158,
+      "full": 11114,
+      "lookup": 11114,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 16167
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 18,
+      "unknown_lemmas_with_visible_form": 32
+    },
+    "iso": "kor",
+    "sentences_by_block_type": {
+      "sent": 1795
+    },
+    "sha256": "62574d11b83f62217494a53fd2a7cbf75b7fc3fe5df74021a91e66df65149033"
+  },
+  "UD_Korean-Kaist/ko_kaist-ud-test.conllu": {
+    "block_types": {
+      "sent": 2285
+    },
+    "counts": {
+      "copy": 8700,
+      "copy_losses": 132,
+      "copy_wins": 11556,
+      "full": 20124,
+      "lookup": 20124,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 28352
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "source_text_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "kor",
+    "sentences_by_block_type": {
+      "sent": 2285
+    },
+    "sha256": "fd94dc89afb01d1f7f340a46d567e0f27ae6903a70d7b6f650b49f7427f83b97"
+  },
+  "UD_Korean-LittlePrince/ko_littleprince-ud-test.conllu": {
+    "block_types": {
+      "sent": 1466
+    },
+    "counts": {
+      "copy": 2843,
+      "copy_losses": 25,
+      "copy_wins": 38,
+      "full": 2856,
+      "lookup": 2856,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10685
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 81,
+      "source_text_sentences": 4,
+      "unknown_lemmas_with_visible_form": 2633
+    },
+    "iso": "kor",
+    "sentences_by_block_type": {
+      "sent": 1466
+    },
+    "sha256": "3539a9002a74fd66759009bd9b5135fcc7b07ea821cea194fb25e31b5c73a81d"
+  },
+  "UD_Korean-PUD/ko_pud-ud-test.conllu": {
+    "block_types": {
+      "sent": 1000
+    },
+    "counts": {
+      "copy": 2493,
+      "copy_losses": 8,
+      "copy_wins": 448,
+      "full": 2933,
+      "lookup": 2933,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 7918
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 8666
+    },
+    "iso": "kor",
+    "sentences_by_block_type": {
+      "sent": 1000
+    },
+    "sha256": "55f9c8d465400e070664c5319091d31ce35a16ec220b0bebc5e3c9b12f530948"
+  },
+  "UD_Kyrgyz-KTMU/ky_ktmu-ud-test.conllu": {
+    "block_types": {
+      "sent": 1124
+    },
+    "counts": {
+      "copy": 5389,
+      "copy_losses": 165,
+      "copy_wins": 2512,
+      "full": 7736,
+      "lookup": 7736,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10840
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 8,
+      "source_text_sentences": 90,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "kir",
+    "sentences_by_block_type": {
+      "sent": 1124
+    },
+    "sha256": "843061f0ad2204d5d65ee77edf2e576fa54887415ec8e1bb0cd928fd7b23877b"
+  },
+  "UD_Kyrgyz-TueCL/ky_tuecl-ud-test.conllu": {
+    "block_types": {
+      "sent": 161
+    },
+    "counts": {
+      "copy": 557,
+      "copy_losses": 7,
+      "copy_wins": 141,
+      "full": 691,
+      "lookup": 691,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 1164
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 10,
+      "source_text_sentences": 2,
+      "unknown_lemmas_with_visible_form": 5
+    },
+    "iso": "kir",
+    "sentences_by_block_type": {
+      "sent": 161
+    },
+    "sha256": "08224be6b74346f582234f54527412dd6265c8d8b42e7d6ef463aade85bdcd9b"
+  },
+  "UD_Latin-CIRCSE/la_circse-ud-test.conllu": {
+    "block_types": {
+      "sent": 889
+    },
+    "counts": {
+      "copy": 3978,
+      "copy_losses": 1793,
+      "copy_wins": 1239,
+      "full": 3424,
+      "lookup": 4648,
+      "rules_losses": 1692,
+      "rules_wins": 468,
+      "tokens": 11495
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 4,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "lat",
+    "sentences_by_block_type": {
+      "sent": 889
+    },
+    "sha256": "51be34d895fcc372c04a44bba20fbec9463c76fc1e3297b0a7acd4262cbfe4b5"
+  },
+  "UD_Latin-ITTB/la_ittb-ud-test.conllu": {
+    "block_types": {
+      "sent": 1879
+    },
+    "counts": {
+      "copy": 15222,
+      "copy_losses": 5833,
+      "copy_wins": 2018,
+      "full": 11407,
+      "lookup": 15990,
+      "rules_losses": 5688,
+      "rules_wins": 1105,
+      "tokens": 29337
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 222,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "lat",
+    "sentences_by_block_type": {
+      "sent": 1879
+    },
+    "sha256": "b25d8f12a7f483ff6152ce3b3724aabafffc1336103526229c919808f9de5f1e"
+  },
+  "UD_Latin-LLCT/la_llct-ud-test.conllu": {
+    "block_types": {
+      "sent": 747
+    },
+    "counts": {
+      "copy": 9632,
+      "copy_losses": 3583,
+      "copy_wins": 1377,
+      "full": 7426,
+      "lookup": 9992,
+      "rules_losses": 3459,
+      "rules_wins": 893,
+      "tokens": 22972
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 137,
+      "unknown_lemmas_with_visible_form": 31
+    },
+    "iso": "lat",
+    "sentences_by_block_type": {
+      "sent": 747
+    },
+    "sha256": "81d9f57de66d83303ad4df54a60cd445ac089b50070d369831a632b4cf948e64"
+  },
+  "UD_Latin-PROIEL/la_proiel-ud-test.conllu": {
+    "block_types": {
+      "sent": 1236
+    },
+    "counts": {
+      "copy": 5533,
+      "copy_losses": 3433,
+      "copy_wins": 1139,
+      "full": 3239,
+      "lookup": 5990,
+      "rules_losses": 3295,
+      "rules_wins": 544,
+      "tokens": 14005
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 24,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "lat",
+    "sentences_by_block_type": {
+      "sent": 1236
+    },
+    "sha256": "35be241f1b5b47b66c2f222c611dfa80cd0ed9ec2e621fe352e8d4a1875183b4"
+  },
+  "UD_Latin-Perseus/la_perseus-ud-test.conllu": {
+    "block_types": {
+      "doc": 4
+    },
+    "counts": {
+      "copy": 4646,
+      "copy_losses": 1499,
+      "copy_wins": 998,
+      "full": 4145,
+      "lookup": 5220,
+      "rules_losses": 1455,
+      "rules_wins": 380,
+      "tokens": 10953
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 4,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "lat",
+    "sentences_by_block_type": {
+      "doc": 935
+    },
+    "sha256": "e0e53fdcc8040a2a6d3b6e7b5dfa69fa35d355ce11cae0682b61e6848745d386"
+  },
+  "UD_Latin-UDante/la_udante-ud-test.conllu": {
+    "block_types": {
+      "sent": 421
+    },
+    "counts": {
+      "copy": 5858,
+      "copy_losses": 2489,
+      "copy_wins": 697,
+      "full": 4066,
+      "lookup": 6111,
+      "rules_losses": 2343,
+      "rules_wins": 298,
+      "tokens": 13474
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "lat",
+    "sentences_by_block_type": {
+      "sent": 421
+    },
+    "sha256": "e9eee3bf19b3ff847f4bbd62e173f18b1a36279907fd62456b23f89e43774682"
+  },
+  "UD_Latvian-Cairo/lv_cairo-ud-test.conllu": {
+    "block_types": {
+      "doc": 1
+    },
+    "counts": {
+      "copy": 81,
+      "copy_losses": 26,
+      "copy_wins": 37,
+      "full": 92,
+      "lookup": 105,
+      "rules_losses": 25,
+      "rules_wins": 12,
+      "tokens": 168
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "lav",
+    "sentences_by_block_type": {
+      "doc": 20
+    },
+    "sha256": "3ea46f1ea2ee587913458fe8d90ef390367d48f2cc05adf5d861a8826b5b29fd"
+  },
+  "UD_Latvian-LVTB/lv_lvtb-ud-test.conllu": {
+    "block_types": {
+      "doc": 276
+    },
+    "counts": {
+      "copy": 17701,
+      "copy_losses": 7042,
+      "copy_wins": 10472,
+      "full": 21131,
+      "lookup": 22316,
+      "rules_losses": 6262,
+      "rules_wins": 5077,
+      "tokens": 37272
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 9,
+      "unknown_lemmas_with_visible_form": 19
+    },
+    "iso": "lav",
+    "sentences_by_block_type": {
+      "doc": 2403
+    },
+    "sha256": "4237279f832058659ed8494af13239f7efe25058919bc0f5d84050ef47f1968d"
+  },
+  "UD_Ligurian-GLT/lij_glt-ud-test.conllu": {
+    "block_types": {
+      "doc": 11
+    },
+    "counts": {
+      "copy": 4442,
+      "copy_losses": 146,
+      "copy_wins": 158,
+      "full": 4454,
+      "lookup": 4454,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 6700
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "lij",
+    "sentences_by_block_type": {
+      "doc": 295
+    },
+    "sha256": "54cb0ff01074cf8d74a753f5db237db970ed3eef39e7bd28deed09d702a01f73"
+  },
+  "UD_Lithuanian-ALKSNIS/lt_alksnis-ud-test.conllu": {
+    "block_types": {
+      "doc": 19
+    },
+    "counts": {
+      "copy": 5098,
+      "copy_losses": 1350,
+      "copy_wins": 2408,
+      "full": 6156,
+      "lookup": 5615,
+      "rules_losses": 1313,
+      "rules_wins": 1854,
+      "tokens": 10812
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 7,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "lit",
+    "sentences_by_block_type": {
+      "doc": 677
+    },
+    "sha256": "5992220412e2aa5090551d77e5b6abee97cdae2653de098f73c630731efd10fa"
+  },
+  "UD_Lithuanian-HSE/lt_hse-ud-test.conllu": {
+    "block_types": {
+      "doc": 1,
+      "sent": 17
+    },
+    "counts": {
+      "copy": 510,
+      "copy_losses": 137,
+      "copy_wins": 243,
+      "full": 616,
+      "lookup": 559,
+      "rules_losses": 136,
+      "rules_wins": 193,
+      "tokens": 1060
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "lit",
+    "sentences_by_block_type": {
+      "doc": 38,
+      "sent": 17
+    },
+    "sha256": "8d07e08164817c3eebc38864c5a482839c3e71e8fad5ed65faa7f730f42de82c"
+  },
+  "UD_Livvi-KKPP/olo_kkpp-ud-test.conllu": {
+    "block_types": {
+      "sent": 106
+    },
+    "counts": {
+      "copy": 694,
+      "copy_losses": 124,
+      "copy_wins": 502,
+      "full": 1072,
+      "lookup": 1139,
+      "rules_losses": 93,
+      "rules_wins": 26,
+      "tokens": 1485
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 3
+    },
+    "iso": "olo",
+    "sentences_by_block_type": {
+      "sent": 106
+    },
+    "sha256": "5b63123ba5b1867a7c7d1475f7272313c09d0d4ecfe019f95019416294679cd5"
+  },
+  "UD_Low_Saxon-LSDC/nds_lsdc-ud-test.conllu": {
+    "block_types": {
+      "sent": 500
+    },
+    "counts": {
+      "copy": 6761,
+      "copy_losses": 2729,
+      "copy_wins": 156,
+      "full": 4188,
+      "lookup": 6702,
+      "rules_losses": 2635,
+      "rules_wins": 121,
+      "tokens": 10966
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 7
+    },
+    "iso": "nds",
+    "sentences_by_block_type": {
+      "sent": 500
+    },
+    "sha256": "d70988ab7d03d77b7ce25bfc197758a2b965091299d7c17b3eff4df9301343ac"
+  },
+  "UD_Macedonian-MTB/mk_mtb-ud-test.conllu": {
+    "block_types": {
+      "doc": 2
+    },
+    "counts": {
+      "copy": 885,
+      "copy_losses": 355,
+      "copy_wins": 293,
+      "full": 823,
+      "lookup": 999,
+      "rules_losses": 227,
+      "rules_wins": 51,
+      "tokens": 1343
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "mkd",
+    "sentences_by_block_type": {
+      "doc": 153
+    },
+    "sha256": "93219e9c20d85ad98fcdbb9df398d33489c865bed7388ac9e712446d8d671b05"
+  },
+  "UD_Maghrebi_Arabic_French-Arabizi/qaf_arabizi-ud-test.conllu": {
+    "block_types": {
+      "sent": 144
+    },
+    "counts": {
+      "copy": 468,
+      "copy_losses": 14,
+      "copy_wins": 542,
+      "full": 996,
+      "lookup": 996,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 2162
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "source_text_sentences": 1,
+      "unknown_lemmas_with_visible_form": 10
+    },
+    "iso": "qaf",
+    "sentences_by_block_type": {
+      "sent": 144
+    },
+    "sha256": "87e10a957d770e1bc30dc021bcda49fbe4e2a2d245463f595c147e7164923432"
+  },
+  "UD_Malayalam-UFAL/ml_ufal-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "mal",
+    "sentences_by_block_type": {},
+    "sha256": "cf7d726146e0fa3910436462e776c0ddc1fb562a49deb9a447d3b199fb682a9e"
+  },
+  "UD_Manx-Cadhan/gv_cadhan-ud-test.conllu": {
+    "block_types": {
+      "sent": 1147
+    },
+    "counts": {
+      "copy": 7478,
+      "copy_losses": 26,
+      "copy_wins": 2100,
+      "full": 9552,
+      "lookup": 9552,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10252
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "source_text_sentences": 17,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "glv",
+    "sentences_by_block_type": {
+      "sent": 1147
+    },
+    "sha256": "85ad944d7bd69ec56cd41b1a50521bb452d7672f2168cb77dbc0fa56adf72e87"
+  },
+  "UD_Marathi-CMUPAN/mr_cmupan-ud-test.conllu": {
+    "block_types": {
+      "sent": 994
+    },
+    "counts": {
+      "copy": 7022,
+      "copy_losses": 113,
+      "copy_wins": 3190,
+      "full": 10099,
+      "lookup": 10099,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 12291
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 4,
+      "source_text_sentences": 5,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "mar",
+    "sentences_by_block_type": {
+      "sent": 994
+    },
+    "sha256": "57f1bac6c2b07da3f8b7366dcbd98e66a8935546257444477c9c9f13a82bd010"
+  },
+  "UD_Marathi-UFAL/mr_ufal-ud-test.conllu": {
+    "block_types": {
+      "sent": 47
+    },
+    "counts": {
+      "copy": 223,
+      "copy_losses": 10,
+      "copy_wins": 68,
+      "full": 281,
+      "lookup": 281,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 412
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "mar",
+    "sentences_by_block_type": {
+      "sent": 47
+    },
+    "sha256": "fa70d27491912b156a26908a885e6120fd478b8a08bd189e05b3ab205d0bad25"
+  },
+  "UD_Mbya_Guarani-Thomas/gun_thomas-ud-test.conllu": {
+    "block_types": {
+      "sent": 98
+    },
+    "counts": {
+      "copy": 792,
+      "copy_losses": 0,
+      "copy_wins": 27,
+      "full": 819,
+      "lookup": 819,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 1318
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "gun",
+    "sentences_by_block_type": {
+      "sent": 98
+    },
+    "sha256": "9672b1d28481885175f6307192530e7dfaa8d627d22f7aafd7fb4656e572d0fc"
+  },
+  "UD_Middle_Armenian-ArmTDP/axm_armtdp-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "axm",
+    "sentences_by_block_type": {},
+    "sha256": "4eaefe59fd9f8ba68151bf7321850bac0ee37a95e771bfd5526e9012bb936f39"
+  },
+  "UD_Middle_French-ALTM/frm_altm-ud-test.conllu": {
+    "block_types": {
+      "sent": 217
+    },
+    "counts": {
+      "copy": 4016,
+      "copy_losses": 1819,
+      "copy_wins": 226,
+      "full": 2423,
+      "lookup": 4174,
+      "rules_losses": 1807,
+      "rules_wins": 56,
+      "tokens": 7084
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "frm",
+    "sentences_by_block_type": {
+      "sent": 217
+    },
+    "sha256": "9e0a1b48726dfe8ec15cbf98068bbcb1cd3610fcfe14f07b2eb1fc1aa4397fe1"
+  },
+  "UD_Middle_French-PROFITEROLE/frm_profiterole-ud-test.conllu": {
+    "block_types": {
+      "sent": 690
+    },
+    "counts": {
+      "copy": 6001,
+      "copy_losses": 2938,
+      "copy_wins": 456,
+      "full": 3519,
+      "lookup": 6319,
+      "rules_losses": 2896,
+      "rules_wins": 96,
+      "tokens": 13586
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "no_scorable_words_sentences": 216,
+      "unknown_lemmas_with_visible_form": 4686
+    },
+    "iso": "frm",
+    "sentences_by_block_type": {
+      "sent": 690
+    },
+    "sha256": "aaba99a3f8ca81ed8638e80fec76d1a5c8841ebe4bba11f2a78810bc049269d5"
+  },
+  "UD_Moksha-JR/mdf_jr-ud-test.conllu": {
+    "block_types": {
+      "sent": 465
+    },
+    "counts": {
+      "copy": 2146,
+      "copy_losses": 2,
+      "copy_wins": 153,
+      "full": 2297,
+      "lookup": 2297,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 4305
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 3,
+      "unknown_lemmas_with_visible_form": 3
+    },
+    "iso": "mdf",
+    "sentences_by_block_type": {
+      "sent": 465
+    },
+    "sha256": "55e7fb77447ddd77494f45a988ce24c925681e973e95658cbdef80b3f1976a30"
+  },
+  "UD_Munduruku-TuDeT/myu_tudet-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "myu",
+    "sentences_by_block_type": {},
+    "sha256": "be065df80a7c073145300309458d758b1a25f69dbf25cc50553b559c942c6ad7"
+  },
+  "UD_Naga-Suansu/nmf_suansu-ud-test.conllu": {
+    "block_types": {
+      "doc": 3
+    },
+    "counts": {
+      "copy": 1630,
+      "copy_losses": 1,
+      "copy_wins": 159,
+      "full": 1788,
+      "lookup": 1788,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 2931
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "no_scorable_words_sentences": 1,
+      "repeated_evaluation_sentences": 14,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "nmf",
+    "sentences_by_block_type": {
+      "doc": 549
+    },
+    "sha256": "0ba6481fad37aca8bd972b507283158897d6f70762eabb3daf58d332332452d1"
+  },
+  "UD_Naija-NSC/pcm_nsc-ud-test.conllu": {
+    "block_types": {
+      "sent": 918
+    },
+    "counts": {
+      "copy": 13331,
+      "copy_losses": 32,
+      "copy_wins": 678,
+      "full": 13977,
+      "lookup": 13977,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 14187
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 9,
+      "source_text_sentences": 45,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "pcm",
+    "sentences_by_block_type": {
+      "sent": 918
+    },
+    "sha256": "59bb428a3435ed09f4e9cf9738d47875ba89f16f7fcd4f48d33b264c3e74bad9"
+  },
+  "UD_Nenets-Tundra/yrk_tundra-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "yrk",
+    "sentences_by_block_type": {},
+    "sha256": "4eeaed90a6162b75ef7405254fb2d000b6ffa42061b9f12842d473f24b558720"
+  },
+  "UD_Nepali-BK/ne_bk-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "nep",
+    "sentences_by_block_type": {},
+    "sha256": "118d6bf0213f2dbca84557e4d213e9b20ddbf45b4d8a5ae74eedbc54779387e2"
+  },
+  "UD_Nheengatu-CompLin/yrl_complin-ud-test.conllu": {
+    "block_types": {
+      "sent": 1027
+    },
+    "counts": {
+      "copy": 6767,
+      "copy_losses": 3,
+      "copy_wins": 587,
+      "full": 7351,
+      "lookup": 7351,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 9898
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 16,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "yrl",
+    "sentences_by_block_type": {
+      "sent": 1027
+    },
+    "sha256": "d2698f0f124c99bcdf86dce781d43d34f11221266da40564076622fc57f32f82"
+  },
+  "UD_North_Sami-Giella/sme_giella-ud-test.conllu": {
+    "block_types": {
+      "sent": 862
+    },
+    "counts": {
+      "copy": 4739,
+      "copy_losses": 1561,
+      "copy_wins": 2168,
+      "full": 5346,
+      "lookup": 6001,
+      "rules_losses": 1450,
+      "rules_wins": 795,
+      "tokens": 9971
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 3,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "sme",
+    "sentences_by_block_type": {
+      "sent": 862
+    },
+    "sha256": "b276ad5df5cad1b11412cbab1d89a8bf6e3983cddcf3c62140912c0a0bde0ecc"
+  },
+  "UD_Northern_Kurdish-Kurmanji/kmr_kurmanji-ud-test.conllu": {
+    "block_types": {
+      "sent": 734
+    },
+    "counts": {
+      "copy": 5276,
+      "copy_losses": 47,
+      "copy_wins": 830,
+      "full": 6059,
+      "lookup": 6059,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 9963
+    },
+    "excluded": {
+      "masked_forms": 54,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "kmr",
+    "sentences_by_block_type": {
+      "sent": 734
+    },
+    "sha256": "db9501d607afa1480f958558823e733568ce6b10696de80b7c6cbc408827467a"
+  },
+  "UD_Northwest_Gbaya-Autogramm/gya_autogramm-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "gya",
+    "sentences_by_block_type": {},
+    "sha256": "a7635c03ab95314b69eeff4aac4e7148e442823ffd49a204eb3fb5b4a61e62f0"
+  },
+  "UD_Norwegian-Bokmaal/no_bokmaal-ud-test.conllu": {
+    "block_types": {
+      "sent": 1927
+    },
+    "counts": {
+      "copy": 15875,
+      "copy_losses": 279,
+      "copy_wins": 4035,
+      "full": 19631,
+      "lookup": 19631,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 29931
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 4,
+      "source_text_sentences": 8,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "nor",
+    "sentences_by_block_type": {
+      "sent": 1927
+    },
+    "sha256": "b45e4809d38ea560f0b164023b0f4c6d8f0d7731f66c4df129917bb06d1676f8"
+  },
+  "UD_Norwegian-Nynorsk/no_nynorsk-ud-test.conllu": {
+    "block_types": {
+      "sent": 1488
+    },
+    "counts": {
+      "copy": 13327,
+      "copy_losses": 218,
+      "copy_wins": 7336,
+      "full": 20445,
+      "lookup": 20445,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 24709
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 7,
+      "source_text_sentences": 16,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "nor",
+    "sentences_by_block_type": {
+      "sent": 1488
+    },
+    "sha256": "d005008ca04a764e77791b0aa8da982e9a41ceef4303b71e30c304f5ffc7342f"
+  },
+  "UD_Occitan-TTB/oc_ttb-ud-test.conllu": {
+    "block_types": {
+      "sent": 604
+    },
+    "counts": {
+      "copy": 6446,
+      "copy_losses": 51,
+      "copy_wins": 951,
+      "full": 7346,
+      "lookup": 7346,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 9976
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 9,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "oci",
+    "sentences_by_block_type": {
+      "sent": 604
+    },
+    "sha256": "17c621e7740b190363d9ca007d9faacd374f915c40e5e26709e26179c438dad8"
+  },
+  "UD_Odia-ODTB/or_odtb-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "ori",
+    "sentences_by_block_type": {},
+    "sha256": "05bfe6833a3d1ba0edae8ca99611b216c7227234c84c06337f5da3947c6d95f4"
+  },
+  "UD_Old_Church_Slavonic-PROIEL/cu_proiel-ud-test.conllu": {
+    "block_types": {
+      "sent": 2067
+    },
+    "counts": {
+      "copy": 4432,
+      "copy_losses": 1799,
+      "copy_wins": 712,
+      "full": 3345,
+      "lookup": 4651,
+      "rules_losses": 1783,
+      "rules_wins": 477,
+      "tokens": 20075
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 29,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "chu",
+    "sentences_by_block_type": {
+      "sent": 2067
+    },
+    "sha256": "1f2c2e078a498594b1d1efb4816390ebb543c46d8b97f0d4694c8399f8b45828"
+  },
+  "UD_Old_East_Slavic-Birchbark/orv_birchbark-ud-test.conllu": {
+    "block_types": {
+      "doc": 274
+    },
+    "counts": {
+      "copy": 3555,
+      "copy_losses": 204,
+      "copy_wins": 811,
+      "full": 4162,
+      "lookup": 4162,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10011
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 5
+    },
+    "iso": "orv",
+    "sentences_by_block_type": {
+      "doc": 1008
+    },
+    "sha256": "6c35cd8763c93eb940315eb65b233d1b10fb11d50dd19da3467d5947b439d259"
+  },
+  "UD_Old_East_Slavic-RNC/orv_rnc-ud-test.conllu": {
+    "block_types": {
+      "doc": 26
+    },
+    "counts": {
+      "copy": 11372,
+      "copy_losses": 221,
+      "copy_wins": 5485,
+      "full": 16636,
+      "lookup": 16636,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 28033
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 23,
+      "unknown_lemmas_with_visible_form": 32
+    },
+    "iso": "orv",
+    "sentences_by_block_type": {
+      "doc": 883
+    },
+    "sha256": "a7bd85424134f2e7dd5cf608adcce9ef1501ba9ee38d73a56bcc803b8b716041"
+  },
+  "UD_Old_East_Slavic-Ruthenian/orv_ruthenian-ud-test.conllu": {
+    "block_types": {
+      "doc": 30,
+      "sent": 45
+    },
+    "counts": {
+      "copy": 4118,
+      "copy_losses": 11,
+      "copy_wins": 3085,
+      "full": 7192,
+      "lookup": 7192,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10008
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "orv",
+    "sentences_by_block_type": {
+      "doc": 344,
+      "sent": 45
+    },
+    "sha256": "f34964cee7d6a38b3dd39ceb4dbde38a4fd9aacd8512272c19318027e044ea0d"
+  },
+  "UD_Old_East_Slavic-TOROT/orv_torot-ud-test.conllu": {
+    "block_types": {
+      "sent": 2923
+    },
+    "counts": {
+      "copy": 7988,
+      "copy_losses": 363,
+      "copy_wins": 2537,
+      "full": 10162,
+      "lookup": 10162,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 27794
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 32,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "orv",
+    "sentences_by_block_type": {
+      "sent": 2923
+    },
+    "sha256": "db87b2ba6dd6ccaef5db385fe562d673010d91b66b5163289ad3cbc538ee0479"
+  },
+  "UD_Old_French-ALTM/fro_altm-ud-test.conllu": {
+    "block_types": {
+      "sent": 549
+    },
+    "counts": {
+      "copy": 7669,
+      "copy_losses": 5044,
+      "copy_wins": 621,
+      "full": 3246,
+      "lookup": 7417,
+      "rules_losses": 4241,
+      "rules_wins": 70,
+      "tokens": 15257
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 4,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "fro",
+    "sentences_by_block_type": {
+      "sent": 549
+    },
+    "sha256": "d628cf9e584693fd20f00c2d265060bc77ef32c44282d4ba8009841f9cb8dfaf"
+  },
+  "UD_Old_French-PROFITEROLE/fro_profiterole-ud-test.conllu": {
+    "block_types": {
+      "doc": 4
+    },
+    "counts": {
+      "copy": 3507,
+      "copy_losses": 1806,
+      "copy_wins": 531,
+      "full": 2232,
+      "lookup": 3742,
+      "rules_losses": 1553,
+      "rules_wins": 43,
+      "tokens": 11417
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "no_scorable_words_sentences": 1148,
+      "repeated_evaluation_sentences": 33,
+      "unknown_lemmas_with_visible_form": 13650
+    },
+    "iso": "fro",
+    "sentences_by_block_type": {
+      "doc": 1071
+    },
+    "sha256": "0f55fec2f8c13a32747a9be9b10688e5d0ae8d53a13ab4f381ec459d531e2319"
+  },
+  "UD_Old_Georgian-GLC/oge_glc-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "oge",
+    "sentences_by_block_type": {},
+    "sha256": "29a8e5c34f83460d021f417853983187b864c9cd3c83a12db7bec391e5fd73eb"
+  },
+  "UD_Old_Irish-DipSGG/sga_dipsgg-ud-test.conllu": {
+    "block_types": {
+      "sent": 63
+    },
+    "counts": {
+      "copy": 162,
+      "copy_losses": 52,
+      "copy_wins": 6,
+      "full": 116,
+      "lookup": 165,
+      "rules_losses": 52,
+      "rules_wins": 3,
+      "tokens": 390
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 26
+    },
+    "iso": "sga",
+    "sentences_by_block_type": {
+      "sent": 63
+    },
+    "sha256": "0eaf7cb819c15935557859d84bf50300ce8622478b299924f00bdbc419b6b64f"
+  },
+  "UD_Old_Irish-DipWBG/sga_dipwbg-ud-test.conllu": {
+    "block_types": {
+      "sent": 34
+    },
+    "counts": {
+      "copy": 189,
+      "copy_losses": 53,
+      "copy_wins": 15,
+      "full": 151,
+      "lookup": 195,
+      "rules_losses": 47,
+      "rules_wins": 3,
+      "tokens": 428
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 10
+    },
+    "iso": "sga",
+    "sentences_by_block_type": {
+      "sent": 34
+    },
+    "sha256": "f04fd8e44c60be16b68f8ced77cbcd34a304f5986671c48f10e92ad6b9ac161a"
+  },
+  "UD_Old_Occitan-CorAG/pro_corag-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "no_scorable_words_sentences": 276,
+      "unknown_lemmas_with_visible_form": 10208
+    },
+    "iso": "pro",
+    "sentences_by_block_type": {},
+    "sha256": "8dcefd909fce660b618e8b93fa43aeba4bb4f1e1b0d9140a3d7c45eb09e8d414"
+  },
+  "UD_Ottoman_Turkish-BOUN/ota_boun-ud-test.conllu": {
+    "block_types": {
+      "sent": 400
+    },
+    "counts": {
+      "copy": 3584,
+      "copy_losses": 14,
+      "copy_wins": 360,
+      "full": 3930,
+      "lookup": 3930,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 6849
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 5
+    },
+    "iso": "ota",
+    "sentences_by_block_type": {
+      "sent": 400
+    },
+    "sha256": "361a24fcf6103e4e7cddd02aea78ac79920dd0da857c1fbbe54f50326a9be36c"
+  },
+  "UD_Ottoman_Turkish-DUDU/ota_dudu-ud-test.conllu": {
+    "block_types": {
+      "sent": 1008
+    },
+    "counts": {
+      "copy": 4742,
+      "copy_losses": 20,
+      "copy_wins": 2699,
+      "full": 7421,
+      "lookup": 7421,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10005
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ota",
+    "sentences_by_block_type": {
+      "sent": 1008
+    },
+    "sha256": "34464bb054f04133f8e4c955e4924a6d6fbba8951582cc8275e38d8d021008e4"
+  },
+  "UD_Ottoman_Turkish-TueCL/ota_tuecl-ud-test.conllu": {
+    "block_types": {
+      "sent": 147
+    },
+    "counts": {
+      "copy": 466,
+      "copy_losses": 1,
+      "copy_wins": 150,
+      "full": 615,
+      "lookup": 615,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 927
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ota",
+    "sentences_by_block_type": {
+      "sent": 147
+    },
+    "sha256": "1b9ef35117edd9b93dfad7a3db761ef952a216b9c2952f22f8b25a292b40549c"
+  },
+  "UD_Pashto-Prince/ps_prince-ud-test.conllu": {
+    "block_types": {
+      "sent": 64
+    },
+    "counts": {
+      "copy": 780,
+      "copy_losses": 79,
+      "copy_wins": 115,
+      "full": 816,
+      "lookup": 816,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 1118
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 62
+    },
+    "iso": "pst",
+    "sentences_by_block_type": {
+      "sent": 64
+    },
+    "sha256": "c0e96933fe3fdda0dee9a1bdf827bf0e92420e2308fcf0f1680601bfd166c570"
+  },
+  "UD_Pashto-Sikaram/ps_sikaram-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "pst",
+    "sentences_by_block_type": {},
+    "sha256": "d449b3e64337f33882db5d9fdfa50e38e61cf0aec7b5d55354cf195c1a1b357f"
+  },
+  "UD_Persian-PerDT/fa_perdt-ud-test.conllu": {
+    "block_types": {
+      "sent": 1454
+    },
+    "counts": {
+      "copy": 18911,
+      "copy_losses": 73,
+      "copy_wins": 4741,
+      "full": 23579,
+      "lookup": 23579,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 24118
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "source_text_sentences": 1,
+      "unknown_lemmas_with_visible_form": 2
+    },
+    "iso": "pes",
+    "sentences_by_block_type": {
+      "sent": 1454
+    },
+    "sha256": "4daf1fbf1bf9e0e36ac15c8ce1fe050740c7dc016cd0fdeb67b785699c1d599d"
+  },
+  "UD_Persian-Seraji/fa_seraji-ud-test.conllu": {
+    "block_types": {
+      "sent": 597
+    },
+    "counts": {
+      "copy": 13362,
+      "copy_losses": 79,
+      "copy_wins": 1914,
+      "full": 15197,
+      "lookup": 15197,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 16009
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "source_text_sentences": 1,
+      "unknown_lemmas_with_visible_form": 3
+    },
+    "iso": "pes",
+    "sentences_by_block_type": {
+      "sent": 597
+    },
+    "sha256": "6d2311596634c739eaf4c4ef4d4125d4ff7562ac56ea4da0b3db6501ecb25710"
+  },
+  "UD_Pesh-ChibErgIS/pay_chibergis-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "pay",
+    "sentences_by_block_type": {},
+    "sha256": "f8b4f7c9a26b955ab36f68c082624fdaf143bcba020ab4cda1fd67fb6e633578"
+  },
+  "UD_Phrygian-KUL/xpg_kul-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "xpg",
+    "sentences_by_block_type": {},
+    "sha256": "efdea547cb551da56901b2933563f961ce5788a1d6e34a6c28557a3a30f092bc"
+  },
+  "UD_Polish-LFG/pl_lfg-ud-test.conllu": {
+    "block_types": {
+      "sent": 1720
+    },
+    "counts": {
+      "copy": 6618,
+      "copy_losses": 2001,
+      "copy_wins": 3445,
+      "full": 8062,
+      "lookup": 8653,
+      "rules_losses": 1916,
+      "rules_wins": 1325,
+      "tokens": 13061
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 7,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "pol",
+    "sentences_by_block_type": {
+      "sent": 1720
+    },
+    "sha256": "e5ccf27d5b607bf71135f33126051c3b1514d15b0f7e1d1119e71ad9cee8c950"
+  },
+  "UD_Polish-MPDT/pl_mpdt-ud-test.conllu": {
+    "block_types": {
+      "sent": 423
+    },
+    "counts": {
+      "copy": 5013,
+      "copy_losses": 1617,
+      "copy_wins": 2675,
+      "full": 6071,
+      "lookup": 6507,
+      "rules_losses": 1538,
+      "rules_wins": 1102,
+      "tokens": 10005
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "pol",
+    "sentences_by_block_type": {
+      "sent": 423
+    },
+    "sha256": "490d3c845736997bc29341428723a0ea31574ed17373529fb685651311a0dffe"
+  },
+  "UD_Polish-PDB/pl_pdb-ud-test.conllu": {
+    "block_types": {
+      "sent": 1737
+    },
+    "counts": {
+      "copy": 15204,
+      "copy_losses": 4738,
+      "copy_wins": 9328,
+      "full": 19794,
+      "lookup": 20644,
+      "rules_losses": 4496,
+      "rules_wins": 3646,
+      "tokens": 30117
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 478,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "pol",
+    "sentences_by_block_type": {
+      "sent": 1737
+    },
+    "sha256": "867d178cd4194fff00894dd40098932f5e970a55229b1f9ea2b5620df06c7139"
+  },
+  "UD_Polish-PUD/pl_pud-ud-test.conllu": {
+    "block_types": {
+      "sent": 1000
+    },
+    "counts": {
+      "copy": 9177,
+      "copy_losses": 2791,
+      "copy_wins": 5961,
+      "full": 12347,
+      "lookup": 12522,
+      "rules_losses": 2674,
+      "rules_wins": 2499,
+      "tokens": 18384
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "pol",
+    "sentences_by_block_type": {
+      "sent": 1000
+    },
+    "sha256": "1af733133fa641380144c65a0292f5e8b46a077e90085f21cedbf416f2907287"
+  },
+  "UD_Pomak-Philotis/qpm_philotis-ud-test.conllu": {
+    "block_types": {
+      "sent": 634
+    },
+    "counts": {
+      "copy": 3776,
+      "copy_losses": 22,
+      "copy_wins": 3718,
+      "full": 7472,
+      "lookup": 7472,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 8797
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "source_text_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "qpm",
+    "sentences_by_block_type": {
+      "sent": 634
+    },
+    "sha256": "82d653a643679597b61351294dfe7e309fd1ff4d0705e38c54c84e0d077fac6b"
+  },
+  "UD_Portuguese-Bosque/pt_bosque-ud-test.conllu": {
+    "block_types": {
+      "sent": 1167
+    },
+    "counts": {
+      "copy": 19363,
+      "copy_losses": 8408,
+      "copy_wins": 2457,
+      "full": 13412,
+      "lookup": 20377,
+      "rules_losses": 7044,
+      "rules_wins": 79,
+      "tokens": 27598
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 6
+    },
+    "iso": "por",
+    "sentences_by_block_type": {
+      "sent": 1167
+    },
+    "sha256": "9a824650b7a02cf411f6e09b39e8fb423c85e1a5fb3a55b87e7f4c0c2ea5b3bb"
+  },
+  "UD_Portuguese-CINTIL/pt_cintil-ud-test.conllu": {
+    "block_types": {
+      "sent": 3794
+    },
+    "counts": {
+      "copy": 57954,
+      "copy_losses": 23813,
+      "copy_wins": 6101,
+      "full": 40242,
+      "lookup": 60236,
+      "rules_losses": 20225,
+      "rules_wins": 231,
+      "tokens": 82042
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 46,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "por",
+    "sentences_by_block_type": {
+      "sent": 3794
+    },
+    "sha256": "4d0377c39985c57c834e5a0912927815a375e6edbfb18362752870e8c6f466fe"
+  },
+  "UD_Portuguese-DANTEStocks/pt_dantestocks-ud-test.conllu": {
+    "block_types": {
+      "sent": 501
+    },
+    "counts": {
+      "copy": 7432,
+      "copy_losses": 1961,
+      "copy_wins": 754,
+      "full": 6225,
+      "lookup": 7875,
+      "rules_losses": 1664,
+      "rules_wins": 14,
+      "tokens": 10057
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 4
+    },
+    "iso": "por",
+    "sentences_by_block_type": {
+      "sent": 501
+    },
+    "sha256": "a65801c762707d9fefcd83f5a431c8a974bcc178612ba00d965946a9713432aa"
+  },
+  "UD_Portuguese-GSD/pt_gsd-ud-test.conllu": {
+    "block_types": {
+      "sent": 1199
+    },
+    "counts": {
+      "copy": 17998,
+      "copy_losses": 7932,
+      "copy_wins": 2557,
+      "full": 12623,
+      "lookup": 19194,
+      "rules_losses": 6671,
+      "rules_wins": 100,
+      "tokens": 25603
+    },
+    "excluded": {
+      "masked_forms": 4,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 5867
+    },
+    "iso": "por",
+    "sentences_by_block_type": {
+      "sent": 1199
+    },
+    "sha256": "0572d50de07593d662f7a1ff49490c7c3722612acac1d5c50916deb3d7b02a31"
+  },
+  "UD_Portuguese-PUD/pt_pud-ud-test.conllu": {
+    "block_types": {
+      "doc": 397
+    },
+    "counts": {
+      "copy": 12990,
+      "copy_losses": 5901,
+      "copy_wins": 1329,
+      "full": 8418,
+      "lookup": 13196,
+      "rules_losses": 4829,
+      "rules_wins": 51,
+      "tokens": 18923
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 4484
+    },
+    "iso": "por",
+    "sentences_by_block_type": {
+      "doc": 1000
+    },
+    "sha256": "e2bd4012a3d0e17dc7ba5d699dd17e05f57986901bb24df07bd0a271cf23178c"
+  },
+  "UD_Portuguese-PetroGold/pt_petrogold-ud-test.conllu": {
+    "block_types": {
+      "doc": 2
+    },
+    "counts": {
+      "copy": 20107,
+      "copy_losses": 10477,
+      "copy_wins": 2723,
+      "full": 12353,
+      "lookup": 21092,
+      "rules_losses": 8813,
+      "rules_wins": 74,
+      "tokens": 29612
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 3,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "por",
+    "sentences_by_block_type": {
+      "doc": 1036
+    },
+    "sha256": "069a43e29462ac24f876c43affcd12b519e2aa650b934f8591d67dae8a993f5d"
+  },
+  "UD_Portuguese-Porttinari/pt_porttinari-ud-test.conllu": {
+    "block_types": {
+      "sent": 1682
+    },
+    "counts": {
+      "copy": 23378,
+      "copy_losses": 10480,
+      "copy_wins": 3269,
+      "full": 16167,
+      "lookup": 24707,
+      "rules_losses": 8633,
+      "rules_wins": 93,
+      "tokens": 33561
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "por",
+    "sentences_by_block_type": {
+      "sent": 1682
+    },
+    "sha256": "6c8b36352bbee481448d5d354b38de1f80ddcde2ce2ffe9d1f0064c136d3d07d"
+  },
+  "UD_Punjabi-CS/pa_cs-ud-test.conllu": {
+    "block_types": {
+      "sent": 19
+    },
+    "counts": {
+      "copy": 194,
+      "copy_losses": 7,
+      "copy_wins": 23,
+      "full": 210,
+      "lookup": 210,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 263
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "pan",
+    "sentences_by_block_type": {
+      "sent": 19
+    },
+    "sha256": "04d389457a64b13f82063986db1818d93ca3d4e4e644b10364f2235d15651436"
+  },
+  "UD_Punjabi-Rang/pa_rang-ud-test.conllu": {
+    "block_types": {
+      "sent": 26
+    },
+    "counts": {
+      "copy": 216,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 216,
+      "lookup": 216,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 299
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "pan",
+    "sentences_by_block_type": {
+      "sent": 26
+    },
+    "sha256": "101104b21bba7e4a7425da07e12f0d65bb1dcc2464dbb44e724f5f537294dfb3"
+  },
+  "UD_Romanian-ArT/ro_art-ud-test.conllu": {
+    "block_types": {
+      "sent": 50
+    },
+    "counts": {
+      "copy": 253,
+      "copy_losses": 89,
+      "copy_wins": 9,
+      "full": 173,
+      "lookup": 254,
+      "rules_losses": 85,
+      "rules_wins": 4,
+      "tokens": 573
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ron",
+    "sentences_by_block_type": {
+      "sent": 50
+    },
+    "sha256": "71cefb0314745ebda17f59a198c1aaaef90a8d369f8becfb45b0d7e282995c86"
+  },
+  "UD_Romanian-MolDoRo/ro_moldoro-ud-test.conllu": {
+    "block_types": {
+      "doc": 1
+    },
+    "counts": {
+      "copy": 136,
+      "copy_losses": 17,
+      "copy_wins": 0,
+      "full": 119,
+      "lookup": 136,
+      "rules_losses": 17,
+      "rules_wins": 0,
+      "tokens": 241
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ron",
+    "sentences_by_block_type": {
+      "doc": 30
+    },
+    "sha256": "ab69621780bf2681d4121ff591f241cfa7bd55264a297ae54baa754f7607787a"
+  },
+  "UD_Romanian-Nonstandard/ro_nonstandard-ud-test.conllu": {
+    "block_types": {
+      "doc": 3
+    },
+    "counts": {
+      "copy": 9370,
+      "copy_losses": 2115,
+      "copy_wins": 2631,
+      "full": 9886,
+      "lookup": 11175,
+      "rules_losses": 2022,
+      "rules_wins": 733,
+      "tokens": 20981
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ron",
+    "sentences_by_block_type": {
+      "doc": 1050
+    },
+    "sha256": "2632ce4b1178d42feaf1a67c01e8e729ea1a9fbf0a0bc46d3a210bcfb23cd8fc"
+  },
+  "UD_Romanian-RRT/ro_rrt-ud-test.conllu": {
+    "block_types": {
+      "doc": 44
+    },
+    "counts": {
+      "copy": 9083,
+      "copy_losses": 2218,
+      "copy_wins": 3446,
+      "full": 10311,
+      "lookup": 10667,
+      "rules_losses": 2117,
+      "rules_wins": 1761,
+      "tokens": 16241
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 5,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "ron",
+    "sentences_by_block_type": {
+      "doc": 724
+    },
+    "sha256": "32a2f7b9fc82c1e82d9959ce8c5ec7b7840f725177aa06b497b51f6834801989"
+  },
+  "UD_Romanian-SiMoNERo/ro_simonero-ud-test.conllu": {
+    "block_types": {
+      "sent": 491
+    },
+    "counts": {
+      "copy": 8108,
+      "copy_losses": 1733,
+      "copy_wins": 4053,
+      "full": 10428,
+      "lookup": 9158,
+      "rules_losses": 1638,
+      "rules_wins": 2908,
+      "tokens": 14551
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "ron",
+    "sentences_by_block_type": {
+      "sent": 491
+    },
+    "sha256": "dfe5c3f752ef3aa6eecfc8013555c6776e6f360d3d341777c7f6e1abd87984f4"
+  },
+  "UD_Romanian-TueCL/ro_tuecl-ud-test.conllu": {
+    "block_types": {
+      "sent": 210
+    },
+    "counts": {
+      "copy": 2263,
+      "copy_losses": 721,
+      "copy_wins": 740,
+      "full": 2282,
+      "lookup": 2776,
+      "rules_losses": 686,
+      "rules_wins": 192,
+      "tokens": 4415
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 2
+    },
+    "iso": "ron",
+    "sentences_by_block_type": {
+      "sent": 210
+    },
+    "sha256": "739f4074fdb7b54a10aab3349c23296b8363330b87a494c4b7dd4502c5f55931"
+  },
+  "UD_Russian-GSD/ru_gsd-ud-test.conllu": {
+    "block_types": {
+      "sent": 601
+    },
+    "counts": {
+      "copy": 5966,
+      "copy_losses": 262,
+      "copy_wins": 4462,
+      "full": 10166,
+      "lookup": 10110,
+      "rules_losses": 14,
+      "rules_wins": 70,
+      "tokens": 11384
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "rus",
+    "sentences_by_block_type": {
+      "sent": 601
+    },
+    "sha256": "f26e022329162a1c6306f76644d06f770f1572501755421165387137fe63138d"
+  },
+  "UD_Russian-PUD/ru_pud-ud-test.conllu": {
+    "block_types": {
+      "doc": 397
+    },
+    "counts": {
+      "copy": 9970,
+      "copy_losses": 475,
+      "copy_wins": 7749,
+      "full": 17244,
+      "lookup": 17170,
+      "rules_losses": 43,
+      "rules_wins": 117,
+      "tokens": 19355
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "rus",
+    "sentences_by_block_type": {
+      "doc": 1000
+    },
+    "sha256": "91a755eb4296451472cc9dd54fcb3b77e33d91378a50a2fd29360b8c94bc4c33"
+  },
+  "UD_Russian-Poetry/ru_poetry-ud-test.conllu": {
+    "block_types": {
+      "sent": 720
+    },
+    "counts": {
+      "copy": 5138,
+      "copy_losses": 124,
+      "copy_wins": 4124,
+      "full": 9138,
+      "lookup": 9099,
+      "rules_losses": 31,
+      "rules_wins": 70,
+      "tokens": 9994
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 8,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "rus",
+    "sentences_by_block_type": {
+      "sent": 720
+    },
+    "sha256": "26a3b470836e31f40efe84141fd70a4110f3e3d0b4c1309db76e4afaa9c1274f"
+  },
+  "UD_Russian-SynTagRus/ru_syntagrus-ud-test.conllu": {
+    "block_types": {
+      "doc": 10,
+      "sent": 6488
+    },
+    "counts": {
+      "copy": 85270,
+      "copy_losses": 2845,
+      "copy_wins": 59841,
+      "full": 142266,
+      "lookup": 141712,
+      "rules_losses": 441,
+      "rules_wins": 995,
+      "tokens": 157675
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 6,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "rus",
+    "sentences_by_block_type": {
+      "doc": 2306,
+      "sent": 6488
+    },
+    "sha256": "97f473474d1aa8c007572cd122f90030bc7dc1707579d56b0b354c19b64af258"
+  },
+  "UD_Russian-Taiga/ru_taiga-ud-test.conllu": {
+    "block_types": {
+      "doc": 3,
+      "sent": 46
+    },
+    "counts": {
+      "copy": 8656,
+      "copy_losses": 311,
+      "copy_wins": 5390,
+      "full": 13735,
+      "lookup": 13680,
+      "rules_losses": 53,
+      "rules_wins": 108,
+      "tokens": 15418
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 3,
+      "unknown_lemmas_with_visible_form": 11
+    },
+    "iso": "rus",
+    "sentences_by_block_type": {
+      "doc": 1168,
+      "sent": 46
+    },
+    "sha256": "14183d7f002557e9e26b85e212dc54fe3f7929a7d72491615c50b9b3145e6278"
+  },
+  "UD_Ruuli-RDT/ruc_rdt-ud-test.conllu": {
+    "block_types": {
+      "doc": 8
+    },
+    "counts": {
+      "copy": 2651,
+      "copy_losses": 30,
+      "copy_wins": 757,
+      "full": 3378,
+      "lookup": 3378,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 6212
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 38,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ruc",
+    "sentences_by_block_type": {
+      "doc": 1196
+    },
+    "sha256": "579c88096cf7f7053a5e1d9506fcc2f04a56131ff50ca85b022fa8d5fa48430f"
+  },
+  "UD_Sanskrit-UFAL/sa_ufal-ud-test.conllu": {
+    "block_types": {
+      "doc": 1
+    },
+    "counts": {
+      "copy": 654,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 654,
+      "lookup": 654,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 1828
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 7,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "san",
+    "sentences_by_block_type": {
+      "doc": 223
+    },
+    "sha256": "8e956d19e67e96d8fce8807a37f6d5b995db35df12a8b7ba233dbbaf74a4aa6f"
+  },
+  "UD_Sanskrit-Vedic/sa_vedic-ud-test.conllu": {
+    "block_types": {
+      "sent": 2517
+    },
+    "counts": {
+      "copy": 4986,
+      "copy_losses": 187,
+      "copy_wins": 11611,
+      "full": 16410,
+      "lookup": 16410,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 19389
+    },
+    "excluded": {
+      "masked_forms": 344,
+      "repeated_evaluation_sentences": 59,
+      "source_text_sentences": 133,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "san",
+    "sentences_by_block_type": {
+      "sent": 2517
+    },
+    "sha256": "242546c3d6709c7c30d9c443039eb1483bc6d8f45b4873f821b60c19756cce43"
+  },
+  "UD_Scottish_Gaelic-ARCOSG/gd_arcosg-ud-test.conllu": {
+    "block_types": {
+      "doc": 10
+    },
+    "counts": {
+      "copy": 6774,
+      "copy_losses": 140,
+      "copy_wins": 3088,
+      "full": 9722,
+      "lookup": 9722,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10552
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 4,
+      "source_text_sentences": 14,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "gla",
+    "sentences_by_block_type": {
+      "doc": 530
+    },
+    "sha256": "3181b5ba5d701f56e4f7e9f06018e25051eb2b66b2a63e66bb354a22876b73bd"
+  },
+  "UD_Serbian-SET/sr_set-ud-test.conllu": {
+    "block_types": {
+      "doc": 22
+    },
+    "counts": {
+      "copy": 5424,
+      "copy_losses": 186,
+      "copy_wins": 4147,
+      "full": 9385,
+      "lookup": 9385,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 11410
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "srp",
+    "sentences_by_block_type": {
+      "doc": 519
+    },
+    "sha256": "ad8b8be1446a9ca31b2a5465d7e74608440d896ad029f247b9e15b006b547448"
+  },
+  "UD_Shanghainese-ShUD/wuu_shud-ud-test.conllu": {
+    "block_types": {
+      "sent": 99
+    },
+    "counts": {
+      "copy": 874,
+      "copy_losses": 63,
+      "copy_wins": 0,
+      "full": 811,
+      "lookup": 811,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 874
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "wuu",
+    "sentences_by_block_type": {
+      "sent": 99
+    },
+    "sha256": "36a8bbf5e484b1a28385c4b2ca4fb91ad3175b29e0a8687b54d95f6c13813cb1"
+  },
+  "UD_Sicilian-STB/scn_stb-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "scn",
+    "sentences_by_block_type": {},
+    "sha256": "3a95c9e187e0241d1107e051abd2188e92c9cb406969e4e7a1b184e2099b8543"
+  },
+  "UD_Sindhi-Isra/sd_isra-ud-test.conllu": {
+    "block_types": {
+      "sent": 887
+    },
+    "counts": {
+      "copy": 8370,
+      "copy_losses": 28,
+      "copy_wins": 2182,
+      "full": 10524,
+      "lookup": 10524,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10954
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 105
+    },
+    "iso": "snd",
+    "sentences_by_block_type": {
+      "sent": 887
+    },
+    "sha256": "ea1128ea255365a449cae5f27ef88ac6fcde392df52bc005213aa7c680edc4c6"
+  },
+  "UD_Sinhala-Appuwa/si_appuwa-ud-test.conllu": {
+    "block_types": {
+      "sent": 69
+    },
+    "counts": {
+      "copy": 374,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 374,
+      "lookup": 374,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 668
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "sin",
+    "sentences_by_block_type": {
+      "sent": 69
+    },
+    "sha256": "a9da717514c50331aa01039a4fe926c8dc93b14203bee450a4749429120b21bb"
+  },
+  "UD_Sinhala-STB/si_stb-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "sin",
+    "sentences_by_block_type": {},
+    "sha256": "7847eb43b4199aab75d84b4f63d2009e7d8ca47600e90bc5a2df60071798e3b6"
+  },
+  "UD_Skolt_Sami-Giellagas/sms_giellagas-ud-test.conllu": {
+    "block_types": {
+      "sent": 240
+    },
+    "counts": {
+      "copy": 1600,
+      "copy_losses": 1,
+      "copy_wins": 164,
+      "full": 1763,
+      "lookup": 1763,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 2889
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "sms",
+    "sentences_by_block_type": {
+      "sent": 240
+    },
+    "sha256": "8a12273f20d6834b12993a7a9a1aa7fafe4f57b1b3317d702385c5b46407cdd4"
+  },
+  "UD_Slovak-SNK/sk_snk-ud-test.conllu": {
+    "block_types": {
+      "sent": 1043
+    },
+    "counts": {
+      "copy": 5664,
+      "copy_losses": 37,
+      "copy_wins": 3261,
+      "full": 8888,
+      "lookup": 8888,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 12704
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 7,
+      "source_text_sentences": 11,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "slk",
+    "sentences_by_block_type": {
+      "sent": 1043
+    },
+    "sha256": "3cdd11080a868685cf1fd5d20274603754aea00930847130c5d9e1b90ff5136b"
+  },
+  "UD_Slovenian-SSJ/sl_ssj-ud-test.conllu": {
+    "block_types": {
+      "doc": 58
+    },
+    "counts": {
+      "copy": 12676,
+      "copy_losses": 100,
+      "copy_wins": 9619,
+      "full": 22195,
+      "lookup": 22195,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 25407
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "slv",
+    "sentences_by_block_type": {
+      "doc": 1281
+    },
+    "sha256": "c14d5d2f4f20a7ad43e0f598a2e18c5e41f08364ab36be1c87d6d9eae7f5c8b0"
+  },
+  "UD_Slovenian-SST/sl_sst-ud-test.conllu": {
+    "block_types": {
+      "doc": 23
+    },
+    "counts": {
+      "copy": 7230,
+      "copy_losses": 49,
+      "copy_wins": 3376,
+      "full": 10557,
+      "lookup": 10557,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 11414
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 6,
+      "source_text_sentences": 7,
+      "unknown_lemmas_with_visible_form": 2
+    },
+    "iso": "slv",
+    "sentences_by_block_type": {
+      "doc": 419
+    },
+    "sha256": "7192fa2003550eb739d7aa3f38fc35fff5c1834829473fd66f9965b72b1e0354"
+  },
+  "UD_South_Levantine_Arabic-MADAR/ajp_madar-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "ajp",
+    "sentences_by_block_type": {},
+    "sha256": "4655a80a1b1145f8175fc4d53a8d2f4a1a00374b50c7e7497c66f38fa3d05a13"
+  },
+  "UD_Spanish-AnCora/es_ancora-ud-test.conllu": {
+    "block_types": {
+      "doc": 168
+    },
+    "counts": {
+      "copy": 36951,
+      "copy_losses": 5959,
+      "copy_wins": 8303,
+      "full": 39295,
+      "lookup": 42447,
+      "rules_losses": 3567,
+      "rules_wins": 415,
+      "tokens": 53596
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 8,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "spa",
+    "sentences_by_block_type": {
+      "doc": 1713
+    },
+    "sha256": "679f1c05ca654aa26801c80319df45f8f97606718fb534b91755b48f3e67fa6f"
+  },
+  "UD_Spanish-COSER/es_coser-ud-test.conllu": {
+    "block_types": {
+      "sent": 533
+    },
+    "counts": {
+      "copy": 4997,
+      "copy_losses": 700,
+      "copy_wins": 1252,
+      "full": 5549,
+      "lookup": 5966,
+      "rules_losses": 561,
+      "rules_wins": 144,
+      "tokens": 8052
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 6,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "spa",
+    "sentences_by_block_type": {
+      "sent": 533
+    },
+    "sha256": "9bbbd54bb70ac448d6178b5446c70bef7d9285f93735a02791663872fc489fec"
+  },
+  "UD_Spanish-GSD/es_gsd-ud-test.conllu": {
+    "block_types": {
+      "sent": 426
+    },
+    "counts": {
+      "copy": 7913,
+      "copy_losses": 1129,
+      "copy_wins": 1952,
+      "full": 8736,
+      "lookup": 9362,
+      "rules_losses": 748,
+      "rules_wins": 122,
+      "tokens": 11994
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "spa",
+    "sentences_by_block_type": {
+      "sent": 426
+    },
+    "sha256": "ecce253f44bffaa9803ae7ec0c10911c13e4f1fc3cb439dbd1db2cebe0a12741"
+  },
+  "UD_Spanish-PUD/es_pud-ud-test.conllu": {
+    "block_types": {
+      "doc": 397
+    },
+    "counts": {
+      "copy": 15053,
+      "copy_losses": 1977,
+      "copy_wins": 4183,
+      "full": 17259,
+      "lookup": 18407,
+      "rules_losses": 1354,
+      "rules_wins": 206,
+      "tokens": 23283
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "spa",
+    "sentences_by_block_type": {
+      "doc": 1000
+    },
+    "sha256": "48a7b5c7f409100b24eba90c7397e01f6fecaaf3207315a9a1bda029f77e98d3"
+  },
+  "UD_Spanish_Sign_Language-LSE/ssp_lse-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "ssp",
+    "sentences_by_block_type": {},
+    "sha256": "7717cee81bae6100d168d6d6375c7c58b54fdf2f798bcc8a0003eb77857bd613"
+  },
+  "UD_Swedish-LinES/sv_lines-ud-test.conllu": {
+    "block_types": {
+      "doc": 9
+    },
+    "counts": {
+      "copy": 12140,
+      "copy_losses": 2798,
+      "copy_wins": 3331,
+      "full": 12673,
+      "lookup": 13809,
+      "rules_losses": 2163,
+      "rules_wins": 1027,
+      "tokens": 19185
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "swe",
+    "sentences_by_block_type": {
+      "doc": 1120
+    },
+    "sha256": "411bf3d84f8d439480692172356557d806a500619f75986a2c58c07fd384177c"
+  },
+  "UD_Swedish-Old/sv_old-ud-test.conllu": {
+    "block_types": {
+      "sent": 40
+    },
+    "counts": {
+      "copy": 92,
+      "copy_losses": 44,
+      "copy_wins": 13,
+      "full": 61,
+      "lookup": 98,
+      "rules_losses": 42,
+      "rules_wins": 5,
+      "tokens": 506
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "swe",
+    "sentences_by_block_type": {
+      "sent": 40
+    },
+    "sha256": "827ff5409b769c649b95cfa7687fee40af06182c17b9e81a6d2d214378a812e3"
+  },
+  "UD_Swedish-PUD/sv_pud-ud-test.conllu": {
+    "block_types": {
+      "doc": 397
+    },
+    "counts": {
+      "copy": 12144,
+      "copy_losses": 2976,
+      "copy_wins": 3726,
+      "full": 12894,
+      "lookup": 14157,
+      "rules_losses": 2333,
+      "rules_wins": 1070,
+      "tokens": 19076
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "swe",
+    "sentences_by_block_type": {
+      "doc": 1000
+    },
+    "sha256": "4f978396f363c85a9c7ece193327529e4cdbe9ce0f6ad807eb8846e865043fff"
+  },
+  "UD_Swedish-SweLL/sv_swell-ud-test.conllu": {
+    "block_types": {
+      "sent": 637
+    },
+    "counts": {
+      "copy": 6622,
+      "copy_losses": 1374,
+      "copy_wins": 1696,
+      "full": 6944,
+      "lookup": 7593,
+      "rules_losses": 986,
+      "rules_wins": 337,
+      "tokens": 10822
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 6,
+      "unknown_lemmas_with_visible_form": 9
+    },
+    "iso": "swe",
+    "sentences_by_block_type": {
+      "sent": 637
+    },
+    "sha256": "7946c25f353bb771112dcde9c01ee28bf332fd5c885f3359476cc27f769ec21e"
+  },
+  "UD_Swedish-Talbanken/sv_talbanken-ud-test.conllu": {
+    "block_types": {
+      "doc": 15
+    },
+    "counts": {
+      "copy": 12566,
+      "copy_losses": 2790,
+      "copy_wins": 4032,
+      "full": 13808,
+      "lookup": 14860,
+      "rules_losses": 2158,
+      "rules_wins": 1106,
+      "tokens": 20371
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "swe",
+    "sentences_by_block_type": {
+      "doc": 1217
+    },
+    "sha256": "f7bc84ce37cd6a71e95b8d8684801da0bb6d2be4e419ba2e865eb109d6cd1bc6"
+  },
+  "UD_Tagalog-TRG/tl_trg-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "tgl",
+    "sentences_by_block_type": {},
+    "sha256": "d21eb1072f6da530de2e0e3a9065a76ae36559efd43afc7c6d48264024afa8c1"
+  },
+  "UD_Tagalog-Ugnayan/tl_ugnayan-ud-test.conllu": {
+    "block_types": {
+      "sent": 94
+    },
+    "counts": {
+      "copy": 764,
+      "copy_losses": 2,
+      "copy_wins": 55,
+      "full": 817,
+      "lookup": 817,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 1097
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "tgl",
+    "sentences_by_block_type": {
+      "sent": 94
+    },
+    "sha256": "f48eb82e9baab1bf928330924e45fad2dded3b14b688178be864aa97ea68c9ef"
+  },
+  "UD_Tamil-MWTT/ta_mwtt-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "tam",
+    "sentences_by_block_type": {},
+    "sha256": "a1d1c312ce05d5a9de2f4272651f470920575cd59691e2e36085b61cbfad9318"
+  },
+  "UD_Tamil-TTB/ta_ttb-ud-test.conllu": {
+    "block_types": {
+      "sent": 120
+    },
+    "counts": {
+      "copy": 969,
+      "copy_losses": 10,
+      "copy_wins": 81,
+      "full": 1040,
+      "lookup": 1040,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 1989
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "tam",
+    "sentences_by_block_type": {
+      "sent": 120
+    },
+    "sha256": "c7304e16335f5afc8d69a9632d984d537fedcf8afb6f89e6fc9bb29e4a186e69"
+  },
+  "UD_Tatar-NMCTT/tt_nmctt-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "tat",
+    "sentences_by_block_type": {},
+    "sha256": "94ed206be1ef7f91580598947e1d05542a694ab09a8cecad500142abb27c6bb8"
+  },
+  "UD_Teko-TuDeT/eme_tudet-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "eme",
+    "sentences_by_block_type": {},
+    "sha256": "383e2be7f7cd3a6bafb65dc0a4307f961f0a1cfe9473082b9d00c4b82a895892"
+  },
+  "UD_Telugu-MTG/te_mtg-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "no_scorable_words_sentences": 146,
+      "unknown_lemmas_with_visible_form": 721
+    },
+    "iso": "tel",
+    "sentences_by_block_type": {},
+    "sha256": "a25cae618253cc36081a3ccb83bf6fea44044c997e49e0b8d5e57f9e266ff9a8"
+  },
+  "UD_Thai-PUD/th_pud-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "tha",
+    "sentences_by_block_type": {},
+    "sha256": "0eeeaf5cf4352df2fe0b7f114e29d5ab5c1f54476faf64e99313de14d588a31b"
+  },
+  "UD_Thai-TUD/th_tud-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "no_scorable_words_sentences": 363,
+      "unknown_lemmas_with_visible_form": 7683
+    },
+    "iso": "tha",
+    "sentences_by_block_type": {},
+    "sha256": "294547eb580d2d44aee73f131355f7a9cb552a93515bef24b855d7366a24e2f7"
+  },
+  "UD_Tupinamba-TuDeT/tpn_tudet-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "tpn",
+    "sentences_by_block_type": {},
+    "sha256": "9357cf53c4dee3bb384225eeea46e0f8d4ea54f579d9dbccd4c84375ad13c692"
+  },
+  "UD_Turkish-Atis/tr_atis-ud-test.conllu": {
+    "block_types": {
+      "sent": 583
+    },
+    "counts": {
+      "copy": 1667,
+      "copy_losses": 720,
+      "copy_wins": 705,
+      "full": 1652,
+      "lookup": 1580,
+      "rules_losses": 453,
+      "rules_wins": 525,
+      "tokens": 4799
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 3,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "tur",
+    "sentences_by_block_type": {
+      "sent": 583
+    },
+    "sha256": "011de5ad556c78368712eb5aeaa67449a319e708b682a69001ca4bba17452ac5"
+  },
+  "UD_Turkish-BOUN/tr_boun-ud-test.conllu": {
+    "block_types": {
+      "sent": 978
+    },
+    "counts": {
+      "copy": 6045,
+      "copy_losses": 1629,
+      "copy_wins": 1996,
+      "full": 6412,
+      "lookup": 6686,
+      "rules_losses": 1304,
+      "rules_wins": 1030,
+      "tokens": 12208
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "tur",
+    "sentences_by_block_type": {
+      "sent": 978
+    },
+    "sha256": "c7f234f6a7c1b7025f8cab9025239286836e971b653fb1dd3f266a84ac74dbeb"
+  },
+  "UD_Turkish-FrameNet/tr_framenet-ud-test.conllu": {
+    "block_types": {
+      "sent": 204
+    },
+    "counts": {
+      "copy": 645,
+      "copy_losses": 163,
+      "copy_wins": 265,
+      "full": 747,
+      "lookup": 744,
+      "rules_losses": 128,
+      "rules_wins": 131,
+      "tokens": 1457
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "tur",
+    "sentences_by_block_type": {
+      "sent": 204
+    },
+    "sha256": "0a6efc7910e3e931099e30a7a14be94dba21866b4403e9cb80e329ea20e50ec1"
+  },
+  "UD_Turkish-GB/tr_gb-ud-test.conllu": {
+    "block_types": {
+      "sent": 2849
+    },
+    "counts": {
+      "copy": 8370,
+      "copy_losses": 2225,
+      "copy_wins": 2616,
+      "full": 8761,
+      "lookup": 9195,
+      "rules_losses": 1693,
+      "rules_wins": 1259,
+      "tokens": 17038
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 31,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "tur",
+    "sentences_by_block_type": {
+      "sent": 2849
+    },
+    "sha256": "c1c422c19238b49185a818968354d5dffdf94b2148639b818f3fca598d051dd5"
+  },
+  "UD_Turkish-IMST/tr_imst-ud-test.conllu": {
+    "block_types": {
+      "doc": 47
+    },
+    "counts": {
+      "copy": 4912,
+      "copy_losses": 1181,
+      "copy_wins": 1457,
+      "full": 5188,
+      "lookup": 5385,
+      "rules_losses": 927,
+      "rules_wins": 730,
+      "tokens": 9973
+    },
+    "excluded": {
+      "masked_forms": 1,
+      "repeated_evaluation_sentences": 11,
+      "unknown_lemmas_with_visible_form": 17
+    },
+    "iso": "tur",
+    "sentences_by_block_type": {
+      "doc": 1089
+    },
+    "sha256": "299d3af2adb8722b5dd09cd17a20302af3670d36f2e57ed26170bf21526fd3d4"
+  },
+  "UD_Turkish-Kenet/tr_kenet-ud-test.conllu": {
+    "block_types": {
+      "sent": 1628
+    },
+    "counts": {
+      "copy": 8191,
+      "copy_losses": 2371,
+      "copy_wins": 2981,
+      "full": 8801,
+      "lookup": 9065,
+      "rules_losses": 1926,
+      "rules_wins": 1662,
+      "tokens": 17598
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 15,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "tur",
+    "sentences_by_block_type": {
+      "sent": 1628
+    },
+    "sha256": "74eeefb83d2914b749aa85096ad038db1bd371dc75586d58afc2f78e441b6e74"
+  },
+  "UD_Turkish-PUD/tr_pud-ud-test.conllu": {
+    "block_types": {
+      "doc": 397
+    },
+    "counts": {
+      "copy": 8595,
+      "copy_losses": 2623,
+      "copy_wins": 2786,
+      "full": 8758,
+      "lookup": 9357,
+      "rules_losses": 2188,
+      "rules_wins": 1589,
+      "tokens": 16423
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 458
+    },
+    "iso": "tur",
+    "sentences_by_block_type": {
+      "doc": 1000
+    },
+    "sha256": "7c1b6fe01662a7617758fbecdda6af6fc3914ace46b1809d6514af0a1c1df88c"
+  },
+  "UD_Turkish-Penn/tr_penn-ud-test.conllu": {
+    "block_types": {
+      "sent": 921
+    },
+    "counts": {
+      "copy": 5256,
+      "copy_losses": 1543,
+      "copy_wins": 1550,
+      "full": 5263,
+      "lookup": 5631,
+      "rules_losses": 1265,
+      "rules_wins": 897,
+      "tokens": 10036
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 3,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "tur",
+    "sentences_by_block_type": {
+      "sent": 921
+    },
+    "sha256": "85845ebc49211199b815b5a20d46ddfa99c5bfddd42e881074b1a28ef1d43026"
+  },
+  "UD_Turkish-Tourism/tr_tourism-ud-test.conllu": {
+    "block_types": {
+      "sent": 1904
+    },
+    "counts": {
+      "copy": 4208,
+      "copy_losses": 1007,
+      "copy_wins": 1285,
+      "full": 4486,
+      "lookup": 4689,
+      "rules_losses": 919,
+      "rules_wins": 716,
+      "tokens": 8805
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 287,
+      "unknown_lemmas_with_visible_form": 10
+    },
+    "iso": "tur",
+    "sentences_by_block_type": {
+      "sent": 1904
+    },
+    "sha256": "7735c10f1a9b0f58b6f2aa9fcc8880277594ec5ce5c2aef1605687e58ae16ba4"
+  },
+  "UD_Turkish-TueCL/tr_tuecl-ud-test.conllu": {
+    "block_types": {
+      "sent": 145
+    },
+    "counts": {
+      "copy": 444,
+      "copy_losses": 72,
+      "copy_wins": 135,
+      "full": 507,
+      "lookup": 486,
+      "rules_losses": 48,
+      "rules_wins": 69,
+      "tokens": 895
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 3,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "tur",
+    "sentences_by_block_type": {
+      "sent": 145
+    },
+    "sha256": "0a3916cecae0ecd5e2a18295e36b5ebe2c6dec90ce637ed9838fef4257466d92"
+  },
+  "UD_Turkish_English-BUTR/qti_butr-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "qti",
+    "sentences_by_block_type": {},
+    "sha256": "5f92c95d197348453a7f61b225b4ad4341f168025da81d7dbc69ca1ec867b1af"
+  },
+  "UD_Turkish_German-SAGT/qtd_sagt-ud-test.conllu": {
+    "block_types": {
+      "sent": 805
+    },
+    "counts": {
+      "copy": 9149,
+      "copy_losses": 86,
+      "copy_wins": 2938,
+      "full": 12001,
+      "lookup": 12001,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 14088
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "qtd",
+    "sentences_by_block_type": {
+      "sent": 805
+    },
+    "sha256": "0bbb06de66a490bfbb93d103a03d0d89e3835baf0af755a57b5fa5f885ae01bc"
+  },
+  "UD_Ukrainian-IU/uk_iu-ud-test.conllu": {
+    "block_types": {
+      "doc": 95
+    },
+    "counts": {
+      "copy": 9284,
+      "copy_losses": 2081,
+      "copy_wins": 4377,
+      "full": 11580,
+      "lookup": 11002,
+      "rules_losses": 2015,
+      "rules_wins": 2593,
+      "tokens": 17156
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 28,
+      "unknown_lemmas_with_visible_form": 2
+    },
+    "iso": "ukr",
+    "sentences_by_block_type": {
+      "doc": 870
+    },
+    "sha256": "5538dec31c89b0cd0e5141d8a9c6bdc0099103eab3c5c6b9078ab95e67be1286"
+  },
+  "UD_Ukrainian-ParlaMint/uk_parlamint-ud-test.conllu": {
+    "block_types": {
+      "doc": 89,
+      "sent": 5
+    },
+    "counts": {
+      "copy": 5897,
+      "copy_losses": 1445,
+      "copy_wins": 2612,
+      "full": 7064,
+      "lookup": 7195,
+      "rules_losses": 1398,
+      "rules_wins": 1267,
+      "tokens": 10545
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 134,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "ukr",
+    "sentences_by_block_type": {
+      "doc": 653,
+      "sent": 5
+    },
+    "sha256": "92e8aeeeec90d45b45f83d6c975f0ad6da0941cc9a73b17dd3588dd9e02e75ad"
+  },
+  "UD_Umbrian-IKUVINA/xum_ikuvina-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "xum",
+    "sentences_by_block_type": {},
+    "sha256": "6ba6697e5f2dda57795d4ff0061b8c1c20371f63da70de73a673181e3b4863bc"
+  },
+  "UD_Upper_Sorbian-UFAL/hsb_ufal-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "hsb",
+    "sentences_by_block_type": {},
+    "sha256": "eeb14b07ff7af360f8afefc2907fd2c53cb64fa8ebd3dde07438c953c67a0063"
+  },
+  "UD_Urdu-UDTB/ur_udtb-ud-test.conllu": {
+    "block_types": {
+      "sent": 527
+    },
+    "counts": {
+      "copy": 10906,
+      "copy_losses": 542,
+      "copy_wins": 812,
+      "full": 11176,
+      "lookup": 11176,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 14537
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 8,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "urd",
+    "sentences_by_block_type": {
+      "sent": 527
+    },
+    "sha256": "b47c89659bfafd5219d859aa47f78e34877a0eb350a17ab9834a78b045f45f58"
+  },
+  "UD_Uyghur-UDT/ug_udt-ud-test.conllu": {
+    "block_types": {
+      "sent": 900
+    },
+    "counts": {
+      "copy": 4853,
+      "copy_losses": 6,
+      "copy_wins": 1695,
+      "full": 6542,
+      "lookup": 6542,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 7564
+    },
+    "excluded": {
+      "masked_forms": 86,
+      "unknown_lemmas_with_visible_form": 2680
+    },
+    "iso": "uig",
+    "sentences_by_block_type": {
+      "sent": 900
+    },
+    "sha256": "e0884a71a6e01ca24e175fce25f2e47a4ae750d734cae24fe974598b3aafd293"
+  },
+  "UD_Uzbek-TueCL/uz_tuecl-ud-test.conllu": {
+    "block_types": {
+      "sent": 146
+    },
+    "counts": {
+      "copy": 482,
+      "copy_losses": 34,
+      "copy_wins": 83,
+      "full": 531,
+      "lookup": 484,
+      "rules_losses": 34,
+      "rules_wins": 81,
+      "tokens": 929
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 2,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "uzb",
+    "sentences_by_block_type": {
+      "sent": 146
+    },
+    "sha256": "23257711196df0bbfaf5b25397d7c6102fbc8800ed83b15eb77342929ee0e469"
+  },
+  "UD_Uzbek-UT/uz_ut-ud-test.conllu": {
+    "block_types": {
+      "sent": 500
+    },
+    "counts": {
+      "copy": 3039,
+      "copy_losses": 444,
+      "copy_wins": 641,
+      "full": 3236,
+      "lookup": 3047,
+      "rules_losses": 444,
+      "rules_wins": 633,
+      "tokens": 5930
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "uzb",
+    "sentences_by_block_type": {
+      "sent": 500
+    },
+    "sha256": "6297430a3ac34275eefeab74d3b074618894704082e73e9d048ade561271a03a"
+  },
+  "UD_Uzbek-UzUDT/uz_uzudt-ud-test.conllu": {
+    "block_types": {
+      "sent": 201
+    },
+    "counts": {
+      "copy": 1201,
+      "copy_losses": 165,
+      "copy_wins": 218,
+      "full": 1254,
+      "lookup": 1206,
+      "rules_losses": 164,
+      "rules_wins": 212,
+      "tokens": 2136
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 4
+    },
+    "iso": "uzb",
+    "sentences_by_block_type": {
+      "sent": 201
+    },
+    "sha256": "6a191e59b6cbaade250463109581e95350702eb85fff765f407eca00ed1937dc"
+  },
+  "UD_Veps-VWT/vep_vwt-ud-test.conllu": {
+    "block_types": {
+      "sent": 103
+    },
+    "counts": {
+      "copy": 587,
+      "copy_losses": 102,
+      "copy_wins": 472,
+      "full": 957,
+      "lookup": 975,
+      "rules_losses": 48,
+      "rules_wins": 30,
+      "tokens": 1303
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "vep",
+    "sentences_by_block_type": {
+      "sent": 103
+    },
+    "sha256": "82d5e7a1f25545ab434a49bd75bddce945079213a59f7f3ab0996a97600e8a3a"
+  },
+  "UD_Vietnamese-TueCL/vi_tuecl-ud-test.conllu": {
+    "block_types": {
+      "sent": 100
+    },
+    "counts": {
+      "copy": 1787,
+      "copy_losses": 8,
+      "copy_wins": 85,
+      "full": 1864,
+      "lookup": 1864,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 1888
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "vie",
+    "sentences_by_block_type": {
+      "sent": 100
+    },
+    "sha256": "e637df46377d8dee0f1dc4968bc323c2f82f2736343d1ae51820ef49f89ba0f2"
+  },
+  "UD_Vietnamese-VTB/vi_vtb-ud-test.conllu": {
+    "block_types": {
+      "sent": 792
+    },
+    "counts": {
+      "copy": 10823,
+      "copy_losses": 180,
+      "copy_wins": 718,
+      "full": 11361,
+      "lookup": 11361,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 11638
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "source_text_sentences": 8,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "vie",
+    "sentences_by_block_type": {
+      "sent": 792
+    },
+    "sha256": "abc1b0ea98661bbb494a8c0da123ba2fe1a3ef71322c380fe66468884d9b4285"
+  },
+  "UD_Warlpiri-UFAL/wbp_ufal-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "wbp",
+    "sentences_by_block_type": {},
+    "sha256": "4a890f5dca1e25850503da5cfb4ca43146a5c23241c4751487387337bc4ae4c9"
+  },
+  "UD_Welsh-CCG/cy_ccg-ud-test.conllu": {
+    "block_types": {
+      "doc": 7,
+      "sent": 459
+    },
+    "counts": {
+      "copy": 10379,
+      "copy_losses": 112,
+      "copy_wins": 5251,
+      "full": 15518,
+      "lookup": 15518,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 17026
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "cym",
+    "sentences_by_block_type": {
+      "doc": 494,
+      "sent": 459
+    },
+    "sha256": "2a6cc2c9fffb01523436c91203fc5d656b2bf5a0b91868195527ee72a9a9f950"
+  },
+  "UD_Western_Armenian-ArmTDP/hyw_armtdp-ud-test.conllu": {
+    "block_types": {
+      "doc": 13
+    },
+    "counts": {
+      "copy": 7579,
+      "copy_losses": 36,
+      "copy_wins": 3894,
+      "full": 11437,
+      "lookup": 11437,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 13493
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "source_text_sentences": 3,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "hyw",
+    "sentences_by_block_type": {
+      "doc": 674
+    },
+    "sha256": "cf74cf3bd1728e8ea940a00bfd3cb03d1cd68a14c2d3a60ac4e59dd05c9e7e8f"
+  },
+  "UD_Western_Sierra_Puebla_Nahuatl-MesoTree/nhi_mesotree-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "nhi",
+    "sentences_by_block_type": {},
+    "sha256": "db6c6986f9dfa3ae8c3fb08f2f529fbc95b030bd5a1a3a41b2d48b6fbaca047c"
+  },
+  "UD_Wolof-WTB/wo_wtb-ud-test.conllu": {
+    "block_types": {
+      "doc": 12
+    },
+    "counts": {
+      "copy": 7611,
+      "copy_losses": 183,
+      "copy_wins": 2151,
+      "full": 9579,
+      "lookup": 9579,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 10403
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 0
+    },
+    "iso": "wol",
+    "sentences_by_block_type": {
+      "doc": 470
+    },
+    "sha256": "4e9dd202909447c914cbb38ced7d890482d0ac2794b8789f61440c6818f3bdb7"
+  },
+  "UD_Xavante-XDT/xav_xdt-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "xav",
+    "sentences_by_block_type": {},
+    "sha256": "164d32abd625b66dd12f3a3bc6b00e143f955facc6b5077fa7dac8238d88b39e"
+  },
+  "UD_Xibe-XDT/sjo_xdt-ud-test.conllu": {
+    "block_types": {
+      "sent": 809
+    },
+    "counts": {
+      "copy": 12286,
+      "copy_losses": 9,
+      "copy_wins": 1,
+      "full": 12278,
+      "lookup": 12278,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 15395
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 1,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "sjo",
+    "sentences_by_block_type": {
+      "sent": 809
+    },
+    "sha256": "07f0e7b33379c765193dc48933ca09e5a0e5e152433ae2317698d5820a519b48"
+  },
+  "UD_Yakut-YKTDT/sah_yktdt-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "sah",
+    "sentences_by_block_type": {},
+    "sha256": "ecb202e2c652e5ddcdb84413a5a2a23b32f2e5a824ccb6dd67bbc8ea7db92bf0"
+  },
+  "UD_Yiddish-YiTB/yi_yitb-ud-test.conllu": {
+    "block_types": {
+      "sent": 1070
+    },
+    "counts": {
+      "copy": 6585,
+      "copy_losses": 33,
+      "copy_wins": 2463,
+      "full": 9015,
+      "lookup": 9015,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 9955
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 3,
+      "source_text_sentences": 6,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "yid",
+    "sentences_by_block_type": {
+      "sent": 1070
+    },
+    "sha256": "48631739ff20143774e2f4df952738d919444f92757c5b0102cd9624515da152"
+  },
+  "UD_Yoruba-YTB/yo_ytb-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "yor",
+    "sentences_by_block_type": {},
+    "sha256": "b6c475516f4d9c9cdb56ef4285ea8dad215fc21f245ecdf0f95b285ce6309896"
+  },
+  "UD_Yupik-SLI/ess_sli-ud-test.conllu": {
+    "block_types": {},
+    "counts": {
+      "copy": 0,
+      "copy_losses": 0,
+      "copy_wins": 0,
+      "full": 0,
+      "lookup": 0,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 0
+    },
+    "excluded": {
+      "declared_dictionary_input_file": 1
+    },
+    "iso": "ess",
+    "sentences_by_block_type": {},
+    "sha256": "7fa6d43981be1d2eb0875dd15c3163a2588182343ba304d3339a4565d21f38f0"
+  },
+  "UD_Zaar-Autogramm/say_autogramm-ud-test.conllu": {
+    "block_types": {
+      "sent": 1007
+    },
+    "counts": {
+      "copy": 6125,
+      "copy_losses": 416,
+      "copy_wins": 2275,
+      "full": 7984,
+      "lookup": 7984,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 9965
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "repeated_evaluation_sentences": 39,
+      "source_text_sentences": 81,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "say",
+    "sentences_by_block_type": {
+      "sent": 1007
+    },
+    "sha256": "2d5522629a3432d853ca506b7742dccea6fcb86db527001fe328656a3e645885"
+  },
+  "UD_Zazaki-ZSD/zza_zsd-ud-test.conllu": {
+    "block_types": {
+      "sent": 32
+    },
+    "counts": {
+      "copy": 150,
+      "copy_losses": 0,
+      "copy_wins": 47,
+      "full": 197,
+      "lookup": 197,
+      "rules_losses": 0,
+      "rules_wins": 0,
+      "tokens": 249
+    },
+    "excluded": {
+      "masked_forms": 0,
+      "unknown_lemmas_with_visible_form": 1
+    },
+    "iso": "zza",
+    "sentences_by_block_type": {
+      "sent": 32
+    },
+    "sha256": "0e8df3978de4eaeaaaab10c81bac4c89d848abb41e7a4f5417603164b00d5b33"
+  }
+}

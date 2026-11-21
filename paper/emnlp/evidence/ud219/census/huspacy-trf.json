@@ -1,0 +1,15 @@
+{
+  "cells": {
+    "hun": {
+      "correct": 10181,
+      "model": "hu_core_news_trf-3.7.1",
+      "sentences": 448,
+      "status": "scored",
+      "tokens": 10432,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    }
+  },
+  "engine": "huspacy-trf",
+  "version": "3.7.1"
+}

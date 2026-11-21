@@ -1,0 +1,36 @@
+[package]
+name = "encoding-lab"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.89"
+publish = false
+description = "Form-to-lemma dictionary encodings compared on real key sets and query streams"
+
+[features]
+default = ["train"]
+# The core's hybrid builder is gated on this name; the lab always needs it.
+train = []
+
+[dependencies]
+crawdad = "=0.4.1"
+dsi-progress-logger = "=0.8.11"
+fst = "=0.4.7"
+hashbrown = "=0.17.1"
+libc = "=0.2.191"
+memmap2 = "=0.9.12"
+ph = "=0.11.0"
+ptr_hash = "=2.1.5"
+rayon = "=1.12.0"
+rsmarisa = "=0.4.2"
+serde_json = "=1.0.154"
+sux = "=0.15.4"
+xorf = "=0.13.0"
+yada = "=0.7.0"
+
+[profile.release]
+lto = true
+codegen-units = 1
+debug = 1
+
+# Standalone: the core's workspace must not adopt this crate.
+[workspace]

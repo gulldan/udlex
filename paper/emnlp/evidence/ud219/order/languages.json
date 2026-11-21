@@ -1,0 +1,1464 @@
+{
+  "abk": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "abq": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "afr": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 9922,
+    "fold_unit": null,
+    "learned_correct": 9922,
+    "losses": 0,
+    "sources": 2,
+    "tokens": 10063,
+    "treebank": "UD_Afrikaans-AfriBooms",
+    "wins": 0
+  },
+  "aii": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "ajp": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "akk": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "aln": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "amh": {
+    "changed": 32,
+    "cohort": "cross_validation",
+    "declared_correct": 8981,
+    "fold_unit": "sentences",
+    "learned_correct": 8995,
+    "losses": 9,
+    "sources": 2,
+    "tokens": 9573,
+    "treebank": "UD_Amharic-ATT",
+    "wins": 23
+  },
+  "apu": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "aqz": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "arb": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 26403,
+    "fold_unit": null,
+    "learned_correct": 26403,
+    "losses": 0,
+    "sources": 3,
+    "tokens": 28183,
+    "treebank": "UD_Arabic-PADT",
+    "wins": 0
+  },
+  "arh": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "arr": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "axm": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "aze": {
+    "changed": 2,
+    "cohort": "cross_validation",
+    "declared_correct": 671,
+    "fold_unit": "sentences",
+    "learned_correct": 673,
+    "losses": 0,
+    "sources": 3,
+    "tokens": 873,
+    "treebank": "UD_Azerbaijani-TueCL",
+    "wins": 2
+  },
+  "azz": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "bam": {
+    "changed": 0,
+    "cohort": "cross_validation",
+    "declared_correct": 11043,
+    "fold_unit": "sentences",
+    "learned_correct": 11043,
+    "losses": 0,
+    "sources": 2,
+    "tokens": 12609,
+    "treebank": "UD_Bambara-CRB",
+    "wins": 0
+  },
+  "bel": {
+    "changed": 1,
+    "cohort": "official",
+    "declared_correct": 14523,
+    "fold_unit": null,
+    "learned_correct": 14522,
+    "losses": 1,
+    "sources": 3,
+    "tokens": 15871,
+    "treebank": "UD_Belarusian-HSE",
+    "wins": 0
+  },
+  "ben": {
+    "changed": 0,
+    "cohort": "cross_validation",
+    "declared_correct": 275,
+    "fold_unit": "sentences",
+    "learned_correct": 275,
+    "losses": 0,
+    "sources": 2,
+    "tokens": 320,
+    "treebank": "UD_Bengali-BRU",
+    "wins": 0
+  },
+  "bho": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "bor": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "bre": {
+    "changed": 0,
+    "cohort": "cross_validation",
+    "declared_correct": 9078,
+    "fold_unit": "sentences",
+    "learned_correct": 9078,
+    "losses": 0,
+    "sources": 2,
+    "tokens": 9996,
+    "treebank": "UD_Breton-KEB",
+    "wins": 0
+  },
+  "brh": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "bul": {
+    "changed": 2007,
+    "cohort": "cross_validation",
+    "declared_correct": 145711,
+    "fold_unit": "documents and ungrouped sentences",
+    "learned_correct": 145203,
+    "losses": 1041,
+    "sources": 5,
+    "tokens": 154888,
+    "treebank": "UD_Bulgarian-BTB",
+    "wins": 533
+  },
+  "bxr": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 7505,
+    "fold_unit": null,
+    "learned_correct": 7505,
+    "losses": 0,
+    "sources": 3,
+    "tokens": 9960,
+    "treebank": "UD_Buryat-BDT",
+    "wins": 0
+  },
+  "cat": {
+    "changed": 131,
+    "cohort": "official",
+    "declared_correct": 57845,
+    "fold_unit": null,
+    "learned_correct": 57863,
+    "losses": 49,
+    "sources": 4,
+    "tokens": 59571,
+    "treebank": "UD_Catalan-AnCora",
+    "wins": 67
+  },
+  "ceb": {
+    "changed": 0,
+    "cohort": "cross_validation",
+    "declared_correct": 1248,
+    "fold_unit": "sentences",
+    "learned_correct": 1248,
+    "losses": 0,
+    "sources": 2,
+    "tokens": 1517,
+    "treebank": "UD_Cebuano-GJA",
+    "wins": 0
+  },
+  "ces": {
+    "changed": 727,
+    "cohort": "official",
+    "declared_correct": 293756,
+    "fold_unit": null,
+    "learned_correct": 293452,
+    "losses": 483,
+    "sources": 6,
+    "tokens": 298180,
+    "treebank": "UD_Czech-PDTC",
+    "wins": 179
+  },
+  "chu": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 16626,
+    "fold_unit": null,
+    "learned_correct": 16626,
+    "losses": 0,
+    "sources": 2,
+    "tokens": 19816,
+    "treebank": "UD_Old_Church_Slavonic-PROIEL",
+    "wins": 0
+  },
+  "cmn": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "cop": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "cpg": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "ctn": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "cym": {
+    "changed": 239,
+    "cohort": "official",
+    "declared_correct": 16291,
+    "fold_unit": null,
+    "learned_correct": 16251,
+    "losses": 126,
+    "sources": 3,
+    "tokens": 17026,
+    "treebank": "UD_Welsh-CCG",
+    "wins": 86
+  },
+  "dan": {
+    "changed": 80,
+    "cohort": "official",
+    "declared_correct": 9601,
+    "fold_unit": null,
+    "learned_correct": 9620,
+    "losses": 28,
+    "sources": 5,
+    "tokens": 10022,
+    "treebank": "UD_Danish-DDT",
+    "wins": 47
+  },
+  "deu": {
+    "changed": 60,
+    "cohort": "official",
+    "declared_correct": 319047,
+    "fold_unit": null,
+    "learned_correct": 319082,
+    "losses": 2,
+    "sources": 5,
+    "tokens": 329795,
+    "treebank": "UD_German-HDT",
+    "wins": 37
+  },
+  "egy": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "ell": {
+    "changed": 130,
+    "cohort": "official",
+    "declared_correct": 10284,
+    "fold_unit": null,
+    "learned_correct": 10259,
+    "losses": 72,
+    "sources": 6,
+    "tokens": 10656,
+    "treebank": "UD_Greek-GDT",
+    "wins": 47
+  },
+  "eme": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "eng": {
+    "changed": 111,
+    "cohort": "official",
+    "declared_correct": 27345,
+    "fold_unit": null,
+    "learned_correct": 27434,
+    "losses": 4,
+    "sources": 7,
+    "tokens": 28156,
+    "treebank": "UD_English-GUM",
+    "wins": 93
+  },
+  "epo": {
+    "changed": 0,
+    "cohort": "cross_validation",
+    "declared_correct": 170,
+    "fold_unit": "sentences",
+    "learned_correct": 170,
+    "losses": 0,
+    "sources": 2,
+    "tokens": 175,
+    "treebank": "UD_Esperanto-Cairo",
+    "wins": 0
+  },
+  "ess": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "est": {
+    "changed": 36,
+    "cohort": "official",
+    "declared_correct": 43844,
+    "fold_unit": null,
+    "learned_correct": 43874,
+    "losses": 1,
+    "sources": 4,
+    "tokens": 48309,
+    "treebank": "UD_Estonian-EDT",
+    "wins": 31
+  },
+  "eus": {
+    "changed": 12,
+    "cohort": "official",
+    "declared_correct": 23037,
+    "fold_unit": null,
+    "learned_correct": 23046,
+    "losses": 1,
+    "sources": 3,
+    "tokens": 24312,
+    "treebank": "UD_Basque-BDT",
+    "wins": 10
+  },
+  "fao": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 1105,
+    "fold_unit": null,
+    "learned_correct": 1105,
+    "losses": 0,
+    "sources": 2,
+    "tokens": 1105,
+    "treebank": "UD_Faroese-FarPaHC",
+    "wins": 0
+  },
+  "fin": {
+    "changed": 285,
+    "cohort": "official",
+    "declared_correct": 18747,
+    "fold_unit": null,
+    "learned_correct": 18708,
+    "losses": 131,
+    "sources": 4,
+    "tokens": 20989,
+    "treebank": "UD_Finnish-TDT",
+    "wins": 92
+  },
+  "fra": {
+    "changed": 12,
+    "cohort": "official",
+    "declared_correct": 9676,
+    "fold_unit": null,
+    "learned_correct": 9685,
+    "losses": 1,
+    "sources": 5,
+    "tokens": 9935,
+    "treebank": "UD_French-Sequoia",
+    "wins": 10
+  },
+  "frm": {
+    "changed": 1,
+    "cohort": "official",
+    "declared_correct": 12660,
+    "fold_unit": null,
+    "learned_correct": 12661,
+    "losses": 0,
+    "sources": 2,
+    "tokens": 13586,
+    "treebank": "UD_Middle_French-PROFITEROLE",
+    "wins": 1
+  },
+  "fro": {
+    "changed": 595,
+    "cohort": "cross_validation",
+    "declared_correct": 78273,
+    "fold_unit": "documents and ungrouped sentences",
+    "learned_correct": 78288,
+    "losses": 130,
+    "sources": 2,
+    "tokens": 143511,
+    "treebank": "UD_Old_French-PROFITEROLE",
+    "wins": 145
+  },
+  "gla": {
+    "changed": 1,
+    "cohort": "official",
+    "declared_correct": 9923,
+    "fold_unit": null,
+    "learned_correct": 9922,
+    "losses": 1,
+    "sources": 3,
+    "tokens": 10551,
+    "treebank": "UD_Scottish_Gaelic-ARCOSG",
+    "wins": 0
+  },
+  "gle": {
+    "changed": 9,
+    "cohort": "official",
+    "declared_correct": 9556,
+    "fold_unit": null,
+    "learned_correct": 9562,
+    "losses": 1,
+    "sources": 4,
+    "tokens": 10100,
+    "treebank": "UD_Irish-IDT",
+    "wins": 7
+  },
+  "glg": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 28832,
+    "fold_unit": null,
+    "learned_correct": 28832,
+    "losses": 0,
+    "sources": 3,
+    "tokens": 29740,
+    "treebank": "UD_Galician-CTG",
+    "wins": 0
+  },
+  "glv": {
+    "changed": 57,
+    "cohort": "official",
+    "declared_correct": 9810,
+    "fold_unit": null,
+    "learned_correct": 9820,
+    "losses": 21,
+    "sources": 3,
+    "tokens": 10252,
+    "treebank": "UD_Manx-Cadhan",
+    "wins": 31
+  },
+  "got": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 8910,
+    "fold_unit": null,
+    "learned_correct": 8910,
+    "losses": 0,
+    "sources": 2,
+    "tokens": 9878,
+    "treebank": "UD_Gothic-PROIEL",
+    "wins": 0
+  },
+  "grc": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 12954,
+    "fold_unit": null,
+    "learned_correct": 12954,
+    "losses": 0,
+    "sources": 3,
+    "tokens": 13091,
+    "treebank": "UD_Ancient_Greek-PROIEL",
+    "wins": 0
+  },
+  "gub": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "guj": {
+    "changed": 0,
+    "cohort": "cross_validation",
+    "declared_correct": 1399,
+    "fold_unit": "sentences",
+    "learned_correct": 1399,
+    "losses": 0,
+    "sources": 2,
+    "tokens": 1575,
+    "treebank": "UD_Gujarati-GujTB",
+    "wins": 0
+  },
+  "gun": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "gwi": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "gya": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "hat": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "hau": {
+    "changed": 0,
+    "cohort": "cross_validation",
+    "declared_correct": 13959,
+    "fold_unit": "sentences",
+    "learned_correct": 13959,
+    "losses": 0,
+    "sources": 2,
+    "tokens": 15291,
+    "treebank": "UD_Hausa-NorthernAutogramm",
+    "wins": 0
+  },
+  "hbo": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "heb": {
+    "changed": 53,
+    "cohort": "official",
+    "declared_correct": 11424,
+    "fold_unit": null,
+    "learned_correct": 11446,
+    "losses": 14,
+    "sources": 2,
+    "tokens": 11993,
+    "treebank": "UD_Hebrew-HTB",
+    "wins": 36
+  },
+  "hin": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 34057,
+    "fold_unit": null,
+    "learned_correct": 34057,
+    "losses": 0,
+    "sources": 3,
+    "tokens": 35413,
+    "treebank": "UD_Hindi-HDTB",
+    "wins": 0
+  },
+  "hit": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "hrv": {
+    "changed": 178,
+    "cohort": "official",
+    "declared_correct": 23481,
+    "fold_unit": null,
+    "learned_correct": 23477,
+    "losses": 84,
+    "sources": 5,
+    "tokens": 24203,
+    "treebank": "UD_Croatian-SET",
+    "wins": 80
+  },
+  "hsb": {
+    "changed": 81,
+    "cohort": "cross_validation",
+    "declared_correct": 9864,
+    "fold_unit": "documents and ungrouped sentences",
+    "learned_correct": 9900,
+    "losses": 13,
+    "sources": 3,
+    "tokens": 11167,
+    "treebank": "UD_Upper_Sorbian-UFAL",
+    "wins": 49
+  },
+  "hun": {
+    "changed": 292,
+    "cohort": "official",
+    "declared_correct": 9471,
+    "fold_unit": null,
+    "learned_correct": 9632,
+    "losses": 56,
+    "sources": 5,
+    "tokens": 10432,
+    "treebank": "UD_Hungarian-Szeged",
+    "wins": 217
+  },
+  "hye": {
+    "changed": 83,
+    "cohort": "official",
+    "declared_correct": 10213,
+    "fold_unit": null,
+    "learned_correct": 10246,
+    "losses": 22,
+    "sources": 4,
+    "tokens": 10610,
+    "treebank": "UD_Armenian-ArmTDP",
+    "wins": 55
+  },
+  "hyw": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "ind": {
+    "changed": 7,
+    "cohort": "official",
+    "declared_correct": 11476,
+    "fold_unit": null,
+    "learned_correct": 11478,
+    "losses": 1,
+    "sources": 4,
+    "tokens": 11712,
+    "treebank": "UD_Indonesian-GSD",
+    "wins": 3
+  },
+  "isl": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 131294,
+    "fold_unit": null,
+    "learned_correct": 131294,
+    "losses": 0,
+    "sources": 4,
+    "tokens": 139575,
+    "treebank": "UD_Icelandic-IcePaHC",
+    "wins": 0
+  },
+  "ita": {
+    "changed": 15,
+    "cohort": "official",
+    "declared_correct": 10105,
+    "fold_unit": null,
+    "learned_correct": 10118,
+    "losses": 0,
+    "sources": 5,
+    "tokens": 10416,
+    "treebank": "UD_Italian-ISDT",
+    "wins": 13
+  },
+  "jav": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "jpn": {
+    "changed": 2,
+    "cohort": "official",
+    "declared_correct": 12531,
+    "fold_unit": null,
+    "learned_correct": 12529,
+    "losses": 2,
+    "sources": 3,
+    "tokens": 13034,
+    "treebank": "UD_Japanese-GSD",
+    "wins": 0
+  },
+  "kat": {
+    "changed": 17,
+    "cohort": "official",
+    "declared_correct": 8697,
+    "fold_unit": null,
+    "learned_correct": 8701,
+    "losses": 0,
+    "sources": 3,
+    "tokens": 10426,
+    "treebank": "UD_Georgian-GNC",
+    "wins": 4
+  },
+  "kaz": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 8756,
+    "fold_unit": null,
+    "learned_correct": 8756,
+    "losses": 0,
+    "sources": 3,
+    "tokens": 10007,
+    "treebank": "UD_Kazakh-KTB",
+    "wins": 0
+  },
+  "kbc": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "kir": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 9444,
+    "fold_unit": null,
+    "learned_correct": 9444,
+    "losses": 0,
+    "sources": 3,
+    "tokens": 10840,
+    "treebank": "UD_Kyrgyz-KTMU",
+    "wins": 0
+  },
+  "kmr": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 8491,
+    "fold_unit": null,
+    "learned_correct": 8491,
+    "losses": 0,
+    "sources": 3,
+    "tokens": 9963,
+    "treebank": "UD_Northern_Kurdish-Kurmanji",
+    "wins": 0
+  },
+  "koi": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "kor": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 24738,
+    "fold_unit": null,
+    "learned_correct": 24738,
+    "losses": 0,
+    "sources": 3,
+    "tokens": 28352,
+    "treebank": "UD_Korean-Kaist",
+    "wins": 0
+  },
+  "kpv": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "krl": {
+    "changed": 0,
+    "cohort": "cross_validation",
+    "declared_correct": 2471,
+    "fold_unit": "sentences",
+    "learned_correct": 2471,
+    "losses": 0,
+    "sources": 3,
+    "tokens": 3093,
+    "treebank": "UD_Karelian-KKPP",
+    "wins": 0
+  },
+  "lat": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 28398,
+    "fold_unit": null,
+    "learned_correct": 28398,
+    "losses": 0,
+    "sources": 3,
+    "tokens": 29220,
+    "treebank": "UD_Latin-ITTB",
+    "wins": 0
+  },
+  "lav": {
+    "changed": 2,
+    "cohort": "official",
+    "declared_correct": 35795,
+    "fold_unit": null,
+    "learned_correct": 35797,
+    "losses": 0,
+    "sources": 4,
+    "tokens": 37080,
+    "treebank": "UD_Latvian-LVTB",
+    "wins": 2
+  },
+  "lij": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "lit": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 11635,
+    "fold_unit": null,
+    "learned_correct": 11635,
+    "losses": 0,
+    "sources": 5,
+    "tokens": 11953,
+    "treebank": "UD_Lithuanian-ALKSNIS",
+    "wins": 0
+  },
+  "lzh": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "mal": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "mar": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "mdf": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 3676,
+    "fold_unit": null,
+    "learned_correct": 3676,
+    "losses": 0,
+    "sources": 2,
+    "tokens": 4305,
+    "treebank": "UD_Moksha-JR",
+    "wins": 0
+  },
+  "mkd": {
+    "changed": 159,
+    "cohort": "cross_validation",
+    "declared_correct": 1114,
+    "fold_unit": "documents and ungrouped sentences",
+    "learned_correct": 1180,
+    "losses": 32,
+    "sources": 5,
+    "tokens": 1343,
+    "treebank": "UD_Macedonian-MTB",
+    "wins": 98
+  },
+  "myu": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "myv": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 9423,
+    "fold_unit": null,
+    "learned_correct": 9423,
+    "losses": 0,
+    "sources": 2,
+    "tokens": 10470,
+    "treebank": "UD_Erzya-JR",
+    "wins": 0
+  },
+  "naq": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "nds": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "nep": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "nhi": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "nld": {
+    "changed": 27,
+    "cohort": "official",
+    "declared_correct": 26863,
+    "fold_unit": null,
+    "learned_correct": 26850,
+    "losses": 16,
+    "sources": 4,
+    "tokens": 28804,
+    "treebank": "UD_Dutch-LassySmall",
+    "wins": 3
+  },
+  "nmf": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "nor": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 24058,
+    "fold_unit": null,
+    "learned_correct": 24058,
+    "losses": 0,
+    "sources": 3,
+    "tokens": 24697,
+    "treebank": "UD_Norwegian-Nynorsk",
+    "wins": 0
+  },
+  "oci": {
+    "changed": 141,
+    "cohort": "official",
+    "declared_correct": 9133,
+    "fold_unit": null,
+    "learned_correct": 9173,
+    "losses": 37,
+    "sources": 3,
+    "tokens": 9956,
+    "treebank": "UD_Occitan-TTB",
+    "wins": 77
+  },
+  "oge": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "olo": {
+    "changed": 65,
+    "cohort": "official",
+    "declared_correct": 1209,
+    "fold_unit": null,
+    "learned_correct": 1205,
+    "losses": 32,
+    "sources": 3,
+    "tokens": 1485,
+    "treebank": "UD_Livvi-KKPP",
+    "wins": 28
+  },
+  "ori": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "orv": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "ota": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "pan": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "pay": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "pcm": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "pes": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 23772,
+    "fold_unit": null,
+    "learned_correct": 23772,
+    "losses": 0,
+    "sources": 6,
+    "tokens": 24118,
+    "treebank": "UD_Persian-PerDT",
+    "wins": 0
+  },
+  "pol": {
+    "changed": 387,
+    "cohort": "official",
+    "declared_correct": 32694,
+    "fold_unit": null,
+    "learned_correct": 32658,
+    "losses": 199,
+    "sources": 6,
+    "tokens": 33572,
+    "treebank": "UD_Polish-PDB",
+    "wins": 163
+  },
+  "por": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 28695,
+    "fold_unit": null,
+    "learned_correct": 28695,
+    "losses": 0,
+    "sources": 4,
+    "tokens": 29539,
+    "treebank": "UD_Portuguese-PetroGold",
+    "wins": 0
+  },
+  "pro": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "pst": {
+    "changed": 1,
+    "cohort": "cross_validation",
+    "declared_correct": 6393,
+    "fold_unit": "sentences",
+    "learned_correct": 6392,
+    "losses": 1,
+    "sources": 2,
+    "tokens": 6859,
+    "treebank": "UD_Pashto-Sikaram",
+    "wins": 0
+  },
+  "qaf": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "qpm": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "qtd": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "qti": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "quc": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "ron": {
+    "changed": 82,
+    "cohort": "official",
+    "declared_correct": 19191,
+    "fold_unit": null,
+    "learned_correct": 19215,
+    "losses": 19,
+    "sources": 6,
+    "tokens": 20943,
+    "treebank": "UD_Romanian-Nonstandard",
+    "wins": 43
+  },
+  "ruc": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "rus": {
+    "changed": 26,
+    "cohort": "official",
+    "declared_correct": 14748,
+    "fold_unit": null,
+    "learned_correct": 14744,
+    "losses": 10,
+    "sources": 7,
+    "tokens": 15334,
+    "treebank": "UD_Russian-Taiga",
+    "wins": 6
+  },
+  "sab": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "sah": {
+    "changed": 49,
+    "cohort": "cross_validation",
+    "declared_correct": 1372,
+    "fold_unit": "sentences",
+    "learned_correct": 1380,
+    "losses": 20,
+    "sources": 3,
+    "tokens": 1453,
+    "treebank": "UD_Yakut-YKTDT",
+    "wins": 28
+  },
+  "san": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 17736,
+    "fold_unit": null,
+    "learned_correct": 17736,
+    "losses": 0,
+    "sources": 2,
+    "tokens": 19338,
+    "treebank": "UD_Sanskrit-Vedic",
+    "wins": 0
+  },
+  "say": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "scn": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "sga": {
+    "changed": 0,
+    "cohort": "cross_validation",
+    "declared_correct": 209,
+    "fold_unit": "sentences",
+    "learned_correct": 209,
+    "losses": 0,
+    "sources": 2,
+    "tokens": 393,
+    "treebank": "UD_Old_Irish-DipSGG",
+    "wins": 0
+  },
+  "sin": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "sjo": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "slk": {
+    "changed": 51,
+    "cohort": "official",
+    "declared_correct": 11909,
+    "fold_unit": null,
+    "learned_correct": 11905,
+    "losses": 23,
+    "sources": 5,
+    "tokens": 12702,
+    "treebank": "UD_Slovak-SNK",
+    "wins": 19
+  },
+  "slv": {
+    "changed": 132,
+    "cohort": "official",
+    "declared_correct": 24758,
+    "fold_unit": null,
+    "learned_correct": 24758,
+    "losses": 54,
+    "sources": 4,
+    "tokens": 25407,
+    "treebank": "UD_Slovenian-SSJ",
+    "wins": 54
+  },
+  "sme": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 9727,
+    "fold_unit": null,
+    "learned_correct": 9727,
+    "losses": 0,
+    "sources": 2,
+    "tokens": 9927,
+    "treebank": "UD_North_Sami-Giella",
+    "wins": 0
+  },
+  "sms": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "snd": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "spa": {
+    "changed": 101,
+    "cohort": "official",
+    "declared_correct": 52340,
+    "fold_unit": null,
+    "learned_correct": 52425,
+    "losses": 0,
+    "sources": 5,
+    "tokens": 53584,
+    "treebank": "UD_Spanish-AnCora",
+    "wins": 85
+  },
+  "sqi": {
+    "changed": 3,
+    "cohort": "official",
+    "declared_correct": 317,
+    "fold_unit": null,
+    "learned_correct": 315,
+    "losses": 2,
+    "sources": 4,
+    "tokens": 371,
+    "treebank": "UD_Albanian-STAF",
+    "wins": 0
+  },
+  "srp": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 11051,
+    "fold_unit": null,
+    "learned_correct": 11051,
+    "losses": 0,
+    "sources": 5,
+    "tokens": 11410,
+    "treebank": "UD_Serbian-SET",
+    "wins": 0
+  },
+  "ssp": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "swe": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 19858,
+    "fold_unit": null,
+    "learned_correct": 19858,
+    "losses": 0,
+    "sources": 5,
+    "tokens": 20371,
+    "treebank": "UD_Swedish-Talbanken",
+    "wins": 0
+  },
+  "tam": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "tat": {
+    "changed": 0,
+    "cohort": "cross_validation",
+    "declared_correct": 2035,
+    "fold_unit": "sentences",
+    "learned_correct": 2035,
+    "losses": 0,
+    "sources": 3,
+    "tokens": 2269,
+    "treebank": "UD_Tatar-NMCTT",
+    "wins": 0
+  },
+  "tel": {
+    "cohort": "no scorable independent pair",
+    "sources": 2,
+    "treebank": "UD_Telugu-MTG"
+  },
+  "tgl": {
+    "changed": 42,
+    "cohort": "cross_validation",
+    "declared_correct": 628,
+    "fold_unit": "sentences",
+    "learned_correct": 657,
+    "losses": 3,
+    "sources": 4,
+    "tokens": 734,
+    "treebank": "UD_Tagalog-TRG",
+    "wins": 32
+  },
+  "tha": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "tpn": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "tuk": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "tur": {
+    "changed": 147,
+    "cohort": "official",
+    "declared_correct": 9197,
+    "fold_unit": null,
+    "learned_correct": 9271,
+    "losses": 31,
+    "sources": 6,
+    "tokens": 9904,
+    "treebank": "UD_Turkish-Penn",
+    "wins": 105
+  },
+  "uig": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 7339,
+    "fold_unit": null,
+    "learned_correct": 7339,
+    "losses": 0,
+    "sources": 3,
+    "tokens": 7573,
+    "treebank": "UD_Uyghur-UDT",
+    "wins": 0
+  },
+  "ukr": {
+    "changed": 29,
+    "cohort": "official",
+    "declared_correct": 15401,
+    "fold_unit": null,
+    "learned_correct": 15400,
+    "losses": 14,
+    "sources": 5,
+    "tokens": 16075,
+    "treebank": "UD_Ukrainian-IU",
+    "wins": 13
+  },
+  "urb": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "urd": {
+    "changed": 6,
+    "cohort": "official",
+    "declared_correct": 13763,
+    "fold_unit": null,
+    "learned_correct": 13762,
+    "losses": 3,
+    "sources": 3,
+    "tokens": 14537,
+    "treebank": "UD_Urdu-UDTB",
+    "wins": 2
+  },
+  "uzb": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 1877,
+    "fold_unit": null,
+    "learned_correct": 1877,
+    "losses": 0,
+    "sources": 4,
+    "tokens": 2128,
+    "treebank": "UD_Uzbek-UzUDT",
+    "wins": 0
+  },
+  "vep": {
+    "changed": 0,
+    "cohort": "cross_validation",
+    "declared_correct": 1158,
+    "fold_unit": "sentences",
+    "learned_correct": 1158,
+    "losses": 0,
+    "sources": 3,
+    "tokens": 1303,
+    "treebank": "UD_Veps-VWT",
+    "wins": 0
+  },
+  "vie": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "wbp": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "wol": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "wuu": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "xav": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "xcl": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "xnr": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "xpg": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "xum": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "yid": {
+    "changed": 0,
+    "cohort": "official",
+    "declared_correct": 9292,
+    "fold_unit": null,
+    "learned_correct": 9292,
+    "losses": 0,
+    "sources": 2,
+    "tokens": 9955,
+    "treebank": "UD_Yiddish-YiTB",
+    "wins": 0
+  },
+  "yor": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "yrk": {
+    "cohort": "fewer than two sources",
+    "sources": 0,
+    "treebank": null
+  },
+  "yrl": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "yue": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  },
+  "zza": {
+    "cohort": "fewer than two sources",
+    "sources": 1,
+    "treebank": null
+  }
+}

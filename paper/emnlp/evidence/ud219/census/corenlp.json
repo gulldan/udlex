@@ -1,0 +1,408 @@
+{
+  "cells": {
+    "afr": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "arb": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "bel": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "bor": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "bxr": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "cat": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "ces": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "chu": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "cmn": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "cop": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "cym": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "dan": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "deu": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "egy": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "ell": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "eng": {
+      "correct": 27135,
+      "model": "stanford-corenlp-4.6.0",
+      "status": "scored",
+      "tokens": 28156
+    },
+    "est": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "eus": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "fao": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "fin": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "fra": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "frm": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "gla": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "gle": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "glg": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "glv": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "got": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "grc": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "hat": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "hbo": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "heb": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "hin": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "hrv": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "hun": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "hye": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "hyw": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "ind": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "isl": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "ita": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "jpn": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "kat": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "kaz": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "kir": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "kmr": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "koi": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "kor": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "kpv": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "lat": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "lav": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "lij": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "lit": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "lzh": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "mar": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "mdf": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "myv": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "naq": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "nds": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "nld": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "nmf": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "nor": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "oci": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "oge": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "olo": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "orv": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "ota": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "pan": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "pcm": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "pes": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "pol": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "por": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "pro": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "qaf": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "qpm": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "qtd": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "ron": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "rus": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "san": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "say": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "slk": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "slv": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "sme": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "sms": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "snd": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "spa": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "sqi": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "srp": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "swe": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "tam": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "tur": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "uig": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "ukr": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "urd": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "uzb": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "vie": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "wol": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "wuu": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "xcl": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "yid": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "yrl": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    },
+    "zza": {
+      "reason": "LookupError: CoreNLP is scored on English only",
+      "status": "unsupported"
+    }
+  },
+  "engine": "corenlp",
+  "version": "4.6.0"
+}

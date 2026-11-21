@@ -1,0 +1,6803 @@
+{
+  "ar_nyuad": {
+    "anchor": "UD_Arabic-PADT",
+    "fit": "official",
+    "group": "nothing scorable",
+    "iso": "arb",
+    "lemmas": "converted from manual",
+    "screen": {
+      "no_scorable_word": 19738,
+      "sentences": 0,
+      "sentences_read": 19738,
+      "tokens": 0
+    },
+    "shared_contributors": false,
+    "treebank": "UD_Arabic-NYUAD",
+    "ud": true
+  },
+  "ar_pud": {
+    "accepted": false,
+    "anchor": "UD_Arabic-PADT",
+    "changed": 0,
+    "declared_correct": 16540,
+    "external_tokens": 2284,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "silver",
+    "iso": "arb",
+    "lemmas": "automatic",
+    "losses": 0,
+    "order": [
+      [
+        "camel-morph",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "camel-morph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "sentences": 1000,
+      "sentences_read": 1000,
+      "tokens": 20747
+    },
+    "shared_contributors": true,
+    "tokens": 20747,
+    "treebank": "UD_Arabic-PUD",
+    "ud": true,
+    "wins": 0
+  },
+  "bg_elexis": {
+    "accepted": false,
+    "anchor": "UD_Bulgarian-BTB",
+    "changed": 421,
+    "declared_correct": 29922,
+    "external_tokens": 4083,
+    "fit": "pooled",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "bul",
+    "lemmas": "automatic with corrections",
+    "losses": 311,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "wiktionary",
+        "dictionary",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 1,
+      "sentences": 2023,
+      "sentences_read": 2024,
+      "tokens": 33966
+    },
+    "shared_contributors": false,
+    "tokens": 33966,
+    "treebank": "X_Bulgarian-ELEXIS",
+    "ud": false,
+    "wins": 86
+  },
+  "bg_mte1984": {
+    "accepted": false,
+    "anchor": "UD_Bulgarian-BTB",
+    "changed": 1069,
+    "declared_correct": 85232,
+    "external_tokens": 13981,
+    "fit": "pooled",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "bul",
+    "lemmas": "automatic with corrections",
+    "losses": 295,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "wiktionary",
+        "dictionary",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 31,
+      "repeated_sentence": 96,
+      "sentences": 6555,
+      "sentences_read": 6682,
+      "tokens": 100689
+    },
+    "shared_contributors": true,
+    "tokens": 100689,
+    "treebank": "X_Bulgarian-MTE1984",
+    "ud": false,
+    "wins": 732
+  },
+  "bn_banlemma": {
+    "accepted": false,
+    "anchor": "UD_Bengali-BRU",
+    "changed": 0,
+    "declared_correct": 6605,
+    "external_tokens": 4317,
+    "fit": "pooled",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ben",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 23,
+      "sentences": 1257,
+      "sentences_read": 1280,
+      "tokens": 9957
+    },
+    "shared_contributors": false,
+    "tokens": 9957,
+    "treebank": "X_Bengali-BanLemma",
+    "ud": false,
+    "wins": 0
+  },
+  "cs_cac": {
+    "accepted": false,
+    "anchor": "UD_Czech-PDTC",
+    "changed": 2449,
+    "declared_correct": 467670,
+    "external_tokens": 29471,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ces",
+    "lemmas": "converted from manual",
+    "losses": 1614,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "unimorph",
+        "dictionary",
+        "wiktionary",
+        "spacy-lookups",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 26,
+      "near_overlap": 24,
+      "repeated_sentence": 242,
+      "sentences": 24417,
+      "sentences_read": 24709,
+      "tokens": 492417
+    },
+    "shared_contributors": true,
+    "tokens": 492417,
+    "treebank": "UD_Czech-CAC",
+    "ud": true,
+    "wins": 564
+  },
+  "cs_cltt": {
+    "accepted": false,
+    "anchor": "UD_Czech-PDTC",
+    "changed": 213,
+    "declared_correct": 33657,
+    "external_tokens": 1292,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ces",
+    "lemmas": "converted from manual",
+    "losses": 186,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "unimorph",
+        "dictionary",
+        "wiktionary",
+        "spacy-lookups",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 1,
+      "near_overlap": 5,
+      "repeated_sentence": 54,
+      "sentences": 1061,
+      "sentences_read": 1121,
+      "tokens": 35278
+    },
+    "shared_contributors": true,
+    "tokens": 35278,
+    "treebank": "UD_Czech-CLTT",
+    "ud": true,
+    "wins": 22
+  },
+  "cs_czesl": {
+    "accepted": false,
+    "anchor": "UD_Czech-PDTC",
+    "changed": 33,
+    "declared_correct": 8419,
+    "external_tokens": 218,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ces",
+    "lemmas": "manual native",
+    "losses": 13,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "unimorph",
+        "dictionary",
+        "wiktionary",
+        "spacy-lookups",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 30,
+      "near_overlap": 1,
+      "repeated_sentence": 55,
+      "sentences": 1556,
+      "sentences_read": 1642,
+      "tokens": 9677
+    },
+    "shared_contributors": true,
+    "tokens": 9677,
+    "treebank": "UD_Czech-CzeSL",
+    "ud": true,
+    "wins": 10
+  },
+  "cs_fictree": {
+    "accepted": false,
+    "anchor": "UD_Czech-PDTC",
+    "changed": 954,
+    "declared_correct": 160600,
+    "external_tokens": 9920,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ces",
+    "lemmas": "converted from manual",
+    "losses": 566,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "unimorph",
+        "dictionary",
+        "wiktionary",
+        "spacy-lookups",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 109,
+      "repeated_sentence": 197,
+      "sentences": 12454,
+      "sentences_read": 12760,
+      "tokens": 165837
+    },
+    "shared_contributors": true,
+    "tokens": 165837,
+    "treebank": "UD_Czech-FicTree",
+    "ud": true,
+    "wins": 289
+  },
+  "cs_mte1984": {
+    "accepted": false,
+    "anchor": "UD_Czech-PDTC",
+    "changed": 737,
+    "declared_correct": 95262,
+    "external_tokens": 6036,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "silver",
+    "iso": "ces",
+    "lemmas": "automatic",
+    "losses": 277,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "unimorph",
+        "dictionary",
+        "wiktionary",
+        "spacy-lookups",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 4,
+      "repeated_sentence": 127,
+      "sentences": 6583,
+      "sentences_read": 6714,
+      "tokens": 99418
+    },
+    "shared_contributors": false,
+    "tokens": 99418,
+    "treebank": "X_Czech-MTE1984",
+    "ud": false,
+    "wins": 432
+  },
+  "cs_poetry": {
+    "accepted": false,
+    "anchor": "UD_Czech-PDTC",
+    "changed": 71,
+    "declared_correct": 5732,
+    "external_tokens": 788,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ces",
+    "lemmas": "manual native",
+    "losses": 35,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "unimorph",
+        "dictionary",
+        "wiktionary",
+        "spacy-lookups",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 8,
+      "sentences": 289,
+      "sentences_read": 297,
+      "tokens": 6245
+    },
+    "shared_contributors": false,
+    "tokens": 6245,
+    "treebank": "UD_Czech-Poetry",
+    "ud": true,
+    "wins": 21
+  },
+  "cs_pud": {
+    "accepted": false,
+    "anchor": "UD_Czech-PDTC",
+    "changed": 55,
+    "declared_correct": 17664,
+    "external_tokens": 743,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ces",
+    "lemmas": "converted from manual",
+    "losses": 35,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "unimorph",
+        "dictionary",
+        "wiktionary",
+        "spacy-lookups",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "document_sentences_removed": 2,
+      "documents_removed": 1,
+      "near_overlap": 1,
+      "sentences": 997,
+      "sentences_read": 1000,
+      "tokens": 18544
+    },
+    "shared_contributors": true,
+    "tokens": 18544,
+    "treebank": "UD_Czech-PUD",
+    "ud": true,
+    "wins": 8
+  },
+  "cu_torot": {
+    "accepted": false,
+    "anchor": "UD_Old_Church_Slavonic-PROIEL",
+    "changed": 0,
+    "declared_correct": 8092,
+    "external_tokens": 593,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "chu",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "wiktionary",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 4,
+      "repeated_sentence": 37,
+      "sentences": 1230,
+      "sentences_read": 1271,
+      "tokens": 13513
+    },
+    "shared_contributors": false,
+    "tokens": 13513,
+    "treebank": "X_Old_Church_Slavonic-TOROT",
+    "ud": false,
+    "wins": 0
+  },
+  "da_elexis": {
+    "accepted": false,
+    "anchor": "UD_Danish-DDT",
+    "changed": 304,
+    "declared_correct": 30647,
+    "external_tokens": 4983,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "dan",
+    "lemmas": "automatic with corrections",
+    "losses": 73,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "dictionary",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "sentences": 2024,
+      "sentences_read": 2024,
+      "tokens": 32528
+    },
+    "shared_contributors": false,
+    "tokens": 32528,
+    "treebank": "X_Danish-ELEXIS",
+    "ud": false,
+    "wins": 204
+  },
+  "de_gsd": {
+    "accepted": false,
+    "anchor": "UD_German-HDT",
+    "changed": 269,
+    "declared_correct": 277054,
+    "external_tokens": 17575,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "silver",
+    "iso": "deu",
+    "lemmas": "automatic",
+    "losses": 9,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 2,
+      "near_overlap": 76,
+      "repeated_sentence": 33,
+      "sentences": 15478,
+      "sentences_read": 15589,
+      "tokens": 290343
+    },
+    "shared_contributors": true,
+    "tokens": 290343,
+    "treebank": "UD_German-GSD",
+    "ud": true,
+    "wins": 190
+  },
+  "de_lit": {
+    "accepted": false,
+    "anchor": "UD_German-HDT",
+    "changed": 105,
+    "declared_correct": 38206,
+    "external_tokens": 2738,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "deu",
+    "lemmas": "automatic with corrections",
+    "losses": 20,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "near_overlap": 1,
+      "sentences": 1919,
+      "sentences_read": 1920,
+      "tokens": 40434
+    },
+    "shared_contributors": false,
+    "tokens": 40434,
+    "treebank": "UD_German-LIT",
+    "ud": true,
+    "wins": 48
+  },
+  "de_pud": {
+    "accepted": false,
+    "anchor": "UD_German-HDT",
+    "changed": 19,
+    "declared_correct": 20172,
+    "external_tokens": 1020,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "deu",
+    "lemmas": "manual native",
+    "losses": 2,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "document_sentences_removed": 8,
+      "documents_removed": 5,
+      "near_overlap": 5,
+      "sentences": 987,
+      "sentences_read": 1000,
+      "tokens": 21038
+    },
+    "shared_contributors": false,
+    "tokens": 21038,
+    "treebank": "UD_German-PUD",
+    "ud": true,
+    "wins": 15
+  },
+  "el_cretan": {
+    "accepted": false,
+    "anchor": "UD_Greek-GDT",
+    "changed": 95,
+    "declared_correct": 3264,
+    "external_tokens": 1148,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ell",
+    "lemmas": "manual native",
+    "losses": 58,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary",
+        "llm-teacher"
+      ],
+      [
+        "simplemma",
+        "llm-teacher",
+        "dictionary",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "sentences": 270,
+      "sentences_read": 270,
+      "tokens": 4351
+    },
+    "shared_contributors": false,
+    "tokens": 4351,
+    "treebank": "UD_Greek-Cretan",
+    "ud": true,
+    "wins": 23
+  },
+  "el_cypriot": {
+    "accepted": false,
+    "anchor": "UD_Greek-GDT",
+    "changed": 47,
+    "declared_correct": 1304,
+    "external_tokens": 315,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ell",
+    "lemmas": "manual native",
+    "losses": 25,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary",
+        "llm-teacher"
+      ],
+      [
+        "simplemma",
+        "llm-teacher",
+        "dictionary",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "sentences": 100,
+      "sentences_read": 100,
+      "tokens": 2042
+    },
+    "shared_contributors": false,
+    "tokens": 2042,
+    "treebank": "UD_Greek-Cypriot",
+    "ud": true,
+    "wins": 7
+  },
+  "el_glcii": {
+    "accepted": false,
+    "anchor": "UD_Greek-GDT",
+    "changed": 176,
+    "declared_correct": 8643,
+    "external_tokens": 1819,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ell",
+    "lemmas": "manual native",
+    "losses": 80,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary",
+        "llm-teacher"
+      ],
+      [
+        "simplemma",
+        "llm-teacher",
+        "dictionary",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 1,
+      "sentences": 670,
+      "sentences_read": 671,
+      "tokens": 9864
+    },
+    "shared_contributors": false,
+    "tokens": 9864,
+    "treebank": "UD_Greek-GLCII",
+    "ud": true,
+    "wins": 60
+  },
+  "el_griko": {
+    "accepted": false,
+    "anchor": "UD_Greek-GDT",
+    "changed": 0,
+    "declared_correct": 511,
+    "external_tokens": 98,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ell",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary",
+        "llm-teacher"
+      ],
+      [
+        "simplemma",
+        "llm-teacher",
+        "dictionary",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "sentences": 100,
+      "sentences_read": 100,
+      "tokens": 1262
+    },
+    "shared_contributors": false,
+    "tokens": 1262,
+    "treebank": "UD_Greek-Griko",
+    "ud": true,
+    "wins": 0
+  },
+  "el_gud": {
+    "accepted": false,
+    "anchor": "UD_Greek-GDT",
+    "changed": 673,
+    "declared_correct": 22644,
+    "external_tokens": 5625,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ell",
+    "lemmas": "manual native",
+    "losses": 459,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary",
+        "llm-teacher"
+      ],
+      [
+        "simplemma",
+        "llm-teacher",
+        "dictionary",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "sentences": 1807,
+      "sentences_read": 1807,
+      "tokens": 25493
+    },
+    "shared_contributors": false,
+    "tokens": 25493,
+    "treebank": "UD_Greek-GUD",
+    "ud": true,
+    "wins": 160
+  },
+  "el_lesbian": {
+    "accepted": false,
+    "anchor": "UD_Greek-GDT",
+    "changed": 190,
+    "declared_correct": 2481,
+    "external_tokens": 1502,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ell",
+    "lemmas": "manual native",
+    "losses": 39,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary",
+        "llm-teacher"
+      ],
+      [
+        "simplemma",
+        "llm-teacher",
+        "dictionary",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "sentences": 625,
+      "sentences_read": 625,
+      "tokens": 6838
+    },
+    "shared_contributors": false,
+    "tokens": 6838,
+    "treebank": "UD_Greek-Lesbian",
+    "ud": true,
+    "wins": 12
+  },
+  "el_messinian": {
+    "accepted": false,
+    "anchor": "UD_Greek-GDT",
+    "changed": 15,
+    "declared_correct": 764,
+    "external_tokens": 196,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ell",
+    "lemmas": "manual native",
+    "losses": 6,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary",
+        "llm-teacher"
+      ],
+      [
+        "simplemma",
+        "llm-teacher",
+        "dictionary",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "sentences": 110,
+      "sentences_read": 110,
+      "tokens": 899
+    },
+    "shared_contributors": false,
+    "tokens": 899,
+    "treebank": "UD_Greek-Messinian",
+    "ud": true,
+    "wins": 6
+  },
+  "en_atis": {
+    "accepted": true,
+    "anchor": "UD_English-GUM",
+    "changed": 7,
+    "declared_correct": 54803,
+    "external_tokens": 989,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "eng",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "spacy-lookups",
+        "lemminflect",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "unimorph",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "lemminflect"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 5,
+      "sentences": 5427,
+      "sentences_read": 5432,
+      "tokens": 61851
+    },
+    "shared_contributors": false,
+    "tokens": 61851,
+    "treebank": "UD_English-Atis",
+    "ud": true,
+    "wins": 0
+  },
+  "en_childes": {
+    "accepted": true,
+    "anchor": "UD_English-GUM",
+    "changed": 456,
+    "declared_correct": 277567,
+    "external_tokens": 14986,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "eng",
+    "lemmas": "automatic with corrections",
+    "losses": 31,
+    "order": [
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "spacy-lookups",
+        "lemminflect",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "unimorph",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "lemminflect"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 475,
+      "repeated_sentence": 2484,
+      "sentences": 45224,
+      "sentences_read": 48183,
+      "tokens": 291364
+    },
+    "shared_contributors": false,
+    "tokens": 291364,
+    "treebank": "UD_English-CHILDES",
+    "ud": true,
+    "wins": 369
+  },
+  "en_ctetex": {
+    "accepted": true,
+    "anchor": "UD_English-GUM",
+    "changed": 70,
+    "declared_correct": 8137,
+    "external_tokens": 914,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "eng",
+    "lemmas": "manual native",
+    "losses": 1,
+    "order": [
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "spacy-lookups",
+        "lemminflect",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "unimorph",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "lemminflect"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 2,
+      "sentences": 274,
+      "sentences_read": 276,
+      "tokens": 9222
+    },
+    "shared_contributors": false,
+    "tokens": 9222,
+    "treebank": "UD_English-CTeTex",
+    "ud": true,
+    "wins": 33
+  },
+  "en_elexis": {
+    "accepted": true,
+    "anchor": "UD_English-GUM",
+    "changed": 224,
+    "declared_correct": 32244,
+    "external_tokens": 2716,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "eng",
+    "lemmas": "automatic with corrections",
+    "losses": 18,
+    "order": [
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "spacy-lookups",
+        "lemminflect",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "unimorph",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "lemminflect"
+      ]
+    ],
+    "screen": {
+      "near_overlap": 1,
+      "sentences": 2023,
+      "sentences_read": 2024,
+      "tokens": 34201
+    },
+    "shared_contributors": false,
+    "tokens": 34201,
+    "treebank": "X_English-ELEXIS",
+    "ud": false,
+    "wins": 183
+  },
+  "en_esl": {
+    "anchor": "UD_English-GUM",
+    "fit": "official",
+    "group": "nothing scorable",
+    "iso": "eng",
+    "lemmas": "automatic",
+    "screen": {
+      "no_scorable_word": 5124,
+      "sentences": 0,
+      "sentences_read": 5124,
+      "tokens": 0
+    },
+    "shared_contributors": false,
+    "treebank": "UD_English-ESL",
+    "ud": true
+  },
+  "en_eslspok": {
+    "anchor": "UD_English-GUM",
+    "fit": "official",
+    "group": "no lemmas",
+    "iso": "eng",
+    "lemmas": "not available",
+    "shared_contributors": false,
+    "treebank": "UD_English-ESLSpok",
+    "ud": true
+  },
+  "en_ewt": {
+    "accepted": true,
+    "anchor": "UD_English-GUM",
+    "changed": 1249,
+    "declared_correct": 234073,
+    "external_tokens": 15541,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "eng",
+    "lemmas": "automatic with corrections",
+    "losses": 154,
+    "order": [
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "spacy-lookups",
+        "lemminflect",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "unimorph",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "lemminflect"
+      ]
+    ],
+    "screen": {
+      "document_sentences_removed": 88,
+      "documents_removed": 15,
+      "exact_overlap": 81,
+      "near_overlap": 4,
+      "repeated_sentence": 1129,
+      "sentences": 15320,
+      "sentences_read": 16622,
+      "tokens": 246758
+    },
+    "shared_contributors": false,
+    "tokens": 246758,
+    "treebank": "UD_English-EWT",
+    "ud": true,
+    "wins": 868
+  },
+  "en_gentle": {
+    "accepted": true,
+    "anchor": "UD_English-GUM",
+    "changed": 101,
+    "declared_correct": 16502,
+    "external_tokens": 1594,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "eng",
+    "lemmas": "manual native",
+    "losses": 15,
+    "order": [
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "spacy-lookups",
+        "lemminflect",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "unimorph",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "lemminflect"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 4,
+      "repeated_sentence": 81,
+      "sentences": 1249,
+      "sentences_read": 1334,
+      "tokens": 17465
+    },
+    "shared_contributors": true,
+    "tokens": 17465,
+    "treebank": "UD_English-GENTLE",
+    "ud": true,
+    "wins": 73
+  },
+  "en_gumreddit": {
+    "anchor": "UD_English-GUM",
+    "fit": "official",
+    "group": "nothing scorable",
+    "iso": "eng",
+    "lemmas": "manual native",
+    "screen": {
+      "no_scorable_word": 895,
+      "sentences": 0,
+      "sentences_read": 895,
+      "tokens": 0
+    },
+    "shared_contributors": true,
+    "treebank": "UD_English-GUMReddit",
+    "ud": true
+  },
+  "en_lines": {
+    "accepted": true,
+    "anchor": "UD_English-GUM",
+    "changed": 375,
+    "declared_correct": 100781,
+    "external_tokens": 7475,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "eng",
+    "lemmas": "converted from manual",
+    "losses": 35,
+    "order": [
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "spacy-lookups",
+        "lemminflect",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "unimorph",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "lemminflect"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 9,
+      "repeated_sentence": 27,
+      "sentences": 5660,
+      "sentences_read": 5696,
+      "tokens": 106157
+    },
+    "shared_contributors": false,
+    "tokens": 106157,
+    "treebank": "UD_English-LinES",
+    "ud": true,
+    "wins": 303
+  },
+  "en_littleprince": {
+    "accepted": true,
+    "anchor": "UD_English-GUM",
+    "changed": 2,
+    "declared_correct": 6558,
+    "external_tokens": 271,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "eng",
+    "lemmas": "manual native",
+    "losses": 1,
+    "order": [
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "spacy-lookups",
+        "lemminflect",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "unimorph",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "lemminflect"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 2,
+      "repeated_sentence": 10,
+      "sentences": 488,
+      "sentences_read": 500,
+      "tokens": 6815
+    },
+    "shared_contributors": false,
+    "tokens": 6815,
+    "treebank": "UD_English-LittlePrince",
+    "ud": true,
+    "wins": 1
+  },
+  "en_mte1984": {
+    "accepted": true,
+    "anchor": "UD_English-GUM",
+    "changed": 500,
+    "declared_correct": 111703,
+    "external_tokens": 8329,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "eng",
+    "lemmas": "automatic with corrections",
+    "losses": 129,
+    "order": [
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "spacy-lookups",
+        "lemminflect",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "unimorph",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "lemminflect"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 56,
+      "near_overlap": 3,
+      "repeated_sentence": 128,
+      "sentences": 6550,
+      "sentences_read": 6737,
+      "tokens": 117513
+    },
+    "shared_contributors": false,
+    "tokens": 117513,
+    "treebank": "X_English-MTE1984",
+    "ud": false,
+    "wins": 267
+  },
+  "en_partut": {
+    "accepted": true,
+    "anchor": "UD_English-GUM",
+    "changed": 204,
+    "declared_correct": 45857,
+    "external_tokens": 3342,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "eng",
+    "lemmas": "converted with corrections",
+    "losses": 20,
+    "order": [
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "spacy-lookups",
+        "lemminflect",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "unimorph",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "lemminflect"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 1,
+      "near_overlap": 1,
+      "repeated_sentence": 5,
+      "sentences": 2083,
+      "sentences_read": 2090,
+      "tokens": 49370
+    },
+    "shared_contributors": false,
+    "tokens": 49370,
+    "treebank": "UD_English-ParTUT",
+    "ud": true,
+    "wins": 141
+  },
+  "en_pronouns": {
+    "accepted": true,
+    "anchor": "UD_English-GUM",
+    "changed": 0,
+    "declared_correct": 1614,
+    "external_tokens": 127,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "eng",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "spacy-lookups",
+        "lemminflect",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "unimorph",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "lemminflect"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 1,
+      "sentences": 284,
+      "sentences_read": 285,
+      "tokens": 1701
+    },
+    "shared_contributors": false,
+    "tokens": 1701,
+    "treebank": "UD_English-Pronouns",
+    "ud": true,
+    "wins": 0
+  },
+  "en_pud": {
+    "accepted": true,
+    "anchor": "UD_English-GUM",
+    "changed": 166,
+    "declared_correct": 20162,
+    "external_tokens": 1730,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "silver",
+    "iso": "eng",
+    "lemmas": "automatic",
+    "losses": 13,
+    "order": [
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "spacy-lookups",
+        "lemminflect",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "nltk-wordnet",
+        "simplemma",
+        "unimorph",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "lemminflect"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 1,
+      "sentences": 999,
+      "sentences_read": 1000,
+      "tokens": 21162
+    },
+    "shared_contributors": false,
+    "tokens": 21162,
+    "treebank": "UD_English-PUD",
+    "ud": true,
+    "wins": 130
+  },
+  "eo_prago": {
+    "accepted": false,
+    "anchor": "UD_Esperanto-Cairo",
+    "changed": 0,
+    "declared_correct": 3535,
+    "external_tokens": 1894,
+    "fit": "pooled",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "epo",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "simplemma",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "no_scorable_word": 1,
+      "repeated_sentence": 3,
+      "sentences": 142,
+      "sentences_read": 146,
+      "tokens": 3797
+    },
+    "shared_contributors": true,
+    "tokens": 3797,
+    "treebank": "UD_Esperanto-Prago",
+    "ud": true,
+    "wins": 0
+  },
+  "es_coser": {
+    "accepted": true,
+    "anchor": "UD_Spanish-AnCora",
+    "changed": 29,
+    "declared_correct": 7612,
+    "external_tokens": 435,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "spa",
+    "lemmas": "manual native",
+    "losses": 2,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "wiktionary",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 4,
+      "repeated_sentence": 5,
+      "sentences": 530,
+      "sentences_read": 539,
+      "tokens": 8042
+    },
+    "shared_contributors": false,
+    "tokens": 8042,
+    "treebank": "UD_Spanish-COSER",
+    "ud": true,
+    "wins": 14
+  },
+  "es_elexis": {
+    "accepted": true,
+    "anchor": "UD_Spanish-AnCora",
+    "changed": 106,
+    "declared_correct": 35774,
+    "external_tokens": 1805,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "spa",
+    "lemmas": "automatic with corrections",
+    "losses": 5,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "wiktionary",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "near_overlap": 4,
+      "sentences": 2020,
+      "sentences_read": 2024,
+      "tokens": 37568
+    },
+    "shared_contributors": false,
+    "tokens": 37568,
+    "treebank": "X_Spanish-ELEXIS",
+    "ud": false,
+    "wins": 86
+  },
+  "es_gsd": {
+    "accepted": true,
+    "anchor": "UD_Spanish-AnCora",
+    "changed": 1713,
+    "declared_correct": 405567,
+    "external_tokens": 22690,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "silver",
+    "iso": "spa",
+    "lemmas": "automatic",
+    "losses": 41,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "wiktionary",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 2,
+      "near_overlap": 31,
+      "repeated_sentence": 97,
+      "sentences": 15883,
+      "sentences_read": 16013,
+      "tokens": 428140
+    },
+    "shared_contributors": true,
+    "tokens": 428140,
+    "treebank": "UD_Spanish-GSD",
+    "ud": true,
+    "wins": 1322
+  },
+  "es_pud": {
+    "accepted": true,
+    "anchor": "UD_Spanish-AnCora",
+    "changed": 61,
+    "declared_correct": 22056,
+    "external_tokens": 1051,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "spa",
+    "lemmas": "manual native",
+    "losses": 2,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "wiktionary",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "document_sentences_removed": 3,
+      "documents_removed": 1,
+      "near_overlap": 1,
+      "sentences": 996,
+      "sentences_read": 1000,
+      "tokens": 23186
+    },
+    "shared_contributors": true,
+    "tokens": 23186,
+    "treebank": "UD_Spanish-PUD",
+    "ud": true,
+    "wins": 52
+  },
+  "et_elexis": {
+    "accepted": true,
+    "anchor": "UD_Estonian-EDT",
+    "changed": 17,
+    "declared_correct": 23189,
+    "external_tokens": 1605,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "est",
+    "lemmas": "automatic with corrections",
+    "losses": 0,
+    "order": [
+      [
+        "simplemma",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "unimorph",
+        "wiktionary",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "near_overlap": 2,
+      "sentences": 2022,
+      "sentences_read": 2024,
+      "tokens": 26259
+    },
+    "shared_contributors": true,
+    "tokens": 26259,
+    "treebank": "X_Estonian-ELEXIS",
+    "ud": false,
+    "wins": 15
+  },
+  "et_ewt": {
+    "accepted": true,
+    "anchor": "UD_Estonian-EDT",
+    "changed": 109,
+    "declared_correct": 81868,
+    "external_tokens": 4393,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "est",
+    "lemmas": "converted from manual",
+    "losses": 7,
+    "order": [
+      [
+        "simplemma",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "unimorph",
+        "wiktionary",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 26,
+      "near_overlap": 2,
+      "repeated_sentence": 170,
+      "sentences": 6992,
+      "sentences_read": 7190,
+      "tokens": 89860
+    },
+    "shared_contributors": true,
+    "tokens": 89860,
+    "treebank": "UD_Estonian-EWT",
+    "ud": true,
+    "wins": 78
+  },
+  "et_mte1984": {
+    "accepted": true,
+    "anchor": "UD_Estonian-EDT",
+    "changed": 0,
+    "declared_correct": 88140,
+    "external_tokens": 9605,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "est",
+    "lemmas": "automatic with corrections",
+    "losses": 0,
+    "order": [
+      [
+        "simplemma",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "unimorph",
+        "wiktionary",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 26,
+      "near_overlap": 9,
+      "repeated_sentence": 95,
+      "sentences": 6348,
+      "sentences_read": 6478,
+      "tokens": 93854
+    },
+    "shared_contributors": true,
+    "tokens": 93854,
+    "treebank": "X_Estonian-MTE1984",
+    "ud": false,
+    "wins": 0
+  },
+  "fa_mte1984": {
+    "accepted": false,
+    "anchor": "UD_Persian-PerDT",
+    "changed": 0,
+    "declared_correct": 103361,
+    "external_tokens": 31252,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "pes",
+    "lemmas": "automatic with corrections",
+    "losses": 0,
+    "order": [
+      [
+        "hazm",
+        "spacy-lookups",
+        "lemmagen3",
+        "simplemma",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "hazm",
+        "spacy-lookups",
+        "lemmagen3",
+        "simplemma",
+        "wiktionary",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 80,
+      "sentences": 6524,
+      "sentences_read": 6604,
+      "tokens": 108017
+    },
+    "shared_contributors": false,
+    "tokens": 108017,
+    "treebank": "X_Persian-MTE1984",
+    "ud": false,
+    "wins": 0
+  },
+  "fa_seraji": {
+    "accepted": false,
+    "anchor": "UD_Persian-PerDT",
+    "changed": 1,
+    "declared_correct": 145748,
+    "external_tokens": 6685,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "pes",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "hazm",
+        "spacy-lookups",
+        "lemmagen3",
+        "simplemma",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "hazm",
+        "spacy-lookups",
+        "lemmagen3",
+        "simplemma",
+        "wiktionary",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 6,
+      "repeated_sentence": 30,
+      "sentences": 5961,
+      "sentences_read": 5997,
+      "tokens": 152755
+    },
+    "shared_contributors": false,
+    "tokens": 152755,
+    "treebank": "UD_Persian-Seraji",
+    "ud": true,
+    "wins": 1
+  },
+  "fi_ftb": {
+    "accepted": false,
+    "anchor": "UD_Finnish-TDT",
+    "changed": 2508,
+    "declared_correct": 124266,
+    "external_tokens": 27234,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "shared",
+    "iso": "fin",
+    "lemmas": "converted from manual",
+    "losses": 1074,
+    "order": [
+      [
+        "simplemma",
+        "unimorph",
+        "wiktionary",
+        "llm-teacher"
+      ],
+      [
+        "llm-teacher",
+        "unimorph",
+        "wiktionary",
+        "simplemma"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 1968,
+      "near_overlap": 73,
+      "repeated_sentence": 5,
+      "sentences": 16677,
+      "sentences_read": 18723,
+      "tokens": 142018
+    },
+    "shared_contributors": false,
+    "tokens": 142018,
+    "treebank": "UD_Finnish-FTB",
+    "ud": true,
+    "wins": 1021
+  },
+  "fi_ood": {
+    "accepted": false,
+    "anchor": "UD_Finnish-TDT",
+    "changed": 282,
+    "declared_correct": 16514,
+    "external_tokens": 3720,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "fin",
+    "lemmas": "manual native",
+    "losses": 110,
+    "order": [
+      [
+        "simplemma",
+        "unimorph",
+        "wiktionary",
+        "llm-teacher"
+      ],
+      [
+        "llm-teacher",
+        "unimorph",
+        "wiktionary",
+        "simplemma"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 252,
+      "sentences": 1870,
+      "sentences_read": 2122,
+      "tokens": 18868
+    },
+    "shared_contributors": true,
+    "tokens": 18868,
+    "treebank": "UD_Finnish-OOD",
+    "ud": true,
+    "wins": 118
+  },
+  "fi_pud": {
+    "accepted": false,
+    "anchor": "UD_Finnish-TDT",
+    "changed": 233,
+    "declared_correct": 14216,
+    "external_tokens": 3499,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "fin",
+    "lemmas": "manual native",
+    "losses": 104,
+    "order": [
+      [
+        "simplemma",
+        "unimorph",
+        "wiktionary",
+        "llm-teacher"
+      ],
+      [
+        "llm-teacher",
+        "unimorph",
+        "wiktionary",
+        "simplemma"
+      ]
+    ],
+    "screen": {
+      "document_sentences_removed": 2,
+      "documents_removed": 1,
+      "near_overlap": 1,
+      "sentences": 997,
+      "sentences_read": 1000,
+      "tokens": 15755
+    },
+    "shared_contributors": true,
+    "tokens": 15755,
+    "treebank": "UD_Finnish-PUD",
+    "ud": true,
+    "wins": 75
+  },
+  "fo_oft": {
+    "accepted": false,
+    "anchor": "UD_Faroese-FarPaHC",
+    "changed": 0,
+    "declared_correct": 6775,
+    "external_tokens": 6339,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "fao",
+    "lemmas": "converted from manual",
+    "losses": 0,
+    "order": [
+      [
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 16,
+      "sentences": 1192,
+      "sentences_read": 1208,
+      "tokens": 9934
+    },
+    "shared_contributors": false,
+    "tokens": 9934,
+    "treebank": "UD_Faroese-OFT",
+    "ud": true,
+    "wins": 0
+  },
+  "fr_alts": {
+    "accepted": true,
+    "anchor": "UD_French-Sequoia",
+    "changed": 610,
+    "declared_correct": 43554,
+    "external_tokens": 8580,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "fra",
+    "lemmas": "manual native",
+    "losses": 15,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "wiktionary",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 10,
+      "sentences": 2016,
+      "sentences_read": 2026,
+      "tokens": 67931
+    },
+    "shared_contributors": false,
+    "tokens": 67931,
+    "treebank": "UD_French-ALTS",
+    "ud": true,
+    "wins": 89
+  },
+  "fr_fqb": {
+    "accepted": true,
+    "anchor": "UD_French-Sequoia",
+    "changed": 107,
+    "declared_correct": 22244,
+    "external_tokens": 3275,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "fra",
+    "lemmas": "converted from manual",
+    "losses": 2,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "wiktionary",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 25,
+      "sentences": 2264,
+      "sentences_read": 2289,
+      "tokens": 23662
+    },
+    "shared_contributors": true,
+    "tokens": 23662,
+    "treebank": "UD_French-FQB",
+    "ud": true,
+    "wins": 94
+  },
+  "fr_gsd": {
+    "accepted": true,
+    "anchor": "UD_French-Sequoia",
+    "changed": 1671,
+    "declared_correct": 377719,
+    "external_tokens": 61343,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "fra",
+    "lemmas": "automatic with corrections",
+    "losses": 96,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "wiktionary",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "near_overlap": 15,
+      "repeated_sentence": 2,
+      "sentences": 16325,
+      "sentences_read": 16342,
+      "tokens": 399523
+    },
+    "shared_contributors": true,
+    "tokens": 399523,
+    "treebank": "UD_French-GSD",
+    "ud": true,
+    "wins": 1333
+  },
+  "fr_parisstories": {
+    "accepted": true,
+    "anchor": "UD_French-Sequoia",
+    "changed": 81,
+    "declared_correct": 40956,
+    "external_tokens": 6018,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "fra",
+    "lemmas": "converted from manual",
+    "losses": 27,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "wiktionary",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 77,
+      "sentences": 2699,
+      "sentences_read": 2776,
+      "tokens": 42578
+    },
+    "shared_contributors": true,
+    "tokens": 42578,
+    "treebank": "UD_French-ParisStories",
+    "ud": true,
+    "wins": 46
+  },
+  "fr_partut": {
+    "accepted": true,
+    "anchor": "UD_French-Sequoia",
+    "changed": 18,
+    "declared_correct": 26824,
+    "external_tokens": 2924,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "fra",
+    "lemmas": "converted from manual",
+    "losses": 5,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "wiktionary",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "near_overlap": 15,
+      "repeated_sentence": 4,
+      "sentences": 1001,
+      "sentences_read": 1020,
+      "tokens": 27874
+    },
+    "shared_contributors": false,
+    "tokens": 27874,
+    "treebank": "UD_French-ParTUT",
+    "ud": true,
+    "wins": 12
+  },
+  "fr_poitevindivital": {
+    "accepted": true,
+    "anchor": "UD_French-Sequoia",
+    "changed": 98,
+    "declared_correct": 3688,
+    "external_tokens": 661,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "fra",
+    "lemmas": "manual native",
+    "losses": 78,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "wiktionary",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "sentences": 239,
+      "sentences_read": 239,
+      "tokens": 5423
+    },
+    "shared_contributors": false,
+    "tokens": 5423,
+    "treebank": "UD_French-PoitevinDIVITAL",
+    "ud": true,
+    "wins": 8
+  },
+  "fr_pud": {
+    "accepted": true,
+    "anchor": "UD_French-Sequoia",
+    "changed": 85,
+    "declared_correct": 23586,
+    "external_tokens": 3498,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "fra",
+    "lemmas": "manual native",
+    "losses": 3,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "wiktionary",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "sentences": 1000,
+      "sentences_read": 1000,
+      "tokens": 24723
+    },
+    "shared_contributors": true,
+    "tokens": 24723,
+    "treebank": "UD_French-PUD",
+    "ud": true,
+    "wins": 68
+  },
+  "fr_rhapsodie": {
+    "accepted": true,
+    "anchor": "UD_French-Sequoia",
+    "changed": 109,
+    "declared_correct": 41609,
+    "external_tokens": 5610,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "fra",
+    "lemmas": "converted from manual",
+    "losses": 47,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "wiktionary",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 414,
+      "sentences": 2795,
+      "sentences_read": 3209,
+      "tokens": 43025
+    },
+    "shared_contributors": true,
+    "tokens": 43025,
+    "treebank": "UD_French-Rhapsodie",
+    "ud": true,
+    "wins": 54
+  },
+  "frm_altm": {
+    "accepted": false,
+    "anchor": "UD_Middle_French-PROFITEROLE",
+    "changed": 2,
+    "declared_correct": 4768,
+    "external_tokens": 181,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "frm",
+    "lemmas": "manual native",
+    "losses": 1,
+    "order": [
+      [
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "wiktionary",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "sentences": 217,
+      "sentences_read": 217,
+      "tokens": 7084
+    },
+    "shared_contributors": false,
+    "tokens": 7084,
+    "treebank": "UD_Middle_French-ALTM",
+    "ud": true,
+    "wins": 1
+  },
+  "fro_altm": {
+    "accepted": false,
+    "anchor": "UD_Old_French-PROFITEROLE",
+    "changed": 68,
+    "declared_correct": 9528,
+    "external_tokens": 960,
+    "fit": "pooled",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "fro",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "wiktionary",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 4,
+      "sentences": 549,
+      "sentences_read": 553,
+      "tokens": 15257
+    },
+    "shared_contributors": false,
+    "tokens": 15257,
+    "treebank": "UD_Old_French-ALTM",
+    "ud": true,
+    "wins": 9
+  },
+  "ga_cadhan": {
+    "accepted": false,
+    "anchor": "UD_Irish-IDT",
+    "changed": 4,
+    "declared_correct": 3292,
+    "external_tokens": 648,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "gle",
+    "lemmas": "manual native",
+    "losses": 1,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "simplemma",
+        "spacy-lookups",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "sentences": 193,
+      "sentences_read": 193,
+      "tokens": 4783
+    },
+    "shared_contributors": true,
+    "tokens": 4783,
+    "treebank": "UD_Irish-Cadhan",
+    "ud": true,
+    "wins": 2
+  },
+  "ga_twittirish": {
+    "accepted": false,
+    "anchor": "UD_Irish-IDT",
+    "changed": 54,
+    "declared_correct": 40317,
+    "external_tokens": 2595,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "gle",
+    "lemmas": "manual native",
+    "losses": 20,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "simplemma",
+        "spacy-lookups",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 2,
+      "sentences": 2594,
+      "sentences_read": 2596,
+      "tokens": 47712
+    },
+    "shared_contributors": true,
+    "tokens": 47712,
+    "treebank": "UD_Irish-TwittIrish",
+    "ud": true,
+    "wins": 25
+  },
+  "gl_pud": {
+    "accepted": false,
+    "anchor": "UD_Galician-CTG",
+    "changed": 0,
+    "declared_correct": 22244,
+    "external_tokens": 2987,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "glg",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "wiktionary"
+      ],
+      [
+        "dictionary",
+        "simplemma",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "sentences": 1000,
+      "sentences_read": 1000,
+      "tokens": 23509
+    },
+    "shared_contributors": false,
+    "tokens": 23509,
+    "treebank": "UD_Galician-PUD",
+    "ud": true,
+    "wins": 0
+  },
+  "gl_treegal": {
+    "accepted": false,
+    "anchor": "UD_Galician-CTG",
+    "changed": 0,
+    "declared_correct": 24117,
+    "external_tokens": 2865,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "glg",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "wiktionary"
+      ],
+      [
+        "dictionary",
+        "simplemma",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "sentences": 1000,
+      "sentences_read": 1000,
+      "tokens": 25509
+    },
+    "shared_contributors": false,
+    "tokens": 25509,
+    "treebank": "UD_Galician-TreeGal",
+    "ud": true,
+    "wins": 0
+  },
+  "grc_perseus": {
+    "accepted": false,
+    "anchor": "UD_Ancient_Greek-PROIEL",
+    "changed": 0,
+    "declared_correct": 156197,
+    "external_tokens": 59338,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "grc",
+    "lemmas": "converted from manual",
+    "losses": 0,
+    "order": [
+      [
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "document_sentences_removed": 196,
+      "documents_removed": 1,
+      "near_overlap": 896,
+      "repeated_sentence": 387,
+      "sentences": 12440,
+      "sentences_read": 13919,
+      "tokens": 180181
+    },
+    "shared_contributors": false,
+    "tokens": 180181,
+    "treebank": "UD_Ancient_Greek-Perseus",
+    "ud": true,
+    "wins": 0
+  },
+  "grc_ptnk": {
+    "accepted": false,
+    "anchor": "UD_Ancient_Greek-PROIEL",
+    "changed": 0,
+    "declared_correct": 35160,
+    "external_tokens": 2495,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "grc",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "near_overlap": 4,
+      "sentences": 1572,
+      "sentences_read": 1576,
+      "tokens": 39409
+    },
+    "shared_contributors": false,
+    "tokens": 39409,
+    "treebank": "UD_Ancient_Greek-PTNK",
+    "ud": true,
+    "wins": 0
+  },
+  "gu_shabdasetu": {
+    "accepted": false,
+    "anchor": "UD_Gujarati-GujTB",
+    "changed": 0,
+    "declared_correct": 295,
+    "external_tokens": 84,
+    "fit": "pooled",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "guj",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 1,
+      "sentences": 37,
+      "sentences_read": 38,
+      "tokens": 381
+    },
+    "shared_contributors": false,
+    "tokens": 381,
+    "treebank": "UD_Gujarati-ShabdaSetu",
+    "ud": true,
+    "wins": 0
+  },
+  "ha_easternautogramm": {
+    "accepted": false,
+    "anchor": "UD_Hausa-NorthernAutogramm",
+    "changed": 0,
+    "declared_correct": 8343,
+    "external_tokens": 4008,
+    "fit": "pooled",
+    "flagged_sources": [
+      "dictionary"
+    ],
+    "group": "gold",
+    "iso": "hau",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "dictionary",
+        "wiktionary"
+      ],
+      [
+        "dictionary",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 1,
+      "sentences": 334,
+      "sentences_read": 335,
+      "tokens": 9469
+    },
+    "shared_contributors": true,
+    "tokens": 9469,
+    "treebank": "UD_Hausa-EasternAutogramm",
+    "ud": true,
+    "wins": 0
+  },
+  "ha_southernautogramm": {
+    "accepted": false,
+    "anchor": "UD_Hausa-NorthernAutogramm",
+    "changed": 0,
+    "declared_correct": 11994,
+    "external_tokens": 4030,
+    "fit": "pooled",
+    "flagged_sources": [
+      "dictionary"
+    ],
+    "group": "gold",
+    "iso": "hau",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "dictionary",
+        "wiktionary"
+      ],
+      [
+        "dictionary",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 33,
+      "repeated_sentence": 356,
+      "sentences": 1538,
+      "sentences_read": 1927,
+      "tokens": 13487
+    },
+    "shared_contributors": true,
+    "tokens": 13487,
+    "treebank": "UD_Hausa-SouthernAutogramm",
+    "ud": true,
+    "wins": 0
+  },
+  "ha_westernautogramm": {
+    "accepted": false,
+    "anchor": "UD_Hausa-NorthernAutogramm",
+    "changed": 0,
+    "declared_correct": 12270,
+    "external_tokens": 3268,
+    "fit": "pooled",
+    "flagged_sources": [
+      "dictionary"
+    ],
+    "group": "gold",
+    "iso": "hau",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "dictionary",
+        "wiktionary"
+      ],
+      [
+        "dictionary",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 10,
+      "sentences": 765,
+      "sentences_read": 775,
+      "tokens": 13854
+    },
+    "shared_contributors": true,
+    "tokens": 13854,
+    "treebank": "UD_Hausa-WesternAutogramm",
+    "ud": true,
+    "wins": 0
+  },
+  "he_iahltknesset": {
+    "accepted": true,
+    "anchor": "UD_Hebrew-HTB",
+    "changed": 223,
+    "declared_correct": 60894,
+    "external_tokens": 2735,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "heb",
+    "lemmas": "manual native",
+    "losses": 102,
+    "order": [
+      [
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "wiktionary",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "document_sentences_removed": 13,
+      "documents_removed": 2,
+      "exact_overlap": 6,
+      "repeated_sentence": 26,
+      "sentences": 2838,
+      "sentences_read": 2883,
+      "tokens": 66762
+    },
+    "shared_contributors": false,
+    "tokens": 66762,
+    "treebank": "UD_Hebrew-IAHLTknesset",
+    "ud": true,
+    "wins": 103
+  },
+  "he_iahltwiki": {
+    "accepted": true,
+    "anchor": "UD_Hebrew-HTB",
+    "changed": 418,
+    "declared_correct": 129857,
+    "external_tokens": 6724,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "heb",
+    "lemmas": "manual native",
+    "losses": 90,
+    "order": [
+      [
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "wiktionary",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 1,
+      "sentences": 5038,
+      "sentences_read": 5039,
+      "tokens": 140948
+    },
+    "shared_contributors": false,
+    "tokens": 140948,
+    "treebank": "UD_Hebrew-IAHLTwiki",
+    "ud": true,
+    "wins": 300
+  },
+  "he_postrab": {
+    "accepted": true,
+    "anchor": "UD_Hebrew-HTB",
+    "changed": 77,
+    "declared_correct": 6264,
+    "external_tokens": 674,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "heb",
+    "lemmas": "manual native",
+    "losses": 40,
+    "order": [
+      [
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "wiktionary",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 1,
+      "sentences": 295,
+      "sentences_read": 296,
+      "tokens": 8018
+    },
+    "shared_contributors": false,
+    "tokens": 8018,
+    "treebank": "UD_Hebrew-PostRab",
+    "ud": true,
+    "wins": 23
+  },
+  "hi_pud": {
+    "accepted": false,
+    "anchor": "UD_Hindi-HDTB",
+    "changed": 2,
+    "declared_correct": 22479,
+    "external_tokens": 861,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "silver",
+    "iso": "hin",
+    "lemmas": "automatic",
+    "losses": 1,
+    "order": [
+      [
+        "simplemma",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "simplemma",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "sentences": 1000,
+      "sentences_read": 1000,
+      "tokens": 23829
+    },
+    "shared_contributors": true,
+    "tokens": 23829,
+    "treebank": "UD_Hindi-PUD",
+    "ud": true,
+    "wins": 1
+  },
+  "hr_hr500k": {
+    "accepted": false,
+    "anchor": "UD_Croatian-SET",
+    "changed": 3231,
+    "declared_correct": 284143,
+    "external_tokens": 43108,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "hrv",
+    "lemmas": "manual native",
+    "losses": 1415,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph"
+      ],
+      [
+        "spacy-lookups",
+        "dictionary",
+        "simplemma",
+        "unimorph",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "document_sentences_removed": 28,
+      "documents_removed": 4,
+      "exact_overlap": 3,
+      "near_overlap": 11,
+      "repeated_sentence": 116,
+      "sentences": 15595,
+      "sentences_read": 15753,
+      "tokens": 298516
+    },
+    "shared_contributors": true,
+    "tokens": 298516,
+    "treebank": "X_Croatian-hr500k",
+    "ud": false,
+    "wins": 1634
+  },
+  "hu_elexis": {
+    "accepted": true,
+    "anchor": "UD_Hungarian-Szeged",
+    "changed": 1041,
+    "declared_correct": 26156,
+    "external_tokens": 8883,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "hun",
+    "lemmas": "automatic with corrections",
+    "losses": 269,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "lemmagen3",
+        "simplemma",
+        "wiktionary",
+        "spacy-lookups"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 1,
+      "sentences": 2023,
+      "sentences_read": 2024,
+      "tokens": 29633
+    },
+    "shared_contributors": false,
+    "tokens": 29633,
+    "treebank": "X_Hungarian-ELEXIS",
+    "ud": false,
+    "wins": 658
+  },
+  "hu_eltedh": {
+    "accepted": true,
+    "anchor": "UD_Hungarian-Szeged",
+    "changed": 18582,
+    "declared_correct": 436970,
+    "external_tokens": 150845,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "hun",
+    "lemmas": "automatic with corrections",
+    "losses": 4465,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "lemmagen3",
+        "simplemma",
+        "wiktionary",
+        "spacy-lookups"
+      ]
+    ],
+    "screen": {
+      "near_overlap": 1,
+      "repeated_sentence": 174,
+      "sentences": 24290,
+      "sentences_read": 24465,
+      "tokens": 496398
+    },
+    "shared_contributors": false,
+    "tokens": 496398,
+    "treebank": "X_Hungarian-ELTEDH",
+    "ud": false,
+    "wins": 12623
+  },
+  "hu_mte1984": {
+    "accepted": true,
+    "anchor": "UD_Hungarian-Szeged",
+    "changed": 2591,
+    "declared_correct": 91586,
+    "external_tokens": 32598,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "silver",
+    "iso": "hun",
+    "lemmas": "automatic",
+    "losses": 1055,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "lemmagen3",
+        "simplemma",
+        "wiktionary",
+        "spacy-lookups"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 136,
+      "sentences": 6632,
+      "sentences_read": 6768,
+      "tokens": 97898
+    },
+    "shared_contributors": false,
+    "tokens": 97898,
+    "treebank": "X_Hungarian-MTE1984",
+    "ud": false,
+    "wins": 1371
+  },
+  "hy_bsut": {
+    "accepted": true,
+    "anchor": "UD_Armenian-ArmTDP",
+    "changed": 419,
+    "declared_correct": 40910,
+    "external_tokens": 7089,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "hye",
+    "lemmas": "manual native",
+    "losses": 109,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "wiktionary",
+        "dictionary",
+        "simplemma",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "document_sentences_removed": 112,
+      "documents_removed": 4,
+      "exact_overlap": 2,
+      "near_overlap": 48,
+      "repeated_sentence": 4,
+      "sentences": 2357,
+      "sentences_read": 2523,
+      "tokens": 42527
+    },
+    "shared_contributors": true,
+    "tokens": 42527,
+    "treebank": "UD_Armenian-BSUT",
+    "ud": true,
+    "wins": 294
+  },
+  "id_csui": {
+    "accepted": true,
+    "anchor": "UD_Indonesian-GSD",
+    "changed": 83,
+    "declared_correct": 22209,
+    "external_tokens": 1678,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ind",
+    "lemmas": "automatic with corrections",
+    "losses": 2,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "unimorph",
+        "wiktionary",
+        "spacy-lookups"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 1,
+      "sentences": 1029,
+      "sentences_read": 1030,
+      "tokens": 28229
+    },
+    "shared_contributors": true,
+    "tokens": 28229,
+    "treebank": "UD_Indonesian-CSUI",
+    "ud": true,
+    "wins": 77
+  },
+  "id_pud": {
+    "accepted": true,
+    "anchor": "UD_Indonesian-GSD",
+    "changed": 16,
+    "declared_correct": 15810,
+    "external_tokens": 890,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ind",
+    "lemmas": "manual native",
+    "losses": 13,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "unimorph",
+        "wiktionary",
+        "spacy-lookups"
+      ]
+    ],
+    "screen": {
+      "sentences": 1000,
+      "sentences_read": 1000,
+      "tokens": 19443
+    },
+    "shared_contributors": true,
+    "tokens": 19443,
+    "treebank": "UD_Indonesian-PUD",
+    "ud": true,
+    "wins": 1
+  },
+  "is_gc": {
+    "accepted": false,
+    "anchor": "UD_Icelandic-IcePaHC",
+    "changed": 0,
+    "declared_correct": 78989,
+    "external_tokens": 14292,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "isl",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "dictionary",
+        "simplemma",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 7,
+      "sentences": 4993,
+      "sentences_read": 5000,
+      "tokens": 94768
+    },
+    "shared_contributors": true,
+    "tokens": 94768,
+    "treebank": "UD_Icelandic-GC",
+    "ud": true,
+    "wins": 0
+  },
+  "is_modern": {
+    "accepted": false,
+    "anchor": "UD_Icelandic-IcePaHC",
+    "changed": 0,
+    "declared_correct": 72279,
+    "external_tokens": 8714,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "isl",
+    "lemmas": "converted from manual",
+    "losses": 0,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "dictionary",
+        "simplemma",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 10,
+      "repeated_sentence": 57,
+      "sentences": 3468,
+      "sentences_read": 3535,
+      "tokens": 80022
+    },
+    "shared_contributors": true,
+    "tokens": 80022,
+    "treebank": "UD_Icelandic-Modern",
+    "ud": true,
+    "wins": 0
+  },
+  "is_pud": {
+    "accepted": false,
+    "anchor": "UD_Icelandic-IcePaHC",
+    "changed": 0,
+    "declared_correct": 16181,
+    "external_tokens": 2820,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "isl",
+    "lemmas": "automatic with corrections",
+    "losses": 0,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "dictionary",
+        "simplemma",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "sentences": 1000,
+      "sentences_read": 1000,
+      "tokens": 18833
+    },
+    "shared_contributors": true,
+    "tokens": 18833,
+    "treebank": "UD_Icelandic-PUD",
+    "ud": true,
+    "wins": 0
+  },
+  "it_elexis": {
+    "accepted": true,
+    "anchor": "UD_Italian-ISDT",
+    "changed": 187,
+    "declared_correct": 37576,
+    "external_tokens": 2298,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ita",
+    "lemmas": "automatic with corrections",
+    "losses": 3,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 1,
+      "near_overlap": 3,
+      "sentences": 2020,
+      "sentences_read": 2024,
+      "tokens": 38968
+    },
+    "shared_contributors": false,
+    "tokens": 38968,
+    "treebank": "X_Italian-ELEXIS",
+    "ud": false,
+    "wins": 172
+  },
+  "it_kiparlaforest": {
+    "accepted": true,
+    "anchor": "UD_Italian-ISDT",
+    "changed": 65,
+    "declared_correct": 22574,
+    "external_tokens": 1322,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ita",
+    "lemmas": "manual native",
+    "losses": 4,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 4,
+      "repeated_sentence": 385,
+      "sentences": 2092,
+      "sentences_read": 2481,
+      "tokens": 24224
+    },
+    "shared_contributors": true,
+    "tokens": 24224,
+    "treebank": "UD_Italian-KIParlaForest",
+    "ud": true,
+    "wins": 36
+  },
+  "it_markit": {
+    "accepted": true,
+    "anchor": "UD_Italian-ISDT",
+    "changed": 73,
+    "declared_correct": 37605,
+    "external_tokens": 1732,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ita",
+    "lemmas": "automatic with corrections",
+    "losses": 2,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "near_overlap": 2,
+      "sentences": 1290,
+      "sentences_read": 1292,
+      "tokens": 40416
+    },
+    "shared_contributors": false,
+    "tokens": 40416,
+    "treebank": "UD_Italian-MarkIT",
+    "ud": true,
+    "wins": 51
+  },
+  "it_old": {
+    "accepted": true,
+    "anchor": "UD_Italian-ISDT",
+    "changed": 3714,
+    "declared_correct": 102733,
+    "external_tokens": 18406,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ita",
+    "lemmas": "converted with corrections",
+    "losses": 312,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "sentences": 3419,
+      "sentences_read": 3419,
+      "tokens": 122024
+    },
+    "shared_contributors": false,
+    "tokens": 122024,
+    "treebank": "UD_Italian-Old",
+    "ud": true,
+    "wins": 1639
+  },
+  "it_parlamint": {
+    "accepted": true,
+    "anchor": "UD_Italian-ISDT",
+    "changed": 23,
+    "declared_correct": 19670,
+    "external_tokens": 951,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ita",
+    "lemmas": "manual native",
+    "losses": 1,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "near_overlap": 3,
+      "repeated_sentence": 24,
+      "sentences": 674,
+      "sentences_read": 701,
+      "tokens": 20239
+    },
+    "shared_contributors": true,
+    "tokens": 20239,
+    "treebank": "UD_Italian-ParlaMint",
+    "ud": true,
+    "wins": 20
+  },
+  "it_partut": {
+    "accepted": true,
+    "anchor": "UD_Italian-ISDT",
+    "changed": 0,
+    "declared_correct": 1621,
+    "external_tokens": 52,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "shared",
+    "iso": "ita",
+    "lemmas": "converted with corrections",
+    "losses": 0,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 1989,
+      "near_overlap": 20,
+      "sentences": 81,
+      "sentences_read": 2090,
+      "tokens": 1657
+    },
+    "shared_contributors": true,
+    "tokens": 1657,
+    "treebank": "UD_Italian-ParTUT",
+    "ud": true,
+    "wins": 0
+  },
+  "it_postwita": {
+    "accepted": true,
+    "anchor": "UD_Italian-ISDT",
+    "changed": 434,
+    "declared_correct": 105353,
+    "external_tokens": 7359,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ita",
+    "lemmas": "automatic with corrections",
+    "losses": 21,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "near_overlap": 7,
+      "repeated_sentence": 19,
+      "sentences": 6686,
+      "sentences_read": 6712,
+      "tokens": 123985
+    },
+    "shared_contributors": true,
+    "tokens": 123985,
+    "treebank": "UD_Italian-PoSTWITA",
+    "ud": true,
+    "wins": 292
+  },
+  "it_pud": {
+    "accepted": true,
+    "anchor": "UD_Italian-ISDT",
+    "changed": 88,
+    "declared_correct": 22590,
+    "external_tokens": 1320,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "silver",
+    "iso": "ita",
+    "lemmas": "automatic",
+    "losses": 2,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "document_sentences_removed": 4,
+      "documents_removed": 2,
+      "near_overlap": 2,
+      "sentences": 994,
+      "sentences_read": 1000,
+      "tokens": 23654
+    },
+    "shared_contributors": true,
+    "tokens": 23654,
+    "treebank": "UD_Italian-PUD",
+    "ud": true,
+    "wins": 64
+  },
+  "it_twittiro": {
+    "accepted": true,
+    "anchor": "UD_Italian-ISDT",
+    "changed": 166,
+    "declared_correct": 16911,
+    "external_tokens": 1216,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ita",
+    "lemmas": "converted from manual",
+    "losses": 6,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 525,
+      "sentences": 899,
+      "sentences_read": 1424,
+      "tokens": 18923
+    },
+    "shared_contributors": true,
+    "tokens": 18923,
+    "treebank": "UD_Italian-TWITTIRO",
+    "ud": true,
+    "wins": 152
+  },
+  "it_valico": {
+    "accepted": true,
+    "anchor": "UD_Italian-ISDT",
+    "changed": 11,
+    "declared_correct": 5776,
+    "external_tokens": 341,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ita",
+    "lemmas": "manual native",
+    "losses": 3,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 4,
+      "sentences": 394,
+      "sentences_read": 398,
+      "tokens": 6762
+    },
+    "shared_contributors": true,
+    "tokens": 6762,
+    "treebank": "UD_Italian-Valico",
+    "ud": true,
+    "wins": 4
+  },
+  "it_vit": {
+    "accepted": true,
+    "anchor": "UD_Italian-ISDT",
+    "changed": 671,
+    "declared_correct": 267232,
+    "external_tokens": 16765,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ita",
+    "lemmas": "converted from manual",
+    "losses": 21,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "wiktionary",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 5,
+      "near_overlap": 52,
+      "repeated_sentence": 27,
+      "sentences": 10003,
+      "sentences_read": 10087,
+      "tokens": 277238
+    },
+    "shared_contributors": true,
+    "tokens": 277238,
+    "treebank": "UD_Italian-VIT",
+    "ud": true,
+    "wins": 559
+  },
+  "ja_bccwj": {
+    "anchor": "UD_Japanese-GSD",
+    "fit": "official",
+    "group": "no lemmas",
+    "iso": "jpn",
+    "lemmas": "not available",
+    "shared_contributors": true,
+    "treebank": "UD_Japanese-BCCWJ",
+    "ud": true
+  },
+  "ja_bccwjluw": {
+    "anchor": "UD_Japanese-GSD",
+    "fit": "official",
+    "group": "no lemmas",
+    "iso": "jpn",
+    "lemmas": "not available",
+    "shared_contributors": true,
+    "treebank": "UD_Japanese-BCCWJLUW",
+    "ud": true
+  },
+  "ja_gsdluw": {
+    "anchor": "UD_Japanese-GSD",
+    "fit": "official",
+    "group": "nothing scorable",
+    "iso": "jpn",
+    "lemmas": "converted from manual",
+    "screen": {
+      "document_sentences_removed": 0,
+      "documents_removed": 8100,
+      "exact_overlap": 8100,
+      "sentences": 0,
+      "sentences_read": 8100,
+      "tokens": 0
+    },
+    "shared_contributors": true,
+    "treebank": "UD_Japanese-GSDLUW",
+    "ud": true
+  },
+  "ja_pud": {
+    "accepted": false,
+    "anchor": "UD_Japanese-GSD",
+    "changed": 1,
+    "declared_correct": 27831,
+    "external_tokens": 1072,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "jpn",
+    "lemmas": "converted from manual",
+    "losses": 0,
+    "order": [
+      [
+        "sudachi-core",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "sudachi-core",
+        "wiktionary",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "sentences": 1000,
+      "sentences_read": 1000,
+      "tokens": 28786
+    },
+    "shared_contributors": true,
+    "tokens": 28786,
+    "treebank": "UD_Japanese-PUD",
+    "ud": true,
+    "wins": 1
+  },
+  "ja_pudluw": {
+    "anchor": "UD_Japanese-GSD",
+    "fit": "official",
+    "group": "nothing scorable",
+    "iso": "jpn",
+    "lemmas": "converted from manual",
+    "screen": {
+      "repeated_sentence": 1000,
+      "sentences": 0,
+      "sentences_read": 1000,
+      "tokens": 0
+    },
+    "shared_contributors": true,
+    "treebank": "UD_Japanese-PUDLUW",
+    "ud": true
+  },
+  "ka_elexis": {
+    "accepted": false,
+    "anchor": "UD_Georgian-GNC",
+    "changed": 84,
+    "declared_correct": 20874,
+    "external_tokens": 7770,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "kat",
+    "lemmas": "automatic with corrections",
+    "losses": 60,
+    "order": [
+      [
+        "simplemma",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "wiktionary",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "sentences": 2024,
+      "sentences_read": 2024,
+      "tokens": 28409
+    },
+    "shared_contributors": false,
+    "tokens": 28409,
+    "treebank": "X_Georgian-ELEXIS",
+    "ud": false,
+    "wins": 19
+  },
+  "ka_glc": {
+    "accepted": false,
+    "anchor": "UD_Georgian-GNC",
+    "changed": 59,
+    "declared_correct": 46202,
+    "external_tokens": 18442,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "kat",
+    "lemmas": "automatic with corrections",
+    "losses": 34,
+    "order": [
+      [
+        "simplemma",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "wiktionary",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 51,
+      "sentences": 3113,
+      "sentences_read": 3164,
+      "tokens": 59213
+    },
+    "shared_contributors": false,
+    "tokens": 59213,
+    "treebank": "UD_Georgian-GLC",
+    "ud": true,
+    "wins": 18
+  },
+  "kk_kazdet": {
+    "accepted": false,
+    "anchor": "UD_Kazakh-KTB",
+    "changed": 69,
+    "declared_correct": 318911,
+    "external_tokens": 251505,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "silver",
+    "iso": "kaz",
+    "lemmas": "automatic",
+    "losses": 2,
+    "order": [
+      [
+        "dictionary",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "dictionary",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 430,
+      "near_overlap": 205,
+      "repeated_sentence": 34727,
+      "sentences": 25749,
+      "sentences_read": 61111,
+      "tokens": 393337
+    },
+    "shared_contributors": true,
+    "tokens": 393337,
+    "treebank": "X_Kazakh-KazDet",
+    "ud": false,
+    "wins": 67
+  },
+  "ko_gsd": {
+    "accepted": false,
+    "anchor": "UD_Korean-Kaist",
+    "changed": 0,
+    "declared_correct": 61648,
+    "external_tokens": 5369,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "silver",
+    "iso": "kor",
+    "lemmas": "automatic",
+    "losses": 0,
+    "order": [
+      [
+        "kiwipiepy",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "kiwipiepy",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 2,
+      "repeated_sentence": 207,
+      "sentences": 6130,
+      "sentences_read": 6339,
+      "tokens": 78294
+    },
+    "shared_contributors": true,
+    "tokens": 78294,
+    "treebank": "UD_Korean-GSD",
+    "ud": true,
+    "wins": 0
+  },
+  "ko_ksl": {
+    "accepted": false,
+    "anchor": "UD_Korean-Kaist",
+    "changed": 0,
+    "declared_correct": 118947,
+    "external_tokens": 8122,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "kor",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "kiwipiepy",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "kiwipiepy",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 5,
+      "repeated_sentence": 999,
+      "sentences": 16365,
+      "sentences_read": 17369,
+      "tokens": 148102
+    },
+    "shared_contributors": false,
+    "tokens": 148102,
+    "treebank": "UD_Korean-KSL",
+    "ud": true,
+    "wins": 0
+  },
+  "ko_littleprince": {
+    "accepted": false,
+    "anchor": "UD_Korean-Kaist",
+    "changed": 0,
+    "declared_correct": 2854,
+    "external_tokens": 377,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "silver",
+    "iso": "kor",
+    "lemmas": "automatic",
+    "losses": 0,
+    "order": [
+      [
+        "kiwipiepy",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "kiwipiepy",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 4,
+      "repeated_sentence": 81,
+      "sentences": 1466,
+      "sentences_read": 1551,
+      "tokens": 10685
+    },
+    "shared_contributors": true,
+    "tokens": 10685,
+    "treebank": "UD_Korean-LittlePrince",
+    "ud": true,
+    "wins": 0
+  },
+  "ko_pud": {
+    "accepted": false,
+    "anchor": "UD_Korean-Kaist",
+    "changed": 0,
+    "declared_correct": 2928,
+    "external_tokens": 50,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "silver",
+    "iso": "kor",
+    "lemmas": "automatic",
+    "losses": 0,
+    "order": [
+      [
+        "kiwipiepy",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "kiwipiepy",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "sentences": 1000,
+      "sentences_read": 1000,
+      "tokens": 7918
+    },
+    "shared_contributors": false,
+    "tokens": 7918,
+    "treebank": "UD_Korean-PUD",
+    "ud": true,
+    "wins": 0
+  },
+  "ky_tuecl": {
+    "accepted": false,
+    "anchor": "UD_Kyrgyz-KTMU",
+    "changed": 0,
+    "declared_correct": 950,
+    "external_tokens": 427,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "kir",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "dictionary",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "dictionary",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 2,
+      "near_overlap": 2,
+      "repeated_sentence": 10,
+      "sentences": 159,
+      "sentences_read": 173,
+      "tokens": 1137
+    },
+    "shared_contributors": false,
+    "tokens": 1137,
+    "treebank": "UD_Kyrgyz-TueCL",
+    "ud": true,
+    "wins": 0
+  },
+  "la_circse": {
+    "accepted": false,
+    "anchor": "UD_Latin-ITTB",
+    "changed": 9,
+    "declared_correct": 23544,
+    "external_tokens": 11005,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "lat",
+    "lemmas": "converted with corrections",
+    "losses": 0,
+    "order": [
+      [
+        "simplemma",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "wiktionary",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 4,
+      "sentences": 1968,
+      "sentences_read": 1972,
+      "tokens": 29047
+    },
+    "shared_contributors": true,
+    "tokens": 29047,
+    "treebank": "UD_Latin-CIRCSE",
+    "ud": true,
+    "wins": 2
+  },
+  "la_llct": {
+    "accepted": false,
+    "anchor": "UD_Latin-ITTB",
+    "changed": 2,
+    "declared_correct": 170127,
+    "external_tokens": 48877,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "lat",
+    "lemmas": "converted from manual",
+    "losses": 0,
+    "order": [
+      [
+        "simplemma",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "wiktionary",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 1367,
+      "sentences": 7656,
+      "sentences_read": 9023,
+      "tokens": 231496
+    },
+    "shared_contributors": true,
+    "tokens": 231496,
+    "treebank": "UD_Latin-LLCT",
+    "ud": true,
+    "wins": 0
+  },
+  "la_perseus": {
+    "accepted": false,
+    "anchor": "UD_Latin-ITTB",
+    "changed": 7,
+    "declared_correct": 25277,
+    "external_tokens": 9689,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "lat",
+    "lemmas": "converted from manual",
+    "losses": 0,
+    "order": [
+      [
+        "simplemma",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "wiktionary",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 1,
+      "near_overlap": 2,
+      "repeated_sentence": 13,
+      "sentences": 2257,
+      "sentences_read": 2273,
+      "tokens": 29132
+    },
+    "shared_contributors": true,
+    "tokens": 29132,
+    "treebank": "UD_Latin-Perseus",
+    "ud": true,
+    "wins": 0
+  },
+  "la_proiel": {
+    "accepted": false,
+    "anchor": "UD_Latin-ITTB",
+    "changed": 58,
+    "declared_correct": 174871,
+    "external_tokens": 55151,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "lat",
+    "lemmas": "converted from manual",
+    "losses": 1,
+    "order": [
+      [
+        "simplemma",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "wiktionary",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "near_overlap": 173,
+      "repeated_sentence": 797,
+      "sentences": 17719,
+      "sentences_read": 18689,
+      "tokens": 200048
+    },
+    "shared_contributors": false,
+    "tokens": 200048,
+    "treebank": "UD_Latin-PROIEL",
+    "ud": true,
+    "wins": 12
+  },
+  "la_udante": {
+    "accepted": false,
+    "anchor": "UD_Latin-ITTB",
+    "changed": 8,
+    "declared_correct": 43975,
+    "external_tokens": 10471,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "lat",
+    "lemmas": "converted with corrections",
+    "losses": 0,
+    "order": [
+      [
+        "simplemma",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "wiktionary",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "near_overlap": 12,
+      "repeated_sentence": 2,
+      "sentences": 1709,
+      "sentences_read": 1723,
+      "tokens": 55101
+    },
+    "shared_contributors": true,
+    "tokens": 55101,
+    "treebank": "UD_Latin-UDante",
+    "ud": true,
+    "wins": 1
+  },
+  "lt_hse": {
+    "accepted": false,
+    "anchor": "UD_Lithuanian-ALKSNIS",
+    "changed": 0,
+    "declared_correct": 4814,
+    "external_tokens": 1552,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "lit",
+    "lemmas": "converted from manual",
+    "losses": 0,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "sentences": 263,
+      "sentences_read": 263,
+      "tokens": 5356
+    },
+    "shared_contributors": false,
+    "tokens": 5356,
+    "treebank": "UD_Lithuanian-HSE",
+    "ud": true,
+    "wins": 0
+  },
+  "lv_cairo": {
+    "accepted": false,
+    "anchor": "UD_Latvian-LVTB",
+    "changed": 1,
+    "declared_correct": 162,
+    "external_tokens": 11,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "lav",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "dictionary",
+        "unimorph",
+        "wiktionary",
+        "simplemma"
+      ]
+    ],
+    "screen": {
+      "sentences": 20,
+      "sentences_read": 20,
+      "tokens": 168
+    },
+    "shared_contributors": true,
+    "tokens": 168,
+    "treebank": "UD_Latvian-Cairo",
+    "ud": true,
+    "wins": 1
+  },
+  "nl_alpino": {
+    "accepted": false,
+    "anchor": "UD_Dutch-LassySmall",
+    "changed": 179,
+    "declared_correct": 193979,
+    "external_tokens": 16431,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "nld",
+    "lemmas": "converted from manual",
+    "losses": 103,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "unimorph",
+        "wiktionary",
+        "spacy-lookups"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 3,
+      "near_overlap": 9,
+      "repeated_sentence": 3,
+      "sentences": 13588,
+      "sentences_read": 13603,
+      "tokens": 208430
+    },
+    "shared_contributors": true,
+    "tokens": 208430,
+    "treebank": "UD_Dutch-Alpino",
+    "ud": true,
+    "wins": 36
+  },
+  "nl_elexis": {
+    "accepted": false,
+    "anchor": "UD_Dutch-LassySmall",
+    "changed": 17,
+    "declared_correct": 32814,
+    "external_tokens": 2475,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "nld",
+    "lemmas": "automatic with corrections",
+    "losses": 10,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "unimorph",
+        "wiktionary",
+        "spacy-lookups"
+      ]
+    ],
+    "screen": {
+      "near_overlap": 2,
+      "sentences": 2022,
+      "sentences_read": 2024,
+      "tokens": 34881
+    },
+    "shared_contributors": false,
+    "tokens": 34881,
+    "treebank": "X_Dutch-ELEXIS",
+    "ud": false,
+    "wins": 4
+  },
+  "no_bokmaal": {
+    "accepted": false,
+    "anchor": "UD_Norwegian-Nynorsk",
+    "changed": 0,
+    "declared_correct": 260184,
+    "external_tokens": 42805,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "nor",
+    "lemmas": "converted from manual",
+    "losses": 0,
+    "order": [
+      [
+        "dictionary",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "dictionary",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 89,
+      "near_overlap": 5,
+      "repeated_sentence": 247,
+      "sentences": 19703,
+      "sentences_read": 20044,
+      "tokens": 308414
+    },
+    "shared_contributors": true,
+    "tokens": 308414,
+    "treebank": "UD_Norwegian-Bokmaal",
+    "ud": true,
+    "wins": 0
+  },
+  "oc_restaure": {
+    "accepted": false,
+    "anchor": "UD_Occitan-TTB",
+    "changed": 23,
+    "declared_correct": 817,
+    "external_tokens": 169,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "shared",
+    "iso": "oci",
+    "lemmas": "manual native",
+    "losses": 6,
+    "order": [
+      [
+        "dictionary",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "wiktionary",
+        "unimorph",
+        "dictionary"
+      ]
+    ],
+    "screen": {
+      "document_sentences_removed": 223,
+      "documents_removed": 26,
+      "exact_overlap": 360,
+      "near_overlap": 237,
+      "sentences": 61,
+      "sentences_read": 881,
+      "tokens": 1012
+    },
+    "shared_contributors": true,
+    "tokens": 1012,
+    "treebank": "X_Occitan-RESTAURE",
+    "ud": false,
+    "wins": 12
+  },
+  "pl_lfg": {
+    "accepted": false,
+    "anchor": "UD_Polish-PDB",
+    "changed": 1156,
+    "declared_correct": 99408,
+    "external_tokens": 11973,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "shared",
+    "iso": "pol",
+    "lemmas": "converted from manual",
+    "losses": 570,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "simplemma",
+        "wiktionary",
+        "dictionary",
+        "spacy-lookups",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 3720,
+      "near_overlap": 7,
+      "repeated_sentence": 42,
+      "sentences": 13477,
+      "sentences_read": 17246,
+      "tokens": 102147
+    },
+    "shared_contributors": false,
+    "tokens": 102147,
+    "treebank": "UD_Polish-LFG",
+    "ud": true,
+    "wins": 500
+  },
+  "pl_mpdt": {
+    "accepted": false,
+    "anchor": "UD_Polish-PDB",
+    "changed": 1211,
+    "declared_correct": 55123,
+    "external_tokens": 10310,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "pol",
+    "lemmas": "manual native",
+    "losses": 626,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "simplemma",
+        "wiktionary",
+        "dictionary",
+        "spacy-lookups",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 1,
+      "sentences": 2514,
+      "sentences_read": 2515,
+      "tokens": 59290
+    },
+    "shared_contributors": true,
+    "tokens": 59290,
+    "treebank": "UD_Polish-MPDT",
+    "ud": true,
+    "wins": 344
+  },
+  "pl_mte1984": {
+    "accepted": false,
+    "anchor": "UD_Polish-PDB",
+    "changed": 1320,
+    "declared_correct": 90649,
+    "external_tokens": 12203,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "silver",
+    "iso": "pol",
+    "lemmas": "automatic",
+    "losses": 609,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "simplemma",
+        "wiktionary",
+        "dictionary",
+        "spacy-lookups",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 11,
+      "near_overlap": 1,
+      "repeated_sentence": 145,
+      "sentences": 6509,
+      "sentences_read": 6666,
+      "tokens": 96734
+    },
+    "shared_contributors": false,
+    "tokens": 96734,
+    "treebank": "X_Polish-MTE1984",
+    "ud": false,
+    "wins": 625
+  },
+  "pl_pud": {
+    "accepted": false,
+    "anchor": "UD_Polish-PDB",
+    "changed": 207,
+    "declared_correct": 17599,
+    "external_tokens": 2330,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "pol",
+    "lemmas": "converted from manual",
+    "losses": 115,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "simplemma",
+        "wiktionary",
+        "dictionary",
+        "spacy-lookups",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "sentences": 1000,
+      "sentences_read": 1000,
+      "tokens": 18384
+    },
+    "shared_contributors": true,
+    "tokens": 18384,
+    "treebank": "UD_Polish-PUD",
+    "ud": true,
+    "wins": 81
+  },
+  "ps_prince": {
+    "accepted": false,
+    "anchor": "UD_Pashto-Sikaram",
+    "changed": 1,
+    "declared_correct": 867,
+    "external_tokens": 120,
+    "fit": "pooled",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "pst",
+    "lemmas": "manual native",
+    "losses": 1,
+    "order": [
+      [
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "wiktionary",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "sentences": 64,
+      "sentences_read": 64,
+      "tokens": 1118
+    },
+    "shared_contributors": false,
+    "tokens": 1118,
+    "treebank": "UD_Pashto-Prince",
+    "ud": true,
+    "wins": 0
+  },
+  "pt_alienista": {
+    "accepted": false,
+    "anchor": "UD_Portuguese-PetroGold",
+    "changed": 0,
+    "declared_correct": 18715,
+    "external_tokens": 5263,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "por",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 3,
+      "sentences": 798,
+      "sentences_read": 801,
+      "tokens": 20720
+    },
+    "shared_contributors": false,
+    "tokens": 20720,
+    "treebank": "UD_Portuguese-Alienista",
+    "ud": true,
+    "wins": 0
+  },
+  "pt_bosque": {
+    "accepted": false,
+    "anchor": "UD_Portuguese-PetroGold",
+    "changed": 0,
+    "declared_correct": 207426,
+    "external_tokens": 44387,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "por",
+    "lemmas": "converted with corrections",
+    "losses": 0,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 1,
+      "repeated_sentence": 18,
+      "sentences": 9338,
+      "sentences_read": 9357,
+      "tokens": 227724
+    },
+    "shared_contributors": true,
+    "tokens": 227724,
+    "treebank": "UD_Portuguese-Bosque",
+    "ud": true,
+    "wins": 0
+  },
+  "pt_cintil": {
+    "accepted": false,
+    "anchor": "UD_Portuguese-PetroGold",
+    "changed": 0,
+    "declared_correct": 362128,
+    "external_tokens": 98206,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "por",
+    "lemmas": "converted from manual",
+    "losses": 0,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 926,
+      "sentences": 37474,
+      "sentences_read": 38400,
+      "tokens": 467644
+    },
+    "shared_contributors": false,
+    "tokens": 467644,
+    "treebank": "UD_Portuguese-CINTIL",
+    "ud": true,
+    "wins": 0
+  },
+  "pt_dantestocks": {
+    "accepted": false,
+    "anchor": "UD_Portuguese-PetroGold",
+    "changed": 0,
+    "declared_correct": 68453,
+    "external_tokens": 9857,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "por",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "near_overlap": 1,
+      "sentences": 4041,
+      "sentences_read": 4042,
+      "tokens": 80926
+    },
+    "shared_contributors": false,
+    "tokens": 80926,
+    "treebank": "UD_Portuguese-DANTEStocks",
+    "ud": true,
+    "wins": 0
+  },
+  "pt_elexis": {
+    "accepted": false,
+    "anchor": "UD_Portuguese-PetroGold",
+    "changed": 0,
+    "declared_correct": 35800,
+    "external_tokens": 6697,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "por",
+    "lemmas": "automatic with corrections",
+    "losses": 0,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "near_overlap": 1,
+      "sentences": 2023,
+      "sentences_read": 2024,
+      "tokens": 38700
+    },
+    "shared_contributors": false,
+    "tokens": 38700,
+    "treebank": "X_Portuguese-ELEXIS",
+    "ud": false,
+    "wins": 0
+  },
+  "pt_gsd": {
+    "accepted": false,
+    "anchor": "UD_Portuguese-PetroGold",
+    "changed": 0,
+    "declared_correct": 247279,
+    "external_tokens": 44870,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "silver",
+    "iso": "por",
+    "lemmas": "automatic",
+    "losses": 0,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "near_overlap": 1,
+      "no_scorable_word": 1,
+      "repeated_sentence": 3,
+      "sentences": 12015,
+      "sentences_read": 12020,
+      "tokens": 260223
+    },
+    "shared_contributors": false,
+    "tokens": 260223,
+    "treebank": "UD_Portuguese-GSD",
+    "ud": true,
+    "wins": 0
+  },
+  "pt_portjur": {
+    "accepted": false,
+    "anchor": "UD_Portuguese-PetroGold",
+    "changed": 0,
+    "declared_correct": 92431,
+    "external_tokens": 19363,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "por",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 20,
+      "sentences": 1985,
+      "sentences_read": 2005,
+      "tokens": 100577
+    },
+    "shared_contributors": false,
+    "tokens": 100577,
+    "treebank": "UD_Portuguese-PortJur",
+    "ud": true,
+    "wins": 0
+  },
+  "pt_porttinari": {
+    "accepted": false,
+    "anchor": "UD_Portuguese-PetroGold",
+    "changed": 0,
+    "declared_correct": 155244,
+    "external_tokens": 32473,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "por",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "near_overlap": 1,
+      "repeated_sentence": 42,
+      "sentences": 8375,
+      "sentences_read": 8418,
+      "tokens": 167302
+    },
+    "shared_contributors": false,
+    "tokens": 167302,
+    "treebank": "UD_Portuguese-Porttinari",
+    "ud": true,
+    "wins": 0
+  },
+  "pt_pprincipe": {
+    "accepted": false,
+    "anchor": "UD_Portuguese-PetroGold",
+    "changed": 0,
+    "declared_correct": 15561,
+    "external_tokens": 4240,
+    "fit": "official",
+    "flagged_sources": [
+      "wiktionary"
+    ],
+    "group": "gold",
+    "iso": "por",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 41,
+      "sentences": 1486,
+      "sentences_read": 1527,
+      "tokens": 16616
+    },
+    "shared_contributors": false,
+    "tokens": 16616,
+    "treebank": "UD_Portuguese-PPrincipe",
+    "ud": true,
+    "wins": 0
+  },
+  "pt_pud": {
+    "accepted": false,
+    "anchor": "UD_Portuguese-PetroGold",
+    "changed": 0,
+    "declared_correct": 17751,
+    "external_tokens": 3416,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "por",
+    "lemmas": "automatic with corrections",
+    "losses": 0,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 1,
+      "sentences": 999,
+      "sentences_read": 1000,
+      "tokens": 18908
+    },
+    "shared_contributors": true,
+    "tokens": 18908,
+    "treebank": "UD_Portuguese-PUD",
+    "ud": true,
+    "wins": 0
+  },
+  "ro_art": {
+    "accepted": true,
+    "anchor": "UD_Romanian-Nonstandard",
+    "changed": 15,
+    "declared_correct": 236,
+    "external_tokens": 52,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ron",
+    "lemmas": "manual native",
+    "losses": 10,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "wiktionary",
+        "spacy-lookups",
+        "simplemma",
+        "dictionary",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "sentences": 50,
+      "sentences_read": 50,
+      "tokens": 573
+    },
+    "shared_contributors": false,
+    "tokens": 573,
+    "treebank": "UD_Romanian-ArT",
+    "ud": true,
+    "wins": 0
+  },
+  "ro_elexis": {
+    "accepted": true,
+    "anchor": "UD_Romanian-Nonstandard",
+    "changed": 1806,
+    "declared_correct": 30566,
+    "external_tokens": 11351,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ron",
+    "lemmas": "automatic with corrections",
+    "losses": 420,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "wiktionary",
+        "spacy-lookups",
+        "simplemma",
+        "dictionary",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "sentences": 2024,
+      "sentences_read": 2024,
+      "tokens": 35316
+    },
+    "shared_contributors": false,
+    "tokens": 35316,
+    "treebank": "X_Romanian-ELEXIS",
+    "ud": false,
+    "wins": 1274
+  },
+  "ro_moldoro": {
+    "accepted": true,
+    "anchor": "UD_Romanian-Nonstandard",
+    "changed": 0,
+    "declared_correct": 113,
+    "external_tokens": 20,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ron",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "wiktionary",
+        "spacy-lookups",
+        "simplemma",
+        "dictionary",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "sentences": 30,
+      "sentences_read": 30,
+      "tokens": 241
+    },
+    "shared_contributors": false,
+    "tokens": 241,
+    "treebank": "UD_Romanian-MolDoRo",
+    "ud": true,
+    "wins": 0
+  },
+  "ro_mte1984": {
+    "accepted": true,
+    "anchor": "UD_Romanian-Nonstandard",
+    "changed": 2446,
+    "declared_correct": 99346,
+    "external_tokens": 21018,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ron",
+    "lemmas": "manual native",
+    "losses": 959,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "wiktionary",
+        "spacy-lookups",
+        "simplemma",
+        "dictionary",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 112,
+      "sentences": 6408,
+      "sentences_read": 6520,
+      "tokens": 117810
+    },
+    "shared_contributors": false,
+    "tokens": 117810,
+    "treebank": "X_Romanian-MTE1984",
+    "ud": false,
+    "wins": 1382
+  },
+  "ro_rrt": {
+    "accepted": true,
+    "anchor": "UD_Romanian-Nonstandard",
+    "changed": 10086,
+    "declared_correct": 192185,
+    "external_tokens": 69217,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "silver",
+    "iso": "ron",
+    "lemmas": "automatic",
+    "losses": 2818,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "wiktionary",
+        "spacy-lookups",
+        "simplemma",
+        "dictionary",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "document_sentences_removed": 9,
+      "documents_removed": 1,
+      "exact_overlap": 8,
+      "repeated_sentence": 227,
+      "sentences": 9280,
+      "sentences_read": 9524,
+      "tokens": 215756
+    },
+    "shared_contributors": true,
+    "tokens": 215756,
+    "treebank": "UD_Romanian-RRT",
+    "ud": true,
+    "wins": 6680
+  },
+  "ro_simonero": {
+    "accepted": true,
+    "anchor": "UD_Romanian-Nonstandard",
+    "changed": 6866,
+    "declared_correct": 129576,
+    "external_tokens": 56762,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ron",
+    "lemmas": "converted from manual",
+    "losses": 2397,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "wiktionary",
+        "spacy-lookups",
+        "simplemma",
+        "dictionary",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "sentences": 4681,
+      "sentences_read": 4681,
+      "tokens": 146015
+    },
+    "shared_contributors": false,
+    "tokens": 146015,
+    "treebank": "UD_Romanian-SiMoNERo",
+    "ud": true,
+    "wins": 4104
+  },
+  "ro_tuecl": {
+    "accepted": true,
+    "anchor": "UD_Romanian-Nonstandard",
+    "changed": 119,
+    "declared_correct": 3645,
+    "external_tokens": 743,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ron",
+    "lemmas": "manual native",
+    "losses": 39,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "wiktionary",
+        "spacy-lookups",
+        "simplemma",
+        "dictionary",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "sentences": 210,
+      "sentences_read": 210,
+      "tokens": 4415
+    },
+    "shared_contributors": false,
+    "tokens": 4415,
+    "treebank": "UD_Romanian-TueCL",
+    "ud": true,
+    "wins": 63
+  },
+  "ru_gsd": {
+    "accepted": false,
+    "anchor": "UD_Russian-Taiga",
+    "changed": 291,
+    "declared_correct": 91525,
+    "external_tokens": 9145,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "rus",
+    "lemmas": "manual native",
+    "losses": 75,
+    "order": [
+      [
+        "dictionary",
+        "pymorphy-dictionaries",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "pymorphy-dictionaries",
+        "dictionary",
+        "unimorph",
+        "spacy-lookups",
+        "lemmagen3",
+        "wiktionary",
+        "simplemma"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 1,
+      "near_overlap": 11,
+      "repeated_sentence": 8,
+      "sentences": 5010,
+      "sentences_read": 5030,
+      "tokens": 97596
+    },
+    "shared_contributors": true,
+    "tokens": 97596,
+    "treebank": "UD_Russian-GSD",
+    "ud": true,
+    "wins": 89
+  },
+  "ru_poetry": {
+    "accepted": false,
+    "anchor": "UD_Russian-Taiga",
+    "changed": 118,
+    "declared_correct": 61397,
+    "external_tokens": 5548,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "rus",
+    "lemmas": "manual native",
+    "losses": 49,
+    "order": [
+      [
+        "dictionary",
+        "pymorphy-dictionaries",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "pymorphy-dictionaries",
+        "dictionary",
+        "unimorph",
+        "spacy-lookups",
+        "lemmagen3",
+        "wiktionary",
+        "simplemma"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 92,
+      "near_overlap": 3,
+      "repeated_sentence": 63,
+      "sentences": 4927,
+      "sentences_read": 5085,
+      "tokens": 63588
+    },
+    "shared_contributors": true,
+    "tokens": 63588,
+    "treebank": "UD_Russian-Poetry",
+    "ud": true,
+    "wins": 52
+  },
+  "ru_pud": {
+    "accepted": false,
+    "anchor": "UD_Russian-Taiga",
+    "changed": 23,
+    "declared_correct": 18342,
+    "external_tokens": 1490,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "rus",
+    "lemmas": "manual native",
+    "losses": 9,
+    "order": [
+      [
+        "dictionary",
+        "pymorphy-dictionaries",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "pymorphy-dictionaries",
+        "dictionary",
+        "unimorph",
+        "spacy-lookups",
+        "lemmagen3",
+        "wiktionary",
+        "simplemma"
+      ]
+    ],
+    "screen": {
+      "sentences": 1000,
+      "sentences_read": 1000,
+      "tokens": 19355
+    },
+    "shared_contributors": false,
+    "tokens": 19355,
+    "treebank": "UD_Russian-PUD",
+    "ud": true,
+    "wins": 4
+  },
+  "ru_syntagrus": {
+    "accepted": false,
+    "anchor": "UD_Russian-Taiga",
+    "changed": 2845,
+    "declared_correct": 1452705,
+    "external_tokens": 116200,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "rus",
+    "lemmas": "converted from manual",
+    "losses": 772,
+    "order": [
+      [
+        "dictionary",
+        "pymorphy-dictionaries",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "pymorphy-dictionaries",
+        "dictionary",
+        "unimorph",
+        "spacy-lookups",
+        "lemmagen3",
+        "wiktionary",
+        "simplemma"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 327,
+      "near_overlap": 67,
+      "repeated_sentence": 375,
+      "sentences": 86568,
+      "sentences_read": 87337,
+      "tokens": 1510946
+    },
+    "shared_contributors": true,
+    "tokens": 1510946,
+    "treebank": "UD_Russian-SynTagRus",
+    "ud": true,
+    "wins": 984
+  },
+  "sa_ufal": {
+    "accepted": false,
+    "anchor": "UD_Sanskrit-Vedic",
+    "changed": 0,
+    "declared_correct": 880,
+    "external_tokens": 996,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "san",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 7,
+      "sentences": 223,
+      "sentences_read": 230,
+      "tokens": 1828
+    },
+    "shared_contributors": true,
+    "tokens": 1828,
+    "treebank": "UD_Sanskrit-UFAL",
+    "ud": true,
+    "wins": 0
+  },
+  "sga_dipwbg": {
+    "accepted": false,
+    "anchor": "UD_Old_Irish-DipSGG",
+    "changed": 0,
+    "declared_correct": 256,
+    "external_tokens": 191,
+    "fit": "pooled",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "sga",
+    "lemmas": "converted with corrections",
+    "losses": 0,
+    "order": [
+      [
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "sentences": 34,
+      "sentences_read": 34,
+      "tokens": 431
+    },
+    "shared_contributors": true,
+    "tokens": 431,
+    "treebank": "UD_Old_Irish-DipWBG",
+    "ud": true,
+    "wins": 0
+  },
+  "sk_mte1984": {
+    "accepted": false,
+    "anchor": "UD_Slovak-SNK",
+    "changed": 51,
+    "declared_correct": 16713,
+    "external_tokens": 2971,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "shared",
+    "iso": "slk",
+    "lemmas": "converted from manual",
+    "losses": 30,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "simplemma",
+        "dictionary",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "document_sentences_removed": 4302,
+      "documents_removed": 20,
+      "exact_overlap": 990,
+      "near_overlap": 58,
+      "repeated_sentence": 74,
+      "sentences": 930,
+      "sentences_read": 6354,
+      "tokens": 17267
+    },
+    "shared_contributors": false,
+    "tokens": 17267,
+    "treebank": "X_Slovak-MTE1984",
+    "ud": false,
+    "wins": 20
+  },
+  "sl_elexis": {
+    "anchor": "UD_Slovenian-SSJ",
+    "fit": "official",
+    "group": "nothing scorable",
+    "iso": "slv",
+    "lemmas": "automatic with corrections",
+    "screen": {
+      "document_sentences_removed": 0,
+      "documents_removed": 1,
+      "exact_overlap": 2024,
+      "sentences": 0,
+      "sentences_read": 2024,
+      "tokens": 0
+    },
+    "shared_contributors": true,
+    "treebank": "X_Slovenian-ELEXIS",
+    "ud": false
+  },
+  "sl_mte1984": {
+    "accepted": true,
+    "anchor": "UD_Slovenian-SSJ",
+    "changed": 350,
+    "declared_correct": 108525,
+    "external_tokens": 12336,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "slv",
+    "lemmas": "automatic with corrections",
+    "losses": 51,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "lemmagen3",
+        "unimorph"
+      ],
+      [
+        "lemmagen3",
+        "dictionary",
+        "simplemma",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 2,
+      "repeated_sentence": 117,
+      "sentences": 6570,
+      "sentences_read": 6689,
+      "tokens": 111658
+    },
+    "shared_contributors": true,
+    "tokens": 111658,
+    "treebank": "X_Slovenian-MTE1984",
+    "ud": false,
+    "wins": 237
+  },
+  "sl_sst": {
+    "accepted": true,
+    "anchor": "UD_Slovenian-SSJ",
+    "changed": 2195,
+    "declared_correct": 88954,
+    "external_tokens": 8540,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "slv",
+    "lemmas": "converted from manual",
+    "losses": 1994,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "lemmagen3",
+        "unimorph"
+      ],
+      [
+        "lemmagen3",
+        "dictionary",
+        "simplemma",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "document_sentences_removed": 510,
+      "documents_removed": 29,
+      "exact_overlap": 212,
+      "repeated_sentence": 389,
+      "sentences": 5010,
+      "sentences_read": 6121,
+      "tokens": 91006
+    },
+    "shared_contributors": true,
+    "tokens": 91006,
+    "treebank": "UD_Slovenian-SST",
+    "ud": true,
+    "wins": 129
+  },
+  "sq_tsa": {
+    "accepted": false,
+    "anchor": "UD_Albanian-STAF",
+    "changed": 4,
+    "declared_correct": 717,
+    "external_tokens": 280,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "sqi",
+    "lemmas": "manual native",
+    "losses": 2,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "dictionary",
+        "unimorph",
+        "wiktionary",
+        "simplemma"
+      ]
+    ],
+    "screen": {
+      "sentences": 60,
+      "sentences_read": 60,
+      "tokens": 922
+    },
+    "shared_contributors": false,
+    "tokens": 922,
+    "treebank": "UD_Albanian-TSA",
+    "ud": true,
+    "wins": 2
+  },
+  "sr_elexis": {
+    "accepted": false,
+    "anchor": "UD_Serbian-SET",
+    "changed": 0,
+    "declared_correct": 26403,
+    "external_tokens": 6607,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "srp",
+    "lemmas": "automatic with corrections",
+    "losses": 0,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph"
+      ],
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "near_overlap": 1,
+      "sentences": 2023,
+      "sentences_read": 2024,
+      "tokens": 31037
+    },
+    "shared_contributors": false,
+    "tokens": 31037,
+    "treebank": "X_Serbian-ELEXIS",
+    "ud": false,
+    "wins": 0
+  },
+  "sr_mte1984": {
+    "accepted": false,
+    "anchor": "UD_Serbian-SET",
+    "changed": 0,
+    "declared_correct": 90430,
+    "external_tokens": 23323,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "srp",
+    "lemmas": "automatic with corrections",
+    "losses": 0,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph"
+      ],
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 124,
+      "sentences": 6553,
+      "sentences_read": 6677,
+      "tokens": 108133
+    },
+    "shared_contributors": false,
+    "tokens": 108133,
+    "treebank": "X_Serbian-MTE1984",
+    "ud": false,
+    "wins": 0
+  },
+  "sr_parcolab": {
+    "accepted": false,
+    "anchor": "UD_Serbian-SET",
+    "changed": 0,
+    "declared_correct": 41185,
+    "external_tokens": 12429,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "srp",
+    "lemmas": "converted from manual",
+    "losses": 0,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph"
+      ],
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "lemmagen3",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 3,
+      "sentences": 1744,
+      "sentences_read": 1747,
+      "tokens": 45677
+    },
+    "shared_contributors": true,
+    "tokens": 45677,
+    "treebank": "UD_Serbian-ParCoLab",
+    "ud": true,
+    "wins": 0
+  },
+  "sv_lines": {
+    "accepted": false,
+    "anchor": "UD_Swedish-Talbanken",
+    "changed": 17,
+    "declared_correct": 96603,
+    "external_tokens": 17740,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "swe",
+    "lemmas": "converted from manual",
+    "losses": 7,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "dictionary",
+        "wiktionary",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 1,
+      "repeated_sentence": 13,
+      "sentences": 5682,
+      "sentences_read": 5696,
+      "tokens": 102454
+    },
+    "shared_contributors": false,
+    "tokens": 102454,
+    "treebank": "UD_Swedish-LinES",
+    "ud": true,
+    "wins": 7
+  },
+  "sv_modern": {
+    "anchor": "UD_Swedish-Talbanken",
+    "fit": "official",
+    "group": "no lemmas",
+    "iso": "swe",
+    "lemmas": "not available",
+    "shared_contributors": true,
+    "treebank": "UD_Swedish-Modern",
+    "ud": true
+  },
+  "sv_old": {
+    "accepted": false,
+    "anchor": "UD_Swedish-Talbanken",
+    "changed": 0,
+    "declared_correct": 90,
+    "external_tokens": 78,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "swe",
+    "lemmas": "converted with corrections",
+    "losses": 0,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "dictionary",
+        "wiktionary",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "sentences": 40,
+      "sentences_read": 40,
+      "tokens": 506
+    },
+    "shared_contributors": true,
+    "tokens": 506,
+    "treebank": "UD_Swedish-Old",
+    "ud": true,
+    "wins": 0
+  },
+  "sv_pud": {
+    "accepted": false,
+    "anchor": "UD_Swedish-Talbanken",
+    "changed": 5,
+    "declared_correct": 17994,
+    "external_tokens": 3834,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "swe",
+    "lemmas": "automatic with corrections",
+    "losses": 3,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "dictionary",
+        "wiktionary",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "sentences": 1000,
+      "sentences_read": 1000,
+      "tokens": 19076
+    },
+    "shared_contributors": true,
+    "tokens": 19076,
+    "treebank": "UD_Swedish-PUD",
+    "ud": true,
+    "wins": 1
+  },
+  "sv_swell": {
+    "accepted": false,
+    "anchor": "UD_Swedish-Talbanken",
+    "changed": 0,
+    "declared_correct": 10319,
+    "external_tokens": 984,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "swe",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "dictionary",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "dictionary",
+        "wiktionary",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 6,
+      "sentences": 637,
+      "sentences_read": 643,
+      "tokens": 10822
+    },
+    "shared_contributors": false,
+    "tokens": 10822,
+    "treebank": "UD_Swedish-SweLL",
+    "ud": true,
+    "wins": 0
+  },
+  "tl_ugnayan": {
+    "accepted": false,
+    "anchor": "UD_Tagalog-TRG",
+    "changed": 154,
+    "declared_correct": 801,
+    "external_tokens": 501,
+    "fit": "pooled",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "tgl",
+    "lemmas": "manual native",
+    "losses": 6,
+    "order": [
+      [
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary",
+        "simplemma"
+      ]
+    ],
+    "screen": {
+      "sentences": 94,
+      "sentences_read": 94,
+      "tokens": 1097
+    },
+    "shared_contributors": false,
+    "tokens": 1097,
+    "treebank": "UD_Tagalog-Ugnayan",
+    "ud": true,
+    "wins": 58
+  },
+  "tr_atis": {
+    "accepted": true,
+    "anchor": "UD_Turkish-Penn",
+    "changed": 2496,
+    "declared_correct": 35331,
+    "external_tokens": 9002,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "tur",
+    "lemmas": "manual native",
+    "losses": 306,
+    "order": [
+      [
+        "dictionary",
+        "zeyrek",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "spacy-lookups",
+        "simplemma",
+        "wiktionary",
+        "dictionary",
+        "zeyrek",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "near_overlap": 1,
+      "repeated_sentence": 92,
+      "sentences": 5191,
+      "sentences_read": 5284,
+      "tokens": 43706
+    },
+    "shared_contributors": true,
+    "tokens": 43706,
+    "treebank": "UD_Turkish-Atis",
+    "ud": true,
+    "wins": 2167
+  },
+  "tr_boun": {
+    "accepted": true,
+    "anchor": "UD_Turkish-Penn",
+    "changed": 7012,
+    "declared_correct": 107945,
+    "external_tokens": 33058,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "tur",
+    "lemmas": "manual native",
+    "losses": 2873,
+    "order": [
+      [
+        "dictionary",
+        "zeyrek",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "spacy-lookups",
+        "simplemma",
+        "wiktionary",
+        "dictionary",
+        "zeyrek",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 70,
+      "sentences": 9691,
+      "sentences_read": 9761,
+      "tokens": 124977
+    },
+    "shared_contributors": true,
+    "tokens": 124977,
+    "treebank": "UD_Turkish-BOUN",
+    "ud": true,
+    "wins": 3645
+  },
+  "tr_framenet": {
+    "accepted": true,
+    "anchor": "UD_Turkish-Penn",
+    "changed": 806,
+    "declared_correct": 17521,
+    "external_tokens": 5666,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "tur",
+    "lemmas": "converted from manual",
+    "losses": 263,
+    "order": [
+      [
+        "dictionary",
+        "zeyrek",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "spacy-lookups",
+        "simplemma",
+        "wiktionary",
+        "dictionary",
+        "zeyrek",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 36,
+      "sentences": 2662,
+      "sentences_read": 2698,
+      "tokens": 18908
+    },
+    "shared_contributors": true,
+    "tokens": 18908,
+    "treebank": "UD_Turkish-FrameNet",
+    "ud": true,
+    "wins": 486
+  },
+  "tr_gb": {
+    "accepted": true,
+    "anchor": "UD_Turkish-Penn",
+    "changed": 862,
+    "declared_correct": 14818,
+    "external_tokens": 4094,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "tur",
+    "lemmas": "manual native",
+    "losses": 431,
+    "order": [
+      [
+        "dictionary",
+        "zeyrek",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "spacy-lookups",
+        "simplemma",
+        "wiktionary",
+        "dictionary",
+        "zeyrek",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 31,
+      "sentences": 2849,
+      "sentences_read": 2880,
+      "tokens": 17038
+    },
+    "shared_contributors": false,
+    "tokens": 17038,
+    "treebank": "UD_Turkish-GB",
+    "ud": true,
+    "wins": 354
+  },
+  "tr_imst": {
+    "accepted": true,
+    "anchor": "UD_Turkish-Penn",
+    "changed": 2992,
+    "declared_correct": 51304,
+    "external_tokens": 15015,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "tur",
+    "lemmas": "converted from manual",
+    "losses": 1230,
+    "order": [
+      [
+        "dictionary",
+        "zeyrek",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "spacy-lookups",
+        "simplemma",
+        "wiktionary",
+        "dictionary",
+        "zeyrek",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "document_sentences_removed": 2,
+      "documents_removed": 2,
+      "exact_overlap": 4,
+      "repeated_sentence": 53,
+      "sentences": 5576,
+      "sentences_read": 5635,
+      "tokens": 57725
+    },
+    "shared_contributors": true,
+    "tokens": 57725,
+    "treebank": "UD_Turkish-IMST",
+    "ud": true,
+    "wins": 1509
+  },
+  "tr_kenet": {
+    "accepted": true,
+    "anchor": "UD_Turkish-Penn",
+    "changed": 8995,
+    "declared_correct": 149634,
+    "external_tokens": 56332,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "tur",
+    "lemmas": "converted from manual",
+    "losses": 2300,
+    "order": [
+      [
+        "dictionary",
+        "zeyrek",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "spacy-lookups",
+        "simplemma",
+        "wiktionary",
+        "dictionary",
+        "zeyrek",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 1,
+      "repeated_sentence": 1232,
+      "sentences": 17454,
+      "sentences_read": 18687,
+      "tokens": 165414
+    },
+    "shared_contributors": true,
+    "tokens": 165414,
+    "treebank": "UD_Turkish-Kenet",
+    "ud": true,
+    "wins": 6069
+  },
+  "tr_pud": {
+    "accepted": true,
+    "anchor": "UD_Turkish-Penn",
+    "changed": 598,
+    "declared_correct": 13237,
+    "external_tokens": 3064,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "silver",
+    "iso": "tur",
+    "lemmas": "automatic",
+    "losses": 276,
+    "order": [
+      [
+        "dictionary",
+        "zeyrek",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "spacy-lookups",
+        "simplemma",
+        "wiktionary",
+        "dictionary",
+        "zeyrek",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "sentences": 1000,
+      "sentences_read": 1000,
+      "tokens": 16423
+    },
+    "shared_contributors": false,
+    "tokens": 16423,
+    "treebank": "UD_Turkish-PUD",
+    "ud": true,
+    "wins": 179
+  },
+  "tr_tourism": {
+    "accepted": true,
+    "anchor": "UD_Turkish-Penn",
+    "changed": 3509,
+    "declared_correct": 63613,
+    "external_tokens": 16575,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "tur",
+    "lemmas": "converted from manual",
+    "losses": 958,
+    "order": [
+      [
+        "dictionary",
+        "zeyrek",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "spacy-lookups",
+        "simplemma",
+        "wiktionary",
+        "dictionary",
+        "zeyrek",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 12,
+      "repeated_sentence": 5262,
+      "sentences": 14556,
+      "sentences_read": 19830,
+      "tokens": 68197
+    },
+    "shared_contributors": true,
+    "tokens": 68197,
+    "treebank": "UD_Turkish-Tourism",
+    "ud": true,
+    "wins": 2469
+  },
+  "tr_tuecl": {
+    "accepted": true,
+    "anchor": "UD_Turkish-Penn",
+    "changed": 39,
+    "declared_correct": 764,
+    "external_tokens": 178,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "tur",
+    "lemmas": "manual native",
+    "losses": 26,
+    "order": [
+      [
+        "dictionary",
+        "zeyrek",
+        "simplemma",
+        "spacy-lookups",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "spacy-lookups",
+        "simplemma",
+        "wiktionary",
+        "dictionary",
+        "zeyrek",
+        "unimorph"
+      ]
+    ],
+    "screen": {
+      "exact_overlap": 2,
+      "repeated_sentence": 2,
+      "sentences": 144,
+      "sentences_read": 148,
+      "tokens": 891
+    },
+    "shared_contributors": false,
+    "tokens": 891,
+    "treebank": "UD_Turkish-TueCL",
+    "ud": true,
+    "wins": 6
+  },
+  "uk_parlamint": {
+    "accepted": false,
+    "anchor": "UD_Ukrainian-IU",
+    "changed": 124,
+    "declared_correct": 94777,
+    "external_tokens": 16882,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ukr",
+    "lemmas": "manual native",
+    "losses": 42,
+    "order": [
+      [
+        "pymorphy-dictionaries",
+        "simplemma",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "pymorphy-dictionaries",
+        "simplemma",
+        "wiktionary",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "document_sentences_removed": 450,
+      "documents_removed": 83,
+      "exact_overlap": 352,
+      "near_overlap": 34,
+      "repeated_sentence": 542,
+      "sentences": 5764,
+      "sentences_read": 7142,
+      "tokens": 97567
+    },
+    "shared_contributors": false,
+    "tokens": 97567,
+    "treebank": "UD_Ukrainian-ParlaMint",
+    "ud": true,
+    "wins": 74
+  },
+  "uk_zhelekhivka": {
+    "accepted": false,
+    "anchor": "UD_Ukrainian-IU",
+    "changed": 38,
+    "declared_correct": 7881,
+    "external_tokens": 1579,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "ukr",
+    "lemmas": "manual native",
+    "losses": 21,
+    "order": [
+      [
+        "pymorphy-dictionaries",
+        "simplemma",
+        "lemmagen3",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "pymorphy-dictionaries",
+        "simplemma",
+        "wiktionary",
+        "lemmagen3"
+      ]
+    ],
+    "screen": {
+      "sentences": 348,
+      "sentences_read": 348,
+      "tokens": 9348
+    },
+    "shared_contributors": false,
+    "tokens": 9348,
+    "treebank": "UD_Ukrainian-Zhelekhivka",
+    "ud": true,
+    "wins": 10
+  },
+  "uz_tuecl": {
+    "accepted": false,
+    "anchor": "UD_Uzbek-UzUDT",
+    "changed": 0,
+    "declared_correct": 831,
+    "external_tokens": 389,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "uzb",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "dictionary",
+        "uzmorph",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "dictionary",
+        "uzmorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "repeated_sentence": 2,
+      "sentences": 146,
+      "sentences_read": 148,
+      "tokens": 929
+    },
+    "shared_contributors": false,
+    "tokens": 929,
+    "treebank": "UD_Uzbek-TueCL",
+    "ud": true,
+    "wins": 0
+  },
+  "uz_ut": {
+    "accepted": false,
+    "anchor": "UD_Uzbek-UzUDT",
+    "changed": 1,
+    "declared_correct": 5264,
+    "external_tokens": 2989,
+    "fit": "official",
+    "flagged_sources": [],
+    "group": "gold",
+    "iso": "uzb",
+    "lemmas": "manual native",
+    "losses": 0,
+    "order": [
+      [
+        "dictionary",
+        "uzmorph",
+        "unimorph",
+        "wiktionary"
+      ],
+      [
+        "unimorph",
+        "dictionary",
+        "uzmorph",
+        "wiktionary"
+      ]
+    ],
+    "screen": {
+      "sentences": 500,
+      "sentences_read": 500,
+      "tokens": 5930
+    },
+    "shared_contributors": false,
+    "tokens": 5930,
+    "treebank": "UD_Uzbek-UT",
+    "ud": true,
+    "wins": 1
+  }
+}

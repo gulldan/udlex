@@ -1,0 +1,592 @@
+{
+ "afr": {
+  "exact": 7698,
+  "exact_lower": 58,
+  "identity": 1022,
+  "lower": 30,
+  "rule": 1255,
+  "tokens": 10063
+ },
+ "amh": {
+  "exact": 1975,
+  "identity": 3766,
+  "rule": 3832,
+  "tokens": 9573
+ },
+ "arb": {
+  "exact": 17003,
+  "identity": 4138,
+  "rule": 7042,
+  "tokens": 28183
+ },
+ "aze": {
+  "exact": 57,
+  "exact_lower": 9,
+  "identity": 464,
+  "rule": 343,
+  "tokens": 873
+ },
+ "bam": {
+  "exact": 10628,
+  "identity": 1867,
+  "rule": 114,
+  "tokens": 12609
+ },
+ "bel": {
+  "exact": 130,
+  "exact_lower": 17,
+  "identity": 8735,
+  "rule": 6989,
+  "tokens": 15871
+ },
+ "ben": {
+  "exact": 52,
+  "identity": 130,
+  "rule": 138,
+  "tokens": 320
+ },
+ "bre": {
+  "exact": 1309,
+  "exact_lower": 98,
+  "identity": 4222,
+  "rule": 4367,
+  "tokens": 9996
+ },
+ "bxr": {
+  "exact": 390,
+  "exact_lower": 18,
+  "identity": 5032,
+  "lower": 64,
+  "rule": 4456,
+  "tokens": 9960
+ },
+ "cat": {
+  "exact": 6914,
+  "exact_lower": 323,
+  "identity": 22158,
+  "rule": 30176,
+  "tokens": 59571
+ },
+ "ceb": {
+  "exact": 21,
+  "exact_lower": 8,
+  "identity": 678,
+  "rule": 810,
+  "tokens": 1517
+ },
+ "ces": {
+  "exact": 61437,
+  "exact_lower": 6234,
+  "identity": 79677,
+  "lower": 5,
+  "rule": 150827,
+  "tokens": 298180
+ },
+ "chu": {
+  "exact": 400,
+  "exact_lower": 20,
+  "identity": 5640,
+  "rule": 13756,
+  "tokens": 19816
+ },
+ "cym": {
+  "exact": 12817,
+  "exact_lower": 150,
+  "identity": 1774,
+  "lower": 91,
+  "rule": 2194,
+  "tokens": 17026
+ },
+ "dan": {
+  "exact": 883,
+  "exact_lower": 69,
+  "identity": 3229,
+  "rule": 5841,
+  "tokens": 10022
+ },
+ "deu": {
+  "exact": 84220,
+  "exact_lower": 1761,
+  "identity": 63608,
+  "lower": 8116,
+  "rule": 172090,
+  "tokens": 329795
+ },
+ "ell": {
+  "exact": 2233,
+  "exact_lower": 424,
+  "identity": 2372,
+  "lower": 4,
+  "rule": 5623,
+  "tokens": 10656
+ },
+ "eng": {
+  "exact": 15441,
+  "exact_lower": 2128,
+  "identity": 4049,
+  "lower": 1968,
+  "rule": 4570,
+  "tokens": 28156
+ },
+ "epo": {
+  "exact": 68,
+  "exact_lower": 4,
+  "identity": 34,
+  "rule": 69,
+  "tokens": 175
+ },
+ "est": {
+  "exact": 6145,
+  "exact_lower": 352,
+  "identity": 15883,
+  "rule": 25929,
+  "tokens": 48309
+ },
+ "eus": {
+  "exact": 8551,
+  "exact_lower": 983,
+  "identity": 6405,
+  "rule": 8373,
+  "tokens": 24312
+ },
+ "fao": {
+  "identity": 1105,
+  "tokens": 1105
+ },
+ "fin": {
+  "exact": 8495,
+  "exact_lower": 692,
+  "identity": 5186,
+  "lower": 18,
+  "rule": 6598,
+  "tokens": 20989
+ },
+ "fra": {
+  "exact": 1681,
+  "exact_lower": 104,
+  "identity": 3202,
+  "rule": 4948,
+  "tokens": 9935
+ },
+ "frm": {
+  "exact": 1206,
+  "exact_lower": 12,
+  "identity": 4947,
+  "rule": 7421,
+  "tokens": 13586
+ },
+ "gla": {
+  "exact": 8455,
+  "exact_lower": 78,
+  "identity": 908,
+  "lower": 14,
+  "rule": 1096,
+  "tokens": 10551
+ },
+ "gle": {
+  "exact": 1189,
+  "exact_lower": 250,
+  "identity": 2859,
+  "lower": 1,
+  "rule": 5801,
+  "tokens": 10100
+ },
+ "glg": {
+  "exact": 19577,
+  "exact_lower": 300,
+  "identity": 3339,
+  "lower": 64,
+  "rule": 6460,
+  "tokens": 29740
+ },
+ "glv": {
+  "exact": 7478,
+  "exact_lower": 50,
+  "identity": 1531,
+  "lower": 22,
+  "rule": 1171,
+  "tokens": 10252
+ },
+ "got": {
+  "exact": 3198,
+  "exact_lower": 5,
+  "identity": 1508,
+  "rule": 5167,
+  "tokens": 9878
+ },
+ "grc": {
+  "exact": 207,
+  "identity": 3717,
+  "lower": 2,
+  "rule": 9165,
+  "tokens": 13091
+ },
+ "guj": {
+  "exact": 56,
+  "identity": 620,
+  "rule": 899,
+  "tokens": 1575
+ },
+ "hau": {
+  "exact": 13046,
+  "exact_lower": 50,
+  "identity": 2146,
+  "rule": 49,
+  "tokens": 15291
+ },
+ "heb": {
+  "exact": 1725,
+  "identity": 5189,
+  "rule": 5079,
+  "tokens": 11993
+ },
+ "hin": {
+  "exact": 1854,
+  "identity": 12204,
+  "rule": 21355,
+  "tokens": 35413
+ },
+ "hrv": {
+  "exact": 14208,
+  "exact_lower": 1432,
+  "identity": 4115,
+  "rule": 4448,
+  "tokens": 24203
+ },
+ "hsb": {
+  "exact": 8561,
+  "exact_lower": 17,
+  "identity": 2119,
+  "lower": 1,
+  "rule": 469,
+  "tokens": 11167
+ },
+ "hun": {
+  "exact": 3581,
+  "exact_lower": 176,
+  "identity": 3000,
+  "lower": 4,
+  "rule": 3671,
+  "tokens": 10432
+ },
+ "hye": {
+  "exact": 1649,
+  "exact_lower": 201,
+  "identity": 3843,
+  "lower": 1,
+  "rule": 4916,
+  "tokens": 10610
+ },
+ "ind": {
+  "exact": 5396,
+  "exact_lower": 276,
+  "identity": 2044,
+  "lower": 43,
+  "rule": 3953,
+  "tokens": 11712
+ },
+ "isl": {
+  "exact": 20378,
+  "exact_lower": 1083,
+  "identity": 28902,
+  "lower": 48,
+  "rule": 89164,
+  "tokens": 139575
+ },
+ "ita": {
+  "exact": 1324,
+  "exact_lower": 83,
+  "identity": 4536,
+  "rule": 4473,
+  "tokens": 10416
+ },
+ "jpn": {
+  "exact": 317,
+  "identity": 11730,
+  "rule": 987,
+  "tokens": 13034
+ },
+ "kat": {
+  "exact": 3828,
+  "identity": 2021,
+  "rule": 4577,
+  "tokens": 10426
+ },
+ "kaz": {
+  "exact": 58,
+  "exact_lower": 15,
+  "identity": 6198,
+  "rule": 3736,
+  "tokens": 10007
+ },
+ "kir": {
+  "exact": 5350,
+  "exact_lower": 128,
+  "identity": 1998,
+  "lower": 30,
+  "rule": 3334,
+  "tokens": 10840
+ },
+ "kmr": {
+  "exact": 2754,
+  "exact_lower": 36,
+  "identity": 3274,
+  "lower": 118,
+  "rule": 3781,
+  "tokens": 9963
+ },
+ "kor": {
+  "exact": 16896,
+  "identity": 3490,
+  "lower": 1,
+  "rule": 7965,
+  "tokens": 28352
+ },
+ "krl": {
+  "exact": 1,
+  "exact_lower": 13,
+  "identity": 1348,
+  "rule": 1731,
+  "tokens": 3093
+ },
+ "lat": {
+  "exact": 3316,
+  "identity": 6357,
+  "lower": 6,
+  "rule": 19541,
+  "tokens": 29220
+ },
+ "lav": {
+  "exact": 7731,
+  "exact_lower": 673,
+  "identity": 10915,
+  "rule": 17761,
+  "tokens": 37080
+ },
+ "lit": {
+  "exact": 684,
+  "exact_lower": 65,
+  "identity": 4258,
+  "rule": 6946,
+  "tokens": 11953
+ },
+ "mdf": {
+  "exact": 454,
+  "exact_lower": 58,
+  "identity": 1525,
+  "lower": 9,
+  "rule": 2259,
+  "tokens": 4305
+ },
+ "mkd": {
+  "exact": 476,
+  "exact_lower": 66,
+  "identity": 423,
+  "rule": 378,
+  "tokens": 1343
+ },
+ "myv": {
+  "exact": 3996,
+  "exact_lower": 128,
+  "identity": 2589,
+  "lower": 126,
+  "rule": 3631,
+  "tokens": 10470
+ },
+ "nld": {
+  "exact": 3687,
+  "exact_lower": 299,
+  "identity": 7782,
+  "rule": 17036,
+  "tokens": 28804
+ },
+ "nor": {
+  "exact": 18633,
+  "exact_lower": 279,
+  "identity": 2723,
+  "lower": 12,
+  "rule": 3050,
+  "tokens": 24697
+ },
+ "oci": {
+  "exact": 3495,
+  "exact_lower": 306,
+  "identity": 2734,
+  "rule": 3421,
+  "tokens": 9956
+ },
+ "olo": {
+  "exact": 675,
+  "exact_lower": 76,
+  "identity": 398,
+  "rule": 336,
+  "tokens": 1485
+ },
+ "pes": {
+  "exact": 21315,
+  "identity": 1724,
+  "rule": 1079,
+  "tokens": 24118
+ },
+ "pol": {
+  "exact": 7752,
+  "exact_lower": 976,
+  "identity": 9898,
+  "lower": 1,
+  "rule": 14945,
+  "tokens": 33572
+ },
+ "por": {
+  "exact": 5470,
+  "exact_lower": 301,
+  "identity": 11823,
+  "rule": 11945,
+  "tokens": 29539
+ },
+ "pst": {
+  "exact": 6287,
+  "identity": 414,
+  "rule": 158,
+  "tokens": 6859
+ },
+ "ron": {
+  "exact": 2758,
+  "exact_lower": 290,
+  "identity": 8563,
+  "rule": 9332,
+  "tokens": 20943
+ },
+ "rus": {
+  "exact": 9212,
+  "exact_lower": 1717,
+  "identity": 4060,
+  "rule": 345,
+  "tokens": 15334
+ },
+ "sah": {
+  "exact": 1276,
+  "identity": 155,
+  "rule": 22,
+  "tokens": 1453
+ },
+ "san": {
+  "exact": 16723,
+  "identity": 22,
+  "rule": 2593,
+  "tokens": 19338
+ },
+ "sga": {
+  "exact": 10,
+  "exact_lower": 1,
+  "identity": 154,
+  "rule": 228,
+  "tokens": 393
+ },
+ "slk": {
+  "exact": 6136,
+  "exact_lower": 223,
+  "identity": 2059,
+  "lower": 82,
+  "rule": 4202,
+  "tokens": 12702
+ },
+ "slv": {
+  "exact": 17587,
+  "exact_lower": 249,
+  "identity": 3599,
+  "lower": 82,
+  "rule": 3890,
+  "tokens": 25407
+ },
+ "sme": {
+  "exact": 1897,
+  "exact_lower": 139,
+  "identity": 2895,
+  "rule": 4996,
+  "tokens": 9927
+ },
+ "spa": {
+  "exact": 19553,
+  "exact_lower": 1842,
+  "identity": 13899,
+  "rule": 18290,
+  "tokens": 53584
+ },
+ "sqi": {
+  "exact": 66,
+  "exact_lower": 3,
+  "identity": 152,
+  "rule": 150,
+  "tokens": 371
+ },
+ "srp": {
+  "exact": 6383,
+  "exact_lower": 686,
+  "identity": 1894,
+  "rule": 2447,
+  "tokens": 11410
+ },
+ "swe": {
+  "exact": 5987,
+  "exact_lower": 265,
+  "identity": 3950,
+  "rule": 10169,
+  "tokens": 20371
+ },
+ "tat": {
+  "exact": 1737,
+  "identity": 436,
+  "rule": 96,
+  "tokens": 2269
+ },
+ "tgl": {
+  "exact": 580,
+  "identity": 154,
+  "tokens": 734
+ },
+ "tur": {
+  "exact": 1675,
+  "exact_lower": 212,
+  "identity": 3538,
+  "rule": 4479,
+  "tokens": 9904
+ },
+ "uig": {
+  "exact": 4104,
+  "identity": 1996,
+  "rule": 1473,
+  "tokens": 7573
+ },
+ "ukr": {
+  "exact": 2081,
+  "exact_lower": 211,
+  "identity": 5752,
+  "rule": 8031,
+  "tokens": 16075
+ },
+ "urd": {
+  "exact": 7125,
+  "identity": 1222,
+  "rule": 6190,
+  "tokens": 14537
+ },
+ "uzb": {
+  "exact": 12,
+  "identity": 1353,
+  "rule": 763,
+  "tokens": 2128
+ },
+ "vep": {
+  "exact": 705,
+  "exact_lower": 76,
+  "identity": 303,
+  "rule": 219,
+  "tokens": 1303
+ },
+ "yid": {
+  "exact": 6691,
+  "identity": 1709,
+  "rule": 1555,
+  "tokens": 9955
+ }
+}

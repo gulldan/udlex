@@ -1,0 +1,15 @@
+{
+  "cells": {
+    "arb": {
+      "correct": 11693,
+      "model": "calima-msa-r13 mle disambiguator, top reading",
+      "sentences": 663,
+      "status": "scored",
+      "tokens": 28183,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    }
+  },
+  "engine": "camel-mle",
+  "version": "1.6.0"
+}

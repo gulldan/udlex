@@ -1,0 +1,1 @@
+Competitor cells (all non-udlex, status ok) copied from all-competitors-20261120T070219Z by reuse_cells.py on 2026-11-21 04:32:19 JST: competitors do not depend on the udlex dictionaries; that run had ~1 foreign core (crawlers) and vLLM running in CPU phases, vLLM stopped in its GPU phase. Each copied cell carries reused_from. udlex cells measured here on the hybrid release.

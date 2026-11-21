@@ -1,0 +1,1475 @@
+{
+  "codes_sha256": "fb94cd5984764366329fc77df9733b7dd31353050c6572aa367bd2936185c3f3",
+  "languages": {
+    "ang": {
+      "config": "ang_cairo",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "ang_cairo-ud-test.conllu",
+          "jsonl_sha256": "6974fb78e1e80fdbf6070e15385cc9c96605a703db6991bfe847d9197a42d0cf",
+          "sentences": 20,
+          "source_sha256": "ab8f9d54587e9bf3a0e08df54c0b0cb0751e2ef42591e288cdcdc9dc45ec1d7e",
+          "tokens": 171
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Old_English-Cairo"
+    },
+    "asm": {
+      "config": "as_aiw",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": "as_aiw-ud-dev.conllu",
+          "jsonl_sha256": "ba4a202d75d87a862bd0e181e71163b495f0a8741bdf39dcdb2a94e22cc380b4",
+          "sentences": 14,
+          "source_sha256": "a5a19d479e6c250fdcdadfc6901f652f9eb943ece5dd152677e7bcc201e87e77",
+          "tokens": 189
+        },
+        "test": {
+          "file": "as_aiw-ud-test.conllu",
+          "jsonl_sha256": "eae0a542d6831be4cd559226641a88f08fa2df1a3e2f82e63a82520b2f0adfff",
+          "sentences": 8,
+          "source_sha256": "b758a12d52622e714b62b2778a854b1f1e32b63f70badbae1b076fc6136dcc4a",
+          "tokens": 85
+        },
+        "train": {
+          "file": "as_aiw-ud-train.conllu",
+          "jsonl_sha256": "88cfb18d33a8164cc2953c03c2ea76708b177397e54c162bd46c7020ff8d5bc5",
+          "sentences": 51,
+          "source_sha256": "aa566d257a0374bf840f13d59997df95a2d7c6df944e467e5556f6efee8fc4aa",
+          "tokens": 597
+        }
+      },
+      "status": "paired",
+      "treebank": "UD_Assamese-AiW"
+    },
+    "ave": {
+      "config": "ae_old",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "duplicate_or_shared_sentences": 1,
+          "file": "ae_old-ud-test.conllu",
+          "jsonl_sha256": "7794c66ba2325697738405c32c7041a0e4517e4aed1f4f89fe5bd99e6f5d93b0",
+          "sentences": 23,
+          "source_sha256": "a13cd26574042d9438373d5aded23068fe45204eb6d5b4c334aaf845dbafeaee",
+          "tokens": 297
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Avestan-Old"
+    },
+    "bar": {
+      "config": "bar_maibaam",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "bar_maibaam-ud-test.conllu",
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": "95c892ce4a6a05abe1fd901ffe01b8f653e04d5986897355b6c5b1d238851a6c"
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Bavarian-MaiBaam"
+    },
+    "bej": {
+      "config": "bej_autogramm",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "bej_autogramm-ud-test.conllu",
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": "a510df9a03d601ae82806863d964d926fce7579edda21a331a9682d359a6df2c"
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Beja-Autogramm"
+    },
+    "bgs": {
+      "config": "bgs_gja",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "bgs_gja-ud-test.conllu",
+          "jsonl_sha256": "fcbcd8bf026dbce162d07d305b481c596c8f093fd36cf914bd10a05872ff5905",
+          "sentences": 125,
+          "source_sha256": "ae080e1853a553d35cffe1c157d14566997e1f23dea66b1af431ab10494817aa",
+          "tokens": 874
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Tagabawa-GJA"
+    },
+    "che": {
+      "config": "ce_mottdt",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "duplicate_or_shared_sentences": 8,
+          "file": "ce_mottdt-ud-test.conllu",
+          "jsonl_sha256": "ce3392c95859cf4ab192d21ef85e800695d2e6b417ae8eda4af33966b4d72cd7",
+          "sentences": 481,
+          "source_sha256": "6a67995975d529c0e42114e5b3813c7ed56daaf371d472b46a94322ca61a8ece",
+          "tokens": 3132
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Chechen-MottDT"
+    },
+    "ckb": {
+      "config": "ckb_mukri",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "duplicate_or_shared_sentences": 6,
+          "file": "ckb_mukri-ud-dev.conllu",
+          "jsonl_sha256": "389ffcf1cec095b228de0a9dcc33bb33d8cd585024a5686fa257148e524271fc",
+          "sentences": 17,
+          "source_sha256": "42c1b3cf910d10983906947d7f3c1efeeddc0f789c89275521445c0c0956b993",
+          "tokens": 85
+        },
+        "test": {
+          "file": "ckb_mukri-ud-test.conllu",
+          "jsonl_sha256": "37da310cb553dbffe424dd6b85ab7d113f0c3f41d37b8f3eb42017de96cbda57",
+          "sentences": 23,
+          "source_sha256": "614fb68983ec38598cdce713c223e5bdfcd83e6c81ca97c3f5382846ca8bb081",
+          "tokens": 122
+        },
+        "train": {
+          "duplicate_or_shared_sentences": 8,
+          "file": "ckb_mukri-ud-train.conllu",
+          "jsonl_sha256": "b9f7b5a968a40812695c538d7eb32d9975efb37e1a6ec41fb3d7062f0018e23e",
+          "sentences": 84,
+          "source_sha256": "2f59cccb0fca74049e09c0d94a5873b9667f7d44a906ecda42e2dae55bb7d49a",
+          "tokens": 512
+        }
+      },
+      "status": "paired",
+      "treebank": "UD_Central_Kurdish-Mukri"
+    },
+    "ckt": {
+      "config": "ckt_hse",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "ckt_hse-ud-test.conllu",
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": "ebd421c52cf26a6c0842f77e3b5ebec8dfd60b734f16a26e3ecd848741c8196f"
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Chukchi-HSE"
+    },
+    "cux": {
+      "config": "cux_mesotree",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "duplicate_or_shared_sentences": 139,
+          "file": "cux_mesotree-ud-test.conllu",
+          "jsonl_sha256": "8d8445e67958deba794a6134ed19cd5f6c2c83c5334156ffeda6a7a2f17fd8ea",
+          "sentences": 1860,
+          "source_sha256": "21eba20d426b460a2edaae6f58280b19560e854fd1353e7de80334bbd3b1cb84",
+          "tokens": 3682
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Cuicatec-MesoTree"
+    },
+    "dar": {
+      "config": "dar_mehweb",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "duplicate_or_shared_sentences": 35,
+          "file": "dar_mehweb-ud-test.conllu",
+          "jsonl_sha256": "2aa1beb422691de97e84602c781a336e465b13edc179677ae480277d91c020c6",
+          "sentences": 926,
+          "source_sha256": "2247fd091a6b173474101ddddc0899f8e8faa1a86564e635010839c3c7f539f5",
+          "tokens": 4276
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Dargwa-Mehweb"
+    },
+    "drs": {
+      "config": "drs_gdt",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "drs_gdt-ud-test.conllu",
+          "jsonl_sha256": "914c42215d012be98b1338d7745594ba2e264b893a36f07d331127332fa4d326",
+          "sentences": 47,
+          "source_sha256": "6fab81f793a46f1493977c45133a47aa75f4bee51457b77bc7c5d3724a1265ff",
+          "tokens": 269
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Gedeo-GDT"
+    },
+    "dta": {
+      "config": "dta_gdud",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "dta_gdud-ud-test.conllu",
+          "jsonl_sha256": "89ebefdb49c952393ed27a8b7a28d5f82017e86991a255300b04d6a5d423ae12",
+          "sentences": 95,
+          "source_sha256": "82af281090dc2b48711a367cddec36925f318953be06fb3ab984bd7228f2a43e",
+          "tokens": 659
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Daur-GDUD"
+    },
+    "eve": {
+      "config": "eve_gdud",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "eve_gdud-ud-test.conllu",
+          "jsonl_sha256": "e62b0d1a879203eb88aac2223fc7ef9b5856d84e7c3c38bc7e4bfeb30a9c00e9",
+          "sentences": 39,
+          "source_sha256": "fdd8b09f30d975a6f27111d4cb35763ddc4f4a01dd09e2e924c3416910aaaef5",
+          "tokens": 282
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Even-GDUD"
+    },
+    "evn": {
+      "config": "evn_gdud",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "evn_gdud-ud-test.conllu",
+          "jsonl_sha256": "8ca5e28c66097fdeb0d49312f450e389e98239cea62c23a60d59aa8d15404a9c",
+          "sentences": 39,
+          "source_sha256": "fe71951eb1870553836ff728993bf71c7c9394d0cef9aca34c371afdde4c615b",
+          "tokens": 249
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Evenki-GDUD"
+    },
+    "fsl": {
+      "config": "fsl_stkautogramm",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "fsl_stkautogramm-ud-test.conllu",
+          "jsonl_sha256": "f97b9f20053066ede6830f41b8a788d61b69b6734680173be4eddf3e3c0d41d1",
+          "sentences": 108,
+          "source_sha256": "6eb75a3483fb99d8237b247b452495f61722a51ecf53b91bbe6756df5a6da57d",
+          "tokens": 615
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_French_Sign_Language-STKAutogramm"
+    },
+    "gld": {
+      "config": "gld_gdud",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "gld_gdud-ud-test.conllu",
+          "jsonl_sha256": "6cdd610e08648c0e5539296ad6506aaba13d03172834ebda5c2787bd8c46688b",
+          "sentences": 113,
+          "source_sha256": "be9d67eddba729f8b390766fd38d4c424bc0b5f22a1c998ef0146d19bd37b4e2",
+          "tokens": 821
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Nanai-GDUD"
+    },
+    "gor": {
+      "config": "gor_bungololombi",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "gor_bungololombi-ud-test.conllu",
+          "jsonl_sha256": "af3a2613bb9c14b9f2a4e538225576a71080d9aa9d918f263ab0d18274c6d1e7",
+          "sentences": 39,
+          "source_sha256": "ca670ff09e78f4964637defb5bc95b9f3ef87e3748b886e2a4889385ed45a06a",
+          "tokens": 205
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Gorontalo-BungoLoLombi"
+    },
+    "grn": {
+      "config": "gn_oldtudet",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "gn_oldtudet-ud-test.conllu",
+          "jsonl_sha256": "a93640081089e161de10cd49dfc9e4fd8f90c73917709f5da3b1b706a82c5e5b",
+          "sentences": 58,
+          "source_sha256": "c0e84857d8c7b97054060e25552e154c3abf93b55f85bcf040356b60307e0364",
+          "tokens": 193
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Guarani-OldTuDeT"
+    },
+    "gsw": {
+      "config": "gsw_divital",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "gsw_divital-ud-test.conllu",
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": "43fafe1f47965dd71de4664216a45623c43cc9b253b58c2e84dbe0652dbbb3d2"
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Alemannic-DIVITAL"
+    },
+    "hac": {
+      "config": "hac_hawrami",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "duplicate_or_shared_sentences": 1,
+          "file": "hac_hawrami-ud-test.conllu",
+          "jsonl_sha256": "083caf6f29ff3854cf36d20fd01081530791c2b175925a8fb370db28aa94dcdc",
+          "sentences": 60,
+          "source_sha256": "0d10b4887c351352f1268b0cc20c2e7f09efbbaf36803f7808b312f07c3f0317",
+          "tokens": 518
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Gorani-Hawrami"
+    },
+    "jaa": {
+      "config": "jaa_jarawara",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "jaa_jarawara-ud-test.conllu",
+          "jsonl_sha256": "c44d952af6e4380ae3f1993ec64b18f8011f4a60eef40483787ad5a46938870b",
+          "sentences": 20,
+          "source_sha256": "c34240d0298baba9e7eb0bd668d78b178cda9b1c46c15dc37ddc458f890eb0f4",
+          "tokens": 105
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Madi-Jarawara"
+    },
+    "kas": {
+      "config": "ks_zaan",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "ks_zaan-ud-test.conllu",
+          "jsonl_sha256": "d3e983bdd2e5ba573ab0a6f11786a5377fbf86034f90edbce0e1c349c522ab53",
+          "sentences": 180,
+          "source_sha256": "97e2ed395f9d935cbc0128b9ced52f4fa6d4e94465f167decc7c4c636b33c55a",
+          "tokens": 2149
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Kashmiri-Zaan"
+    },
+    "kfx": {
+      "config": "kfx_kdtb",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "kfx_kdtb-ud-test.conllu",
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": "71fec8a0a045dd0ab297f558479019cb8b9ad7cf6dd6c04e5f63afc2c1854682"
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Kullvi-KDTB"
+    },
+    "ltg": {
+      "config": "ltg_cairo",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "ltg_cairo-ud-test.conllu",
+          "jsonl_sha256": "2582f2bc277aaf72ed792ea599a2bacf3369927895ce560764371d3252e492ac",
+          "sentences": 20,
+          "source_sha256": "43397b8f310b63e3fdb4a5be6a2952a0f726a17433aef9652a445dc337745952",
+          "tokens": 170
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Latgalian-Cairo"
+    },
+    "ltz": {
+      "config": "lb_luxbank",
+      "excluded_sources": [],
+      "sources": [
+        {
+          "bytes": 8122102,
+          "id": "simplemma",
+          "lemma_first": false,
+          "license": {
+            "derivatives": true,
+            "redistribution": "unknown",
+            "spdx": null
+          },
+          "manifest_sha256": "c50675b53d9f28a8ddee14265844738508dc36bb02e52a519c84616f2e7efb4d",
+          "path": "data/imported/simplemma/ltz.tsv",
+          "priority": 100,
+          "sha256": "1bd582d60ea5112a5f55d0085adb36b2525f6acc0d92d997c4b8d341d16216fa",
+          "unique": true,
+          "version": "1.2.0"
+        },
+        {
+          "bytes": 8126339,
+          "id": "spacy-lookups",
+          "lemma_first": false,
+          "license": {
+            "derivatives": true,
+            "redistribution": "unknown",
+            "spdx": null
+          },
+          "manifest_sha256": "d694043aba40f958dd2ffe240ef728a28d707a11ba77d4bd5aec9eb9ffe1b429",
+          "path": "data/imported/spacy-lookups/ltz.tsv",
+          "priority": 110,
+          "sha256": "b7a5461aa0895e057b13980aead643f80e70abbd93ae61f37f33d3665bf47beb",
+          "unique": true,
+          "version": "1.0.5"
+        }
+      ],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "lb_luxbank-ud-test.conllu",
+          "jsonl_sha256": "cdeb6750d5e74c10fad48950294fdcb51f08e913c9ed4e2ebae737a7bea9a14d",
+          "sentences": 20,
+          "source_sha256": "75f0a411ce12907ea6cf408ae31c1b662311f56a95630f4290069eda866d7574",
+          "tokens": 206
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Luxembourgish-LuxBank"
+    },
+    "lzz": {
+      "config": "lzz_boun",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "duplicate_or_shared_sentences": 18,
+          "file": "lzz_boun-ud-test.conllu",
+          "jsonl_sha256": "cde98234cba14b344b6899382691f55ce54084b501fd1888454e133fdde9f2be",
+          "sentences": 558,
+          "source_sha256": "0f323d63fc691c535b957359ea810914f96ae9294b47452e43f998d26349956f",
+          "tokens": 2237
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Laz-BOUN"
+    },
+    "mjg": {
+      "config": "mjg_gdud",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "mjg_gdud-ud-test.conllu",
+          "jsonl_sha256": "302773f3a39fdf834ee8d2d6164e329e60eb2dc5d1fe7572f04c0e0b1feca3d0",
+          "sentences": 38,
+          "source_sha256": "aa07fc4dc2b5a55f0d903d6c5adde78c66414a395bd8ba9efe96d75771000fcf",
+          "tokens": 320
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Tu-GDUD"
+    },
+    "mjl": {
+      "config": "mjl_mdtb",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "mjl_mdtb-ud-test.conllu",
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": "29f0477f935d16b2839dfb03df44099945a07e1e435d27ebe6949e88ad6e0bff"
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Mandyali-MDTB"
+    },
+    "mlt": {
+      "config": "mt_mudt",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": "mt_mudt-ud-dev.conllu",
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": "98617bff25a17b5b18e5d932d0f3f4074ad47b21632169471ba9512cc6683878"
+        },
+        "test": {
+          "file": "mt_mudt-ud-test.conllu",
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": "2edccdc01bca344e33de4c49845b21df328c3bf0b188508f724cddce50847b08"
+        },
+        "train": {
+          "file": "mt_mudt-ud-train.conllu",
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": "345cbf5342c1dccc527f9836f0ecaad4e919474a53980d80be58c766f5d07f70"
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Maltese-MUDT"
+    },
+    "mnc": {
+      "config": "mnc_gdud",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "mnc_gdud-ud-test.conllu",
+          "jsonl_sha256": "dedc6dcf14b3a8ec991fcdda04426a5685aa835532d464a91ac7189903d28885",
+          "sentences": 81,
+          "source_sha256": "87d012e381a57a1860aa1f54d095e31407d35c0b52991f12fd741a3c6eedd7d9",
+          "tokens": 446
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Manchu-GDUD"
+    },
+    "mon": {
+      "config": "mn_gdud",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "mn_gdud-ud-test.conllu",
+          "jsonl_sha256": "0506bfd599e0111ec7264d895ec142a31379c260d10d5f544dae1cad34d8708b",
+          "sentences": 88,
+          "source_sha256": "5b1d2ec3a105bc08d48dbac3a0f222af9532f856523821566164f018ad7d392e",
+          "tokens": 472
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Mongolian-GDUD"
+    },
+    "mpu": {
+      "config": "mpu_tudet",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "mpu_tudet-ud-test.conllu",
+          "jsonl_sha256": "60788a1c0df206e0d26eb23b35e046e36b4bccbee9814a47ba21637481a214f3",
+          "sentences": 37,
+          "source_sha256": "7f1eb647644fa18732311336b645bafacc52dfdd86de5fee69dba36e796696d8",
+          "tokens": 177
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Makurap-TuDeT"
+    },
+    "mvf": {
+      "config": "mvf_ordos",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "duplicate_or_shared_sentences": 1,
+          "file": "mvf_ordos-ud-test.conllu",
+          "jsonl_sha256": "8fc17d348ea0a1740f4eb2a5c6c98dba2a8fb32f7be9ed15298b43912bc17030",
+          "sentences": 79,
+          "source_sha256": "d5053dc8b86e1d93fe1031a3e2243afc64f73c5a979b9d2ba4345b8508b3a15c",
+          "tokens": 272
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Peripheral_Mongolian-Ordos"
+    },
+    "nap": {
+      "config": "nap_rb",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "nap_rb-ud-test.conllu",
+          "jsonl_sha256": "173d1ff10e0024b1767010738c047ec585bc2ab74b6f5d4b5127ed9b48d4c318",
+          "sentences": 20,
+          "source_sha256": "f842471d68bcdfc793f4a614427b16b072d725b782e1506bc1ea3a261d11ac1b",
+          "tokens": 201
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Neapolitan-RB"
+    },
+    "neg": {
+      "config": "neg_gdud",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "neg_gdud-ud-test.conllu",
+          "jsonl_sha256": "3b98a9d695e8c905264410c7a55081ed23bbd8b501290e5020a0008460a57a25",
+          "sentences": 62,
+          "source_sha256": "fe842ec7e62b14f3e44e74fcb4b2eac6c337cb4271fa144a2aea5fd718fa6dba",
+          "tokens": 281
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Negidal-GDUD"
+    },
+    "oac": {
+      "config": "oac_gdud",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "oac_gdud-ud-test.conllu",
+          "jsonl_sha256": "9bd2d5fcefd085fd5ee41088b915c17bf5c890654acac6ce8ecce1cfffe95ef9",
+          "sentences": 110,
+          "source_sha256": "13685221a0792c3ecf18b152446753f6f0efa47fca4f557c654cf22aae9177f8",
+          "tokens": 347
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Oroch-GDUD"
+    },
+    "otk": {
+      "config": "otk_clausal",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "otk_clausal-ud-test.conllu",
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": "5e3faa1555cdbeece7ea52948101825b2972760d1fad3b8eee2dda238d953724"
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Old_Turkish-Clausal"
+    },
+    "pad": {
+      "config": "pad_tuecl",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "pad_tuecl-ud-test.conllu",
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": "79437fbcf26303a3463a11dd5dad5a896135a5d30ab6f86b1867d4e37c3b472b"
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Paumari-TueCL"
+    },
+    "peh": {
+      "config": "peh_gdud",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "duplicate_or_shared_sentences": 9,
+          "file": "peh_gdud-ud-test.conllu",
+          "jsonl_sha256": "b81998ceca29218ce661a24a9a323d2d458664495ffa0a31110640f2fcd1ef74",
+          "sentences": 1144,
+          "source_sha256": "ce7300ac632880ac986401129890f7ba93ebae75f6b89cffede35b5d4baa853e",
+          "tokens": 7868
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Bonan-GDUD"
+    },
+    "pli": {
+      "config": "pi_palicanon",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "duplicate_or_shared_sentences": 46,
+          "file": "pi_palicanon-ud-test.conllu",
+          "jsonl_sha256": "d7238d4335b7f44bff7a86a551b79a19694984b616c784225a3e8d4ae6873349",
+          "sentences": 179,
+          "source_sha256": "00a33fba26b2263f6ca50012c109b925485ed1c5f1b0d650d1b44e84401adca9",
+          "tokens": 1683
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Pali-PaliCanon"
+    },
+    "pra": {
+      "config": "pra_dipi",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "duplicate_or_shared_sentences": 1,
+          "file": "pra_dipi-ud-test.conllu",
+          "jsonl_sha256": "fa14291deb46e3eba0536fdd845e655dce0774d6da6fbdc3328a2e2034ebc355",
+          "sentences": 83,
+          "source_sha256": "0c3265517d2f4726d81bfa4b158f3d76582e69f5af4d33a0bdac06486a2addf0",
+          "tokens": 964
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Prakrit-DIPI"
+    },
+    "qfn": {
+      "config": "qfn_fame",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "qfn_fame-ud-test.conllu",
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": "f8bd770bb4d99866a9a563720ca8b6a9b03c27a98b714aed3106dc1fa9f55d9a"
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Frisian_Dutch-Fame"
+    },
+    "qte": {
+      "config": "qte_tect",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "qte_tect-ud-test.conllu",
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": "59785ac108d13fb7e3b4acce184c4d08d4d31affcdad02821ef2206ad81b342f"
+        },
+        "train": {
+          "file": "qte_tect-ud-train.conllu",
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": "6b9500e18d250b10c805d81868599ad7656f2fe9a6763821636e3e487f52cf71"
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Telugu_English-TECT"
+    },
+    "sce": {
+      "config": "sce_gdud",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "sce_gdud-ud-test.conllu",
+          "jsonl_sha256": "c7534c4b1b761c9923f7b42f5d23089cf5f0286e7ee9d9ca2c9ff63d9047bc60",
+          "sentences": 105,
+          "source_sha256": "dd0a8cd56f519e2b9dae7ad657350580cd74ed79cc1f0080ee11b4217f42e12c",
+          "tokens": 891
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Dongxiang-GDUD"
+    },
+    "sdh": {
+      "config": "sdh_garrusi",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": "sdh_garrusi-ud-dev.conllu",
+          "jsonl_sha256": "b95fe646bd48e0b0e5b1fc881723676ccf7ff5c8d5984b2e3254da661773234c",
+          "sentences": 49,
+          "source_sha256": "d21bfb6378c10ff321539e6849e8b671d254fed219188a7f903991ace2179a4f",
+          "tokens": 372
+        },
+        "test": {
+          "duplicate_or_shared_sentences": 1,
+          "file": "sdh_garrusi-ud-test.conllu",
+          "jsonl_sha256": "f87ead82dd1456e8077b82a6fd4a4b41547fecc0417e378c7d3b044ef7d0ad38",
+          "sentences": 19,
+          "source_sha256": "1af8b35eef608b240ea24030ca86977b3c9ebad2fba681dff9f1a5df722b1bc4",
+          "tokens": 132
+        },
+        "train": {
+          "duplicate_or_shared_sentences": 2,
+          "file": "sdh_garrusi-ud-train.conllu",
+          "jsonl_sha256": "07c49ac7c920fd04329fa2bd97fe00e31ff3864652bc49b2effc3dd557dd41f5",
+          "sentences": 150,
+          "source_sha256": "0f6e46c1e822e7bd42c7eb7501969ac6407c3dd0c37888b5751d37c1519ae8bb",
+          "tokens": 1139
+        }
+      },
+      "status": "paired",
+      "treebank": "UD_Southern_Kurdish-Garrusi"
+    },
+    "srd": {
+      "config": "sc_contsar",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "duplicate_or_shared_sentences": 6,
+          "file": "sc_contsar-ud-test.conllu",
+          "jsonl_sha256": "f1167e017899bbb25fbf5b197a22cc25074697d54ad14d64b0f8a253af10aa6d",
+          "sentences": 335,
+          "source_sha256": "543f9745f443dffa5905b6fe163d951509d823c23722677e9da76ce28a93f1b3",
+          "tokens": 7921
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Sardinian-ContSar"
+    },
+    "swl": {
+      "config": "swl_sslc",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "swl_sslc-ud-test.conllu",
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": "4e0a15be9011711d4837d27393a309aeb83187604c4982d5f801cb7c46ed1205"
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Swedish_Sign_Language-SSLC"
+    },
+    "tir": {
+      "config": "ti_titb",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "ti_titb-ud-test.conllu",
+          "jsonl_sha256": "97c3ab8b947251a53e97c747258bd06bb6f3e02571da73e80f3f0d924891add8",
+          "sentences": 221,
+          "source_sha256": "d55d323a8eeed9ca91b1c0f281ff269eb7fc9d97807f318b639ce6cc20432e08",
+          "tokens": 1598
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Tigrinya-TiTB"
+    },
+    "tsn": {
+      "config": "tn_popapolelo",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "tn_popapolelo-ud-test.conllu",
+          "jsonl_sha256": "684ff5efd5b42748699100905fca962236fff7b8132060868e9204539687f3b6",
+          "sentences": 50,
+          "source_sha256": "578934f4d2fab7b17c920ad272089e8ae6b94f3add268a2c803f4118dc657a50",
+          "tokens": 578
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Tswana-Popapolelo"
+    },
+    "txg": {
+      "config": "txg_mica",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "duplicate_or_shared_sentences": 5,
+          "file": "txg_mica-ud-test.conllu",
+          "jsonl_sha256": "7c0e4821481a82fcc9100d3cd73f343776609b6fcce2ea09de2f915e4b6ea6ab",
+          "sentences": 498,
+          "source_sha256": "6a3085675769568e0d4e0159ca52e22b259abe8bb6fb0741aba8d9f028b7f22a",
+          "tokens": 13838
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Tangut-MiCA"
+    },
+    "ude": {
+      "config": "ude_gdud",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "ude_gdud-ud-test.conllu",
+          "jsonl_sha256": "ad8c3989cfb56cd5609cf89a7896352063a127d7bb03fdaff56fdda9c44c2288",
+          "sentences": 94,
+          "source_sha256": "fffd22ea8a6f0554c00bd91cccffa5c43e03009b2076fe9c8691f9cf4393bd2a",
+          "tokens": 506
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Udihe-GDUD"
+    },
+    "ulc": {
+      "config": "ulc_gdud",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "ulc_gdud-ud-test.conllu",
+          "jsonl_sha256": "828bea6da2c5edcade779c4d236c040f9723d188b33eb4b48fb674686fa5d204",
+          "sentences": 93,
+          "source_sha256": "f34329825911698b2a1930ec8dc17f048b99f70fff82f8481eb8b59cab5aafa4",
+          "tokens": 232
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Ulch-GDUD"
+    },
+    "usp": {
+      "config": "usp_mesotree",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "usp_mesotree-ud-test.conllu",
+          "jsonl_sha256": "caf2cc0753cd14066728675899a28fb6f769239457c1ab56adff38c1c82516a3",
+          "sentences": 1787,
+          "source_sha256": "4ea4e8bf50a6f1394e7b5b5c94b52a8926eaf54d22c88d9f257a302a7c65afa2",
+          "tokens": 12902
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Uspanteko-MesoTree"
+    },
+    "xal": {
+      "config": "xal_gdud",
+      "excluded_sources": [],
+      "sources": [],
+      "splits": {
+        "dev": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        },
+        "test": {
+          "file": "xal_gdud-ud-test.conllu",
+          "jsonl_sha256": "e633a4fe42f011601e92d61a8349626c8ab06bde8938bbd11d4a9dc5c4254d7d",
+          "sentences": 92,
+          "source_sha256": "31245f6404cdd8846599969b34b823d644a0626a9af1a653d6e15a763a887353",
+          "tokens": 484
+        },
+        "train": {
+          "file": null,
+          "jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_sha256": null
+        }
+      },
+      "status": "no train or test gold",
+      "treebank": "UD_Kalmyk-GDUD"
+    }
+  },
+  "protocol_sha256": "4edd90fb1529e2a5d530cbd73f0ff8c5dceec5a07d2047d6b3995f9d06d011fd",
+  "registry_sha256": "55bc4a322037ac09d58bf1b2ae44a1aa2e35bb6d95c78c5f51fec2ad18146049",
+  "ud219_sha256": "6bbe2f0234dcc2d2367cc912848259c94c278ea69932d228d744f265a19a4a31"
+}

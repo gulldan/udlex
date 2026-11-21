@@ -1,0 +1,33 @@
+{
+  "cells": {
+    "hrv": {
+      "correct": 23766,
+      "model": "hr/standard",
+      "sentences": 1134,
+      "status": "scored",
+      "tokens": 24203,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "slv": {
+      "correct": 25120,
+      "model": "sl/standard",
+      "sentences": 1281,
+      "status": "scored",
+      "tokens": 25407,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "srp": {
+      "correct": 11184,
+      "model": "sr/standard",
+      "sentences": 519,
+      "status": "scored",
+      "tokens": 11410,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    }
+  },
+  "engine": "classla",
+  "version": "2.2.3"
+}

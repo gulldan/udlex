@@ -1,0 +1,15 @@
+{
+  "cells": {
+    "pol": {
+      "correct": 30487,
+      "model": "pl.sgjp.sgjp-2026.06.01, no disambiguation, first reading, token by token",
+      "sentences": 2203,
+      "status": "scored",
+      "tokens": 33572,
+      "unaligned_sentences": 23,
+      "unaligned_tokens": 26
+    }
+  },
+  "engine": "morfeusz2",
+  "version": "1.99.15"
+}

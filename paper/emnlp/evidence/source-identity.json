@@ -1,0 +1,12 @@
+{
+  "base_commit": "7afe2fe8f3ea6ea56fff835bbc61d8af49da731f",
+  "cargo_manifest_packaging_changes": [
+    "README path inside sdist",
+    "standalone core crate omits C API workspace membership"
+  ],
+  "python_modules_equal_to_git": 11,
+  "sdist_files_equal_to_git": 72,
+  "source_distribution_sha256": "571db74829fcbc1370fe5e0b816e60d0999d98bb7b86c8e175624a002f2dbb84",
+  "tag_commit": "2270bc1cb1c7144a85cf581318ca669417608fe4",
+  "wheel_sha256": "ecb9d4d0a3b0dcf54b314524594a629ab6de03d4872cf2bcacf62801f3640ed2"
+}

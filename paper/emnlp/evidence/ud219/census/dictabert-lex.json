@@ -1,0 +1,15 @@
+{
+  "cells": {
+    "heb": {
+      "correct": 9867,
+      "model": "dicta-il/dictabert-lex@91b97a6, raw text",
+      "sentences": 491,
+      "status": "scored",
+      "tokens": 11993,
+      "unaligned_sentences": 309,
+      "unaligned_tokens": 929
+    }
+  },
+  "engine": "dictabert-lex",
+  "version": "5.23.0"
+}

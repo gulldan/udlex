@@ -1,0 +1,867 @@
+{
+  "catalog_sha256": "7042aaa89bd7b006fbbc5362eeb6eb1bef732ca34da960560eb939c7d22df97f",
+  "languages": {
+    "abk": {
+      "generation": "g7ce3a6d70e64325e22c4a249e78696d46032b0f73b03cbdce2e5727e741d9278",
+      "name": "Abkhaz",
+      "ud_repository": "UD_Abkhaz-AbNC"
+    },
+    "abq": {
+      "generation": "gc207aedf660ff5ebfdc44f30252614125822e419bb561a871f9b95f70263ecbd",
+      "name": "Abaza",
+      "ud_repository": "UD_Abaza-ATB"
+    },
+    "afr": {
+      "generation": "g1becba5d0f1032a05e2e086f9bf7b1233a22b1e673b0499b972df14921ff1809",
+      "name": "Afrikaans",
+      "ud_repository": "UD_Afrikaans-AfriBooms"
+    },
+    "aii": {
+      "generation": "g6a48c1441852e910c1e598206f65cc3d0afc2be7f7784f0cadc5180950ebbafc",
+      "name": "Assyrian",
+      "ud_repository": "UD_Assyrian-AS"
+    },
+    "ajp": {
+      "generation": "g575f8114110bf37c96afe8e41fc0b21839d5783a5a7001da3014f296d5ab1536",
+      "name": "South Levantine Arabic",
+      "ud_repository": "UD_South_Levantine_Arabic-MADAR"
+    },
+    "akk": {
+      "generation": "gbbbaaaa25e37c690e8a1773de6f8a81e5a234d267f2e00746c654dbfd1c9b1bc",
+      "name": "Akkadian",
+      "ud_repository": "UD_Akkadian-RIAO"
+    },
+    "aln": {
+      "generation": "gba0b8afd5fe5fa7ea079cc999bf4368c4b5d2d13eef0859269d68b7c27dc3cfe",
+      "name": "Gheg",
+      "ud_repository": "UD_Gheg-GPS"
+    },
+    "amh": {
+      "generation": "gb9b4d06c797f300d82cf8cf1b4165d1bb7def05d499f6e0a17870ca8c39fdfba",
+      "name": "Amharic",
+      "ud_repository": null
+    },
+    "apu": {
+      "generation": "gbdfec9e3490777ae8c07d3bf07937119a616158f6732e4401d5b80ec95db5070",
+      "name": "Apurina",
+      "ud_repository": "UD_Apurina-UFPA"
+    },
+    "aqz": {
+      "generation": "g67568ad5068e5be70f767dc93d6e6d0c4e746b610daddd37a1d95c8d27b185cf",
+      "name": "Akuntsu",
+      "ud_repository": "UD_Akuntsu-TuDeT"
+    },
+    "arb": {
+      "generation": "g365c5fd67a4a916f72eb61412f045af514e6f9aae67a5a52ed1029628889849a",
+      "name": "Arabic",
+      "ud_repository": "UD_Arabic-PUD"
+    },
+    "arh": {
+      "generation": "ga56c3df7ce3c1ceb97606dd6189c2c5055b5eedb261905a2e0496df0043bb7bd",
+      "name": "Ika",
+      "ud_repository": "UD_Ika-ChibErgIS"
+    },
+    "arr": {
+      "generation": "g3d8a84a12075bb4a62ba4765f8e68b3d077361f83dd2f0ba11cdd16e880f0989",
+      "name": "Karo",
+      "ud_repository": "UD_Karo-TuDeT"
+    },
+    "axm": {
+      "generation": "g6f207e65a0b08833b2ba72f62e92d3bdbc259740faff5b03118020b14d6a006e",
+      "name": "Middle Armenian",
+      "ud_repository": "UD_Middle_Armenian-ArmTDP"
+    },
+    "aze": {
+      "generation": "gf14232e3c1bbbf0d0c41e6109e82937704a70a0ae62d74e858c385ad77216180",
+      "name": "aze",
+      "ud_repository": null
+    },
+    "azz": {
+      "generation": "g92597da667ef1afb4c4b0dbeaa6480dd0c54c44ee53e9cdc167af5f6fc6242ae",
+      "name": "Highland Puebla Nahuatl",
+      "ud_repository": "UD_Highland_Puebla_Nahuatl-ITML"
+    },
+    "bam": {
+      "generation": "g89ac4119084f9e3c7225b05fac50ddcae01050718f3ddbf972c2a214deef4ffc",
+      "name": "Bambara",
+      "ud_repository": "UD_Bambara-CRB"
+    },
+    "bel": {
+      "generation": "g995e6b8329e301fd53af557e07b1981d713770970f958798910408ea5dbd153d",
+      "name": "bel",
+      "ud_repository": null
+    },
+    "ben": {
+      "generation": "g75d2be97e2f8cfb897f38a33cbf124edb192b954725523d805a1aecf3fd345db",
+      "name": "Bengali",
+      "ud_repository": null
+    },
+    "bho": {
+      "generation": "gd0bbd2699e71d68ae06e13836a7a7cefc16d248670da19fb2d95d1ae16038219",
+      "name": "Bhojpuri",
+      "ud_repository": "UD_Bhojpuri-BHTB"
+    },
+    "bor": {
+      "generation": "g7f7fdd6e01db2176cd88356733e430878c51b103af2978b935486765670db6d4",
+      "name": "Bororo",
+      "ud_repository": "UD_Bororo-BDT"
+    },
+    "bre": {
+      "generation": "gf25d8be6ae6641a0ebf93567a263c71d31d721a7fc0ec5d24cd29cb716c57b6a",
+      "name": "bre",
+      "ud_repository": null
+    },
+    "brh": {
+      "generation": "g2b4fc4bc88b4815a9248f0cb262f7d367cebb2b2c275845bea497ad96430f5f0",
+      "name": "Brahui",
+      "ud_repository": "UD_Brahui-Kholum"
+    },
+    "bul": {
+      "generation": "g0d0ed9c5b91098eafce03566b32bce1e944e7f58f59c08baf6620ede242c9116",
+      "name": "bul",
+      "ud_repository": null
+    },
+    "bxr": {
+      "generation": "g59bde390952f1420e497216e798a9058acf5b0f31667546420aac624f90446c8",
+      "name": "Buryat",
+      "ud_repository": "UD_Buryat-BDT"
+    },
+    "cat": {
+      "generation": "g43c8418e2cb287b2e5c3efaca0cb1e19eec163eb807419ddcd5954c19ce8001c",
+      "name": "cat",
+      "ud_repository": null
+    },
+    "ceb": {
+      "generation": "gcfdb657b740ee2c756388e86c98acc8f44d2d7aba45652c0c7e920909d39e193",
+      "name": "Cebuano",
+      "ud_repository": null
+    },
+    "ces": {
+      "generation": "gdbed10f6df02695b8ae36ffc05baf470266bd6121f44fdc4f3c2b6ce292e3674",
+      "name": "Czech",
+      "ud_repository": null
+    },
+    "chu": {
+      "generation": "g353b3fc6cb5693b1899544383c82e97aa5dd0a8c7b3aef46bf2b635d021bc87b",
+      "name": "chu",
+      "ud_repository": null
+    },
+    "cmn": {
+      "generation": "gb00951291d3b7150a047bc6585317d4dd056655d869fb84645fe3012f37f48ea",
+      "name": "Mandarin Chinese",
+      "ud_repository": null
+    },
+    "cop": {
+      "generation": "g67f807d40a98a4ff7f2089e093fdd286efb6f8d9b6ea7c6b1aa094995c6b8491",
+      "name": "Coptic",
+      "ud_repository": "UD_Coptic-Scriptorium"
+    },
+    "cpg": {
+      "generation": "g5507322741aa21db25155a40749e7a48855775dd4ad7fb72e08c766e25fd258a",
+      "name": "Cappadocian",
+      "ud_repository": "UD_Cappadocian-TueCL"
+    },
+    "ctn": {
+      "generation": "gd3ef581547aab42cff64e27b6918cb77719994676341d3489b29a9367ab27a71",
+      "name": "Chintang",
+      "ud_repository": null
+    },
+    "cym": {
+      "generation": "g17200ed1954ca85495caec0b766796698fa8e4ef284726df217e2e22ed7c6149",
+      "name": "Welsh",
+      "ud_repository": "UD_Welsh-CCG"
+    },
+    "dan": {
+      "generation": "g739381945e9857b4b8660de1ddfdb86f221ead5ace4a6aed3231426c47f33301",
+      "name": "Danish",
+      "ud_repository": null
+    },
+    "deu": {
+      "generation": "g47c4e796d6a65c39ecf4617a2b1e785900261a45593a35a0c112e5efdada6f27",
+      "name": "German",
+      "ud_repository": null
+    },
+    "egy": {
+      "generation": "g3c1e3ac777afa07d0c36b1758eb427ea02d4ac35d8989256665d78f64b27fbd4",
+      "name": "Egyptian",
+      "ud_repository": "UD_Egyptian-PC"
+    },
+    "ell": {
+      "generation": "gcfaa3591886e929d4a5ea9f37934efefb31a3ef5a774a8f1346e76a7bb4cb063",
+      "name": "(Modern) Greek",
+      "ud_repository": null
+    },
+    "eme": {
+      "generation": "gce0bbdb61cca8e85e9ea6804e9a3c359a516008d9b5b968a43bdd6c8aa9cbc4d",
+      "name": "Teko",
+      "ud_repository": "UD_Teko-TuDeT"
+    },
+    "eng": {
+      "generation": "gaab6c437c2678e050772bafef77625471b184f6deb56c228e46cfb9c4f867058",
+      "name": "English",
+      "ud_repository": null
+    },
+    "epo": {
+      "generation": "gf08af68a1fd05e3c4e700659350d47d4da22e5711b41fd3f3e535762766701a6",
+      "name": "Esperanto",
+      "ud_repository": "UD_Esperanto-Prago"
+    },
+    "ess": {
+      "generation": "g167cffc8ddce3b62e495d0c3b14914083286fc1157334208b6eafdbbd74d1c4c",
+      "name": "Yupik",
+      "ud_repository": "UD_Yupik-SLI"
+    },
+    "est": {
+      "generation": "ga8eef07207e51c81321adc3724919e5b5e41f80c9b4cdcb30bee17c1cde375f8",
+      "name": "Estonian",
+      "ud_repository": null
+    },
+    "eus": {
+      "generation": "g91dec65d217f129aa55af0da1dcda18cde60fb5745107592c81170361f70011a",
+      "name": "Basque",
+      "ud_repository": null
+    },
+    "fao": {
+      "generation": "gd52e170322855a837919e60ba1f67baf131c62cf81475dfb1a2c97387fce6aa2",
+      "name": "fao",
+      "ud_repository": null
+    },
+    "fin": {
+      "generation": "ga16809084aca7014a6e62f1bab02ea504aa7fe49867c2f1e71c80c0e34bb0b2b",
+      "name": "Finnish",
+      "ud_repository": null
+    },
+    "fra": {
+      "generation": "g23805c08170c91cab641e046c80d50be724413922774f5596eff797cee085552",
+      "name": "French",
+      "ud_repository": null
+    },
+    "frm": {
+      "generation": "g4c29e3640fbc2fa9745d52db49f3992d2f2f3b3fb66d70a8eb755e3a6b977cc0",
+      "name": "Middle French",
+      "ud_repository": null
+    },
+    "fro": {
+      "generation": "gadf1592dd31faaefda94ca340d24099cdbf8181f877c97136b179bb37b2b0538",
+      "name": "Old French",
+      "ud_repository": null
+    },
+    "gla": {
+      "generation": "gdbae45042cbec94c8fd2f7c258a9309945889edb7bb78292d72e51c228863c2f",
+      "name": "Scottish Gaelic",
+      "ud_repository": "UD_Scottish_Gaelic-ARCOSG"
+    },
+    "gle": {
+      "generation": "ge3b8afb09db65822ff089e203f74dcbcbbc439ba1a60985ccbbce98368340640",
+      "name": "gle",
+      "ud_repository": null
+    },
+    "glg": {
+      "generation": "ga1d33ee34fb30861b2306e819b0caadd97617394613ffc685418c80823ca0561",
+      "name": "Galician",
+      "ud_repository": "UD_Galician-PUD"
+    },
+    "glv": {
+      "generation": "g3dbf5901c7acfd11372113b3bab2d6e1f849e751fcba88897671d35238b1f59d",
+      "name": "Manx",
+      "ud_repository": "UD_Manx-Cadhan"
+    },
+    "got": {
+      "generation": "g1b75363a8a8efefd9db0b69d45470fba0d9fe2bd5ab9d57334a598e43f719de5",
+      "name": "Gothic",
+      "ud_repository": null
+    },
+    "grc": {
+      "generation": "g1c3f7301e8e8baefd561b9408ae9b2cd49bf0076dc4ab168f45e3df77ba7170c",
+      "name": "Ancient Greek",
+      "ud_repository": null
+    },
+    "gub": {
+      "generation": "g677329e760295c98ec6fd6ad99b3f9bfa4370c8234e6c526e29612ddb7f2bfe6",
+      "name": "Guajajara",
+      "ud_repository": "UD_Guajajara-TuDeT"
+    },
+    "guj": {
+      "generation": "gdbc9122e51910650fc3dfc4be5371cb246df254b198c662250fd2edfe3cd16bd",
+      "name": "Gujarati",
+      "ud_repository": null
+    },
+    "gun": {
+      "generation": "g06204a9c2eaf37fed71278c63eac9a19e83ae4d73c1a279e74ac96c395516789",
+      "name": "Mbya Guarani",
+      "ud_repository": null
+    },
+    "gwi": {
+      "generation": "g633c1a75f3048298a11766900c9f035dedb9d42de0e0555a1e0409ae780e9c91",
+      "name": "Gwichin",
+      "ud_repository": "UD_Gwichin-TueCL"
+    },
+    "gya": {
+      "generation": "g7bed33773a22e938bed080172ee62f75f567eb0f79966da4443ea6763b920cb1",
+      "name": "Northwest Gbaya",
+      "ud_repository": "UD_Northwest_Gbaya-Autogramm"
+    },
+    "hat": {
+      "generation": "g614e4a08b16f330ce7668b84e09935e03f8bf1a760c9284c54acd3af43dab431",
+      "name": "Haitian Creole",
+      "ud_repository": "UD_Haitian_Creole-Adolphe"
+    },
+    "hau": {
+      "generation": "gdc51a6e9356288cd6022c660e07dd20d10823297236d757c44b4880e7f24226a",
+      "name": "Hausa",
+      "ud_repository": "UD_Hausa-NorthernAutogramm"
+    },
+    "hbo": {
+      "generation": "ge0e4aeed82af00599e88881cf8a40cffe0fbafe4717524e3240bc00e0d71e3a0",
+      "name": "Ancient Hebrew",
+      "ud_repository": null
+    },
+    "heb": {
+      "generation": "g3e9960b9a50b843a8ed474d95ca6f0641497b0c2019e753949b2cf9eea939746",
+      "name": "Hebrew",
+      "ud_repository": null
+    },
+    "hin": {
+      "generation": "gc7c60b466606a4de94f9621b60603ea2042dfa81c5c33eebe52147e1e4931ed8",
+      "name": "Hindi",
+      "ud_repository": null
+    },
+    "hit": {
+      "generation": "gcd578f0201890992674ec14e027ea950fad9aca96d5530736249ad1fdc6df93a",
+      "name": "Hittite",
+      "ud_repository": "UD_Hittite-HitTB"
+    },
+    "hrv": {
+      "generation": "g621bc6d027970d5cef701b8177b0e04e1b901cdab456587f0fbbc65b05f78066",
+      "name": "Croatian",
+      "ud_repository": null
+    },
+    "hsb": {
+      "generation": "gf4f4a7537a804aa60aea9e4d23144ff1d674d6d0973a41caaa7975ff21ec1c3e",
+      "name": "Upper Sorbian",
+      "ud_repository": "UD_Upper_Sorbian-UFAL"
+    },
+    "hun": {
+      "generation": "g3028a00b9dc4a27a530535758f594f5654bd2411985be88818806fb54d2c8bdd",
+      "name": "hun",
+      "ud_repository": null
+    },
+    "hye": {
+      "generation": "ga4a81b31da521b630fc432737fef4001c528f1e828b0b62c4a4219eb7a90b3e5",
+      "name": "hye",
+      "ud_repository": null
+    },
+    "hyw": {
+      "generation": "g7bfff23eb992b2852075e71befe125556f017d752acc3dba550188c17783bee3",
+      "name": "Western Armenian",
+      "ud_repository": "UD_Western_Armenian-ArmTDP"
+    },
+    "ind": {
+      "generation": "g43fdcc95adec15a06e8b1ed0dc86be3ebaa9becbfad4fdefb15a57f4010c1130",
+      "name": "Indonesian",
+      "ud_repository": "UD_Indonesian-CSUI"
+    },
+    "isl": {
+      "generation": "g9fce5e8debb3b34e495ba551877e036351ff8e4b2d7fd67bd400de431b8fdd5c",
+      "name": "isl",
+      "ud_repository": null
+    },
+    "ita": {
+      "generation": "gdbf8391a16ee3e9a499f70291dcd765ccdd9eb490539b9fd967577ecb45aef70",
+      "name": "ita",
+      "ud_repository": null
+    },
+    "jav": {
+      "generation": "g6c403693fb7bb17765ce579c38df7e241b73a38bdf53eb1af1ab583a6b5f8eb0",
+      "name": "Javanese",
+      "ud_repository": "UD_Javanese-CSUI"
+    },
+    "jpn": {
+      "generation": "g52f72738c57954b40d8463c9c1a934d4700347a8267856f38d13e5d39d2d2136",
+      "name": "jpn",
+      "ud_repository": null
+    },
+    "kat": {
+      "generation": "geec826a62d7149b8b5eba67e54b3860280956d1757c7c33c08d9e16717445b3c",
+      "name": "Georgian",
+      "ud_repository": "UD_Georgian-GLC"
+    },
+    "kaz": {
+      "generation": "g59f6b6d37933e0efb425a3d2ec22c039c5264c5e6d3e21c17ce7f928654ec74a",
+      "name": "kaz",
+      "ud_repository": null
+    },
+    "kbc": {
+      "generation": "gca9c909681acd016c1167c6d53751005059cf6318a29bda5fea66bc8b0409302",
+      "name": "Kadiwéu",
+      "ud_repository": null
+    },
+    "kir": {
+      "generation": "g613069d89b0835569221c3aedba3736f73bd13ca6790d6e2717661f6981b6bb8",
+      "name": "Kyrgyz",
+      "ud_repository": "UD_Kyrgyz-KTMU"
+    },
+    "kmr": {
+      "generation": "ga7c4a0e5d742ded5792a4403331b6b4d70a6c76a25841aed5ad8b7644efe3824",
+      "name": "Northern Kurdish",
+      "ud_repository": "UD_Northern_Kurdish-Kurmanji"
+    },
+    "koi": {
+      "generation": "g71d804909d4e6c406b57217b2c8a4fe5ab8edc346b6652addfe99f471096d1ee",
+      "name": "Komi Permyak",
+      "ud_repository": "UD_Komi_Permyak-UH"
+    },
+    "kor": {
+      "generation": "g93e14dae609e697de655dcd3b340eb44749aa739b7d5f92cc6fc5260d0a2c772",
+      "name": "Korean",
+      "ud_repository": "UD_Korean-Kaist"
+    },
+    "kpv": {
+      "generation": "g5df9f32882c5a81eb49e05602695657596f7730c7aee823494bc67f35928ee30",
+      "name": "Komi Zyrian",
+      "ud_repository": "UD_Komi_Zyrian-Lattice"
+    },
+    "krl": {
+      "generation": "g7e70eceb334b15ea91e76acbda529d7bc547a6f2f6e3afd6427fb26ec6d3678e",
+      "name": "Karelian",
+      "ud_repository": null
+    },
+    "lat": {
+      "generation": "gc38362646bea964f572bb87a90e954b1425017ab448699ce1c76c334d47d0f3d",
+      "name": "Latin",
+      "ud_repository": null
+    },
+    "lav": {
+      "generation": "g7bfceb878c93f6c02054c02dd0384a8ed5afa8ac1361c093a0bb0571195b0a55",
+      "name": "lav",
+      "ud_repository": null
+    },
+    "lij": {
+      "generation": "g15acf0a135119a0e1dd985f5cc428cd70ca464bb72589f934b3d7094f9b5b93c",
+      "name": "Ligurian",
+      "ud_repository": null
+    },
+    "lit": {
+      "generation": "g0cd50387f2169213722cd4bf94c244082e756a827857f264f94e5a5b0ca9915f",
+      "name": "lit",
+      "ud_repository": null
+    },
+    "lzh": {
+      "generation": "g69e66b4f14844a7611375177332fb0fad6194fdf2d6eb27b135112b90e8428a2",
+      "name": "Classical Chinese",
+      "ud_repository": "UD_Classical_Chinese-Kyoto"
+    },
+    "mal": {
+      "generation": "gd11b56847e66570890d50af8c9f553f5843bb75fe4e2d3919f21ddbffa4dd4cb",
+      "name": "Malayalam",
+      "ud_repository": "UD_Malayalam-UFAL"
+    },
+    "mar": {
+      "generation": "g72442f9d238ecd03d4d6acc572e549109bc8e3d680be11c6e335f2a4a0635ac9",
+      "name": "Marathi",
+      "ud_repository": "UD_Marathi-CMUPAN"
+    },
+    "mdf": {
+      "generation": "g4639fcd81f59eb17e73cdaa5be38e7a7bb864a13ca1b8144bfdb4df8711af406",
+      "name": "Moksha",
+      "ud_repository": "UD_Moksha-JR"
+    },
+    "mkd": {
+      "generation": "ge3dc8ddf47172aa982194b0dd9837e1b7798ff7a793ea99dbc42982d76b52308",
+      "name": "Macedonian",
+      "ud_repository": null
+    },
+    "myu": {
+      "generation": "gb7d94a680e2ae4199d02614daed4e2e4ea3eae149f831629223a94e9f3c55f09",
+      "name": "Munduruku",
+      "ud_repository": "UD_Munduruku-TuDeT"
+    },
+    "myv": {
+      "generation": "ge3b3251b91944bc09bdeab73d924f218b9efb34c611df3df4ea2e6bdecf90b4a",
+      "name": "Erzya",
+      "ud_repository": "UD_Erzya-JR"
+    },
+    "naq": {
+      "generation": "g15463c8061e24a0f989b2194188f841ce49adc258a5612dccf129f8e82e94f98",
+      "name": "Khoekhoe",
+      "ud_repository": "UD_Khoekhoe-KDT"
+    },
+    "nds": {
+      "generation": "g23167ada158ae92435d667ff9eb99a1161f1fdc7ff967c78c4d8cce8c1fc9718",
+      "name": "Low German",
+      "ud_repository": null
+    },
+    "nep": {
+      "generation": "gd95285b5493d13d815d38fa37d4fa68adeb66da8408bfea0d5b9f707f39c1904",
+      "name": "Nepali",
+      "ud_repository": "UD_Nepali-BK"
+    },
+    "nhi": {
+      "generation": "g64817104fd0e823dadbccfe75a8704a9b3374aab94ace6aac3dc89ba3647876b",
+      "name": "Western Sierra Puebla Nahuatl",
+      "ud_repository": "UD_Western_Sierra_Puebla_Nahuatl-MesoTree"
+    },
+    "nld": {
+      "generation": "g0f8fae833e62ebdf3f7337ae4bac1a1ba85a44aab9c3cafdeb842f19c3e592ce",
+      "name": "Dutch",
+      "ud_repository": null
+    },
+    "nmf": {
+      "generation": "g0bb4a368db821a4526a48c4f6ab5498ce22f4d54378d587f8f42715af3bae794",
+      "name": "Naga",
+      "ud_repository": "UD_Naga-Suansu"
+    },
+    "nor": {
+      "generation": "gfdf99c5c5d2aa17f588ec8d5fe96743f56fa48b6fa69a6ec4b75666c4cb015c7",
+      "name": "Norwegian",
+      "ud_repository": "UD_Norwegian-Nynorsk"
+    },
+    "oci": {
+      "generation": "g217c05b59e1d66ee5bbaec3683c76eb26c9b1a741a79e246b3b965ccdfe0ee31",
+      "name": "Occitan",
+      "ud_repository": null
+    },
+    "oge": {
+      "generation": "g77ecea1ff7a42773d7ad1e0cb1314ac950c759c74ab78636ef9e9e1b05bb638a",
+      "name": "Old Georgian",
+      "ud_repository": "UD_Old_Georgian-GLC"
+    },
+    "olo": {
+      "generation": "g555ebb1eb4e0f63382ced7298f735f15f91f54d05000501ccf2c12676a00c3af",
+      "name": "Livvi",
+      "ud_repository": null
+    },
+    "ori": {
+      "generation": "g5bddc8d325cedb1f96357efbdb8cf6126bfd2e58241c8b55649e4cb4af189b12",
+      "name": "Odia",
+      "ud_repository": "UD_Odia-ODTB"
+    },
+    "orv": {
+      "generation": "ga69fbc0f74d959790d88efca6d800e819b77292caf254faa3f6b1951da634dbd",
+      "name": "Old East Slavic",
+      "ud_repository": "UD_Old_East_Slavic-Ruthenian"
+    },
+    "ota": {
+      "generation": "g5b0b76f3e61cb2ebb4d4aae5834cedf03d00466b0f016925c923ef33c9c37409",
+      "name": "Ottoman Turkish",
+      "ud_repository": "UD_Ottoman_Turkish-DUDU"
+    },
+    "pan": {
+      "generation": "gee1faf26a76141306eb5748d96d4a8fe7263477a6e783bc764bd73f120317647",
+      "name": "Punjabi",
+      "ud_repository": "UD_Punjabi-CS"
+    },
+    "pay": {
+      "generation": "g4378c0635bc63bc82b2bf88249a93424464554378b0cb4c9504ae952c84f8b18",
+      "name": "Pesh",
+      "ud_repository": "UD_Pesh-ChibErgIS"
+    },
+    "pcm": {
+      "generation": "g341616523d04802a2150eccc0648574d828abf1dbf2a2a3cd9741c61d5cf5ad8",
+      "name": "Naija",
+      "ud_repository": "UD_Naija-NSC"
+    },
+    "pes": {
+      "generation": "gc1ab8c6da9f36c0ee04c8c0b92349bcbdb010d809c7de5ca3652f3aa9e13ee9e",
+      "name": "Persian",
+      "ud_repository": "UD_Persian-PerDT"
+    },
+    "pol": {
+      "generation": "g6743051f0c01a2f376ddbca3b8a750a41169678ed2a99e9d34d5c44eb9763cf1",
+      "name": "Polish",
+      "ud_repository": null
+    },
+    "por": {
+      "generation": "gd422b722d34e310e19b7081ad943e43cc886f64f9756b047b3fd0378dc5b70e3",
+      "name": "Portuguese",
+      "ud_repository": null
+    },
+    "pro": {
+      "generation": "g12408b8c69ad0a7079ddfbcc0038d8ffa12ab37bc20d51b5744b55e34cd04f38",
+      "name": "Old Occitan",
+      "ud_repository": null
+    },
+    "pst": {
+      "generation": "g3ec308d8ba593ded656577070698c6f7c73d157c3c26c0409f3b20dffc5cfab6",
+      "name": "Pashto",
+      "ud_repository": "UD_Pashto-Sikaram"
+    },
+    "qaf": {
+      "generation": "gd3f8a0477a713e472b18b6294b78db1cf143f884c7b403039c428eacefbf1ce8",
+      "name": "Maghrebi Arabic French",
+      "ud_repository": "UD_Maghrebi_Arabic_French-Arabizi"
+    },
+    "qpm": {
+      "generation": "g022bf62651ec13d537bf688265c8055463fc8c335ad473cf6cf0abe9f4c73675",
+      "name": "Pomak",
+      "ud_repository": "UD_Pomak-Philotis"
+    },
+    "qtd": {
+      "generation": "ge78cf2435f72822152782647b77433aeb4ec9e79eac3de296d8cd070336ebe91",
+      "name": "Turkish German",
+      "ud_repository": "UD_Turkish_German-SAGT"
+    },
+    "qti": {
+      "generation": "ge7d358f175e39406682f944a3585b484a365951d927ae6494fd3ef342a4cf5c3",
+      "name": "Turkish English",
+      "ud_repository": "UD_Turkish_English-BUTR"
+    },
+    "quc": {
+      "generation": "g6c3172254cacda1925a945dc31258a2320a018179b1c72e42fa1e54ff1928abe",
+      "name": "Kiche",
+      "ud_repository": "UD_Kiche-IU"
+    },
+    "ron": {
+      "generation": "g2ee68905cca2815299bbc6a09c6e30141d3a5c2b994d1e77c9c33c28c69c5980",
+      "name": "Romanian",
+      "ud_repository": null
+    },
+    "ruc": {
+      "generation": "gff1d82601ecffd161cd216639ff4b03c0865150d56f6de5f5d7262ddd1e0e48d",
+      "name": "Ruruuli-Lunyala",
+      "ud_repository": null
+    },
+    "rus": {
+      "generation": "ge503884b1158c7fac3d77a3760821e84ee407dc24ae0d621c2313370fbd0f68f",
+      "name": "Russian",
+      "ud_repository": null
+    },
+    "sab": {
+      "generation": "gcc6286267f2d75c5b0bcc86faa73ee97d7b4ae69533b7234c458a3927a980022",
+      "name": "Bokota",
+      "ud_repository": "UD_Bokota-ChibErgIS"
+    },
+    "sah": {
+      "generation": "g4679671d3df8e51fb4cb8efe80b50d0eba86febfb692de903e9eaba6fe8400a1",
+      "name": "Yakut",
+      "ud_repository": "UD_Yakut-YKTDT"
+    },
+    "san": {
+      "generation": "ged4d8035efb335fb22c5c4d227f4f0f30b37f5af652531ca54857240cddf9ce2",
+      "name": "Sanskrit",
+      "ud_repository": "UD_Sanskrit-Vedic"
+    },
+    "say": {
+      "generation": "gfc7edfad31c7d42c5915831dc0e0179ab52d2584b53fcec82fd0e0f0d876dce1",
+      "name": "Zaar",
+      "ud_repository": "UD_Zaar-Autogramm"
+    },
+    "scn": {
+      "generation": "gda5bd4e14477a6f82cde2fb810b1ecd5766a955b94e33e6ed8d23686787db786",
+      "name": "Sicilian",
+      "ud_repository": "UD_Sicilian-STB"
+    },
+    "sga": {
+      "generation": "g0b5d4a2c65302760d346036786492bcaee9f1e82567c9d157bd0ae3ed51c21a0",
+      "name": "Old Irish",
+      "ud_repository": null
+    },
+    "sin": {
+      "generation": "g1965f5cd85299f79587a05ce2ffa785d3424a2d55f791c3132215ccb3e48af60",
+      "name": "Sinhala",
+      "ud_repository": "UD_Sinhala-STB"
+    },
+    "sjo": {
+      "generation": "g39fa44ba58fab4492449cf868ec1d208d3476922df1f6da6454af17948e6f98a",
+      "name": "Xibe",
+      "ud_repository": null
+    },
+    "slk": {
+      "generation": "g6f5473ff9dc33d18acd88ac6efa91738364d859bf0e9f10e50bd9d37f7a71b27",
+      "name": "Slovak",
+      "ud_repository": "UD_Slovak-SNK"
+    },
+    "slv": {
+      "generation": "g6906197e320adfe6640f3a3ba5e38c1df0ba5468e362941245fdb316b932ce13",
+      "name": "Slovenian",
+      "ud_repository": "UD_Slovenian-SSJ"
+    },
+    "sme": {
+      "generation": "g9a4b00094fb909139f77817749beba85febc5c8cfaf432dd057a991002155747",
+      "name": "Northern Sami",
+      "ud_repository": null
+    },
+    "sms": {
+      "generation": "g3084330dc8ba534ce43dc0f71f874cdb9f209545f94229b276efbeaa8755584e",
+      "name": "Skolt Sami",
+      "ud_repository": "UD_Skolt_Sami-Giellagas"
+    },
+    "snd": {
+      "generation": "g5c34c6fb053bcfd36784a18988743f708c0b1f3509abb3a93ef7f0c763810807",
+      "name": "Sindhi",
+      "ud_repository": "UD_Sindhi-Isra"
+    },
+    "spa": {
+      "generation": "gc7f88b9847bb0c2da2420c9816b495dde86a65c38456b6eba3d16f227da4f8c7",
+      "name": "spa",
+      "ud_repository": null
+    },
+    "sqi": {
+      "generation": "g0ef691accf18e46000acc4c82981eb234f9cf21df04f16bb077503dc5f5d5839",
+      "name": "sqi",
+      "ud_repository": null
+    },
+    "srp": {
+      "generation": "g59b4e4c0d3f2834473ece4a4f805ff0975a72ab8ed167856dccf8dd4b20d60da",
+      "name": "Serbian",
+      "ud_repository": null
+    },
+    "ssp": {
+      "generation": "gdaf23237f55e6ed90c2e7bca3fe2a8f2d366b742d8831239e2bde57536b52f91",
+      "name": "Spanish Sign Language",
+      "ud_repository": "UD_Spanish_Sign_Language-LSE"
+    },
+    "swe": {
+      "generation": "g7d084e92d5a11c545a964ff1dddae1e2501945e6fdf0fc1b35c582b144b2a545",
+      "name": "swe",
+      "ud_repository": null
+    },
+    "tam": {
+      "generation": "g217740a36120f819e365cf177af132036d192495b2cbc21b58d8750cc79dd026",
+      "name": "Tamil",
+      "ud_repository": "UD_Tamil-MWTT"
+    },
+    "tat": {
+      "generation": "g0d3cfecabbd875b863f66853460a5337cab1f18899b3ef0f254d389d4b8f4601",
+      "name": "Tatar",
+      "ud_repository": "UD_Tatar-NMCTT"
+    },
+    "tel": {
+      "generation": "g9a5f4f434290d12b355d2342e5a476ca5f95925d2fa0b6df9b6d66f08bc42a0d",
+      "name": "Telugu",
+      "ud_repository": null
+    },
+    "tgl": {
+      "generation": "gf86b2cddc9655e0543c0fda30d9dc5d7a456317eb32d88563f232425db6847fa",
+      "name": "Tagalog",
+      "ud_repository": "UD_Tagalog-TRG"
+    },
+    "tha": {
+      "generation": "gfa8be4f54f6dfc60d63bf2558c7e6f9892c6805a3c10e7a77b9191403cd19d14",
+      "name": "Thai",
+      "ud_repository": "UD_Thai-PUD"
+    },
+    "tpn": {
+      "generation": "g14d5ba2e7f8e2301cd9270f1880b9d1ddeeba7d53eb824f1957ee6bd0d828887",
+      "name": "Tupinamba",
+      "ud_repository": "UD_Tupinamba-TuDeT"
+    },
+    "tuk": {
+      "generation": "g19d75959232f879c70d983d16e5d3997459cc00e4fb5c0e1e4ac56c7954eeb90",
+      "name": "Turkmen",
+      "ud_repository": "UD_Turkmen-TUD"
+    },
+    "tur": {
+      "generation": "g6f119544403c778b17d1d1927e0a57bfabbb3e339340c43831952dd499b12b85",
+      "name": "Turkish",
+      "ud_repository": null
+    },
+    "uig": {
+      "generation": "g0c25360e7dd5e22b31addbaa0c1663aa1efd093d6b56b9f60f510fdeaeae20e5",
+      "name": "Uyghur",
+      "ud_repository": "UD_Uyghur-UDT"
+    },
+    "ukr": {
+      "generation": "g8934545bee36fa6df63dd70643ab819f2815116a87bb54822cca12874365bd6e",
+      "name": "Ukrainian",
+      "ud_repository": null
+    },
+    "urb": {
+      "generation": "g7625355357d6da9874606d3312f56648010afbd37a18f761657b2b6ef54b7bcf",
+      "name": "Kaapor",
+      "ud_repository": "UD_Kaapor-TuDeT"
+    },
+    "urd": {
+      "generation": "g5cacd4fea5fbcd422a9bf8107210820a716a9d0e882427d5b56b1348169f851b",
+      "name": "Urdu",
+      "ud_repository": null
+    },
+    "uzb": {
+      "generation": "ga43533d48904d0f17513141fe14116fb8d6dda3c84e5aa32a03ef65e4b711656",
+      "name": "uzb",
+      "ud_repository": null
+    },
+    "vep": {
+      "generation": "gd3075cd52d1a5f2f477bf408216232a0b47f44f9bc22906c58d6274171726ccf",
+      "name": "Veps (Vepsian)",
+      "ud_repository": null
+    },
+    "vie": {
+      "generation": "g7a311a27a93c186019c77941d23572b1ac77eacc5566613b695e479aa504a1fc",
+      "name": "Vietnamese",
+      "ud_repository": "UD_Vietnamese-VTB"
+    },
+    "wbp": {
+      "generation": "g6adba318bc9f5374ddad0c53502baa2309d37ea90b02938b2dc408c3fd357b36",
+      "name": "Warlpiri",
+      "ud_repository": "UD_Warlpiri-UFAL"
+    },
+    "wol": {
+      "generation": "gced9ce28625c01eac1720a5824769309263ea3fec5bacf4cd68988aa90639df9",
+      "name": "Wolof",
+      "ud_repository": "UD_Wolof-WTB"
+    },
+    "wuu": {
+      "generation": "g674d566b32f6351bd03de8daa4cdc829c66821a6b1df95c165a00d4f27a73c9a",
+      "name": "Shanghainese (Wu Chinese)",
+      "ud_repository": null
+    },
+    "xav": {
+      "generation": "gc23c680967e6cde1b9c82e2bbdd562f48f8895ce0a328bb0130b74175e9a3f91",
+      "name": "Xavante",
+      "ud_repository": "UD_Xavante-XDT"
+    },
+    "xcl": {
+      "generation": "gf2dbed6ddf36795c0803fade236cf9be2ba4d1b666e9d44009832a01da89dc95",
+      "name": "xcl",
+      "ud_repository": null
+    },
+    "xnr": {
+      "generation": "gb9a9218a366bc635d9abf8fa0ef46b64cba2a7bbbb49a0990ff26520d6d685cb",
+      "name": "Kangri",
+      "ud_repository": "UD_Kangri-KDTB"
+    },
+    "xpg": {
+      "generation": "g649f42fcc731a3592aa6147a2a5ce61e790bf7a41192492054bb98b84bf0d872",
+      "name": "Phrygian",
+      "ud_repository": "UD_Phrygian-KUL"
+    },
+    "xum": {
+      "generation": "gd74fdf801933ca7968318ce9c850b2dd7d832facaa6ee377d16874b9065635b1",
+      "name": "Umbrian",
+      "ud_repository": "UD_Umbrian-IKUVINA"
+    },
+    "yid": {
+      "generation": "g786899ce92dffe97f8c337867576b2bf0e3d8b32f1b53732c49cd9ad4d2a9e73",
+      "name": "Yiddish",
+      "ud_repository": "UD_Yiddish-YiTB"
+    },
+    "yor": {
+      "generation": "g39fab013615e07e8e39fa16fdb02771a54cfef842ddeb06a778536b396fa7d90",
+      "name": "Yoruba",
+      "ud_repository": "UD_Yoruba-YTB"
+    },
+    "yrk": {
+      "generation": "g3f10aa6805ec811013fcc7f11b50fa359e63e4ffcf2688f8c657e52ba86cab1b",
+      "name": "Nenets",
+      "ud_repository": "UD_Nenets-Tundra"
+    },
+    "yrl": {
+      "generation": "gfe0f613072d48ec2b74cf7bb41dbab09cb15923622b5294d0305e95abc2bb236",
+      "name": "Nheengatu",
+      "ud_repository": null
+    },
+    "yue": {
+      "generation": "g33f16ffce1b93bd3090eb6ff52200737917522004749de311f8a2987e0389a07",
+      "name": "Cantonese",
+      "ud_repository": "UD_Cantonese-HK"
+    },
+    "zza": {
+      "generation": "g5c14cc27e50b0e83d1592d6ed8763aac6041eae37b6979afc0f75a112d1f12dd",
+      "name": "Zazaki",
+      "ud_repository": "UD_Zazaki-ZSD"
+    }
+  },
+  "ud_revision": "2.19",
+  "version": "1.0.0"
+}

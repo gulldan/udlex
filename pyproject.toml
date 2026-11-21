@@ -48,6 +48,13 @@ rust = false
 line-length = 88
 target-version = "py311"
 src = ["src"]
+# refresh.py hashes its own bytes and those of source_tables.py into the
+# recipe_sha256 of every published dictionary: reformatting either changes
+# the catalog a rebuild writes, so ruff must leave both files byte for byte.
+extend-exclude = [
+  "dictionaries/ud-2.19/refresh.py",
+  "dictionaries/ud-2.19/source_tables.py",
+]
 
 [tool.ruff.lint]
 select = ["ALL"]
@@ -79,11 +86,53 @@ convention = "google"
 # compiled extension does, and PyO3 recommends documenting it exactly there.
 "*.pyi" = ["PYI021"]
 
+# paper/ holds one-off research scripts that produced or check published
+# numbers: not a package and not an API, so only style rules are relaxed.
+"paper/**" = [
+  "INP001",  # script folders, not packages
+  "D1",      # helpers of one-off scripts need no docstrings
+  "ANN",     # annotations on script helpers would be noise, not checked types
+  "C901", "PLR0912", "PLR0913", "PLR0915", "PLR0917",  # long analysis pipelines
+  "S603", "S607",  # subprocess with a fixed argv to known tools (git, cargo, ...)
+  "TRY003", "EM101", "EM102",  # inline error messages are fine in scripts
+  "E501",    # the formatter wraps code; what stays long is prose, LaTeX, reports
+]
+# Each compared lemmatizer lives in its own venv and is imported only when it is
+# scored; verify_snapshot keeps udlex out of the helpers other scripts import.
+"paper/emnlp/experiments/{compare_engines,compare_local,verify_snapshot}.py" = ["PLC0415"]
+# The C9 speed harness: what it times decides these, not style.
+"paper/emnlp/experiments/speed/{bench,worker}.py" = [
+  "PLC0415",  # import time is measured (import_s); udlex exists only in its own venv
+  "BLE001",   # any failure of a cell is recorded as its result, never a crash
+  "S311",     # seeded sampling of test sentences, not cryptography
+]
+"paper/emnlp/experiments/speed/bench.py" = [
+  "S602",  # environment.json records fixed shell pipelines (lscpu | sed, ...)
+]
+"paper/emnlp/experiments/speed/worker.py" = [
+  "S310",    # urlopen to the CoreNLP server it started on 127.0.0.1
+  "PTH100",  # abspath keeps the recorded file names; Path.resolve follows links
+]
+
+# Catalog build and check scripts run once per release, not a package or an API.
+"dictionaries/ud-2.19/**" = [
+  "INP001",  # a script folder, not a package
+  "D1",      # helpers of release scripts need no docstrings
+  "ANN",     # annotations on script helpers would be noise, not checked types
+  "C901", "PLR0912", "PLR0915",  # verify() checks every artefact in one pass
+  "TRY003", "EM101", "EM102",  # inline error messages are fine in scripts
+]
+
 [tool.ty.environment]
 python-version = "3.11"
 
 [tool.ty.src]
 include = ["src/udlex", "tests", "dictionaries"]
+# Hashed into recipe_sha256 of the 1.0.0.post1 catalog; see the ruff exclusion.
+exclude = [
+  "dictionaries/ud-2.19/refresh.py",
+  "dictionaries/ud-2.19/source_tables.py",
+]
 
 [tool.ty.rules]
 # The shipped library is held to the strict end of the checker.

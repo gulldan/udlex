@@ -1,0 +1,1544 @@
+{
+  "catalog_sha256": "7042aaa89bd7b006fbbc5362eeb6eb1bef732ca34da960560eb939c7d22df97f",
+  "languages": {
+    "abk": {
+      "long_keys": 5325,
+      "distinct_edits": 3952,
+      "identity_keys": 4,
+      "most_frequent_edit_keys": 51,
+      "h0_bits_per_key": 11.676475,
+      "pilot_array_bytes": 3550,
+      "slot_offset_bytes": 23672
+    },
+    "abq": {
+      "long_keys": 403,
+      "distinct_edits": 287,
+      "identity_keys": 66,
+      "most_frequent_edit_keys": 66,
+      "h0_bits_per_key": 7.299987,
+      "pilot_array_bytes": 270,
+      "slot_offset_bytes": 1796
+    },
+    "afr": {
+      "long_keys": 2386,
+      "distinct_edits": 487,
+      "identity_keys": 1164,
+      "most_frequent_edit_keys": 1164,
+      "h0_bits_per_key": 3.983846,
+      "pilot_array_bytes": 1592,
+      "slot_offset_bytes": 10612
+    },
+    "aii": {
+      "long_keys": 191,
+      "distinct_edits": 51,
+      "identity_keys": 104,
+      "most_frequent_edit_keys": 104,
+      "h0_bits_per_key": 3.275369,
+      "pilot_array_bytes": 128,
+      "slot_offset_bytes": 856
+    },
+    "ajp": {
+      "long_keys": 134,
+      "distinct_edits": 103,
+      "identity_keys": 25,
+      "most_frequent_edit_keys": 25,
+      "h0_bits_per_key": 6.054103,
+      "pilot_array_bytes": 90,
+      "slot_offset_bytes": 600
+    },
+    "akk": {
+      "long_keys": 400,
+      "distinct_edits": 157,
+      "identity_keys": 34,
+      "most_frequent_edit_keys": 64,
+      "h0_bits_per_key": 5.720245,
+      "pilot_array_bytes": 268,
+      "slot_offset_bytes": 1784
+    },
+    "aln": {
+      "long_keys": 280,
+      "distinct_edits": 163,
+      "identity_keys": 25,
+      "most_frequent_edit_keys": 25,
+      "h0_bits_per_key": 6.761221,
+      "pilot_array_bytes": 188,
+      "slot_offset_bytes": 1252
+    },
+    "amh": {
+      "long_keys": 40106,
+      "distinct_edits": 4081,
+      "identity_keys": 2029,
+      "most_frequent_edit_keys": 4852,
+      "h0_bits_per_key": 8.523845,
+      "pilot_array_bytes": 26738,
+      "slot_offset_bytes": 178256
+    },
+    "apu": {
+      "long_keys": 165,
+      "distinct_edits": 85,
+      "identity_keys": 46,
+      "most_frequent_edit_keys": 46,
+      "h0_bits_per_key": 5.149761,
+      "pilot_array_bytes": 110,
+      "slot_offset_bytes": 740
+    },
+    "aqz": {
+      "long_keys": 39,
+      "distinct_edits": 21,
+      "identity_keys": 6,
+      "most_frequent_edit_keys": 7,
+      "h0_bits_per_key": 3.883581,
+      "pilot_array_bytes": 26,
+      "slot_offset_bytes": 180
+    },
+    "arb": {
+      "long_keys": 3941,
+      "distinct_edits": 3679,
+      "identity_keys": 27,
+      "most_frequent_edit_keys": 27,
+      "h0_bits_per_key": 11.780101,
+      "pilot_array_bytes": 2628,
+      "slot_offset_bytes": 17520
+    },
+    "arh": {
+      "long_keys": 269,
+      "distinct_edits": 168,
+      "identity_keys": 43,
+      "most_frequent_edit_keys": 43,
+      "h0_bits_per_key": 6.525374,
+      "pilot_array_bytes": 180,
+      "slot_offset_bytes": 1200
+    },
+    "arr": {
+      "long_keys": 100,
+      "distinct_edits": 70,
+      "identity_keys": 10,
+      "most_frequent_edit_keys": 10,
+      "h0_bits_per_key": 5.752502,
+      "pilot_array_bytes": 68,
+      "slot_offset_bytes": 452
+    },
+    "axm": {
+      "long_keys": 1026,
+      "distinct_edits": 167,
+      "identity_keys": 300,
+      "most_frequent_edit_keys": 300,
+      "h0_bits_per_key": 4.378857,
+      "pilot_array_bytes": 684,
+      "slot_offset_bytes": 4564
+    },
+    "aze": {
+      "long_keys": 5532,
+      "distinct_edits": 60,
+      "identity_keys": 85,
+      "most_frequent_edit_keys": 922,
+      "h0_bits_per_key": 3.911452,
+      "pilot_array_bytes": 3688,
+      "slot_offset_bytes": 24592
+    },
+    "azz": {
+      "long_keys": 745,
+      "distinct_edits": 475,
+      "identity_keys": 130,
+      "most_frequent_edit_keys": 130,
+      "h0_bits_per_key": 7.760207,
+      "pilot_array_bytes": 498,
+      "slot_offset_bytes": 3316
+    },
+    "bam": {
+      "long_keys": 148,
+      "distinct_edits": 120,
+      "identity_keys": 18,
+      "most_frequent_edit_keys": 18,
+      "h0_bits_per_key": 6.486084,
+      "pilot_array_bytes": 100,
+      "slot_offset_bytes": 664
+    },
+    "bel": {
+      "long_keys": 9745,
+      "distinct_edits": 1499,
+      "identity_keys": 32,
+      "most_frequent_edit_keys": 600,
+      "h0_bits_per_key": 9.019446,
+      "pilot_array_bytes": 6498,
+      "slot_offset_bytes": 43316
+    },
+    "ben": {
+      "long_keys": 2839,
+      "distinct_edits": 190,
+      "identity_keys": 108,
+      "most_frequent_edit_keys": 330,
+      "h0_bits_per_key": 6.133815,
+      "pilot_array_bytes": 1894,
+      "slot_offset_bytes": 12624
+    },
+    "bho": {
+      "long_keys": 1438,
+      "distinct_edits": 33,
+      "identity_keys": 1136,
+      "most_frequent_edit_keys": 1136,
+      "h0_bits_per_key": 1.419599,
+      "pilot_array_bytes": 960,
+      "slot_offset_bytes": 6396
+    },
+    "bor": {
+      "long_keys": 3800,
+      "distinct_edits": 1242,
+      "identity_keys": 930,
+      "most_frequent_edit_keys": 930,
+      "h0_bits_per_key": 6.147451,
+      "pilot_array_bytes": 2534,
+      "slot_offset_bytes": 16896
+    },
+    "bre": {
+      "long_keys": 318,
+      "distinct_edits": 24,
+      "identity_keys": 0,
+      "most_frequent_edit_keys": 52,
+      "h0_bits_per_key": 3.894983,
+      "pilot_array_bytes": 212,
+      "slot_offset_bytes": 1420
+    },
+    "brh": {
+      "long_keys": 164,
+      "distinct_edits": 18,
+      "identity_keys": 41,
+      "most_frequent_edit_keys": 41,
+      "h0_bits_per_key": 3.210962,
+      "pilot_array_bytes": 110,
+      "slot_offset_bytes": 736
+    },
+    "bul": {
+      "long_keys": 44928,
+      "distinct_edits": 2315,
+      "identity_keys": 2108,
+      "most_frequent_edit_keys": 2902,
+      "h0_bits_per_key": 6.990034,
+      "pilot_array_bytes": 29952,
+      "slot_offset_bytes": 199684
+    },
+    "bxr": {
+      "long_keys": 74,
+      "distinct_edits": 17,
+      "identity_keys": 28,
+      "most_frequent_edit_keys": 28,
+      "h0_bits_per_key": 2.736776,
+      "pilot_array_bytes": 50,
+      "slot_offset_bytes": 336
+    },
+    "cat": {
+      "long_keys": 42391,
+      "distinct_edits": 210,
+      "identity_keys": 569,
+      "most_frequent_edit_keys": 8134,
+      "h0_bits_per_key": 4.384429,
+      "pilot_array_bytes": 28262,
+      "slot_offset_bytes": 188412
+    },
+    "ceb": {
+      "long_keys": 178,
+      "distinct_edits": 130,
+      "identity_keys": 22,
+      "most_frequent_edit_keys": 22,
+      "h0_bits_per_key": 6.621197,
+      "pilot_array_bytes": 120,
+      "slot_offset_bytes": 796
+    },
+    "ces": {
+      "long_keys": 31020,
+      "distinct_edits": 278,
+      "identity_keys": 2057,
+      "most_frequent_edit_keys": 5474,
+      "h0_bits_per_key": 4.844467,
+      "pilot_array_bytes": 20680,
+      "slot_offset_bytes": 137872
+    },
+    "chu": {
+      "long_keys": 1517,
+      "distinct_edits": 108,
+      "identity_keys": 102,
+      "most_frequent_edit_keys": 203,
+      "h0_bits_per_key": 5.429167,
+      "pilot_array_bytes": 1012,
+      "slot_offset_bytes": 6748
+    },
+    "cmn": {
+      "long_keys": 86843,
+      "distinct_edits": 27785,
+      "identity_keys": 49255,
+      "most_frequent_edit_keys": 49255,
+      "h0_bits_per_key": 7.019075,
+      "pilot_array_bytes": 57896,
+      "slot_offset_bytes": 385976
+    },
+    "cop": {
+      "long_keys": 1896,
+      "distinct_edits": 213,
+      "identity_keys": 1570,
+      "most_frequent_edit_keys": 1570,
+      "h0_bits_per_key": 1.91207,
+      "pilot_array_bytes": 1264,
+      "slot_offset_bytes": 8432
+    },
+    "cpg": {
+      "long_keys": 710,
+      "distinct_edits": 450,
+      "identity_keys": 120,
+      "most_frequent_edit_keys": 120,
+      "h0_bits_per_key": 7.709038,
+      "pilot_array_bytes": 474,
+      "slot_offset_bytes": 3160
+    },
+    "ctn": {
+      "long_keys": 2421,
+      "distinct_edits": 668,
+      "identity_keys": 1574,
+      "most_frequent_edit_keys": 1574,
+      "h0_bits_per_key": 4.102517,
+      "pilot_array_bytes": 1614,
+      "slot_offset_bytes": 10764
+    },
+    "cym": {
+      "long_keys": 1271,
+      "distinct_edits": 554,
+      "identity_keys": 467,
+      "most_frequent_edit_keys": 467,
+      "h0_bits_per_key": 6.117853,
+      "pilot_array_bytes": 848,
+      "slot_offset_bytes": 5656
+    },
+    "dan": {
+      "long_keys": 17303,
+      "distinct_edits": 109,
+      "identity_keys": 1554,
+      "most_frequent_edit_keys": 4192,
+      "h0_bits_per_key": 2.914884,
+      "pilot_array_bytes": 11536,
+      "slot_offset_bytes": 76908
+    },
+    "deu": {
+      "long_keys": 124083,
+      "distinct_edits": 2616,
+      "identity_keys": 22424,
+      "most_frequent_edit_keys": 32378,
+      "h0_bits_per_key": 4.025906,
+      "pilot_array_bytes": 82722,
+      "slot_offset_bytes": 551484
+    },
+    "egy": {
+      "long_keys": 1373,
+      "distinct_edits": 570,
+      "identity_keys": 124,
+      "most_frequent_edit_keys": 124,
+      "h0_bits_per_key": 7.247512,
+      "pilot_array_bytes": 916,
+      "slot_offset_bytes": 6108
+    },
+    "ell": {
+      "long_keys": 76128,
+      "distinct_edits": 3477,
+      "identity_keys": 11305,
+      "most_frequent_edit_keys": 11305,
+      "h0_bits_per_key": 6.484105,
+      "pilot_array_bytes": 50752,
+      "slot_offset_bytes": 338352
+    },
+    "eme": {
+      "long_keys": 610,
+      "distinct_edits": 363,
+      "identity_keys": 25,
+      "most_frequent_edit_keys": 43,
+      "h0_bits_per_key": 7.643178,
+      "pilot_array_bytes": 408,
+      "slot_offset_bytes": 2716
+    },
+    "eng": {
+      "long_keys": 392593,
+      "distinct_edits": 79,
+      "identity_keys": 265221,
+      "most_frequent_edit_keys": 265221,
+      "h0_bits_per_key": 1.326276,
+      "pilot_array_bytes": 261730,
+      "slot_offset_bytes": 1744864
+    },
+    "epo": {
+      "long_keys": 345,
+      "distinct_edits": 30,
+      "identity_keys": 142,
+      "most_frequent_edit_keys": 142,
+      "h0_bits_per_key": 2.457201,
+      "pilot_array_bytes": 230,
+      "slot_offset_bytes": 1540
+    },
+    "ess": {
+      "long_keys": 323,
+      "distinct_edits": 91,
+      "identity_keys": 17,
+      "most_frequent_edit_keys": 68,
+      "h0_bits_per_key": 4.598444,
+      "pilot_array_bytes": 216,
+      "slot_offset_bytes": 1440
+    },
+    "est": {
+      "long_keys": 15918,
+      "distinct_edits": 158,
+      "identity_keys": 242,
+      "most_frequent_edit_keys": 3036,
+      "h0_bits_per_key": 4.181353,
+      "pilot_array_bytes": 10612,
+      "slot_offset_bytes": 70752
+    },
+    "eus": {
+      "long_keys": 145537,
+      "distinct_edits": 218,
+      "identity_keys": 1194,
+      "most_frequent_edit_keys": 18024,
+      "h0_bits_per_key": 3.977244,
+      "pilot_array_bytes": 97026,
+      "slot_offset_bytes": 646836
+    },
+    "fao": {
+      "long_keys": 16441,
+      "distinct_edits": 448,
+      "identity_keys": 984,
+      "most_frequent_edit_keys": 1874,
+      "h0_bits_per_key": 5.144483,
+      "pilot_array_bytes": 10962,
+      "slot_offset_bytes": 73076
+    },
+    "fin": {
+      "long_keys": 1600227,
+      "distinct_edits": 1986,
+      "identity_keys": 35143,
+      "most_frequent_edit_keys": 202819,
+      "h0_bits_per_key": 5.988104,
+      "pilot_array_bytes": 1066818,
+      "slot_offset_bytes": 7112124
+    },
+    "fra": {
+      "long_keys": 206923,
+      "distinct_edits": 950,
+      "identity_keys": 3668,
+      "most_frequent_edit_keys": 31603,
+      "h0_bits_per_key": 4.673869,
+      "pilot_array_bytes": 137950,
+      "slot_offset_bytes": 919664
+    },
+    "frm": {
+      "long_keys": 20135,
+      "distinct_edits": 150,
+      "identity_keys": 226,
+      "most_frequent_edit_keys": 4847,
+      "h0_bits_per_key": 3.910816,
+      "pilot_array_bytes": 13424,
+      "slot_offset_bytes": 89496
+    },
+    "fro": {
+      "long_keys": 65063,
+      "distinct_edits": 572,
+      "identity_keys": 511,
+      "most_frequent_edit_keys": 8891,
+      "h0_bits_per_key": 5.375251,
+      "pilot_array_bytes": 43376,
+      "slot_offset_bytes": 289176
+    },
+    "gla": {
+      "long_keys": 2226,
+      "distinct_edits": 1050,
+      "identity_keys": 685,
+      "most_frequent_edit_keys": 685,
+      "h0_bits_per_key": 7.08232,
+      "pilot_array_bytes": 1484,
+      "slot_offset_bytes": 9900
+    },
+    "gle": {
+      "long_keys": 17342,
+      "distinct_edits": 1691,
+      "identity_keys": 4128,
+      "most_frequent_edit_keys": 4128,
+      "h0_bits_per_key": 6.38507,
+      "pilot_array_bytes": 11562,
+      "slot_offset_bytes": 77080
+    },
+    "glg": {
+      "long_keys": 1910,
+      "distinct_edits": 146,
+      "identity_keys": 778,
+      "most_frequent_edit_keys": 778,
+      "h0_bits_per_key": 3.436154,
+      "pilot_array_bytes": 1274,
+      "slot_offset_bytes": 8496
+    },
+    "glv": {
+      "long_keys": 308,
+      "distinct_edits": 96,
+      "identity_keys": 176,
+      "most_frequent_edit_keys": 176,
+      "h0_bits_per_key": 3.556158,
+      "pilot_array_bytes": 206,
+      "slot_offset_bytes": 1376
+    },
+    "got": {
+      "long_keys": 118283,
+      "distinct_edits": 1331,
+      "identity_keys": 4642,
+      "most_frequent_edit_keys": 4942,
+      "h0_bits_per_key": 6.86342,
+      "pilot_array_bytes": 78856,
+      "slot_offset_bytes": 525708
+    },
+    "grc": {
+      "long_keys": 12276,
+      "distinct_edits": 3382,
+      "identity_keys": 720,
+      "most_frequent_edit_keys": 720,
+      "h0_bits_per_key": 8.768987,
+      "pilot_array_bytes": 8184,
+      "slot_offset_bytes": 54564
+    },
+    "gub": {
+      "long_keys": 425,
+      "distinct_edits": 286,
+      "identity_keys": 14,
+      "most_frequent_edit_keys": 14,
+      "h0_bits_per_key": 7.851553,
+      "pilot_array_bytes": 284,
+      "slot_offset_bytes": 1896
+    },
+    "guj": {
+      "long_keys": 3201,
+      "distinct_edits": 44,
+      "identity_keys": 301,
+      "most_frequent_edit_keys": 422,
+      "h0_bits_per_key": 4.11142,
+      "pilot_array_bytes": 2134,
+      "slot_offset_bytes": 14232
+    },
+    "gun": {
+      "long_keys": 68,
+      "distinct_edits": 50,
+      "identity_keys": 12,
+      "most_frequent_edit_keys": 12,
+      "h0_bits_per_key": 5.24894,
+      "pilot_array_bytes": 46,
+      "slot_offset_bytes": 308
+    },
+    "gwi": {
+      "long_keys": 195,
+      "distinct_edits": 125,
+      "identity_keys": 26,
+      "most_frequent_edit_keys": 26,
+      "h0_bits_per_key": 6.452944,
+      "pilot_array_bytes": 130,
+      "slot_offset_bytes": 872
+    },
+    "gya": {
+      "long_keys": 299,
+      "distinct_edits": 96,
+      "identity_keys": 120,
+      "most_frequent_edit_keys": 120,
+      "h0_bits_per_key": 4.234084,
+      "pilot_array_bytes": 200,
+      "slot_offset_bytes": 1336
+    },
+    "hat": {
+      "long_keys": 320,
+      "distinct_edits": 41,
+      "identity_keys": 280,
+      "most_frequent_edit_keys": 280,
+      "h0_bits_per_key": 1.208805,
+      "pilot_array_bytes": 214,
+      "slot_offset_bytes": 1428
+    },
+    "hau": {
+      "long_keys": 662,
+      "distinct_edits": 197,
+      "identity_keys": 210,
+      "most_frequent_edit_keys": 210,
+      "h0_bits_per_key": 5.203389,
+      "pilot_array_bytes": 442,
+      "slot_offset_bytes": 2948
+    },
+    "hbo": {
+      "long_keys": 36520,
+      "distinct_edits": 12624,
+      "identity_keys": 2459,
+      "most_frequent_edit_keys": 2459,
+      "h0_bits_per_key": 12.15443,
+      "pilot_array_bytes": 24348,
+      "slot_offset_bytes": 162316
+    },
+    "heb": {
+      "long_keys": 20851,
+      "distinct_edits": 3389,
+      "identity_keys": 361,
+      "most_frequent_edit_keys": 3141,
+      "h0_bits_per_key": 8.820126,
+      "pilot_array_bytes": 13902,
+      "slot_offset_bytes": 92676
+    },
+    "hin": {
+      "long_keys": 1861,
+      "distinct_edits": 8,
+      "identity_keys": 173,
+      "most_frequent_edit_keys": 738,
+      "h0_bits_per_key": 2.410791,
+      "pilot_array_bytes": 1242,
+      "slot_offset_bytes": 8276
+    },
+    "hit": {
+      "long_keys": 345,
+      "distinct_edits": 307,
+      "identity_keys": 4,
+      "most_frequent_edit_keys": 4,
+      "h0_bits_per_key": 8.179643,
+      "pilot_array_bytes": 230,
+      "slot_offset_bytes": 1540
+    },
+    "hrv": {
+      "long_keys": 1027217,
+      "distinct_edits": 17660,
+      "identity_keys": 55270,
+      "most_frequent_edit_keys": 158510,
+      "h0_bits_per_key": 5.414556,
+      "pilot_array_bytes": 684812,
+      "slot_offset_bytes": 4565416
+    },
+    "hsb": {
+      "long_keys": 1901,
+      "distinct_edits": 304,
+      "identity_keys": 411,
+      "most_frequent_edit_keys": 411,
+      "h0_bits_per_key": 5.160836,
+      "pilot_array_bytes": 1268,
+      "slot_offset_bytes": 8456
+    },
+    "hun": {
+      "long_keys": 792247,
+      "distinct_edits": 567,
+      "identity_keys": 9670,
+      "most_frequent_edit_keys": 185536,
+      "h0_bits_per_key": 3.58125,
+      "pilot_array_bytes": 528166,
+      "slot_offset_bytes": 3521104
+    },
+    "hye": {
+      "long_keys": 240313,
+      "distinct_edits": 5074,
+      "identity_keys": 5895,
+      "most_frequent_edit_keys": 34149,
+      "h0_bits_per_key": 5.262585,
+      "pilot_array_bytes": 160210,
+      "slot_offset_bytes": 1068064
+    },
+    "hyw": {
+      "long_keys": 18817,
+      "distinct_edits": 2317,
+      "identity_keys": 4056,
+      "most_frequent_edit_keys": 4056,
+      "h0_bits_per_key": 5.431214,
+      "pilot_array_bytes": 12546,
+      "slot_offset_bytes": 83636
+    },
+    "ind": {
+      "long_keys": 827,
+      "distinct_edits": 430,
+      "identity_keys": 319,
+      "most_frequent_edit_keys": 319,
+      "h0_bits_per_key": 6.224553,
+      "pilot_array_bytes": 552,
+      "slot_offset_bytes": 3680
+    },
+    "isl": {
+      "long_keys": 29414,
+      "distinct_edits": 843,
+      "identity_keys": 1597,
+      "most_frequent_edit_keys": 3454,
+      "h0_bits_per_key": 5.56266,
+      "pilot_array_bytes": 19610,
+      "slot_offset_bytes": 130736
+    },
+    "ita": {
+      "long_keys": 274156,
+      "distinct_edits": 258,
+      "identity_keys": 7776,
+      "most_frequent_edit_keys": 49709,
+      "h0_bits_per_key": 4.312804,
+      "pilot_array_bytes": 182772,
+      "slot_offset_bytes": 1218476
+    },
+    "jav": {
+      "long_keys": 704,
+      "distinct_edits": 431,
+      "identity_keys": 118,
+      "most_frequent_edit_keys": 118,
+      "h0_bits_per_key": 7.46603,
+      "pilot_array_bytes": 470,
+      "slot_offset_bytes": 3136
+    },
+    "jpn": {
+      "long_keys": 10659,
+      "distinct_edits": 722,
+      "identity_keys": 31,
+      "most_frequent_edit_keys": 503,
+      "h0_bits_per_key": 7.29537,
+      "pilot_array_bytes": 7106,
+      "slot_offset_bytes": 47380
+    },
+    "kat": {
+      "long_keys": 10173,
+      "distinct_edits": 703,
+      "identity_keys": 3687,
+      "most_frequent_edit_keys": 3687,
+      "h0_bits_per_key": 4.134481,
+      "pilot_array_bytes": 6782,
+      "slot_offset_bytes": 45220
+    },
+    "kaz": {
+      "long_keys": 347,
+      "distinct_edits": 6,
+      "identity_keys": 19,
+      "most_frequent_edit_keys": 103,
+      "h0_bits_per_key": 2.204664,
+      "pilot_array_bytes": 232,
+      "slot_offset_bytes": 1548
+    },
+    "kbc": {
+      "long_keys": 153,
+      "distinct_edits": 25,
+      "identity_keys": 74,
+      "most_frequent_edit_keys": 74,
+      "h0_bits_per_key": 2.859127,
+      "pilot_array_bytes": 102,
+      "slot_offset_bytes": 684
+    },
+    "kir": {
+      "long_keys": 3100,
+      "distinct_edits": 85,
+      "identity_keys": 536,
+      "most_frequent_edit_keys": 692,
+      "h0_bits_per_key": 3.293888,
+      "pilot_array_bytes": 2068,
+      "slot_offset_bytes": 13784
+    },
+    "kmr": {
+      "long_keys": 29,
+      "distinct_edits": 10,
+      "identity_keys": 9,
+      "most_frequent_edit_keys": 9,
+      "h0_bits_per_key": 2.825716,
+      "pilot_array_bytes": 20,
+      "slot_offset_bytes": 136
+    },
+    "koi": {
+      "long_keys": 61,
+      "distinct_edits": 19,
+      "identity_keys": 23,
+      "most_frequent_edit_keys": 23,
+      "h0_bits_per_key": 3.343584,
+      "pilot_array_bytes": 42,
+      "slot_offset_bytes": 276
+    },
+    "kor": {
+      "long_keys": 71069,
+      "distinct_edits": 10168,
+      "identity_keys": 2963,
+      "most_frequent_edit_keys": 3048,
+      "h0_bits_per_key": 8.921036,
+      "pilot_array_bytes": 47380,
+      "slot_offset_bytes": 315868
+    },
+    "kpv": {
+      "long_keys": 70,
+      "distinct_edits": 20,
+      "identity_keys": 24,
+      "most_frequent_edit_keys": 24,
+      "h0_bits_per_key": 3.32269,
+      "pilot_array_bytes": 48,
+      "slot_offset_bytes": 316
+    },
+    "krl": {
+      "long_keys": 296,
+      "distinct_edits": 34,
+      "identity_keys": 3,
+      "most_frequent_edit_keys": 39,
+      "h0_bits_per_key": 4.489415,
+      "pilot_array_bytes": 198,
+      "slot_offset_bytes": 1320
+    },
+    "lat": {
+      "long_keys": 415647,
+      "distinct_edits": 428,
+      "identity_keys": 32887,
+      "most_frequent_edit_keys": 81836,
+      "h0_bits_per_key": 4.678234,
+      "pilot_array_bytes": 277098,
+      "slot_offset_bytes": 1847324
+    },
+    "lav": {
+      "long_keys": 53160,
+      "distinct_edits": 558,
+      "identity_keys": 3834,
+      "most_frequent_edit_keys": 7254,
+      "h0_bits_per_key": 4.534017,
+      "pilot_array_bytes": 35440,
+      "slot_offset_bytes": 236272
+    },
+    "lij": {
+      "long_keys": 1039,
+      "distinct_edits": 141,
+      "identity_keys": 172,
+      "most_frequent_edit_keys": 172,
+      "h0_bits_per_key": 5.610077,
+      "pilot_array_bytes": 694,
+      "slot_offset_bytes": 4624
+    },
+    "lit": {
+      "long_keys": 18767,
+      "distinct_edits": 1558,
+      "identity_keys": 203,
+      "most_frequent_edit_keys": 1576,
+      "h0_bits_per_key": 7.327749,
+      "pilot_array_bytes": 12512,
+      "slot_offset_bytes": 83416
+    },
+    "lzh": {
+      "long_keys": 182,
+      "distinct_edits": 4,
+      "identity_keys": 179,
+      "most_frequent_edit_keys": 179,
+      "h0_bits_per_key": 0.147338,
+      "pilot_array_bytes": 122,
+      "slot_offset_bytes": 816
+    },
+    "mal": {
+      "long_keys": 1253,
+      "distinct_edits": 180,
+      "identity_keys": 553,
+      "most_frequent_edit_keys": 553,
+      "h0_bits_per_key": 4.513637,
+      "pilot_array_bytes": 836,
+      "slot_offset_bytes": 5576
+    },
+    "mar": {
+      "long_keys": 18844,
+      "distinct_edits": 472,
+      "identity_keys": 6812,
+      "most_frequent_edit_keys": 6812,
+      "h0_bits_per_key": 3.984302,
+      "pilot_array_bytes": 12564,
+      "slot_offset_bytes": 83756
+    },
+    "mdf": {
+      "long_keys": 98,
+      "distinct_edits": 44,
+      "identity_keys": 21,
+      "most_frequent_edit_keys": 21,
+      "h0_bits_per_key": 4.559445,
+      "pilot_array_bytes": 66,
+      "slot_offset_bytes": 440
+    },
+    "mkd": {
+      "long_keys": 133899,
+      "distinct_edits": 250,
+      "identity_keys": 8853,
+      "most_frequent_edit_keys": 35689,
+      "h0_bits_per_key": 3.694731,
+      "pilot_array_bytes": 89266,
+      "slot_offset_bytes": 595112
+    },
+    "myu": {
+      "long_keys": 61,
+      "distinct_edits": 48,
+      "identity_keys": 10,
+      "most_frequent_edit_keys": 10,
+      "h0_bits_per_key": 5.255011,
+      "pilot_array_bytes": 42,
+      "slot_offset_bytes": 276
+    },
+    "myv": {
+      "long_keys": 3495,
+      "distinct_edits": 754,
+      "identity_keys": 506,
+      "most_frequent_edit_keys": 506,
+      "h0_bits_per_key": 6.389091,
+      "pilot_array_bytes": 2330,
+      "slot_offset_bytes": 15540
+    },
+    "naq": {
+      "long_keys": 656,
+      "distinct_edits": 114,
+      "identity_keys": 186,
+      "most_frequent_edit_keys": 202,
+      "h0_bits_per_key": 3.379834,
+      "pilot_array_bytes": 438,
+      "slot_offset_bytes": 2920
+    },
+    "nds": {
+      "long_keys": 709,
+      "distinct_edits": 212,
+      "identity_keys": 82,
+      "most_frequent_edit_keys": 82,
+      "h0_bits_per_key": 6.292293,
+      "pilot_array_bytes": 474,
+      "slot_offset_bytes": 3156
+    },
+    "nep": {
+      "long_keys": 300,
+      "distinct_edits": 45,
+      "identity_keys": 127,
+      "most_frequent_edit_keys": 127,
+      "h0_bits_per_key": 3.558271,
+      "pilot_array_bytes": 200,
+      "slot_offset_bytes": 1340
+    },
+    "nhi": {
+      "long_keys": 2199,
+      "distinct_edits": 1373,
+      "identity_keys": 224,
+      "most_frequent_edit_keys": 224,
+      "h0_bits_per_key": 9.445373,
+      "pilot_array_bytes": 1466,
+      "slot_offset_bytes": 9780
+    },
+    "nld": {
+      "long_keys": 15178,
+      "distinct_edits": 964,
+      "identity_keys": 2769,
+      "most_frequent_edit_keys": 2952,
+      "h0_bits_per_key": 4.646727,
+      "pilot_array_bytes": 10120,
+      "slot_offset_bytes": 67464
+    },
+    "nmf": {
+      "long_keys": 9,
+      "distinct_edits": 6,
+      "identity_keys": 1,
+      "most_frequent_edit_keys": 2,
+      "h0_bits_per_key": 2.503258,
+      "pilot_array_bytes": 6,
+      "slot_offset_bytes": 44
+    },
+    "nor": {
+      "long_keys": 13267,
+      "distinct_edits": 1213,
+      "identity_keys": 4589,
+      "most_frequent_edit_keys": 4589,
+      "h0_bits_per_key": 3.607442,
+      "pilot_array_bytes": 8846,
+      "slot_offset_bytes": 58972
+    },
+    "oci": {
+      "long_keys": 40327,
+      "distinct_edits": 243,
+      "identity_keys": 1085,
+      "most_frequent_edit_keys": 4965,
+      "h0_bits_per_key": 4.576578,
+      "pilot_array_bytes": 26886,
+      "slot_offset_bytes": 179236
+    },
+    "oge": {
+      "long_keys": 5269,
+      "distinct_edits": 885,
+      "identity_keys": 693,
+      "most_frequent_edit_keys": 718,
+      "h0_bits_per_key": 6.038837,
+      "pilot_array_bytes": 3514,
+      "slot_offset_bytes": 23424
+    },
+    "olo": {
+      "long_keys": 606798,
+      "distinct_edits": 2047,
+      "identity_keys": 14468,
+      "most_frequent_edit_keys": 20097,
+      "h0_bits_per_key": 7.324619,
+      "pilot_array_bytes": 404532,
+      "slot_offset_bytes": 2696884
+    },
+    "ori": {
+      "long_keys": 732,
+      "distinct_edits": 35,
+      "identity_keys": 515,
+      "most_frequent_edit_keys": 515,
+      "h0_bits_per_key": 1.87661,
+      "pilot_array_bytes": 488,
+      "slot_offset_bytes": 3260
+    },
+    "orv": {
+      "long_keys": 16240,
+      "distinct_edits": 5583,
+      "identity_keys": 850,
+      "most_frequent_edit_keys": 850,
+      "h0_bits_per_key": 10.360845,
+      "pilot_array_bytes": 10828,
+      "slot_offset_bytes": 72184
+    },
+    "ota": {
+      "long_keys": 2814,
+      "distinct_edits": 196,
+      "identity_keys": 526,
+      "most_frequent_edit_keys": 526,
+      "h0_bits_per_key": 3.885811,
+      "pilot_array_bytes": 1876,
+      "slot_offset_bytes": 12512
+    },
+    "pan": {
+      "long_keys": 467,
+      "distinct_edits": 53,
+      "identity_keys": 271,
+      "most_frequent_edit_keys": 271,
+      "h0_bits_per_key": 2.873086,
+      "pilot_array_bytes": 312,
+      "slot_offset_bytes": 2080
+    },
+    "pay": {
+      "long_keys": 259,
+      "distinct_edits": 125,
+      "identity_keys": 16,
+      "most_frequent_edit_keys": 28,
+      "h0_bits_per_key": 6.031569,
+      "pilot_array_bytes": 174,
+      "slot_offset_bytes": 1156
+    },
+    "pcm": {
+      "long_keys": 542,
+      "distinct_edits": 65,
+      "identity_keys": 400,
+      "most_frequent_edit_keys": 400,
+      "h0_bits_per_key": 2.013786,
+      "pilot_array_bytes": 362,
+      "slot_offset_bytes": 2416
+    },
+    "pes": {
+      "long_keys": 22582,
+      "distinct_edits": 2024,
+      "identity_keys": 9960,
+      "most_frequent_edit_keys": 9960,
+      "h0_bits_per_key": 4.313091,
+      "pilot_array_bytes": 15056,
+      "slot_offset_bytes": 100372
+    },
+    "pol": {
+      "long_keys": 77298,
+      "distinct_edits": 562,
+      "identity_keys": 4193,
+      "most_frequent_edit_keys": 10046,
+      "h0_bits_per_key": 5.175909,
+      "pilot_array_bytes": 51532,
+      "slot_offset_bytes": 343552
+    },
+    "por": {
+      "long_keys": 156416,
+      "distinct_edits": 180,
+      "identity_keys": 1566,
+      "most_frequent_edit_keys": 25734,
+      "h0_bits_per_key": 4.167304,
+      "pilot_array_bytes": 104278,
+      "slot_offset_bytes": 695188
+    },
+    "pro": {
+      "long_keys": 123,
+      "distinct_edits": 4,
+      "identity_keys": 50,
+      "most_frequent_edit_keys": 67,
+      "h0_bits_per_key": 1.249584,
+      "pilot_array_bytes": 82,
+      "slot_offset_bytes": 552
+    },
+    "pst": {
+      "long_keys": 690,
+      "distinct_edits": 53,
+      "identity_keys": 308,
+      "most_frequent_edit_keys": 308,
+      "h0_bits_per_key": 3.079969,
+      "pilot_array_bytes": 460,
+      "slot_offset_bytes": 3072
+    },
+    "qaf": {
+      "long_keys": 725,
+      "distinct_edits": 588,
+      "identity_keys": 112,
+      "most_frequent_edit_keys": 112,
+      "h0_bits_per_key": 8.367633,
+      "pilot_array_bytes": 484,
+      "slot_offset_bytes": 3228
+    },
+    "qpm": {
+      "long_keys": 1284,
+      "distinct_edits": 535,
+      "identity_keys": 63,
+      "most_frequent_edit_keys": 118,
+      "h0_bits_per_key": 7.355422,
+      "pilot_array_bytes": 856,
+      "slot_offset_bytes": 5712
+    },
+    "qtd": {
+      "long_keys": 804,
+      "distinct_edits": 112,
+      "identity_keys": 212,
+      "most_frequent_edit_keys": 212,
+      "h0_bits_per_key": 4.332241,
+      "pilot_array_bytes": 536,
+      "slot_offset_bytes": 3580
+    },
+    "qti": {
+      "long_keys": 69,
+      "distinct_edits": 24,
+      "identity_keys": 8,
+      "most_frequent_edit_keys": 11,
+      "h0_bits_per_key": 3.965014,
+      "pilot_array_bytes": 46,
+      "slot_offset_bytes": 312
+    },
+    "quc": {
+      "long_keys": 565,
+      "distinct_edits": 349,
+      "identity_keys": 120,
+      "most_frequent_edit_keys": 120,
+      "h0_bits_per_key": 7.217674,
+      "pilot_array_bytes": 378,
+      "slot_offset_bytes": 2516
+    },
+    "ron": {
+      "long_keys": 31112,
+      "distinct_edits": 531,
+      "identity_keys": 1083,
+      "most_frequent_edit_keys": 4755,
+      "h0_bits_per_key": 4.862713,
+      "pilot_array_bytes": 20742,
+      "slot_offset_bytes": 138280
+    },
+    "ruc": {
+      "long_keys": 7659,
+      "distinct_edits": 4422,
+      "identity_keys": 2133,
+      "most_frequent_edit_keys": 2133,
+      "h0_bits_per_key": 8.843199,
+      "pilot_array_bytes": 5106,
+      "slot_offset_bytes": 34044
+    },
+    "rus": {
+      "long_keys": 3050465,
+      "distinct_edits": 17299,
+      "identity_keys": 174376,
+      "most_frequent_edit_keys": 277871,
+      "h0_bits_per_key": 6.052686,
+      "pilot_array_bytes": 2033644,
+      "slot_offset_bytes": 13557628
+    },
+    "sab": {
+      "long_keys": 13,
+      "distinct_edits": 6,
+      "identity_keys": 7,
+      "most_frequent_edit_keys": 7,
+      "h0_bits_per_key": 2.034941,
+      "pilot_array_bytes": 10,
+      "slot_offset_bytes": 64
+    },
+    "sah": {
+      "long_keys": 488,
+      "distinct_edits": 126,
+      "identity_keys": 101,
+      "most_frequent_edit_keys": 112,
+      "h0_bits_per_key": 4.679498,
+      "pilot_array_bytes": 326,
+      "slot_offset_bytes": 2176
+    },
+    "san": {
+      "long_keys": 20329,
+      "distinct_edits": 1605,
+      "identity_keys": 907,
+      "most_frequent_edit_keys": 3120,
+      "h0_bits_per_key": 6.259387,
+      "pilot_array_bytes": 13554,
+      "slot_offset_bytes": 90356
+    },
+    "say": {
+      "long_keys": 530,
+      "distinct_edits": 208,
+      "identity_keys": 145,
+      "most_frequent_edit_keys": 145,
+      "h0_bits_per_key": 5.900804,
+      "pilot_array_bytes": 354,
+      "slot_offset_bytes": 2360
+    },
+    "scn": {
+      "long_keys": 541,
+      "distinct_edits": 129,
+      "identity_keys": 168,
+      "most_frequent_edit_keys": 168,
+      "h0_bits_per_key": 4.731226,
+      "pilot_array_bytes": 362,
+      "slot_offset_bytes": 2412
+    },
+    "sga": {
+      "long_keys": 200,
+      "distinct_edits": 143,
+      "identity_keys": 5,
+      "most_frequent_edit_keys": 9,
+      "h0_bits_per_key": 6.928692,
+      "pilot_array_bytes": 134,
+      "slot_offset_bytes": 896
+    },
+    "sin": {
+      "long_keys": 437,
+      "distinct_edits": 66,
+      "identity_keys": 175,
+      "most_frequent_edit_keys": 175,
+      "h0_bits_per_key": 3.412312,
+      "pilot_array_bytes": 292,
+      "slot_offset_bytes": 1948
+    },
+    "sjo": {
+      "long_keys": 58,
+      "distinct_edits": 3,
+      "identity_keys": 56,
+      "most_frequent_edit_keys": 56,
+      "h0_bits_per_key": 0.25088,
+      "pilot_array_bytes": 40,
+      "slot_offset_bytes": 264
+    },
+    "slk": {
+      "long_keys": 8759,
+      "distinct_edits": 1556,
+      "identity_keys": 1666,
+      "most_frequent_edit_keys": 1666,
+      "h0_bits_per_key": 6.131827,
+      "pilot_array_bytes": 5840,
+      "slot_offset_bytes": 38936
+    },
+    "slv": {
+      "long_keys": 16922,
+      "distinct_edits": 1742,
+      "identity_keys": 2759,
+      "most_frequent_edit_keys": 2759,
+      "h0_bits_per_key": 5.308349,
+      "pilot_array_bytes": 11282,
+      "slot_offset_bytes": 75216
+    },
+    "sme": {
+      "long_keys": 37315,
+      "distinct_edits": 1986,
+      "identity_keys": 571,
+      "most_frequent_edit_keys": 2151,
+      "h0_bits_per_key": 8.050521,
+      "pilot_array_bytes": 24878,
+      "slot_offset_bytes": 165852
+    },
+    "sms": {
+      "long_keys": 35,
+      "distinct_edits": 25,
+      "identity_keys": 8,
+      "most_frequent_edit_keys": 8,
+      "h0_bits_per_key": 4.250572,
+      "pilot_array_bytes": 24,
+      "slot_offset_bytes": 160
+    },
+    "snd": {
+      "long_keys": 3181,
+      "distinct_edits": 100,
+      "identity_keys": 1586,
+      "most_frequent_edit_keys": 1586,
+      "h0_bits_per_key": 2.968703,
+      "pilot_array_bytes": 2122,
+      "slot_offset_bytes": 14144
+    },
+    "spa": {
+      "long_keys": 699681,
+      "distinct_edits": 2108,
+      "identity_keys": 30136,
+      "most_frequent_edit_keys": 73155,
+      "h0_bits_per_key": 6.000154,
+      "pilot_array_bytes": 466454,
+      "slot_offset_bytes": 3109700
+    },
+    "sqi": {
+      "long_keys": 5965,
+      "distinct_edits": 98,
+      "identity_keys": 165,
+      "most_frequent_edit_keys": 659,
+      "h0_bits_per_key": 4.772459,
+      "pilot_array_bytes": 3978,
+      "slot_offset_bytes": 26516
+    },
+    "srp": {
+      "long_keys": 1158618,
+      "distinct_edits": 23428,
+      "identity_keys": 57155,
+      "most_frequent_edit_keys": 166148,
+      "h0_bits_per_key": 5.951729,
+      "pilot_array_bytes": 772412,
+      "slot_offset_bytes": 5149420
+    },
+    "swe": {
+      "long_keys": 59248,
+      "distinct_edits": 256,
+      "identity_keys": 5334,
+      "most_frequent_edit_keys": 12685,
+      "h0_bits_per_key": 3.392139,
+      "pilot_array_bytes": 39500,
+      "slot_offset_bytes": 263332
+    },
+    "tam": {
+      "long_keys": 800,
+      "distinct_edits": 86,
+      "identity_keys": 234,
+      "most_frequent_edit_keys": 234,
+      "h0_bits_per_key": 4.574892,
+      "pilot_array_bytes": 534,
+      "slot_offset_bytes": 3560
+    },
+    "tat": {
+      "long_keys": 946,
+      "distinct_edits": 132,
+      "identity_keys": 230,
+      "most_frequent_edit_keys": 230,
+      "h0_bits_per_key": 4.071601,
+      "pilot_array_bytes": 632,
+      "slot_offset_bytes": 4212
+    },
+    "tel": {
+      "long_keys": 20111,
+      "distinct_edits": 113,
+      "identity_keys": 12815,
+      "most_frequent_edit_keys": 12815,
+      "h0_bits_per_key": 2.163177,
+      "pilot_array_bytes": 13408,
+      "slot_offset_bytes": 89388
+    },
+    "tgl": {
+      "long_keys": 39,
+      "distinct_edits": 29,
+      "identity_keys": 6,
+      "most_frequent_edit_keys": 6,
+      "h0_bits_per_key": 4.611949,
+      "pilot_array_bytes": 26,
+      "slot_offset_bytes": 180
+    },
+    "tha": {
+      "long_keys": 2796,
+      "distinct_edits": 4,
+      "identity_keys": 2793,
+      "most_frequent_edit_keys": 2793,
+      "h0_bits_per_key": 0.013832,
+      "pilot_array_bytes": 1864,
+      "slot_offset_bytes": 12432
+    },
+    "tpn": {
+      "long_keys": 747,
+      "distinct_edits": 502,
+      "identity_keys": 56,
+      "most_frequent_edit_keys": 56,
+      "h0_bits_per_key": 8.196655,
+      "pilot_array_bytes": 498,
+      "slot_offset_bytes": 3324
+    },
+    "tuk": {
+      "long_keys": 6173,
+      "distinct_edits": 990,
+      "identity_keys": 435,
+      "most_frequent_edit_keys": 757,
+      "h0_bits_per_key": 5.611574,
+      "pilot_array_bytes": 4116,
+      "slot_offset_bytes": 27440
+    },
+    "tur": {
+      "long_keys": 203179,
+      "distinct_edits": 326,
+      "identity_keys": 787,
+      "most_frequent_edit_keys": 14478,
+      "h0_bits_per_key": 5.617317,
+      "pilot_array_bytes": 135454,
+      "slot_offset_bytes": 903024
+    },
+    "uig": {
+      "long_keys": 3339,
+      "distinct_edits": 124,
+      "identity_keys": 1032,
+      "most_frequent_edit_keys": 1032,
+      "h0_bits_per_key": 3.604604,
+      "pilot_array_bytes": 2226,
+      "slot_offset_bytes": 14844
+    },
+    "ukr": {
+      "long_keys": 13191,
+      "distinct_edits": 300,
+      "identity_keys": 1284,
+      "most_frequent_edit_keys": 2710,
+      "h0_bits_per_key": 4.7941,
+      "pilot_array_bytes": 8794,
+      "slot_offset_bytes": 58632
+    },
+    "urb": {
+      "long_keys": 24,
+      "distinct_edits": 14,
+      "identity_keys": 7,
+      "most_frequent_edit_keys": 7,
+      "h0_bits_per_key": 3.401364,
+      "pilot_array_bytes": 16,
+      "slot_offset_bytes": 112
+    },
+    "urd": {
+      "long_keys": 11432,
+      "distinct_edits": 3620,
+      "identity_keys": 2773,
+      "most_frequent_edit_keys": 2773,
+      "h0_bits_per_key": 8.618346,
+      "pilot_array_bytes": 7622,
+      "slot_offset_bytes": 50816
+    },
+    "uzb": {
+      "long_keys": 887,
+      "distinct_edits": 13,
+      "identity_keys": 3,
+      "most_frequent_edit_keys": 153,
+      "h0_bits_per_key": 3.211297,
+      "pilot_array_bytes": 592,
+      "slot_offset_bytes": 3948
+    },
+    "vep": {
+      "long_keys": 424679,
+      "distinct_edits": 1259,
+      "identity_keys": 8140,
+      "most_frequent_edit_keys": 32020,
+      "h0_bits_per_key": 6.021992,
+      "pilot_array_bytes": 283120,
+      "slot_offset_bytes": 1887468
+    },
+    "vie": {
+      "long_keys": 10,
+      "distinct_edits": 3,
+      "identity_keys": 8,
+      "most_frequent_edit_keys": 8,
+      "h0_bits_per_key": 0.921928,
+      "pilot_array_bytes": 8,
+      "slot_offset_bytes": 52
+    },
+    "wbp": {
+      "long_keys": 58,
+      "distinct_edits": 21,
+      "identity_keys": 1,
+      "most_frequent_edit_keys": 8,
+      "h0_bits_per_key": 3.836237,
+      "pilot_array_bytes": 40,
+      "slot_offset_bytes": 264
+    },
+    "wol": {
+      "long_keys": 429,
+      "distinct_edits": 47,
+      "identity_keys": 243,
+      "most_frequent_edit_keys": 243,
+      "h0_bits_per_key": 2.490363,
+      "pilot_array_bytes": 286,
+      "slot_offset_bytes": 1912
+    },
+    "wuu": {
+      "long_keys": 135,
+      "distinct_edits": 2,
+      "identity_keys": 133,
+      "most_frequent_edit_keys": 133,
+      "h0_bits_per_key": 0.111241,
+      "pilot_array_bytes": 90,
+      "slot_offset_bytes": 604
+    },
+    "xav": {
+      "long_keys": 114,
+      "distinct_edits": 65,
+      "identity_keys": 41,
+      "most_frequent_edit_keys": 41,
+      "h0_bits_per_key": 4.741535,
+      "pilot_array_bytes": 76,
+      "slot_offset_bytes": 512
+    },
+    "xcl": {
+      "long_keys": 55935,
+      "distinct_edits": 772,
+      "identity_keys": 3407,
+      "most_frequent_edit_keys": 7218,
+      "h0_bits_per_key": 5.488755,
+      "pilot_array_bytes": 37290,
+      "slot_offset_bytes": 248604
+    },
+    "xnr": {
+      "long_keys": 897,
+      "distinct_edits": 58,
+      "identity_keys": 503,
+      "most_frequent_edit_keys": 503,
+      "h0_bits_per_key": 2.784091,
+      "pilot_array_bytes": 598,
+      "slot_offset_bytes": 3992
+    },
+    "xpg": {
+      "long_keys": 594,
+      "distinct_edits": 349,
+      "identity_keys": 141,
+      "most_frequent_edit_keys": 141,
+      "h0_bits_per_key": 7.074811,
+      "pilot_array_bytes": 396,
+      "slot_offset_bytes": 2644
+    },
+    "xum": {
+      "long_keys": 1,
+      "distinct_edits": 1,
+      "identity_keys": 0,
+      "most_frequent_edit_keys": 1,
+      "h0_bits_per_key": 0.0,
+      "pilot_array_bytes": 2,
+      "slot_offset_bytes": 12
+    },
+    "yid": {
+      "long_keys": 2400,
+      "distinct_edits": 438,
+      "identity_keys": 1080,
+      "most_frequent_edit_keys": 1080,
+      "h0_bits_per_key": 4.353739,
+      "pilot_array_bytes": 1600,
+      "slot_offset_bytes": 10672
+    },
+    "yor": {
+      "long_keys": 494,
+      "distinct_edits": 79,
+      "identity_keys": 416,
+      "most_frequent_edit_keys": 416,
+      "h0_bits_per_key": 1.621681,
+      "pilot_array_bytes": 330,
+      "slot_offset_bytes": 2200
+    },
+    "yrk": {
+      "long_keys": 434,
+      "distinct_edits": 121,
+      "identity_keys": 90,
+      "most_frequent_edit_keys": 90,
+      "h0_bits_per_key": 4.995256,
+      "pilot_array_bytes": 290,
+      "slot_offset_bytes": 1936
+    },
+    "yrl": {
+      "long_keys": 285,
+      "distinct_edits": 15,
+      "identity_keys": 70,
+      "most_frequent_edit_keys": 189,
+      "h0_bits_per_key": 1.535245,
+      "pilot_array_bytes": 190,
+      "slot_offset_bytes": 1272
+    },
+    "yue": {
+      "long_keys": 137,
+      "distinct_edits": 3,
+      "identity_keys": 135,
+      "most_frequent_edit_keys": 135,
+      "h0_bits_per_key": 0.124528,
+      "pilot_array_bytes": 92,
+      "slot_offset_bytes": 616
+    },
+    "zza": {
+      "long_keys": 23,
+      "distinct_edits": 16,
+      "identity_keys": 7,
+      "most_frequent_edit_keys": 7,
+      "h0_bits_per_key": 3.582193,
+      "pilot_array_bytes": 16,
+      "slot_offset_bytes": 108
+    }
+  }
+}

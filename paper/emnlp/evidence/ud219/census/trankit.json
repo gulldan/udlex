@@ -1,0 +1,512 @@
+{
+  "cells": {
+    "afr": {
+      "correct": 9705,
+      "model": "afrikaans/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 10063
+    },
+    "arb": {
+      "correct": 26896,
+      "model": "arabic/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 28183
+    },
+    "bel": {
+      "correct": 12181,
+      "model": "belarusian/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 15871
+    },
+    "bor": {
+      "reason": "LookupError: Trankit has no model for UD_Bororo-BDT",
+      "status": "unsupported"
+    },
+    "bxr": {
+      "reason": "LookupError: Trankit has no model for UD_Buryat-BDT",
+      "status": "unsupported"
+    },
+    "cat": {
+      "correct": 58998,
+      "model": "catalan/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 59571
+    },
+    "ces": {
+      "correct": 288987,
+      "model": "czech/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 298180
+    },
+    "chu": {
+      "reason": "LookupError: Trankit has no model for UD_Old_Church_Slavonic-PROIEL",
+      "status": "unsupported"
+    },
+    "cmn": {
+      "correct": 11954,
+      "model": "chinese/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 12010
+    },
+    "cop": {
+      "reason": "LookupError: Trankit has no model for UD_Coptic-Scriptorium",
+      "status": "unsupported"
+    },
+    "cym": {
+      "reason": "LookupError: Trankit has no model for UD_Welsh-CCG",
+      "status": "unsupported"
+    },
+    "dan": {
+      "correct": 9772,
+      "model": "danish/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 10022
+    },
+    "deu": {
+      "correct": 258891,
+      "model": "german-hdt/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 329795
+    },
+    "egy": {
+      "reason": "LookupError: Trankit has no model for UD_Egyptian-PC",
+      "status": "unsupported"
+    },
+    "ell": {
+      "correct": 10316,
+      "model": "greek/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 10656
+    },
+    "eng": {
+      "correct": 27108,
+      "model": "english-gum/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 28156
+    },
+    "est": {
+      "correct": 46478,
+      "model": "estonian/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 48309
+    },
+    "eus": {
+      "correct": 22271,
+      "model": "basque/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 24312
+    },
+    "fao": {
+      "reason": "LookupError: Trankit has no model for UD_Faroese-FarPaHC",
+      "status": "unsupported"
+    },
+    "fin": {
+      "correct": 20112,
+      "model": "finnish/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 20989
+    },
+    "fra": {
+      "correct": 9565,
+      "model": "french-sequoia/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 9935
+    },
+    "frm": {
+      "reason": "LookupError: Trankit has no model for UD_Middle_French-PROFITEROLE",
+      "status": "unsupported"
+    },
+    "gla": {
+      "correct": 9577,
+      "model": "scottish-gaelic/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 10551
+    },
+    "gle": {
+      "correct": 9219,
+      "model": "irish/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 10100
+    },
+    "glg": {
+      "correct": 29306,
+      "model": "galician/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 29740
+    },
+    "glv": {
+      "reason": "LookupError: Trankit has no model for UD_Manx-Cadhan",
+      "status": "unsupported"
+    },
+    "got": {
+      "reason": "LookupError: Trankit has no model for UD_Gothic-PROIEL",
+      "status": "unsupported"
+    },
+    "grc": {
+      "correct": 12768,
+      "model": "ancient-greek/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 13091
+    },
+    "hat": {
+      "reason": "LookupError: Trankit has no model for UD_Haitian_Creole-Adolphe",
+      "status": "unsupported"
+    },
+    "hbo": {
+      "reason": "LookupError: Trankit has no model for UD_Ancient_Hebrew-PTNK",
+      "status": "unsupported"
+    },
+    "heb": {
+      "correct": 11622,
+      "model": "hebrew/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 11993
+    },
+    "hin": {
+      "correct": 29621,
+      "model": "hindi/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 35413
+    },
+    "hrv": {
+      "correct": 23421,
+      "model": "croatian/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 24203
+    },
+    "hun": {
+      "correct": 9875,
+      "model": "hungarian/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 10432
+    },
+    "hye": {
+      "correct": 9794,
+      "model": "armenian/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 10610
+    },
+    "hyw": {
+      "reason": "LookupError: Trankit has no model for UD_Western_Armenian-ArmTDP",
+      "status": "unsupported"
+    },
+    "ind": {
+      "correct": 9885,
+      "model": "indonesian/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 11712
+    },
+    "isl": {
+      "reason": "LookupError: Trankit has no model for UD_Icelandic-IcePaHC",
+      "status": "unsupported"
+    },
+    "ita": {
+      "correct": 10263,
+      "model": "italian/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 10416
+    },
+    "jpn": {
+      "correct": 10932,
+      "model": "japanese/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 13034
+    },
+    "kat": {
+      "reason": "LookupError: Trankit has no model for UD_Georgian-GNC",
+      "status": "unsupported"
+    },
+    "kaz": {
+      "correct": 5358,
+      "model": "kazakh/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 10007
+    },
+    "kir": {
+      "reason": "LookupError: Trankit has no model for UD_Kyrgyz-KTMU",
+      "status": "unsupported"
+    },
+    "kmr": {
+      "correct": 6033,
+      "model": "kurmanji/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 9963
+    },
+    "koi": {
+      "reason": "LookupError: Trankit has no model for UD_Komi_Permyak-UH",
+      "status": "unsupported"
+    },
+    "kor": {
+      "correct": 25713,
+      "model": "korean-kaist/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 28352
+    },
+    "kpv": {
+      "reason": "LookupError: Trankit has no model for UD_Komi_Zyrian-Lattice",
+      "status": "unsupported"
+    },
+    "lat": {
+      "correct": 27543,
+      "model": "latin/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 29220
+    },
+    "lav": {
+      "correct": 35397,
+      "model": "latvian/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 37080
+    },
+    "lij": {
+      "reason": "LookupError: Trankit has no model for UD_Ligurian-GLT",
+      "status": "unsupported"
+    },
+    "lit": {
+      "correct": 11656,
+      "model": "lithuanian/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 11953
+    },
+    "lzh": {
+      "correct": 24842,
+      "model": "classical-chinese/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 25043
+    },
+    "mar": {
+      "correct": 8061,
+      "model": "marathi/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 12291
+    },
+    "mdf": {
+      "reason": "LookupError: Trankit has no model for UD_Moksha-JR",
+      "status": "unsupported"
+    },
+    "myv": {
+      "reason": "LookupError: Trankit has no model for UD_Erzya-JR",
+      "status": "unsupported"
+    },
+    "naq": {
+      "reason": "LookupError: Trankit has no model for UD_Khoekhoe-KDT",
+      "status": "unsupported"
+    },
+    "nds": {
+      "reason": "LookupError: Trankit has no model for UD_Low_Saxon-LSDC",
+      "status": "unsupported"
+    },
+    "nld": {
+      "correct": 26517,
+      "model": "dutch-lassysmall/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 28804
+    },
+    "nmf": {
+      "reason": "LookupError: Trankit has no model for UD_Naga-Suansu",
+      "status": "unsupported"
+    },
+    "nor": {
+      "correct": 24242,
+      "model": "norwegian-nynorsk/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 24697
+    },
+    "oci": {
+      "reason": "LookupError: Trankit has no model for UD_Occitan-TTB",
+      "status": "unsupported"
+    },
+    "oge": {
+      "reason": "LookupError: Trankit has no model for UD_Old_Georgian-GLC",
+      "status": "unsupported"
+    },
+    "olo": {
+      "reason": "LookupError: Trankit has no model for UD_Livvi-KKPP",
+      "status": "unsupported"
+    },
+    "orv": {
+      "correct": 25388,
+      "model": "old-russian/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 27721
+    },
+    "ota": {
+      "reason": "LookupError: Trankit has no model for UD_Ottoman_Turkish-DUDU",
+      "status": "unsupported"
+    },
+    "pan": {
+      "reason": "LookupError: Trankit has no model for UD_Punjabi-DYZ",
+      "status": "unsupported"
+    },
+    "pcm": {
+      "reason": "LookupError: Trankit has no model for UD_Naija-NSC",
+      "status": "unsupported"
+    },
+    "pes": {
+      "correct": 20057,
+      "model": "persian/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 24118
+    },
+    "pol": {
+      "correct": 32751,
+      "model": "polish/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 33572
+    },
+    "por": {
+      "correct": 28978,
+      "model": "portuguese/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 29539
+    },
+    "pro": {
+      "reason": "LookupError: Trankit has no model for UD_Old_Occitan-CronOc",
+      "status": "unsupported"
+    },
+    "qaf": {
+      "reason": "LookupError: Trankit has no model for UD_Maghrebi_Arabic_French-Arabizi",
+      "status": "unsupported"
+    },
+    "qpm": {
+      "reason": "LookupError: Trankit has no model for UD_Pomak-Philotis",
+      "status": "unsupported"
+    },
+    "qtd": {
+      "reason": "LookupError: Trankit has no model for UD_Turkish_German-SAGT",
+      "status": "unsupported"
+    },
+    "ron": {
+      "correct": 20062,
+      "model": "romanian-nonstandard/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 20943
+    },
+    "rus": {
+      "correct": 14036,
+      "model": "russian-taiga/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 15334
+    },
+    "san": {
+      "reason": "LookupError: Trankit has no model for UD_Sanskrit-Vedic",
+      "status": "unsupported"
+    },
+    "say": {
+      "reason": "LookupError: Trankit has no model for UD_Zaar-Autogramm",
+      "status": "unsupported"
+    },
+    "slk": {
+      "correct": 12062,
+      "model": "slovak/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 12702
+    },
+    "slv": {
+      "correct": 24772,
+      "model": "slovenian/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 25407
+    },
+    "sme": {
+      "reason": "LookupError: Trankit has no model for UD_North_Sami-Giella",
+      "status": "unsupported"
+    },
+    "sms": {
+      "reason": "LookupError: Trankit has no model for UD_Skolt_Sami-Giellagas",
+      "status": "unsupported"
+    },
+    "snd": {
+      "reason": "LookupError: Trankit has no model for UD_Sindhi-Isra",
+      "status": "unsupported"
+    },
+    "spa": {
+      "correct": 53069,
+      "model": "spanish/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 53584
+    },
+    "sqi": {
+      "reason": "LookupError: Trankit has no model for UD_Albanian-STAF",
+      "status": "unsupported"
+    },
+    "srp": {
+      "correct": 11065,
+      "model": "serbian/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 11410
+    },
+    "swe": {
+      "correct": 19130,
+      "model": "swedish/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 20371
+    },
+    "tam": {
+      "correct": 1855,
+      "model": "tamil/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 1989
+    },
+    "tur": {
+      "correct": 8321,
+      "model": "turkish/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 9904
+    },
+    "uig": {
+      "correct": 7188,
+      "model": "uyghur/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 7573
+    },
+    "ukr": {
+      "correct": 15622,
+      "model": "ukrainian/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 16075
+    },
+    "urd": {
+      "correct": 12296,
+      "model": "urdu/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 14537
+    },
+    "uzb": {
+      "reason": "LookupError: Trankit has no model for UD_Uzbek-UzUDT",
+      "status": "unsupported"
+    },
+    "vie": {
+      "correct": 10823,
+      "model": "vietnamese-vtb/xlm-roberta-large",
+      "status": "scored",
+      "tokens": 11638
+    },
+    "wol": {
+      "reason": "LookupError: Trankit has no model for UD_Wolof-WTB",
+      "status": "unsupported"
+    },
+    "wuu": {
+      "reason": "LookupError: Trankit has no model for UD_Shanghainese-ShUD",
+      "status": "unsupported"
+    },
+    "xcl": {
+      "reason": "LookupError: Trankit has no model for UD_Classical_Armenian-CAVaL",
+      "status": "unsupported"
+    },
+    "yid": {
+      "reason": "LookupError: Trankit has no model for UD_Yiddish-YiTB",
+      "status": "unsupported"
+    },
+    "yrl": {
+      "reason": "LookupError: Trankit has no model for UD_Nheengatu-CompLin",
+      "status": "unsupported"
+    },
+    "zza": {
+      "reason": "LookupError: Trankit has no model for UD_Zazaki-ZSD",
+      "status": "unsupported"
+    }
+  },
+  "engine": "trankit",
+  "version": "1.1.2"
+}

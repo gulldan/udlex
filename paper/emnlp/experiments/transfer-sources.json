@@ -1,0 +1,586 @@
+{
+  "corpora": [
+    {
+      "basis": "header credits hand-tagging and 'Correction of disambiguation errors'",
+      "config": "bg_mte1984",
+      "files": [
+        {
+          "download": "mte1984",
+          "member": "MTE1984-ana/oana-bg.xml",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic with corrections",
+      "parser": "tei",
+      "treebank": "X_Bulgarian-MTE1984"
+    },
+    {
+      "basis": "header credits hand-tagging of the first three chapters only",
+      "config": "cs_mte1984",
+      "files": [
+        {
+          "download": "mte1984",
+          "member": "MTE1984-ana/oana-cs.xml",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic",
+      "parser": "tei",
+      "treebank": "X_Czech-MTE1984"
+    },
+    {
+      "basis": "header credits 'Manual tagging' and 'Tagging correction'",
+      "config": "en_mte1984",
+      "files": [
+        {
+          "download": "mte1984",
+          "member": "MTE1984-ana/oana-en.xml",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic with corrections",
+      "parser": "tei",
+      "treebank": "X_English-MTE1984"
+    },
+    {
+      "basis": "header credits 'Manual disambiguation (twice) and harmonization'",
+      "config": "et_mte1984",
+      "files": [
+        {
+          "download": "mte1984",
+          "member": "MTE1984-ana/oana-et.xml",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic with corrections",
+      "parser": "tei",
+      "treebank": "X_Estonian-MTE1984"
+    },
+    {
+      "basis": "header credits 'Manual tagging' and 'Tagging correction'",
+      "config": "fa_mte1984",
+      "files": [
+        {
+          "download": "mte1984",
+          "member": "MTE1984-ana/oana-fa.xml",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic with corrections",
+      "parser": "tei",
+      "treebank": "X_Persian-MTE1984"
+    },
+    {
+      "basis": "header credits no manual validation",
+      "config": "hu_mte1984",
+      "files": [
+        {
+          "download": "mte1984",
+          "member": "MTE1984-ana/oana-hu.xml",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic",
+      "parser": "tei",
+      "treebank": "X_Hungarian-MTE1984"
+    },
+    {
+      "basis": "header credits no manual validation",
+      "config": "pl_mte1984",
+      "files": [
+        {
+          "download": "mte1984",
+          "member": "MTE1984-ana/oana-pl.xml",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic",
+      "parser": "tei",
+      "treebank": "X_Polish-MTE1984"
+    },
+    {
+      "basis": "header credits 'Hand-tagging the whole book'",
+      "config": "ro_mte1984",
+      "files": [
+        {
+          "download": "mte1984",
+          "member": "MTE1984-ana/oana-ro.xml",
+          "part": "test"
+        }
+      ],
+      "lemmas": "manual native",
+      "parser": "tei",
+      "treebank": "X_Romanian-MTE1984"
+    },
+    {
+      "basis": "header: converted from the manually annotated Slovak National Corpus",
+      "config": "sk_mte1984",
+      "files": [
+        {
+          "download": "mte1984",
+          "member": "MTE1984-ana/oana-sk.xml",
+          "part": "test"
+        }
+      ],
+      "lemmas": "converted from manual",
+      "parser": "tei",
+      "treebank": "X_Slovak-MTE1984"
+    },
+    {
+      "basis": "header credits 'Tagging' and 'Tagging correction'",
+      "config": "sl_mte1984",
+      "files": [
+        {
+          "download": "mte1984",
+          "member": "MTE1984-ana/oana-sl.xml",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic with corrections",
+      "parser": "tei",
+      "treebank": "X_Slovenian-MTE1984"
+    },
+    {
+      "basis": "header credits 'Tagging supervision' and 'Error correction'",
+      "config": "sr_mte1984",
+      "files": [
+        {
+          "download": "mte1984",
+          "member": "MTE1984-ana/oana-sr.xml",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic with corrections",
+      "parser": "tei",
+      "treebank": "X_Serbian-MTE1984"
+    },
+    {
+      "basis": "00README.txt marks lemmatization as manually validated",
+      "config": "bg_elexis",
+      "credits": {
+        "download": "elexis",
+        "line": "Bulgarian",
+        "member": "elexis-wsd-2.0/00README.txt"
+      },
+      "files": [
+        {
+          "download": "elexis",
+          "member": "elexis-wsd-2.0/corpora/elexis-wsd-bg_corpus.conllu",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic with corrections",
+      "parser": "rows",
+      "treebank": "X_Bulgarian-ELEXIS"
+    },
+    {
+      "basis": "00README.txt marks lemmatization as manually validated",
+      "config": "da_elexis",
+      "credits": {
+        "download": "elexis",
+        "line": "Danish",
+        "member": "elexis-wsd-2.0/00README.txt"
+      },
+      "files": [
+        {
+          "download": "elexis",
+          "member": "elexis-wsd-2.0/corpora/elexis-wsd-da_corpus.conllu",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic with corrections",
+      "parser": "rows",
+      "treebank": "X_Danish-ELEXIS"
+    },
+    {
+      "basis": "00README.txt marks lemmatization as manually validated",
+      "config": "en_elexis",
+      "credits": {
+        "download": "elexis",
+        "line": "English",
+        "member": "elexis-wsd-2.0/00README.txt"
+      },
+      "files": [
+        {
+          "download": "elexis",
+          "member": "elexis-wsd-2.0/corpora/elexis-wsd-en_corpus.conllu",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic with corrections",
+      "parser": "rows",
+      "treebank": "X_English-ELEXIS"
+    },
+    {
+      "basis": "00README.txt marks lemmatization as manually validated",
+      "config": "es_elexis",
+      "credits": {
+        "download": "elexis",
+        "line": "Spanish",
+        "member": "elexis-wsd-2.0/00README.txt"
+      },
+      "files": [
+        {
+          "download": "elexis",
+          "member": "elexis-wsd-2.0/corpora/elexis-wsd-es_corpus.conllu",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic with corrections",
+      "parser": "rows",
+      "treebank": "X_Spanish-ELEXIS"
+    },
+    {
+      "basis": "00README.txt marks lemmatization as manually validated",
+      "config": "et_elexis",
+      "credits": {
+        "download": "elexis",
+        "line": "Estonian",
+        "member": "elexis-wsd-2.0/00README.txt"
+      },
+      "files": [
+        {
+          "download": "elexis",
+          "member": "elexis-wsd-2.0/corpora/elexis-wsd-et_corpus.conllu",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic with corrections",
+      "parser": "rows",
+      "treebank": "X_Estonian-ELEXIS"
+    },
+    {
+      "basis": "00README.txt marks lemmatization as manually validated",
+      "config": "hu_elexis",
+      "credits": {
+        "download": "elexis",
+        "line": "Hungarian",
+        "member": "elexis-wsd-2.0/00README.txt"
+      },
+      "files": [
+        {
+          "download": "elexis",
+          "member": "elexis-wsd-2.0/corpora/elexis-wsd-hu_corpus.conllu",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic with corrections",
+      "parser": "rows",
+      "treebank": "X_Hungarian-ELEXIS"
+    },
+    {
+      "basis": "00README.txt marks lemmatization as manually validated",
+      "config": "it_elexis",
+      "credits": {
+        "download": "elexis",
+        "line": "Italian",
+        "member": "elexis-wsd-2.0/00README.txt"
+      },
+      "files": [
+        {
+          "download": "elexis",
+          "member": "elexis-wsd-2.0/corpora/elexis-wsd-it_corpus.conllu",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic with corrections",
+      "parser": "rows",
+      "treebank": "X_Italian-ELEXIS"
+    },
+    {
+      "basis": "00README.txt marks lemmatization as manually validated",
+      "config": "ka_elexis",
+      "credits": {
+        "download": "elexis",
+        "line": "Georgian",
+        "member": "elexis-wsd-2.0/00README.txt"
+      },
+      "files": [
+        {
+          "download": "elexis",
+          "member": "elexis-wsd-2.0/corpora/elexis-wsd-ka_corpus.conllu",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic with corrections",
+      "parser": "rows",
+      "treebank": "X_Georgian-ELEXIS"
+    },
+    {
+      "basis": "00README.txt marks lemmatization as manually validated",
+      "config": "nl_elexis",
+      "credits": {
+        "download": "elexis",
+        "line": "Dutch",
+        "member": "elexis-wsd-2.0/00README.txt"
+      },
+      "files": [
+        {
+          "download": "elexis",
+          "member": "elexis-wsd-2.0/corpora/elexis-wsd-nl_corpus.conllu",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic with corrections",
+      "parser": "rows",
+      "treebank": "X_Dutch-ELEXIS"
+    },
+    {
+      "basis": "00README.txt marks lemmatization as manually validated",
+      "config": "pt_elexis",
+      "credits": {
+        "download": "elexis",
+        "line": "Portuguese",
+        "member": "elexis-wsd-2.0/00README.txt"
+      },
+      "files": [
+        {
+          "download": "elexis",
+          "member": "elexis-wsd-2.0/corpora/elexis-wsd-pt_corpus.conllu",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic with corrections",
+      "parser": "rows",
+      "treebank": "X_Portuguese-ELEXIS"
+    },
+    {
+      "basis": "00README.txt marks lemmatization as manually validated",
+      "config": "ro_elexis",
+      "credits": {
+        "download": "elexis",
+        "line": "Romanian",
+        "member": "elexis-wsd-2.0/00README.txt"
+      },
+      "files": [
+        {
+          "download": "elexis",
+          "member": "elexis-wsd-2.0/corpora/elexis-wsd-ro_corpus.conllu",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic with corrections",
+      "parser": "rows",
+      "treebank": "X_Romanian-ELEXIS"
+    },
+    {
+      "basis": "00README.txt marks lemmatization as manually validated",
+      "config": "sl_elexis",
+      "credits": {
+        "download": "elexis",
+        "line": "Slovene",
+        "member": "elexis-wsd-2.0/00README.txt"
+      },
+      "files": [
+        {
+          "download": "elexis",
+          "member": "elexis-wsd-2.0/corpora/elexis-wsd-sl_corpus.conllu",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic with corrections",
+      "parser": "rows",
+      "treebank": "X_Slovenian-ELEXIS"
+    },
+    {
+      "basis": "00README.txt marks lemmatization as manually validated",
+      "config": "sr_elexis",
+      "credits": {
+        "download": "elexis",
+        "line": "Serbian",
+        "member": "elexis-wsd-2.0/00README.txt"
+      },
+      "files": [
+        {
+          "download": "elexis",
+          "member": "elexis-wsd-2.0/corpora/elexis-wsd-sr_corpus.conllu",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic with corrections",
+      "parser": "rows",
+      "treebank": "X_Serbian-ELEXIS"
+    },
+    {
+      "basis": "documents whose contained_in_datasets never names hr_set-ud",
+      "config": "hr_hr500k",
+      "contributors": "Ljubešić, Nikola; Agić, Željko; Klubička, Filip; Batanović, Vuk; Erjavec, Tomaž",
+      "drop_documents_in": "hr_set-ud-",
+      "files": [
+        {
+          "download": "hr500k",
+          "part": "test"
+        }
+      ],
+      "lemmas": "manual native",
+      "parser": "rows",
+      "treebank": "X_Croatian-hr500k"
+    },
+    {
+      "basis": "ELTE-DH gold standard: emtsv output with manual correction",
+      "config": "hu_eltedh",
+      "files": [
+        {
+          "download": "eltedh-blog",
+          "part": "blog"
+        },
+        {
+          "download": "eltedh-cult",
+          "part": "cult"
+        },
+        {
+          "download": "eltedh-leg",
+          "part": "leg"
+        },
+        {
+          "download": "eltedh-lit",
+          "part": "lit"
+        }
+      ],
+      "lemmas": "automatic with corrections",
+      "parser": "rows",
+      "treebank": "X_Hungarian-ELTEDH"
+    },
+    {
+      "basis": "README documents no manual check of lemmas",
+      "config": "kk_kazdet",
+      "contributors": "Makazhanov, Aibek",
+      "files": [
+        {
+          "download": "kazdet",
+          "part": "test"
+        }
+      ],
+      "lemmas": "automatic",
+      "parser": "rows",
+      "treebank": "X_Kazakh-KazDet",
+      "unpack": "7z"
+    },
+    {
+      "basis": "test set lemmatized by linguists (Afrin et al., 2023)",
+      "config": "bn_banlemma",
+      "files": [
+        {
+          "download": "banlemma",
+          "part": "test"
+        }
+      ],
+      "lemmas": "manual native",
+      "parser": "banlemma",
+      "treebank": "X_Bengali-BanLemma"
+    },
+    {
+      "basis": "TOROT texts absent from UD_Old_Church_Slavonic-PROIEL",
+      "config": "cu_torot",
+      "contributors": "Eckhoff, Hanne Martine; Berdičevskis, Aleksandrs",
+      "files": [
+        {
+          "download": "torot-vit-const",
+          "part": "vitconst"
+        },
+        {
+          "download": "torot-vit-meth",
+          "part": "vitmeth"
+        },
+        {
+          "download": "torot-chrabr",
+          "part": "chrabr"
+        },
+        {
+          "download": "torot-euch",
+          "part": "euch"
+        }
+      ],
+      "lemmas": "manual native",
+      "parser": "rows",
+      "treebank": "X_Old_Church_Slavonic-TOROT"
+    },
+    {
+      "basis": "RESTAURE annotated corpus; the screen removes documents shared with UD_Occitan-TTB",
+      "config": "oc_restaure",
+      "contributors": "Bras, Myriam; Vergez-Couret, Marianne",
+      "files": [
+        {
+          "download": "restaure",
+          "members": "CorpusRestaureOccitan/*.csv",
+          "part": "test"
+        }
+      ],
+      "lemmas": "manual native",
+      "parser": "rows",
+      "treebank": "X_Occitan-RESTAURE"
+    }
+  ],
+  "downloads": {
+    "banlemma": {
+      "bytes": 501288,
+      "sha256": "06fd9076fd264f50be5a8eac029d73c48f99ddfe06c339ee3b3a81a98c39c687",
+      "url": "https://raw.githubusercontent.com/eblict-gigatech/BanLemma/main/data/test-dataset/gt-test-data.tsv"
+    },
+    "elexis": {
+      "bytes": 14760949,
+      "sha256": "fe3c76a82c7a4699a98246140710f9b79af74e22a66d4e3d9ab4b55590ff5be1",
+      "url": "https://www.clarin.si/repository/xmlui/bitstream/handle/11356/2101/elexis-wsd-2.0.zip"
+    },
+    "eltedh-blog": {
+      "bytes": 10757138,
+      "sha256": "02ee3ab898ff7b5a7fcef272aba51c4ec23c50bf46f6e3260b4aa68fc4b4c21f",
+      "url": "https://raw.githubusercontent.com/ELTE-DH/gold-standard/main/corpus/conllu/blog.conllu"
+    },
+    "eltedh-cult": {
+      "bytes": 11616049,
+      "sha256": "b1220f0afd97c9874bef7cbd090dc222e3bc1bbcab362f642b70b6aded6e6fc9",
+      "url": "https://raw.githubusercontent.com/ELTE-DH/gold-standard/main/corpus/conllu/cult.conllu"
+    },
+    "eltedh-leg": {
+      "bytes": 10356330,
+      "sha256": "0199275ad22cf5085bce7badaa4eb5f119a24046019794ebf2b41bc02201f61a",
+      "url": "https://raw.githubusercontent.com/ELTE-DH/gold-standard/main/corpus/conllu/leg.conllu"
+    },
+    "eltedh-lit": {
+      "bytes": 4459280,
+      "sha256": "8a11b9dfbe9bf36b8e0e0bf5341a812336070c7b07438dc5e2e0db3744dbd235",
+      "url": "https://raw.githubusercontent.com/ELTE-DH/gold-standard/main/corpus/conllu/lit.conllu"
+    },
+    "hr500k": {
+      "bytes": 43175269,
+      "sha256": "e6c2bd1911a42667d3fede635e3b285da799867619688678ac81d1c9f74b9242",
+      "url": "https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1792/hr500k.conllup"
+    },
+    "kazdet": {
+      "bytes": 5126145,
+      "sha256": "ed76638b62ff94d08c5893da069baf2b1c3c23b03ceda3a3f221dda0de344487",
+      "url": "https://raw.githubusercontent.com/nlacslab/kazdet/master/data/kdt-NLANU-0.01.connlu.txt.7z"
+    },
+    "mte1984": {
+      "bytes": 14800805,
+      "sha256": "c07ff3cd305b46c116d87820c6b83b117b690c2b5341332a873232907c39b1b5",
+      "url": "https://www.clarin.si/repository/xmlui/bitstream/handle/11356/1043/MTE1984-ana.zip"
+    },
+    "restaure": {
+      "bytes": 89118,
+      "sha256": "574d8bd184846dd1d61cae2541258f6dcca13dbf56c7b4a4e96b4841310ec219",
+      "url": "https://zenodo.org/records/1182949/files/CorpusRestaureOccitan.zip?download=1"
+    },
+    "torot-chrabr": {
+      "bytes": 51288,
+      "sha256": "46664472de896406273731a14303a35f8a2410d5656780e477d848f2113b504c",
+      "url": "https://raw.githubusercontent.com/syntacticus/syntacticus-treebank-data/main/torot/chrabr.conll"
+    },
+    "torot-euch": {
+      "bytes": 41841,
+      "sha256": "6d0f5e4d9cae5131368049b4f2db781bcaf34f29505e13ca368dde857a8a49f0",
+      "url": "https://raw.githubusercontent.com/syntacticus/syntacticus-treebank-data/main/torot/euch.conll"
+    },
+    "torot-vit-const": {
+      "bytes": 517502,
+      "sha256": "b0b1f34348a54515768415b4a1f01455368dfba7371ed4423d37d3deb101efb3",
+      "url": "https://raw.githubusercontent.com/syntacticus/syntacticus-treebank-data/main/torot/vit-const.conll"
+    },
+    "torot-vit-meth": {
+      "bytes": 183637,
+      "sha256": "e73ef45a28fe2208b97fa46bcf7345de3592700dea085c5ef89d500c6ff2bf7f",
+      "url": "https://raw.githubusercontent.com/syntacticus/syntacticus-treebank-data/main/torot/vit-meth.conll"
+    }
+  }
+}

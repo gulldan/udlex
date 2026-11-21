@@ -1,0 +1,756 @@
+\documentclass[11pt]{article}
+\usepackage[review]{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{inconsolata}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{supertabular}
+\usepackage{float}
+
+\title{Which Dictionary Should a Multilingual Lemmatizer Trust?\\
+Source Priority and Rule Fallback in Multilingual Lemmatization}
+\author{Anonymous submission}
+
+\input{catalog-metrics}
+\input{transfer-metrics}
+\input{analysis-metrics}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+When morphological dictionaries disagree on a word, the first matching
+source determines which lemma a lookup system can return. We give an exact
+algorithm for learning source order and test its effect after corpus lookup
+and suffix rules have been fitted from scratch. Among 172 catalog languages,
+87 have multiple lexical sources. On 1,870,881 held-out Universal Dependencies
+2.19 tokens from 66 languages, optimizing a permutation of the same sources
+raises mean language accuracy from 93.620\% to 93.661\%. Only 3,738 predictions
+change, yielding 1,746 corrections and 1,541 regressions. Confirming the order
+on development data before adopting it yields 560 additional correct answers,
+and only this policy keeps a significant gain when languages are the
+sampling unit. A two-fold evaluation covers 20 more languages, where
+the mean language gain and the pooled-token effect have opposite signs. In a
+second paired test of freshly built single-resource dictionaries, suffix rules
+change mean language accuracy by $\catRule$ points. Finally we freeze every
+fit and replace the test set with \trOffN{} words from other corpora of
+\trOffLang{} languages, some outside UD. The learned order changes mean
+language accuracy there by $\trOffMacro$ points and the confirmed order by
+$\trOffGate$. The sign of a language's effect usually persists, but a spoken
+corpus reverses one confirmed gain.
+
+\end{abstract}
+
+\section{Introduction}
+
+The Finnish word \emph{kirjakauppa} means \emph{bookshop}. A dictionary can
+give \emph{kirjakauppa} as its headword, while the Finnish Turku Dependency
+Treebank writes the lemma as \emph{kirja\#kauppa}, marking the compound
+boundary. For exact-match evaluation, the boundary is part of the answer.
+Finding an entry for a word therefore solves only half the problem. A
+lemmatizer that draws on several resources must also decide whose analysis to
+use. This decision recurs for capitalization, spelling variants and forms
+shared by different lexemes. Two resources can both be internally consistent
+and still disagree on the string a particular corpus expects.
+
+External dictionaries are already useful for lemmatization.
+\citet{bergmanis-goldwater-2019-data} use inflection tables to construct
+training examples, and \citet{milintsevich-sirts-2021-enhancing} supply
+analyses to a neural decoder at inference. We study a common implementation
+choice with a different consequence for inference. Several sources are
+compiled into a single table and the first source containing a form owns the
+entry. Moving a source earlier changes every disputed form on which it takes
+precedence over a different answer. Giving it lower priority preserves its
+unique entries, which may still help on previously unseen words. Excluding it
+also changes what happens on those unique entries. Accuracy measured
+separately for each dictionary cannot tell us which action to take.
+
+We study two decisions. When several dictionaries cover a word, an exact
+subset dynamic program can choose their order, and optionally their membership,
+by the number of training tokens they resolve correctly. We test that order after
+the entire inference cascade has been fitted on UD 2.19 \citep{ud219}.
+The declared and learned permutations contain the same lexical entries.
+We run both on the same sentences and trace which predictions a change of order
+can reach. This distinguishes a better conflict decision from broader coverage.
+
+When every lookup misses, a suffix edit can replace the original spelling.
+We measure that intervention separately by rebuilding all 172 single-resource
+dictionaries and switching the new rules off and on with all lookups fixed.
+A dictionary can itself be derived from a UD test split. For this comparison
+we trace its input files and remove overlapping text before counting an answer.
+
+The order experiment finds a small positive mean effect on the official splits.
+In Hungarian, the learned order produces 217 corrections and 56 regressions.
+In Welsh it produces 86 corrections and 126 regressions. For 29 of the 66
+languages the number correct is unchanged. These outcomes motivate a further
+question. Does a priority learned under one treebank's lemma conventions
+improve predictions on independently collected documents of the same language?
+We test this with every fit frozen, on \trGoldCorpora{} further corpora
+screened against the anchor treebanks. The sign of the effect persists in
+\trSameSign{} of the \trBothSign{} languages where it is nonzero in both settings.
+
+\section{Related work}
+
+\paragraph{How lemmatizers use lexical evidence.}
+LemmaGen induces ripple-down rules from form--lemma examples and uses them
+to analyze new forms \citep{jursic-etal-2010-lemmagen}. Lemming jointly
+infers morphological tags and lemmas \citep{muller-etal-2015-joint}.
+Lematus evaluates the value of character-level sentence context on unseen and
+ambiguous forms \citep{bergmanis-goldwater-2018-context}. An external resource
+can enter such a model in at least two places. Paradigm entries can augment
+training data when labeled sentences are scarce
+\citep{bergmanis-goldwater-2019-data}. Alternatively, a decoder can learn
+to copy characters from available candidate lemmas.
+\citet{milintsevich-sirts-2021-enhancing} evaluate that strategy with
+Apertium on 23 UD languages. Our predictor can decide at build time which
+candidate will survive a conflict. It thus permits a direct comparison of
+resource priorities with the lexical inputs held fixed.
+
+\paragraph{Ordered decisions.}
+First-match prediction has a long history. \citet{yarowsky-1994-decision}
+ranks contextual evidence for lexical ambiguity resolution, and
+\citet{angelino-etal-2018-rulelists} optimize regularized lists of rules for
+categorical prediction. Our unit of selection is an entire dictionary. Its
+condition is membership of the input form, and its answer varies with that
+form. Once a prefix of dictionaries has claimed a set of forms, later
+decisions can affect only the complement. We use this property to score all
+orders and stopping points implicitly. Corpus frequencies, disagreement
+between sources and the copy fallback determine which orders tie and whether
+dropping a source can improve the objective.
+
+\paragraph{Evaluation across languages and corpora.}
+UD makes it possible to compare lemmatizers across treebanks with a common
+representation \citep{nivre-etal-2020-universal}. Systems such as UDPipe and
+Stanza also use sentence-level analyses
+\citep{straka-strakova-2017-tokenizing,qi-etal-2020-stanza}. Their scores
+quantify the cost or benefit of the whole modeling choice, including training
+materials and context. \citet{toporkov-etal-2025-lemma} study how encoders and
+in-context generation perform when supervised data is unavailable for the
+target domain or language. Our transfer question concerns one learned quantity
+within a fixed system, the priority assigned to sources. Fresh target corpora
+and a fixed-order control let us distinguish transferable lexical
+evidence from adaptation to one treebank's editorial practice.
+
+\section{Choosing an order of dictionaries}
+\label{sec:method}
+
+\subsection{Where a source can change a prediction}
+
+The system takes pretokenized words and a language identifier. For an ordinary
+token it tries corpus-derived form--lemma pairs, first by exact spelling and
+then by language-aware lowercase spelling. An unresolved form can proceed
+to the merged external vocabulary. If lookup fails, the system can apply a
+learned suffix edit and ultimately return the original form. The available
+stages depend on the language configuration. The catalog evaluation uses
+ordinary tokens. The library also has paths for supplied contextual cues
+and for entity mentions, which answer different questions.
+
+The multi-source research configuration includes national dictionaries, analyses derived from
+morphological tools, UniMorph paradigms \citep{kirov-etal-2018-unimorph}
+and inflection tables extracted from Wiktionary
+\citep{ylonen-2022-wiktextract}. Each source first yields a partial mapping
+from an NFC-normalized surface form to one lemma. When an input resource
+provides several analyses, the builder ranks them by the frequency of the
+pair within that resource, followed by overall lemma frequency, shorter lemma
+and source row order to break ties. This source-local decision is important
+for reproducibility. Adding entries to another dictionary cannot break a tie
+inside the first one.
+
+In that configuration the declared source policy supplies a reference order before learning.
+Its ordinary precedence starts with national dictionaries or Apertium,
+followed by registered imports, UniMorph and Wiktionary, subject to declared
+priorities. At build time the first source containing a form supplies the
+value stored for that form. At query time the system looks up a single
+compiled vocabulary. Consequently, the search over possible orders is an
+offline cost. It does not require an extra model call or a traversal of the
+source inventory for each input token.
+
+\subsection{The training objective}
+
+Let \(D_j(x)\) be the lemma that dictionary \(j\) gives form \(x\), and
+\(C_j\) the set of forms it covers. Let \(c(x,y)\) count annotated training
+tokens with form \(x\) and lemma \(y\). This count preserves distinct gold
+lemmas for an ambiguous form and the frequency of each reading. For an ordered
+subset \(\pi\), the prediction \(f_\pi(x)\) is the value of the first selected
+dictionary covering \(x\), or \(x\) if no selected dictionary covers it.
+We maximize the number of correctly lemmatized training tokens,
+\begin{equation}
+  Q(\pi) = \sum_x c\bigl(x,f_\pi(x)\bigr).
+  \label{eq:objective}
+\end{equation}
+A dictionary that only reproduces forms already handled by copying can change
+coverage without changing this objective. A source that rewrites them
+incorrectly can reduce it.
+
+For a set \(S\) of sources already placed, write
+\(U(S)=\bigcup_{i\in S}C_i\). Appending source \(j\) changes the score
+relative to copying on the previously unclaimed part of its domain.
+\begin{equation}
+  g(j,S)=\sum_{x\in C_j\setminus U(S)}
+     \bigl[c(x,D_j(x))-c(x,x)\bigr].
+  \label{eq:gain}
+\end{equation}
+The prefix order determines which answers were stored for forms in
+\(U(S)\). Its membership alone determines which forms remain available to
+\(j\). Hence the best cumulative gain \(F\) for each subset obeys
+\begin{align}
+  F(\emptyset)&=0, \nonumber\\
+  F(S)&=\max_{j\in S}
+     \{F(S\setminus\{j\})+g(j,S\setminus\{j\})\}.
+  \label{eq:recurrence}
+\end{align}
+Removing the last dictionary of an optimal order leaves a prefix on the
+smaller set. Replacing that prefix with a higher-scoring order would leave
+the last gain unchanged and improve the total. This gives optimal
+substructure. Taking the best state over \emph{all} subsets makes the
+stopping point a property of the objective. The empty set represents
+copying every word. There are \(2^n\) states and \(n2^{n-1}\) append transitions for
+\(n\geq1\). We precompute gains by coverage mask. For pure reordering we
+read the optimum at the full set. At equal training accuracy we minimize
+inversions from declared priority, then compare the lists of declared indices
+lexicographically. If the declared order already attains the training
+optimum, this tie-break preserves it. For the alternative subset experiment we prefer a
+shorter list at equal optimum score.
+
+This formulation explains why a large, individually accurate resource need
+not go first. If a smaller dictionary covers disputed forms more accurately,
+placing it first preserves the larger dictionary's unique entries. A
+standalone score gives the larger resource credit for those unique entries
+under either order. Equation~\ref{eq:gain} counts only the entries whose
+predictions the particular decision can change.
+
+\subsection{Deciding whether to adopt the fitted order}
+
+We evaluate the learned permutation both unconditionally and after a
+development check. The latter compares the declared and learned permutations
+through the same full cascade on development tokens. Let \(w\) count newly
+correct predictions and \(l\) newly incorrect ones, for \(N_{\rm dev}\)
+scorable words. We adopt the candidate if
+\(w-l\geq\max(5,\lceil N_{\rm dev}/10{,}000\rceil)\) and the two-sided exact
+binomial form of McNemar's test on \(w+l\) discordant outcomes gives
+\(p\leq0.05\). A language with no development evidence keeps its declared
+order. Repeated tokens are correlated, so we use this threshold as a
+selection rule. Its value is assessed on test data.
+
+An archived engineering analysis used a related rule for candidates that
+could also exclude sources. It confirmed 15 changes among 98 languages with
+training evidence, including nine exclusions. Some of its development sets
+were partitions of an earlier UD test split. The present experiment refits
+every policy and corpus component from the declared inputs. No archived
+acceptance selects a language or an order for the new comparison.
+
+\subsection{How much can a priority change?}
+
+Consider two policies run on the same \(N\) scorable tokens. Let \(D\) be
+the positions at which they predict different lemma strings. At some of those
+positions both strings may be wrong. Let \(w\) and \(l\) again count
+corrections and regressions. For nonempty \(D\), the overall accuracy difference
+can be written as
+\begin{equation}
+  \Delta_{\rm all}
+  = \frac{|D|}{N}\,\frac{w-l}{|D|}.
+  \label{eq:exposure}
+\end{equation}
+If the policies always predict the same lemma, their difference is zero.
+Equation~\ref{eq:exposure} gives two ways for a promising lexical decision
+to have a small effect on the full test. Few predictions may change, or the
+changes may correct almost as many words as they spoil. Counting only
+corrections discards the second possibility. Reporting accuracy only on
+disputed words discards the first.
+
+For pure reordering of fixed tables, dictionary membership is invariant.
+An exact key claimed by a single source retains its answer in every order,
+as does a key on which all sources agree. With earlier corpus lookups held
+fixed, the potential effect is therefore confined to tokens that reach a
+disputed key, including a lowercase key when exact lookup misses. Excluding
+a source changes the interpretation. A word unique to that source can now
+fall through to a suffix edit or to copying. This yields a concrete reason
+to record both the stage reached and the prediction returned in a
+controlled test of the complete system.
+
+\section{Data and evaluation}
+\label{sec:data}
+
+\paragraph{Multiple external dictionaries.}
+We enumerate all 172 languages in the 1.0.0 catalog and resolve source
+aliases before counting distinct registered dictionaries. Eighty-seven have
+at least two eligible sources. We verify each source table by digest
+and exclude imports marked as test-derived or otherwise ineligible.
+Section~\ref{sec:transfer} adds a coverage screen for undeclared derivation.
+The inventory includes dictionaries, inflection paradigms and normalized
+tables from other lemmatizers. Eighty-five languages have fewer than two
+sources and cannot identify an effect of their relative priority.
+
+We use one anchor treebank per multi-source language. Among UD 2.19 treebanks
+with a usable train and test pair, we prefer the project's previously recorded
+anchor, then the largest training file. Within that treebank, earlier splits
+take precedence when document IDs, sentence IDs, or NFC-normalized,
+case-folded word sequences repeat. A syntactic word with an observable form
+and a scorable lemma contributes one case-sensitive exact-match observation.
+Known annotation placeholders are masked. Tokens outside the score retain their
+sentence positions. Neither gold tags nor target lemmas enter prediction.
+
+For each fit we read the original external tables, induce corpus lookups and
+suffix edits from the current training split, and optimize the order using
+training labels alone. Both permutations share these lookups, rules, external
+membership, language-specific casing and zero confidence thresholds. The fixed
+full cascade enables ordinary-token lexical lookup and suffix guessing for
+every language. We score each policy on the same token positions with user
+overrides disabled. Alongside the two full permutations we evaluate the
+best single dictionary, a greedy ordered subset, the exact ordered subset,
+and the development-confirmed full permutation.
+
+\paragraph{Languages without an official pair.}
+For each remaining language we pool the anchor's labeled sentences and
+deduplicate normalized word sequences before making two folds. Whole
+documents, or sentences where document boundaries are unavailable, are
+assigned by descending size to the smaller fold with a deterministic tie
+break. Each token is scored once by systems fitted on the opposite fold.
+No development gate is fitted here. The Telugu anchor supplies no scorable
+lemma. The two cohorts therefore cover 86 of the 87 multi-source languages.
+
+\paragraph{Dictionary and rule ablation.}
+A separate experiment rebuilds the single-resource package for every catalog
+entry with the same engine. One hundred dictionaries take their designated
+treebank from UD 2.19. The Turkmen treebank is absent from that distribution,
+so its input stays at its recorded revision. The other 71 use pinned lexical
+resources. We rebuild lookup tables and suffix rules from token observations
+or lexical pairs. Spanish Sign Language supplies attested ID-gloss spellings
+only and retains identity lookup. No previous fitted rule is loaded.
+For UD sources we prefer train, then dev, then test. Some languages have
+only a publicly available test file. Its words can contribute to building
+a usable dictionary, but that file is then ineligible for evaluation.
+
+For the ablation we screen the \catAvailable{} official test files.
+We exclude a dictionary's own input files, shared document or sentence
+identifiers within a treebank, and repeated normalized sentences across
+the language's resources and test sets. Case-sensitive exact match is
+measured on the remaining words with visible forms and lemmas. Each
+receives three predictions on its original sentence. We evaluate surface copying,
+the new single-resource package, and that same package with rules disabled.
+This experiment measures suffix fallback under single-resource training.
+Its absolute accuracy and the multi-source system's accuracy have different
+training inputs and evaluation populations.
+
+\paragraph{Uncertainty.}
+We report the unweighted mean of language accuracies and the pooled fraction
+of correct tokens. For a paired percentage-point change we resample documents
+within each fixed treebank, using sentences when document boundaries are
+absent. Percentile intervals use 2,000 paired replicates and seed 20261118
+\citep{berg-kirkpatrick-etal-2012-empirical,dror-etal-2018-hitchhikers}. The
+cross-validation summary is descriptive
+because training data are shared across the two fitted models. These
+intervals condition on the languages. To treat languages as the sample we
+add an exact two-sided sign test on the languages that gain or lose correct
+answers, and a percentile interval from 10,000 resamples of languages.
+
+\section{Results}
+\label{sec:results}
+
+\subsection{What changes when the same dictionaries are reordered?}
+
+\begin{table}[t]
+\centering\small
+\input{order-table}
+\caption{Official UD 2.19 train/test splits. Each policy is scored on the
+same 1,870,881 words in 66 languages. Accuracies are percentages and
+$\Delta$ is the paired difference from declared order in percentage points.}
+\label{tab:order}
+\end{table}
+
+The optimizer changes source priority for 46 of the 66 languages
+(Table~\ref{tab:order}). Only 38 produce different test strings.
+Macro accuracy rises by 0.041 percentage points (paired 95\% interval
+0.018 to 0.062). Pooled accuracy rises by 0.011 points. Twenty-one languages
+gain correct predictions, 29 tie, and 16 lose them. Thus a positive average
+coexists with losses in a substantial part of the cohort. With languages as
+the sampling unit the gain is not established. The sign test gives
+\(p=\anSignP\), and resampling languages gives an interval from
+\(\anLangLo\) to \(\anLangHi\) points.
+
+The declared cascade reaches external lookup on 126,629 words. Reordering
+changes 3,738 answers, or 0.20\% of all test words. It corrects 1,746,
+spoils 1,541, and changes the predicted string on 451 words for which both
+answers are wrong. In Turkish, for example, the declared order gives
+\emph{i\c{s}lem} for \emph{i\c{s}lemcisinin}, while the learned order gives the
+annotated \emph{i\c{s}lemci}. Of 9,904 Turkish test words, the change corrects
+105 and spoils 31. Hungarian gains 1.54 points on 10,432 words. Albanian
+loses two correct answers on only 371 words, a drop of 0.54 points.
+The paired counts give the scale behind each language percentage.
+
+\paragraph{Crossing order with suffix fallback.}
+We repeated the fits with suffix guessing disabled at prediction time,
+using identical training and test partitions. On the official test, the
+declared and learned orders then score 92.712\% and 92.753\% macro,
+respectively. Enabling the freshly fitted rules adds 0.908 macro points
+and 8,521 correct words under either order. Reordering yields the same
+1,746 corrections and 1,541 regressions at both rule settings. Both full
+permutations contain the same sources, so they pass the same words through
+to the suffix stage. The two-by-two comparison measures both effects on
+one population.
+
+\paragraph{Headroom.}
+On \anDisputed{} of the externally answered words, sources that hold the
+looked-up key give different lemmas. The declared order answers
+\anDisputedDeclared{} of them correctly. An oracle that chose, word by word,
+a source with the annotated lemma whenever one exists would answer
+\anOracle. The learned order answers \anDisputedLearned, which closes
+\anRealized\% of that gap of \anGap{} words. A permutation fixes one
+priority for every word of a language, and the gap bounds what a choice
+made per word could add.
+
+\begin{table}[t]
+\centering\small
+\input{kinds-table}
+\caption{Corrections / regressions of the learned order by how the two
+answers differ, for official fits. Case and diacritics: equal after case
+folding or after also removing combining marks. Word itself: one answer is
+the word form. Nested: one answer is a prefix of the other. Different
+ending: a shared prefix of at least three characters and half of the longer
+answer.}
+\label{tab:kinds}
+\end{table}
+
+\paragraph{Kinds of change.}
+Table~\ref{tab:kinds} sorts each decisive change by a property of the two
+answer strings. On the anchor tests the learned order gains where the
+answers differ only in case (\anCaseCorr{} corrections, \anCaseReg{}
+regressions) or where one is a prefix of the other (\anNestedCorr{} and
+\anNestedReg). It loses where they differ in their ending (\anEndingCorr{}
+and \anEndingReg) and in the residual class (\anOtherCorr{} and
+\anOtherReg). The classes are computed from strings and say nothing about
+which lexeme an annotator would choose.
+
+\paragraph{Selection and source removal.}
+The development rule accepts a new permutation for 13 languages. On held-out
+words this policy produces 812 corrections and 252 regressions, a net gain
+of 560. Its macro gain is 0.056 points (95\% interval 0.049 to 0.066).
+Twelve languages gain correct answers and 54 tie. Here the sign test gives
+\(p=\anGateSignP\) and the language-resampled interval runs from
+\(\anGateLangLo\) to \(\anGateLangHi\). The rule is not finely tuned.
+With \(\alpha\) between 0.01 and 1, with or without the minimum net gain,
+it accepts \anGridAcceptMin{} to \anGridAcceptMax{} languages and the macro
+gain stays between \(\anGridMacroMin\) and \(\anGridMacroMax\)
+(Appendix~\ref{app:gate}). The provenance screen of
+Section~\ref{sec:transfer} flags sources for Ancient Greek and Slovenian.
+Without these two languages the learned order changes macro accuracy by
+\(\anCleanMacro\) (\(\anCleanLo\) to \(\anCleanHi\)) and the confirmed
+order by \(\anCleanGate\). Selecting only one
+dictionary costs 0.238 macro points. Allowing the exact training optimum
+to omit dictionaries also costs 0.065 points on test. A higher objective
+on observed training forms can sacrifice coverage or expose suffix decisions
+on unseen forms.
+
+\paragraph{Out-of-fold results.}
+The other 20 evaluated languages contribute 378,942 words. Learned order
+raises mean language accuracy from 84.963\% to 85.452\%, yet pooled accuracy
+falls from 78.126\% to 78.036\% (910 corrections, 1,249 regressions).
+Macedonian gains 66 correct words on 1,343. Bulgarian loses 508 on
+154,888. Across all 86 languages and 2,249,823 tokens the descriptive
+macro change is \(+0.145\) points and the pooled change is \(-0.006\).
+These weighting schemes answer different questions about the same predictions.
+The earlier matched run on UD 2.18 \citep{ud218} gave an official-split macro change of
+\(+0.041\) points on 1,867,858 words. Substantial source overlap makes
+these release-level estimates dependent.
+
+\subsection{What do the newly learned suffix rules contribute?}
+
+\begin{table}[t]
+\centering\small
+\input{accuracy}
+\caption{Fresh single-resource packages on the screened UD 2.19 tests.
+Each row uses the same test tokens for all three columns. Resource strata
+contain \catUd{} scored UD-derived and \catExt{} external-resource languages.}
+\label{tab:accuracy}
+\end{table}
+
+After removing \catOmitted{} source test files and screening shared
+material, \catFiles{} test treebanks retain \catN{} words in \catLang{}
+languages (Table~\ref{tab:accuracy}). Across languages, copying scores
+\catCopy\%, the rebuilt package with rules disabled scores \catOff\%, and
+the full package scores \catFull\%. Enabling the freshly trained suffix
+stage changes the mean by $\catRule$ points (95\% interval $\catLo$ to
+$\catHi$) and pooled accuracy by $\catPooled$ points. It corrects
+\catCorr{} words and spoils \catReg{}. The number correct rises for
+\catWins{} languages, stays equal for \catTies{}, and falls for \catLosses{}.
+The appendix accounts for all 172 packages, including languages for which
+we could fit a dictionary but could not score it independently.
+
+For UD-derived packages the macro rule effect is $\udRule$ points. For
+packages built from external lexical resources it is $\extRule$ points.
+Paradigms list possible inflections, whereas a corpus reflects how often
+each form occurs in running text. The assignment of resources to languages
+and the availability of test material both vary, so the two strata alone
+cannot establish the effect of changing the type of training data.
+
+\subsection{When a dictionary supplies the wrong kind of answer}
+
+Finnish compounds illustrate a limit on what reordering can fix. If every
+source proposes an unsegmented headword, no order can produce an annotated
+compound boundary. An earlier development audit found that errors differing
+only in the marker accounted for 3.93 percentage points of scorable Finnish
+TDT tokens, 2.18 in Estonian EDT and 1.72 in Dutch LassySmall. On Finnish
+development data, a separately fitted compound adapter corrected 400 tokens
+and introduced 21 regressions. It changes lexical entries themselves. The
+paired order experiment freezes entry contents, so its measured effect
+cannot include such repairs.
+
+\section{Does a learned policy travel?}
+\label{sec:transfer}
+
+\emph{With the dictionaries, corpus tables and rules frozen, does a priority
+learned on one treebank improve lemmatization on independently collected
+documents of the same language?} We fixed the protocol before computing any
+outcome on another UD treebank. Corpora outside UD were added afterwards
+under the same rules.
+
+\begin{table*}[t]
+\centering\small\setlength{\tabcolsep}{3pt}
+\input{transfer-table}
+\caption{Frozen declared and learned orders on corpora outside the anchor
+treebank. The first row repeats the anchor test splits for the languages
+with official fits. Declared is mean language accuracy. $\Delta$ is the
+paired change in percentage points. Confirmed applies the learned order only
+where anchor development data had accepted it. The last two rows are
+excluded from all rows above them.}
+\label{tab:transfer}
+\end{table*}
+
+\paragraph{Frozen systems and new corpora.}
+For a language with an official pair we rerun the UD 2.19 fit on its
+unchanged train and development inputs. A run is rejected unless it
+reproduces the released order, training score and development counts. For a
+two-fold language we fit once on its whole deduplicated anchor. Only the
+test set is replaced. Candidates are all other UD 2.19 treebanks with the same
+language code and \trOutsideCandidates{} corpora outside UD. These include the MULTEXT-East
+translations of \emph{1984} \citep{mte1984,erjavec-2012-multext}, the
+ELEXIS-WSD sentences \citep{elexis-wsd,martelli-etal-2021-elexis}, hr500k
+documents absent from the Croatian anchor
+\citep{hr500k,ljubesic-etal-2018-hr500k}, and five smaller resources
+(Appendix~\ref{app:transfer}).
+All splits of a candidate are pooled, since none entered a fit. A corpus
+counts as gold when its documentation states that lemmas were assigned or
+corrected by hand. Corpora with automatic lemmas are scored separately.
+
+\paragraph{Screens.}
+We compare each candidate with every sentence of all anchor splits. A
+sentence is removed if its case-folded word sequence occurs in the anchor,
+or if a 32-character window of its alphanumeric text does. A document is
+removed when a tenth of its sentences are flagged. A corpus with a tenth of
+its sentences flagged shares a collection with the anchor and is reported
+separately. Of \trSentRead{} candidate sentences, \trExact{} match an anchor
+sentence and \trNear{} share a window. For example, \trParTUTExact{} of the
+\trParTUTRead{} Italian ParTUT sentences are in the Italian anchor, and
+every Slovenian ELEXIS-WSD sentence is in the Slovenian anchor.
+
+A second screen asks whether a lexical source was derived from an evaluation
+corpus. For every source and every evaluation split, including the anchor
+development and test splits and both folds, it counts the word types absent
+from training that the source covers. A general lexicon rarely covers
+nearly all of them, or most of those that contain digits or symbols. One
+Hausa dictionary covers every such type in three Hausa treebanks. A lookup
+table for Ancient Greek covers all \trGrcTypes{} unseen types of the anchor
+test split, and \trPerseusCover\% of those in the Perseus treebank with
+\trPerseusAgree\% agreement. The Slovenian dictionary covers
+\anSlvMarkedCovered{} of \anSlvMarked{} symbol-bearing unseen types of the
+anchor development split. Learning leaves the Hausa and Ancient Greek
+orders unchanged, so their paired differences do not depend on these
+tables, but the accuracy of both arms is overstated there.
+
+\paragraph{The effect on new corpora.}
+Table~\ref{tab:transfer} scores \trGoldCorpora{} gold corpora in \trLang{}
+languages with at least 1,000 scorable words. For the \trOffLang{} languages
+with official fits the learned order changes mean language accuracy by
+\(\trOffMacro\) points (95\% interval \(\trOffLo\) to \(\trOffHi\)) on
+\trOffN{} words. On the anchor tests of the same languages the change is
+\(\trHomeMacro\) (\(\trHomeLo\) to \(\trHomeHi\)). The pooled changes are
+\(\trOffPooled\) and \(\trHomePooled\). Away from the anchor the corpus
+tables miss more often. External lookup answers \trOffExtShare\% of words,
+against \trHomeExtShare\% on the anchor tests, and reordering changes
+\trOffChangedShare\% of predictions against \trHomeChangedShare\%. It
+corrects \trOffCorr{} words and spoils \trOffReg. Corrections make up
+\trOffWinShare\% of these decisive changes and \trHomeWinShare\% on the
+anchor tests. Sources disagree on \atDisputed{} words, or \atDisputedShare\%
+of all words against \anDisputedShare\% on the anchor tests. The oracle gap
+is \atGap{} words and the learned order closes \atRealized\% of it.
+
+With languages as the sampling unit, the sign test gives \(p=\atSignP\)
+for the learned order and \(p=\atGateSignP\) for the confirmed one. The
+language-resampled intervals run from \(\atLangLo\) to \(\atLangHi\) and
+from \(\atGateLangLo\) to \(\atGateLangHi\). Without the two languages
+flagged on the anchor side the changes are \(\atCleanMacro\) and
+\(\atCleanGate\).
+
+The direction of a language's effect is stable. Of the \trBothSign{} languages
+with a nonzero net change in both settings, \trSameSign{} keep its sign.
+Hungarian gains 1.54 points on its anchor test and \(\trHunDelta\) on
+\trHunN{} words from two corpora outside UD (\trHunCorr{} corrections,
+\trHunReg{} regressions). Czech, Greek, Finnish, Dutch and Polish lose in
+both settings. On
+the \trOutsideCorpora{} corpora outside UD alone, which cover \trOutLang{}
+languages, the macro change is \(\trOutMacro\) (\(\trOutLo\) to \(\trOutHi\)).
+Disabling suffix rules leaves every count of corrections and regressions in
+Table~\ref{tab:transfer} unchanged.
+
+\paragraph{Confirmed orders.}
+The confirmation rule saw anchor development data only. It accepts the new
+order for \trAccepted{} of the \trOffLang{} languages. On the new corpora this
+policy corrects \trOffGateCorr{} words and spoils \trOffGateReg{}, a macro
+change of \(\trOffGate\) points (\(\trOffGateLo\) to \(\trOffGateHi\)).
+Of these, \trOffGateUp{} gain and one loses. The loss is Slovenian. On the
+spoken treebank SST the confirmed order corrects \trSstCorr{} answers and
+spoils \trSstReg. Of these regressions, \trSlvEee{} are the hesitation marker
+\emph{eee}, which the promoted table maps to \emph{ee}. On the Slovenian
+\emph{1984} the same order corrects \trSlMteCorr{} and spoils \trSlMteReg.
+Development data from the anchor cannot anticipate a class of tokens that
+the anchor lacks.
+
+\paragraph{Concentration and conventions.}
+Two languages supply most of the pooled gain. Without Hungarian the pooled
+change for the official fits is \(\trLooOffPooled\) points, and without
+Turkish their macro change is \(\trLooOffMacroLo\). The \trPoolLang{}
+pooled-fit languages show a macro change of \(\trPoolMacro\). Most of it is
+Tagalog, with \trTglCorr{} corrections and \trTglReg{} regressions on
+\trTglN{} words. Without Tagalog the \trLang-language mean of \(\trMacro\)
+falls to \(\trLooMacro\). We therefore read the official-fit row as the
+main estimate.
+
+Part of what travels is a lemma convention. In Table~\ref{tab:kinds},
+nested answers supply \atNestedShare\% of the net gain on new corpora and
+answers that return the word itself \atCopyShare\%. For the Turkish word
+\emph{benimsedi\u{g}im} in the BOUN treebank the declared order returns the
+infinitive \emph{benimsemek}. The learned order returns the stem
+\emph{benimse}, which both the anchor and BOUN annotate. Turkish yields
+\trTurCorr{} corrections and \trTurReg{} regressions on \trTurN{} words.
+A split by shared contributors does not settle whether the gain needs one.
+The macro change is \(\trTeamMacro\) for corpora that list a contributor of
+the anchor (\trTeamLang{} languages) and \(\trOtherMacro\) for the others
+(\trOtherLang), but without Hungarian and Tagalog the second figure is
+\(\trOtherRestMacro\). This split was defined after the outcomes were known.
+
+\section{Conclusion}
+
+Source order has an exactly optimizable training objective and a small,
+measurable effect in a complete lemmatizer. Under fresh UD 2.19 training,
+the learned permutation yields 205 additional correct predictions on the
+official test splits. Requiring independent development support increases
+that count to 560, and only this policy shows a gain when languages are
+treated as the sample. A choice of source made per word could add far more
+than any permutation realizes. The two-fold supplement shows why language and token
+weighting can reverse the direction of a result. The separate catalog
+experiment locates the effect of newly trained fallback rules on identical
+test words. Frozen and applied to other corpora of \trOffLang{} languages,
+the learned order keeps its sign in most languages and gains more per word
+than on the anchor tests, because external lookup is reached more often.
+A confirmed order failed on one spoken corpus, so confirmation on the
+anchor is no guarantee for a new register.
+
+\section*{Limitations}
+
+The document bootstrap conditions on a fixed set of languages, treebanks and
+fitted models, and the language-level tests treat a convenience set of
+languages as a sample. The classes of change are computed from strings and
+were not checked by annotators. Sentence blocks may underrepresent correlation where document
+boundaries are absent. Two-fold results for small corpora can depend on the
+partition, and the Telugu anchor has no scorable gold lemmas. Some lexical
+sources may share upstream material despite differences in their names.
+Undocumented sharing and paraphrased passages can escape the overlap screen.
+No conclusion about new domains or all languages follows from these intervals.
+
+Most transfer corpora follow UD lemma guidelines, and some were annotated by
+contributors of the anchor or pre-annotated by models trained on it. The
+overlap screen compares surface text and cannot detect translations or
+paraphrases. The provenance screen uses coverage thresholds, so a derived
+table that covers fewer unseen types passes it. Two languages supply most
+of the pooled transfer gain. Lemma conventions differ between corpora and
+lower both arms on the same words.
+
+We evaluate pretokenized, ordinary words without contextual tag features.
+Treebanks differ in segmentation, case, compound markers and how they
+represent withheld text. A lexical source and an annotator can use different
+headword conventions. Exact match measures agreement with the annotation.
+Some lexicons are training projections of older upstream snapshots. Fixed
+zero thresholds isolate the interventions and leave per-language tuning
+untested. The development selection rule uses correlated tokens and provides
+no family-wise error guarantee.
+
+\section*{Ethical considerations}
+
+The data inventory records provenance, terms and attribution per package.
+Three UD treebanks have conflicting license declarations between their README
+and LICENSE files. Both documents accompany the corresponding research
+artifacts. The evaluation retains the original text masking and publishes
+counts and digests for excluded material. The coverage ledger identifies
+languages for which holding out the only annotated text would leave no basis
+for fitting a policy.
+
+\bibliography{references}
+
+\appendix
+\section{Transfer corpora outside UD}
+\label{app:transfer}
+\begin{table}[H]
+\centering\small
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}p{0.34\columnwidth}p{0.58\columnwidth}@{}}
+\toprule Corpus & Languages and status \\\midrule
+MULTEXT-East \emph{1984} 4.0 & gold: bg, en, et, fa, ro, sl, sr; automatic: cs, hu, pl; shared collection: sk \\
+ELEXIS-WSD 2.0 & gold: bg, da, en, es, et, hu, it, ka, nl, pt, ro, sr; inside the anchor: sl \\
+hr500k 2.0 & gold: hr, documents outside the UD treebank \\
+ELTE-DH gold standard & gold: hu \\
+BanLemma test set & gold: bn \\
+TOROT, four texts & gold: cu \\
+RESTAURE Occitan & shared collection: oc \\
+KazDet 0.01 & automatic: kk \\
+\bottomrule\end{tabular*}
+\caption{Corpora outside UD used in the transfer test. The smaller ones are
+the ELTE-DH gold standard \citep{eltedh-gold}, BanLemma
+\citep{afrin-etal-2023-banlemma}, TOROT
+\citep{eckhoff-berdicevskis-2015-torot}, the RESTAURE corpus
+\citep{restaure-occitan} and KazDet \citep{makazhanov-etal-2015-kazakh}.
+File locations and SHA-256 digests are listed in
+\texttt{transfer-sources.json}.}
+\label{tab:outside}
+\end{table}
+
+\section{Variants of the confirmation rule}
+\label{app:gate}
+\begin{table}[H]
+\centering\small
+\input{gate-table}
+\caption{The confirmation rule with other significance levels $\alpha$ and
+with or without the minimum net gain on development data. Acc.\ counts
+accepted languages among the 66 with official fits. $\Delta$ is the macro
+change and Regr.\ the regressions, on the 66 anchor tests and on the new
+corpora of \trOffLang{} languages. The third row is the rule used in the
+paper.}
+\label{tab:gate}
+\end{table}
+
+\section{Computational budget}
+\label{app:compute}
+All experiments run on CPU. On one workstation with a 16-core AMD Ryzen 9
+7950X and 124 GB of memory, preparing the order inputs takes about two
+minutes. Fitting and scoring the 66 official languages takes one minute with
+six parallel jobs. Scoring the 167 transfer corpora takes three minutes per
+rule setting with eight jobs. We used Rust 1.97.1, CPython 3.12.13 and
+NumPy 2.5.1.
+
+\section{Language-level results}
+\label{app:catalog}
+The appendix enumerates all 172 single-resource dictionaries rebuilt for engine 1.0.0 on the UD 2.19 snapshot. Sets gives
+scored treebanks divided by in-scope treebanks. Words counts scored syntactic
+tokens. Copy, Off and Full give exact-match accuracy (\%) for copying, the
+packaged engine with suffix rules disabled and the packaged defaults.
+\emph{Input file} means that every available test file had contributed to the
+dictionary. \emph{No test} means that the official archive had no test file
+for the code. \emph{No gold} denotes an entry with no scorable words after
+exclusions. The electronic treebank ledger records file digests, paired
+counts, overlap exclusions and missing annotations.
+
+\input{catalogue}
+
+\end{document}

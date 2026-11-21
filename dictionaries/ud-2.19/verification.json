@@ -1,0 +1,26 @@
+{
+  "catalog_sha256": "7042aaa89bd7b006fbbc5362eeb6eb1bef732ca34da960560eb939c7d22df97f",
+  "checks": {
+    "archives": 172,
+    "dictionaries": 172,
+    "examples": 854,
+    "rule_entries": 1082970,
+    "training_observations": 17694008,
+    "wheels": 172,
+    "with_suffix_rules": 171
+  },
+  "engine": "1.0.0",
+  "license_review": [
+    "lzh",
+    "naq",
+    "qtd"
+  ],
+  "source_modes": {
+    "hash-verified original lexical projection": 16,
+    "official UD 2.19": 100,
+    "pinned CC-CEDICT": 1,
+    "pinned OpenCorpora": 1,
+    "pinned Turkmen source": 1,
+    "pinned UniMorph": 53
+  }
+}

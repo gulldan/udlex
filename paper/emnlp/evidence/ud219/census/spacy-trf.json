@@ -1,0 +1,422 @@
+{
+  "cells": {
+    "afr": {
+      "reason": "OSError: [E050] Can't find model 'af_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "arb": {
+      "reason": "OSError: [E050] Can't find model 'ar_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "bel": {
+      "reason": "OSError: [E050] Can't find model 'be_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "bor": {
+      "reason": "OSError: [E050] Can't find model 'bor_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "bxr": {
+      "reason": "OSError: [E050] Can't find model 'bxr_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "cat": {
+      "correct": 57566,
+      "model": "ca_core_news_trf-3.8.0",
+      "status": "scored",
+      "tokens": 59571
+    },
+    "ces": {
+      "reason": "OSError: [E050] Can't find model 'cs_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "chu": {
+      "reason": "OSError: [E050] Can't find model 'cu_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "cmn": {
+      "reason": "LookupError: zh_core_web_trf runs no lemmatizer",
+      "status": "unsupported"
+    },
+    "cop": {
+      "reason": "OSError: [E050] Can't find model 'cop_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "cym": {
+      "reason": "OSError: [E050] Can't find model 'cy_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "dan": {
+      "correct": 9576,
+      "model": "da_core_news_trf-3.8.0",
+      "status": "scored",
+      "tokens": 10022
+    },
+    "deu": {
+      "correct": 277045,
+      "model": "de_dep_news_trf-3.8.0",
+      "status": "scored",
+      "tokens": 329795
+    },
+    "egy": {
+      "reason": "OSError: [E050] Can't find model 'egy_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "ell": {
+      "reason": "OSError: [E050] Can't find model 'el_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "eng": {
+      "correct": 27268,
+      "model": "en_core_web_trf-3.8.0",
+      "status": "scored",
+      "tokens": 28156
+    },
+    "est": {
+      "reason": "OSError: [E050] Can't find model 'et_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "eus": {
+      "reason": "OSError: [E050] Can't find model 'eu_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "fao": {
+      "reason": "OSError: [E050] Can't find model 'fo_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "fin": {
+      "reason": "OSError: [E050] Can't find model 'fi_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "fra": {
+      "correct": 9449,
+      "model": "fr_dep_news_trf-3.8.0",
+      "status": "scored",
+      "tokens": 9935
+    },
+    "frm": {
+      "reason": "OSError: [E050] Can't find model 'frm_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "gla": {
+      "reason": "OSError: [E050] Can't find model 'gd_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "gle": {
+      "reason": "OSError: [E050] Can't find model 'ga_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "glg": {
+      "reason": "OSError: [E050] Can't find model 'gl_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "glv": {
+      "reason": "OSError: [E050] Can't find model 'gv_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "got": {
+      "reason": "OSError: [E050] Can't find model 'got_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "grc": {
+      "reason": "OSError: [E050] Can't find model 'grc_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "hat": {
+      "reason": "OSError: [E050] Can't find model 'ht_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "hbo": {
+      "reason": "OSError: [E050] Can't find model 'hbo_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "heb": {
+      "reason": "OSError: [E050] Can't find model 'he_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "hin": {
+      "reason": "OSError: [E050] Can't find model 'hi_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "hrv": {
+      "reason": "OSError: [E050] Can't find model 'hr_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "hun": {
+      "reason": "OSError: [E050] Can't find model 'hu_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "hye": {
+      "reason": "OSError: [E050] Can't find model 'hy_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "hyw": {
+      "reason": "OSError: [E050] Can't find model 'hyw_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "ind": {
+      "reason": "OSError: [E050] Can't find model 'id_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "isl": {
+      "reason": "OSError: [E050] Can't find model 'is_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "ita": {
+      "reason": "OSError: [E050] Can't find model 'it_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "jpn": {
+      "reason": "LookupError: ja_core_news_trf runs no lemmatizer",
+      "status": "unsupported"
+    },
+    "kat": {
+      "reason": "OSError: [E050] Can't find model 'ka_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "kaz": {
+      "reason": "OSError: [E050] Can't find model 'kk_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "kir": {
+      "reason": "OSError: [E050] Can't find model 'ky_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "kmr": {
+      "reason": "OSError: [E050] Can't find model 'kmr_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "koi": {
+      "reason": "OSError: [E050] Can't find model 'koi_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "kor": {
+      "reason": "OSError: [E050] Can't find model 'ko_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "kpv": {
+      "reason": "OSError: [E050] Can't find model 'kpv_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "lat": {
+      "reason": "OSError: [E050] Can't find model 'la_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "lav": {
+      "reason": "OSError: [E050] Can't find model 'lv_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "lij": {
+      "reason": "OSError: [E050] Can't find model 'lij_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "lit": {
+      "reason": "OSError: [E050] Can't find model 'lt_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "lzh": {
+      "reason": "OSError: [E050] Can't find model 'lzh_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "mar": {
+      "reason": "OSError: [E050] Can't find model 'mr_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "mdf": {
+      "reason": "OSError: [E050] Can't find model 'mdf_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "myv": {
+      "reason": "OSError: [E050] Can't find model 'myv_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "naq": {
+      "reason": "OSError: [E050] Can't find model 'naq_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "nds": {
+      "reason": "OSError: [E050] Can't find model 'nds_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "nld": {
+      "reason": "OSError: [E050] Can't find model 'nl_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "nmf": {
+      "reason": "OSError: [E050] Can't find model 'nmf_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "nor": {
+      "reason": "OSError: [E050] Can't find model 'no_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "oci": {
+      "reason": "OSError: [E050] Can't find model 'oc_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "oge": {
+      "reason": "OSError: [E050] Can't find model 'oge_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "olo": {
+      "reason": "OSError: [E050] Can't find model 'olo_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "orv": {
+      "reason": "OSError: [E050] Can't find model 'orv_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "ota": {
+      "reason": "OSError: [E050] Can't find model 'ota_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "pan": {
+      "reason": "OSError: [E050] Can't find model 'pa_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "pcm": {
+      "reason": "OSError: [E050] Can't find model 'pcm_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "pes": {
+      "reason": "OSError: [E050] Can't find model 'fa_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "pol": {
+      "reason": "OSError: [E050] Can't find model 'pl_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "por": {
+      "reason": "OSError: [E050] Can't find model 'pt_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "pro": {
+      "reason": "OSError: [E050] Can't find model 'pro_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "qaf": {
+      "reason": "OSError: [E050] Can't find model 'qaf_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "qpm": {
+      "reason": "OSError: [E050] Can't find model 'qpm_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "qtd": {
+      "reason": "OSError: [E050] Can't find model 'qtd_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "ron": {
+      "reason": "OSError: [E050] Can't find model 'ro_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "rus": {
+      "reason": "OSError: [E050] Can't find model 'ru_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "san": {
+      "reason": "OSError: [E050] Can't find model 'sa_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "say": {
+      "reason": "OSError: [E050] Can't find model 'say_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "slk": {
+      "reason": "OSError: [E050] Can't find model 'sk_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "slv": {
+      "correct": 24451,
+      "model": "sl_core_news_trf-3.8.0",
+      "status": "scored",
+      "tokens": 25407
+    },
+    "sme": {
+      "reason": "OSError: [E050] Can't find model 'sme_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "sms": {
+      "reason": "OSError: [E050] Can't find model 'sms_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "snd": {
+      "reason": "OSError: [E050] Can't find model 'sd_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "spa": {
+      "correct": 52899,
+      "model": "es_dep_news_trf-3.8.0",
+      "status": "scored",
+      "tokens": 53584
+    },
+    "sqi": {
+      "reason": "OSError: [E050] Can't find model 'sq_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "srp": {
+      "reason": "OSError: [E050] Can't find model 'sr_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "swe": {
+      "reason": "OSError: [E050] Can't find model 'sv_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "tam": {
+      "reason": "OSError: [E050] Can't find model 'ta_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "tur": {
+      "reason": "OSError: [E050] Can't find model 'tr_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "uig": {
+      "reason": "OSError: [E050] Can't find model 'ug_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "ukr": {
+      "correct": 14445,
+      "model": "uk_core_news_trf-3.8.0",
+      "status": "scored",
+      "tokens": 16075
+    },
+    "urd": {
+      "reason": "OSError: [E050] Can't find model 'ur_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "uzb": {
+      "reason": "OSError: [E050] Can't find model 'uz_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "vie": {
+      "reason": "OSError: [E050] Can't find model 'vi_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "wol": {
+      "reason": "OSError: [E050] Can't find model 'wo_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "wuu": {
+      "reason": "OSError: [E050] Can't find model 'wuu_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "xcl": {
+      "reason": "OSError: [E050] Can't find model 'xcl_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "yid": {
+      "reason": "OSError: [E050] Can't find model 'yi_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "yrl": {
+      "reason": "OSError: [E050] Can't find model 'yrl_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    },
+    "zza": {
+      "reason": "OSError: [E050] Can't find model 'zza_core_news_trf'. It doesn't seem to be a Python package or a valid path to a data directory.",
+      "status": "unsupported"
+    }
+  },
+  "engine": "spacy-trf",
+  "version": "3.8.18"
+}

@@ -1,0 +1,2270 @@
+[
+ {
+  "iso": "hun",
+  "oov_tokens": 6157,
+  "train_tokens": 20129,
+  "declared": [
+   "simplemma",
+   "spacy-lookups",
+   "lemmagen3",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "unimorph",
+   "lemmagen3",
+   "simplemma",
+   "wiktionary",
+   "spacy-lookups"
+  ],
+  "crossfit": [
+   "lemmagen3",
+   "wiktionary",
+   "simplemma",
+   "spacy-lookups",
+   "unimorph"
+  ],
+  "dev": {
+   "tokens": 11416,
+   "declared": 10397,
+   "learned": 10508,
+   "crossfit": 10569
+  },
+  "test": {
+   "tokens": 10432,
+   "declared": 9471,
+   "learned": 9632,
+   "crossfit": 9627
+  }
+ },
+ {
+  "iso": "slk",
+  "oov_tokens": 14254,
+  "train_tokens": 79392,
+  "declared": [
+   "dictionary",
+   "simplemma",
+   "lemmagen3",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "simplemma",
+   "dictionary",
+   "lemmagen3",
+   "unimorph",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "unimorph",
+   "dictionary",
+   "simplemma",
+   "wiktionary",
+   "lemmagen3"
+  ],
+  "dev": {
+   "tokens": 12722,
+   "declared": 11957,
+   "learned": 11966,
+   "crossfit": 11991
+  },
+  "test": {
+   "tokens": 12702,
+   "declared": 11909,
+   "learned": 11905,
+   "crossfit": 11851
+  }
+ },
+ {
+  "iso": "fin",
+  "oov_tokens": 35376,
+  "train_tokens": 162447,
+  "declared": [
+   "simplemma",
+   "unimorph",
+   "wiktionary",
+   "llm-teacher"
+  ],
+  "learned": [
+   "llm-teacher",
+   "unimorph",
+   "wiktionary",
+   "simplemma"
+  ],
+  "crossfit": [
+   "llm-teacher",
+   "simplemma",
+   "unimorph",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 18205,
+   "declared": 16390,
+   "learned": 16369,
+   "crossfit": 16390
+  },
+  "test": {
+   "tokens": 20989,
+   "declared": 18747,
+   "learned": 18708,
+   "crossfit": 18747
+  }
+ },
+ {
+  "iso": "rus",
+  "oov_tokens": 426023,
+  "train_tokens": 1717627,
+  "declared": [
+   "dictionary",
+   "pymorphy-dictionaries",
+   "simplemma",
+   "spacy-lookups",
+   "lemmagen3",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "pymorphy-dictionaries",
+   "dictionary",
+   "unimorph",
+   "spacy-lookups",
+   "lemmagen3",
+   "wiktionary",
+   "simplemma"
+  ],
+  "crossfit": [
+   "pymorphy-dictionaries",
+   "dictionary",
+   "unimorph",
+   "spacy-lookups",
+   "wiktionary",
+   "simplemma",
+   "lemmagen3"
+  ],
+  "dev": {
+   "tokens": 15568,
+   "declared": 14861,
+   "learned": 14868,
+   "crossfit": 14877
+  },
+  "test": {
+   "tokens": 15334,
+   "declared": 14748,
+   "learned": 14744,
+   "crossfit": 14758
+  }
+ },
+ {
+  "iso": "lit",
+  "oov_tokens": 9468,
+  "train_tokens": 39327,
+  "declared": [
+   "dictionary",
+   "simplemma",
+   "spacy-lookups",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "dictionary",
+   "simplemma",
+   "spacy-lookups",
+   "unimorph",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "dictionary",
+   "simplemma",
+   "spacy-lookups",
+   "unimorph",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 5266,
+   "declared": 5112,
+   "learned": 5112,
+   "crossfit": 5112
+  },
+  "test": {
+   "tokens": 11953,
+   "declared": 11635,
+   "learned": 11635,
+   "crossfit": 11635
+  }
+ },
+ {
+  "iso": "pol",
+  "oov_tokens": 37069,
+  "train_tokens": 281409,
+  "declared": [
+   "dictionary",
+   "simplemma",
+   "spacy-lookups",
+   "lemmagen3",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "unimorph",
+   "simplemma",
+   "wiktionary",
+   "dictionary",
+   "spacy-lookups",
+   "lemmagen3"
+  ],
+  "crossfit": [
+   "unimorph",
+   "dictionary",
+   "spacy-lookups",
+   "wiktionary",
+   "simplemma",
+   "lemmagen3"
+  ],
+  "dev": {
+   "tokens": 34611,
+   "declared": 33691,
+   "learned": 33658,
+   "crossfit": 33698
+  },
+  "test": {
+   "tokens": 33572,
+   "declared": 32694,
+   "learned": 32658,
+   "crossfit": 32714
+  }
+ },
+ {
+  "iso": "lav",
+  "oov_tokens": 36544,
+  "train_tokens": 257655,
+  "declared": [
+   "dictionary",
+   "simplemma",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "dictionary",
+   "unimorph",
+   "wiktionary",
+   "simplemma"
+  ],
+  "crossfit": [
+   "dictionary",
+   "unimorph",
+   "wiktionary",
+   "simplemma"
+  ],
+  "dev": {
+   "tokens": 34498,
+   "declared": 33372,
+   "learned": 33373,
+   "crossfit": 33373
+  },
+  "test": {
+   "tokens": 37080,
+   "declared": 35795,
+   "learned": 35797,
+   "crossfit": 35797
+  }
+ },
+ {
+  "iso": "myv",
+  "oov_tokens": 3111,
+  "train_tokens": 10283,
+  "declared": [
+   "giellalt",
+   "wiktionary"
+  ],
+  "learned": [
+   "giellalt",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "giellalt",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 0,
+   "declared": 0,
+   "learned": 0,
+   "crossfit": 0
+  },
+  "test": {
+   "tokens": 10470,
+   "declared": 9423,
+   "learned": 9423,
+   "crossfit": 9423
+  }
+ },
+ {
+  "iso": "tur",
+  "oov_tokens": 23283,
+  "train_tokens": 164161,
+  "declared": [
+   "dictionary",
+   "zeyrek",
+   "simplemma",
+   "spacy-lookups",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "spacy-lookups",
+   "simplemma",
+   "wiktionary",
+   "dictionary",
+   "zeyrek",
+   "unimorph"
+  ],
+  "crossfit": [
+   "spacy-lookups",
+   "simplemma",
+   "dictionary",
+   "zeyrek",
+   "unimorph",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 6832,
+   "declared": 6471,
+   "learned": 6502,
+   "crossfit": 6502
+  },
+  "test": {
+   "tokens": 9904,
+   "declared": 9197,
+   "learned": 9271,
+   "crossfit": 9271
+  }
+ },
+ {
+  "iso": "uzb",
+  "oov_tokens": 1948,
+  "train_tokens": 5430,
+  "declared": [
+   "dictionary",
+   "uzmorph",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "unimorph",
+   "dictionary",
+   "uzmorph",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "unimorph",
+   "dictionary",
+   "uzmorph",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 0,
+   "declared": 0,
+   "learned": 0,
+   "crossfit": 0
+  },
+  "test": {
+   "tokens": 2128,
+   "declared": 1877,
+   "learned": 1877,
+   "crossfit": 1877
+  }
+ },
+ {
+  "iso": "mdf",
+  "oov_tokens": 144,
+  "train_tokens": 226,
+  "declared": [
+   "giellalt",
+   "wiktionary"
+  ],
+  "learned": [
+   "giellalt",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "giellalt",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 0,
+   "declared": 0,
+   "learned": 0,
+   "crossfit": 0
+  },
+  "test": {
+   "tokens": 4305,
+   "declared": 3676,
+   "learned": 3676,
+   "crossfit": 3676
+  }
+ },
+ {
+  "iso": "ces",
+  "oov_tokens": 110021,
+  "train_tokens": 2704456,
+  "declared": [
+   "dictionary",
+   "simplemma",
+   "spacy-lookups",
+   "lemmagen3",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "simplemma",
+   "unimorph",
+   "dictionary",
+   "wiktionary",
+   "spacy-lookups",
+   "lemmagen3"
+  ],
+  "crossfit": [
+   "spacy-lookups",
+   "dictionary",
+   "wiktionary",
+   "simplemma",
+   "lemmagen3",
+   "unimorph"
+  ],
+  "dev": {
+   "tokens": 377351,
+   "declared": 371870,
+   "learned": 371457,
+   "crossfit": 371904
+  },
+  "test": {
+   "tokens": 298180,
+   "declared": 293756,
+   "learned": 293452,
+   "crossfit": 293790
+  }
+ },
+ {
+  "iso": "ukr",
+  "oov_tokens": 24445,
+  "train_tokens": 92758,
+  "declared": [
+   "pymorphy-dictionaries",
+   "simplemma",
+   "lemmagen3",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "unimorph",
+   "pymorphy-dictionaries",
+   "simplemma",
+   "wiktionary",
+   "lemmagen3"
+  ],
+  "crossfit": [
+   "unimorph",
+   "pymorphy-dictionaries",
+   "simplemma",
+   "wiktionary",
+   "lemmagen3"
+  ],
+  "dev": {
+   "tokens": 11798,
+   "declared": 11321,
+   "learned": 11328,
+   "crossfit": 11328
+  },
+  "test": {
+   "tokens": 16075,
+   "declared": 15401,
+   "learned": 15400,
+   "crossfit": 15400
+  }
+ },
+ {
+  "iso": "kaz",
+  "oov_tokens": 277,
+  "train_tokens": 529,
+  "declared": [
+   "dictionary",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "unimorph",
+   "dictionary",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "unimorph",
+   "dictionary",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 0,
+   "declared": 0,
+   "learned": 0,
+   "crossfit": 0
+  },
+  "test": {
+   "tokens": 10007,
+   "declared": 8756,
+   "learned": 8756,
+   "crossfit": 8756
+  }
+ },
+ {
+  "iso": "uig",
+  "oov_tokens": 2665,
+  "train_tokens": 14091,
+  "declared": [
+   "dictionary",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "dictionary",
+   "unimorph",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "unimorph",
+   "wiktionary",
+   "dictionary"
+  ],
+  "dev": {
+   "tokens": 7790,
+   "declared": 7521,
+   "learned": 7521,
+   "crossfit": 7542
+  },
+  "test": {
+   "tokens": 7573,
+   "declared": 7339,
+   "learned": 7339,
+   "crossfit": 7349
+  }
+ },
+ {
+  "iso": "hrv",
+  "oov_tokens": 26003,
+  "train_tokens": 152810,
+  "declared": [
+   "dictionary",
+   "simplemma",
+   "spacy-lookups",
+   "lemmagen3",
+   "unimorph"
+  ],
+  "learned": [
+   "spacy-lookups",
+   "dictionary",
+   "simplemma",
+   "unimorph",
+   "lemmagen3"
+  ],
+  "crossfit": [
+   "dictionary",
+   "simplemma",
+   "spacy-lookups",
+   "unimorph",
+   "lemmagen3"
+  ],
+  "dev": {
+   "tokens": 22292,
+   "declared": 21508,
+   "learned": 21509,
+   "crossfit": 21508
+  },
+  "test": {
+   "tokens": 24203,
+   "declared": 23481,
+   "learned": 23477,
+   "crossfit": 23481
+  }
+ },
+ {
+  "iso": "srp",
+  "oov_tokens": 13132,
+  "train_tokens": 74192,
+  "declared": [
+   "dictionary",
+   "simplemma",
+   "spacy-lookups",
+   "lemmagen3",
+   "unimorph"
+  ],
+  "learned": [
+   "dictionary",
+   "simplemma",
+   "spacy-lookups",
+   "lemmagen3",
+   "unimorph"
+  ],
+  "crossfit": [
+   "unimorph",
+   "dictionary",
+   "simplemma",
+   "spacy-lookups",
+   "lemmagen3"
+  ],
+  "dev": {
+   "tokens": 11993,
+   "declared": 11571,
+   "learned": 11571,
+   "crossfit": 11587
+  },
+  "test": {
+   "tokens": 11410,
+   "declared": 11051,
+   "learned": 11051,
+   "crossfit": 11067
+  }
+ },
+ {
+  "iso": "spa",
+  "oov_tokens": 24163,
+  "train_tokens": 452623,
+  "declared": [
+   "simplemma",
+   "spacy-lookups",
+   "lemmagen3",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "simplemma",
+   "wiktionary",
+   "spacy-lookups",
+   "lemmagen3",
+   "unimorph"
+  ],
+  "crossfit": [
+   "simplemma",
+   "spacy-lookups",
+   "unimorph",
+   "wiktionary",
+   "lemmagen3"
+  ],
+  "dev": {
+   "tokens": 53388,
+   "declared": 52176,
+   "learned": 52228,
+   "crossfit": 52229
+  },
+  "test": {
+   "tokens": 53584,
+   "declared": 52340,
+   "learned": 52425,
+   "crossfit": 52423
+  }
+ },
+ {
+  "iso": "lat",
+  "oov_tokens": 9829,
+  "train_tokens": 383853,
+  "declared": [
+   "simplemma",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "simplemma",
+   "wiktionary",
+   "unimorph"
+  ],
+  "crossfit": [
+   "simplemma",
+   "unimorph",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 29389,
+   "declared": 28246,
+   "learned": 28246,
+   "crossfit": 28246
+  },
+  "test": {
+   "tokens": 29220,
+   "declared": 28398,
+   "learned": 28398,
+   "crossfit": 28398
+  }
+ },
+ {
+  "iso": "olo",
+  "oov_tokens": 94,
+  "train_tokens": 144,
+  "declared": [
+   "giellalt",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "unimorph",
+   "giellalt",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "unimorph",
+   "giellalt",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 0,
+   "declared": 0,
+   "learned": 0,
+   "crossfit": 0
+  },
+  "test": {
+   "tokens": 1485,
+   "declared": 1209,
+   "learned": 1205,
+   "crossfit": 1205
+  }
+ },
+ {
+  "iso": "isl",
+  "oov_tokens": 34998,
+  "train_tokens": 704908,
+  "declared": [
+   "dictionary",
+   "simplemma",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "dictionary",
+   "simplemma",
+   "unimorph",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "unimorph",
+   "simplemma",
+   "wiktionary",
+   "dictionary"
+  ],
+  "dev": {
+   "tokens": 139476,
+   "declared": 132483,
+   "learned": 132483,
+   "crossfit": 132565
+  },
+  "test": {
+   "tokens": 139575,
+   "declared": 131294,
+   "learned": 131294,
+   "crossfit": 131405
+  }
+ },
+ {
+  "iso": "slv",
+  "oov_tokens": 33254,
+  "train_tokens": 214995,
+  "declared": [
+   "dictionary",
+   "simplemma",
+   "lemmagen3",
+   "unimorph"
+  ],
+  "learned": [
+   "lemmagen3",
+   "dictionary",
+   "simplemma",
+   "unimorph"
+  ],
+  "crossfit": [
+   "simplemma",
+   "dictionary",
+   "lemmagen3",
+   "unimorph"
+  ],
+  "dev": {
+   "tokens": 26480,
+   "declared": 25818,
+   "learned": 25847,
+   "crossfit": 25877
+  },
+  "test": {
+   "tokens": 25407,
+   "declared": 24758,
+   "learned": 24758,
+   "crossfit": 24812
+  }
+ },
+ {
+  "iso": "kir",
+  "oov_tokens": 3019,
+  "train_tokens": 12246,
+  "declared": [
+   "dictionary",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "dictionary",
+   "unimorph",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "dictionary",
+   "unimorph",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 0,
+   "declared": 0,
+   "learned": 0,
+   "crossfit": 0
+  },
+  "test": {
+   "tokens": 10840,
+   "declared": 9444,
+   "learned": 9444,
+   "crossfit": 9444
+  }
+ },
+ {
+  "iso": "ron",
+  "oov_tokens": 57733,
+  "train_tokens": 532312,
+  "declared": [
+   "dictionary",
+   "simplemma",
+   "spacy-lookups",
+   "lemmagen3",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "unimorph",
+   "wiktionary",
+   "spacy-lookups",
+   "simplemma",
+   "dictionary",
+   "lemmagen3"
+  ],
+  "crossfit": [
+   "unimorph",
+   "spacy-lookups",
+   "simplemma",
+   "wiktionary",
+   "dictionary",
+   "lemmagen3"
+  ],
+  "dev": {
+   "tokens": 18531,
+   "declared": 17071,
+   "learned": 17113,
+   "crossfit": 17117
+  },
+  "test": {
+   "tokens": 20943,
+   "declared": 19191,
+   "learned": 19215,
+   "crossfit": 19217
+  }
+ },
+ {
+  "iso": "eus",
+  "oov_tokens": 12528,
+  "train_tokens": 72793,
+  "declared": [
+   "dictionary",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "unimorph",
+   "dictionary",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "unimorph",
+   "dictionary",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 24014,
+   "declared": 22792,
+   "learned": 22796,
+   "crossfit": 22796
+  },
+  "test": {
+   "tokens": 24312,
+   "declared": 23037,
+   "learned": 23046,
+   "crossfit": 23046
+  }
+ },
+ {
+  "iso": "bel",
+  "oov_tokens": 118192,
+  "train_tokens": 269799,
+  "declared": [
+   "dictionary",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "unimorph",
+   "dictionary",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "dictionary",
+   "wiktionary",
+   "unimorph"
+  ],
+  "dev": {
+   "tokens": 14516,
+   "declared": 13952,
+   "learned": 13952,
+   "crossfit": 13952
+  },
+  "test": {
+   "tokens": 15871,
+   "declared": 14523,
+   "learned": 14522,
+   "crossfit": 14523
+  }
+ },
+ {
+  "iso": "ita",
+  "oov_tokens": 15469,
+  "train_tokens": 275337,
+  "declared": [
+   "simplemma",
+   "spacy-lookups",
+   "lemmagen3",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "simplemma",
+   "spacy-lookups",
+   "wiktionary",
+   "lemmagen3",
+   "unimorph"
+  ],
+  "crossfit": [
+   "simplemma",
+   "spacy-lookups",
+   "wiktionary",
+   "lemmagen3",
+   "unimorph"
+  ],
+  "dev": {
+   "tokens": 11885,
+   "declared": 11547,
+   "learned": 11577,
+   "crossfit": 11577
+  },
+  "test": {
+   "tokens": 10416,
+   "declared": 10105,
+   "learned": 10118,
+   "crossfit": 10118
+  }
+ },
+ {
+  "iso": "arb",
+  "oov_tokens": 15289,
+  "train_tokens": 222952,
+  "declared": [
+   "camel-morph",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "unimorph",
+   "camel-morph",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "camel-morph",
+   "unimorph",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 30168,
+   "declared": 28238,
+   "learned": 28238,
+   "crossfit": 28238
+  },
+  "test": {
+   "tokens": 28183,
+   "declared": 26403,
+   "learned": 26403,
+   "crossfit": 26403
+  }
+ },
+ {
+  "iso": "ell",
+  "oov_tokens": 7206,
+  "train_tokens": 42267,
+  "declared": [
+   "dictionary",
+   "simplemma",
+   "spacy-lookups",
+   "unimorph",
+   "wiktionary",
+   "llm-teacher"
+  ],
+  "learned": [
+   "simplemma",
+   "llm-teacher",
+   "dictionary",
+   "spacy-lookups",
+   "unimorph",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "dictionary",
+   "simplemma",
+   "unimorph",
+   "llm-teacher",
+   "spacy-lookups",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 10436,
+   "declared": 9994,
+   "learned": 9972,
+   "crossfit": 9998
+  },
+  "test": {
+   "tokens": 10656,
+   "declared": 10284,
+   "learned": 10259,
+   "crossfit": 10283
+  }
+ },
+ {
+  "iso": "hye",
+  "oov_tokens": 16930,
+  "train_tokens": 82723,
+  "declared": [
+   "dictionary",
+   "simplemma",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "wiktionary",
+   "dictionary",
+   "simplemma",
+   "unimorph"
+  ],
+  "crossfit": [
+   "wiktionary",
+   "dictionary",
+   "simplemma",
+   "unimorph"
+  ],
+  "dev": {
+   "tokens": 10719,
+   "declared": 10293,
+   "learned": 10327,
+   "crossfit": 10327
+  },
+  "test": {
+   "tokens": 10610,
+   "declared": 10213,
+   "learned": 10246,
+   "crossfit": 10246
+  }
+ },
+ {
+  "iso": "eng",
+  "oov_tokens": 15577,
+  "train_tokens": 198851,
+  "declared": [
+   "nltk-wordnet",
+   "simplemma",
+   "spacy-lookups",
+   "lemminflect",
+   "lemmagen3",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "nltk-wordnet",
+   "simplemma",
+   "unimorph",
+   "spacy-lookups",
+   "wiktionary",
+   "lemmagen3",
+   "lemminflect"
+  ],
+  "crossfit": [
+   "nltk-wordnet",
+   "unimorph",
+   "spacy-lookups",
+   "wiktionary",
+   "simplemma",
+   "lemmagen3",
+   "lemminflect"
+  ],
+  "dev": {
+   "tokens": 27899,
+   "declared": 27226,
+   "learned": 27256,
+   "crossfit": 27285
+  },
+  "test": {
+   "tokens": 28156,
+   "declared": 27345,
+   "learned": 27434,
+   "crossfit": 27502
+  }
+ },
+ {
+  "iso": "deu",
+  "oov_tokens": 104418,
+  "train_tokens": 2779391,
+  "declared": [
+   "simplemma",
+   "spacy-lookups",
+   "lemmagen3",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "simplemma",
+   "spacy-lookups",
+   "wiktionary",
+   "lemmagen3",
+   "unimorph"
+  ],
+  "crossfit": [
+   "spacy-lookups",
+   "unimorph",
+   "simplemma",
+   "wiktionary",
+   "lemmagen3"
+  ],
+  "dev": {
+   "tokens": 322723,
+   "declared": 312879,
+   "learned": 312910,
+   "crossfit": 312960
+  },
+  "test": {
+   "tokens": 329795,
+   "declared": 319047,
+   "learned": 319082,
+   "crossfit": 319135
+  }
+ },
+ {
+  "iso": "swe",
+  "oov_tokens": 11315,
+  "train_tokens": 66545,
+  "declared": [
+   "dictionary",
+   "simplemma",
+   "spacy-lookups",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "dictionary",
+   "wiktionary",
+   "simplemma",
+   "spacy-lookups",
+   "unimorph"
+  ],
+  "crossfit": [
+   "unimorph",
+   "dictionary",
+   "wiktionary",
+   "simplemma",
+   "spacy-lookups"
+  ],
+  "dev": {
+   "tokens": 9792,
+   "declared": 9518,
+   "learned": 9520,
+   "crossfit": 9525
+  },
+  "test": {
+   "tokens": 20371,
+   "declared": 19858,
+   "learned": 19858,
+   "crossfit": 19863
+  }
+ },
+ {
+  "iso": "bxr",
+  "oov_tokens": 100,
+  "train_tokens": 158,
+  "declared": [
+   "dictionary",
+   "giellalt",
+   "wiktionary"
+  ],
+  "learned": [
+   "dictionary",
+   "giellalt",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "dictionary",
+   "giellalt",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 0,
+   "declared": 0,
+   "learned": 0,
+   "crossfit": 0
+  },
+  "test": {
+   "tokens": 9960,
+   "declared": 7505,
+   "learned": 7505,
+   "crossfit": 7505
+  }
+ },
+ {
+  "iso": "por",
+  "oov_tokens": 17661,
+  "train_tokens": 197336,
+  "declared": [
+   "simplemma",
+   "spacy-lookups",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "simplemma",
+   "spacy-lookups",
+   "unimorph",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "unimorph",
+   "wiktionary",
+   "spacy-lookups",
+   "simplemma"
+  ],
+  "dev": {
+   "tokens": 21978,
+   "declared": 21092,
+   "learned": 21092,
+   "crossfit": 21089
+  },
+  "test": {
+   "tokens": 29539,
+   "declared": 28695,
+   "learned": 28695,
+   "crossfit": 28717
+  }
+ },
+ {
+  "iso": "fra",
+  "oov_tokens": 5098,
+  "train_tokens": 50300,
+  "declared": [
+   "simplemma",
+   "spacy-lookups",
+   "lemmagen3",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "simplemma",
+   "wiktionary",
+   "spacy-lookups",
+   "lemmagen3",
+   "unimorph"
+  ],
+  "crossfit": [
+   "spacy-lookups",
+   "wiktionary",
+   "simplemma",
+   "lemmagen3",
+   "unimorph"
+  ],
+  "dev": {
+   "tokens": 9929,
+   "declared": 9686,
+   "learned": 9693,
+   "crossfit": 9725
+  },
+  "test": {
+   "tokens": 9935,
+   "declared": 9676,
+   "learned": 9685,
+   "crossfit": 9709
+  }
+ },
+ {
+  "iso": "nld",
+  "oov_tokens": 17770,
+  "train_tokens": 238969,
+  "declared": [
+   "simplemma",
+   "spacy-lookups",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "simplemma",
+   "unimorph",
+   "wiktionary",
+   "spacy-lookups"
+  ],
+  "crossfit": [
+   "unimorph",
+   "spacy-lookups",
+   "wiktionary",
+   "simplemma"
+  ],
+  "dev": {
+   "tokens": 28008,
+   "declared": 26399,
+   "learned": 26391,
+   "crossfit": 26384
+  },
+  "test": {
+   "tokens": 28804,
+   "declared": 26863,
+   "learned": 26850,
+   "crossfit": 26867
+  }
+ },
+ {
+  "iso": "dan",
+  "oov_tokens": 11177,
+  "train_tokens": 80360,
+  "declared": [
+   "dictionary",
+   "simplemma",
+   "spacy-lookups",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "simplemma",
+   "dictionary",
+   "spacy-lookups",
+   "unimorph",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "unimorph",
+   "spacy-lookups",
+   "wiktionary",
+   "dictionary",
+   "simplemma"
+  ],
+  "dev": {
+   "tokens": 10329,
+   "declared": 9927,
+   "learned": 9926,
+   "crossfit": 9932
+  },
+  "test": {
+   "tokens": 10022,
+   "declared": 9601,
+   "learned": 9620,
+   "crossfit": 9629
+  }
+ },
+ {
+  "iso": "grc",
+  "oov_tokens": 20652,
+  "train_tokens": 184494,
+  "declared": [
+   "spacy-lookups",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "spacy-lookups",
+   "unimorph",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "spacy-lookups",
+   "unimorph",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 13447,
+   "declared": 13299,
+   "learned": 13299,
+   "crossfit": 13299
+  },
+  "test": {
+   "tokens": 13091,
+   "declared": 12954,
+   "learned": 12954,
+   "crossfit": 12954
+  }
+ },
+ {
+  "iso": "oci",
+  "oov_tokens": 3025,
+  "train_tokens": 13995,
+  "declared": [
+   "dictionary",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "wiktionary",
+   "unimorph",
+   "dictionary"
+  ],
+  "crossfit": [
+   "wiktionary",
+   "unimorph",
+   "dictionary"
+  ],
+  "dev": {
+   "tokens": 1535,
+   "declared": 1410,
+   "learned": 1420,
+   "crossfit": 1420
+  },
+  "test": {
+   "tokens": 9956,
+   "declared": 9133,
+   "learned": 9173,
+   "crossfit": 9173
+  }
+ },
+ {
+  "iso": "cat",
+  "oov_tokens": 20552,
+  "train_tokens": 429029,
+  "declared": [
+   "simplemma",
+   "spacy-lookups",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "spacy-lookups",
+   "unimorph",
+   "wiktionary",
+   "simplemma"
+  ],
+  "crossfit": [
+   "spacy-lookups",
+   "wiktionary",
+   "simplemma",
+   "unimorph"
+  ],
+  "dev": {
+   "tokens": 58048,
+   "declared": 56449,
+   "learned": 56488,
+   "crossfit": 56489
+  },
+  "test": {
+   "tokens": 59571,
+   "declared": 57845,
+   "learned": 57863,
+   "crossfit": 57862
+  }
+ },
+ {
+  "iso": "kat",
+  "oov_tokens": 3270,
+  "train_tokens": 11500,
+  "declared": [
+   "simplemma",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "simplemma",
+   "wiktionary",
+   "unimorph"
+  ],
+  "crossfit": [
+   "wiktionary",
+   "simplemma",
+   "unimorph"
+  ],
+  "dev": {
+   "tokens": 1483,
+   "declared": 1217,
+   "learned": 1219,
+   "crossfit": 1220
+  },
+  "test": {
+   "tokens": 10426,
+   "declared": 8697,
+   "learned": 8701,
+   "crossfit": 8702
+  }
+ },
+ {
+  "iso": "kor",
+  "oov_tokens": 65215,
+  "train_tokens": 296073,
+  "declared": [
+   "kiwipiepy",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "kiwipiepy",
+   "unimorph",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "kiwipiepy",
+   "unimorph",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 25274,
+   "declared": 22414,
+   "learned": 22414,
+   "crossfit": 22414
+  },
+  "test": {
+   "tokens": 28352,
+   "declared": 24738,
+   "learned": 24738,
+   "crossfit": 24738
+  }
+ },
+ {
+  "iso": "pes",
+  "oov_tokens": 17869,
+  "train_tokens": 452310,
+  "declared": [
+   "hazm",
+   "spacy-lookups",
+   "lemmagen3",
+   "simplemma",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "hazm",
+   "spacy-lookups",
+   "lemmagen3",
+   "simplemma",
+   "wiktionary",
+   "unimorph"
+  ],
+  "crossfit": [
+   "spacy-lookups",
+   "simplemma",
+   "hazm",
+   "unimorph",
+   "wiktionary",
+   "lemmagen3"
+  ],
+  "dev": {
+   "tokens": 25136,
+   "declared": 24668,
+   "learned": 24668,
+   "crossfit": 24673
+  },
+  "test": {
+   "tokens": 24118,
+   "declared": 23772,
+   "learned": 23772,
+   "crossfit": 23775
+  }
+ },
+ {
+  "iso": "jpn",
+  "oov_tokens": 13813,
+  "train_tokens": 168328,
+  "declared": [
+   "sudachi-core",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "sudachi-core",
+   "wiktionary",
+   "unimorph"
+  ],
+  "crossfit": [
+   "wiktionary",
+   "sudachi-core",
+   "unimorph"
+  ],
+  "dev": {
+   "tokens": 12286,
+   "declared": 11860,
+   "learned": 11860,
+   "crossfit": 11860
+  },
+  "test": {
+   "tokens": 13034,
+   "declared": 12531,
+   "learned": 12529,
+   "crossfit": 12529
+  }
+ },
+ {
+  "iso": "glg",
+  "oov_tokens": 7886,
+  "train_tokens": 79372,
+  "declared": [
+   "dictionary",
+   "simplemma",
+   "wiktionary"
+  ],
+  "learned": [
+   "dictionary",
+   "simplemma",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "dictionary",
+   "simplemma",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 29785,
+   "declared": 28832,
+   "learned": 28832,
+   "crossfit": 28832
+  },
+  "test": {
+   "tokens": 29740,
+   "declared": 28832,
+   "learned": 28832,
+   "crossfit": 28832
+  }
+ },
+ {
+  "iso": "gle",
+  "oov_tokens": 8636,
+  "train_tokens": 94447,
+  "declared": [
+   "simplemma",
+   "spacy-lookups",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "unimorph",
+   "simplemma",
+   "spacy-lookups",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "unimorph",
+   "spacy-lookups",
+   "simplemma",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 9906,
+   "declared": 9319,
+   "learned": 9325,
+   "crossfit": 9331
+  },
+  "test": {
+   "tokens": 10100,
+   "declared": 9556,
+   "learned": 9562,
+   "crossfit": 9567
+  }
+ },
+ {
+  "iso": "got",
+  "oov_tokens": 4642,
+  "train_tokens": 34508,
+  "declared": [
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "unimorph",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "unimorph",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 9835,
+   "declared": 8958,
+   "learned": 8958,
+   "crossfit": 8958
+  },
+  "test": {
+   "tokens": 9878,
+   "declared": 8910,
+   "learned": 8910,
+   "crossfit": 8910
+  }
+ },
+ {
+  "iso": "est",
+  "oov_tokens": 71755,
+  "train_tokens": 343847,
+  "declared": [
+   "simplemma",
+   "lemmagen3",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "simplemma",
+   "unimorph",
+   "wiktionary",
+   "lemmagen3"
+  ],
+  "crossfit": [
+   "unimorph",
+   "wiktionary",
+   "lemmagen3",
+   "simplemma"
+  ],
+  "dev": {
+   "tokens": 44614,
+   "declared": 40095,
+   "learned": 40131,
+   "crossfit": 40155
+  },
+  "test": {
+   "tokens": 48309,
+   "declared": 43844,
+   "learned": 43874,
+   "crossfit": 43917
+  }
+ },
+ {
+  "iso": "san",
+  "oov_tokens": 20915,
+  "train_tokens": 153531,
+  "declared": [
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "unimorph",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "unimorph",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 22214,
+   "declared": 20264,
+   "learned": 20264,
+   "crossfit": 20264
+  },
+  "test": {
+   "tokens": 19338,
+   "declared": 17736,
+   "learned": 17736,
+   "crossfit": 17736
+  }
+ },
+ {
+  "iso": "nor",
+  "oov_tokens": 17322,
+  "train_tokens": 244317,
+  "declared": [
+   "dictionary",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "dictionary",
+   "unimorph",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "unimorph",
+   "dictionary",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 31099,
+   "declared": 30381,
+   "learned": 30381,
+   "crossfit": 30406
+  },
+  "test": {
+   "tokens": 24697,
+   "declared": 24058,
+   "learned": 24058,
+   "crossfit": 24064
+  }
+ },
+ {
+  "iso": "hin",
+  "oov_tokens": 8624,
+  "train_tokens": 281003,
+  "declared": [
+   "simplemma",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "unimorph",
+   "simplemma",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "simplemma",
+   "unimorph",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 35183,
+   "declared": 33845,
+   "learned": 33845,
+   "crossfit": 33845
+  },
+  "test": {
+   "tokens": 35413,
+   "declared": 34057,
+   "learned": 34057,
+   "crossfit": 34057
+  }
+ },
+ {
+  "iso": "kmr",
+  "oov_tokens": 152,
+  "train_tokens": 242,
+  "declared": [
+   "dictionary",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "dictionary",
+   "unimorph",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "dictionary",
+   "unimorph",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 0,
+   "declared": 0,
+   "learned": 0,
+   "crossfit": 0
+  },
+  "test": {
+   "tokens": 9963,
+   "declared": 8491,
+   "learned": 8491,
+   "crossfit": 8491
+  }
+ },
+ {
+  "iso": "afr",
+  "oov_tokens": 2932,
+  "train_tokens": 33225,
+  "declared": [
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "unimorph",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "wiktionary",
+   "unimorph"
+  ],
+  "dev": {
+   "tokens": 5312,
+   "declared": 5234,
+   "learned": 5234,
+   "crossfit": 5234
+  },
+  "test": {
+   "tokens": 10063,
+   "declared": 9922,
+   "learned": 9922,
+   "crossfit": 9929
+  }
+ },
+ {
+  "iso": "cym",
+  "oov_tokens": 3844,
+  "train_tokens": 28519,
+  "declared": [
+   "simplemma",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "wiktionary",
+   "simplemma",
+   "unimorph"
+  ],
+  "crossfit": [
+   "simplemma",
+   "unimorph",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 9072,
+   "declared": 8692,
+   "learned": 8677,
+   "crossfit": 8692
+  },
+  "test": {
+   "tokens": 17026,
+   "declared": 16291,
+   "learned": 16251,
+   "crossfit": 16291
+  }
+ },
+ {
+  "iso": "heb",
+  "oov_tokens": 9309,
+  "train_tokens": 135222,
+  "declared": [
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "wiktionary",
+   "unimorph"
+  ],
+  "crossfit": [
+   "wiktionary",
+   "unimorph"
+  ],
+  "dev": {
+   "tokens": 11333,
+   "declared": 10893,
+   "learned": 10912,
+   "crossfit": 10912
+  },
+  "test": {
+   "tokens": 11993,
+   "declared": 11424,
+   "learned": 11446,
+   "crossfit": 11446
+  }
+ },
+ {
+  "iso": "sqi",
+  "oov_tokens": 857,
+  "train_tokens": 2853,
+  "declared": [
+   "dictionary",
+   "simplemma",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "dictionary",
+   "unimorph",
+   "wiktionary",
+   "simplemma"
+  ],
+  "crossfit": [
+   "unimorph",
+   "simplemma",
+   "dictionary",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 312,
+   "declared": 269,
+   "learned": 269,
+   "crossfit": 270
+  },
+  "test": {
+   "tokens": 371,
+   "declared": 317,
+   "learned": 315,
+   "crossfit": 318
+  }
+ },
+ {
+  "iso": "chu",
+  "oov_tokens": 27999,
+  "train_tokens": 157605,
+  "declared": [
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "wiktionary",
+   "unimorph"
+  ],
+  "crossfit": [
+   "wiktionary",
+   "unimorph"
+  ],
+  "dev": {
+   "tokens": 18597,
+   "declared": 16007,
+   "learned": 16007,
+   "crossfit": 16007
+  },
+  "test": {
+   "tokens": 19816,
+   "declared": 16626,
+   "learned": 16626,
+   "crossfit": 16626
+  }
+ },
+ {
+  "iso": "sme",
+  "oov_tokens": 3904,
+  "train_tokens": 16727,
+  "declared": [
+   "simplemma",
+   "unimorph"
+  ],
+  "learned": [
+   "simplemma",
+   "unimorph"
+  ],
+  "crossfit": [
+   "simplemma",
+   "unimorph"
+  ],
+  "dev": {
+   "tokens": 0,
+   "declared": 0,
+   "learned": 0,
+   "crossfit": 0
+  },
+  "test": {
+   "tokens": 9927,
+   "declared": 9727,
+   "learned": 9727,
+   "crossfit": 9727
+  }
+ },
+ {
+  "iso": "fao",
+  "oov_tokens": 0,
+  "train_tokens": 3614,
+  "declared": [
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "unimorph",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "unimorph",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 1127,
+   "declared": 1127,
+   "learned": 1127,
+   "crossfit": 1127
+  },
+  "test": {
+   "tokens": 1105,
+   "declared": 1105,
+   "learned": 1105,
+   "crossfit": 1105
+  }
+ },
+ {
+  "iso": "ind",
+  "oov_tokens": 12663,
+  "train_tokens": 97288,
+  "declared": [
+   "simplemma",
+   "spacy-lookups",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "simplemma",
+   "unimorph",
+   "wiktionary",
+   "spacy-lookups"
+  ],
+  "crossfit": [
+   "simplemma",
+   "unimorph",
+   "wiktionary",
+   "spacy-lookups"
+  ],
+  "dev": {
+   "tokens": 12642,
+   "declared": 12421,
+   "learned": 12427,
+   "crossfit": 12427
+  },
+  "test": {
+   "tokens": 11712,
+   "declared": 11476,
+   "learned": 11478,
+   "crossfit": 11478
+  }
+ },
+ {
+  "iso": "urd",
+  "oov_tokens": 5217,
+  "train_tokens": 104228,
+  "declared": [
+   "spacy-lookups",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "wiktionary",
+   "spacy-lookups",
+   "unimorph"
+  ],
+  "crossfit": [
+   "unimorph",
+   "spacy-lookups",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 14311,
+   "declared": 13598,
+   "learned": 13602,
+   "crossfit": 13598
+  },
+  "test": {
+   "tokens": 14537,
+   "declared": 13763,
+   "learned": 13762,
+   "crossfit": 13763
+  }
+ },
+ {
+  "iso": "frm",
+  "oov_tokens": 4024,
+  "train_tokens": 66489,
+  "declared": [
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "wiktionary",
+   "unimorph"
+  ],
+  "crossfit": [
+   "wiktionary",
+   "unimorph"
+  ],
+  "dev": {
+   "tokens": 8101,
+   "declared": 7532,
+   "learned": 7532,
+   "crossfit": 7532
+  },
+  "test": {
+   "tokens": 13586,
+   "declared": 12660,
+   "learned": 12661,
+   "crossfit": 12661
+  }
+ },
+ {
+  "iso": "gla",
+  "oov_tokens": 5554,
+  "train_tokens": 68576,
+  "declared": [
+   "simplemma",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "unimorph",
+   "simplemma",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "unimorph",
+   "wiktionary",
+   "simplemma"
+  ],
+  "dev": {
+   "tokens": 10585,
+   "declared": 10044,
+   "learned": 10043,
+   "crossfit": 10044
+  },
+  "test": {
+   "tokens": 10551,
+   "declared": 9923,
+   "learned": 9922,
+   "crossfit": 9933
+  }
+ },
+ {
+  "iso": "glv",
+  "oov_tokens": 1400,
+  "train_tokens": 10378,
+  "declared": [
+   "simplemma",
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "unimorph",
+   "wiktionary",
+   "simplemma"
+  ],
+  "crossfit": [
+   "simplemma",
+   "unimorph",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 0,
+   "declared": 0,
+   "learned": 0,
+   "crossfit": 0
+  },
+  "test": {
+   "tokens": 10252,
+   "declared": 9810,
+   "learned": 9820,
+   "crossfit": 9810
+  }
+ },
+ {
+  "iso": "yid",
+  "oov_tokens": 2369,
+  "train_tokens": 17981,
+  "declared": [
+   "unimorph",
+   "wiktionary"
+  ],
+  "learned": [
+   "unimorph",
+   "wiktionary"
+  ],
+  "crossfit": [
+   "unimorph",
+   "wiktionary"
+  ],
+  "dev": {
+   "tokens": 1873,
+   "declared": 1721,
+   "learned": 1721,
+   "crossfit": 1721
+  },
+  "test": {
+   "tokens": 9955,
+   "declared": 9292,
+   "learned": 9292,
+   "crossfit": 9292
+  }
+ }
+]

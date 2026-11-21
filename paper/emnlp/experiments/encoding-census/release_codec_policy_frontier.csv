@@ -1,0 +1,9 @@
+policy,n_inline,sorted_pool,bytes,pct,mean_slow,max_slow,kind,inline
+"Все 24 на `inline`, пул как есть (вторая пересборка)",24,false,349594512,16.36,6.7,18.8,измерено,"aze,bel,bul,ell,est,fro,hin,hrv,hun,ind,isl,jpn,lat,mkd,nld,pes,pol,slk,srp,tat,tur,ukr,uzb,xcl"
+"`inline`, где он меньше `map` с отсортированным пулом (21)",21,true,336979342,19.38,7.1,18.8,оценка,"bel,bul,ell,est,fro,hin,hrv,hun,ind,isl,jpn,lat,mkd,nld,pes,pol,slk,srp,tat,ukr,uzb"
+"`inline`, где выигрыш над отсортированным `map` ≥ 1 МБ (8)",8,true,341007959,18.42,8.2,12.9,оценка,"bel,ell,hrv,isl,jpn,nld,pol,srp"
+"`inline`, где выигрыш ≥ 3 МБ (jpn, ell, bel, isl)",4,true,347937481,16.76,6.1,9.9,оценка,"bel,ell,isl,jpn"
+`inline` только у японского,1,true,362982338,13.16,4.1,4.1,оценка,jpn
+"Никто не переключается, пул отсортирован",0,true,386799323,7.46,0.0,0.0,оценка,""
+"`inline`, где выигрыш над нынешним `map` ≥ 1 МБ (10), пул как есть",10,false,353975814,15.31,8.4,15.4,оценка,"bel,ell,hrv,isl,jpn,lat,nld,pol,srp,ukr"
+"Никто не переключается, пул как есть (только правка 2)",0,false,407387741,2.53,0.0,0.0,оценка,""

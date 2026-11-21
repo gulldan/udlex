@@ -1,0 +1,33 @@
+{
+  "cells": {
+    "deu": {
+      "correct": 294896,
+      "model": "morphmodel_ger",
+      "sentences": 18205,
+      "status": "scored",
+      "tokens": 329795,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "eng": {
+      "correct": 25962,
+      "model": "morphmodel_en",
+      "sentences": 1401,
+      "status": "scored",
+      "tokens": 28156,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "nld": {
+      "correct": 25563,
+      "model": "morphmodel_dutch",
+      "sentences": 1676,
+      "status": "scored",
+      "tokens": 28804,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    }
+  },
+  "engine": "hanta",
+  "version": "1.2.1"
+}

@@ -1,0 +1,304 @@
+{
+  "cells": {
+    "afr": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'af'",
+      "status": "unsupported"
+    },
+    "arb": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'ar'",
+      "status": "unsupported"
+    },
+    "bel": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'be'",
+      "status": "unsupported"
+    },
+    "bxr": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'bxr'",
+      "status": "unsupported"
+    },
+    "cat": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'ca'",
+      "status": "unsupported"
+    },
+    "ces": {
+      "correct": 247731,
+      "model": "lemmagen3 3.5.2: модель cs",
+      "status": "scored",
+      "tokens": 298180
+    },
+    "chu": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'cu'",
+      "status": "unsupported"
+    },
+    "cym": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'cy'",
+      "status": "unsupported"
+    },
+    "dan": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'da'",
+      "status": "unsupported"
+    },
+    "deu": {
+      "correct": 266562,
+      "model": "lemmagen3 3.5.2: модель de",
+      "status": "scored",
+      "tokens": 329795
+    },
+    "ell": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'el'",
+      "status": "unsupported"
+    },
+    "eng": {
+      "correct": 25466,
+      "model": "lemmagen3 3.5.2: модель en",
+      "status": "scored",
+      "tokens": 28156
+    },
+    "est": {
+      "correct": 36900,
+      "model": "lemmagen3 3.5.2: модель et",
+      "status": "scored",
+      "tokens": 48309
+    },
+    "eus": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'eu'",
+      "status": "unsupported"
+    },
+    "fao": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'fo'",
+      "status": "unsupported"
+    },
+    "fin": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'fi'",
+      "status": "unsupported"
+    },
+    "fra": {
+      "correct": 8188,
+      "model": "lemmagen3 3.5.2: модель fr",
+      "status": "scored",
+      "tokens": 9935
+    },
+    "frm": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'frm'",
+      "status": "unsupported"
+    },
+    "gla": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'gd'",
+      "status": "unsupported"
+    },
+    "gle": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'ga'",
+      "status": "unsupported"
+    },
+    "glg": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'gl'",
+      "status": "unsupported"
+    },
+    "glv": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'gv'",
+      "status": "unsupported"
+    },
+    "got": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'got'",
+      "status": "unsupported"
+    },
+    "grc": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'grc'",
+      "status": "unsupported"
+    },
+    "heb": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'he'",
+      "status": "unsupported"
+    },
+    "hin": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'hi'",
+      "status": "unsupported"
+    },
+    "hrv": {
+      "correct": 21338,
+      "model": "lemmagen3 3.5.2: модель hr",
+      "status": "scored",
+      "tokens": 24203
+    },
+    "hun": {
+      "correct": 9163,
+      "model": "lemmagen3 3.5.2: модель hu",
+      "status": "scored",
+      "tokens": 10432
+    },
+    "hye": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'hy'",
+      "status": "unsupported"
+    },
+    "ind": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'id'",
+      "status": "unsupported"
+    },
+    "isl": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'is'",
+      "status": "unsupported"
+    },
+    "ita": {
+      "correct": 7419,
+      "model": "lemmagen3 3.5.2: модель it",
+      "status": "scored",
+      "tokens": 10416
+    },
+    "jpn": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'ja'",
+      "status": "unsupported"
+    },
+    "kat": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'ka'",
+      "status": "unsupported"
+    },
+    "kaz": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'kk'",
+      "status": "unsupported"
+    },
+    "kir": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'ky'",
+      "status": "unsupported"
+    },
+    "kmr": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'kmr'",
+      "status": "unsupported"
+    },
+    "kor": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'ko'",
+      "status": "unsupported"
+    },
+    "lat": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'la'",
+      "status": "unsupported"
+    },
+    "lav": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'lv'",
+      "status": "unsupported"
+    },
+    "lit": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'lt'",
+      "status": "unsupported"
+    },
+    "mdf": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'mdf'",
+      "status": "unsupported"
+    },
+    "myv": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'myv'",
+      "status": "unsupported"
+    },
+    "nld": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'nl'",
+      "status": "unsupported"
+    },
+    "nor": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'no'",
+      "status": "unsupported"
+    },
+    "oci": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'oc'",
+      "status": "unsupported"
+    },
+    "olo": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'olo'",
+      "status": "unsupported"
+    },
+    "pes": {
+      "correct": 20358,
+      "model": "lemmagen3 3.5.2: модель fa",
+      "status": "scored",
+      "tokens": 24118
+    },
+    "pol": {
+      "correct": 28906,
+      "model": "lemmagen3 3.5.2: модель pl",
+      "status": "scored",
+      "tokens": 33572
+    },
+    "por": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'pt'",
+      "status": "unsupported"
+    },
+    "ron": {
+      "correct": 11790,
+      "model": "lemmagen3 3.5.2: модель ro",
+      "status": "scored",
+      "tokens": 20943
+    },
+    "rus": {
+      "correct": 13605,
+      "model": "lemmagen3 3.5.2: модель ru",
+      "status": "scored",
+      "tokens": 15334
+    },
+    "san": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'sa'",
+      "status": "unsupported"
+    },
+    "slk": {
+      "correct": 10131,
+      "model": "lemmagen3 3.5.2: модель sk",
+      "status": "scored",
+      "tokens": 12702
+    },
+    "slv": {
+      "correct": 23561,
+      "model": "lemmagen3 3.5.2: модель sl",
+      "status": "scored",
+      "tokens": 25407
+    },
+    "sme": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'sme'",
+      "status": "unsupported"
+    },
+    "spa": {
+      "correct": 43400,
+      "model": "lemmagen3 3.5.2: модель es",
+      "status": "scored",
+      "tokens": 53584
+    },
+    "sqi": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'sq'",
+      "status": "unsupported"
+    },
+    "srp": {
+      "correct": 9434,
+      "model": "lemmagen3 3.5.2: модель sr",
+      "status": "scored",
+      "tokens": 11410
+    },
+    "swe": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'sv'",
+      "status": "unsupported"
+    },
+    "tur": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'tr'",
+      "status": "unsupported"
+    },
+    "uig": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'ug'",
+      "status": "unsupported"
+    },
+    "ukr": {
+      "correct": 13923,
+      "model": "lemmagen3 3.5.2: модель uk",
+      "status": "scored",
+      "tokens": 16075
+    },
+    "urd": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'ur'",
+      "status": "unsupported"
+    },
+    "uzb": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'uz'",
+      "status": "unsupported"
+    },
+    "yid": {
+      "reason": "Unsupported: lemmagen3 declares no lemmatizer for 'yi'",
+      "status": "unsupported"
+    }
+  },
+  "engine": "lemmagen3",
+  "version": "3.5.2"
+}

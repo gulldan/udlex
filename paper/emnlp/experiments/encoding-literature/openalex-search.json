@@ -1,0 +1,3541 @@
+{
+ "data_source": "OpenAlex Works API",
+ "retrieved_on": "2026-11-19",
+ "publication_date_inclusive": [
+  "2023-11-19",
+  "2026-11-19"
+ ],
+ "counting": "Distinct OpenAlex work identifiers within Q/F/B. Preprint and proceedings may have separate IDs. S01 verifies known DOIs without a date filter and adds no IDs to discovery counts. Work type and date are verbatim OpenAlex metadata.",
+ "stages": {
+  "Q": "Boolean searches of title or title and abstract in English. Q22–29 add specific names and synonyms. Q30–33 address integer offsets and rank/select.",
+  "F": "One forward citation step on the grouped seeds. F07 has an extra topical search.",
+  "B": "One backward pass from seven selected works, de-duplicating their cited OpenAlex IDs, followed by the date filter in eight batches."
+ },
+ "per_stage": {
+  "Q": {
+   "returned_rows": 291,
+   "distinct_ids_within_stage": 246,
+   "new_ids_in_Q_F_B_order": 246
+  },
+  "F": {
+   "returned_rows": 117,
+   "distinct_ids_within_stage": 107,
+   "new_ids_in_Q_F_B_order": 83
+  },
+  "B": {
+   "returned_rows": 35,
+   "distinct_ids_within_stage": 35,
+   "new_ids_in_Q_F_B_order": 17
+  }
+ },
+ "all_returned_rows": 443,
+ "distinct_discovered_ids": 346,
+ "all_reported_pages_retrieved": true,
+ "method_and_context_groups_cited_in_note": {
+  "independent record compression": [
+   "W4417102688",
+   "W7208704736",
+   "W7168259875"
+  ],
+  "offset select support": [
+   "W7110257976"
+  ],
+  "value retrieval": [
+   "W4415927674",
+   "W7141403470"
+  ],
+  "trie layouts, versions of C²": [
+   "W7164945348",
+   "W7171525914"
+  ],
+  "perfect hashing": [
+   "W7221829096",
+   "W7167981652",
+   "W4415035165"
+  ],
+  "version history and controls": [
+   "W4388751778",
+   "W4312664090",
+   "W4404171560",
+   "W4386870725",
+   "W3084651990",
+   "W2251648400"
+  ],
+  "linguistic motivation": [
+   "W7160110854",
+   "W4412888985"
+  ],
+  "ordered learned indexes": [
+   "W4402043003",
+   "W7203647112",
+   "W4404135987"
+  ],
+  "GPU comparison outside CPU benchmark": [
+   "W7213348223",
+   "W7143789346"
+  ]
+ },
+ "backward_seeds_and_cited_ids": {
+  "W7164945348": [
+   "W1493802692",
+   "W1514915193",
+   "W1551498417",
+   "W17958277",
+   "W1879757347",
+   "W1962019683",
+   "W1969884330",
+   "W2000273502",
+   "W2000568570",
+   "W2001450952",
+   "W202508549",
+   "W2030062409",
+   "W2130011058",
+   "W2147344024",
+   "W2148113067",
+   "W2149243190",
+   "W2151249511",
+   "W2155512447",
+   "W2405120999",
+   "W2429518132",
+   "W2602771387",
+   "W2798891709",
+   "W2890245531",
+   "W2979695606",
+   "W3084651990",
+   "W3089808641",
+   "W3197753456",
+   "W4312664090",
+   "W4388751778"
+  ],
+  "W4417102688": [
+   "W1521148341",
+   "W1568325880",
+   "W1777016212",
+   "W1816313093",
+   "W1976149088",
+   "W2054046497",
+   "W2060108852",
+   "W2102729946",
+   "W2107745473",
+   "W2123686039",
+   "W2130011058",
+   "W2171532727",
+   "W2396727930",
+   "W2554111346",
+   "W2572107491",
+   "W2605002790",
+   "W2765756720",
+   "W2947205972",
+   "W2950969408",
+   "W3084651990",
+   "W4292080258",
+   "W4382765869",
+   "W4392576636",
+   "W4404407951",
+   "W4415035165",
+   "W46679369"
+  ],
+  "W4404171560": [
+   "W136800840",
+   "W1791987072",
+   "W17958277",
+   "W1798412263",
+   "W1938991448",
+   "W1962019683",
+   "W2000568570",
+   "W2001450952",
+   "W2013291893",
+   "W2028164393",
+   "W2030062409",
+   "W2051867864",
+   "W2068739275",
+   "W2087721273",
+   "W2107745473",
+   "W2148113067",
+   "W2149243190",
+   "W2155512447",
+   "W2337480916",
+   "W2429518132",
+   "W2479292667",
+   "W2517241835",
+   "W2563351168",
+   "W2602771387",
+   "W2759020546",
+   "W2772512310",
+   "W2805710541",
+   "W2893990175",
+   "W2955799495",
+   "W2963379900",
+   "W2970215257",
+   "W2985395104",
+   "W3035954614",
+   "W3084651990",
+   "W3098576111",
+   "W3134677442",
+   "W3152703111",
+   "W3197753456",
+   "W4221058058",
+   "W4234888344",
+   "W4247794781",
+   "W4283818303",
+   "W4295940331",
+   "W4312409437",
+   "W4312423556",
+   "W4379746314",
+   "W4384303994",
+   "W4386870659",
+   "W4386870725",
+   "W4388750669",
+   "W4388751778",
+   "W4390850770",
+   "W4391087645"
+  ],
+  "W7208704736": [
+   "W1600355623",
+   "W1845395494",
+   "W1933799648",
+   "W1967601791",
+   "W1993819379",
+   "W2003580796",
+   "W2054046497",
+   "W2060108852",
+   "W2085601491",
+   "W2102639991",
+   "W2102729946",
+   "W2107745473",
+   "W2123686039",
+   "W2124851765",
+   "W2130642985",
+   "W2140453381",
+   "W2144399314",
+   "W2295448598",
+   "W2341510490",
+   "W2439390339",
+   "W2602771387",
+   "W2605002790",
+   "W2803749063",
+   "W2806056912",
+   "W2998353611",
+   "W3009361246",
+   "W3013316555",
+   "W3030163527",
+   "W3044887024",
+   "W3081593267",
+   "W3084651990",
+   "W3085477028",
+   "W3175356203",
+   "W4226271314",
+   "W4312429406",
+   "W4376599704",
+   "W4383749437",
+   "W4385571315",
+   "W4386128176",
+   "W4389539860",
+   "W4389628091",
+   "W4391855109",
+   "W4393284490",
+   "W4399163753",
+   "W4402041923",
+   "W4402042577",
+   "W4413978115",
+   "W4413978152",
+   "W4414266802",
+   "W4417102688",
+   "W46679369",
+   "W6929265734",
+   "W7096976119",
+   "W7118613055",
+   "W7167906649"
+  ],
+  "W7141403470": [
+   "W1509016759",
+   "W164887593",
+   "W1703904868",
+   "W1852401022",
+   "W1891810191",
+   "W1967373117",
+   "W1995875735",
+   "W2060108852",
+   "W2064803799",
+   "W2080388000",
+   "W2088518924",
+   "W2097286495",
+   "W2123845384",
+   "W2169476932",
+   "W2563930566",
+   "W2773466258",
+   "W2994941531",
+   "W2999307977",
+   "W3033316230",
+   "W3034570653",
+   "W3082379938",
+   "W3197479795",
+   "W4214926007",
+   "W4221076494",
+   "W4254982796",
+   "W4378713421",
+   "W4415927674",
+   "W7133205640"
+  ],
+  "W4415927674": [
+   "W1548702063",
+   "W1562034888",
+   "W1703904868",
+   "W1852401022",
+   "W1891810191",
+   "W1969884330",
+   "W1995875735",
+   "W2012957959",
+   "W2028785128",
+   "W2037892395",
+   "W2038649859",
+   "W2060108852",
+   "W2061997675",
+   "W2097286495",
+   "W2111021385",
+   "W2112821228",
+   "W2120933912",
+   "W2123845384",
+   "W2131355670",
+   "W2139761194",
+   "W2149592768",
+   "W2151687858",
+   "W2154900736",
+   "W2165621523",
+   "W2254249950",
+   "W2281341896",
+   "W2773466258",
+   "W2901125983",
+   "W2912601938",
+   "W2919681562",
+   "W2979531022",
+   "W2994941531",
+   "W2999307977",
+   "W3029187551",
+   "W3096828292",
+   "W3101356515",
+   "W3102359135",
+   "W3112600195",
+   "W3131264963",
+   "W3137108924",
+   "W3186527989",
+   "W3197479795",
+   "W3199252869",
+   "W4214910385",
+   "W4214926007",
+   "W4221058058",
+   "W4221076494",
+   "W4242124034",
+   "W4247794781",
+   "W4254982796",
+   "W4291295300",
+   "W4312409437",
+   "W4315779781",
+   "W4315784833",
+   "W4316652394",
+   "W4317767740",
+   "W4366835641",
+   "W4378713421",
+   "W4387259573",
+   "W4387826905",
+   "W4390589993",
+   "W4392340715",
+   "W4393180321",
+   "W4393220152",
+   "W4400909775",
+   "W4403486697",
+   "W4412215390",
+   "W4413349906",
+   "W4414452381",
+   "W4416038669",
+   "W6890047298",
+   "W6963881321",
+   "W7128614633",
+   "W7133205640"
+  ],
+  "W7167981652": [
+   "W1528625750",
+   "W1557941519",
+   "W1566783100",
+   "W1966695467",
+   "W1970769392",
+   "W1980606681",
+   "W2010986907",
+   "W2034614140",
+   "W2040062099",
+   "W2060907649",
+   "W2069074882",
+   "W2080388000",
+   "W2084325555",
+   "W2087966340",
+   "W2138768227",
+   "W2139822261",
+   "W2146005787",
+   "W2299825835",
+   "W2593474041",
+   "W2737172134",
+   "W2762992850",
+   "W2912601938",
+   "W2980862352",
+   "W2998461763",
+   "W3156632946",
+   "W3170078628",
+   "W4291308656",
+   "W4312052771",
+   "W4315779781",
+   "W4315784833",
+   "W4376505296",
+   "W4385270427",
+   "W4390589993",
+   "W4396820912",
+   "W4407385151",
+   "W4411226742",
+   "W4411403425",
+   "W4415035165",
+   "W4417174694",
+   "W62638829",
+   "W6894368356",
+   "W6912801401",
+   "W7084419693",
+   "W7100818879",
+   "W7118809228",
+   "W7118894901",
+   "W7128614633",
+   "W7204173477"
+  ]
+ },
+ "discovery_queries": [
+  {
+   "id": "Q01",
+   "field": "title_and_abstract",
+   "expression": "\"string dictionaries\" OR \"dictionary of strings\" OR \"string dictionary\"",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%22string+dictionaries%22+OR+%22dictionary+of+strings%22+OR+%22string+dictionary%22&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 5,
+   "work_ids": [
+    "W4404171560",
+    "W7164945348",
+    "W7171525914",
+    "W7211892180",
+    "W7202175519"
+   ]
+  },
+  {
+   "id": "Q02",
+   "field": "title_and_abstract",
+   "expression": "(\"succinct trie\" OR \"compressed trie\" OR \"compact trie\" OR \"double-array trie\" OR \"path-decomposed trie\")",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%28%22succinct+trie%22+OR+%22compressed+trie%22+OR+%22compact+trie%22+OR+%22double-array+trie%22+OR+%22path-decomposed+trie%22%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 17,
+   "work_ids": [
+    "W7171533745",
+    "W4414895703",
+    "W7155506138",
+    "W7168262980",
+    "W7154963857",
+    "W4399400913",
+    "W4411372932",
+    "W7164945348",
+    "W7171525914",
+    "W4406535086",
+    "W7127072313",
+    "W7168299783",
+    "W7143789346",
+    "W4393099849",
+    "W4414271122",
+    "W3101379538",
+    "W7204692540"
+   ]
+  },
+  {
+   "id": "Q03",
+   "field": "title_and_abstract",
+   "expression": "(\"front coding\" OR \"front-coded\" OR \"rear coding\") AND (dictionary OR strings)",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%28%22front+coding%22+OR+%22front-coded%22+OR+%22rear+coding%22%29+AND+%28dictionary+OR+strings%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 3,
+   "work_ids": [
+    "W7213643885",
+    "W7204221120",
+    "W7171994147"
+   ]
+  },
+  {
+   "id": "Q04",
+   "field": "title_and_abstract",
+   "expression": "(FSST OR OptFSST OR FSST12 OR \"fast static symbol table\") AND (strings OR compression)",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%28FSST+OR+OptFSST+OR+FSST12+OR+%22fast+static+symbol+table%22%29+AND+%28strings+OR+compression%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 18,
+   "work_ids": [
+    "W7168259875",
+    "W4415419743",
+    "W7141457036",
+    "W7167906649",
+    "W4417102688",
+    "W4412719700",
+    "W7117294810",
+    "W7108320567",
+    "W7208704736",
+    "W4391941402",
+    "W4389558402",
+    "W4413014941",
+    "W4408738443",
+    "W4414400087",
+    "W4412827256",
+    "W7119504105",
+    "W7212259977",
+    "W7171823896"
+   ]
+  },
+  {
+   "id": "Q05",
+   "field": "title",
+   "expression": "\"string compression\" OR \"string column compression\" OR \"string dictionary\" OR \"dictionary compression\"",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title=%22string+compression%22+OR+%22string+column+compression%22+OR+%22string+dictionary%22+OR+%22dictionary+compression%22&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 8,
+   "work_ids": [
+    "W4404171560",
+    "W4398173573",
+    "W7168259875",
+    "W7141457036",
+    "W7167366134",
+    "W4404168191",
+    "W7126116346",
+    "W7165204677"
+   ]
+  },
+  {
+   "id": "Q06",
+   "field": "title",
+   "expression": "\"perfect hash\" OR \"perfect hashing\" OR \"monotone hashing\"",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title=%22perfect+hash%22+OR+%22perfect+hashing%22+OR+%22monotone+hashing%22&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 42,
+   "work_ids": [
+    "W7128614633",
+    "W4391631801",
+    "W4415035165",
+    "W4401422447",
+    "W4417174694",
+    "W4413980865",
+    "W7105660382",
+    "W7138044795",
+    "W4396820912",
+    "W4399377981",
+    "W7221829096",
+    "W4407385151",
+    "W4411403425",
+    "W4416038669",
+    "W7110134940",
+    "W4390589993",
+    "W4414170662",
+    "W7225387080",
+    "W7110448724",
+    "W7225723610",
+    "W4412848376",
+    "W4400103803",
+    "W4414810819",
+    "W7212303081",
+    "W4409956141",
+    "W7125716291",
+    "W7106014771",
+    "W7164036932",
+    "W4413361490",
+    "W4405935028",
+    "W7222876954",
+    "W7160839767",
+    "W7224914018",
+    "W7161576040",
+    "W4402931397",
+    "W4401751803",
+    "W4411726254",
+    "W7225111879",
+    "W7167981652",
+    "W7225012586",
+    "W7224581496",
+    "W7202261647"
+   ]
+  },
+  {
+   "id": "Q07",
+   "field": "title",
+   "expression": "\"static functions\" OR \"static retrieval\" OR \"static dictionaries\" OR \"static hash tables\"",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title=%22static+functions%22+OR+%22static+retrieval%22+OR+%22static+dictionaries%22+OR+%22static+hash+tables%22&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 13,
+   "work_ids": [
+    "W7167981652",
+    "W7128620472",
+    "W4411319889",
+    "W7118099246",
+    "W7138775829",
+    "W7215080190",
+    "W4415927674",
+    "W4415661885",
+    "W7162866514",
+    "W7222883525",
+    "W7169511150",
+    "W7162628141",
+    "W7141403470"
+   ]
+  },
+  {
+   "id": "Q08",
+   "field": "title_and_abstract",
+   "expression": "(\"morphological dictionary\" OR \"inflectional lexicon\" OR \"morphological lexicon\") AND (compression OR compact OR templates OR paradigms OR encoding)",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%28%22morphological+dictionary%22+OR+%22inflectional+lexicon%22+OR+%22morphological+lexicon%22%29+AND+%28compression+OR+compact+OR+templates+OR+paradigms+OR+encoding%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 10,
+   "work_ids": [
+    "W7128576538",
+    "W4404501767",
+    "W7131394113",
+    "W7108666610",
+    "W7160110854",
+    "W7206415350",
+    "W4405299711",
+    "W7223451946",
+    "W7223585824",
+    "W7143789346"
+   ]
+  },
+  {
+   "id": "Q09",
+   "field": "title_and_abstract",
+   "expression": "(\"morphological transducer\" OR \"finite-state morphology\" OR \"morphological dictionaries\") AND (compression OR compact OR encoding)",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%28%22morphological+transducer%22+OR+%22finite-state+morphology%22+OR+%22morphological+dictionaries%22%29+AND+%28compression+OR+compact+OR+encoding%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 5,
+   "work_ids": [
+    "W4404501767",
+    "W7131394113",
+    "W7160110854",
+    "W7223451946",
+    "W7143789346"
+   ]
+  },
+  {
+   "id": "Q10",
+   "field": "title_and_abstract",
+   "expression": "(\"string columns\" OR \"string collections\" OR \"short strings\") AND (\"random access\" OR \"point lookup\" OR \"random-access\") AND compression",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%28%22string+columns%22+OR+%22string+collections%22+OR+%22short+strings%22%29+AND+%28%22random+access%22+OR+%22point+lookup%22+OR+%22random-access%22%29+AND+compression&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 1,
+   "work_ids": [
+    "W4417102688"
+   ]
+  },
+  {
+   "id": "Q11",
+   "field": "title_and_abstract",
+   "expression": "(\"string keys\" OR \"string sets\" OR \"sets of strings\") AND (\"learned index\" OR \"perfect hashing\" OR \"succinct trie\")",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%28%22string+keys%22+OR+%22string+sets%22+OR+%22sets+of+strings%22%29+AND+%28%22learned+index%22+OR+%22perfect+hashing%22+OR+%22succinct+trie%22%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 12,
+   "work_ids": [
+    "W4404135987",
+    "W7147625705",
+    "W7213228247",
+    "W4415035165",
+    "W4402043003",
+    "W4402817363",
+    "W7203647112",
+    "W4399208580",
+    "W4409882817",
+    "W7162309768",
+    "W4407057293",
+    "W7206205020"
+   ]
+  },
+  {
+   "id": "Q12",
+   "field": "title_and_abstract",
+   "expression": "(\"lexicographic rank\" OR \"sorted strings\") AND (dictionary OR trie OR \"perfect hashing\" OR \"front coding\")",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%28%22lexicographic+rank%22+OR+%22sorted+strings%22%29+AND+%28dictionary+OR+trie+OR+%22perfect+hashing%22+OR+%22front+coding%22%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 1,
+   "work_ids": [
+    "W7151053600"
+   ]
+  },
+  {
+   "id": "Q13",
+   "field": "title_and_abstract",
+   "expression": "(\"finite-state transducer\" OR \"finite-state automata\" OR \"acyclic finite automata\") AND (\"dictionary compression\" OR \"compact dictionary\" OR \"lexicon compression\" OR \"compressed dictionary\")",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%28%22finite-state+transducer%22+OR+%22finite-state+automata%22+OR+%22acyclic+finite+automata%22%29+AND+%28%22dictionary+compression%22+OR+%22compact+dictionary%22+OR+%22lexicon+compression%22+OR+%22compressed+dictionary%22%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 0,
+   "work_ids": []
+  },
+  {
+   "id": "Q14",
+   "field": "title_and_abstract",
+   "expression": "\"grammar-compressed strings\" AND (\"random access\" OR \"substring extraction\")",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%22grammar-compressed+strings%22+AND+%28%22random+access%22+OR+%22substring+extraction%22%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 4,
+   "work_ids": [
+    "W4402586434",
+    "W7166799604",
+    "W4400667599",
+    "W7225049484"
+   ]
+  },
+  {
+   "id": "Q15",
+   "field": "title_and_abstract",
+   "expression": "(\"order-preserving compression\" OR \"order-preserving key compression\" OR \"string key compression\") AND (index OR string)",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%28%22order-preserving+compression%22+OR+%22order-preserving+key+compression%22+OR+%22string+key+compression%22%29+AND+%28index+OR+string%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 1,
+   "work_ids": [
+    "W7212300725"
+   ]
+  },
+  {
+   "id": "Q16",
+   "field": "title",
+   "expression": "\"compressed strings\" OR \"learned string index\" OR \"trie compression\" OR \"key compression\"",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title=%22compressed+strings%22+OR+%22learned+string+index%22+OR+%22trie+compression%22+OR+%22key+compression%22&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 16,
+   "work_ids": [
+    "W7223770331",
+    "W7127950930",
+    "W7167980754",
+    "W4400667599",
+    "W4402586434",
+    "W7112484543",
+    "W4393081303",
+    "W7119013462",
+    "W7137117388",
+    "W7166799604",
+    "W4406495605",
+    "W7124468619",
+    "W4407806873",
+    "W7225049484",
+    "W7151608908",
+    "W7225798402"
+   ]
+  },
+  {
+   "id": "Q17",
+   "field": "title",
+   "expression": "\"morphological dictionary\" OR \"morphological lexicon\" OR \"inflectional lexicon\" OR MorfFlex",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title=%22morphological+dictionary%22+OR+%22morphological+lexicon%22+OR+%22inflectional+lexicon%22+OR+MorfFlex&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 18,
+   "work_ids": [
+    "W7160321597",
+    "W7160110854",
+    "W7128576538",
+    "W4414210880",
+    "W4402661097",
+    "W7206415350",
+    "W4403146690",
+    "W7116856391",
+    "W7209608652",
+    "W4417010301",
+    "W7225733179",
+    "W7169787480",
+    "W7139211006",
+    "W7167243283",
+    "W4402081395",
+    "W4402092942",
+    "W7170194796",
+    "W4403847544"
+   ]
+  },
+  {
+   "id": "Q18",
+   "field": "title_and_abstract",
+   "expression": "(\"static function\" OR \"retrieval data structure\") AND (\"low entropy\" OR \"empirical entropy\" OR \"key-value\")",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%28%22static+function%22+OR+%22retrieval+data+structure%22%29+AND+%28%22low+entropy%22+OR+%22empirical+entropy%22+OR+%22key-value%22%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 5,
+   "work_ids": [
+    "W7215080190",
+    "W4415927674",
+    "W7141403470",
+    "W4406151950",
+    "W4410464774"
+   ]
+  },
+  {
+   "id": "Q19",
+   "field": "title_and_abstract",
+   "expression": "(\"random access\" OR \"random-access\") AND (\"string compression\" OR \"compressed string dictionary\")",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%28%22random+access%22+OR+%22random-access%22%29+AND+%28%22string+compression%22+OR+%22compressed+string+dictionary%22%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 2,
+   "work_ids": [
+    "W4402586434",
+    "W7168259875"
+   ]
+  },
+  {
+   "id": "Q20",
+   "field": "title_and_abstract",
+   "expression": "(\"finite-state\" OR FST OR \"finite state\") AND (\"compact representation\" OR \"compressed representation\") AND (lexicon OR lemmatization)",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%28%22finite-state%22+OR+FST+OR+%22finite+state%22%29+AND+%28%22compact+representation%22+OR+%22compressed+representation%22%29+AND+%28lexicon+OR+lemmatization%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 0,
+   "work_ids": []
+  },
+  {
+   "id": "Q21",
+   "field": "title_and_abstract",
+   "expression": "(\"minimal perfect hash\" OR \"perfect hashing\") AND (\"variable-length strings\" OR \"variable-length keys\" OR \"string keys\")",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%28%22minimal+perfect+hash%22+OR+%22perfect+hashing%22%29+AND+%28%22variable-length+strings%22+OR+%22variable-length+keys%22+OR+%22string+keys%22%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 1,
+   "work_ids": [
+    "W4415035165"
+   ]
+  },
+  {
+   "id": "Q22",
+   "field": "title_and_abstract",
+   "expression": "\"OnPair\" OR \"OnPair16\" OR FastPair OR \"PHastR\" OR \"AutoCSF\"",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%22OnPair%22+OR+%22OnPair16%22+OR+FastPair+OR+%22PHastR%22+OR+%22AutoCSF%22&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 8,
+   "work_ids": [
+    "W4417102688",
+    "W7213348223",
+    "W7221829096",
+    "W4408825563",
+    "W7141403470",
+    "W7167906649",
+    "W7171532089",
+    "W7208704736"
+   ]
+  },
+  {
+   "id": "Q23",
+   "field": "title_and_abstract",
+   "expression": "(\"inflectional paradigms\" OR \"inflection classes\" OR \"inflected lexicon\") AND (compression OR compaction OR \"minimum description length\" OR \"finite-state\")",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%28%22inflectional+paradigms%22+OR+%22inflection+classes%22+OR+%22inflected+lexicon%22%29+AND+%28compression+OR+compaction+OR+%22minimum+description+length%22+OR+%22finite-state%22%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 5,
+   "work_ids": [
+    "W4414760276",
+    "W4404356300",
+    "W4412888985",
+    "W7204841756",
+    "W7164029723"
+   ]
+  },
+  {
+   "id": "Q24",
+   "field": "title",
+   "expression": "(\"short strings\" OR \"string-heavy queries\" OR \"string data\") AND (compression OR token OR encoding)",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title=%28%22short+strings%22+OR+%22string-heavy+queries%22+OR+%22string+data%22%29+AND+%28compression+OR+token+OR+encoding%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 3,
+   "work_ids": [
+    "W7208704736",
+    "W4417102688",
+    "W7214641269"
+   ]
+  },
+  {
+   "id": "Q25",
+   "field": "title_and_abstract",
+   "expression": "(\"string-to-id\" OR \"string-to-integer\" OR \"immutable dictionary\" OR \"static string dictionary\" OR \"trie dictionary\") AND (index OR compact OR compress)",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%28%22string-to-id%22+OR+%22string-to-integer%22+OR+%22immutable+dictionary%22+OR+%22static+string+dictionary%22+OR+%22trie+dictionary%22%29+AND+%28index+OR+compact+OR+compress%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 2,
+   "work_ids": [
+    "W7204221120",
+    "W7204692540"
+   ]
+  },
+  {
+   "id": "Q26",
+   "field": "title",
+   "expression": "\"Zip-Tries\" OR \"PTrie\" OR \"LeMonHash\" OR \"PHast\" OR OnPair OR \"token tables\"",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title=%22Zip-Tries%22+OR+%22PTrie%22+OR+%22LeMonHash%22+OR+%22PHast%22+OR+OnPair+OR+%22token+tables%22&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 59,
+   "work_ids": [
+    "W4412408441",
+    "W4415796951",
+    "W4411182947",
+    "W4417102688",
+    "W7208704736",
+    "W4396903753",
+    "W7118894901",
+    "W7131132729",
+    "W7153874207",
+    "W7201929981",
+    "W4417219973",
+    "W4410993625",
+    "W4406595485",
+    "W4410299067",
+    "W7171683294",
+    "W7155008766",
+    "W4415041739",
+    "W4412182588",
+    "W4407848200",
+    "W7215027617",
+    "W4403412022",
+    "W4393210201",
+    "W4390062634",
+    "W7165616534",
+    "W7225406907",
+    "W4403650185",
+    "W4405791690",
+    "W7171354171",
+    "W4414569216",
+    "W4416914903",
+    "W4404374501",
+    "W7218015315",
+    "W7219653296",
+    "W7162799053",
+    "W4403586953",
+    "W7147607063",
+    "W7171363234",
+    "W7208318364",
+    "W4406439990",
+    "W7225711202",
+    "W4417350978",
+    "W4412182979",
+    "W4413840235",
+    "W7165635391",
+    "W7117580961",
+    "W7160287231",
+    "W4415148222",
+    "W7128548972",
+    "W4406299819",
+    "W7127311769",
+    "W4415940457",
+    "W4408782670",
+    "W4411116911",
+    "W7127051998",
+    "W7169746307",
+    "W7170192635",
+    "W7222614886",
+    "W4413232336",
+    "W7161991461"
+   ]
+  },
+  {
+   "id": "Q27",
+   "field": "title_and_abstract",
+   "expression": "(\"grammar compression\" OR \"Re-Pair\" OR \"RePair\") AND (\"short strings\" OR \"string dictionaries\")",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%28%22grammar+compression%22+OR+%22Re-Pair%22+OR+%22RePair%22%29+AND+%28%22short+strings%22+OR+%22string+dictionaries%22%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 0,
+   "work_ids": []
+  },
+  {
+   "id": "Q28",
+   "field": "title",
+   "expression": "\"learned static function\" OR \"succinct perfect hash index\" OR \"compressed static functions\" OR \"GPU-optimized string decoding\"",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title=%22learned+static+function%22+OR+%22succinct+perfect+hash+index%22+OR+%22compressed+static+functions%22+OR+%22GPU-optimized+string+decoding%22&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 5,
+   "work_ids": [
+    "W4413980865",
+    "W7213348223",
+    "W7215080190",
+    "W4415927674",
+    "W7141403470"
+   ]
+  },
+  {
+   "id": "Q29",
+   "field": "title_and_abstract",
+   "expression": "(\"dictionary automata\" OR \"acyclic word graph\" OR \"morphological lexicons\") AND (compress OR compact OR succinct OR minimization)",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%28%22dictionary+automata%22+OR+%22acyclic+word+graph%22+OR+%22morphological+lexicons%22%29+AND+%28compress+OR+compact+OR+succinct+OR+minimization%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 9,
+   "work_ids": [
+    "W4400667599",
+    "W7167256857",
+    "W7225231347",
+    "W4415334882",
+    "W7163954942",
+    "W4404089069",
+    "W4407141659",
+    "W4399888654",
+    "W4401855974"
+   ]
+  },
+  {
+   "id": "Q30",
+   "field": "title_and_abstract",
+   "expression": "(\"monotone sequences\" OR \"monotonic sequences\" OR \"sorted integer sequences\" OR \"sorted integer sets\" OR \"monotonic integer sequences\") AND (compress OR compression OR succinct OR \"random access\")",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%28%22monotone+sequences%22+OR+%22monotonic+sequences%22+OR+%22sorted+integer+sequences%22+OR+%22sorted+integer+sets%22+OR+%22monotonic+integer+sequences%22%29+AND+%28compress+OR+compression+OR+succinct+OR+%22random+access%22%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 9,
+   "work_ids": [
+    "W4398163862",
+    "W4405178514",
+    "W7221596603",
+    "W4410537506",
+    "W7212283775",
+    "W7172328831",
+    "W4415331749",
+    "W7223535707",
+    "W7169497086"
+   ]
+  },
+  {
+   "id": "Q31",
+   "field": "title_and_abstract",
+   "expression": "(\"Elias-Fano\" OR \"Elias–Fano\" OR \"partitioned Elias-Fano\") AND (\"random access\" OR \"select queries\" OR \"integer sequences\" OR \"monotone sequences\")",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%28%22Elias-Fano%22+OR+%22Elias%E2%80%93Fano%22+OR+%22partitioned+Elias-Fano%22%29+AND+%28%22random+access%22+OR+%22select+queries%22+OR+%22integer+sequences%22+OR+%22monotone+sequences%22%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 4,
+   "work_ids": [
+    "W7110257976",
+    "W7168021801",
+    "W4406601972",
+    "W4417000924"
+   ]
+  },
+  {
+   "id": "Q32",
+   "field": "title",
+   "expression": "(\"integer lists\" OR \"integer sequences\" OR \"rank/select\" OR \"rank and select\" OR \"rank-select\" OR \"sorted integers\" OR \"posting lists\") AND (compress OR compression OR index OR efficient OR succinct OR compact)",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title=%28%22integer+lists%22+OR+%22integer+sequences%22+OR+%22rank%2Fselect%22+OR+%22rank+and+select%22+OR+%22rank-select%22+OR+%22sorted+integers%22+OR+%22posting+lists%22%29+AND+%28compress+OR+compression+OR+index+OR+efficient+OR+succinct+OR+compact%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 5,
+   "work_ids": [
+    "W7118470989",
+    "W7110257976",
+    "W4407258186",
+    "W4412700563",
+    "W7134249058"
+   ]
+  },
+  {
+   "id": "Q33",
+   "field": "title_and_abstract",
+   "expression": "(\"offset arrays\" OR \"offset array\" OR \"variable-length records\") AND (succinct OR \"Elias-Fano\" OR \"compressed offsets\" OR \"random access\")",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19&search.title_and_abstract=%28%22offset+arrays%22+OR+%22offset+array%22+OR+%22variable-length+records%22%29+AND+%28succinct+OR+%22Elias-Fano%22+OR+%22compressed+offsets%22+OR+%22random+access%22%29&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 0,
+   "work_ids": []
+  },
+  {
+   "id": "F01",
+   "seed_group": "CoCo-trie, conference and journal",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19,cites:W4388751778|W4312664090",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19%2Ccites%3AW4388751778%7CW4312664090&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 10,
+   "work_ids": [
+    "W4414290619",
+    "W4415199682",
+    "W4404171560",
+    "W4413360655",
+    "W4411093321",
+    "W4403653204",
+    "W4396921134",
+    "W7164945348",
+    "W7167357079",
+    "W7171533745"
+   ]
+  },
+  {
+   "id": "F02",
+   "seed_group": "Two-level dictionaries, conference and journal",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19,cites:W4404171560|W4386870725",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19%2Ccites%3AW4404171560%7CW4386870725&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 3,
+   "work_ids": [
+    "W4404171560",
+    "W7169807866",
+    "W7221065807"
+   ]
+  },
+  {
+   "id": "F03",
+   "seed_group": "FSST",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19,cites:W3084651990",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19%2Ccites%3AW3084651990&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 69,
+   "work_ids": [
+    "W4402041923",
+    "W4402796316",
+    "W4414427925",
+    "W4393180321",
+    "W4394871744",
+    "W4413978152",
+    "W4408621856",
+    "W4412149925",
+    "W4413979229",
+    "W4404181350",
+    "W4412434840",
+    "W4414041294",
+    "W4389610115",
+    "W4413361128",
+    "W4408738443",
+    "W4413943446",
+    "W7128466611",
+    "W4403277820",
+    "W4413014941",
+    "W4417283669",
+    "W7118613055",
+    "W4399912369",
+    "W4401751672",
+    "W4404181021",
+    "W4404171560",
+    "W4413979483",
+    "W4415419743",
+    "W4415637994",
+    "W7161566604",
+    "W7208704736",
+    "W4400910472",
+    "W4410536327",
+    "W4404181477",
+    "W4401017723",
+    "W7138922574",
+    "W7139016629",
+    "W7155415354",
+    "W7167906649",
+    "W7162429289",
+    "W4394867543",
+    "W4393284490",
+    "W4417102688",
+    "W7160907706",
+    "W7168259875",
+    "W7221008553",
+    "W7221816807",
+    "W7225319958",
+    "W4403896275",
+    "W4411699382",
+    "W4414199092",
+    "W4414740226",
+    "W4416807673",
+    "W7108320567",
+    "W7119504105",
+    "W7125196174",
+    "W7144344188",
+    "W7160648929",
+    "W7162448141",
+    "W7164945348",
+    "W7166030930",
+    "W7167932891",
+    "W7204177812",
+    "W7204868932",
+    "W7212259977",
+    "W7213348223",
+    "W7213577950",
+    "W7214774752",
+    "W7223450853",
+    "W7223703773"
+   ]
+  },
+  {
+   "id": "F04",
+   "seed_group": "Practical compressed string dictionaries",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19,cites:W1798412263",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19%2Ccites%3AW1798412263&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 15,
+   "work_ids": [
+    "W4391653333",
+    "W4393080750",
+    "W4414494625",
+    "W4404171560",
+    "W4401753378",
+    "W4412408441",
+    "W7169807866",
+    "W7202255972",
+    "W4416046273",
+    "W7221008553",
+    "W4413499066",
+    "W7167932891",
+    "W7172506351",
+    "W7204837315",
+    "W7221065807"
+   ]
+  },
+  {
+   "id": "F05",
+   "seed_group": "LeMonHash and PtrHash",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19,cites:W4366835641|W4415035165",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19%2Ccites%3AW4366835641%7CW4415035165&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 16,
+   "work_ids": [
+    "W4409882817",
+    "W4396820912",
+    "W7128614633",
+    "W7118894901",
+    "W7109956188",
+    "W4409962079",
+    "W4415927674",
+    "W4417174694",
+    "W4417102688",
+    "W4404573786",
+    "W4414452381",
+    "W7130432487",
+    "W7162078661",
+    "W7167925081",
+    "W7167981652",
+    "W7223772912"
+   ]
+  },
+  {
+   "id": "F06",
+   "seed_group": "C², preprint and proceedings, plus OptFSST",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19,cites:W7164945348|W7171525914|W7168259875",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19%2Ccites%3AW7164945348%7CW7171525914%7CW7168259875&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 2,
+   "work_ids": [
+    "W7213348223",
+    "W7225755666"
+   ]
+  },
+  {
+   "id": "F07",
+   "seed_group": "MorphoDiTa and MorfFlex, with a title/abstract filter",
+   "field": "title_and_abstract",
+   "expression": "\"morphological dictionary\" OR \"inflectional lexicon\" OR \"dictionary compression\"",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19,cites:W2251648400|W7160110854",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19%2Ccites%3AW2251648400%7CW7160110854&search.title_and_abstract=%22morphological+dictionary%22+OR+%22inflectional+lexicon%22+OR+%22dictionary+compression%22&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 2,
+   "work_ids": [
+    "W4402081395",
+    "W7160110854"
+   ]
+  },
+  {
+   "id": "B01",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19,openalex:W136800840|W1493802692|W1509016759|W1514915193|W1521148341|W1528625750|W1548702063|W1551498417|W1557941519|W1562034888|W1566783100|W1568325880|W1600355623|W164887593|W1703904868|W1777016212|W1791987072|W17958277|W1798412263|W1816313093|W1845395494|W1852401022|W1879757347|W1891810191|W1933799648|W1938991448|W1962019683|W1966695467|W1967373117|W1967601791|W1969884330|W1970769392|W1976149088|W1980606681|W1993819379",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19%2Copenalex%3AW136800840%7CW1493802692%7CW1509016759%7CW1514915193%7CW1521148341%7CW1528625750%7CW1548702063%7CW1551498417%7CW1557941519%7CW1562034888%7CW1566783100%7CW1568325880%7CW1600355623%7CW164887593%7CW1703904868%7CW1777016212%7CW1791987072%7CW17958277%7CW1798412263%7CW1816313093%7CW1845395494%7CW1852401022%7CW1879757347%7CW1891810191%7CW1933799648%7CW1938991448%7CW1962019683%7CW1966695467%7CW1967373117%7CW1967601791%7CW1969884330%7CW1970769392%7CW1976149088%7CW1980606681%7CW1993819379&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 0,
+   "work_ids": []
+  },
+  {
+   "id": "B02",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19,openalex:W1995875735|W2000273502|W2000568570|W2001450952|W2003580796|W2010986907|W2012957959|W2013291893|W202508549|W2028164393|W2028785128|W2030062409|W2034614140|W2037892395|W2038649859|W2040062099|W2051867864|W2054046497|W2060108852|W2060907649|W2061997675|W2064803799|W2068739275|W2069074882|W2080388000|W2084325555|W2085601491|W2087721273|W2087966340|W2088518924|W2097286495|W2102639991|W2102729946|W2107745473|W2111021385",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19%2Copenalex%3AW1995875735%7CW2000273502%7CW2000568570%7CW2001450952%7CW2003580796%7CW2010986907%7CW2012957959%7CW2013291893%7CW202508549%7CW2028164393%7CW2028785128%7CW2030062409%7CW2034614140%7CW2037892395%7CW2038649859%7CW2040062099%7CW2051867864%7CW2054046497%7CW2060108852%7CW2060907649%7CW2061997675%7CW2064803799%7CW2068739275%7CW2069074882%7CW2080388000%7CW2084325555%7CW2085601491%7CW2087721273%7CW2087966340%7CW2088518924%7CW2097286495%7CW2102639991%7CW2102729946%7CW2107745473%7CW2111021385&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 0,
+   "work_ids": []
+  },
+  {
+   "id": "B03",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19,openalex:W2112821228|W2120933912|W2123686039|W2123845384|W2124851765|W2130011058|W2130642985|W2131355670|W2138768227|W2139761194|W2139822261|W2140453381|W2144399314|W2146005787|W2147344024|W2148113067|W2149243190|W2149592768|W2151249511|W2151687858|W2154900736|W2155512447|W2165621523|W2169476932|W2171532727|W2254249950|W2281341896|W2295448598|W2299825835|W2337480916|W2341510490|W2396727930|W2405120999|W2429518132|W2439390339",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19%2Copenalex%3AW2112821228%7CW2120933912%7CW2123686039%7CW2123845384%7CW2124851765%7CW2130011058%7CW2130642985%7CW2131355670%7CW2138768227%7CW2139761194%7CW2139822261%7CW2140453381%7CW2144399314%7CW2146005787%7CW2147344024%7CW2148113067%7CW2149243190%7CW2149592768%7CW2151249511%7CW2151687858%7CW2154900736%7CW2155512447%7CW2165621523%7CW2169476932%7CW2171532727%7CW2254249950%7CW2281341896%7CW2295448598%7CW2299825835%7CW2337480916%7CW2341510490%7CW2396727930%7CW2405120999%7CW2429518132%7CW2439390339&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 0,
+   "work_ids": []
+  },
+  {
+   "id": "B04",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19,openalex:W2479292667|W2517241835|W2554111346|W2563351168|W2563930566|W2572107491|W2593474041|W2602771387|W2605002790|W2737172134|W2759020546|W2762992850|W2765756720|W2772512310|W2773466258|W2798891709|W2803749063|W2805710541|W2806056912|W2890245531|W2893990175|W2901125983|W2912601938|W2919681562|W2947205972|W2950969408|W2955799495|W2963379900|W2970215257|W2979531022|W2979695606|W2980862352|W2985395104|W2994941531|W2998353611",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19%2Copenalex%3AW2479292667%7CW2517241835%7CW2554111346%7CW2563351168%7CW2563930566%7CW2572107491%7CW2593474041%7CW2602771387%7CW2605002790%7CW2737172134%7CW2759020546%7CW2762992850%7CW2765756720%7CW2772512310%7CW2773466258%7CW2798891709%7CW2803749063%7CW2805710541%7CW2806056912%7CW2890245531%7CW2893990175%7CW2901125983%7CW2912601938%7CW2919681562%7CW2947205972%7CW2950969408%7CW2955799495%7CW2963379900%7CW2970215257%7CW2979531022%7CW2979695606%7CW2980862352%7CW2985395104%7CW2994941531%7CW2998353611&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 0,
+   "work_ids": []
+  },
+  {
+   "id": "B05",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19,openalex:W2998461763|W2999307977|W3009361246|W3013316555|W3029187551|W3030163527|W3033316230|W3034570653|W3035954614|W3044887024|W3081593267|W3082379938|W3084651990|W3085477028|W3089808641|W3096828292|W3098576111|W3101356515|W3102359135|W3112600195|W3131264963|W3134677442|W3137108924|W3152703111|W3156632946|W3170078628|W3175356203|W3186527989|W3197479795|W3197753456|W3199252869|W4214910385|W4214926007|W4221058058|W4221076494",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19%2Copenalex%3AW2998461763%7CW2999307977%7CW3009361246%7CW3013316555%7CW3029187551%7CW3030163527%7CW3033316230%7CW3034570653%7CW3035954614%7CW3044887024%7CW3081593267%7CW3082379938%7CW3084651990%7CW3085477028%7CW3089808641%7CW3096828292%7CW3098576111%7CW3101356515%7CW3102359135%7CW3112600195%7CW3131264963%7CW3134677442%7CW3137108924%7CW3152703111%7CW3156632946%7CW3170078628%7CW3175356203%7CW3186527989%7CW3197479795%7CW3197753456%7CW3199252869%7CW4214910385%7CW4214926007%7CW4221058058%7CW4221076494&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 0,
+   "work_ids": []
+  },
+  {
+   "id": "B06",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19,openalex:W4226271314|W4234888344|W4242124034|W4247794781|W4254982796|W4283818303|W4291295300|W4291308656|W4292080258|W4295940331|W4312052771|W4312409437|W4312423556|W4312429406|W4312664090|W4315779781|W4315784833|W4316652394|W4317767740|W4366835641|W4376505296|W4376599704|W4378713421|W4379746314|W4382765869|W4383749437|W4384303994|W4385270427|W4385571315|W4386128176|W4386870659|W4386870725|W4387259573|W4387826905|W4388750669",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19%2Copenalex%3AW4226271314%7CW4234888344%7CW4242124034%7CW4247794781%7CW4254982796%7CW4283818303%7CW4291295300%7CW4291308656%7CW4292080258%7CW4295940331%7CW4312052771%7CW4312409437%7CW4312423556%7CW4312429406%7CW4312664090%7CW4315779781%7CW4315784833%7CW4316652394%7CW4317767740%7CW4366835641%7CW4376505296%7CW4376599704%7CW4378713421%7CW4379746314%7CW4382765869%7CW4383749437%7CW4384303994%7CW4385270427%7CW4385571315%7CW4386128176%7CW4386870659%7CW4386870725%7CW4387259573%7CW4387826905%7CW4388750669&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 1,
+   "work_ids": [
+    "W4291308656"
+   ]
+  },
+  {
+   "id": "B07",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19,openalex:W4388751778|W4389539860|W4389628091|W4390589993|W4390850770|W4391087645|W4391855109|W4392340715|W4392576636|W4393180321|W4393220152|W4393284490|W4396820912|W4399163753|W4400909775|W4402041923|W4402042577|W4403486697|W4404407951|W4407385151|W4411226742|W4411403425|W4412215390|W4413349906|W4413978115|W4413978152|W4414266802|W4414452381|W4415035165|W4415927674|W4416038669|W4417102688|W4417174694|W46679369|W62638829",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19%2Copenalex%3AW4388751778%7CW4389539860%7CW4389628091%7CW4390589993%7CW4390850770%7CW4391087645%7CW4391855109%7CW4392340715%7CW4392576636%7CW4393180321%7CW4393220152%7CW4393284490%7CW4396820912%7CW4399163753%7CW4400909775%7CW4402041923%7CW4402042577%7CW4403486697%7CW4404407951%7CW4407385151%7CW4411226742%7CW4411403425%7CW4412215390%7CW4413349906%7CW4413978115%7CW4413978152%7CW4414266802%7CW4414452381%7CW4415035165%7CW4415927674%7CW4416038669%7CW4417102688%7CW4417174694%7CW46679369%7CW62638829&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 28,
+   "work_ids": [
+    "W4391855109",
+    "W4392576636",
+    "W4402041923",
+    "W4389628091",
+    "W4413978115",
+    "W4404407951",
+    "W4402042577",
+    "W4414266802",
+    "W4393180321",
+    "W4390589993",
+    "W4396820912",
+    "W4413978152",
+    "W4413349906",
+    "W4393220152",
+    "W4415035165",
+    "W4411403425",
+    "W4399163753",
+    "W4400909775",
+    "W4407385151",
+    "W4416038669",
+    "W4415927674",
+    "W4417174694",
+    "W4403486697",
+    "W4411226742",
+    "W4392340715",
+    "W4393284490",
+    "W4417102688",
+    "W4414452381"
+   ]
+  },
+  {
+   "id": "B08",
+   "filter": "from_publication_date:2023-11-19,to_publication_date:2026-11-19,openalex:W6890047298|W6894368356|W6912801401|W6929265734|W6963881321|W7084419693|W7096976119|W7100818879|W7118613055|W7118809228|W7118894901|W7128614633|W7133205640|W7167906649|W7204173477",
+   "request_urls": [
+    "https://api.openalex.org/works?filter=from_publication_date%3A2023-11-19%2Cto_publication_date%3A2026-11-19%2Copenalex%3AW6890047298%7CW6894368356%7CW6912801401%7CW6929265734%7CW6963881321%7CW7084419693%7CW7096976119%7CW7100818879%7CW7118613055%7CW7118809228%7CW7118894901%7CW7128614633%7CW7133205640%7CW7167906649%7CW7204173477&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+   ],
+   "reported_count": 6,
+   "work_ids": [
+    "W7128614633",
+    "W7118894901",
+    "W7118613055",
+    "W7118809228",
+    "W7167906649",
+    "W7204173477"
+   ]
+  }
+ ],
+ "date_anchor_query": {
+  "id": "S01",
+  "filter": "doi:10.1016/j.is.2023.102316|10.1016/j.is.2024.102490|10.4230/LIPIcs.SEA.2025.21|10.48786/edbt.2027.08|10.48550/arxiv.2606.16104|10.48550/arxiv.2607.11271|10.63317/36ruwkgu8iex|10.3115/v1/P14-5003|10.14778/3407790.3407851|10.1007/978-3-031-43980-3_16|10.1007/978-3-031-20643-6_17|10.4230/LIPIcs.ESA.2023.46|10.1016/j.is.2015.08.008",
+  "request_urls": [
+   "https://api.openalex.org/works?filter=doi%3A10.1016%2Fj.is.2023.102316%7C10.1016%2Fj.is.2024.102490%7C10.4230%2FLIPIcs.SEA.2025.21%7C10.48786%2Fedbt.2027.08%7C10.48550%2Farxiv.2606.16104%7C10.48550%2Farxiv.2607.11271%7C10.63317%2F36ruwkgu8iex%7C10.3115%2Fv1%2FP14-5003%7C10.14778%2F3407790.3407851%7C10.1007%2F978-3-031-43980-3_16%7C10.1007%2F978-3-031-20643-6_17%7C10.4230%2FLIPIcs.ESA.2023.46%7C10.1016%2Fj.is.2015.08.008&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Ctype%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works&per_page=100&page=1"
+  ],
+  "reported_count": 13,
+  "work_ids": [
+   "W2251648400",
+   "W3084651990",
+   "W1798412263",
+   "W4415035165",
+   "W4366835641",
+   "W4388751778",
+   "W4312664090",
+   "W4404171560",
+   "W7160110854",
+   "W4386870725",
+   "W7168259875",
+   "W7164945348",
+   "W7171525914"
+  ]
+ },
+ "work_index_including_anchors": {
+  "W1798412263": {
+   "title": "Practical compressed string dictionaries",
+   "date_openalex": "2015-09-21",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1016/j.is.2015.08.008"
+  },
+  "W2251648400": {
+   "title": "Open-Source Tools for Morphology, Lemmatization, POS Tagging and Named Entity Recognition",
+   "date_openalex": "2014-01-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.3115/v1/p14-5003"
+  },
+  "W3084651990": {
+   "title": "FSST: fast random access string compression",
+   "date_openalex": "2020-07-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3407790.3407851"
+  },
+  "W3101379538": {
+   "title": "Locally Consistent Parsing for Text Indexing in Small Space",
+   "date_openalex": "2025-08-05",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1137/21m1465706"
+  },
+  "W4291308656": {
+   "title": "Classical and almost sure local limit theorems",
+   "date_openalex": "2023-12-21",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.4064/dm873-10-2023"
+  },
+  "W4312664090": {
+   "title": "Compressed String Dictionaries via Data-Aware Subtrie Compaction",
+   "date_openalex": "2022-10-31",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1007/978-3-031-20643-6_17"
+  },
+  "W4366835641": {
+   "title": "Learned Monotone Minimal Perfect Hashing",
+   "date_openalex": "2023-01-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.4230/lipics.esa.2023.46"
+  },
+  "W4386870725": {
+   "title": "Engineering a Textbook Approach to Index Massive String Dictionaries",
+   "date_openalex": "2023-09-19",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1007/978-3-031-43980-3_16"
+  },
+  "W4388751778": {
+   "title": "CoCo-trie: Data-aware compression and indexing of strings",
+   "date_openalex": "2023-11-17",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1016/j.is.2023.102316"
+  },
+  "W4389558402": {
+   "title": "Naive Bayesian classifier target recognition based on ridge features",
+   "date_openalex": "2023-12-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1088/1742-6596/2670/1/012013"
+  },
+  "W4389610115": {
+   "title": "High-Ratio Compression for Machine-Generated Data",
+   "date_openalex": "2023-12-08",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1145/3626732"
+  },
+  "W4389628091": {
+   "title": "ALP: Adaptive Lossless floating-Point Compression",
+   "date_openalex": "2023-12-08",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1145/3626717"
+  },
+  "W4390062634": {
+   "title": "Simulation analysis on oil leakage consequences of the collision in the old VLCC based on PHAST",
+   "date_openalex": "2023-12-21",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1117/12.3012318"
+  },
+  "W4390589993": {
+   "title": "ShockHash: Towards Optimal-Space Minimal Perfect Hashing Beyond Brute-Force",
+   "date_openalex": "2024-01-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1137/1.9781611977929.15"
+  },
+  "W4391631801": {
+   "title": "Global certification via perfect hashing",
+   "date_openalex": "2024-02-06",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2402.03849"
+  },
+  "W4391653333": {
+   "title": "The Ring: Worst-case Optimal Joins in Graph Databases using (Almost) No Extra Space",
+   "date_openalex": "2024-02-08",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1145/3644824"
+  },
+  "W4391855109": {
+   "title": "A Review on Large Language Models: Architectures, Applications, Taxonomies, Open Issues and Challenges",
+   "date_openalex": "2024-01-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1109/access.2024.3365742"
+  },
+  "W4391941402": {
+   "title": "Spiral forming and cross-section deformation behaviors of finned special-shaped tube",
+   "date_openalex": "2024-02-19",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1016/j.jmapro.2024.02.020"
+  },
+  "W4392340715": {
+   "title": "COPR -- Efficient, large-scale log storage and retrieval",
+   "date_openalex": "2024-02-28",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2402.18355"
+  },
+  "W4392576636": {
+   "title": "Bridging Language and Items for Retrieval and Recommendation: Benchmarking LLMs as Semantic Encoders",
+   "date_openalex": "2026-01-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.18653/v1/2026.acl-long.147"
+  },
+  "W4393080750": {
+   "title": "smart-KG: Partition-Based Linked Data Fragments for querying knowledge graphs",
+   "date_openalex": "2024-03-22",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.3233/sw-243571"
+  },
+  "W4393081303": {
+   "title": "Through the compression glass: language complexity and the linguistic structure of compressed strings",
+   "date_openalex": "2024-03-22",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1515/lingvan-2022-0140"
+  },
+  "W4393099849": {
+   "title": "A compressive seeding algorithm in conjunction with reordering-based compression",
+   "date_openalex": "2024-02-19",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1093/bioinformatics/btae100"
+  },
+  "W4393180321": {
+   "title": "LeCo: Lightweight Compression via Learning Serial Correlations",
+   "date_openalex": "2024-03-12",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1145/3639320"
+  },
+  "W4393210201": {
+   "title": "Quantitative Risk Assessment of Onsite Hydrogen Refueling Station by using HyRAM+, PHAST & SAFETI",
+   "date_openalex": "2024-03-26",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.5855/energy.2024.33.1.001"
+  },
+  "W4393220152": {
+   "title": "The role of classifiers and data complexity in learned Bloom filters: insights and recommendations",
+   "date_openalex": "2024-03-27",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1186/s40537-024-00906-9"
+  },
+  "W4393284490": {
+   "title": "Corra: Correlation-Aware Column Compression",
+   "date_openalex": "2024-03-25",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2403.17229"
+  },
+  "W4394867543": {
+   "title": "Bullion: A Column Store for Machine Learning",
+   "date_openalex": "2024-04-13",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2404.08901"
+  },
+  "W4394871744": {
+   "title": "CodeCrunch: Improving Serverless Performance via Function Compression and Cost-Aware Warmup Location Optimization",
+   "date_openalex": "2024-04-17",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1145/3617232.3624866"
+  },
+  "W4396820912": {
+   "title": "PHOBIC: Perfect Hashing with Optimized Bucket Sizes and Interleaved Coding",
+   "date_openalex": "2026-09-24",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1145/3849725"
+  },
+  "W4396903753": {
+   "title": "ATP6AP1 was Phast-ID’ed as a long-sought GEF for Rheb",
+   "date_openalex": "2024-05-14",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1038/s41422-024-00967-8"
+  },
+  "W4396921134": {
+   "title": "Trie and LOUDS hybrid model for efficient e-commerce processing in cloud environment",
+   "date_openalex": "2024-05-15",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1016/j.simpat.2024.102960"
+  },
+  "W4398163862": {
+   "title": "Computation over APT Compressed Data",
+   "date_openalex": "2024-03-19",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/dcc58796.2024.00023"
+  },
+  "W4398173573": {
+   "title": "Sketching and Streaming for Dictionary Compression",
+   "date_openalex": "2024-03-19",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/dcc58796.2024.00029"
+  },
+  "W4399163753": {
+   "title": "Simple, Efficient, and Robust Hash Tables for Join Processing",
+   "date_openalex": "2024-05-30",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1145/3662010.3663442"
+  },
+  "W4399208580": {
+   "title": "Accelerating String-Key Learned Index Structures via Memoization-Based Incremental Training",
+   "date_openalex": "2024-04-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3659437.3659439"
+  },
+  "W4399377981": {
+   "title": "Brief Announcement: Global certification via perfect hashing",
+   "date_openalex": "2024-06-05",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1145/3662158.3662781"
+  },
+  "W4399400913": {
+   "title": "Linear Index for Logarithmic Search-Time for any String under any Internal Node in Suffix Trees",
+   "date_openalex": "2024-06-03",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2406.01174"
+  },
+  "W4399888654": {
+   "title": "Computing Minimal Absent Words and Extended Bispecial Factors with CDAWG Space",
+   "date_openalex": "2024-06-21",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1007/978-3-031-63021-7_25"
+  },
+  "W4399912369": {
+   "title": "Blitzcrank: Fast Semantic Compression for In-Memory Online Transaction Processing",
+   "date_openalex": "2024-06-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3675034.3675044"
+  },
+  "W4400103803": {
+   "title": "CompassDB: Pioneering High-Performance Key-Value Store with Perfect Hash",
+   "date_openalex": "2024-06-26",
+   "type_openalex": "preprint",
+   "doi": null
+  },
+  "W4400667599": {
+   "title": "The CDAWG Index and Pattern Matching on Grammar-Compressed Strings",
+   "date_openalex": "2024-07-11",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2407.08826"
+  },
+  "W4400909775": {
+   "title": "DeepMapping: Learned Data Mapping for Lossless Compression and Efficient Lookup",
+   "date_openalex": "2024-05-13",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/icde60146.2024.00008"
+  },
+  "W4400910472": {
+   "title": "Space-Efficient Indexes for Uncertain Strings",
+   "date_openalex": "2024-05-13",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/icde60146.2024.00367"
+  },
+  "W4401017723": {
+   "title": "ZSMILES: An Approach for Efficient SMILES Storage for Random Access in Virtual Screening",
+   "date_openalex": "2024-05-27",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/ipdpsw63119.2024.00112"
+  },
+  "W4401422447": {
+   "title": "Tight Bounds for Monotone Minimal Perfect Hashing",
+   "date_openalex": "2024-08-08",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1145/3677608"
+  },
+  "W4401751672": {
+   "title": "Efficient URL and URI Compression",
+   "date_openalex": "2024-07-29",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/icccn61486.2024.10637589"
+  },
+  "W4401751803": {
+   "title": "Private Set Intersection Protocol with Perfect Hashing on OKVS: An Enhanced Approach for Privacy-Preserving Operations",
+   "date_openalex": "2024-07-29",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/icccn61486.2024.10637513"
+  },
+  "W4401753378": {
+   "title": "A Lock-free Binary Trie",
+   "date_openalex": "2024-07-23",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/icdcs60910.2024.00024"
+  },
+  "W4401855974": {
+   "title": "Linear-size suffix tries and linear-size CDAWGs simplified and improved",
+   "date_openalex": "2024-08-23",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1007/s00236-024-00465-9"
+  },
+  "W4402041923": {
+   "title": "Why TPC is Not Enough: An Analysis of the Amazon Redshift Fleet",
+   "date_openalex": "2024-07-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3681954.3682031"
+  },
+  "W4402042577": {
+   "title": "Two Birds With One Stone: Designing a Hybrid Cloud Storage Engine for HTAP",
+   "date_openalex": "2024-07-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3681954.3682001"
+  },
+  "W4402043003": {
+   "title": "LITS: An Optimized Learned Index for Strings",
+   "date_openalex": "2024-07-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3681954.3682010"
+  },
+  "W4402081395": {
+   "title": "Open-Source Web Service with Morphological Dictionary–Supplemented Deep Learning for Morphosyntactic Analysis of Czech",
+   "date_openalex": "2024-08-31",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1007/978-3-031-70563-2_22"
+  },
+  "W4402092942": {
+   "title": "Morphological dictionary learning based sparse classification for small electric motor state recognition under unbalanced samples",
+   "date_openalex": "2024-08-31",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1016/j.apacoust.2024.110253"
+  },
+  "W4402586434": {
+   "title": "Revisiting the Folklore Algorithm for Random Access to Grammar-Compressed Strings",
+   "date_openalex": "2024-09-18",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1007/978-3-031-72200-4_7"
+  },
+  "W4402661097": {
+   "title": "Predicting Pronunciation Types in the Sloleks Morphological Lexicon of Slovene",
+   "date_openalex": "2024-01-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.70314/is.2024.sikdd.2"
+  },
+  "W4402796316": {
+   "title": "Economics and Equity of Large Language Models: Health Care Perspective",
+   "date_openalex": "2024-09-16",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.2196/64226"
+  },
+  "W4402817363": {
+   "title": "PLIS: Persistent Learned Index for Strings",
+   "date_openalex": "2024-09-11",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1007/978-981-97-7707-5_22"
+  },
+  "W4402931397": {
+   "title": "A Study on the Implementation of PSI Protocol Using Perfect Hashing Based on OKVS as an Advanced Pseudonymization Technique",
+   "date_openalex": "2024-09-27",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.47116/apjcri.2024.09.06"
+  },
+  "W4403146690": {
+   "title": "Loflòc: A Morphological Lexicon for Occitan using Universal Dependencies",
+   "date_openalex": "2024-05-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.63317/3mvg7qhtqnhu"
+  },
+  "W4403277820": {
+   "title": "JSON-CooP: A JSON Decompression/Parsing Co-Design for FPGAs",
+   "date_openalex": "2024-09-02",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/fpl64840.2024.00012"
+  },
+  "W4403412022": {
+   "title": "Risk Assessment for Refueling Stations in Urban Areas Using Hy-KoRAM, SAFETI, and PHAST Programs",
+   "date_openalex": "2024-09-30",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.31333/kihm.2024.12.2.31"
+  },
+  "W4403486697": {
+   "title": "Comparing Lossless Compression Methods for Chess Endgame Data",
+   "date_openalex": "2024-10-16",
+   "type_openalex": "book-chapter",
+   "doi": "https://doi.org/10.3233/faia240982"
+  },
+  "W4403586953": {
+   "title": "Consequence Analysis of High-Pressure Natural Gas Pipelines to Determine the Safe Zones Around the Pipelines by Using PHAST",
+   "date_openalex": "2024-10-20",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.2118/223220-ms"
+  },
+  "W4403650185": {
+   "title": "Modeling the fire scenario in the diesel storage tank of the Iran’s specialized hospital using PHAST software",
+   "date_openalex": "2024-08-26",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.32592/joohe.11.1.62"
+  },
+  "W4403653204": {
+   "title": "GLMI: An Efficient Spatiotemporal Index Leveraging Geohash and Piecewise Linear Models for Optimized Query Performance",
+   "date_openalex": "2024-10-22",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.3390/a17110474"
+  },
+  "W4403847544": {
+   "title": "Corrigendum to “Morphological dictionary learning based sparse classification for small electric motor state recognition under unbalanced samples” [Appl. Acoust. 227 (2025) 110253]",
+   "date_openalex": "2024-10-28",
+   "type_openalex": "erratum",
+   "doi": "https://doi.org/10.1016/j.apacoust.2024.110365"
+  },
+  "W4403896275": {
+   "title": "Polarization insensitive electrically reconfigurable meta-lens for the 2 µm wavelength",
+   "date_openalex": "2024-10-30",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1364/ome.540435"
+  },
+  "W4404089069": {
+   "title": "Relating Left and Right Extensions of Maximal Repeats",
+   "date_openalex": "2024-10-21",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2410.15958"
+  },
+  "W4404135987": {
+   "title": "SLIPP: A Space-Efficient Learned Index for String Keys",
+   "date_openalex": "2024-05-29",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1145/3686540.3686550"
+  },
+  "W4404168191": {
+   "title": "Cluster Globally, Reduce Locally: Scalable Efficient Dictionary Compression for Magnetic Resonance Fingerprinting",
+   "date_openalex": "2025-04-14",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/isbi60581.2025.10981146"
+  },
+  "W4404171560": {
+   "title": "Two-level massive string dictionaries",
+   "date_openalex": "2024-11-08",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1016/j.is.2024.102490"
+  },
+  "W4404181021": {
+   "title": "Simple (yet Efficient) Function Authoring for Vectorized Engines",
+   "date_openalex": "2024-08-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3685800.3685836"
+  },
+  "W4404181350": {
+   "title": "Composable Data Management: An Execution Overview",
+   "date_openalex": "2024-08-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3685800.3685847"
+  },
+  "W4404181477": {
+   "title": "HocoPG: A Database System with Homomorphic Compression for Text Processing",
+   "date_openalex": "2024-08-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3685800.3685904"
+  },
+  "W4404356300": {
+   "title": "Leveraging Transformer-Based Models for Predicting Inflection Classes of Words in an Endangered Sami Language",
+   "date_openalex": "2024-11-04",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.48550/arxiv.2411.02556"
+  },
+  "W4404374501": {
+   "title": "Quantitative Risk Assessment of Steam Reforming Process by Hydrogen Generator, Using PHAST Model",
+   "date_openalex": "2024-11-14",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.3390/en17225704"
+  },
+  "W4404407951": {
+   "title": "Theoretical Analysis of Byte-Pair Encoding",
+   "date_openalex": "2024-11-13",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.4230/lipics.esa.2026.80"
+  },
+  "W4404501767": {
+   "title": "Slovak morphological tokenizer using the Byte-Pair Encoding algorithm",
+   "date_openalex": "2024-11-19",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.7717/peerj-cs.2465"
+  },
+  "W4404573786": {
+   "title": "Brief Announcement: Parallel Construction of Bumped Ribbon Retrieval",
+   "date_openalex": "2024-11-19",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2411.12365"
+  },
+  "W4405178514": {
+   "title": "Computation over APT compressed data",
+   "date_openalex": "2024-12-09",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1016/j.is.2024.102504"
+  },
+  "W4405299711": {
+   "title": "Towards standardized inflected lexicons for the Finnic languages",
+   "date_openalex": "2024-11-28",
+   "type_openalex": "conference-paper",
+   "doi": null
+  },
+  "W4405791690": {
+   "title": "Quantitative Risk Analysis of a Leak Scenario: A Systematic Approach Using Stpa, FTA and Phast Software",
+   "date_openalex": "2024-01-01",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.2139/ssrn.5071411"
+  },
+  "W4405935028": {
+   "title": "A Transparent Zero-Knowledge Dual Membership Set Commitment based on Perfect Hash Function",
+   "date_openalex": "2024-11-26",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/candar64496.2024.00016"
+  },
+  "W4406151950": {
+   "title": "Tight Bounds and Phase Transitions for Incremental and Dynamic Retrieval",
+   "date_openalex": "2025-01-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1137/1.9781611978322.135"
+  },
+  "W4406299819": {
+   "title": "Modeling and Assessing the Consequences of Oil Pipeline Leakage Using PHAST Software: A Case Study; Jarahi River in Southwest of Iran",
+   "date_openalex": "2024-11-12",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.34172/jaehr.1346"
+  },
+  "W4406439990": {
+   "title": "PHAST. The Panchromatic Hubble Andromeda Southern Treasury. I. Ultraviolet and Optical Photometry of over 90 Million Stars in M31",
+   "date_openalex": "2025-01-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.3847/1538-4357/ad7e2b"
+  },
+  "W4406495605": {
+   "title": "Key Compression Limits for k-Minimum Value Sketches",
+   "date_openalex": "2024-12-15",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/bigdata62323.2024.10826029"
+  },
+  "W4406535086": {
+   "title": "Efficient IP address retrieval using a novel octet based encoding technique for high speed lookup to improve network performance",
+   "date_openalex": "2025-01-17",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1038/s41598-024-84221-6"
+  },
+  "W4406595485": {
+   "title": "Risk Assessment of Liquid Hydrogen-Powered Unmanned Aerial Vehicles Using the PHAST Program",
+   "date_openalex": "2024-12-31",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.31333/kihm.2024.12.3.9"
+  },
+  "W4406601972": {
+   "title": "k-mer matrix compression",
+   "date_openalex": "2024-10-28",
+   "type_openalex": "conference-paper",
+   "doi": null
+  },
+  "W4407057293": {
+   "title": "SLIN: A CPU-efficient, Hybrid Tree and Learned Index for String Data",
+   "date_openalex": "2024-11-15",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1145/3705374.3705382"
+  },
+  "W4407141659": {
+   "title": "Tight bounds for the sensitivity of CDAWGs with left-end edits",
+   "date_openalex": "2025-02-04",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1007/s00236-025-00478-y"
+  },
+  "W4407258186": {
+   "title": "SIB: Sorted‐Integers‐Based Index for Compact and Fast Caching in Top‐Down Logic Rule Mining Targeting KB Compression",
+   "date_openalex": "2025-02-07",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1002/spe.3415"
+  },
+  "W4407385151": {
+   "title": "Combined Search and Encoding for Seeds, with an Application to Minimal Perfect Hashing",
+   "date_openalex": "2025-01-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.4230/lipics.esa.2025.109"
+  },
+  "W4407806873": {
+   "title": "Unshackling Context Length: An Efficient Selective Attention Approach through Query-Key Compression",
+   "date_openalex": "2025-02-20",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2502.14477"
+  },
+  "W4407848200": {
+   "title": "Leakage Hazard Analysis of Hydrogen Blended Natural Gas Station Field Based on PHAST",
+   "date_openalex": "2025-02-21",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.54691/qgr7y916"
+  },
+  "W4408621856": {
+   "title": "Data formats in analytical DBMSs: performance trade-offs and future directions",
+   "date_openalex": "2025-03-19",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1007/s00778-025-00911-1"
+  },
+  "W4408738443": {
+   "title": "GSST: Parallel string decompression at 191 GB/s on GPU",
+   "date_openalex": "2025-03-22",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1145/3719330.3721228"
+  },
+  "W4408782670": {
+   "title": "Quantitative Risk Assessment of Domino Effect Adopting Safeti, Phast and Hem Simulation Approaches in a Petrochemical Plant on the North Shore of Persian Gulf",
+   "date_openalex": "2025-01-01",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.2139/ssrn.5187619"
+  },
+  "W4408825563": {
+   "title": "595 Is PHASTR faster? A target trial emulation case study in the N3C",
+   "date_openalex": "2025-03-25",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1017/cts.2024.1162"
+  },
+  "W4409882817": {
+   "title": "TELEX: Two-Level Learned Index for Rich Queries on Enclave-based Blockchain Systems",
+   "date_openalex": "2025-01-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1109/tkde.2025.3564905"
+  },
+  "W4409956141": {
+   "title": "Performance Evaluation of Perfect Hashing-based OKVS(Oblivious Key-Value Store)",
+   "date_openalex": "2025-04-29",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.47116/apjcri.2025.04.28"
+  },
+  "W4409962079": {
+   "title": "PLA-index: A k-mer Index Exploiting Rank Curve Linearity",
+   "date_openalex": "2024-01-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.4230/lipics.wabi.2024.13"
+  },
+  "W4410299067": {
+   "title": "Simple large-scale quantitative phenotyping and antimicrobial susceptibility testing with Q-PHAST",
+   "date_openalex": "2025-05-12",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1038/s41596-025-01179-z"
+  },
+  "W4410464774": {
+   "title": "Dynamic Filter and Retrieval with One Access to Modifiable Memory",
+   "date_openalex": "2025-05-17",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1007/978-3-031-92932-8_19"
+  },
+  "W4410536327": {
+   "title": "Apic: A Precomputation-Based Integer Compressor for OLTP Databases",
+   "date_openalex": "2025-03-18",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/dcc62719.2025.00038"
+  },
+  "W4410537506": {
+   "title": "Computing Consecutively Maximal Periodic Patterns Over APT Compressed Data",
+   "date_openalex": "2025-03-18",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/dcc62719.2025.00028"
+  },
+  "W4410993625": {
+   "title": "The PHAST 2.0 Force Field for General Small Molecule and Materials Simulations",
+   "date_openalex": "2025-06-03",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1021/acs.jctc.5c00134"
+  },
+  "W4411093321": {
+   "title": "MSTC: a unified encoding method for geophysical big data retrieval",
+   "date_openalex": "2025-06-06",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1007/s12145-025-01935-5"
+  },
+  "W4411116911": {
+   "title": "Integrated quantitative explosion risk assessment and safety zone delineation applied in a pressure vessel adopting PHAST numerical simulation approach: an Iranian case analysis",
+   "date_openalex": "2025-06-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1016/j.rineng.2025.105581"
+  },
+  "W4411182947": {
+   "title": "PHAST-MBD: Implementing Many-Body Dispersion in the PHAST 2.0 Potential, Results for Noble Gases",
+   "date_openalex": "2025-06-10",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1021/acs.jctc.5c00448"
+  },
+  "W4411226742": {
+   "title": "Deacon: fast sequence filtering and contaminant depletion",
+   "date_openalex": "2025-06-12",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.1101/2025.06.09.658732"
+  },
+  "W4411319889": {
+   "title": "Optimal Static Dictionary with Worst-Case Constant Query Time",
+   "date_openalex": "2025-06-15",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1145/3717823.3718278"
+  },
+  "W4411372932": {
+   "title": "Research on Dictionary-Based Word Segmentation Algorithms Using Trie Structure",
+   "date_openalex": "2025-01-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.2478/ijanmc-2025-0005"
+  },
+  "W4411403425": {
+   "title": "GPH: An Efficient and Effective Perfect Hashing Scheme for GPU Architectures",
+   "date_openalex": "2025-06-17",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1145/3725406"
+  },
+  "W4411699382": {
+   "title": "Web-Scale Deduplication",
+   "date_openalex": "2025-01-01",
+   "type_openalex": "dissertation",
+   "doi": "https://doi.org/10.5204/thesis.eprints.258295"
+  },
+  "W4411726254": {
+   "title": "Optimization of CRC-Based Single-Bit Error Correction Using a Perfect Hash Table Structure",
+   "date_openalex": "2025-05-25",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/iscas56072.2025.11043197"
+  },
+  "W4412149925": {
+   "title": "The Effectiveness of Compression for GPU-Accelerated Queries on Out-of-Memory Datasets",
+   "date_openalex": "2025-06-22",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1145/3736227.3736240"
+  },
+  "W4412182588": {
+   "title": "A Study on the Comparison of Hazardous Distances in Hydrogen Facilities Using the IEC Standard and PHAST",
+   "date_openalex": "2025-06-30",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.7842/kigas.2025.29.2.51"
+  },
+  "W4412182979": {
+   "title": "Risk Assessment and Environmental Sensitivity Analysis in the Application of Hydrogen Fuel for Combined Cycle Power Plants based on ALOHA and PHAST Simulations",
+   "date_openalex": "2025-07-11",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.3795/ksme-b.2025.49.7.393"
+  },
+  "W4412408441": {
+   "title": "Zip-Tries: Simple Dynamic Data Structures for Strings",
+   "date_openalex": "2025-01-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1137/1.9781611979084.10"
+  },
+  "W4412434840": {
+   "title": "Text indexing for long patterns using locally consistent anchors",
+   "date_openalex": "2025-07-15",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1007/s00778-025-00935-7"
+  },
+  "W4412700563": {
+   "title": "Compressing Integer Lists with Contextual Arithmetic Trits",
+   "date_openalex": "2025-07-28",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1145/3749098"
+  },
+  "W4412719700": {
+   "title": "Experimental and numerical investigation on axial compressive behavior of HP-FSST columns",
+   "date_openalex": "2025-07-25",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1016/j.jcsr.2025.109818"
+  },
+  "W4412827256": {
+   "title": "Axial compressive behavior of seawater and sea sand concrete-filled double-skin stainless steel square tubular stub columns",
+   "date_openalex": "2025-07-24",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1016/j.conbuildmat.2025.142814"
+  },
+  "W4412848376": {
+   "title": "ShockHash: Near Optimal-Space Minimal Perfect Hashing Beyond Brute-Force",
+   "date_openalex": "2025-08-02",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1007/s00453-025-01321-z"
+  },
+  "W4412888985": {
+   "title": "Principal Parts Detection for Computational Morphology: Task, Models and Benchmark",
+   "date_openalex": "2025-01-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.18653/v1/2025.conll-1.17"
+  },
+  "W4413014941": {
+   "title": "GSST: Parallel string decompression at 191 GB/s on GPU",
+   "date_openalex": "2025-08-04",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1145/3759441.3759450"
+  },
+  "W4413232336": {
+   "title": "Assessing the impact of emergency medicine pharmacists on fibrinolytic door-to-needle times in acute ischemic stroke: A systematic review and meta-analysis (Pharmacist-assisted Stroke Treatments I (PhAST-1))",
+   "date_openalex": "2025-08-09",
+   "type_openalex": "review",
+   "doi": "https://doi.org/10.1016/j.ajem.2025.08.014"
+  },
+  "W4413349906": {
+   "title": "Learned Compression of Nonlinear Time Series with Random Access",
+   "date_openalex": "2025-05-19",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/icde65448.2025.00122"
+  },
+  "W4413360655": {
+   "title": "A Length Enhanced B + -Tree Based Index for Efficient Set Similarity Query",
+   "date_openalex": "2025-05-19",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/icde65448.2025.00101"
+  },
+  "W4413361128": {
+   "title": "A Cost-Effective and Decompression-Transparent Compressor for OLTP-Oriented Databases",
+   "date_openalex": "2025-05-19",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/icde65448.2025.00037"
+  },
+  "W4413361490": {
+   "title": "Extendible RDMA-Based Remote Memory KV Store with Dynamic Perfect Hashing Index",
+   "date_openalex": "2025-05-19",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/icde65448.2025.00134"
+  },
+  "W4413499066": {
+   "title": "Engineering rank/select data structures for large-alphabet strings",
+   "date_openalex": "2025-08-04",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1093/comjnl/bxaf102"
+  },
+  "W4413840235": {
+   "title": "SEE-phAST: Spatially encapsulated emulsions for phenotypic antibiotic susceptibility testing via sequential digital RAA-CRISPR",
+   "date_openalex": "2025-08-30",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1016/j.bios.2025.117937"
+  },
+  "W4413943446": {
+   "title": "Saving Private Hash Join",
+   "date_openalex": "2025-04-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3742728.3742762"
+  },
+  "W4413978115": {
+   "title": "SQLStorm: Taking Database Benchmarking into the LLM Era",
+   "date_openalex": "2025-07-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3749646.3749683"
+  },
+  "W4413978152": {
+   "title": "The FastLanes File Format",
+   "date_openalex": "2025-07-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3749646.3749718"
+  },
+  "W4413979229": {
+   "title": "AnyBlox: A Framework for Self-Decoding Datasets",
+   "date_openalex": "2025-07-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3749646.3749672"
+  },
+  "W4413979483": {
+   "title": "Selective Late Materialization in Modern Analytical Databases",
+   "date_openalex": "2025-07-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3749646.3749717"
+  },
+  "W4413980865": {
+   "title": "Sphinx: A Succinct Perfect Hash Index for x86",
+   "date_openalex": "2025-07-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3749646.3749703"
+  },
+  "W4414041294": {
+   "title": "LogLite: Lightweight Plug-and-Play Streaming Log Compression",
+   "date_openalex": "2025-07-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3749646.3749652"
+  },
+  "W4414170662": {
+   "title": "PDPH: A Performant Dynamic Perfect Hash Index with Rehashing Optimizations",
+   "date_openalex": "2025-07-02",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/iwqos65803.2025.11143534"
+  },
+  "W4414199092": {
+   "title": "Expanding Logical Space Freely: A Memory-efficient Mapping Table Design for Compressional SSDs",
+   "date_openalex": "2025-06-22",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/dac63849.2025.11132583"
+  },
+  "W4414210880": {
+   "title": "Empirična analiza naglašenih enot v slovenščini na podlagi Slovenskega oblikoslovnega leksikona Sloleks",
+   "date_openalex": "2025-09-09",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.4312/jis.70.3.109-124"
+  },
+  "W4414266802": {
+   "title": "Workload Insights from the Snowflake Data Cloud: What Do Production Analytic Queries Really Look Like?",
+   "date_openalex": "2025-08-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3750601.3750632"
+  },
+  "W4414271122": {
+   "title": "Optimization Strategy for Resource Allocation in Deep Learning Driven Computing Systems",
+   "date_openalex": "2025-07-04",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/icpet66029.2025.11160457"
+  },
+  "W4414290619": {
+   "title": "A Survey of Learned Indexes for the Multi-dimensional Space",
+   "date_openalex": "2025-09-17",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1145/3768575"
+  },
+  "W4414400087": {
+   "title": "Axial compressive behavior of stiffened thin-walled recycled-brick aggregate concrete-filled steel tubular columns",
+   "date_openalex": "2025-09-22",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1016/j.jcsr.2025.109977"
+  },
+  "W4414427925": {
+   "title": "F3: The Open-Source Data File Format for the Future",
+   "date_openalex": "2025-09-22",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1145/3749163"
+  },
+  "W4414452381": {
+   "title": "${\\varepsilon}$-Cost Sharding: Scaling Hypergraph-Based Data Structures to Trillions of Keys",
+   "date_openalex": "2025-03-24",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2503.18397"
+  },
+  "W4414494625": {
+   "title": "CompactLTJ: Space & Time Efficient Leapfrog Triejoin on Graph Databases",
+   "date_openalex": "2025-09-25",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1007/s00778-025-00945-5"
+  },
+  "W4414569216": {
+   "title": "Portable histone assay technology (PHAST) for the sample-to-answer detection of circulating histones in whole blood",
+   "date_openalex": "2025-09-27",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1016/j.snb.2025.138848"
+  },
+  "W4414740226": {
+   "title": "Instance-Optimized String Fingerprints",
+   "date_openalex": "2025-07-14",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2507.10391"
+  },
+  "W4414760276": {
+   "title": "Analyzing Finnish Inflectional Classes through Discriminative Lexicon and Deep Learning Models",
+   "date_openalex": "2025-09-05",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2509.04813"
+  },
+  "W4414810819": {
+   "title": "Towards Efficient Extendible Perfect Hashing for Hybrid PM-DRAM Memory",
+   "date_openalex": "2025-10-04",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1145/3770859"
+  },
+  "W4414895703": {
+   "title": "Memory-Efficient FastText: A Comprehensive Approach Using Double-Array Trie Structures and Mark-Compact Memory Management",
+   "date_openalex": "2025-06-02",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2506.01254"
+  },
+  "W4415035165": {
+   "title": "PtrHash: Minimal Perfect Hashing at RAM Throughput",
+   "date_openalex": "2025-01-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.4230/lipics.sea.2025.21"
+  },
+  "W4415041739": {
+   "title": "Simulation and Risk Assessment of CO2 Buried Pipeline Leakage and Diffusion Using PHAST",
+   "date_openalex": "2025-01-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.3850/978-981-94-3281-3_esrel-sra-e2025-p9012-cd"
+  },
+  "W4415148222": {
+   "title": "Pemahaman Dan Pencegahan Penyakit Infeksius Bagi Guru Sd Muhammadiyah Kaliwates Melalui Phast-Phbs Berbantuan Picture And Picture",
+   "date_openalex": "2025-06-25",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.32528/jpmi.v11i1.3839"
+  },
+  "W4415199682": {
+   "title": "DICOMP: Deep Reinforcement Learning for Integer Compression",
+   "date_openalex": "2025-10-15",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1016/j.mlwa.2025.100756"
+  },
+  "W4415331749": {
+   "title": "Tracing the Representation Geometry of Language Models from Pretraining to Post-training",
+   "date_openalex": "2025-01-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.52202/085713-1829"
+  },
+  "W4415334882": {
+   "title": "On the sensitivity of CDAWG-grammars",
+   "date_openalex": "2025-03-04",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2503.02415"
+  },
+  "W4415419743": {
+   "title": "FSST Compression of JSON Data on FPGAs",
+   "date_openalex": "2025-10-22",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1007/978-3-032-03281-2_4"
+  },
+  "W4415637994": {
+   "title": "COTTAS: Columnar Triple Table Storage for Efficient and Compressed RDF Management",
+   "date_openalex": "2025-10-28",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1007/978-3-032-09530-5_18"
+  },
+  "W4415661885": {
+   "title": "Beyond Static Retrieval: A Reinforcement Learning Framework for Dynamic and Adaptive RAG",
+   "date_openalex": "2025-10-18",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.11648/j.ajcst.20250804.12"
+  },
+  "W4415796951": {
+   "title": "TableRAG: Million-Token Table Understanding with Language Models",
+   "date_openalex": "2024-01-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.52202/079017-2382"
+  },
+  "W4415927674": {
+   "title": "Learned Static Function Data Structures",
+   "date_openalex": "2026-01-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3796195.3796205"
+  },
+  "W4415940457": {
+   "title": "982P First-in-human clinical trial of the acetylglucosaminyltransferase V (GnT-V) inhibitor PhOx430 in patients with advanced solid tumours: the PhAST trial",
+   "date_openalex": "2025-09-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1016/j.annonc.2025.08.1551"
+  },
+  "W4416038669": {
+   "title": "MorphisHash: Improving Space Efficiency of ShockHash for Minimal Perfect Hashing",
+   "date_openalex": "2025-01-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.4230/lipics.esa.2025.9"
+  },
+  "W4416046273": {
+   "title": "Improved Prefetching Techniques for Linked Data Structures",
+   "date_openalex": "2025-05-25",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.21985/n2-bsav-a158"
+  },
+  "W4416807673": {
+   "title": "FastLanes: A Next-Gen File Format",
+   "date_openalex": "2025-11-29",
+   "type_openalex": "dissertation",
+   "doi": "https://doi.org/10.5463/thesis.1348"
+  },
+  "W4416914903": {
+   "title": "Modeling the Consequences of Benzene Leakage from Tanks Using PHAST Software in a Process Industry",
+   "date_openalex": "2025-10-27",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.34172/jhad.1167"
+  },
+  "W4417000924": {
+   "title": "Dear-OMG: An Omics-General Compression Method for Genomics, Proteomics and Metabolomics Data",
+   "date_openalex": "2025-12-04",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1007/s12539-025-00786-4"
+  },
+  "W4417010301": {
+   "title": "Models for Automatic Morphological Inflection of Serbian and Croatian Based on the srLex and hrLex Morphological Lexicons",
+   "date_openalex": "2025-01-01",
+   "type_openalex": "book-chapter",
+   "doi": "https://doi.org/10.18485/judig.2025.1.ch2"
+  },
+  "W4417102688": {
+   "title": "OnPair: Short Strings Compression for Fast Random Access",
+   "date_openalex": "2025-08-04",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2508.02280"
+  },
+  "W4417174694": {
+   "title": "Engineering Minimal k-Perfect Hash Functions",
+   "date_openalex": "2025-01-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.4230/lipics.esa.2025.99"
+  },
+  "W4417219973": {
+   "title": "Using PHAST Reaction-Transport Modeling to Study Near-Diapir Diagenesis.",
+   "date_openalex": "2025-01-01",
+   "type_openalex": "conference-abstract",
+   "doi": "https://doi.org/10.1130/abs/2025am-4491"
+  },
+  "W4417283669": {
+   "title": "MapLibre Tile: A Next Generation Vector Tile Format",
+   "date_openalex": "2025-11-03",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1145/3748636.3763208"
+  },
+  "W4417350978": {
+   "title": "Optimizing Flare Stack Performance and Radiation Impact Analysis in Onshore Facilities: A Simulation Based Study Using FLARESIM and PHAST Software",
+   "date_openalex": "2025-12-16",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.21275/mr251209221052"
+  },
+  "W7105660382": {
+   "title": "Engineering Minimal k-Perfect Hash Functions",
+   "date_openalex": "2025-11-13",
+   "type_openalex": "software",
+   "doi": "https://doi.org/10.5281/zenodo.17601504"
+  },
+  "W7106014771": {
+   "title": "ShockHash: Near Optimal-Space Minimal Perfect Hashing Beyond Brute-Force",
+   "date_openalex": "2025-01-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.5445/ir/1000187076"
+  },
+  "W7108320567": {
+   "title": "Efficient Compression-Based Low-resource Text Classification",
+   "date_openalex": "2025-09-29",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.5753/eniac.2025.13966"
+  },
+  "W7108666610": {
+   "title": "PrinParLatInfLexi",
+   "date_openalex": "2025-12-04",
+   "type_openalex": "dataset",
+   "doi": "https://doi.org/10.5281/zenodo.17819183"
+  },
+  "W7109956188": {
+   "title": "Compressibility Measures and Succinct Data Structures for Piecewise Linear Approximations",
+   "date_openalex": "2025-01-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.4230/lipics.isaac.2025.31"
+  },
+  "W7110134940": {
+   "title": "Combined Search and Encoding for Seeds, with an Application to Minimal Perfect Hashing",
+   "date_openalex": "2025-01-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.4230/lipics.esa.2025.109"
+  },
+  "W7110257976": {
+   "title": "Elias-Fano Compression for Space-Efficient Rank and Select Structures",
+   "date_openalex": "2025-01-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.4230/lipics.sea.2025.23"
+  },
+  "W7110448724": {
+   "title": "MorphisHash: Improving Space Efficiency of ShockHash for Minimal Perfect Hashing",
+   "date_openalex": "2025-01-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.4230/lipics.esa.2025.9"
+  },
+  "W7112484543": {
+   "title": "Exploring Dimensional Emergence from Compressed Strings in String Theory",
+   "date_openalex": "2025-08-07",
+   "type_openalex": "preprint",
+   "doi": null
+  },
+  "W7116856391": {
+   "title": "Leveraging a Morphological Lexicon for a Semi-Automatic Approach to Correcting Lemmas and Morphosyntactic Tags",
+   "date_openalex": "2025-12-22",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.51663/pnz.65.3.06"
+  },
+  "W7117294810": {
+   "title": "Compressive behavior and design of circular steel slag concrete‐filled stainless steel tube ( SSC ‐ FSST ) stub columns",
+   "date_openalex": "2025-12-25",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1002/suco.70448"
+  },
+  "W7117580961": {
+   "title": "Investigating the Probable Safety and Invironmentally Consequences of Propane Reservoir Incidents in Behran Oil Refinery by using PHAST Software",
+   "date_openalex": "2025-02-04",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.82313/ace.2025.1198599"
+  },
+  "W7118099246": {
+   "title": "Ribbon: Fast Succinct Static Retrieval and Approximate Membership",
+   "date_openalex": "2026-01-03",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1145/3785417"
+  },
+  "W7118470989": {
+   "title": "Succinct Dynamic Rank/Select: Bypassing the Tree-Structure Bottleneck",
+   "date_openalex": "2026-01-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1137/1.9781611978971.138"
+  },
+  "W7118613055": {
+   "title": "LiquidCache: Efficient Pushdown Caching for Cloud-Native Data Analytics",
+   "date_openalex": "2025-09-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3773731.3773741"
+  },
+  "W7118809228": {
+   "title": "2026 Proceedings of the SIAM Symposium on Algorithm Engineering and Experiments (ALENEX)",
+   "date_openalex": "2026-01-01",
+   "type_openalex": "book",
+   "doi": "https://doi.org/10.1137/1.9781611978957"
+  },
+  "W7118894901": {
+   "title": "PHast – P erfect H ashing made f ast",
+   "date_openalex": "2026-01-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1137/1.9781611978957.1"
+  },
+  "W7119013462": {
+   "title": "Optimal Random Access and Conditional Lower Bounds for 2D Compressed Strings",
+   "date_openalex": "2026-01-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1137/1.9781611978971.69"
+  },
+  "W7119504105": {
+   "title": "FlatStor: An Efficient Embedded-Index Based Columnar Data Layout for Multimodal Data Workloads",
+   "date_openalex": "2025-09-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3772181.3772182"
+  },
+  "W7124468619": {
+   "title": "YATA: Yet Another TFHE Accelerator with Key Compression and Radix-8 NTT",
+   "date_openalex": "2026-01-16",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.46586/tches.v2026.i1.325-352"
+  },
+  "W7125196174": {
+   "title": "\"Range as a Key\" is the Key! Fast and Compact Cloud Block Store Index with RASK",
+   "date_openalex": "2026-01-20",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2601.14129"
+  },
+  "W7125716291": {
+   "title": "Cryptographic Perfect Hash Functions: A Theoretical Analysis on Space Efficiency and Algebraic Composition",
+   "date_openalex": "2026-01-26",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.5281/zenodo.18371605"
+  },
+  "W7126116346": {
+   "title": "CoD-SELL: A Non-Zero Location Dictionary Compression Sparse Matrix Format for SpMV on GPU",
+   "date_openalex": "2026-01-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1109/access.2026.3659140"
+  },
+  "W7127051998": {
+   "title": "The Effect of Atmospheric Stability (Pasquil Stability) on the Distribution Radius and Concentration of CO2 Using Phast 8.22 Modeling from Oil and Gas Processing Facilities in Central Java",
+   "date_openalex": "2026-02-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.55927/cjas.v4i1.122"
+  },
+  "W7127072313": {
+   "title": "VLAH: A Lightweight and Verifiable Framework for Approximate Nearest Neighbor Search in High-Dimensional Space",
+   "date_openalex": "2025-11-14",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/trustcom66490.2025.00187"
+  },
+  "W7127311769": {
+   "title": "Supplemental figure for \"Optimization of Numerical Approach for a Commercial Grain Conditioning Simulation Tool (PHAST Model) Using Finite Difference Method\"",
+   "date_openalex": "2026-02-03",
+   "type_openalex": "supplementary-materials",
+   "doi": "https://doi.org/10.13031/31195327"
+  },
+  "W7127950930": {
+   "title": "Incongruity-Sensitive Access to Highly Compressed Strings",
+   "date_openalex": "2026-01-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.4230/lipics.esa.2026.125"
+  },
+  "W7128466611": {
+   "title": "ZipFlow: A Compiler-Based Framework to Unleash Compressed Data Movement for Modern GPUs",
+   "date_openalex": "2026-08-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3827998.3828003"
+  },
+  "W7128548972": {
+   "title": "Optimization of Numerical Approach for a Commercial Grain Conditioning Simulation Tool (PHAST Model) Using Finite Difference Method",
+   "date_openalex": "2026-01-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.13031/aea.16468"
+  },
+  "W7128576538": {
+   "title": "Morphological Lexicon of Slovene Sloleks 3.1",
+   "date_openalex": "2026-02-03",
+   "type_openalex": "other",
+   "doi": null
+  },
+  "W7128614633": {
+   "title": "Modern Minimal Perfect Hashing: A Survey",
+   "date_openalex": "2026-02-11",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1145/3797036"
+  },
+  "W7128620472": {
+   "title": "Static Retrieval Revisited: To Optimality and Beyond",
+   "date_openalex": "2025-12-14",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/focs63196.2025.00126"
+  },
+  "W7130432487": {
+   "title": "Construction of distinct k -mer color sets via set fingerprinting",
+   "date_openalex": "2026-02-18",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.64898/2026.02.16.706153"
+  },
+  "W7131132729": {
+   "title": "PHAST: Port-Hamiltonian Architecture for Structured Temporal Dynamics Forecasting",
+   "date_openalex": "2026-02-20",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2602.17998"
+  },
+  "W7131394113": {
+   "title": "Dictionary-based Byte-Pair Encoding tokenizer for morphologically rich languages",
+   "date_openalex": "2025-12-06",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/icecer65523.2025.11401129"
+  },
+  "W7134249058": {
+   "title": "Polynomial Integer Sequences: Structural Orbits, Canonical Indexing, and Hidden Families",
+   "date_openalex": "2026-03-09",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.5281/zenodo.18923840"
+  },
+  "W7137117388": {
+   "title": "Dynamic direct (ranked) access of MSO query evaluation over SLP-compressed strings",
+   "date_openalex": "2026-03-13",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2603.13058"
+  },
+  "W7138044795": {
+   "title": "Space Upper Bounds for α-Perfect Hashing",
+   "date_openalex": "2026-06-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/isit62367.2026.11654104"
+  },
+  "W7138775829": {
+   "title": "Influences of dynamic and static retrieval cues on memory for events",
+   "date_openalex": "2026-03-17",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.3389/fcogn.2026.1714095"
+  },
+  "W7138922574": {
+   "title": "Morphing-Based Compression for Data-Centric ML Pipelines",
+   "date_openalex": "2025-11-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3778092.3778104"
+  },
+  "W7139016629": {
+   "title": "MapReplay: Trace-Driven Benchmark Generation for Java HashMap",
+   "date_openalex": "2026-04-23",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1145/3777884.3797010"
+  },
+  "W7139211006": {
+   "title": "A method for the automatic compilation of archetypal word-formation trees based on the Sloleks Morphological Lexicon of Slovenian",
+   "date_openalex": "2026-03-16",
+   "type_openalex": "article",
+   "doi": null
+  },
+  "W7141403470": {
+   "title": "AutoCSF: A Provably Safe Indexing Framework for Filter-Augmented Compressed Static Functions",
+   "date_openalex": "2026-11-03",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1145/3799682.3841067"
+  },
+  "W7141457036": {
+   "title": "FSST String Compression with Materialized View Integration",
+   "date_openalex": "2026-03-27",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.5281/zenodo.19243979"
+  },
+  "W7143789346": {
+   "title": "GPU-accelerated lemmatization with CUDA and RAPIDS accelerator for Spark.",
+   "date_openalex": "2026-03-28",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.36910/6775-2524-0560-2026-62-10"
+  },
+  "W7144344188": {
+   "title": "A Single-Index Store for Hybrid Transactional and Analytical Processing on Modern Computational Storage Drives",
+   "date_openalex": "2026-03-31",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1145/3806230"
+  },
+  "W7147607063": {
+   "title": "Improving Environmental Health Awareness through the PHAST Method for Household Sanitation Intervention in the Belawan Coastal Region",
+   "date_openalex": "2026-03-31",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.30829/contagion.v8i1.26695"
+  },
+  "W7147625705": {
+   "title": "LISK: A High-Performance In-Memory Learned Index for Variable-Length String Keys",
+   "date_openalex": "2026-03-31",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1109/tc.2026.3679553"
+  },
+  "W7151053600": {
+   "title": "CHARACTERISTICS OF SORTING ALGORITHMS OPERATION IN PYTHON",
+   "date_openalex": "2024-11-08",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.31548/itees.2024.01.015"
+  },
+  "W7151608908": {
+   "title": "Efficient Key Compression in Isogeny‐Based Post‐Quantum Cryptography: A PSO‐WCA Hybrid Optimization Approach",
+   "date_openalex": "2026-04-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1002/qute.202400360"
+  },
+  "W7153874207": {
+   "title": "Reengineering the Connectome with Photon Assisted Synaptic Transmission (PhAST)",
+   "date_openalex": "2026-04-01",
+   "type_openalex": "book-chapter",
+   "doi": "https://doi.org/10.1007/978-3-032-18121-3_5"
+  },
+  "W7154963857": {
+   "title": "Adaptive Set Intersection via Trie Partition Certificates",
+   "date_openalex": "2026-04-20",
+   "type_openalex": "software",
+   "doi": "https://doi.org/10.5281/zenodo.19656859"
+  },
+  "W7155008766": {
+   "title": "Simulation-based safety analysis of hydrogen storage tank leakage using ALOHA and PHAST",
+   "date_openalex": "2026-04-20",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.30521/jes.1859186"
+  },
+  "W7155415354": {
+   "title": "AnyBlox: Let Your Data Read Itself",
+   "date_openalex": "2026-04-23",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1145/3810900.3810912"
+  },
+  "W7155506138": {
+   "title": "Ethane: Debloating State Data using Compact Trie for Account-based Blockchain",
+   "date_openalex": "2026-04-24",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1145/3767295.3769340"
+  },
+  "W7160110854": {
+   "title": "MorfFlex: Handling Rich Morphology",
+   "date_openalex": "2026-04-30",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.63317/36ruwkgu8iex"
+  },
+  "W7160287231": {
+   "title": "A Consequence Analysis of a Hydrogen Sulfide Gas Release using PHAST Software in the Sulfur Recovery Unit of Abadan Oil Refinery Company",
+   "date_openalex": "2026-05-05",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.18502/jhsw.v15i4.21460"
+  },
+  "W7160321597": {
+   "title": "NašLex: A Bosnian, Croatian, Montenegrin, Serbian inflectional lexicon",
+   "date_openalex": "2026-05-05",
+   "type_openalex": "dataset",
+   "doi": "https://doi.org/10.5281/zenodo.20039926"
+  },
+  "W7160648929": {
+   "title": "Dictionary-based coding compression for clustering",
+   "date_openalex": "2026-01-01",
+   "type_openalex": "book-chapter",
+   "doi": "https://doi.org/10.1016/b978-0-443-40541-9.00011-6"
+  },
+  "W7160839767": {
+   "title": "The Z₇³ Cubic Database: A Perfect-Hash Discrete State Space for Meteorological and Climate Data",
+   "date_openalex": "2026-05-11",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.5281/zenodo.20121301"
+  },
+  "W7160907706": {
+   "title": "Data Path Fusion in GPU for Analytical Query Processing",
+   "date_openalex": "2026-05-11",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2605.10511"
+  },
+  "W7161566604": {
+   "title": "L3: A GPU-Native Co-Designed Data Format for Learned Lossless Lightweight Compression",
+   "date_openalex": "2026-05-18",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1145/3802078"
+  },
+  "W7161576040": {
+   "title": "Meep Hashing: Ultrafast and Compact Minimal Perfect Hashing for Practical Large-Scale Lookup Systems",
+   "date_openalex": "2026-05-18",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1145/3802087"
+  },
+  "W7161991461": {
+   "title": "Comparación de dos metodologías de educación de adultos (SANTOLIC y SARAR PHAST) para la transmisión de conocimiento y motivación a la adopción de prácticas saludables en madres o cuidadores de niños de primer a tercer grado de primaria. Estudio realizado en la Escuela Oficial Rural Mixta Colonia El Mirador, jornada matutina, del municipio de Santa Cruz Balanyá, Chimaltenango Guatemala, 2025",
+   "date_openalex": "2026-05-21",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.36631/arrupe.2025.14.05"
+  },
+  "W7162078661": {
+   "title": "SPIDER: Two Server Functionality for the Cost of Zero",
+   "date_openalex": "2026-05-21",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2605.21857"
+  },
+  "W7162309768": {
+   "title": "TPLI: Transformation-partitioned learned index for multi-domain key-value stores",
+   "date_openalex": "2026-05-25",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1007/s10844-026-01059-2"
+  },
+  "W7162429289": {
+   "title": "ByteHouse: ByteDance's Cloud-Native Data Warehouse for Real-Time Multimodal Data Analytics",
+   "date_openalex": "2026-05-26",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1145/3788853.3803080"
+  },
+  "W7162448141": {
+   "title": "1 st International Workshop on Data Formats for Modern Architectures and Workloads (FORMATS)",
+   "date_openalex": "2026-05-26",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1145/3788853.3802509"
+  },
+  "W7162628141": {
+   "title": "How does Vendi-RAG's iterative diversity-accuracy optimization compare to static retrieval methods like Contri",
+   "date_openalex": "2026-05-29",
+   "type_openalex": "report",
+   "doi": "https://doi.org/10.5281/zenodo.20435901"
+  },
+  "W7162799053": {
+   "title": "Phast: Simultaneous reconstruction of photoelectron count and time profiles from PMT waveforms via machine learning",
+   "date_openalex": "2026-05-28",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2605.29391"
+  },
+  "W7162866514": {
+   "title": "Path Welding: Factual Associations Are Real-Time Geometric Constructions, Not Static Retrievals",
+   "date_openalex": "2026-05-30",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.5281/zenodo.20461468"
+  },
+  "W7163954942": {
+   "title": "Constant Multiplicative Sensitivity on the CDAWGs",
+   "date_openalex": "2025-02-09",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.4230/lipics.cpm.2026.8"
+  },
+  "W7164029723": {
+   "title": "Beyond task performance: morphological branching as a diagnostic metric for polish inflectional language models",
+   "date_openalex": "2026-06-09",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.31235/osf.io/a4wd9_v1"
+  },
+  "W7164036932": {
+   "title": "The Perfect Hash Filter: An Efficient Implementation of the Positive Bernoulli Set and Bernoulli Map",
+   "date_openalex": "2026-06-09",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.5281/zenodo.20602263"
+  },
+  "W7164945348": {
+   "title": "C^2: Cache-Conscious Succinct Tries with Adaptive Unary Path Compression",
+   "date_openalex": "2026-06-15",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2606.16104"
+  },
+  "W7165204677": {
+   "title": "Leave No One Behind: Shared-Dictionary Compression in a Legacy-Compatible Global Web-Caching Infrastructure",
+   "date_openalex": "2026-06-19",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1007/978-3-032-29372-5_10"
+  },
+  "W7165616534": {
+   "title": "PHAST-Net: Attention-Guided, Physics-Informed Network for Estimation of Ideal Time-Frequency Representations",
+   "date_openalex": "2026-06-22",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2606.23665"
+  },
+  "W7165635391": {
+   "title": "PhAST: A differentiable, matrix-free finite-element solver for dynamic phase-field fracture: Formulation, benchmarks, and inverse analysis",
+   "date_openalex": "2026-11-09",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1016/j.cma.2026.119547"
+  },
+  "W7166030930": {
+   "title": "Analytical Query Processing Beyond Main Memory",
+   "date_openalex": "2026-06-26",
+   "type_openalex": "book",
+   "doi": "https://doi.org/10.54195/9789465152929"
+  },
+  "W7166799604": {
+   "title": "Random Access in Grammar-Compressed Strings: Optimal Trade-Offs in Almost All Parameter Regimes",
+   "date_openalex": "2026-01-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.4230/lipics.icalp.2026.86"
+  },
+  "W7167243283": {
+   "title": "The Arabic of Shaykh Taba in Akkar, Lebanon: Phonology, Pausal Phenomena, Morphology, Lexicon and Regional Context",
+   "date_openalex": "2026-07-04",
+   "type_openalex": "book",
+   "doi": "https://doi.org/10.1163/9789004776562"
+  },
+  "W7167256857": {
+   "title": "Output-Sensitive Construction of CDAWGs from BWT-Runs",
+   "date_openalex": "2026-07-02",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2607.01636"
+  },
+  "W7167357079": {
+   "title": "Enhancing Trust and Efficiency in Blockchain-Based Government Approval Systems: A Framework with Layered Encryption and Optimized Consensus Mechanisms",
+   "date_openalex": "2026-07-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1016/j.bcra.2026.100528"
+  },
+  "W7167366134": {
+   "title": "Assembly theory collapses to dictionary compression and is rendered redundant by common statistical algorithms",
+   "date_openalex": "2026-07-04",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1038/s44260-026-00088-w"
+  },
+  "W7167906649": {
+   "title": "Compression-Aware LIKE: Matching Patterns in the FSST Domain",
+   "date_openalex": "2026-05-31",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1145/3789237.3809128"
+  },
+  "W7167925081": {
+   "title": "Streaming with a Touch of DOM: a Lightweight Structural Index for JSON Queries",
+   "date_openalex": "2026-05-31",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1145/3789237.3809120"
+  },
+  "W7167932891": {
+   "title": "Let the Hardware do it: Fast Graph Query processing through FPGA-accelerated Late Materialization and Decompression",
+   "date_openalex": "2026-05-31",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1145/3789237.3809133"
+  },
+  "W7167980754": {
+   "title": "Hardness of Frequency-Related Queries on Compressed Strings",
+   "date_openalex": "2026-01-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.4230/lipics.esa.2026.143"
+  },
+  "W7167981652": {
+   "title": "Non-Minimal k-Perfect Hashing: Tight Lower Bounds and an Application to Fast Static Hash Tables",
+   "date_openalex": "2026-01-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.4230/lipics.esa.2026.20"
+  },
+  "W7168021801": {
+   "title": "Lossless compression of k-mer matrices enabling random row access",
+   "date_openalex": "2026-07-08",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.64898/2026.07.03.736306"
+  },
+  "W7168259875": {
+   "title": "OptFSST: Optimized FSST String Compression",
+   "date_openalex": "2026-07-13",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2607.11271"
+  },
+  "W7168262980": {
+   "title": "A Stateless PIR Protocol for Root-Aligned Wildcard Prefix-Set Retrieval Based on Compact Trie and Homomorphic Encryption",
+   "date_openalex": "2026-07-14",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.3390/fi18070361"
+  },
+  "W7168299783": {
+   "title": "FlashTrie: A GPU-Accelerated Constrained Beam Search for Generative Retrieval",
+   "date_openalex": "2026-01-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.18653/2026.emnlp-industry.157"
+  },
+  "W7169497086": {
+   "title": "The Ontological Inside: A Rigorous Demonstration of Self-Hosting Computation, Simplicial Topology, and the Complete Reversibility of Constraint Manifolds",
+   "date_openalex": "2026-07-17",
+   "type_openalex": "dissertation",
+   "doi": "https://doi.org/10.5281/zenodo.21413755"
+  },
+  "W7169511150": {
+   "title": "Bridge Evidence: Static Retrieval Utility Does Not Predict Causal Utility in Multi-Step Agentic Search",
+   "date_openalex": "2026-07-16",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2607.15253"
+  },
+  "W7169746307": {
+   "title": "Modeling the Consequences of Fire and Leakage of Toxic Substances of Methyldiethanolamine Tank with PHAST Software (A Case Study in Phase 14 of the South Pars Refinery, Iran)",
+   "date_openalex": "2025-01-01",
+   "type_openalex": "article",
+   "doi": null
+  },
+  "W7169787480": {
+   "title": "SRPhon2Word: Cheap Probabilistic Matching for Isolated-Word Retrieval over Large Morphological Lexicons",
+   "date_openalex": "2026-06-20",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.5121/csit.2026.1601105"
+  },
+  "W7169807866": {
+   "title": "Oblivious Complex Queries on Variable-Length Strings",
+   "date_openalex": "2026-01-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.5220/0015001100004103"
+  },
+  "W7170192635": {
+   "title": "Leakage Dispersion Characteristics and High-Concentration Risk Zoning of Liquid CO2 Storage Tanks in Oilfield CCUS System Based on a PHAST-KFX Two-Stage Simulation Framework",
+   "date_openalex": "2026-07-23",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.3390/pr14152383"
+  },
+  "W7170194796": {
+   "title": "The Variation -esc/-ø at Present Indicative of 4th Conjugation Romanian Verbs. A Normative Analysis based 7 on DOOM3 (The Orthographic, Orthoepic and Morphologic Dictionary of the Romanian Language",
+   "date_openalex": "2026-06-05",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.35923/qr.13.01.27"
+  },
+  "W7171354171": {
+   "title": "QC-PHAST Search: Classical--Quantum Query Benchmarks for Finite-Pool Rare-Regime Discovery",
+   "date_openalex": "2026-07-24",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2607.21995"
+  },
+  "W7171363234": {
+   "title": "The Panchromatic Hubble Andromeda Southern Treasury (PHAST). II. The Spatially Resolved Recent Star Formation History in M31",
+   "date_openalex": "2026-07-27",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.3847/1538-4357/ae6db9"
+  },
+  "W7171525914": {
+   "title": "C2: Cache-Conscious Succinct Tries with Adaptive Unary Path Compression",
+   "date_openalex": "2026-07-28",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.48786/edbt.2027.08"
+  },
+  "W7171532089": {
+   "title": "The ArrowSpace Algorithm: From Graph Wiring to τ-Mode Spectral Search",
+   "date_openalex": "2026-07-28",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.5281/zenodo.21634020"
+  },
+  "W7171533745": {
+   "title": "Path-Compressed Trie for Efficient KV Cache Reuse",
+   "date_openalex": "2026-04-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/icccs69761.2026.11613300"
+  },
+  "W7171683294": {
+   "title": "PHAST: A Multi-Context Framework for Hybrid Threat Intelligence and Automated Detection Systems",
+   "date_openalex": "2026-05-31",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.67725/ist-africa.2026.rjcb8290"
+  },
+  "W7171823896": {
+   "title": "Abductive Collapse: Externalizing Hypothesis Formation to the Operator in a Deterministic Ontoprocedural Storage Core",
+   "date_openalex": "2026-07-29",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.5281/zenodo.21679317"
+  },
+  "W7171994147": {
+   "title": "Replication package for \"Declared as measured: transparency and verification across three scales of decarbonization research",
+   "date_openalex": "2026-07-31",
+   "type_openalex": "software",
+   "doi": "https://doi.org/10.5281/zenodo.21719291"
+  },
+  "W7172328831": {
+   "title": "A new upper bound on the dimer constant of $\\mathbb{Z}^3$",
+   "date_openalex": "2026-07-30",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2607.28810"
+  },
+  "W7172506351": {
+   "title": "Uplifting the Superpowers of Worst-Case-Optimal Join Algorithms",
+   "date_openalex": "2026-10-22",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1007/978-3-032-42026-8_3"
+  },
+  "W7201929981": {
+   "title": "Many-Body Effects in Computational Molecular Modeling Using PHAST 2.0.",
+   "date_openalex": "2025-05-09",
+   "type_openalex": "article",
+   "doi": null
+  },
+  "W7202175519": {
+   "title": "Linking Historical U.S. Patent Inventors to the Decennial Census, 1840–1950",
+   "date_openalex": "2026-08-11",
+   "type_openalex": "dataset",
+   "doi": "https://doi.org/10.5281/zenodo.21078984"
+  },
+  "W7202255972": {
+   "title": "SOLAR: Efficient Spatial Queries on Real-Time LSM-Based Storage",
+   "date_openalex": "2026-05-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/icde65706.2026.00245"
+  },
+  "W7202261647": {
+   "title": "Mirror Asymmetry Perfect Hashing: A Memory-Efficient and Load-Intensive-Optimized Hashing Index on Hybrid DRAM-PMem Architecture",
+   "date_openalex": "2026-05-01",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1109/icde65706.2026.00212"
+  },
+  "W7203647112": {
+   "title": "Learned Indices for String Keys with Optimized Performance and O(N) Space Cost",
+   "date_openalex": "2026-08-17",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1145/3841175"
+  },
+  "W7204173477": {
+   "title": "RagnarGrootKoerkamp/static-hash-sets",
+   "date_openalex": "2026-08-25",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.4230/artifacts.27680"
+  },
+  "W7204177812": {
+   "title": "Teach Your DBMS to LIKE Strings: Fast and General Pattern Matching for Wildcard Joins and Filters",
+   "date_openalex": "2026-08-24",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2608.23307"
+  },
+  "W7204221120": {
+   "title": "lexindex: compact, immutable string-to-id indexes for huge catalogs",
+   "date_openalex": "2026-08-27",
+   "type_openalex": "software",
+   "doi": "https://doi.org/10.5281/zenodo.22119002"
+  },
+  "W7204692540": {
+   "title": "Stone LLM concept",
+   "date_openalex": "2026-08-30",
+   "type_openalex": "report",
+   "doi": "https://doi.org/10.5281/zenodo.22169816"
+  },
+  "W7204837315": {
+   "title": "Diva++: Dynamic Range Filtering over Hard Workloads",
+   "date_openalex": "2026-08-27",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2608.27616"
+  },
+  "W7204841756": {
+   "title": "NLS: A New Simplified Constructed Language",
+   "date_openalex": "2026-08-31",
+   "type_openalex": "book",
+   "doi": "https://doi.org/10.5281/zenodo.22170484"
+  },
+  "W7204868932": {
+   "title": "PBC : Pattern-Based Compression for Semi-Structured Data",
+   "date_openalex": "2026-09-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1109/tkde.2026.3729874"
+  },
+  "W7206205020": {
+   "title": "Beyond the Prototype: A Systematic Review of One-Dimensional Learned Indexes with Emphasis on Dynamic Updates, String Keys, and Evidence Quality",
+   "date_openalex": "2026-05-08",
+   "type_openalex": "study-registration",
+   "doi": "https://doi.org/10.17605/osf.io/jud8w"
+  },
+  "W7206415350": {
+   "title": "MorfFlex CZ 2.1 (2024-12-23)",
+   "date_openalex": "2024-12-23",
+   "type_openalex": "article",
+   "doi": null
+  },
+  "W7208318364": {
+   "title": "Enhancement of the PHAST code toward an extensible geochemical simulation framework involving glass corrosion: development and preliminary application of JPHAST",
+   "date_openalex": "2026-09-01",
+   "type_openalex": "conference-paper",
+   "doi": null
+  },
+  "W7208704736": {
+   "title": "Accelerating String-Heavy Queries with LLM Token Tables",
+   "date_openalex": "2026-07-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.14778/3836663.3836714"
+  },
+  "W7209608652": {
+   "title": "Czech Models (MorfFlex CZ 2.1 + PDT-C 2.0) for MorphoDiTa 250909",
+   "date_openalex": "2025-09-09",
+   "type_openalex": "article",
+   "doi": null
+  },
+  "W7211892180": {
+   "title": "Quantum Advantages with Dictionary Based Quantum Data Centre Design for Medical Data",
+   "date_openalex": "2026-08-02",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1007/978-3-032-28206-4_2"
+  },
+  "W7212259977": {
+   "title": "Near-Data Processing of Structured and Semi-structured NoSQL Data on FPGA-based SoCs",
+   "date_openalex": "2026-01-01",
+   "type_openalex": "dissertation",
+   "doi": "https://doi.org/10.25593/open-fau-3421"
+  },
+  "W7212283775": {
+   "title": "Contact-Preserving Barrier Compression and Composition-Refined Enumeration of Rational Dyck Paths",
+   "date_openalex": "2026-08-01",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.5281/zenodo.22709109"
+  },
+  "W7212300725": {
+   "title": "Explicit Run–Return Enumeration for Rational Dyck Paths From Pushdown Residuals to Weighted Binomial Determinants",
+   "date_openalex": "2026-08-01",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.5281/zenodo.22709282"
+  },
+  "W7212303081": {
+   "title": "Successive recovery of tampered regions based on perfect hashing and matrix coding mechanism",
+   "date_openalex": "2026-09-11",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1007/s11042-026-21881-8"
+  },
+  "W7213228247": {
+   "title": "HRT-LI: Certified Rank Transport for Dynamic Learned Index over Hierarchical String Keys",
+   "date_openalex": "2026-09-15",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.21203/rs.3.rs-11018954/v1"
+  },
+  "W7213348223": {
+   "title": "FastPair: GPU-Optimized String Decoding",
+   "date_openalex": "2026-09-14",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2609.15034"
+  },
+  "W7213577950": {
+   "title": "ZigZag Trie: A Novel Index for Contextual Queries",
+   "date_openalex": "2026-09-17",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2609.19914"
+  },
+  "W7213643885": {
+   "title": "Front-Aware PINNs for CO2-Brine Displacement Fronts: Code, Processed Data and Figure Source Data",
+   "date_openalex": "2026-09-19",
+   "type_openalex": "dataset",
+   "doi": "https://doi.org/10.5281/zenodo.22730179"
+  },
+  "W7214641269": {
+   "title": "If Some Strings Shrink, Others Must Grow, and What Makes Room for Compression Is Not the String but the Bias of the Source ── Against 2^n strings of n bits there are 2^n-1 shorter strings, always one too few ── the separator is whether one faces the set of all possible strings taken equally or the strings a biased source emits ── [Paper 751]",
+   "date_openalex": "2026-09-28",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.5281/zenodo.23015140"
+  },
+  "W7214774752": {
+   "title": "G-CasDec: General Cascaded Decompression on GPUs",
+   "date_openalex": "2026-09-24",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1145/3837114"
+  },
+  "W7215027617": {
+   "title": "مدل‌سازی انفجار مخازن سوخت گندله‌سازی با استفاده از نرم‌افزار PHAST",
+   "date_openalex": "2025-11-04",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.22037/iipm.v12i4.47473"
+  },
+  "W7215080190": {
+   "title": "Consensus for Compressed Static Functions",
+   "date_openalex": "2026-09-30",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2609.39557"
+  },
+  "W7218015315": {
+   "title": "Quantitative Risk Assessment of City Gas Distribution Networks in India: Enhancing Safety with PHAST Modeling",
+   "date_openalex": "2024-07-10",
+   "type_openalex": "article",
+   "doi": null
+  },
+  "W7219653296": {
+   "title": "Transforming Coastal Household Sanitation: A Family-Centered PHAST Adaptation for Malnutrition and Environmentally Related Diseases-Vulnerable Communities",
+   "date_openalex": "2026-10-04",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.15294/ujph.v15i2.36067"
+  },
+  "W7221008553": {
+   "title": "The Case for Synthesized Data Compression",
+   "date_openalex": "2026-10-07",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2610.09913"
+  },
+  "W7221065807": {
+   "title": "Performing Oblivious Complex Queries on Variable-Length Strings With a Single Server Access",
+   "date_openalex": "2026-01-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1109/access.2026.3739127"
+  },
+  "W7221596603": {
+   "title": "Computing Pure Maximal Consecutive Periodic Patterns over APT Compressed Data",
+   "date_openalex": "2026-01-01",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.2139/ssrn.7607969"
+  },
+  "W7221816807": {
+   "title": "High-Throughput LLM-Based Compression and What It Takes: A Systems Study of Inference Engines and Entropy Coding Optimizations",
+   "date_openalex": "2026-10-13",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2610.17586"
+  },
+  "W7221829096": {
+   "title": "PHastR: Faster Minimal Perfect Hashing with Rotated Layouts",
+   "date_openalex": "2026-10-13",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2610.17833"
+  },
+  "W7222614886": {
+   "title": "Quantitative risk assessment of domino effects of hazardous chemicals under fire, BLEVE and toxic puff scenarios in multiple petrochemical tanks using SAFETI, PHAST and HEM simulation approaches",
+   "date_openalex": "2026-10-16",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1007/s40808-026-02928-z"
+  },
+  "W7222876954": {
+   "title": "Improving Cache Locality in Market-Data State Access with Profile-Managed Perfect Hashing",
+   "date_openalex": "2026-10-18",
+   "type_openalex": "software",
+   "doi": "https://doi.org/10.5281/zenodo.23455131"
+  },
+  "W7222883525": {
+   "title": "Beyond Static Retrieval: A Dynamic Double Oblivious Map via B+ Tree for Secure Enclaves",
+   "date_openalex": "2026-10-18",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1007/978-981-92-6840-5_12"
+  },
+  "W7223450853": {
+   "title": "LogCAFD: Context-Aware and Context-Free Dictionary-Based Compression for Streaming Server Logs",
+   "date_openalex": "2026-07-24",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1145/3841323.3841339"
+  },
+  "W7223451946": {
+   "title": "Comparative Intrinsic Evaluation of LLM Tokenizers on Serbian Text",
+   "date_openalex": "2026-01-01",
+   "type_openalex": "book-chapter",
+   "doi": "https://doi.org/10.18485/judig.2026.2.ch9"
+  },
+  "W7223535707": {
+   "title": "Finite-State Transducers in the Wheeler Setting",
+   "date_openalex": "2026-01-01",
+   "type_openalex": "conference-paper",
+   "doi": null
+  },
+  "W7223585824": {
+   "title": "Dinamica normei în DOOM3: reconfigurări în flexiunea nominală, adjectivală și verbală",
+   "date_openalex": "2026-09-01",
+   "type_openalex": "article",
+   "doi": null
+  },
+  "W7223703773": {
+   "title": "Tile-Based Decompression in Compiled GPU Engines",
+   "date_openalex": "2026-10-23",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2610.32695"
+  },
+  "W7223770331": {
+   "title": "Transducers on Compressed Strings",
+   "date_openalex": "2026-01-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.4230/lipics.icalp.2026.170"
+  },
+  "W7223772912": {
+   "title": "Deconstructed \"Learned\" Indexes and Their Smoothed Analysis",
+   "date_openalex": "2026-01-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.4230/lipics.esa.2026.15"
+  },
+  "W7224581496": {
+   "title": "Cyclic covering perfect hash families: new covering arrays of strength five and six with exact certificates",
+   "date_openalex": "2026-10-29",
+   "type_openalex": "report",
+   "doi": "https://doi.org/10.5281/zenodo.23751687"
+  },
+  "W7224914018": {
+   "title": "Two-row covering perfect hash families from Singer cycles, and upper bounds for their length",
+   "date_openalex": "2026-10-30",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.5281/zenodo.23787052"
+  },
+  "W7225012586": {
+   "title": "New upper bounds for covering array numbers from partly cyclic covering perfect hash families",
+   "date_openalex": "2026-10-31",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.5281/zenodo.23839215"
+  },
+  "W7225049484": {
+   "title": "Qeirūn ∿ Ŋalé: Boundary-Pair Cell-Probe Lower Bounds for Random Access in Run-Length Grammar-Compressed Strings and a Matching Time-Space Tradeoff",
+   "date_openalex": "2026-11-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.5281/zenodo.23858125"
+  },
+  "W7225111879": {
+   "title": "Minimal Perfect Hashing-Based Multi-Party Private Set Intersection Protocol for Size-Imbalanced Datasets",
+   "date_openalex": "2026-11-01",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.3390/app162110826"
+  },
+  "W7225231347": {
+   "title": "Fast Computation of Specific Words and Matching Statistics in CDAWG Space",
+   "date_openalex": "2026-11-04",
+   "type_openalex": "conference-paper",
+   "doi": "https://doi.org/10.1007/978-3-032-42866-0_18"
+  },
+  "W7225319958": {
+   "title": "The Invocation Bottleneck in LLM-Based Lossless Compression: What Can Be Removed and What Must Be Traded",
+   "date_openalex": "2026-11-04",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2611.05871"
+  },
+  "W7225387080": {
+   "title": "The probabilistic bound for perfect hashing is sharp only for binary alphabets",
+   "date_openalex": "2026-11-05",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2611.08230"
+  },
+  "W7225406907": {
+   "title": "PhAST: A differentiable, matrix-free finite-element solver for dynamic phase-field fracture",
+   "date_openalex": "2026-11-05",
+   "type_openalex": "other",
+   "doi": "https://doi.org/10.5281/zenodo.23984871"
+  },
+  "W7225711202": {
+   "title": "Monte Carlo validation and performance assessment of the PHAST code system for gamma-ray attenuation and electron dosimetry",
+   "date_openalex": "2026-11-10",
+   "type_openalex": "article",
+   "doi": "https://doi.org/10.1016/j.nimb.2026.166382"
+  },
+  "W7225723610": {
+   "title": "Improving the Trifference Lower Bound via Non-Perfect Hashing",
+   "date_openalex": "2026-11-08",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2611.11262"
+  },
+  "W7225733179": {
+   "title": "Using Morphological Lexicons for Weakly Supervised Subword Vocabulary Learning and Bias-Aware Evaluation",
+   "date_openalex": "2026-11-10",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.21203/rs.3.rs-10260345/v1"
+  },
+  "W7225755666": {
+   "title": "How Hard Is Tokenisation? Algorithms and Complexity Beyond NP-Hardness",
+   "date_openalex": "2026-11-09",
+   "type_openalex": "preprint",
+   "doi": "https://doi.org/10.48550/arxiv.2611.12348"
+  },
+  "W7225798402": {
+   "title": "Code and data for: Evaluating Variational Autoencoders for Enhancing McEliece Post-Quantum Cryptography: Learned Key Generation and Public-Key Compression for Secure Communication",
+   "date_openalex": "2026-11-06",
+   "type_openalex": "software",
+   "doi": "https://doi.org/10.5281/zenodo.24021149"
+  }
+ }
+}

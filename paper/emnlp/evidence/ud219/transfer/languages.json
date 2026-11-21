@@ -1,0 +1,1660 @@
+{
+  "afr": {
+    "anchor": "UD_Afrikaans-AfriBooms",
+    "corpora": {},
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 10063,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": false
+  },
+  "amh": {
+    "anchor": "UD_Amharic-ATT",
+    "corpora": {},
+    "in_domain_cohort": "cross_validation",
+    "primary": false
+  },
+  "arb": {
+    "anchor": "UD_Arabic-PADT",
+    "corpora": {
+      "silver": [
+        "ar_pud"
+      ]
+    },
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 28183,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": false
+  },
+  "aze": {
+    "anchor": "UD_Azerbaijani-TueCL",
+    "corpora": {},
+    "in_domain_cohort": "cross_validation",
+    "primary": false
+  },
+  "bam": {
+    "anchor": "UD_Bambara-CRB",
+    "corpora": {},
+    "in_domain_cohort": "cross_validation",
+    "primary": false
+  },
+  "bel": {
+    "anchor": "UD_Belarusian-HSE",
+    "corpora": {},
+    "in_domain": {
+      "changed": 1,
+      "losses": 1,
+      "tokens": 15871,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": false
+  },
+  "ben": {
+    "accepted": false,
+    "anchor": "UD_Bengali-BRU",
+    "corpora": {
+      "gold": [
+        "bn_banlemma"
+      ]
+    },
+    "in_domain_cohort": "cross_validation",
+    "primary": true,
+    "transfer": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 9957,
+      "wins": 0
+    }
+  },
+  "bre": {
+    "anchor": "UD_Breton-KEB",
+    "corpora": {},
+    "in_domain_cohort": "cross_validation",
+    "primary": false
+  },
+  "bul": {
+    "accepted": false,
+    "anchor": "UD_Bulgarian-BTB",
+    "corpora": {
+      "gold": [
+        "bg_elexis",
+        "bg_mte1984"
+      ]
+    },
+    "in_domain_cohort": "cross_validation",
+    "primary": true,
+    "transfer": {
+      "changed": 1490,
+      "losses": 606,
+      "tokens": 134655,
+      "wins": 818
+    }
+  },
+  "bxr": {
+    "anchor": "UD_Buryat-BDT",
+    "corpora": {},
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 9960,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": false
+  },
+  "cat": {
+    "anchor": "UD_Catalan-AnCora",
+    "corpora": {},
+    "in_domain": {
+      "changed": 131,
+      "losses": 49,
+      "tokens": 59571,
+      "wins": 67
+    },
+    "in_domain_cohort": "official",
+    "primary": false
+  },
+  "ceb": {
+    "anchor": "UD_Cebuano-GJA",
+    "corpora": {},
+    "in_domain_cohort": "cross_validation",
+    "primary": false
+  },
+  "ces": {
+    "accepted": false,
+    "anchor": "UD_Czech-PDTC",
+    "corpora": {
+      "gold": [
+        "cs_cac",
+        "cs_cltt",
+        "cs_czesl",
+        "cs_fictree",
+        "cs_poetry",
+        "cs_pud"
+      ],
+      "silver": [
+        "cs_mte1984"
+      ]
+    },
+    "in_domain": {
+      "changed": 727,
+      "losses": 483,
+      "tokens": 298180,
+      "wins": 179
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 3775,
+      "losses": 2449,
+      "tokens": 727998,
+      "wins": 914
+    }
+  },
+  "chu": {
+    "accepted": false,
+    "anchor": "UD_Old_Church_Slavonic-PROIEL",
+    "corpora": {
+      "gold": [
+        "cu_torot"
+      ]
+    },
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 19816,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 13513,
+      "wins": 0
+    }
+  },
+  "cym": {
+    "anchor": "UD_Welsh-CCG",
+    "corpora": {},
+    "in_domain": {
+      "changed": 239,
+      "losses": 126,
+      "tokens": 17026,
+      "wins": 86
+    },
+    "in_domain_cohort": "official",
+    "primary": false
+  },
+  "dan": {
+    "accepted": false,
+    "anchor": "UD_Danish-DDT",
+    "corpora": {
+      "gold": [
+        "da_elexis"
+      ]
+    },
+    "in_domain": {
+      "changed": 80,
+      "losses": 28,
+      "tokens": 10022,
+      "wins": 47
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 304,
+      "losses": 73,
+      "tokens": 32528,
+      "wins": 204
+    }
+  },
+  "deu": {
+    "accepted": false,
+    "anchor": "UD_German-HDT",
+    "corpora": {
+      "gold": [
+        "de_lit",
+        "de_pud"
+      ],
+      "silver": [
+        "de_gsd"
+      ]
+    },
+    "in_domain": {
+      "changed": 60,
+      "losses": 2,
+      "tokens": 329795,
+      "wins": 37
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 124,
+      "losses": 22,
+      "tokens": 61472,
+      "wins": 63
+    }
+  },
+  "ell": {
+    "accepted": false,
+    "anchor": "UD_Greek-GDT",
+    "corpora": {
+      "gold": [
+        "el_cretan",
+        "el_cypriot",
+        "el_glcii",
+        "el_griko",
+        "el_gud",
+        "el_lesbian",
+        "el_messinian"
+      ]
+    },
+    "in_domain": {
+      "changed": 130,
+      "losses": 72,
+      "tokens": 10656,
+      "wins": 47
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 1196,
+      "losses": 667,
+      "tokens": 50749,
+      "wins": 268
+    }
+  },
+  "eng": {
+    "accepted": true,
+    "anchor": "UD_English-GUM",
+    "corpora": {
+      "gold": [
+        "en_atis",
+        "en_childes",
+        "en_ctetex",
+        "en_elexis",
+        "en_ewt",
+        "en_gentle",
+        "en_lines",
+        "en_littleprince",
+        "en_mte1984",
+        "en_partut",
+        "en_pronouns"
+      ],
+      "silver": [
+        "en_pud"
+      ]
+    },
+    "in_domain": {
+      "changed": 111,
+      "losses": 4,
+      "tokens": 28156,
+      "wins": 93
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 3188,
+      "losses": 404,
+      "tokens": 942417,
+      "wins": 2238
+    }
+  },
+  "epo": {
+    "accepted": false,
+    "anchor": "UD_Esperanto-Cairo",
+    "corpora": {
+      "gold": [
+        "eo_prago"
+      ]
+    },
+    "in_domain_cohort": "cross_validation",
+    "primary": true,
+    "transfer": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 3797,
+      "wins": 0
+    }
+  },
+  "est": {
+    "accepted": true,
+    "anchor": "UD_Estonian-EDT",
+    "corpora": {
+      "gold": [
+        "et_elexis",
+        "et_ewt",
+        "et_mte1984"
+      ]
+    },
+    "in_domain": {
+      "changed": 36,
+      "losses": 1,
+      "tokens": 48309,
+      "wins": 31
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 126,
+      "losses": 7,
+      "tokens": 209973,
+      "wins": 93
+    }
+  },
+  "eus": {
+    "anchor": "UD_Basque-BDT",
+    "corpora": {},
+    "in_domain": {
+      "changed": 12,
+      "losses": 1,
+      "tokens": 24312,
+      "wins": 10
+    },
+    "in_domain_cohort": "official",
+    "primary": false
+  },
+  "fao": {
+    "accepted": false,
+    "anchor": "UD_Faroese-FarPaHC",
+    "corpora": {
+      "gold": [
+        "fo_oft"
+      ]
+    },
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 1105,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 9934,
+      "wins": 0
+    }
+  },
+  "fin": {
+    "accepted": false,
+    "anchor": "UD_Finnish-TDT",
+    "corpora": {
+      "gold": [
+        "fi_ood",
+        "fi_pud"
+      ],
+      "shared": [
+        "fi_ftb"
+      ]
+    },
+    "in_domain": {
+      "changed": 285,
+      "losses": 131,
+      "tokens": 20989,
+      "wins": 92
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 515,
+      "losses": 214,
+      "tokens": 34623,
+      "wins": 193
+    }
+  },
+  "fra": {
+    "accepted": true,
+    "anchor": "UD_French-Sequoia",
+    "corpora": {
+      "gold": [
+        "fr_alts",
+        "fr_fqb",
+        "fr_gsd",
+        "fr_parisstories",
+        "fr_partut",
+        "fr_poitevindivital",
+        "fr_pud",
+        "fr_rhapsodie"
+      ]
+    },
+    "in_domain": {
+      "changed": 12,
+      "losses": 1,
+      "tokens": 9935,
+      "wins": 10
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 2779,
+      "losses": 273,
+      "tokens": 634739,
+      "wins": 1704
+    }
+  },
+  "frm": {
+    "accepted": false,
+    "anchor": "UD_Middle_French-PROFITEROLE",
+    "corpora": {
+      "gold": [
+        "frm_altm"
+      ]
+    },
+    "in_domain": {
+      "changed": 1,
+      "losses": 0,
+      "tokens": 13586,
+      "wins": 1
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 2,
+      "losses": 1,
+      "tokens": 7084,
+      "wins": 1
+    }
+  },
+  "fro": {
+    "accepted": false,
+    "anchor": "UD_Old_French-PROFITEROLE",
+    "corpora": {
+      "gold": [
+        "fro_altm"
+      ]
+    },
+    "in_domain_cohort": "cross_validation",
+    "primary": true,
+    "transfer": {
+      "changed": 68,
+      "losses": 0,
+      "tokens": 15257,
+      "wins": 9
+    }
+  },
+  "gla": {
+    "anchor": "UD_Scottish_Gaelic-ARCOSG",
+    "corpora": {},
+    "in_domain": {
+      "changed": 1,
+      "losses": 1,
+      "tokens": 10551,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": false
+  },
+  "gle": {
+    "accepted": false,
+    "anchor": "UD_Irish-IDT",
+    "corpora": {
+      "gold": [
+        "ga_cadhan",
+        "ga_twittirish"
+      ]
+    },
+    "in_domain": {
+      "changed": 9,
+      "losses": 1,
+      "tokens": 10100,
+      "wins": 7
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 58,
+      "losses": 21,
+      "tokens": 52495,
+      "wins": 27
+    }
+  },
+  "glg": {
+    "accepted": false,
+    "anchor": "UD_Galician-CTG",
+    "corpora": {
+      "gold": [
+        "gl_pud",
+        "gl_treegal"
+      ]
+    },
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 29740,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 49018,
+      "wins": 0
+    }
+  },
+  "glv": {
+    "anchor": "UD_Manx-Cadhan",
+    "corpora": {},
+    "in_domain": {
+      "changed": 57,
+      "losses": 21,
+      "tokens": 10252,
+      "wins": 31
+    },
+    "in_domain_cohort": "official",
+    "primary": false
+  },
+  "got": {
+    "anchor": "UD_Gothic-PROIEL",
+    "corpora": {},
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 9878,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": false
+  },
+  "grc": {
+    "accepted": false,
+    "anchor": "UD_Ancient_Greek-PROIEL",
+    "corpora": {
+      "gold": [
+        "grc_perseus",
+        "grc_ptnk"
+      ]
+    },
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 13091,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 219590,
+      "wins": 0
+    }
+  },
+  "guj": {
+    "accepted": false,
+    "anchor": "UD_Gujarati-GujTB",
+    "corpora": {
+      "gold": [
+        "gu_shabdasetu"
+      ]
+    },
+    "in_domain_cohort": "cross_validation",
+    "primary": false,
+    "transfer": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 381,
+      "wins": 0
+    }
+  },
+  "hau": {
+    "accepted": false,
+    "anchor": "UD_Hausa-NorthernAutogramm",
+    "corpora": {
+      "gold": [
+        "ha_easternautogramm",
+        "ha_southernautogramm",
+        "ha_westernautogramm"
+      ]
+    },
+    "in_domain_cohort": "cross_validation",
+    "primary": true,
+    "transfer": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 36810,
+      "wins": 0
+    }
+  },
+  "heb": {
+    "accepted": true,
+    "anchor": "UD_Hebrew-HTB",
+    "corpora": {
+      "gold": [
+        "he_iahltknesset",
+        "he_iahltwiki",
+        "he_postrab"
+      ]
+    },
+    "in_domain": {
+      "changed": 53,
+      "losses": 14,
+      "tokens": 11993,
+      "wins": 36
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 718,
+      "losses": 232,
+      "tokens": 215728,
+      "wins": 426
+    }
+  },
+  "hin": {
+    "anchor": "UD_Hindi-HDTB",
+    "corpora": {
+      "silver": [
+        "hi_pud"
+      ]
+    },
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 35413,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": false
+  },
+  "hrv": {
+    "accepted": false,
+    "anchor": "UD_Croatian-SET",
+    "corpora": {
+      "gold": [
+        "hr_hr500k"
+      ]
+    },
+    "in_domain": {
+      "changed": 178,
+      "losses": 84,
+      "tokens": 24203,
+      "wins": 80
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 3231,
+      "losses": 1415,
+      "tokens": 298516,
+      "wins": 1634
+    }
+  },
+  "hsb": {
+    "anchor": "UD_Upper_Sorbian-UFAL",
+    "corpora": {},
+    "in_domain_cohort": "cross_validation",
+    "primary": false
+  },
+  "hun": {
+    "accepted": true,
+    "anchor": "UD_Hungarian-Szeged",
+    "corpora": {
+      "gold": [
+        "hu_elexis",
+        "hu_eltedh"
+      ],
+      "silver": [
+        "hu_mte1984"
+      ]
+    },
+    "in_domain": {
+      "changed": 292,
+      "losses": 56,
+      "tokens": 10432,
+      "wins": 217
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 19623,
+      "losses": 4734,
+      "tokens": 526031,
+      "wins": 13281
+    }
+  },
+  "hye": {
+    "accepted": true,
+    "anchor": "UD_Armenian-ArmTDP",
+    "corpora": {
+      "gold": [
+        "hy_bsut"
+      ]
+    },
+    "in_domain": {
+      "changed": 83,
+      "losses": 22,
+      "tokens": 10610,
+      "wins": 55
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 419,
+      "losses": 109,
+      "tokens": 42527,
+      "wins": 294
+    }
+  },
+  "ind": {
+    "accepted": true,
+    "anchor": "UD_Indonesian-GSD",
+    "corpora": {
+      "gold": [
+        "id_csui",
+        "id_pud"
+      ]
+    },
+    "in_domain": {
+      "changed": 7,
+      "losses": 1,
+      "tokens": 11712,
+      "wins": 3
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 99,
+      "losses": 15,
+      "tokens": 47672,
+      "wins": 78
+    }
+  },
+  "isl": {
+    "accepted": false,
+    "anchor": "UD_Icelandic-IcePaHC",
+    "corpora": {
+      "gold": [
+        "is_gc",
+        "is_modern",
+        "is_pud"
+      ]
+    },
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 139575,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 193623,
+      "wins": 0
+    }
+  },
+  "ita": {
+    "accepted": true,
+    "anchor": "UD_Italian-ISDT",
+    "corpora": {
+      "gold": [
+        "it_elexis",
+        "it_kiparlaforest",
+        "it_markit",
+        "it_old",
+        "it_parlamint",
+        "it_postwita",
+        "it_twittiro",
+        "it_valico",
+        "it_vit"
+      ],
+      "shared": [
+        "it_partut"
+      ],
+      "silver": [
+        "it_pud"
+      ]
+    },
+    "in_domain": {
+      "changed": 15,
+      "losses": 0,
+      "tokens": 10416,
+      "wins": 13
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 5344,
+      "losses": 373,
+      "tokens": 672779,
+      "wins": 2925
+    }
+  },
+  "jpn": {
+    "accepted": false,
+    "anchor": "UD_Japanese-GSD",
+    "corpora": {
+      "gold": [
+        "ja_pud"
+      ]
+    },
+    "in_domain": {
+      "changed": 2,
+      "losses": 2,
+      "tokens": 13034,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 1,
+      "losses": 0,
+      "tokens": 28786,
+      "wins": 1
+    }
+  },
+  "kat": {
+    "accepted": false,
+    "anchor": "UD_Georgian-GNC",
+    "corpora": {
+      "gold": [
+        "ka_elexis",
+        "ka_glc"
+      ]
+    },
+    "in_domain": {
+      "changed": 17,
+      "losses": 0,
+      "tokens": 10426,
+      "wins": 4
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 143,
+      "losses": 94,
+      "tokens": 87622,
+      "wins": 37
+    }
+  },
+  "kaz": {
+    "anchor": "UD_Kazakh-KTB",
+    "corpora": {
+      "silver": [
+        "kk_kazdet"
+      ]
+    },
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 10007,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": false
+  },
+  "kir": {
+    "accepted": false,
+    "anchor": "UD_Kyrgyz-KTMU",
+    "corpora": {
+      "gold": [
+        "ky_tuecl"
+      ]
+    },
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 10840,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 1137,
+      "wins": 0
+    }
+  },
+  "kmr": {
+    "anchor": "UD_Northern_Kurdish-Kurmanji",
+    "corpora": {},
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 9963,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": false
+  },
+  "kor": {
+    "accepted": false,
+    "anchor": "UD_Korean-Kaist",
+    "corpora": {
+      "gold": [
+        "ko_ksl"
+      ],
+      "silver": [
+        "ko_gsd",
+        "ko_littleprince",
+        "ko_pud"
+      ]
+    },
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 28352,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 148102,
+      "wins": 0
+    }
+  },
+  "krl": {
+    "anchor": "UD_Karelian-KKPP",
+    "corpora": {},
+    "in_domain_cohort": "cross_validation",
+    "primary": false
+  },
+  "lat": {
+    "accepted": false,
+    "anchor": "UD_Latin-ITTB",
+    "corpora": {
+      "gold": [
+        "la_circse",
+        "la_llct",
+        "la_perseus",
+        "la_proiel",
+        "la_udante"
+      ]
+    },
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 29220,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 84,
+      "losses": 1,
+      "tokens": 544824,
+      "wins": 15
+    }
+  },
+  "lav": {
+    "accepted": false,
+    "anchor": "UD_Latvian-LVTB",
+    "corpora": {
+      "gold": [
+        "lv_cairo"
+      ]
+    },
+    "in_domain": {
+      "changed": 2,
+      "losses": 0,
+      "tokens": 37080,
+      "wins": 2
+    },
+    "in_domain_cohort": "official",
+    "primary": false,
+    "transfer": {
+      "changed": 1,
+      "losses": 0,
+      "tokens": 168,
+      "wins": 1
+    }
+  },
+  "lit": {
+    "accepted": false,
+    "anchor": "UD_Lithuanian-ALKSNIS",
+    "corpora": {
+      "gold": [
+        "lt_hse"
+      ]
+    },
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 11953,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 5356,
+      "wins": 0
+    }
+  },
+  "mdf": {
+    "anchor": "UD_Moksha-JR",
+    "corpora": {},
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 4305,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": false
+  },
+  "mkd": {
+    "anchor": "UD_Macedonian-MTB",
+    "corpora": {},
+    "in_domain_cohort": "cross_validation",
+    "primary": false
+  },
+  "myv": {
+    "anchor": "UD_Erzya-JR",
+    "corpora": {},
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 10470,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": false
+  },
+  "nld": {
+    "accepted": false,
+    "anchor": "UD_Dutch-LassySmall",
+    "corpora": {
+      "gold": [
+        "nl_alpino",
+        "nl_elexis"
+      ]
+    },
+    "in_domain": {
+      "changed": 27,
+      "losses": 16,
+      "tokens": 28804,
+      "wins": 3
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 196,
+      "losses": 113,
+      "tokens": 243311,
+      "wins": 40
+    }
+  },
+  "nor": {
+    "accepted": false,
+    "anchor": "UD_Norwegian-Nynorsk",
+    "corpora": {
+      "gold": [
+        "no_bokmaal"
+      ]
+    },
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 24697,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 308414,
+      "wins": 0
+    }
+  },
+  "oci": {
+    "anchor": "UD_Occitan-TTB",
+    "corpora": {
+      "shared": [
+        "oc_restaure"
+      ]
+    },
+    "in_domain": {
+      "changed": 141,
+      "losses": 37,
+      "tokens": 9956,
+      "wins": 77
+    },
+    "in_domain_cohort": "official",
+    "primary": false
+  },
+  "olo": {
+    "anchor": "UD_Livvi-KKPP",
+    "corpora": {},
+    "in_domain": {
+      "changed": 65,
+      "losses": 32,
+      "tokens": 1485,
+      "wins": 28
+    },
+    "in_domain_cohort": "official",
+    "primary": false
+  },
+  "pes": {
+    "accepted": false,
+    "anchor": "UD_Persian-PerDT",
+    "corpora": {
+      "gold": [
+        "fa_mte1984",
+        "fa_seraji"
+      ]
+    },
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 24118,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 1,
+      "losses": 0,
+      "tokens": 260772,
+      "wins": 1
+    }
+  },
+  "pol": {
+    "accepted": false,
+    "anchor": "UD_Polish-PDB",
+    "corpora": {
+      "gold": [
+        "pl_mpdt",
+        "pl_pud"
+      ],
+      "shared": [
+        "pl_lfg"
+      ],
+      "silver": [
+        "pl_mte1984"
+      ]
+    },
+    "in_domain": {
+      "changed": 387,
+      "losses": 199,
+      "tokens": 33572,
+      "wins": 163
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 1418,
+      "losses": 741,
+      "tokens": 77674,
+      "wins": 425
+    }
+  },
+  "por": {
+    "accepted": false,
+    "anchor": "UD_Portuguese-PetroGold",
+    "corpora": {
+      "gold": [
+        "pt_alienista",
+        "pt_bosque",
+        "pt_cintil",
+        "pt_dantestocks",
+        "pt_elexis",
+        "pt_portjur",
+        "pt_porttinari",
+        "pt_pprincipe",
+        "pt_pud"
+      ],
+      "silver": [
+        "pt_gsd"
+      ]
+    },
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 29539,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 1139117,
+      "wins": 0
+    }
+  },
+  "pst": {
+    "accepted": false,
+    "anchor": "UD_Pashto-Sikaram",
+    "corpora": {
+      "gold": [
+        "ps_prince"
+      ]
+    },
+    "in_domain_cohort": "cross_validation",
+    "primary": true,
+    "transfer": {
+      "changed": 1,
+      "losses": 1,
+      "tokens": 1118,
+      "wins": 0
+    }
+  },
+  "ron": {
+    "accepted": true,
+    "anchor": "UD_Romanian-Nonstandard",
+    "corpora": {
+      "gold": [
+        "ro_art",
+        "ro_elexis",
+        "ro_moldoro",
+        "ro_mte1984",
+        "ro_simonero",
+        "ro_tuecl"
+      ],
+      "silver": [
+        "ro_rrt"
+      ]
+    },
+    "in_domain": {
+      "changed": 82,
+      "losses": 19,
+      "tokens": 20943,
+      "wins": 43
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 11252,
+      "losses": 3825,
+      "tokens": 304370,
+      "wins": 6823
+    }
+  },
+  "rus": {
+    "accepted": false,
+    "anchor": "UD_Russian-Taiga",
+    "corpora": {
+      "gold": [
+        "ru_gsd",
+        "ru_poetry",
+        "ru_pud",
+        "ru_syntagrus"
+      ]
+    },
+    "in_domain": {
+      "changed": 26,
+      "losses": 10,
+      "tokens": 15334,
+      "wins": 6
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 3277,
+      "losses": 905,
+      "tokens": 1691485,
+      "wins": 1129
+    }
+  },
+  "sah": {
+    "anchor": "UD_Yakut-YKTDT",
+    "corpora": {},
+    "in_domain_cohort": "cross_validation",
+    "primary": false
+  },
+  "san": {
+    "accepted": false,
+    "anchor": "UD_Sanskrit-Vedic",
+    "corpora": {
+      "gold": [
+        "sa_ufal"
+      ]
+    },
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 19338,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 1828,
+      "wins": 0
+    }
+  },
+  "sga": {
+    "accepted": false,
+    "anchor": "UD_Old_Irish-DipSGG",
+    "corpora": {
+      "gold": [
+        "sga_dipwbg"
+      ]
+    },
+    "in_domain_cohort": "cross_validation",
+    "primary": false,
+    "transfer": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 431,
+      "wins": 0
+    }
+  },
+  "slk": {
+    "anchor": "UD_Slovak-SNK",
+    "corpora": {
+      "shared": [
+        "sk_mte1984"
+      ]
+    },
+    "in_domain": {
+      "changed": 51,
+      "losses": 23,
+      "tokens": 12702,
+      "wins": 19
+    },
+    "in_domain_cohort": "official",
+    "primary": false
+  },
+  "slv": {
+    "accepted": true,
+    "anchor": "UD_Slovenian-SSJ",
+    "corpora": {
+      "gold": [
+        "sl_mte1984",
+        "sl_sst"
+      ]
+    },
+    "in_domain": {
+      "changed": 132,
+      "losses": 54,
+      "tokens": 25407,
+      "wins": 54
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 2545,
+      "losses": 2045,
+      "tokens": 202664,
+      "wins": 366
+    }
+  },
+  "sme": {
+    "anchor": "UD_North_Sami-Giella",
+    "corpora": {},
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 9927,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": false
+  },
+  "spa": {
+    "accepted": true,
+    "anchor": "UD_Spanish-AnCora",
+    "corpora": {
+      "gold": [
+        "es_coser",
+        "es_elexis",
+        "es_pud"
+      ],
+      "silver": [
+        "es_gsd"
+      ]
+    },
+    "in_domain": {
+      "changed": 101,
+      "losses": 0,
+      "tokens": 53584,
+      "wins": 85
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 196,
+      "losses": 9,
+      "tokens": 68796,
+      "wins": 152
+    }
+  },
+  "sqi": {
+    "accepted": false,
+    "anchor": "UD_Albanian-STAF",
+    "corpora": {
+      "gold": [
+        "sq_tsa"
+      ]
+    },
+    "in_domain": {
+      "changed": 3,
+      "losses": 2,
+      "tokens": 371,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": false,
+    "transfer": {
+      "changed": 4,
+      "losses": 2,
+      "tokens": 922,
+      "wins": 2
+    }
+  },
+  "srp": {
+    "accepted": false,
+    "anchor": "UD_Serbian-SET",
+    "corpora": {
+      "gold": [
+        "sr_elexis",
+        "sr_mte1984",
+        "sr_parcolab"
+      ]
+    },
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 11410,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 184847,
+      "wins": 0
+    }
+  },
+  "swe": {
+    "accepted": false,
+    "anchor": "UD_Swedish-Talbanken",
+    "corpora": {
+      "gold": [
+        "sv_lines",
+        "sv_old",
+        "sv_pud",
+        "sv_swell"
+      ]
+    },
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 20371,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 22,
+      "losses": 10,
+      "tokens": 132858,
+      "wins": 8
+    }
+  },
+  "tat": {
+    "anchor": "UD_Tatar-NMCTT",
+    "corpora": {},
+    "in_domain_cohort": "cross_validation",
+    "primary": false
+  },
+  "tel": {
+    "anchor": "UD_Telugu-MTG",
+    "corpora": {},
+    "in_domain_cohort": "no scorable independent pair",
+    "primary": false
+  },
+  "tgl": {
+    "accepted": false,
+    "anchor": "UD_Tagalog-TRG",
+    "corpora": {
+      "gold": [
+        "tl_ugnayan"
+      ]
+    },
+    "in_domain_cohort": "cross_validation",
+    "primary": true,
+    "transfer": {
+      "changed": 154,
+      "losses": 6,
+      "tokens": 1097,
+      "wins": 58
+    }
+  },
+  "tur": {
+    "accepted": true,
+    "anchor": "UD_Turkish-Penn",
+    "corpora": {
+      "gold": [
+        "tr_atis",
+        "tr_boun",
+        "tr_framenet",
+        "tr_gb",
+        "tr_imst",
+        "tr_kenet",
+        "tr_tourism",
+        "tr_tuecl"
+      ],
+      "silver": [
+        "tr_pud"
+      ]
+    },
+    "in_domain": {
+      "changed": 147,
+      "losses": 31,
+      "tokens": 9904,
+      "wins": 105
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 26711,
+      "losses": 8387,
+      "tokens": 496856,
+      "wins": 16705
+    }
+  },
+  "uig": {
+    "anchor": "UD_Uyghur-UDT",
+    "corpora": {},
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 7573,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": false
+  },
+  "ukr": {
+    "accepted": false,
+    "anchor": "UD_Ukrainian-IU",
+    "corpora": {
+      "gold": [
+        "uk_parlamint",
+        "uk_zhelekhivka"
+      ]
+    },
+    "in_domain": {
+      "changed": 29,
+      "losses": 14,
+      "tokens": 16075,
+      "wins": 13
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 162,
+      "losses": 63,
+      "tokens": 106915,
+      "wins": 84
+    }
+  },
+  "urd": {
+    "anchor": "UD_Urdu-UDTB",
+    "corpora": {},
+    "in_domain": {
+      "changed": 6,
+      "losses": 3,
+      "tokens": 14537,
+      "wins": 2
+    },
+    "in_domain_cohort": "official",
+    "primary": false
+  },
+  "uzb": {
+    "accepted": false,
+    "anchor": "UD_Uzbek-UzUDT",
+    "corpora": {
+      "gold": [
+        "uz_tuecl",
+        "uz_ut"
+      ]
+    },
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 2128,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": true,
+    "transfer": {
+      "changed": 1,
+      "losses": 0,
+      "tokens": 6859,
+      "wins": 1
+    }
+  },
+  "vep": {
+    "anchor": "UD_Veps-VWT",
+    "corpora": {},
+    "in_domain_cohort": "cross_validation",
+    "primary": false
+  },
+  "yid": {
+    "anchor": "UD_Yiddish-YiTB",
+    "corpora": {},
+    "in_domain": {
+      "changed": 0,
+      "losses": 0,
+      "tokens": 9955,
+      "wins": 0
+    },
+    "in_domain_cohort": "official",
+    "primary": false
+  }
+}
