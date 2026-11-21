@@ -18,6 +18,7 @@ mod validation;
 
 pub(super) use hybrid::Hit as HybridHit;
 pub(super) use hybrid::HybridTable;
+#[cfg(feature = "train")]
 pub use hybrid::SPLIT_BYTES;
 #[cfg(feature = "train")]
 pub use hybrid::build_hybrid;
