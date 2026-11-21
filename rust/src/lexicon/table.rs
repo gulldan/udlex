@@ -118,7 +118,8 @@ pub(super) fn da_search(trie: &DoubleArray<Bytes>, key: &[u8]) -> Option<u32> {
 
 /// Walks an optional namespace byte before the key, under the same invariant
 /// as [`da_search`]; raw units so a hybrid table's short side shares it.
-#[inline]
+#[expect(clippy::inline_always, reason = "part of the inlined hybrid read")]
+#[inline(always)]
 pub(super) fn da_search_units(units: &[u8], prefix: Option<u8>, key: &[u8]) -> Option<u32> {
     let mut position = DA_ROOT;
     // SAFETY: a validated array is non-empty, so the root exists.
@@ -874,6 +875,8 @@ impl Strings {
     }
 
     /// The entry at `id`, if the identifier and the table are well formed.
+    #[expect(clippy::inline_always, reason = "part of the inlined hybrid read")]
+    #[inline(always)]
     pub(crate) fn entry(&self, id: u64) -> Option<&str> {
         let index = usize::try_from(id).ok()?;
         let (start, end) = self.offsets.pair(index)?;
