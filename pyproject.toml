@@ -77,6 +77,21 @@ convention = "google"
 # compiled extension does, and PyO3 recommends documenting it exactly there.
 "*.pyi" = ["PYI021"]
 
+# paper/ holds one-off research scripts that produced or check published
+# numbers: not a package and not an API, so only style rules are relaxed.
+"paper/**" = [
+  "INP001",  # script folders, not packages
+  "D1",      # helpers of one-off scripts need no docstrings
+  "ANN",     # annotations on script helpers would be noise, not checked types
+  "C901", "PLR0912", "PLR0913", "PLR0915", "PLR0917",  # long analysis pipelines
+  "S603", "S607",  # subprocess with a fixed argv to known tools (git, cargo, ...)
+  "TRY003", "EM101", "EM102",  # inline error messages are fine in scripts
+  "E501",    # the formatter wraps code; what stays long is prose, LaTeX, reports
+]
+# Each compared lemmatizer lives in its own venv and is imported only when it is
+# scored; verify_snapshot keeps udlex out of the helpers other scripts import.
+"paper/emnlp/experiments/{compare_engines,compare_local,verify_snapshot}.py" = ["PLC0415"]
+
 [tool.ty.environment]
 python-version = "3.11"
 
