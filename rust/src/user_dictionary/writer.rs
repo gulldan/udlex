@@ -539,6 +539,8 @@ impl Transaction {
             }
         }
         fault!("after_lookup_verify", &staging)?;
+        // Windows will not rename a directory while its files are mapped.
+        drop(opened);
         sync_directory(&staging)?;
         fault!("after_staging_sync", &staging)?;
         let final_path = generations.join(&generation);

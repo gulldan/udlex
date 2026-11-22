@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import sys
 from typing import TYPE_CHECKING
 
 import pytest
@@ -88,6 +89,11 @@ def test_recovery_rejects_ambiguous_external_pointer_mutation(tmp_path: Path) ->
     assert (root / "manifest.json").read_bytes() == _manifest("replacement")
 
 
+@pytest.mark.xfail(
+    sys.platform == "win32",
+    reason="Windows cannot rename a lexicon directory while its writer lock is held",
+    strict=True,
+)
 def test_recovery_finishes_a_committed_config_retirement(tmp_path: Path) -> None:
     root = tmp_path / "bundle"
     _interrupted_build(root, replacement=None)

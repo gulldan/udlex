@@ -1,0 +1,2 @@
+# Test tables and scripts compare bytes; keep LF on every checkout.
+* text=auto eol=lf
