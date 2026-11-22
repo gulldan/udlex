@@ -3,7 +3,7 @@
 The engine (`udlex` on PyPI) and the dictionary packages are versioned
 together; a dictionary package declares the engine versions it works with.
 
-## [Unreleased]
+## [1.0.1] - 2026-11-22
 
 ### Fixed
 
@@ -14,6 +14,11 @@ together; a dictionary package declares the engine versions it works with.
 
 - CI builds the fourteen release wheels on every platform, tests on Windows,
   and publishes to PyPI and crates.io from a release.
+
+### Dictionaries
+
+- Unchanged: the 1.0.0 packages of the v1.0.0 release work with 1.0.1, and
+  `udlex install` still takes them from there.
 
 ## [1.0.0] - 2026-11-22
 
@@ -51,4 +56,5 @@ First public release.
 
 - Go bindings in the separate repository gulldan/udlex-go.
 
+[1.0.1]: https://github.com/gulldan/udlex/releases/tag/v1.0.1
 [1.0.0]: https://github.com/gulldan/udlex/releases/tag/v1.0.0
