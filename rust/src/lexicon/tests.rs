@@ -1847,6 +1847,8 @@ fn a_shipped_phrase_table_is_manifested_and_counted_like_every_other() {
     assert!(lexicon.meta().files.contains_key("phrases.inline"));
     // One encoding, fixed by the format: nothing is recorded under `codecs`.
     assert!(!lexicon.meta().codecs.contains_key("phrases"));
+    // Windows refuses to truncate a file that is still mapped.
+    drop(lexicon);
 
     // Truncating the table breaks the manifest digest, like any other file.
     let directory = resolve_generation(&root).unwrap().directory;

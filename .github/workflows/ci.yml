@@ -84,7 +84,7 @@ jobs:
       - name: Test
         run: |
           python -m pytest -q
-          cargo test --locked --manifest-path rust/Cargo.toml -p udlex-rs \
+          cargo test --locked --no-fail-fast --manifest-path rust/Cargo.toml -p udlex-rs \
             --features train,user-dictionary-write
 
   secrets:
