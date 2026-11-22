@@ -72,6 +72,9 @@ jobs:
           cargo_home=${CARGO_HOME:-"$HOME/.cargo"}
           if [[ "$RUNNER_OS" == Linux ]]; then
             cargo_home=/root/.cargo
+          elif [[ "$RUNNER_OS" == Windows ]]; then
+            # rustc sees C:\Users\..., not the /c/Users/... spelling of Git Bash.
+            cargo_home=$(cygpath -w "$cargo_home")
           fi
           printf 'CARGO_ENCODED_RUSTFLAGS=%s\037%s\n' \
             "--remap-path-prefix=$GITHUB_WORKSPACE=/udlex" \
