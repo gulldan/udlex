@@ -254,6 +254,16 @@ fn open_writer_lock(path: &Path) -> Result<File> {
     Ok(lock)
 }
 
+/// Opens a regular file to flush it. Windows refuses `FlushFileBuffers` on a
+/// read-only handle, so there the file is opened for writing (nothing is written).
+fn open_for_sync(path: &Path) -> std::io::Result<File> {
+    if cfg!(windows) {
+        OpenOptions::new().write(true).open(path)
+    } else {
+        File::open(path)
+    }
+}
+
 /// Flushes all regular child files and then the directory entry itself.
 fn sync_directory(directory: &Path) -> Result<()> {
     for entry in std::fs::read_dir(directory).map_err(|source| Error::Io {
@@ -277,7 +287,7 @@ fn sync_directory(directory: &Path) -> Result<()> {
             });
         }
         if metadata.is_file() {
-            File::open(&path)
+            open_for_sync(&path)
                 .and_then(|file| file.sync_all())
                 .map_err(|source| Error::Io {
                     path: path.clone(),

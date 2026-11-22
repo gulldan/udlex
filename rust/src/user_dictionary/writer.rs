@@ -1161,6 +1161,16 @@ fn map_open_error(path: &Path, error: OpenRegularError) -> Error {
     }
 }
 
+/// Opens a regular file to flush it. Windows refuses `FlushFileBuffers` on a
+/// read-only handle, so there the file is opened for writing (nothing is written).
+fn open_for_sync(path: &Path) -> std::io::Result<File> {
+    if cfg!(windows) {
+        OpenOptions::new().write(true).open(path)
+    } else {
+        File::open(path)
+    }
+}
+
 fn sync_directory(directory: &Path) -> Result<()> {
     for item in std::fs::read_dir(directory).map_err(|source| Error::Io {
         path: directory.to_owned(),
@@ -1182,7 +1192,7 @@ fn sync_directory(directory: &Path) -> Result<()> {
                 message: "staged generation may contain regular files only".to_owned(),
             });
         }
-        File::open(&path)
+        open_for_sync(&path)
             .and_then(|file| file.sync_all())
             .map_err(|source| Error::Io {
                 path: path.clone(),

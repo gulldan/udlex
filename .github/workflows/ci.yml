@@ -61,6 +61,32 @@ jobs:
             -L "$lib" -Wl,-rpath,"$lib" -ludlex_capi -o "$probe/smoke"
           "$probe/smoke" "$probe/example-bundle/eng" "$(python -I -c 'import udlex; print(udlex.__version__)')"
 
+  windows:
+    name: Tests (Windows)
+    runs-on: windows-2025
+    timeout-minutes: 40
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Build the development checkout
+        env:
+          MATURIN_PEP517_ARGS: --locked
+        run: |
+          python -m pip install maturin==1.16.0 pytest==9.2.0
+          python -m pip install --no-deps --editable .
+      - name: Test
+        run: |
+          python -m pytest -q
+          cargo test --locked --manifest-path rust/Cargo.toml -p udlex-rs \
+            --features train,user-dictionary-write
+
   secrets:
     name: Secrets
     runs-on: ubuntu-24.04
