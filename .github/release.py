@@ -79,9 +79,8 @@ def dictionary_wheel(tag: str, project: str) -> str:
 
 def check_wheel() -> None:
     """Check the built wheel's authoritative ABI tags and native extension."""
-    platform = {"Linux": "manylinux_2_34_x86_64", "macOS": "macosx_11_0_arm64"}[
-        os.environ["RUNNER_OS"]
-    ]
+    platform = os.environ["WHEEL_PLATFORM"]
+    suffix = ".pyd" if platform.startswith("win") else ".so"
     python = os.environ["BUILD_PYTHON"]
     abis = {
         "3.11": ("cp311", "abi3"),
@@ -102,11 +101,11 @@ def check_wheel() -> None:
             sys.exit("expected one WHEEL metadata file")
         metadata = wheel.read(wheel_metadata).decode("utf-8")
         tags = {line[5:] for line in metadata.splitlines() if line.startswith("Tag: ")}
-        extensions = [name for name in names if name.endswith(".so")]
+        extensions = [name for name in names if name.endswith(suffix)]
         if tags != expected_tags or len(extensions) != 1:
             sys.exit(f"incompatible wheel tags or native extension in {expected}")
         extension = wheel.read(extensions[0])
-        build_paths = (b"/Users/", b"/home/runner/", b"/root/.cargo/")
+        build_paths = (b"/Users/", b"/home/runner/", b"/root/.cargo/", b"runneradmin")
         if any(path in extension for path in build_paths):
             sys.exit("wheel extension exposes build paths")
         if any(

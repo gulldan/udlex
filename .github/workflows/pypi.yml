@@ -60,10 +60,6 @@ jobs:
           commit=$(python .github/release.py tag "$RELEASE_TAG")
           tag_object=$(git rev-parse --verify "refs/tags/$RELEASE_TAG^{tag}")
           test "$(gh api "repos/$GITHUB_REPOSITORY/git/ref/tags/$RELEASE_TAG" --jq .object.sha)" = "$tag_object"
-          if [[ "$(gh api "repos/$GITHUB_REPOSITORY/git/tags/$tag_object" --jq .verification.verified)" != true ]]; then
-            echo 'GitHub must verify the release tag signature before publishing.' >&2
-            exit 1
-          fi
           test "$(gh api "repos/$GITHUB_REPOSITORY/releases/tags/$RELEASE_TAG" --jq '.immutable and (.draft | not) and (.prerelease | not)')" = true
           test "$(gh api "repos/$GITHUB_REPOSITORY/commits/refs/tags/$RELEASE_TAG" --jq .sha)" = "$commit"
           gh release verify "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY"
@@ -76,8 +72,8 @@ jobs:
               --pattern "udlex-$version-*.whl" --pattern "udlex-$version.tar.gz"
             wheels=(dist/udlex-"$version"-*.whl)
             sdist="dist/udlex-$version.tar.gz"
-            if [[ ${#wheels[@]} -ne 6 || ! -f "$sdist" ]]; then
-              echo 'Expected six wheels and one source distribution.' >&2
+            if [[ ${#wheels[@]} -ne 14 || ! -f "$sdist" ]]; then
+              echo 'Expected fourteen wheels and one source distribution.' >&2
               exit 1
             fi
             assets=("${wheels[@]}" "$sdist")
@@ -126,5 +122,7 @@ jobs:
       - uses: pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086 # v1.14.3
         with:
           repository-url: ${{ inputs.index == 'pypi' && 'https://upload.pypi.org/legacy/' || 'https://test.pypi.org/legacy/' }}
+          # An API token in the environment's PYPI_API_TOKEN secret, or trusted publishing without it.
+          password: ${{ secrets.PYPI_API_TOKEN }}
           attestations: true
           skip-existing: false

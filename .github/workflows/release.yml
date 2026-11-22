@@ -35,17 +35,36 @@ jobs:
   wheels:
     needs: prepare
     runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-24.04, macos-15]
+        os: [ubuntu-24.04, ubuntu-24.04-arm, macos-15, macos-15-intel, windows-2025]
         python: ['3.11', '3.14t', '3.15t']
+        exclude:
+          # The abi3t wheel links python3t.dll and is not tested on Windows.
+          - os: windows-2025
+            python: '3.15t'
+        include:
+          - os: ubuntu-24.04
+            platform: manylinux_2_34_x86_64
+          - os: ubuntu-24.04-arm
+            platform: manylinux_2_34_aarch64
+          - os: macos-15
+            platform: macosx_11_0_arm64
+          - os: macos-15-intel
+            platform: macosx_10_12_x86_64
+          - os: windows-2025
+            platform: win_amd64
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ needs.prepare.outputs.commit }}
           persist-credentials: false
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        id: python
         with:
           python-version: ${{ matrix.python }}
       - name: Remap release build paths
@@ -63,10 +82,14 @@ jobs:
           maturin-version: ${{ needs.prepare.outputs.maturin }}
           rust-toolchain: ${{ needs.prepare.outputs.rust }}
           manylinux: '2_34'
-          args: --release --locked --out dist --interpreter python${{ matrix.python }}
+          # Windows has no versioned python3.X executables; manylinux builds use the container's.
+          args: >-
+            --release --locked --out dist --interpreter
+            ${{ runner.os == 'Windows' && steps.python.outputs.python-path || format('python{0}', matrix.python) }}
       - name: Check wheel ABI and platform tags
         env:
           BUILD_PYTHON: ${{ matrix.python }}
+          WHEEL_PLATFORM: ${{ matrix.platform }}
           EXPECTED_VERSION: ${{ needs.prepare.outputs.version }}
         run: python .github/release.py wheel
       - name: Test installed wheel outside the checkout
@@ -100,7 +123,7 @@ jobs:
               results = executor.map(lexicon.lemmatize, [tokens] * 8)
               assert all(result == ["cat", "mouse", "unknown"] for result in results)
           PY
-          test "$(python -I -m udlex lemma -q eng cats mice)" = $'cat\nmouse'
+          test "$(python -I -m udlex lemma -q eng cats mice | tr -d '\r')" = $'cat\nmouse'
       - name: Build source distribution once
         if: matrix.os == 'ubuntu-24.04' && matrix.python == '3.11'
         uses: PyO3/maturin-action@e83996d129638aa358a18fbd1dfb82f0b0fb5d3b # v1
@@ -140,11 +163,12 @@ jobs:
           shopt -s nullglob
           wheels=(udlex-"$RELEASE_VERSION"-*.whl)
           sdist="udlex-$RELEASE_VERSION.tar.gz"
-          if [[ ${#wheels[@]} -ne 6 || ! -f "$sdist" ]]; then
-            echo 'Expected six wheels and one source distribution.' >&2
+          if [[ ${#wheels[@]} -ne 14 || ! -f "$sdist" ]]; then
+            echo 'Expected fourteen wheels and one source distribution.' >&2
             exit 1
           fi
-          sha256sum -- "${wheels[@]}" "$sdist" > SHA256SUMS
-          gh release create "$GITHUB_REF_NAME" "${wheels[@]}" "$sdist" SHA256SUMS \
+          # SHA256SUMS is the dictionary manifest's; the engine has its own.
+          sha256sum -- "${wheels[@]}" "$sdist" > SHA256SUMS-engine
+          gh release create "$GITHUB_REF_NAME" "${wheels[@]}" "$sdist" SHA256SUMS-engine \
             --repo "$GITHUB_REPOSITORY" --verify-tag --draft \
             --title "udlex $RELEASE_VERSION" --notes "Python packages for $GITHUB_REF_NAME."
