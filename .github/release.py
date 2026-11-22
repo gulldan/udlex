@@ -3,11 +3,14 @@
 # ruff: noqa: INP001
 
 import argparse
+import gzip
+import io
 import json
 import os
 import re
 import subprocess
 import sys
+import tarfile
 import tomllib
 import zipfile
 from pathlib import Path
@@ -120,11 +123,60 @@ def check_wheel() -> None:
         sys.exit("free-threaded wheel lacks an abi3t extension")
 
 
+GNU_LIBS = "-lgcc_s -lutil -lrt -lpthread -lm -ldl -lc"
+APPLE_LIBS = "-liconv -lSystem -lc -lm"
+# Platform: summary, shared suffix, static flags from --print=native-static-libs.
+NATIVE = {
+    "linux-x86_64": ("Linux x86-64, glibc 2.34 or later", "so", GNU_LIBS),
+    "linux-aarch64": ("Linux aarch64, glibc 2.34 or later", "so", GNU_LIBS),
+    "macos-arm64": ("macOS arm64 (11.0 or later)", "dylib", APPLE_LIBS),
+    "macos-x86_64": ("macOS x86_64 (10.12 or later)", "dylib", APPLE_LIBS),
+}
+
+
+def pack_native(platform: str, built: Path) -> None:
+    """Pack the C library of one platform as a byte-reproducible archive."""
+    summary, shared, static = NATIVE[platform]
+    library = f"libudlex_capi.{shared}"
+    version = os.environ["EXPECTED_VERSION"]
+    name = f"udlex-native-{version}-{platform}"
+    linking = (
+        f"{summary}. Include include/udlex.h.\n"
+        "Shared link: -L. -ludlex_capi\n"
+        f"Static link: libudlex_capi.a {static}\n"
+    ).encode()
+    members = [
+        ("LICENSE", Path("LICENSE").read_bytes(), 0o644),
+        ("LINKING.txt", linking, 0o644),
+        ("include/udlex.h", Path("rust/capi/include/udlex.h").read_bytes(), 0o644),
+        ("libudlex_capi.a", (built / "libudlex_capi.a").read_bytes(), 0o644),
+        (library, (built / library).read_bytes(), 0o755),
+    ]
+    # Never dist/: locally it may hold dictionary builds.
+    Path("dist-native").mkdir(exist_ok=True)
+    with (
+        Path("dist-native", f"{name}.tar.gz").open("wb") as raw,
+        gzip.GzipFile(filename="", mode="wb", fileobj=raw, mtime=0) as packed,
+        tarfile.open(fileobj=packed, mode="w", format=tarfile.USTAR_FORMAT) as tar,
+    ):
+        for directory in (name, f"{name}/include"):
+            entry = tarfile.TarInfo(directory)
+            entry.type, entry.mode = tarfile.DIRTYPE, 0o755
+            tar.addfile(entry)
+        for path, data, mode in sorted(members):
+            entry = tarfile.TarInfo(f"{name}/{path}")
+            entry.size, entry.mode = len(data), mode
+            tar.addfile(entry, io.BytesIO(data))
+
+
 def main() -> None:
     """Run one release check."""
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("step", choices=("prepare", "tag", "dictionary-wheel", "wheel"))
+    parser.add_argument(
+        "step", choices=("prepare", "tag", "dictionary-wheel", "wheel", "native")
+    )
     parser.add_argument("tag", nargs="?")
+    parser.add_argument("built", nargs="?", type=Path)
     args = parser.parse_args()
     if args.step == "prepare":
         prepare()
@@ -136,6 +188,10 @@ def main() -> None:
         if args.tag is None:
             parser.error("dictionary-wheel step requires a release tag")
         print(dictionary_wheel(args.tag, os.environ["RELEASE_PROJECT"]))
+    elif args.step == "native":
+        if args.tag not in NATIVE or args.built is None:
+            parser.error("native step requires a platform and the build directory")
+        pack_native(args.tag, args.built)
     else:
         check_wheel()
 

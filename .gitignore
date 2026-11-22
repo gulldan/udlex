@@ -3,6 +3,7 @@
 .venv-*/
 rust/target/
 dist/
+dist-native/
 *.egg-info/
 __pycache__/
 .pytest_cache/

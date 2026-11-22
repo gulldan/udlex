@@ -122,7 +122,6 @@ jobs:
       - uses: pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086 # v1.14.3
         with:
           repository-url: ${{ inputs.index == 'pypi' && 'https://upload.pypi.org/legacy/' || 'https://test.pypi.org/legacy/' }}
-          # An API token in the environment's PYPI_API_TOKEN secret, or trusted publishing without it.
-          password: ${{ secrets.PYPI_API_TOKEN }}
+          # Trusted publishing (OIDC): no token, and PyPI keeps the attestations.
           attestations: true
           skip-existing: false

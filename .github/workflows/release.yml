@@ -142,8 +142,102 @@ jobs:
           if-no-files-found: error
           retention-days: 7
 
-  release:
+  native:
     needs: [prepare, wheels]
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {os: ubuntu-24.04, platform: linux-x86_64, triple: x86_64-unknown-linux-gnu, suffix: so}
+          - {os: ubuntu-24.04-arm, platform: linux-aarch64, triple: aarch64-unknown-linux-gnu, suffix: so}
+          - {os: macos-15, platform: macos-arm64, triple: aarch64-apple-darwin, suffix: dylib}
+          - {os: macos-15-intel, platform: macos-x86_64, triple: x86_64-apple-darwin, suffix: dylib}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ needs.prepare.outputs.commit }}
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.11'
+      - name: Build the C library
+        env:
+          TRIPLE: ${{ matrix.triple }}
+        run: |
+          rustup target add "$TRIPLE"
+          flags=$(printf '%s\037%s' "--remap-path-prefix=$GITHUB_WORKSPACE=/udlex" \
+            "--remap-path-prefix=${CARGO_HOME:-$HOME/.cargo}=/cargo")
+          if [[ "$RUNNER_OS" == Linux ]]; then
+            # zig links against glibc 2.34, the floor of the release wheels.
+            python -m pip install ziglang==0.17.1 cargo-zigbuild==0.24.1
+            CARGO_ENCODED_RUSTFLAGS=$flags cargo zigbuild --release --locked \
+              --manifest-path rust/Cargo.toml -p udlex-capi --target "$TRIPLE.2.34"
+          else
+            if [[ "$TRIPLE" == aarch64-* ]]; then
+              export MACOSX_DEPLOYMENT_TARGET=11.0
+            else
+              export MACOSX_DEPLOYMENT_TARGET=10.12
+            fi
+            flags=$(printf '%s\037%s' "$flags" "-Clink-arg=-Wl,-install_name,@rpath/libudlex_capi.dylib")
+            CARGO_ENCODED_RUSTFLAGS=$flags cargo build --release --locked \
+              --manifest-path rust/Cargo.toml -p udlex-capi --target "$TRIPLE"
+          fi
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: wheels-${{ matrix.os }}-3.11
+          path: wheel
+      - name: Test the shared and the static library from C
+        env:
+          TRIPLE: ${{ matrix.triple }}
+          SUFFIX: ${{ matrix.suffix }}
+          EXPECTED_VERSION: ${{ needs.prepare.outputs.version }}
+        run: |
+          lib="$PWD/rust/target/$TRIPLE/release"
+          if grep -aqE '/Users/|/home/runner/|runneradmin' "$lib/libudlex_capi.$SUFFIX" "$lib/libudlex_capi.a"; then
+            echo 'The C library exposes build paths.' >&2
+            exit 1
+          fi
+          if [[ "$RUNNER_OS" == Linux ]]; then
+            newest=$(objdump -T "$lib/libudlex_capi.so" | grep -o 'GLIBC_[0-9.]*' | sort -Vu | tail -1)
+            test "$(printf '%s\nGLIBC_2.34\n' "$newest" | sort -V | tail -1)" = GLIBC_2.34
+            static='-lgcc_s -lutil -lrt -lpthread -lm -ldl -lc'
+          else
+            static='-liconv -lSystem -lc -lm'
+          fi
+          python -m pip install --no-index --no-deps wheel/udlex-*.whl
+          probe=$(mktemp -d)
+          python -I - "$probe" <<'PY'
+          import os
+          import re
+          import sys
+          from pathlib import Path
+
+          sample, = re.findall(r'```python\n(.*?)```', Path('README.md').read_text(), re.S)
+          os.chdir(sys.argv[1])
+          exec(compile(sample, 'README.md', 'exec'))
+          PY
+          cc -std=c11 -Wall -Wextra -Werror -I rust/capi/include rust/capi/tests/smoke.c \
+            -L "$lib" -Wl,-rpath,"$lib" -ludlex_capi -o "$probe/shared"
+          # shellcheck disable=SC2086
+          cc -std=c11 -Wall -Wextra -Werror -I rust/capi/include rust/capi/tests/smoke.c \
+            "$lib/libudlex_capi.a" $static -o "$probe/static"
+          for binary in shared static; do
+            "$probe/$binary" "$probe/example-bundle/eng" "$EXPECTED_VERSION"
+          done
+      - name: Pack the archive
+        env:
+          EXPECTED_VERSION: ${{ needs.prepare.outputs.version }}
+        run: python .github/release.py native "${{ matrix.platform }}" "rust/target/${{ matrix.triple }}/release"
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: native-${{ matrix.platform }}
+          path: dist-native/*
+          if-no-files-found: error
+          retention-days: 7
+
+  release:
+    needs: [prepare, wheels, native]
     if: github.event_name == 'push'
     runs-on: ubuntu-24.04
     permissions:
@@ -154,7 +248,12 @@ jobs:
           pattern: wheels-*
           path: dist
           merge-multiple: true
-      - name: Create release draft with compiled wheels
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          pattern: native-*
+          path: dist
+          merge-multiple: true
+      - name: Create release draft with compiled wheels and C libraries
         env:
           GH_TOKEN: ${{ github.token }}
           RELEASE_COMMIT: ${{ needs.prepare.outputs.commit }}
@@ -166,12 +265,13 @@ jobs:
           shopt -s nullglob
           wheels=(udlex-"$RELEASE_VERSION"-*.whl)
           sdist="udlex-$RELEASE_VERSION.tar.gz"
-          if [[ ${#wheels[@]} -ne 14 || ! -f "$sdist" ]]; then
-            echo 'Expected fourteen wheels and one source distribution.' >&2
+          natives=(udlex-native-"$RELEASE_VERSION"-*.tar.gz)
+          if [[ ${#wheels[@]} -ne 14 || ${#natives[@]} -ne 4 || ! -f "$sdist" ]]; then
+            echo 'Expected fourteen wheels, four C libraries and one source distribution.' >&2
             exit 1
           fi
           # SHA256SUMS is the dictionary manifest's; the engine has its own.
-          sha256sum -- "${wheels[@]}" "$sdist" > SHA256SUMS-engine
-          gh release create "$GITHUB_REF_NAME" "${wheels[@]}" "$sdist" SHA256SUMS-engine \
+          sha256sum -- "${wheels[@]}" "$sdist" "${natives[@]}" > SHA256SUMS-engine
+          gh release create "$GITHUB_REF_NAME" "${wheels[@]}" "$sdist" "${natives[@]}" SHA256SUMS-engine \
             --repo "$GITHUB_REPOSITORY" --verify-tag --draft \
             --title "udlex $RELEASE_VERSION" --notes "Python packages for $GITHUB_REF_NAME."
