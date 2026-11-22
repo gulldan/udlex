@@ -3,6 +3,18 @@
 The engine (`udlex` on PyPI) and the dictionary packages are versioned
 together; a dictionary package declares the engine versions it works with.
 
+## [Unreleased]
+
+### Fixed
+
+- Windows: building a lexicon, `udlex compile` and every user-dictionary write
+  failed with "Access is denied". Reading dictionaries was not affected.
+
+### Changed
+
+- CI builds the fourteen release wheels on every platform, tests on Windows,
+  and publishes to PyPI and crates.io from a release.
+
 ## [1.0.0] - 2026-11-22
 
 First public release.

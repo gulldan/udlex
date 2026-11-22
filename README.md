@@ -197,6 +197,9 @@ the receipts are in
 - **No machine-labelled lemmas.** The released dictionaries contain no lemmas
   labelled by a language model; each package lists its sources in
   `SOURCES.json`.
+- **Windows in 1.0.0 reads only.** Loading and lemmatizing work; building a
+  lexicon, `udlex compile` and the user dictionary fail with "Access is
+  denied" until the next release.
 - **Non-commercial treebanks.** 39 packages, among them English, Czech,
   Arabic and Italian, learned from a treebank under a non-commercial license
   and may only be used non-commercially.
