@@ -1,0 +1,19 @@
+[package]
+name = "udlex-capi"
+version = "1.0.0"
+edition = "2024"
+rust-version = "1.89"
+description = "C interface to the udlex dictionary reader"
+license = "MIT"
+publish = false
+
+[lib]
+name = "udlex_capi"
+crate-type = ["staticlib", "cdylib"]
+
+[dependencies]
+udlex-rs = { path = "..", default-features = false, features = ["infer"] }
+
+[lints.rust]
+unsafe_op_in_unsafe_fn = "forbid"
+missing_docs = "warn"

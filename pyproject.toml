@@ -1,0 +1,153 @@
+[project]
+name = "udlex"
+# Maturin reads the version from rust/Cargo.toml.
+dynamic = ["version"]
+description = "Fast dictionary lemmatizer with a Rust core"
+requires-python = ">=3.11"
+readme = "README.md"
+license = "MIT"
+# Include the licence text in both sdist and wheel.
+license-files = ["LICENSE"]
+authors = [{ name = "Maksim Kleshchenok" }]
+keywords = [
+  "lemmatization",
+  "lemmatizer",
+  "lemma",
+  "morphology",
+  "nlp",
+  "universal-dependencies",
+  "multilingual",
+  "rust",
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Operating System :: MacOS",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Rust",
+  "Topic :: Text Processing :: Linguistic",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/gulldan/udlex"
+Documentation = "https://github.com/gulldan/udlex/tree/main/docs"
+Repository = "https://github.com/gulldan/udlex"
+Issues = "https://github.com/gulldan/udlex/issues"
+Changelog = "https://github.com/gulldan/udlex/blob/main/CHANGELOG.md"
+Dictionaries = "https://github.com/gulldan/udlex/releases/tag/v1.0.0"
+
+[project.scripts]
+udlex = "udlex.cli:main"
+
+[dependency-groups]
+dev = [
+    "maturin==1.16.0",
+    "pytest==9.2.0",
+    "ruff==0.17.5",
+    "ty==0.0.106",
+]
+
+[build-system]
+requires = ["maturin==1.16.0"]
+build-backend = "maturin"
+
+[tool.maturin]
+# Ship Python sources and the Rust extension as one distribution.
+python-source = "src"
+module-name = "udlex._udlex"
+manifest-path = "rust/Cargo.toml"
+features = ["python"]
+
+# cargo package misses the root toolchain pin; include it for reproducible builds.
+# uv.lock is for development, while build-system and Cargo.lock pin package builds.
+include = [{ path = "rust-toolchain.toml", format = "sdist" }]
+
+[tool.maturin.sbom]
+# Cargo package IDs in the generated SBOM contain absolute checkout paths.
+rust = false
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+  "COM812",  # conflicts with the formatter
+  "D203",    # incompatible with D211, which we keep
+  "D213",    # incompatible with D212, which we keep
+  "S101",    # assert is fine in tests
+  "T201",    # these are command line tools; they print
+  "PLR2004", # magic values are readable in bit-twiddling and scoring code
+  "CPY001",  # no copyright header convention in this project
+  # The project is about multilingual text: Cyrillic, Greek and CJK characters
+  # in strings and comments are the subject matter, not a homoglyph attack.
+  "RUF001",
+  "RUF002",
+  "RUF003",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["D", "PLR2004", "INP001", "FBT001"]
+# Build scripts for the dictionary packages, run as files rather than imported.
+"dictionaries/*" = ["INP001"]
+
+# PYI021 bans docstrings in stubs, which is right for typeshed and wrong here:
+# this stub is the only place an editor or a type checker can read what the
+# compiled extension does, and PyO3 recommends documenting it exactly there.
+"*.pyi" = ["PYI021"]
+
+# benchmarks/ holds one-off scripts that produced or check published
+# numbers: not a package and not an API, so only style rules are relaxed.
+"benchmarks/**" = [
+  "INP001",  # script folders, not packages
+  "D1",      # helpers of one-off scripts need no docstrings
+  "ANN",     # annotations on script helpers would be noise, not checked types
+  "C901", "PLR0912", "PLR0913", "PLR0915", "PLR0917",  # long analysis pipelines
+  "S603", "S607",  # subprocess with a fixed argv to known tools (git, cargo, ...)
+  "TRY003", "EM101", "EM102",  # inline error messages are fine in scripts
+  "E501",    # the formatter wraps code; what stays long is prose, LaTeX, reports
+]
+# The C9 speed harness: what it times decides these, not style.
+"benchmarks/harness/speed/{bench,worker}.py" = [
+  "PLC0415",  # import time is measured (import_s); udlex exists only in its own venv
+  "BLE001",   # any failure of a cell is recorded as its result, never a crash
+  "S311",     # seeded sampling of test sentences, not cryptography
+]
+"benchmarks/harness/speed/bench.py" = [
+  "S602",  # environment.json records fixed shell pipelines (lscpu | sed, ...)
+]
+"benchmarks/harness/speed/worker.py" = [
+  "S310",    # urlopen to the CoreNLP server it started on 127.0.0.1
+  "PTH100",  # abspath keeps the recorded file names; Path.resolve follows links
+]
+
+[tool.ty.environment]
+python-version = "3.11"
+
+[tool.ty.src]
+include = ["src/udlex", "tests", "dictionaries"]
+
+[tool.ty.rules]
+# The shipped library is held to the strict end of the checker.
+possibly-unresolved-reference = "error"
+missing-attribute = "error"
+invalid-explicit-return = "error"
+invalid-argument-type = "error"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "dictionaries"]

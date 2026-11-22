@@ -1,0 +1,15 @@
+{
+  "cells": {
+    "lat": {
+      "correct": 28680,
+      "model": "la_core_web_lg-3.9.8 without enclitic_splitter",
+      "sentences": 1855,
+      "status": "scored",
+      "tokens": 29220,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    }
+  },
+  "engine": "latincy-lg",
+  "version": "3.9.8"
+}

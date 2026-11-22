@@ -1,0 +1,15 @@
+{
+  "cells": {
+    "ces": {
+      "correct": 295122,
+      "model": "czech-morfflex2.1-pdtc2.0-250909 (LINDAT service, strip_lemma_id)",
+      "sentences": 18433,
+      "status": "scored",
+      "tokens": 298180,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    }
+  },
+  "engine": "morphodita",
+  "version": "czech-morfflex2.1-pdtc2.0-250909"
+}

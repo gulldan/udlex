@@ -1,0 +1,17 @@
+{
+ "sha256_of_originals": {
+  "speed/environment-20261120T223520.json": "ce52989a221d406ce6aeff42a0acfdd796cff8be81fc6832c8e4fe49c2a27b2f",
+  "speed/environment-20261121T101056.json": "c58a2e2e8da1f256d88759911a11db75bbc8d71350cc1a2f2d3c0fcdddb18cc3",
+  "speed/environment-20261121T101057.json": "01eade6d932e562ffb280cdaf99caeb90db33ee718148561d0fa6229a23900bd",
+  "speed/environment.json": "45fe5e1f6b8b023730c6fe8362e4a46469635711e1b6b226e9eb0a68a8ec188e",
+  "speed/reused/environment-20261120T150302.json": "501490b425051f4b79f935b87a246ae5d8e36123a07f9df4adb5380b6c3968f1",
+  "speed/reused/environment-20261120T174742.json": "f0a626eb8e029463d5930d06f62616cfcea03df17e8cdaf156bf3f8a5410799b",
+  "speed/reused/environment-20261120T195047.json": "851224a131144dc539f467467061fcb82777574ddd197b58a3287163d864f564",
+  "speed/reused/environment.json": "88a5c070098f600d02923d807f3a0da71899036ccb398bfe7b4d1e5dce8848f2",
+  "speed/summary.json": "fb848f6edd83ef4c4713786b6c7ae64c3b5d31d917e212f9c5a1442a9e3d7c8b",
+  "speed/cells.jsonl": "93921bd87b7e2603b4bf97a343f97a9d012dc21b5117a1a83adac6e8f728b506",
+  "release/evaluation.json": "0cd2e76dc276677bf676693cfa5dda3f0d8c7df7dfb2d098ef6dbdb69dcd6677",
+  "release/EVALUATION.md": "b6d2c204fb123dc0dda3f63711b9fced99fd4e6b7f82fed9e4abba0ad80a2310",
+  "release/DICTIONARIES.json": "3a05785bafbb4c049e773b7be8a3fc2683d0d0b9d8095a35d18918b5f33e24df"
+ }
+}

@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: If you use udlex, please cite it as below.
+type: software
+title: "udlex: fast dictionary lemmatization"
+abstract: >-
+  A dictionary lemmatizer with a Rust core and Python, C and Go interfaces,
+  with dictionaries for 224 languages built from Universal Dependencies 2.19
+  and open dictionaries.
+authors:
+  - given-names: Maksim
+    family-names: Kleshchenok
+    affiliation: Independent Researcher
+version: 1.0.0
+date-released: 2026-11-22
+license: MIT
+repository-code: https://github.com/gulldan/udlex
+url: https://github.com/gulldan/udlex
+keywords:
+  - lemmatization
+  - lemmatizer
+  - morphology
+  - natural language processing
+  - Universal Dependencies
+  - Rust

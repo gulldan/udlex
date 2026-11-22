@@ -1,0 +1,61 @@
+# Benchmarks
+
+The evidence behind the accuracy and speed tables of the README: speed and memory
+receipts, other lemmatizers scored on the same test words, the timing harness, and the
+script that turns them into numbers.
+
+```sh
+uv run --frozen python -I benchmarks/scripts/make_tables.py
+```
+
+`make_tables.py` writes [`generated/numbers.tex`](generated/numbers.tex), one LaTeX
+macro per number and the bodies of the comparison tables; the README tables are copied
+from it. It reads only committed files:
+
+| Input | What it holds |
+| --- | --- |
+| `evidence/speed/` | Speed and memory receipts (C9): `cells.jsonl.gz` has one record per timed cell, `summary.json` the medians, `environment.json` the machine and the hashes of engine, wheel and harness |
+| `evidence/census/` | Other lemmatizers scored on the same test words, and the split-drift report used to drop test leakage |
+| [`../dictionaries/catalog/`](../dictionaries/catalog) | The dictionary release: `evaluation.json` (accuracy of every package), `DICTIONARIES.json` (sources, licenses, input hashes, archive sizes) |
+
+## Where the evidence comes from
+
+The speed receipts were produced by the harness in
+[`harness/speed`](harness/speed): `quiet_run.sh` drives
+`all_languages.sh` (CPU modes) and a GPU phase, `bench.py` times each cell in a fresh
+pinned process and checks every answer against the system's own accuracy run, and
+`native/` is the Rust worker for udlex. The CPU cells of the other systems were reused
+from an earlier session on the same machine with an earlier version of the harness;
+[`evidence/speed/REUSED.md`](evidence/speed/REUSED.md) says which, and each reused cell
+carries `reused_from`.
+
+Each start of a run snapshots the environment, including the SHA-256 of every harness
+file (`environment*.json`; those of the reused run are under `evidence/speed/reused/`).
+The harness changed between starts: the reused competitor cells were timed by an
+earlier `bench.py`, and the udlex cells by the version in `harness/speed`, which
+differs from the measured files only in reading the list of paused services from
+`UDLEX_SPEED_PAUSE` and in printing its report headings in English.
+The first 16 udlex cells (Abkhaz, and one Abaza cell) were timed before a restart, by
+the `bench.py` of `environment.json`, which differs only in not skipping languages
+whose cells are all done.
+The worker (`worker.py`) and the native udlex worker have the same hashes in every
+snapshot.
+
+`scripts/collect_evidence.py` copied the receipts into this directory and recorded the
+digests of the release it timed. It keeps every measured value and drops what describes the machine's other
+users: names of foreign processes (their CPU share stays), free-text operator notes and
+absolute paths. The SHA-256 of each original file is in
+[`evidence/sources.json`](evidence/sources.json).
+Running it again on the same originals gives byte-identical files.
+
+## Comparison rules
+
+- Accuracy is exact lemma match on gold tokens of the UD 2.19 test split.
+- A system is compared with udlex only on languages where both were scored on the same
+  test words. Rows of the accuracy table therefore cover different languages and are not
+  comparable with each other.
+- A language is dropped for a system when its model was trained on more than 1 % of our
+  test sentences (split-drift report), when Stanza has no lemmatizer for it, or when
+  Stanza's lemma dictionary knows at least half of the test word types our train lacks.
+- Speed-ups are geometric means of per-language ratios on the languages both systems
+  were timed on; rates are medians over languages.

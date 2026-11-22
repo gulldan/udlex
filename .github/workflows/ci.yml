@@ -1,0 +1,81 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    name: Tests
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Install pinned tools and build the development checkout
+        env:
+          MATURIN_PEP517_ARGS: --locked
+        run: |
+          python - <<'PY'
+          import subprocess
+          import sys
+          import tomllib
+          from pathlib import Path
+          dev = tomllib.loads(Path('pyproject.toml').read_text())['dependency-groups']['dev']
+          subprocess.run([sys.executable, '-m', 'pip', 'install', *dev], check=True)
+          PY
+          python -m pip install --no-deps --editable .
+      - name: Lint and test
+        run: |
+          ruff check .
+          ty check src/udlex tests --python "$(command -v python)"
+          python -m pytest -q
+      - name: Test the native Rust workspace
+        run: |
+          cargo test --locked --manifest-path rust/Cargo.toml --workspace \
+            --features udlex-rs/train,udlex-rs/user-dictionary-write
+          cargo build --locked --manifest-path rust/Cargo.toml -p udlex-capi
+          lib="$PWD/rust/target/debug"
+          if readelf -d "$lib/libudlex_capi.so" | grep -qi libpython; then exit 1; fi
+          probe=$(mktemp -d)
+          python -I - "$probe" <<'PY'
+          import os
+          import re
+          import sys
+          from pathlib import Path
+
+          sample, = re.findall(r'```python\n(.*?)```', Path('README.md').read_text(), re.S)
+          os.chdir(sys.argv[1])
+          exec(compile(sample, 'README.md', 'exec'))
+          PY
+          cc -std=c11 -Wall -Wextra -Werror -I rust/capi/include rust/capi/tests/smoke.c \
+            -L "$lib" -Wl,-rpath,"$lib" -ludlex_capi -o "$probe/smoke"
+          "$probe/smoke" "$probe/example-bundle/eng" "$(python -I -c 'import udlex; print(udlex.__version__)')"
+
+  secrets:
+    name: Secrets
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Scan history with a checksum-pinned Gitleaks binary
+        run: |
+          archive="$RUNNER_TEMP/gitleaks.tar.gz"
+          curl --fail --silent --show-error --retry 3 --location --proto '=https' --proto-redir '=https' \
+            https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz \
+            --output "$archive"
+          echo "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb  $archive" | sha256sum --check --strict
+          tar -xzf "$archive" -C "$RUNNER_TEMP" gitleaks
+          "$RUNNER_TEMP/gitleaks" git --redact --no-banner --log-opts='--all' .

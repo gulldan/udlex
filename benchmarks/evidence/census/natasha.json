@@ -1,0 +1,15 @@
+{
+  "cells": {
+    "rus": {
+      "correct": 14006,
+      "model": "slovnet_morph_news_v1 + pymorphy2",
+      "sentences": 1187,
+      "status": "scored",
+      "tokens": 15334,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    }
+  },
+  "engine": "natasha",
+  "version": "1.6.0"
+}

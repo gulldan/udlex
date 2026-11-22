@@ -1,0 +1,581 @@
+{
+  "cells": {
+    "afr": {
+      "correct": 9544,
+      "model": "opennlp-af-ud-afribooms-lemmas-1.3-2.5.4.bin on tags of opennlp-af-ud-afribooms-pos-1.3-2.5.4.bin",
+      "sentences": 425,
+      "status": "scored",
+      "tokens": 10063,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "arb": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for ar",
+      "status": "unsupported"
+    },
+    "bel": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for be",
+      "status": "unsupported"
+    },
+    "bor": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for bor",
+      "status": "unsupported"
+    },
+    "bxr": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for bxr",
+      "status": "unsupported"
+    },
+    "cat": {
+      "correct": 53356,
+      "model": "opennlp-ca-ud-ancora-lemmas-1.3-2.5.4.bin on tags of opennlp-ca-ud-ancora-pos-1.3-2.5.4.bin",
+      "sentences": 1844,
+      "status": "scored",
+      "tokens": 59571,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "ces": {
+      "correct": 276574,
+      "model": "opennlp-cs-ud-pdtc-lemmas-1.3-2.5.4.bin on tags of opennlp-cs-ud-pdtc-pos-1.3-2.5.4.bin",
+      "sentences": 18433,
+      "status": "scored",
+      "tokens": 298180,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "chu": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for cu",
+      "status": "unsupported"
+    },
+    "cmn": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for zh",
+      "status": "unsupported"
+    },
+    "cop": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for cop",
+      "status": "unsupported"
+    },
+    "cym": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for cy",
+      "status": "unsupported"
+    },
+    "dan": {
+      "correct": 8938,
+      "model": "opennlp-da-ud-ddt-lemmas-1.3-2.5.4.bin on tags of opennlp-da-ud-ddt-pos-1.3-2.5.4.bin",
+      "sentences": 564,
+      "status": "scored",
+      "tokens": 10022,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "deu": {
+      "correct": 227255,
+      "model": "opennlp-de-ud-gsd-lemmas-1.3-2.5.4.bin on tags of opennlp-de-ud-gsd-pos-1.3-2.5.4.bin",
+      "sentences": 18205,
+      "status": "scored",
+      "tokens": 329795,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "egy": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for egy",
+      "status": "unsupported"
+    },
+    "ell": {
+      "correct": 9164,
+      "model": "opennlp-el-ud-gdt-lemmas-1.3-2.5.4.bin on tags of opennlp-el-ud-gdt-pos-1.3-2.5.4.bin",
+      "sentences": 448,
+      "status": "scored",
+      "tokens": 10656,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "eng": {
+      "correct": 25014,
+      "model": "opennlp-en-ud-ewt-lemmas-1.3-2.5.4.bin on tags of opennlp-en-ud-ewt-pos-1.3-2.5.4.bin",
+      "sentences": 1401,
+      "status": "scored",
+      "tokens": 28156,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "est": {
+      "correct": 40253,
+      "model": "opennlp-et-ud-edt-lemmas-1.3-2.5.4.bin on tags of opennlp-et-ud-edt-pos-1.3-2.5.4.bin",
+      "sentences": 3167,
+      "status": "scored",
+      "tokens": 48309,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "eus": {
+      "correct": 20767,
+      "model": "opennlp-eu-ud-bdt-lemmas-1.3-2.5.4.bin on tags of opennlp-eu-ud-bdt-pos-1.3-2.5.4.bin",
+      "sentences": 1792,
+      "status": "scored",
+      "tokens": 24312,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "fao": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for fo",
+      "status": "unsupported"
+    },
+    "fin": {
+      "correct": 16532,
+      "model": "opennlp-fi-ud-tdt-lemmas-1.3-2.5.4.bin on tags of opennlp-fi-ud-tdt-pos-1.3-2.5.4.bin",
+      "sentences": 1533,
+      "status": "scored",
+      "tokens": 20989,
+      "unaligned_sentences": 12,
+      "unaligned_tokens": 17
+    },
+    "fra": {
+      "correct": 9140,
+      "model": "opennlp-fr-ud-gsd-lemmas-1.3-2.5.4.bin on tags of opennlp-fr-ud-gsd-pos-1.3-2.5.4.bin",
+      "sentences": 432,
+      "status": "scored",
+      "tokens": 9935,
+      "unaligned_sentences": 11,
+      "unaligned_tokens": 13
+    },
+    "frm": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for frm",
+      "status": "unsupported"
+    },
+    "gla": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for gd",
+      "status": "unsupported"
+    },
+    "gle": {
+      "correct": 8826,
+      "model": "opennlp-ga-ud-idt-lemmas-1.3-2.5.4.bin on tags of opennlp-ga-ud-idt-pos-1.3-2.5.4.bin",
+      "sentences": 451,
+      "status": "scored",
+      "tokens": 10100,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "glg": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for gl",
+      "status": "unsupported"
+    },
+    "glv": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for gv",
+      "status": "unsupported"
+    },
+    "got": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for got",
+      "status": "unsupported"
+    },
+    "grc": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for grc",
+      "status": "unsupported"
+    },
+    "hat": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for ht",
+      "status": "unsupported"
+    },
+    "hbo": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for hbo",
+      "status": "unsupported"
+    },
+    "heb": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for he",
+      "status": "unsupported"
+    },
+    "hin": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for hi",
+      "status": "unsupported"
+    },
+    "hrv": {
+      "correct": 21245,
+      "model": "opennlp-hr-ud-set-lemmas-1.3-2.5.4.bin on tags of opennlp-hr-ud-set-pos-1.3-2.5.4.bin",
+      "sentences": 1134,
+      "status": "scored",
+      "tokens": 24203,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "hun": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for hu",
+      "status": "unsupported"
+    },
+    "hye": {
+      "correct": 8408,
+      "model": "opennlp-hy-ud-bsut-lemmas-1.3-2.5.4.bin on tags of opennlp-hy-ud-bsut-pos-1.3-2.5.4.bin",
+      "sentences": 591,
+      "status": "scored",
+      "tokens": 10610,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "hyw": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for hyw",
+      "status": "unsupported"
+    },
+    "ind": {
+      "correct": 11011,
+      "model": "opennlp-id-ud-gsd-lemmas-1.3-2.5.4.bin on tags of opennlp-id-ud-gsd-pos-1.3-2.5.4.bin",
+      "sentences": 553,
+      "status": "scored",
+      "tokens": 11712,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "isl": {
+      "correct": 130625,
+      "model": "opennlp-is-ud-icepahc-lemmas-1.3-2.5.4.bin on tags of opennlp-is-ud-icepahc-pos-1.3-2.5.4.bin",
+      "sentences": 5134,
+      "status": "scored",
+      "tokens": 139575,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "ita": {
+      "correct": 9478,
+      "model": "opennlp-it-ud-vit-lemmas-1.3-2.5.4.bin on tags of opennlp-it-ud-vit-pos-1.3-2.5.4.bin",
+      "sentences": 482,
+      "status": "scored",
+      "tokens": 10416,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "jpn": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for ja",
+      "status": "unsupported"
+    },
+    "kat": {
+      "correct": 6840,
+      "model": "opennlp-ka-ud-glc-lemmas-1.3-2.5.4.bin on tags of opennlp-ka-ud-glc-pos-1.3-2.5.4.bin",
+      "sentences": 830,
+      "status": "scored",
+      "tokens": 10426,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "kaz": {
+      "correct": 5611,
+      "model": "opennlp-kk-ud-ktb-lemmas-1.3-2.5.4.bin on tags of opennlp-kk-ud-ktb-pos-1.3-2.5.4.bin",
+      "sentences": 1047,
+      "status": "scored",
+      "tokens": 10007,
+      "unaligned_sentences": 13,
+      "unaligned_tokens": 15
+    },
+    "kir": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for ky",
+      "status": "unsupported"
+    },
+    "kmr": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for kmr",
+      "status": "unsupported"
+    },
+    "koi": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for koi",
+      "status": "unsupported"
+    },
+    "kor": {
+      "correct": 23692,
+      "model": "opennlp-ko-ud-kaist-lemmas-1.3-2.5.4.bin on tags of opennlp-ko-ud-kaist-pos-1.3-2.5.4.bin",
+      "sentences": 2285,
+      "status": "scored",
+      "tokens": 28352,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "kpv": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for kpv",
+      "status": "unsupported"
+    },
+    "lat": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for la",
+      "status": "unsupported"
+    },
+    "lav": {
+      "correct": 32857,
+      "model": "opennlp-lv-ud-lvtb-lemmas-1.3-2.5.4.bin on tags of opennlp-lv-ud-lvtb-pos-1.3-2.5.4.bin",
+      "sentences": 2388,
+      "status": "scored",
+      "tokens": 37080,
+      "unaligned_sentences": 10,
+      "unaligned_tokens": 11
+    },
+    "lij": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for lij",
+      "status": "unsupported"
+    },
+    "lit": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for lt",
+      "status": "unsupported"
+    },
+    "lzh": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for lzh",
+      "status": "unsupported"
+    },
+    "mar": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for mr",
+      "status": "unsupported"
+    },
+    "mdf": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for mdf",
+      "status": "unsupported"
+    },
+    "myv": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for myv",
+      "status": "unsupported"
+    },
+    "naq": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for naq",
+      "status": "unsupported"
+    },
+    "nds": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for nds",
+      "status": "unsupported"
+    },
+    "nld": {
+      "correct": 23929,
+      "model": "opennlp-nl-ud-alpino-lemmas-1.3-2.5.4.bin on tags of opennlp-nl-ud-alpino-pos-1.3-2.5.4.bin",
+      "sentences": 1676,
+      "status": "scored",
+      "tokens": 28804,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "nmf": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for nmf",
+      "status": "unsupported"
+    },
+    "nor": {
+      "correct": 18050,
+      "model": "opennlp-no-ud-bokmaal-lemmas-1.3-2.5.4.bin on tags of opennlp-no-ud-bokmaal-pos-1.3-2.5.4.bin",
+      "sentences": 1486,
+      "status": "scored",
+      "tokens": 24697,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "oci": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for oc",
+      "status": "unsupported"
+    },
+    "oge": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for oge",
+      "status": "unsupported"
+    },
+    "olo": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for olo",
+      "status": "unsupported"
+    },
+    "orv": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for orv",
+      "status": "unsupported"
+    },
+    "ota": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for ota",
+      "status": "unsupported"
+    },
+    "pan": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for pa",
+      "status": "unsupported"
+    },
+    "pcm": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for pcm",
+      "status": "unsupported"
+    },
+    "pes": {
+      "correct": 23492,
+      "model": "opennlp-fa-ud-perdt-lemmas-1.3-2.5.4.bin on tags of opennlp-fa-ud-perdt-pos-1.3-2.5.4.bin",
+      "sentences": 1454,
+      "status": "scored",
+      "tokens": 24118,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "pol": {
+      "correct": 30535,
+      "model": "opennlp-pl-ud-pdb-lemmas-1.3-2.5.4.bin on tags of opennlp-pl-ud-pdb-pos-1.3-2.5.4.bin",
+      "sentences": 2203,
+      "status": "scored",
+      "tokens": 33572,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "por": {
+      "correct": 25304,
+      "model": "opennlp-pt-ud-gsd-lemmas-1.3-2.5.4.bin on tags of opennlp-pt-ud-gsd-pos-1.3-2.5.4.bin",
+      "sentences": 1025,
+      "status": "scored",
+      "tokens": 29539,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "pro": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for pro",
+      "status": "unsupported"
+    },
+    "qaf": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for qaf",
+      "status": "unsupported"
+    },
+    "qpm": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for qpm",
+      "status": "unsupported"
+    },
+    "qtd": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for qtd",
+      "status": "unsupported"
+    },
+    "ron": {
+      "correct": 14285,
+      "model": "opennlp-ro-ud-rrt-lemmas-1.3-2.5.4.bin on tags of opennlp-ro-ud-rrt-pos-1.3-2.5.4.bin",
+      "sentences": 1040,
+      "status": "scored",
+      "tokens": 20943,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "rus": {
+      "correct": 12657,
+      "model": "opennlp-ru-ud-gsd-lemmas-1.3-2.5.4.bin on tags of opennlp-ru-ud-gsd-pos-1.3-2.5.4.bin",
+      "sentences": 1187,
+      "status": "scored",
+      "tokens": 15334,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "san": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for sa",
+      "status": "unsupported"
+    },
+    "say": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for say",
+      "status": "unsupported"
+    },
+    "slk": {
+      "correct": 11285,
+      "model": "opennlp-sk-ud-snk-lemmas-1.3-2.5.4.bin on tags of opennlp-sk-ud-snk-pos-1.3-2.5.4.bin",
+      "sentences": 1042,
+      "status": "scored",
+      "tokens": 12702,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "slv": {
+      "correct": 23347,
+      "model": "opennlp-sl-ud-ssj-lemmas-1.3-2.5.4.bin on tags of opennlp-sl-ud-ssj-pos-1.3-2.5.4.bin",
+      "sentences": 1281,
+      "status": "scored",
+      "tokens": 25407,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "sme": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for sme",
+      "status": "unsupported"
+    },
+    "sms": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for sms",
+      "status": "unsupported"
+    },
+    "snd": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for sd",
+      "status": "unsupported"
+    },
+    "spa": {
+      "correct": 48332,
+      "model": "opennlp-es-ud-gsd-lemmas-1.3-2.5.4.bin on tags of opennlp-es-ud-gsd-pos-1.3-2.5.4.bin",
+      "sentences": 1710,
+      "status": "scored",
+      "tokens": 53584,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "sqi": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for sq",
+      "status": "unsupported"
+    },
+    "srp": {
+      "correct": 9800,
+      "model": "opennlp-sr-ud-set-lemmas-1.3-2.5.4.bin on tags of opennlp-sr-ud-set-pos-1.3-2.5.4.bin",
+      "sentences": 519,
+      "status": "scored",
+      "tokens": 11410,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "swe": {
+      "correct": 19111,
+      "model": "opennlp-sv-ud-talbanken-lemmas-1.3-2.5.4.bin on tags of opennlp-sv-ud-talbanken-pos-1.3-2.5.4.bin",
+      "sentences": 1217,
+      "status": "scored",
+      "tokens": 20371,
+      "unaligned_sentences": 45,
+      "unaligned_tokens": 46
+    },
+    "tam": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for ta",
+      "status": "unsupported"
+    },
+    "tur": {
+      "correct": 7906,
+      "model": "opennlp-tr-ud-boun-lemmas-1.3-2.5.4.bin on tags of opennlp-tr-ud-boun-pos-1.3-2.5.4.bin",
+      "sentences": 905,
+      "status": "scored",
+      "tokens": 9904,
+      "unaligned_sentences": 0,
+      "unaligned_tokens": 0
+    },
+    "uig": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for ug",
+      "status": "unsupported"
+    },
+    "ukr": {
+      "correct": 14198,
+      "model": "opennlp-uk-ud-iu-lemmas-1.3-2.5.4.bin on tags of opennlp-uk-ud-iu-pos-1.3-2.5.4.bin",
+      "sentences": 812,
+      "status": "scored",
+      "tokens": 16075,
+      "unaligned_sentences": 1,
+      "unaligned_tokens": 3
+    },
+    "urd": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for ur",
+      "status": "unsupported"
+    },
+    "uzb": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for uz",
+      "status": "unsupported"
+    },
+    "vie": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for vi",
+      "status": "unsupported"
+    },
+    "wol": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for wo",
+      "status": "unsupported"
+    },
+    "wuu": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for wuu",
+      "status": "unsupported"
+    },
+    "xcl": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for xcl",
+      "status": "unsupported"
+    },
+    "yid": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for yi",
+      "status": "unsupported"
+    },
+    "yrl": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for yrl",
+      "status": "unsupported"
+    },
+    "zza": {
+      "reason": "LookupError: OpenNLP ships no lemmatizer model for zza",
+      "status": "unsupported"
+    }
+  },
+  "engine": "opennlp",
+  "version": "apache-opennlp-3.0.0"
+}
